@@ -1,0 +1,195 @@
+{
+  "date": "2026-11-09",
+  "scope": "Final full browser acceptance against isolated fixture services; actual local backend/MCP/SSE plus mocked generation/HTML-formatting checks; no live external calls.",
+  "stats": {
+    "startTime": "2026-11-10T00:36:28.944Z",
+    "duration": 60403.742,
+    "expected": 18,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "cases": [
+    {
+      "title": "actual fixture chat routes separate providers, reuses saved evidence and reopens without a search",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 6098
+        }
+      ]
+    },
+    {
+      "title": "actual fixture DOI chat routes to DataCite without creating a discovery run",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 1421
+        }
+      ]
+    },
+    {
+      "title": "exploration renders early separate-provider sources, retains drafts and cancels without duplicate search",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 1642
+        }
+      ]
+    },
+    {
+      "title": "a public DOI works with OpenAlex blocked and saved follow-up does not introduce year filters",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 2555
+        }
+      ]
+    },
+    {
+      "title": "exploration remains usable on a narrow phone and keeps over-budget input editable",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 1434
+        }
+      ]
+    },
+    {
+      "title": "a successful details lookup does not claim verified discovery and rate limits stay visible",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 1974
+        }
+      ]
+    },
+    {
+      "title": "explicit generation renders real response snapshots progressively, retains citations and reopens without another request",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 2562
+        }
+      ]
+    },
+    {
+      "title": "generation is disabled without a configured key and a failed stream retains evidence for an explicit retry",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 2234
+        }
+      ]
+    },
+    {
+      "title": "generated answer formatting stays React-safe during partial text and keeps source links and turn anchors",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 1649
+        }
+      ]
+    },
+    {
+      "title": "local fixture services reach a saved shortlist and deterministic export",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 3208
+        }
+      ]
+    },
+    {
+      "title": "first rows can be inspected and saved before completion; updates preserve identity and focus",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 7458
+        }
+      ]
+    },
+    {
+      "title": "reopen and exports use saved state; DOI observations remain separate and stale writes retain drafts",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 3979
+        }
+      ]
+    },
+    {
+      "title": "provider edits are explicit and reconnection cannot rerun research or duplicate sources",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 2058
+        }
+      ]
+    },
+    {
+      "title": "mobile keyboard flow, modal focus and reading layout remain usable",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 6788
+        }
+      ]
+    },
+    {
+      "title": "three-paper cap and eligibility updates preserve human decisions visibly",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 2400
+        }
+      ]
+    },
+    {
+      "title": "untitled and truncated records remain honest and DOI checks require inclusion",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 2266
+        }
+      ]
+    },
+    {
+      "title": "desktop split preview, notes and display preferences use existing saved data",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 3399
+        }
+      ]
+    },
+    {
+      "title": "Dub-inspired workspace remains readable at tablet and narrow phone widths",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 3157
+        }
+      ]
+    }
+  ],
+  "passed": true
+}

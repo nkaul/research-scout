@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "scope": "Read-only final UI replay and screenshot review after readiness label update; zero research/model requests.",
+  "viewports": [
+    1440,
+    390,
+    320
+  ],
+  "javascript_errors": []
+}

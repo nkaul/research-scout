@@ -1,0 +1,206 @@
+{
+  "date": "2026-11-09",
+  "role": "Independent subagent review of saved evidence and current implementation",
+  "scope": "Read-only authored diagnosis. No new provider or model requests; recommendations are not independent human ground-truth labels or measured search accuracy.",
+  "question": "What's the impact of how we improve the context model needs to have for better generation?",
+  "known_user_context": "Machine learning / LLM generation: improve the context supplied to a model, then assess generation quality.",
+  "saved_evidence": {
+    "conversation_id": "97846fde51ac46579f3301eb9d3b7612",
+    "turn_id": "644aa0b5893d42d59ddf8717e0805626",
+    "crossref_run_id": "33efca0b2a9e47b6b94e77ac9ef30da5",
+    "observed_latest_success_policy": "v1; no newer exact-query conversation present when this review started"
+  },
+  "root_causes": [
+    {
+      "stage": "Intent interpretation",
+      "evidence": "The saved intent says improving a context model; required facets say context representation/modeling and generated output quality.",
+      "consequence": "Rewrites reinterpret the object being improved, allowing architecture and speech-model results rather than focusing on input evidence/context engineering."
+    },
+    {
+      "stage": "Candidate generation",
+      "evidence": "Shared lexical query context modeling generation quality was used for Crossref and OpenAlex. Crossref previously searched broad query metadata.",
+      "consequence": "Overlap words pull air-quality, IoT, acoustic and front-matter records into the only lexical pool."
+    },
+    {
+      "stage": "Relevance review",
+      "evidence": "The reviewer admitted title-only context-modeling and RoPE architecture records, while demoting an explicitly context-selection/SLM application based on its manufacturing domain.",
+      "consequence": "Topic similarity is mistaken for the requested causal/intervention relationship; applied settings can be wrongly excluded."
+    },
+    {
+      "stage": "Publication",
+      "evidence": "v1 primary arrays mixed relevant, partial and unknown labels; Crossref displayed 2 relevant, 4 partial and 2 untitled unknown records.",
+      "consequence": "Weak candidates are visible as ordinary result cards even when the review already knows they are weak."
+    },
+    {
+      "stage": "Inspection navigation",
+      "evidence": "ResearchWorkspace.openChatSource calls openRun, which loads every raw child-run entity and changes workspace mode to direct discovery.",
+      "consequence": "Clicking Inspect & review can expose all raw irrelevant candidates again after chat correctly filtered the list."
+    }
+  ],
+  "specific_saved_cases": [
+    {
+      "source_ref": "crossref:10.1049/ic:19970760",
+      "title": "Context modeling for language and speech generation",
+      "year": 1997,
+      "saved_label": "relevant",
+      "abstract_available": false,
+      "authored_assessment": "ambiguous / background under the known user intent",
+      "reason": "Title alone establishes generic language/speech context modeling, but does not establish LLM input-context construction or an improvement in supplied evidence. Do not infer modern LLM/RAG content; age alone is not an exclusion rule."
+    },
+    {
+      "source_ref": "crossref:10.1109/access.2026.3658428",
+      "title": "Quantifying Generation Quality for RoPE-Based Long Context Extrapolation",
+      "year": 2026,
+      "saved_label": "relevant",
+      "abstract_available": false,
+      "authored_assessment": "adjacent / insufficient evidence for primary relevance",
+      "reason": "Title concerns positional/context-capacity architecture. It may support a background facet, but supplied-context quality/selection effects are not established by this metadata."
+    },
+    {
+      "source_ref": "openalex:W7215060537",
+      "title": "Selecting Context for Rule-Grounded Explanation Generation: A Small Language Model Study in Injection Moulding Quality Prediction",
+      "saved_label": "partial",
+      "abstract_available": true,
+      "authored_assessment": "potentially directly useful application",
+      "reason": "Explicit context selection plus language-model explanation generation addresses the desired mechanism; manufacturing subject matter alone should not demote it."
+    },
+    {
+      "source_ref": "openalex:W4388717437",
+      "title": "Learning to Filter Context for Retrieval-Augmented Generation",
+      "saved_label": "relevant",
+      "abstract_available": true,
+      "authored_assessment": "strong direct candidate",
+      "reason": "Available excerpt explicitly connects imperfect/irrelevant retrieved passages with generation errors and context filtering."
+    },
+    {
+      "source_ref": "openalex:W4415796230",
+      "title": "ContextCite: Attributing Model Generation to Context",
+      "saved_label": "relevant",
+      "abstract_available": true,
+      "authored_assessment": "useful diagnostic/evaluation facet",
+      "reason": "Attribution/grounding is relevant to assessing context use. Distinguish that contribution from an intervention proving generation improvement."
+    },
+    {
+      "source_ref": "crossref:10.21437/interspeech.2026-513",
+      "title": "Explicit Context-Driven Neural Acoustic Modeling for High-Fidelity RIR Generation",
+      "saved_label": "partial",
+      "abstract_available": false,
+      "authored_assessment": "adjacent acoustic generation; outside primary LLM-context answer",
+      "reason": "Generation and context word overlap does not establish the requested generative-language setting."
+    },
+    {
+      "source_ref": "crossref:10.61686/cputr83367",
+      "title": null,
+      "saved_label": "unknown",
+      "abstract_available": false,
+      "authored_assessment": "unassessable",
+      "reason": "No supplied scientific title or content; keep outside primary results."
+    }
+  ],
+  "recommended_intent_frame": {
+    "object_of_change": "Input context / evidence supplied to an existing generative language model",
+    "intervention": "Improve relevance, selection, organization, filtering or compression of that context",
+    "desired_outcome": "More accurate, faithful, grounded, relevant and useful generated responses",
+    "boundary": "Prioritize context construction/use and empirical quality effects. Model-internal context representations, positional architectures, acoustic generation and general output evaluation are background/adjacent unless they directly investigate supplied-context changes."
+  },
+  "generic_relevance_rubric": [
+    "Preserve the user-specified object, intervention and outcome; do not replace it with a neighboring phrase that is easier to search.",
+    "Primary relevance needs available evidence connecting the intended setting, context operation/use, and desired generation outcome. An unambiguous title can support a narrow claim, but missing content must remain explicit.",
+    "Architecture-only or context-capacity work is adjacent when the question asks about supplied-context content/selection; do not infer missing causal evidence.",
+    "Applied work in medicine, manufacturing or software can be directly relevant if the mechanism and outcome match. Application domain alone is not an exclusion rule.",
+    "Evaluation/attribution tools can support a diagnostic facet; distinguish measurement from a demonstrated intervention effect.",
+    "No title/content means uncertain, never primary. Partial/uncertain records remain separate and are not automatically supplied as answer evidence.",
+    "Do not claim a paper establishes improvement magnitude from title/metadata; effects and limitations need the supplied abstract or explicit later full-text reading."
+  ],
+  "suggested_provider_queries_for_this_case": {
+    "openalex": {
+      "lexical": "large language models context selection retrieval augmented generation",
+      "semantic": "How do the relevance, selection, ordering, filtering and compression of input context affect factual accuracy, faithfulness and response quality in large language models and retrieval-augmented generation?"
+    },
+    "crossref_round_1": {
+      "query.bibliographic": "retrieval augmented generation context selection",
+      "sort": "relevance",
+      "order": "desc"
+    },
+    "crossref_round_2_if_weak": {
+      "query.bibliographic": "large language models context compression",
+      "sort": "relevance",
+      "order": "desc"
+    },
+    "arxiv_lexical_input": "retrieval context generation",
+    "semantic_scholar_lexical_input": "large language models context engineering",
+    "openaire_lexical_input": "retrieval augmented generation context compression",
+    "europe_pmc_lexical_input": "large language models retrieval augmented generation"
+  },
+  "inspection_ux_recommendation": {
+    "smallest_fix": "When opening a source from reviewed chat, scope the source index to that exact source_ref and show its reader. Add Back to reviewed results and an explicit View all raw provider candidates action.",
+    "identity": "Persist exact run/source selection in URL if reload support is needed; a generic source URL must not itself imply that an AI relevance assessment exists.",
+    "invariants": [
+      "Opening raw history clears the inspection-only scope.",
+      "A missing inspected source must show unavailable, not fall back to all raw candidates.",
+      "Saved shortlist, notes and original provider observations remain unchanged."
+    ]
+  },
+  "authored_regression_cases": [
+    {
+      "case": "reported_question_with_known_ML_context",
+      "input": "What's the impact of how we improve the context model needs to have for better generation?",
+      "expected": "Frame context supplied to generative language model; focused context-construction queries; no implicit context-model-architecture rewrite."
+    },
+    {
+      "case": "same_wording_without_domain_context",
+      "input": "What's the impact of how we improve the context model needs to have for better generation?",
+      "expected": "Visible reasonable assumption or a clarification; do not globally force all ambiguous context/model/generation questions into ML."
+    },
+    {
+      "case": "explicit_non_ML_domain",
+      "input": "How does the context of an air quality model improve electricity generation planning?",
+      "expected": "Honor environmental/energy intent; do not apply the current LLM example as a universal rewrite."
+    },
+    {
+      "case": "applied_medical_LLM",
+      "input": "How does selecting patient-relevant retrieved evidence improve clinical LLM answer factuality?",
+      "candidate": "A clinical RAG study varying evidence selection and measuring answer factuality",
+      "expected": "Primary eligible if supplied evidence supports mechanism and outcome; no medical blacklist."
+    },
+    {
+      "case": "pharmacy_hard_negative",
+      "candidate": "The Seventh Generation Pharmacist",
+      "expected": "Irrelevant for this known LLM-input-context question."
+    },
+    {
+      "case": "IoT_hard_negative",
+      "candidate": "Quality of Context and Quality of Situation for Context-Aware Internet of Things Applications",
+      "expected": "Irrelevant unless supplied evidence explicitly links it to the requested generative language context operation."
+    },
+    {
+      "case": "architecture_title_only",
+      "candidate": "Quantifying Generation Quality for RoPE-Based Long Context Extrapolation",
+      "expected": "Adjacent/uncertain for supplied-context construction; do not infer missing intervention evidence."
+    },
+    {
+      "case": "context_filtering_direct",
+      "candidate": "Learning to Filter Context for Retrieval-Augmented Generation",
+      "expected": "Direct candidate based on clear context operation and available generation-error excerpt."
+    },
+    {
+      "case": "no_observable_metadata",
+      "candidate": {
+        "title": null,
+        "abstract": null,
+        "description": null
+      },
+      "expected": "Unknown; never primary, even if a model verdict says relevant."
+    },
+    {
+      "case": "inspection_boundary",
+      "action": "Inspect a reviewed primary source",
+      "expected": "Selected reader remains scoped to that source. Raw irrelevant siblings appear only after an explicit raw-candidate action."
+    }
+  ],
+  "validation_notes": [
+    "All judgments in this artifact are authored agent inspection over reused saved evidence, not independent human labels.",
+    "The suggested queries are candidates for the parent-owned bounded live trial, not executed queries or measured quality results.",
+    "No new provider requests, OpenAI calls, paid model usage, credential reads or shared implementation edits were made by this reviewer."
+  ]
+}

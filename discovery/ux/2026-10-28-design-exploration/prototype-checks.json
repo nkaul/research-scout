@@ -1,0 +1,403 @@
+{
+  "date": "2026-10-28",
+  "scope": "Authored HTML prototypes only; not production acceptance or complete accessibility conformance.",
+  "checks": [
+    {
+      "prototype": "prototype-01",
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 1100
+      },
+      "errors": [],
+      "externalRequests": [],
+      "title": "Cobalt Studio — Research Scout design concept 01",
+      "language": "en",
+      "h1Count": 1,
+      "horizontalOverflow": 0,
+      "unnamedButtons": 0,
+      "inputsWithoutLabels": 0,
+      "brokenImages": 0,
+      "reducedMotion": true,
+      "animatedElementsInReducedMotion": 0,
+      "focus": {
+        "tag": "A",
+        "label": "Skip to research workspace",
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      },
+      "sampledTextPairs": 95,
+      "unmeasuredTextPairs": 0,
+      "contrastIssues": [],
+      "interaction": {
+        "passed": true,
+        "earlySourceUsable": true,
+        "keyboardFocusStableOnArrival": true,
+        "inspectorEscapeAndFocusReturn": true,
+        "inclusionRequiredForRegistrySimulation": true,
+        "humanReasonPreserved": true,
+        "syntheticExport": "research-scout-synthetic-design-shortlist.md"
+      }
+    },
+    {
+      "prototype": "prototype-01",
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844
+      },
+      "errors": [],
+      "externalRequests": [],
+      "title": "Cobalt Studio — Research Scout design concept 01",
+      "language": "en",
+      "h1Count": 1,
+      "horizontalOverflow": 0,
+      "unnamedButtons": 0,
+      "inputsWithoutLabels": 0,
+      "brokenImages": 0,
+      "reducedMotion": true,
+      "animatedElementsInReducedMotion": 0,
+      "focus": {
+        "tag": "A",
+        "label": "Skip to research workspace",
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      },
+      "sampledTextPairs": 73,
+      "unmeasuredTextPairs": 0,
+      "contrastIssues": [],
+      "interaction": {
+        "passed": true,
+        "earlySourceUsable": true,
+        "keyboardFocusStableOnArrival": true,
+        "inspectorEscapeAndFocusReturn": true,
+        "inclusionRequiredForRegistrySimulation": true,
+        "humanReasonPreserved": true,
+        "syntheticExport": "research-scout-synthetic-design-shortlist.md"
+      }
+    },
+    {
+      "prototype": "prototype-01",
+      "viewport": {
+        "name": "narrow",
+        "width": 320,
+        "height": 900
+      },
+      "errors": [],
+      "externalRequests": [],
+      "title": "Cobalt Studio — Research Scout design concept 01",
+      "language": "en",
+      "h1Count": 1,
+      "horizontalOverflow": 0,
+      "unnamedButtons": 0,
+      "inputsWithoutLabels": 0,
+      "brokenImages": 0,
+      "reducedMotion": true,
+      "animatedElementsInReducedMotion": 0,
+      "focus": {
+        "tag": "A",
+        "label": "Skip to research workspace",
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      },
+      "sampledTextPairs": 73,
+      "unmeasuredTextPairs": 0,
+      "contrastIssues": [],
+      "interaction": null
+    },
+    {
+      "prototype": "prototype-02",
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 1100
+      },
+      "errors": [],
+      "externalRequests": [],
+      "title": "Fieldnotes — Research Scout design concept 02",
+      "language": "en",
+      "h1Count": 1,
+      "horizontalOverflow": 0,
+      "unnamedButtons": 0,
+      "inputsWithoutLabels": 0,
+      "brokenImages": 0,
+      "reducedMotion": true,
+      "animatedElementsInReducedMotion": 0,
+      "focus": {
+        "tag": "A",
+        "label": "Skip to research workspace",
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      },
+      "sampledTextPairs": 89,
+      "unmeasuredTextPairs": 0,
+      "contrastIssues": [],
+      "interaction": {
+        "passed": true,
+        "earlySourceUsable": true,
+        "keyboardFocusStableOnArrival": true,
+        "inspectorEscapeAndFocusReturn": true,
+        "inclusionRequiredForRegistrySimulation": true,
+        "humanReasonPreserved": true,
+        "syntheticExport": "research-scout-synthetic-design-shortlist.md"
+      }
+    },
+    {
+      "prototype": "prototype-02",
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844
+      },
+      "errors": [],
+      "externalRequests": [],
+      "title": "Fieldnotes — Research Scout design concept 02",
+      "language": "en",
+      "h1Count": 1,
+      "horizontalOverflow": 0,
+      "unnamedButtons": 0,
+      "inputsWithoutLabels": 0,
+      "brokenImages": 0,
+      "reducedMotion": true,
+      "animatedElementsInReducedMotion": 0,
+      "focus": {
+        "tag": "A",
+        "label": "Skip to research workspace",
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      },
+      "sampledTextPairs": 84,
+      "unmeasuredTextPairs": 0,
+      "contrastIssues": [],
+      "interaction": {
+        "passed": true,
+        "earlySourceUsable": true,
+        "keyboardFocusStableOnArrival": true,
+        "inspectorEscapeAndFocusReturn": true,
+        "inclusionRequiredForRegistrySimulation": true,
+        "humanReasonPreserved": true,
+        "syntheticExport": "research-scout-synthetic-design-shortlist.md"
+      }
+    },
+    {
+      "prototype": "prototype-02",
+      "viewport": {
+        "name": "narrow",
+        "width": 320,
+        "height": 900
+      },
+      "errors": [],
+      "externalRequests": [],
+      "title": "Fieldnotes — Research Scout design concept 02",
+      "language": "en",
+      "h1Count": 1,
+      "horizontalOverflow": 0,
+      "unnamedButtons": 0,
+      "inputsWithoutLabels": 0,
+      "brokenImages": 0,
+      "reducedMotion": true,
+      "animatedElementsInReducedMotion": 0,
+      "focus": {
+        "tag": "A",
+        "label": "Skip to research workspace",
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      },
+      "sampledTextPairs": 84,
+      "unmeasuredTextPairs": 0,
+      "contrastIssues": [],
+      "interaction": null
+    },
+    {
+      "prototype": "prototype-03",
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 1100
+      },
+      "errors": [],
+      "externalRequests": [],
+      "title": "Midnight Observatory — Research Scout design concept 03",
+      "language": "en",
+      "h1Count": 1,
+      "horizontalOverflow": 0,
+      "unnamedButtons": 0,
+      "inputsWithoutLabels": 0,
+      "brokenImages": 0,
+      "reducedMotion": true,
+      "animatedElementsInReducedMotion": 0,
+      "focus": {
+        "tag": "A",
+        "label": "Skip to research workspace",
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      },
+      "sampledTextPairs": 87,
+      "unmeasuredTextPairs": 0,
+      "contrastIssues": [],
+      "interaction": {
+        "passed": true,
+        "earlySourceUsable": true,
+        "keyboardFocusStableOnArrival": true,
+        "inspectorEscapeAndFocusReturn": true,
+        "inclusionRequiredForRegistrySimulation": true,
+        "humanReasonPreserved": true,
+        "syntheticExport": "research-scout-synthetic-design-shortlist.md"
+      }
+    },
+    {
+      "prototype": "prototype-03",
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844
+      },
+      "errors": [],
+      "externalRequests": [],
+      "title": "Midnight Observatory — Research Scout design concept 03",
+      "language": "en",
+      "h1Count": 1,
+      "horizontalOverflow": 0,
+      "unnamedButtons": 0,
+      "inputsWithoutLabels": 0,
+      "brokenImages": 0,
+      "reducedMotion": true,
+      "animatedElementsInReducedMotion": 0,
+      "focus": {
+        "tag": "A",
+        "label": "Skip to research workspace",
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      },
+      "sampledTextPairs": 75,
+      "unmeasuredTextPairs": 0,
+      "contrastIssues": [],
+      "interaction": {
+        "passed": true,
+        "earlySourceUsable": true,
+        "keyboardFocusStableOnArrival": true,
+        "inspectorEscapeAndFocusReturn": true,
+        "inclusionRequiredForRegistrySimulation": true,
+        "humanReasonPreserved": true,
+        "syntheticExport": "research-scout-synthetic-design-shortlist.md"
+      }
+    },
+    {
+      "prototype": "prototype-03",
+      "viewport": {
+        "name": "narrow",
+        "width": 320,
+        "height": 900
+      },
+      "errors": [],
+      "externalRequests": [],
+      "title": "Midnight Observatory — Research Scout design concept 03",
+      "language": "en",
+      "h1Count": 1,
+      "horizontalOverflow": 0,
+      "unnamedButtons": 0,
+      "inputsWithoutLabels": 0,
+      "brokenImages": 0,
+      "reducedMotion": true,
+      "animatedElementsInReducedMotion": 0,
+      "focus": {
+        "tag": "A",
+        "label": "Skip to research workspace",
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      },
+      "sampledTextPairs": 75,
+      "unmeasuredTextPairs": 0,
+      "contrastIssues": [],
+      "interaction": null
+    },
+    {
+      "prototype": "index",
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 1100
+      },
+      "errors": [],
+      "externalRequests": [],
+      "title": "Research Scout · Three design directions",
+      "language": "en",
+      "h1Count": 1,
+      "horizontalOverflow": 0,
+      "unnamedButtons": 0,
+      "inputsWithoutLabels": 0,
+      "brokenImages": 0,
+      "reducedMotion": true,
+      "animatedElementsInReducedMotion": 0,
+      "focus": {
+        "tag": "A",
+        "label": "Skip to the concepts",
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      },
+      "sampledTextPairs": 58,
+      "unmeasuredTextPairs": 0,
+      "contrastIssues": [],
+      "interaction": null
+    },
+    {
+      "prototype": "index",
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844
+      },
+      "errors": [],
+      "externalRequests": [],
+      "title": "Research Scout · Three design directions",
+      "language": "en",
+      "h1Count": 1,
+      "horizontalOverflow": 0,
+      "unnamedButtons": 0,
+      "inputsWithoutLabels": 0,
+      "brokenImages": 0,
+      "reducedMotion": true,
+      "animatedElementsInReducedMotion": 0,
+      "focus": {
+        "tag": "A",
+        "label": "Skip to the concepts",
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      },
+      "sampledTextPairs": 58,
+      "unmeasuredTextPairs": 0,
+      "contrastIssues": [],
+      "interaction": null
+    },
+    {
+      "prototype": "index",
+      "viewport": {
+        "name": "narrow",
+        "width": 320,
+        "height": 900
+      },
+      "errors": [],
+      "externalRequests": [],
+      "title": "Research Scout · Three design directions",
+      "language": "en",
+      "h1Count": 1,
+      "horizontalOverflow": 0,
+      "unnamedButtons": 0,
+      "inputsWithoutLabels": 0,
+      "brokenImages": 0,
+      "reducedMotion": true,
+      "animatedElementsInReducedMotion": 0,
+      "focus": {
+        "tag": "A",
+        "label": "Skip to the concepts",
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      },
+      "sampledTextPairs": 58,
+      "unmeasuredTextPairs": 0,
+      "contrastIssues": [],
+      "interaction": null
+    }
+  ],
+  "passed": true
+}

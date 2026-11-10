@@ -1,0 +1,2354 @@
+{
+  "date": "2026-11-09",
+  "question": "What's the impact of how we improve the context model needs to have for better generation?",
+  "scope": "Actual Search workspace → provider-scoped AI exploration → DeepAgents/application MCP → Crossref bibliographic search → relevance review. Exact original question; no manual rewrite; no answer generation.",
+  "passed": true,
+  "profile": {
+    "enabled": true,
+    "ready": true,
+    "status": "ready",
+    "blocked_reason": null,
+    "model": "gpt-6-luna",
+    "policy": "scout-agentic-retrieval-v3",
+    "max_rounds": 2,
+    "max_model_calls": 5,
+    "max_turn_cost_usd": 0.05,
+    "max_candidates_per_provider_round": 20
+  },
+  "conversation_id": "18525853da69447bbbabea29868a1443",
+  "url": "http://127.0.0.1:3100/?conversation=18525853da69447bbbabea29868a1443",
+  "turn_id": "a04dae6255b44975b5b96efd2ff08b63",
+  "status": "SUCCEEDED",
+  "usage": {
+    "research_attempts": 2,
+    "model_http_attempts": 3,
+    "model_cost_usd": 0.00206225
+  },
+  "warnings": [],
+  "providers": [
+    "crossref"
+  ],
+  "intent": "Find scholarly evidence on how improving the context supplied to a generative model affects generation quality.",
+  "intent_frame": {
+    "object_of_change": "The context or contextual information supplied as input to a generative model, not the model architecture.",
+    "intervention": "Improve the quality, relevance, or organization of model input context.",
+    "desired_outcome": "Better generated outputs, such as improved relevance, accuracy, or coherence.",
+    "boundary": "Focus on effects of input-context improvement on generation; exclude changes to context-model architecture unless directly evaluated as a means of improving supplied context."
+  },
+  "keywords": [
+    "large language models",
+    "input context",
+    "text generation",
+    "generation quality"
+  ],
+  "tags": [
+    "generative models",
+    "input context",
+    "context quality",
+    "generation quality",
+    "large language models",
+    "context engineering"
+  ],
+  "provider_queries": [
+    {
+      "provider": "crossref",
+      "lexical_query": "LLM retrieval augmented generation context selection prompt engineering generation quality evaluation",
+      "semantic_query": "Studies that vary or improve retrieved, selected, or organized input context or demonstrations for generative language models and evaluate effects on generated output quality, relevance, accuracy, or coherence.",
+      "rationale": "Few candidates directly evaluate input-context interventions and generation outcomes; use a focused NLP query emphasizing context preparation and measured effects."
+    }
+  ],
+  "query_history": [
+    {
+      "provider": "crossref",
+      "round": 1,
+      "lexical_query": "large language models input context text generation",
+      "semantic_query": "Research on improving the context provided to large language models and measuring its effects on generated text quality.",
+      "reason": "Uses explicit NLP and model terms with the specific intervention and outcome, keeping the bibliographic candidate pool focused."
+    },
+    {
+      "provider": "crossref",
+      "round": 2,
+      "lexical_query": "LLM retrieval augmented generation context selection prompt engineering generation quality evaluation",
+      "semantic_query": "Studies that vary or improve retrieved, selected, or organized input context or demonstrations for generative language models and evaluate effects on generated output quality, relevance, accuracy, or coherence.",
+      "reason": "Few candidates directly evaluate input-context interventions and generation outcomes; use a focused NLP query emphasizing context preparation and measured effects."
+    }
+  ],
+  "provider_quality": {
+    "crossref": {
+      "relevant": 5,
+      "partial": 23,
+      "unknown": 9,
+      "irrelevant": 3,
+      "last_batch_count": 20,
+      "last_batch_labels": {
+        "relevant": 2,
+        "partial": 14,
+        "unknown": 1,
+        "irrelevant": 3
+      },
+      "round": 2,
+      "status": "sufficient",
+      "reason": "Few candidates directly address improved input context and generation outcomes; strengthen the NLP and intervention/outcome anchors in a distinct Crossref query."
+    }
+  },
+  "source_requests": [
+    {
+      "provider": "crossref",
+      "run_id": "e6771935098147c4b75900ea50c1de86",
+      "round": 1,
+      "branch": "lexical",
+      "status": "succeeded",
+      "transport": "official_rest",
+      "tool": null,
+      "executed_arguments": {
+        "query.bibliographic": "large language models input context text generation",
+        "rows": 20,
+        "offset": 0,
+        "sort": "relevance",
+        "order": "desc"
+      },
+      "query_input": "large language models input context text generation",
+      "semantic_execution": null,
+      "query_policy": "scout-crossref-bibliographic-v2",
+      "cache_hit": false
+    },
+    {
+      "provider": "crossref",
+      "run_id": "e6771935098147c4b75900ea50c1de86",
+      "round": 1,
+      "branch": "semantic",
+      "status": "succeeded",
+      "transport": "local_encoder",
+      "tool": null,
+      "executed_arguments": {},
+      "query_input": "Research on improving the context provided to large language models and measuring its effects on generated text quality.",
+      "semantic_execution": "local_candidate_pool_rerank",
+      "query_policy": null,
+      "cache_hit": false
+    },
+    {
+      "provider": "crossref",
+      "run_id": "0031dbfd942e4e689d1a0e4692f91d06",
+      "round": 2,
+      "branch": "lexical",
+      "status": "succeeded",
+      "transport": "official_rest",
+      "tool": null,
+      "executed_arguments": {
+        "query.bibliographic": "LLM retrieval augmented generation context selection prompt engineering generation quality evaluation",
+        "rows": 20,
+        "offset": 0,
+        "sort": "relevance",
+        "order": "desc"
+      },
+      "query_input": "LLM retrieval augmented generation context selection prompt engineering generation quality evaluation",
+      "semantic_execution": null,
+      "query_policy": "scout-crossref-bibliographic-v2",
+      "cache_hit": false
+    },
+    {
+      "provider": "crossref",
+      "run_id": "0031dbfd942e4e689d1a0e4692f91d06",
+      "round": 2,
+      "branch": "semantic",
+      "status": "succeeded",
+      "transport": "local_encoder",
+      "tool": null,
+      "executed_arguments": {},
+      "query_input": "Studies that vary or improve retrieved, selected, or organized input context or demonstrations for generative language models and evaluate effects on generated output quality, relevance, accuracy, or coherence.",
+      "semantic_execution": "local_candidate_pool_rerank",
+      "query_policy": null,
+      "cache_hit": false
+    }
+  ],
+  "assessments": [
+    {
+      "source_ref": "crossref:10.1039/d4dd00366g/v1/review1",
+      "version": "c1b7ad6557508698644b",
+      "provider": "crossref",
+      "run_id": "e6771935098147c4b75900ea50c1de86",
+      "round": 1,
+      "label": "unknown",
+      "reason": "Review notice provides no evidence about the underlying study’s context intervention or generation outcomes.",
+      "evidence_quote": "",
+      "model_label": "unknown",
+      "evidence_scope": "title and bounded provider abstract/description excerpts",
+      "abstract_chars_reviewed": 0,
+      "description_chars_reviewed": 0
+    },
+    {
+      "source_ref": "crossref:10.1039/d4dd00366g/v1/review3",
+      "version": "65a3006b130badb1b069",
+      "provider": "crossref",
+      "run_id": "e6771935098147c4b75900ea50c1de86",
+      "round": 1,
+      "label": "unknown",
+      "reason": "Review notice provides no evidence about the underlying study’s context intervention or generation outcomes.",
+      "evidence_quote": "",
+      "model_label": "unknown",
+      "evidence_scope": "title and bounded provider abstract/description excerpts",
+      "abstract_chars_reviewed": 0,
+      "description_chars_reviewed": 0
+    },
+    {
+      "source_ref": "crossref:10.1039/d4dd00366g/v1/review2",
+      "version": "eaee2515ff5e28f56b5a",
+      "provider": "crossref",
+      "run_id": "e6771935098147c4b75900ea50c1de86",
+      "round": 1,
+      "label": "unknown",
+      "reason": "Review notice provides no evidence about the underlying study’s context intervention or generation outcomes.",
+      "evidence_quote": "",
+      "model_label": "unknown",
+      "evidence_scope": "title and bounded provider abstract/description excerpts",
+      "abstract_chars_reviewed": 0,
+      "description_chars_reviewed": 0
+    },
+    {
+      "source_ref": "crossref:10.26434/chemrxiv-2024-9g2w2",
+      "version": "c34ca0574056ab847e6d",
+      "provider": "crossref",
+      "run_id": "e6771935098147c4b75900ea50c1de86",
+      "round": 1,
+      "label": "relevant",
+      "reason": "Evaluates prompt engineering and retrieval-augmented generation as interventions for improving generated quantum-chemistry inputs.",
+      "evidence_quote": "we explore the impact of prompt engineering, retrieval-augmented generation",
+      "model_label": "relevant",
+      "evidence_scope": "title and bounded provider abstract/description excerpts",
+      "abstract_chars_reviewed": 900,
+      "description_chars_reviewed": 0
+    },
+    {
+      "source_ref": "crossref:10.5220/0013673800003985",
+      "version": "2f44da1e33e4520ef97c",
+      "provider": "crossref",
+      "run_id": "e6771935098147c4b75900ea50c1de86",
+      "round": 1,
+      "label": "partial",
+      "reason": "Generates image descriptions with multimodal LLMs, but metadata does not indicate evaluation of improving supplied context.",
+      "evidence_quote": "",
+      "model_label": "partial",
+      "evidence_scope": "title and bounded provider abstract/description excerpts",
+      "abstract_chars_reviewed": 0,
+      "description_chars_reviewed": 0
+    },
+    {
+      "source_ref": "crossref:10.36227/techrxiv.175976382.27942690/v1",
+      "version": "ef0843d18c0b419caa8d",
+      "provider": "crossref",
+      "run_id": "e6771935098147c4b75900ea50c1de86",
+      "round": 1,
+      "label": "partial",
+      "reason": "Describes a retrieval-based text-generation pipeline and contextual relevance, but provides no clear evaluation of context improvement’s effect.",
+      "evidence_quote": "",
+      "model_label": "partial",
+      "evidence_scope": "title and bounded provider abstract/description excerpts",
+      "abstract_chars_reviewed": 789,
+      "description_chars_reviewed": 0
+    },
+    {
+      "source_ref": "crossref:10.1039/d4dd00366g/v1/decision1",
+      "version": "5c83195cd9a5d9cfdd0c",
+      "provider": "crossref",
+      "run_id": "e6771935098147c4b75900ea50c1de86",
+      "round": 1,
+      "label": "unknown",
+      "reason": "Decision-letter title alone does not reveal the study’s intervention or findings.",
+      "evidence_quote": "",
+      "model_label": "unknown",
+      "evidence_scope": "title and bounded provider abstract/description excerpts",
+      "abstract_chars_reviewed": 0,
+      "description_chars_reviewed": 0
+    },
+    {
+      "source_ref": "crossref:10.1039/d4dd00366g/v3/decision1",
+      "version": "a3634d3890f751b44f94",
+      "provider": "crossref",
+      "run_id": "e6771935098147c4b75900ea50c1de86",
+      "round": 1,
+      "label": "unknown",
+      "reason": "Decision-letter title alone does not reveal the study’s intervention or findings.",
+      "evidence_quote": "",
+      "model_label": "unknown",
+      "evidence_scope": "title and bounded provider abstract/description excerpts",
+      "abstract_chars_reviewed": 0,
+      "description_chars_reviewed": 0
+    },
+    {
+      "source_ref": "crossref:10.1039/d4dd00366g/v2/decision1",
+      "version": "32b788f1732e8ae0d56a",
+      "provider": "crossref",
+      "run_id": "e6771935098147c4b75900ea50c1de86",
+      "round": 1,
+      "label": "unknown",
+      "reason": "Decision-letter title alone does not reveal the study’s intervention or findings.",
+      "evidence_quote": "",
+      "model_label": "unknown",
+      "evidence_scope": "title and bounded provider abstract/description excerpts",
+      "abstract_chars_reviewed": 0,
+      "description_chars_reviewed": 0
+    },
+    {
+      "source_ref": "crossref:10.1039/d4dd00366g/v2/response1",
+      "version": "09fcb4ca0af773fb907f",
+      "provider": "crossref",
+      "run_id": "e6771935098147c4b75900ea50c1de86",
+      "round": 1,
+      "label": "unknown",
+      "reason": "Author-response title alone does not reveal the study’s intervention or findings.",
+      "evidence_quote": "",
+      "model_label": "unknown",
+      "evidence_scope": "title and bounded provider abstract/description excerpts",
+      "abstract_chars_reviewed": 0,
+      "description_chars_reviewed": 0
+    },
+    {
+      "source_ref": "crossref:10.1039/d4dd00366g/v3/response1",
+      "version": "d45c07e9c30d136e9d97",
+      "provider": "crossref",
+      "run_id": "e6771935098147c4b75900ea50c1de86",
+      "round": 1,
+      "label": "unknown",
+      "reason": "Author-response title alone does not reveal the study’s intervention or findings.",
+      "evidence_quote": "",
+      "model_label": "unknown",
+      "evidence_scope": "title and bounded provider abstract/description excerpts",
+      "abstract_chars_reviewed": 0,
+      "description_chars_reviewed": 0
+    },
+    {
+      "source_ref": "crossref:10.5220/0013066600003838",
+      "version": "d41c35bc46a03c383f54",
+      "provider": "crossref",
+      "run_id": "e6771935098147c4b75900ea50c1de86",
+      "round": 1,
+      "label": "partial",
+      "reason": "Addresses faithful text generation and attribution, but available metadata does not establish an input-context improvement intervention.",
+      "evidence_quote": "",
+      "model_label": "partial",
+      "evidence_scope": "title and bounded provider abstract/description excerpts",
+      "abstract_chars_reviewed": 0,
+      "description_chars_reviewed": 0
+    },
+    {
+      "source_ref": "crossref:10.65521/mjret.v12i2.2730",
+      "version": "05148ae8edd11b9b57c4",
+      "provider": "crossref",
+      "run_id": "e6771935098147c4b75900ea50c1de86",
+      "round": 1,
+      "label": "partial",
+      "reason": "Discusses contextual learning and retrieval-augmented generation, but excerpt emphasizes architectures and broad methods rather than measured input-context effects.",
+      "evidence_quote": "",
+      "model_label": "partial",
+      "evidence_scope": "title and bounded provider abstract/description excerpts",
+      "abstract_chars_reviewed": 900,
+      "description_chars_reviewed": 0
+    },
+    {
+      "source_ref": "crossref:10.2139/ssrn.4732705",
+      "version": "82b9885c15fb9b57c938",
+      "provider": "crossref",
+      "run_id": "e6771935098147c4b75900ea50c1de86",
+      "round": 1,
+      "label": "partial",
+      "reason": "LLM-generated test cases are adjacent generation work; title does not show improved input context or its impact.",
+      "evidence_quote": "",
+      "model_label": "partial",
+      "evidence_scope": "title and bounded provider abstract/description excerpts",
+      "abstract_chars_reviewed": 0,
+      "description_chars_reviewed": 0
+    },
+    {
+      "source_ref": "crossref:10.2139/ssrn.5400861",
+      "version": "805f5bb02dcafe391ec8",
+      "provider": "crossref",
+      "run_id": "e6771935098147c4b75900ea50c1de86",
+      "round": 1,
+      "label": "partial",
+      "reason": "Concerns text-generation quality, but title alone does not identify context improvement as the intervention.",
+      "evidence_quote": "",
+      "model_label": "partial",
+      "evidence_scope": "title and bounded provider abstract/description excerpts",
+      "abstract_chars_reviewed": 0,
+      "description_chars_reviewed": 0
+    },
+    {
+      "source_ref": "crossref:10.5220/0013345200003944",
+      "version": "d76a8856277830e2fc6e",
+      "provider": "crossref",
+      "run_id": "e6771935098147c4b75900ea50c1de86",
+      "round": 1,
+      "label": "partial",
+      "reason": "Applies LLMs to test-input generation, without evidence that context quality is improved or evaluated.",
+      "evidence_quote": "",
+      "model_label": "partial",
+      "evidence_scope": "title and bounded provider abstract/description excerpts",
+      "abstract_chars_reviewed": 0,
+      "description_chars_reviewed": 0
+    },
+    {
+      "source_ref": "crossref:10.65521/intjournalrecadvengtech.v14i2.2710",
+      "version": "6eba52b184233e9d6891",
+      "provider": "crossref",
+      "run_id": "e6771935098147c4b75900ea50c1de86",
+      "round": 1,
+      "label": "partial",
+      "reason": "Mentions prompt optimization and contextually relevant outputs, but focuses broadly on architecture and fine-tuning, not clearly input-context effects.",
+      "evidence_quote": "",
+      "model_label": "partial",
+      "evidence_scope": "title and bounded provider abstract/description excerpts",
+      "abstract_chars_reviewed": 900,
+      "description_chars_reviewed": 0
+    },
+    {
+      "source_ref": "crossref:10.36227/techrxiv.173687815.53512548/v1",
+      "version": "d544d31ca5945b0fe931",
+      "provider": "crossref",
+      "run_id": "e6771935098147c4b75900ea50c1de86",
+      "round": 1,
+      "label": "partial",
+      "reason": "Uses domain-specific knowledge and data to support context-aware test generation, but excerpt does not clearly evaluate improved supplied context.",
+      "evidence_quote": "",
+      "model_label": "partial",
+      "evidence_scope": "title and bounded provider abstract/description excerpts",
+      "abstract_chars_reviewed": 900,
+      "description_chars_reviewed": 0
+    },
+    {
+      "source_ref": "crossref:10.22541/au.172538388.88528596/v1",
+      "version": "8a2424997abe98f41010",
+      "provider": "crossref",
+      "run_id": "e6771935098147c4b75900ea50c1de86",
+      "round": 1,
+      "label": "relevant",
+      "reason": "Tests prompt interventions and reports their effects on generated relevance, diversity, and coherence.",
+      "evidence_quote": "different prompt strategies distinctly influenced the generated text",
+      "model_label": "relevant",
+      "evidence_scope": "title and bounded provider abstract/description excerpts",
+      "abstract_chars_reviewed": 900,
+      "description_chars_reviewed": 0
+    },
+    {
+      "source_ref": "crossref:10.36227/techrxiv.173143073.32359635/v1",
+      "version": "fe102836c56e19bd9f9c",
+      "provider": "crossref",
+      "run_id": "e6771935098147c4b75900ea50c1de86",
+      "round": 1,
+      "label": "relevant",
+      "reason": "Tests demonstration selection for in-context learning and reports improved code-generation performance.",
+      "evidence_quote": "enhances code generation by leveraging in-context learning and demonstration selection",
+      "model_label": "relevant",
+      "evidence_scope": "title and bounded provider abstract/description excerpts",
+      "abstract_chars_reviewed": 900,
+      "description_chars_reviewed": 0
+    },
+    {
+      "source_ref": "crossref:10.1145/3749421.3749427",
+      "version": "2bf8bd78d7a2d931f108",
+      "provider": "crossref",
+      "run_id": "0031dbfd942e4e689d1a0e4692f91d06",
+      "round": 2,
+      "label": "partial",
+      "reason": "Covers prompting and RAG, but title alone does not show evaluation of context improvements on generation quality.",
+      "evidence_quote": "",
+      "model_label": "partial",
+      "evidence_scope": "title and bounded provider abstract/description excerpts",
+      "abstract_chars_reviewed": 0,
+      "description_chars_reviewed": 0
+    },
+    {
+      "source_ref": "crossref:10.31979/etd.95qw-ugvm",
+      "version": "08e2e03dbde5c41bcd74",
+      "provider": "crossref",
+      "run_id": "0031dbfd942e4e689d1a0e4692f91d06",
+      "round": 2,
+      "label": "partial",
+      "reason": "Context engineering for RAG is adjacent, but no outcome evaluation is specified.",
+      "evidence_quote": "",
+      "model_label": "partial",
+      "evidence_scope": "title and bounded provider abstract/description excerpts",
+      "abstract_chars_reviewed": 0,
+      "description_chars_reviewed": 0
+    },
+    {
+      "source_ref": "crossref:10.5040/bci-0kgx.pt-004",
+      "version": "2e9f28ce0c65e93b4b44",
+      "provider": "crossref",
+      "run_id": "0031dbfd942e4e689d1a0e4692f91d06",
+      "round": 2,
+      "label": "irrelevant",
+      "reason": "Generic customization and prompt-engineering title gives no evidence about input-context effects on generation.",
+      "evidence_quote": "",
+      "model_label": "irrelevant",
+      "evidence_scope": "title and bounded provider abstract/description excerpts",
+      "abstract_chars_reviewed": 0,
+      "description_chars_reviewed": 0
+    },
+    {
+      "source_ref": "crossref:10.5040/bci-0kgx.ch-010",
+      "version": "42efefc8efab05921150",
+      "provider": "crossref",
+      "run_id": "0031dbfd942e4e689d1a0e4692f91d06",
+      "round": 2,
+      "label": "partial",
+      "reason": "Prompt best practices may relate to preparing model inputs, but title gives no evidence of measured generation outcomes.",
+      "evidence_quote": "",
+      "model_label": "partial",
+      "evidence_scope": "title and bounded provider abstract/description excerpts",
+      "abstract_chars_reviewed": 0,
+      "description_chars_reviewed": 0
+    },
+    {
+      "source_ref": "crossref:10.2139/ssrn.6754124",
+      "version": "acc87ada7683c4757c45",
+      "provider": "crossref",
+      "run_id": "0031dbfd942e4e689d1a0e4692f91d06",
+      "round": 2,
+      "label": "partial",
+      "reason": "Applies RAG to medical record assessment and mentions hallucination mitigation, but evaluates record quality rather than generated-output quality.",
+      "evidence_quote": "",
+      "model_label": "partial",
+      "evidence_scope": "title and bounded provider abstract/description excerpts",
+      "abstract_chars_reviewed": 900,
+      "description_chars_reviewed": 0
+    },
+    {
+      "source_ref": "crossref:10.54254/2755-2721/2025.tj23129",
+      "version": "2a19060bcdfb94895a56",
+      "provider": "crossref",
+      "run_id": "0031dbfd942e4e689d1a0e4692f91d06",
+      "round": 2,
+      "label": "relevant",
+      "reason": "Describes improving prompts iteratively in RAG to improve downstream generation; excerpt directly addresses the intervention and outcome.",
+      "evidence_quote": "proposes prompt pruning and prompt enhancement as innovative solutions to improve prompts iteratively for bette",
+      "model_label": "relevant",
+      "evidence_scope": "title and bounded provider abstract/description excerpts",
+      "abstract_chars_reviewed": 900,
+      "description_chars_reviewed": 0
+    },
+    {
+      "source_ref": "crossref:10.59350/72j34-60981",
+      "version": "cbf27cd00586d8ff0d5f",
+      "provider": "crossref",
+      "run_id": "0031dbfd942e4e689d1a0e4692f91d06",
+      "round": 2,
+      "label": "partial",
+      "reason": "Prompt engineering in RAG is adjacent, but the excerpt provides no evidence about context changes or generation outcomes.",
+      "evidence_quote": "",
+      "model_label": "partial",
+      "evidence_scope": "title and bounded provider abstract/description excerpts",
+      "abstract_chars_reviewed": 4,
+      "description_chars_reviewed": 0
+    },
+    {
+      "source_ref": "crossref:10.59350/try40-x4947",
+      "version": "c060e6c19d7e8ee66ab6",
+      "provider": "crossref",
+      "run_id": "0031dbfd942e4e689d1a0e4692f91d06",
+      "round": 2,
+      "label": "partial",
+      "reason": "Prompt engineering in RAG is adjacent, but the excerpt provides no evidence about context changes or generation outcomes.",
+      "evidence_quote": "",
+      "model_label": "partial",
+      "evidence_scope": "title and bounded provider abstract/description excerpts",
+      "abstract_chars_reviewed": 4,
+      "description_chars_reviewed": 0
+    },
+    {
+      "source_ref": "crossref:10.1109/access.2026.3731386",
+      "version": "5300d1ce3f6800213222",
+      "provider": "crossref",
+      "run_id": "0031dbfd942e4e689d1a0e4692f91d06",
+      "round": 2,
+      "label": "partial",
+      "reason": "Uses RAG and prompt engineering for assessment, but supplied title does not establish an evaluation of context improvement.",
+      "evidence_quote": "",
+      "model_label": "partial",
+      "evidence_scope": "title and bounded provider abstract/description excerpts",
+      "abstract_chars_reviewed": 0,
+      "description_chars_reviewed": 0
+    },
+    {
+      "source_ref": "crossref:10.1142/9789819827602_0006",
+      "version": "c0b6ef066f30c33ab324",
+      "provider": "crossref",
+      "run_id": "0031dbfd942e4e689d1a0e4692f91d06",
+      "round": 2,
+      "label": "partial",
+      "reason": "Query transformation and prompt engineering may prepare model input, but no generation-quality impact is evident.",
+      "evidence_quote": "",
+      "model_label": "partial",
+      "evidence_scope": "title and bounded provider abstract/description excerpts",
+      "abstract_chars_reviewed": 0,
+      "description_chars_reviewed": 0
+    },
+    {
+      "source_ref": "crossref:10.14711/thesis-hdl174632",
+      "version": "72a525de54595fcf462f",
+      "provider": "crossref",
+      "run_id": "0031dbfd942e4e689d1a0e4692f91d06",
+      "round": 2,
+      "label": "partial",
+      "reason": "Retrieval context constraints for grounded RAG generation are relevantly adjacent, but title alone gives no outcome evidence.",
+      "evidence_quote": "",
+      "model_label": "partial",
+      "evidence_scope": "title and bounded provider abstract/description excerpts",
+      "abstract_chars_reviewed": 0,
+      "description_chars_reviewed": 0
+    },
+    {
+      "source_ref": "crossref:10.5121/csit.2024.141402",
+      "version": "87993f1736cd5baa0e3c",
+      "provider": "crossref",
+      "run_id": "0031dbfd942e4e689d1a0e4692f91d06",
+      "round": 2,
+      "label": "relevant",
+      "reason": "Reports a self-reflective RAG intervention intended to reduce hallucination in generated outputs and mentions experiments.",
+      "evidence_quote": "To solve this problem, we introduced a series of selfreflective nodes, creating a self-RAG model.",
+      "model_label": "relevant",
+      "evidence_scope": "title and bounded provider abstract/description excerpts",
+      "abstract_chars_reviewed": 900,
+      "description_chars_reviewed": 0
+    },
+    {
+      "source_ref": "crossref:10.5040/bci-0kgx.ch-006",
+      "version": "8de346c08037bc77a5f5",
+      "provider": "crossref",
+      "run_id": "0031dbfd942e4e689d1a0e4692f91d06",
+      "round": 2,
+      "label": "irrelevant",
+      "reason": "Context retrieval is named, but there is no evidence of generative models or generation outcomes.",
+      "evidence_quote": "",
+      "model_label": "irrelevant",
+      "evidence_scope": "title and bounded provider abstract/description excerpts",
+      "abstract_chars_reviewed": 0,
+      "description_chars_reviewed": 0
+    },
+    {
+      "source_ref": "crossref:10.1007/s00117-025-01416-2",
+      "version": "bab3219d9b2d8911b2e8",
+      "provider": "crossref",
+      "run_id": "0031dbfd942e4e689d1a0e4692f91d06",
+      "round": 2,
+      "label": "unknown",
+      "reason": "The German title indicates LLM interaction optimization but supplies insufficient detail about input context or generation outcomes.",
+      "evidence_quote": "",
+      "model_label": "unknown",
+      "evidence_scope": "title and bounded provider abstract/description excerpts",
+      "abstract_chars_reviewed": 0,
+      "description_chars_reviewed": 0
+    },
+    {
+      "source_ref": "crossref:10.5220/0012803100003767",
+      "version": "96f57e26d52749c941f2",
+      "provider": "crossref",
+      "run_id": "0031dbfd942e4e689d1a0e4692f91d06",
+      "round": 2,
+      "label": "partial",
+      "reason": "Prompt manipulation and RAG are adjacent, but title does not reveal whether context improvements or generation quality are evaluated.",
+      "evidence_quote": "",
+      "model_label": "partial",
+      "evidence_scope": "title and bounded provider abstract/description excerpts",
+      "abstract_chars_reviewed": 0,
+      "description_chars_reviewed": 0
+    },
+    {
+      "source_ref": "crossref:10.2139/ssrn.5412645",
+      "version": "e8f34ac540d549fe3879",
+      "provider": "crossref",
+      "run_id": "0031dbfd942e4e689d1a0e4692f91d06",
+      "round": 2,
+      "label": "partial",
+      "reason": "Studies prompt-injection defense in retrieval-augmented generation, adjacent to input preparation but not clearly context-quality improvement.",
+      "evidence_quote": "",
+      "model_label": "partial",
+      "evidence_scope": "title and bounded provider abstract/description excerpts",
+      "abstract_chars_reviewed": 0,
+      "description_chars_reviewed": 0
+    },
+    {
+      "source_ref": "crossref:10.2139/ssrn.5669662",
+      "version": "575206d3c64efb4e7b20",
+      "provider": "crossref",
+      "run_id": "0031dbfd942e4e689d1a0e4692f91d06",
+      "round": 2,
+      "label": "partial",
+      "reason": "Studies prompt-injection defense in retrieval-augmented generation, adjacent to input preparation but not clearly context-quality improvement.",
+      "evidence_quote": "",
+      "model_label": "partial",
+      "evidence_scope": "title and bounded provider abstract/description excerpts",
+      "abstract_chars_reviewed": 0,
+      "description_chars_reviewed": 0
+    },
+    {
+      "source_ref": "crossref:10.1007/979-8-8688-1808-0_9",
+      "version": "e6053c55e2da5ec4eb61",
+      "provider": "crossref",
+      "run_id": "0031dbfd942e4e689d1a0e4692f91d06",
+      "round": 2,
+      "label": "partial",
+      "reason": "Prompt templates structure LLM interactions, but title provides no evidence about measured generation-quality effects.",
+      "evidence_quote": "",
+      "model_label": "partial",
+      "evidence_scope": "title and bounded provider abstract/description excerpts",
+      "abstract_chars_reviewed": 0,
+      "description_chars_reviewed": 0
+    },
+    {
+      "source_ref": "crossref:10.36227/techrxiv.174060240.09460752/v1",
+      "version": "a8e3177e6683f9b2dc05",
+      "provider": "crossref",
+      "run_id": "0031dbfd942e4e689d1a0e4692f91d06",
+      "round": 2,
+      "label": "irrelevant",
+      "reason": "Evaluates document retrieval relevance, not the effect of supplied context on generated-output quality.",
+      "evidence_quote": "",
+      "model_label": "irrelevant",
+      "evidence_scope": "title and bounded provider abstract/description excerpts",
+      "abstract_chars_reviewed": 900,
+      "description_chars_reviewed": 0
+    },
+    {
+      "source_ref": "crossref:10.2139/ssrn.5097308",
+      "version": "9c03c0d14bd039ad4092",
+      "provider": "crossref",
+      "run_id": "0031dbfd942e4e689d1a0e4692f91d06",
+      "round": 2,
+      "label": "partial",
+      "reason": "Applies prompt engineering and RAG in a vision-language construction task, but title does not establish context-impact evaluation.",
+      "evidence_quote": "",
+      "model_label": "partial",
+      "evidence_scope": "title and bounded provider abstract/description excerpts",
+      "abstract_chars_reviewed": 0,
+      "description_chars_reviewed": 0
+    }
+  ],
+  "sources": [
+    {
+      "source_ref": "crossref:10.22541/au.172538388.88528596/v1",
+      "provider": "crossref",
+      "run_id": "e6771935098147c4b75900ea50c1de86",
+      "version": "8a2424997abe98f41010",
+      "title": "Game-Theoretic Approaches for Step-wise Controllable Text Generation in Large Language Models",
+      "year": 2024,
+      "abstract_chars": 1200,
+      "relevance": {
+        "policy_version": "scout-query-relevance-v1",
+        "score": 54.909249,
+        "score_kind": "uncalibrated_heuristic_not_probability",
+        "facet_tier": 1,
+        "matched_terms": [
+          "large language models",
+          "text generation"
+        ],
+        "missing_terms": [
+          "input context",
+          "generation quality"
+        ],
+        "matched_fields": {
+          "large language models": [
+            "title"
+          ],
+          "text generation": [
+            "title",
+            "abstract"
+          ]
+        },
+        "matched_required_facets": [
+          "Outcome: generated text quality"
+        ],
+        "missing_required_facets": [
+          "Object and intervention: improved context supplied as model input"
+        ],
+        "matched_optional_facets": [
+          "Generative language model family"
+        ],
+        "missing_optional_facets": [
+          "Context preparation approaches"
+        ],
+        "facet_evidence": [
+          {
+            "name": "Object and intervention: improved context supplied as model input",
+            "kind": "required",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Outcome: generated text quality",
+            "kind": "required",
+            "matched": true,
+            "matched_aliases": [
+              "relevance",
+              "coherence"
+            ]
+          },
+          {
+            "name": "Generative language model family",
+            "kind": "optional",
+            "matched": true,
+            "matched_aliases": [
+              "large language models",
+              "language models"
+            ]
+          },
+          {
+            "name": "Context preparation approaches",
+            "kind": "optional",
+            "matched": false,
+            "matched_aliases": []
+          }
+        ],
+        "missing_content": [
+          "description"
+        ],
+        "supporting_text_available": true,
+        "evaluated_fields": [
+          "title",
+          "abstract",
+          "description"
+        ],
+        "truncated_fields": [],
+        "omitted_query_terms": 0,
+        "omitted_query_tokens": 0,
+        "evidence_scope": "title and bounded provider abstract/description excerpts",
+        "components": {
+          "lexical_bm25_like": 7.917455,
+          "query_token_coverage": 0.75,
+          "required_facet_coverage": 0.5,
+          "optional_facet_coverage": 0.5
+        },
+        "rrf_tie_break_score": 0.027583600982429624,
+        "required_facets_are_hard_filters": false,
+        "label": "relevant",
+        "reason": "Tests prompt interventions and reports their effects on generated relevance, diversity, and coherence.",
+        "evidence_quote": "different prompt strategies distinctly influenced the generated text",
+        "reviewed_version": "8a2424997abe98f41010"
+      },
+      "retrieval_round": 1
+    },
+    {
+      "source_ref": "crossref:10.26434/chemrxiv-2024-9g2w2",
+      "provider": "crossref",
+      "run_id": "e6771935098147c4b75900ea50c1de86",
+      "version": "c34ca0574056ab847e6d",
+      "title": "Developing Large Language Models for Quantum Chemistry Simulation Input Generation",
+      "year": 2024,
+      "abstract_chars": 1200,
+      "relevance": {
+        "policy_version": "scout-query-relevance-v1",
+        "score": 33.149086,
+        "score_kind": "uncalibrated_heuristic_not_probability",
+        "facet_tier": 0,
+        "matched_terms": [
+          "large language models"
+        ],
+        "missing_terms": [
+          "input context",
+          "text generation",
+          "generation quality"
+        ],
+        "matched_fields": {
+          "large language models": [
+            "title",
+            "abstract"
+          ]
+        },
+        "matched_required_facets": [],
+        "missing_required_facets": [
+          "Object and intervention: improved context supplied as model input",
+          "Outcome: generated text quality"
+        ],
+        "matched_optional_facets": [
+          "Generative language model family"
+        ],
+        "missing_optional_facets": [
+          "Context preparation approaches"
+        ],
+        "facet_evidence": [
+          {
+            "name": "Object and intervention: improved context supplied as model input",
+            "kind": "required",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Outcome: generated text quality",
+            "kind": "required",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Generative language model family",
+            "kind": "optional",
+            "matched": true,
+            "matched_aliases": [
+              "large language models",
+              "language models"
+            ]
+          },
+          {
+            "name": "Context preparation approaches",
+            "kind": "optional",
+            "matched": false,
+            "matched_aliases": []
+          }
+        ],
+        "missing_content": [
+          "description"
+        ],
+        "supporting_text_available": true,
+        "evaluated_fields": [
+          "title",
+          "abstract",
+          "description"
+        ],
+        "truncated_fields": [],
+        "omitted_query_terms": 0,
+        "omitted_query_tokens": 0,
+        "evidence_scope": "title and bounded provider abstract/description excerpts",
+        "components": {
+          "lexical_bm25_like": 6.469601,
+          "query_token_coverage": 0.625,
+          "required_facet_coverage": 0,
+          "optional_facet_coverage": 0.5
+        },
+        "rrf_tie_break_score": 0.0293236301369863,
+        "required_facets_are_hard_filters": false,
+        "label": "relevant",
+        "reason": "Evaluates prompt engineering and retrieval-augmented generation as interventions for improving generated quantum-chemistry inputs.",
+        "evidence_quote": "we explore the impact of prompt engineering, retrieval-augmented generation",
+        "reviewed_version": "c34ca0574056ab847e6d"
+      },
+      "retrieval_round": 1
+    },
+    {
+      "source_ref": "crossref:10.36227/techrxiv.173143073.32359635/v1",
+      "provider": "crossref",
+      "run_id": "e6771935098147c4b75900ea50c1de86",
+      "version": "fe102836c56e19bd9f9c",
+      "title": "DemoCraft: Using In-Context Learning to Improve Code Generation in Large Language Models",
+      "year": 2024,
+      "abstract_chars": 936,
+      "relevance": {
+        "policy_version": "scout-query-relevance-v1",
+        "score": 33.156408,
+        "score_kind": "uncalibrated_heuristic_not_probability",
+        "facet_tier": 0,
+        "matched_terms": [
+          "large language models"
+        ],
+        "missing_terms": [
+          "input context",
+          "text generation",
+          "generation quality"
+        ],
+        "matched_fields": {
+          "large language models": [
+            "title",
+            "abstract"
+          ]
+        },
+        "matched_required_facets": [],
+        "missing_required_facets": [
+          "Object and intervention: improved context supplied as model input",
+          "Outcome: generated text quality"
+        ],
+        "matched_optional_facets": [
+          "Generative language model family"
+        ],
+        "missing_optional_facets": [
+          "Context preparation approaches"
+        ],
+        "facet_evidence": [
+          {
+            "name": "Object and intervention: improved context supplied as model input",
+            "kind": "required",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Outcome: generated text quality",
+            "kind": "required",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Generative language model family",
+            "kind": "optional",
+            "matched": true,
+            "matched_aliases": [
+              "large language models",
+              "language models"
+            ]
+          },
+          {
+            "name": "Context preparation approaches",
+            "kind": "optional",
+            "matched": false,
+            "matched_aliases": []
+          }
+        ],
+        "missing_content": [
+          "description"
+        ],
+        "supporting_text_available": true,
+        "evaluated_fields": [
+          "title",
+          "abstract",
+          "description"
+        ],
+        "truncated_fields": [],
+        "omitted_query_terms": 0,
+        "omitted_query_tokens": 0,
+        "evidence_scope": "title and bounded provider abstract/description excerpts",
+        "components": {
+          "lexical_bm25_like": 6.475078,
+          "query_token_coverage": 0.625,
+          "required_facet_coverage": 0,
+          "optional_facet_coverage": 0.5
+        },
+        "rrf_tie_break_score": 0.026992753623188405,
+        "required_facets_are_hard_filters": false,
+        "label": "relevant",
+        "reason": "Tests demonstration selection for in-context learning and reports improved code-generation performance.",
+        "evidence_quote": "enhances code generation by leveraging in-context learning and demonstration selection",
+        "reviewed_version": "fe102836c56e19bd9f9c"
+      },
+      "retrieval_round": 1
+    },
+    {
+      "source_ref": "crossref:10.5121/csit.2024.141402",
+      "provider": "crossref",
+      "run_id": "0031dbfd942e4e689d1a0e4692f91d06",
+      "version": "87993f1736cd5baa0e3c",
+      "title": "A Self-Reflective Retrieval Augmented Generation System to Eliminate Hallucination in LLM Generation",
+      "year": 2024,
+      "abstract_chars": 996,
+      "relevance": {
+        "policy_version": "scout-query-relevance-v1",
+        "score": 18.923874,
+        "score_kind": "uncalibrated_heuristic_not_probability",
+        "facet_tier": 0,
+        "matched_terms": [],
+        "missing_terms": [
+          "large language models",
+          "input context",
+          "text generation",
+          "generation quality"
+        ],
+        "matched_fields": {},
+        "matched_required_facets": [],
+        "missing_required_facets": [
+          "Object and intervention: improved context supplied as model input",
+          "Outcome: generated text quality"
+        ],
+        "matched_optional_facets": [],
+        "missing_optional_facets": [
+          "Generative language model family",
+          "Context preparation approaches"
+        ],
+        "facet_evidence": [
+          {
+            "name": "Object and intervention: improved context supplied as model input",
+            "kind": "required",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Outcome: generated text quality",
+            "kind": "required",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Generative language model family",
+            "kind": "optional",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Context preparation approaches",
+            "kind": "optional",
+            "matched": false,
+            "matched_aliases": []
+          }
+        ],
+        "missing_content": [
+          "description"
+        ],
+        "supporting_text_available": true,
+        "evaluated_fields": [
+          "title",
+          "abstract",
+          "description"
+        ],
+        "truncated_fields": [],
+        "omitted_query_terms": 0,
+        "omitted_query_tokens": 0,
+        "evidence_scope": "title and bounded provider abstract/description excerpts",
+        "components": {
+          "lexical_bm25_like": 2.737791,
+          "query_token_coverage": 0.5,
+          "required_facet_coverage": 0,
+          "optional_facet_coverage": 0
+        },
+        "rrf_tie_break_score": 0.030017921146953404,
+        "required_facets_are_hard_filters": false,
+        "label": "relevant",
+        "reason": "Reports a self-reflective RAG intervention intended to reduce hallucination in generated outputs and mentions experiments.",
+        "evidence_quote": "To solve this problem, we introduced a series of selfreflective nodes, creating a self-RAG model.",
+        "reviewed_version": "87993f1736cd5baa0e3c"
+      },
+      "retrieval_round": 2
+    },
+    {
+      "source_ref": "crossref:10.54254/2755-2721/2025.tj23129",
+      "provider": "crossref",
+      "run_id": "0031dbfd942e4e689d1a0e4692f91d06",
+      "version": "2a19060bcdfb94895a56",
+      "title": "PromptCraft-RAG: Context-based Prompt Enhancement of Refining Query for Retrieval Augmented Generation",
+      "year": 2025,
+      "abstract_chars": 1200,
+      "relevance": {
+        "policy_version": "scout-query-relevance-v1",
+        "score": 17.617338,
+        "score_kind": "uncalibrated_heuristic_not_probability",
+        "facet_tier": 0,
+        "matched_terms": [],
+        "missing_terms": [
+          "large language models",
+          "input context",
+          "text generation",
+          "generation quality"
+        ],
+        "matched_fields": {},
+        "matched_required_facets": [],
+        "missing_required_facets": [
+          "Object and intervention: improved context supplied as model input",
+          "Outcome: generated text quality"
+        ],
+        "matched_optional_facets": [],
+        "missing_optional_facets": [
+          "Generative language model family",
+          "Context preparation approaches"
+        ],
+        "facet_evidence": [
+          {
+            "name": "Object and intervention: improved context supplied as model input",
+            "kind": "required",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Outcome: generated text quality",
+            "kind": "required",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Generative language model family",
+            "kind": "optional",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Context preparation approaches",
+            "kind": "optional",
+            "matched": false,
+            "matched_aliases": []
+          }
+        ],
+        "missing_content": [
+          "description"
+        ],
+        "supporting_text_available": true,
+        "evaluated_fields": [
+          "title",
+          "abstract",
+          "description"
+        ],
+        "truncated_fields": [],
+        "omitted_query_terms": 0,
+        "omitted_query_tokens": 0,
+        "evidence_scope": "title and bounded provider abstract/description excerpts",
+        "components": {
+          "lexical_bm25_like": 3.252815,
+          "query_token_coverage": 0.375,
+          "required_facet_coverage": 0,
+          "optional_facet_coverage": 0
+        },
+        "rrf_tie_break_score": 0.030776515151515152,
+        "required_facets_are_hard_filters": false,
+        "label": "relevant",
+        "reason": "Describes improving prompts iteratively in RAG to improve downstream generation; excerpt directly addresses the intervention and outcome.",
+        "evidence_quote": "proposes prompt pruning and prompt enhancement as innovative solutions to improve prompts iteratively for bette",
+        "reviewed_version": "2a19060bcdfb94895a56"
+      },
+      "retrieval_round": 2
+    }
+  ],
+  "related_sources": [
+    {
+      "source_ref": "crossref:10.1039/d4dd00366g/v1/review1",
+      "provider": "crossref",
+      "run_id": "e6771935098147c4b75900ea50c1de86",
+      "version": "c1b7ad6557508698644b",
+      "title": "Review for \"Developing Large Language Models for Quantum Chemistry Simulation Input Generation\"",
+      "year": 2024,
+      "abstract_chars": 0,
+      "relevance": {
+        "label": "unknown",
+        "reason": "Review notice provides no evidence about the underlying study’s context intervention or generation outcomes.",
+        "evidence_quote": "",
+        "reviewed_version": "c1b7ad6557508698644b",
+        "evidence_scope": "title and bounded provider abstract/description excerpts"
+      },
+      "retrieval_round": 1
+    },
+    {
+      "source_ref": "crossref:10.1039/d4dd00366g/v1/review3",
+      "provider": "crossref",
+      "run_id": "e6771935098147c4b75900ea50c1de86",
+      "version": "65a3006b130badb1b069",
+      "title": "Review for \"Developing Large Language Models for Quantum Chemistry Simulation Input Generation\"",
+      "year": 2024,
+      "abstract_chars": 0,
+      "relevance": {
+        "label": "unknown",
+        "reason": "Review notice provides no evidence about the underlying study’s context intervention or generation outcomes.",
+        "evidence_quote": "",
+        "reviewed_version": "65a3006b130badb1b069",
+        "evidence_scope": "title and bounded provider abstract/description excerpts"
+      },
+      "retrieval_round": 1
+    },
+    {
+      "source_ref": "crossref:10.1039/d4dd00366g/v1/review2",
+      "provider": "crossref",
+      "run_id": "e6771935098147c4b75900ea50c1de86",
+      "version": "eaee2515ff5e28f56b5a",
+      "title": "Review for \"Developing Large Language Models for Quantum Chemistry Simulation Input Generation\"",
+      "year": 2024,
+      "abstract_chars": 0,
+      "relevance": {
+        "label": "unknown",
+        "reason": "Review notice provides no evidence about the underlying study’s context intervention or generation outcomes.",
+        "evidence_quote": "",
+        "reviewed_version": "eaee2515ff5e28f56b5a",
+        "evidence_scope": "title and bounded provider abstract/description excerpts"
+      },
+      "retrieval_round": 1
+    },
+    {
+      "source_ref": "crossref:10.5220/0013673800003985",
+      "provider": "crossref",
+      "run_id": "e6771935098147c4b75900ea50c1de86",
+      "version": "2f44da1e33e4520ef97c",
+      "title": "Multimodal Large Language Models for Portuguese Alternative Text Generation for Images",
+      "year": 2025,
+      "abstract_chars": 0,
+      "relevance": {
+        "label": "partial",
+        "reason": "Generates image descriptions with multimodal LLMs, but metadata does not indicate evaluation of improving supplied context.",
+        "evidence_quote": "",
+        "reviewed_version": "2f44da1e33e4520ef97c",
+        "evidence_scope": "title and bounded provider abstract/description excerpts"
+      },
+      "retrieval_round": 1
+    },
+    {
+      "source_ref": "crossref:10.36227/techrxiv.175976382.27942690/v1",
+      "provider": "crossref",
+      "run_id": "e6771935098147c4b75900ea50c1de86",
+      "version": "ef0843d18c0b419caa8d",
+      "title": "Automated Text-Generation Pipeline with Langchain, Large Language Models and Vector Stores",
+      "year": 2025,
+      "abstract_chars": 789,
+      "relevance": {
+        "label": "partial",
+        "reason": "Describes a retrieval-based text-generation pipeline and contextual relevance, but provides no clear evaluation of context improvement’s effect.",
+        "evidence_quote": "",
+        "reviewed_version": "ef0843d18c0b419caa8d",
+        "evidence_scope": "title and bounded provider abstract/description excerpts"
+      },
+      "retrieval_round": 1
+    },
+    {
+      "source_ref": "crossref:10.1039/d4dd00366g/v1/decision1",
+      "provider": "crossref",
+      "run_id": "e6771935098147c4b75900ea50c1de86",
+      "version": "5c83195cd9a5d9cfdd0c",
+      "title": "Decision letter for \"Developing Large Language Models for Quantum Chemistry Simulation Input Generation\"",
+      "year": 2024,
+      "abstract_chars": 0,
+      "relevance": {
+        "label": "unknown",
+        "reason": "Decision-letter title alone does not reveal the study’s intervention or findings.",
+        "evidence_quote": "",
+        "reviewed_version": "5c83195cd9a5d9cfdd0c",
+        "evidence_scope": "title and bounded provider abstract/description excerpts"
+      },
+      "retrieval_round": 1
+    },
+    {
+      "source_ref": "crossref:10.1039/d4dd00366g/v3/decision1",
+      "provider": "crossref",
+      "run_id": "e6771935098147c4b75900ea50c1de86",
+      "version": "a3634d3890f751b44f94",
+      "title": "Decision letter for \"Developing Large Language Models for Quantum Chemistry Simulation Input Generation\"",
+      "year": 2025,
+      "abstract_chars": 0,
+      "relevance": {
+        "label": "unknown",
+        "reason": "Decision-letter title alone does not reveal the study’s intervention or findings.",
+        "evidence_quote": "",
+        "reviewed_version": "a3634d3890f751b44f94",
+        "evidence_scope": "title and bounded provider abstract/description excerpts"
+      },
+      "retrieval_round": 1
+    },
+    {
+      "source_ref": "crossref:10.1039/d4dd00366g/v2/decision1",
+      "provider": "crossref",
+      "run_id": "e6771935098147c4b75900ea50c1de86",
+      "version": "32b788f1732e8ae0d56a",
+      "title": "Decision letter for \"Developing Large Language Models for Quantum Chemistry Simulation Input Generation\"",
+      "year": 2025,
+      "abstract_chars": 0,
+      "relevance": {
+        "label": "unknown",
+        "reason": "Decision-letter title alone does not reveal the study’s intervention or findings.",
+        "evidence_quote": "",
+        "reviewed_version": "32b788f1732e8ae0d56a",
+        "evidence_scope": "title and bounded provider abstract/description excerpts"
+      },
+      "retrieval_round": 1
+    },
+    {
+      "source_ref": "crossref:10.1039/d4dd00366g/v2/response1",
+      "provider": "crossref",
+      "run_id": "e6771935098147c4b75900ea50c1de86",
+      "version": "09fcb4ca0af773fb907f",
+      "title": "Author response for \"Developing Large Language Models for Quantum Chemistry Simulation Input Generation\"",
+      "year": 2024,
+      "abstract_chars": 0,
+      "relevance": {
+        "label": "unknown",
+        "reason": "Author-response title alone does not reveal the study’s intervention or findings.",
+        "evidence_quote": "",
+        "reviewed_version": "09fcb4ca0af773fb907f",
+        "evidence_scope": "title and bounded provider abstract/description excerpts"
+      },
+      "retrieval_round": 1
+    },
+    {
+      "source_ref": "crossref:10.1039/d4dd00366g/v3/response1",
+      "provider": "crossref",
+      "run_id": "e6771935098147c4b75900ea50c1de86",
+      "version": "d45c07e9c30d136e9d97",
+      "title": "Author response for \"Developing Large Language Models for Quantum Chemistry Simulation Input Generation\"",
+      "year": 2025,
+      "abstract_chars": 0,
+      "relevance": {
+        "label": "unknown",
+        "reason": "Author-response title alone does not reveal the study’s intervention or findings.",
+        "evidence_quote": "",
+        "reviewed_version": "d45c07e9c30d136e9d97",
+        "evidence_scope": "title and bounded provider abstract/description excerpts"
+      },
+      "retrieval_round": 1
+    },
+    {
+      "source_ref": "crossref:10.5220/0013066600003838",
+      "provider": "crossref",
+      "run_id": "e6771935098147c4b75900ea50c1de86",
+      "version": "d41c35bc46a03c383f54",
+      "title": "Enhancing Answer Attribution for Faithful Text Generation with Large Language Models",
+      "year": 2024,
+      "abstract_chars": 0,
+      "relevance": {
+        "label": "partial",
+        "reason": "Addresses faithful text generation and attribution, but available metadata does not establish an input-context improvement intervention.",
+        "evidence_quote": "",
+        "reviewed_version": "d41c35bc46a03c383f54",
+        "evidence_scope": "title and bounded provider abstract/description excerpts"
+      },
+      "retrieval_round": 1
+    },
+    {
+      "source_ref": "crossref:10.65521/mjret.v12i2.2730",
+      "provider": "crossref",
+      "run_id": "e6771935098147c4b75900ea50c1de86",
+      "version": "05148ae8edd11b9b57c4",
+      "title": "Transformer-Based Large Language Models for Context-Aware Semantic Understanding and Domain-Specific Text Generation",
+      "year": 2025,
+      "abstract_chars": 1200,
+      "relevance": {
+        "label": "partial",
+        "reason": "Discusses contextual learning and retrieval-augmented generation, but excerpt emphasizes architectures and broad methods rather than measured input-context effects.",
+        "evidence_quote": "",
+        "reviewed_version": "05148ae8edd11b9b57c4",
+        "evidence_scope": "title and bounded provider abstract/description excerpts"
+      },
+      "retrieval_round": 1
+    },
+    {
+      "source_ref": "crossref:10.2139/ssrn.4732705",
+      "provider": "crossref",
+      "run_id": "e6771935098147c4b75900ea50c1de86",
+      "version": "82b9885c15fb9b57c938",
+      "title": "Enhancing Large Language Models for Text-to-Testcase Generation",
+      "year": 2024,
+      "abstract_chars": 0,
+      "relevance": {
+        "label": "partial",
+        "reason": "LLM-generated test cases are adjacent generation work; title does not show improved input context or its impact.",
+        "evidence_quote": "",
+        "reviewed_version": "82b9885c15fb9b57c938",
+        "evidence_scope": "title and bounded provider abstract/description excerpts"
+      },
+      "retrieval_round": 1
+    },
+    {
+      "source_ref": "crossref:10.2139/ssrn.5400861",
+      "provider": "crossref",
+      "run_id": "e6771935098147c4b75900ea50c1de86",
+      "version": "805f5bb02dcafe391ec8",
+      "title": "Diverse and High-Quality Text Generation Assisted by Large Language Models",
+      "year": 2025,
+      "abstract_chars": 0,
+      "relevance": {
+        "label": "partial",
+        "reason": "Concerns text-generation quality, but title alone does not identify context improvement as the intervention.",
+        "evidence_quote": "",
+        "reviewed_version": "805f5bb02dcafe391ec8",
+        "evidence_scope": "title and bounded provider abstract/description excerpts"
+      },
+      "retrieval_round": 1
+    },
+    {
+      "source_ref": "crossref:10.5220/0013345200003944",
+      "provider": "crossref",
+      "run_id": "e6771935098147c4b75900ea50c1de86",
+      "version": "d76a8856277830e2fc6e",
+      "title": "Automated Test Input Generation Based on Web User Interfaces via Large Language Models",
+      "year": 2025,
+      "abstract_chars": 0,
+      "relevance": {
+        "label": "partial",
+        "reason": "Applies LLMs to test-input generation, without evidence that context quality is improved or evaluated.",
+        "evidence_quote": "",
+        "reviewed_version": "d76a8856277830e2fc6e",
+        "evidence_scope": "title and bounded provider abstract/description excerpts"
+      },
+      "retrieval_round": 1
+    },
+    {
+      "source_ref": "crossref:10.65521/intjournalrecadvengtech.v14i2.2710",
+      "provider": "crossref",
+      "run_id": "e6771935098147c4b75900ea50c1de86",
+      "version": "6eba52b184233e9d6891",
+      "title": "Transformer-Driven Large Language Models for Context-Aware Semantic Reasoning and Domain-Specific Text Generation",
+      "year": 2025,
+      "abstract_chars": 1200,
+      "relevance": {
+        "label": "partial",
+        "reason": "Mentions prompt optimization and contextually relevant outputs, but focuses broadly on architecture and fine-tuning, not clearly input-context effects.",
+        "evidence_quote": "",
+        "reviewed_version": "6eba52b184233e9d6891",
+        "evidence_scope": "title and bounded provider abstract/description excerpts"
+      },
+      "retrieval_round": 1
+    },
+    {
+      "source_ref": "crossref:10.36227/techrxiv.173687815.53512548/v1",
+      "provider": "crossref",
+      "run_id": "e6771935098147c4b75900ea50c1de86",
+      "version": "d544d31ca5945b0fe931",
+      "title": "Leveraging Large Language Models for Context-Aware Test Case Generation in Multi-Component Systems",
+      "year": 2025,
+      "abstract_chars": 1200,
+      "relevance": {
+        "label": "partial",
+        "reason": "Uses domain-specific knowledge and data to support context-aware test generation, but excerpt does not clearly evaluate improved supplied context.",
+        "evidence_quote": "",
+        "reviewed_version": "d544d31ca5945b0fe931",
+        "evidence_scope": "title and bounded provider abstract/description excerpts"
+      },
+      "retrieval_round": 1
+    },
+    {
+      "source_ref": "crossref:10.1145/3749421.3749427",
+      "provider": "crossref",
+      "run_id": "0031dbfd942e4e689d1a0e4692f91d06",
+      "version": "2bf8bd78d7a2d931f108",
+      "title": "Prompt Engineering: Few Shots, Chain of Thought, and Retrieval-Augmented Generation",
+      "year": 2025,
+      "abstract_chars": 0,
+      "relevance": {
+        "label": "partial",
+        "reason": "Covers prompting and RAG, but title alone does not show evaluation of context improvements on generation quality.",
+        "evidence_quote": "",
+        "reviewed_version": "2bf8bd78d7a2d931f108",
+        "evidence_scope": "title and bounded provider abstract/description excerpts"
+      },
+      "retrieval_round": 2
+    },
+    {
+      "source_ref": "crossref:10.31979/etd.95qw-ugvm",
+      "provider": "crossref",
+      "run_id": "0031dbfd942e4e689d1a0e4692f91d06",
+      "version": "08e2e03dbde5c41bcd74",
+      "title": "Context Engineering for Local Retrieval-Augmented Generation",
+      "year": null,
+      "abstract_chars": 0,
+      "relevance": {
+        "label": "partial",
+        "reason": "Context engineering for RAG is adjacent, but no outcome evaluation is specified.",
+        "evidence_quote": "",
+        "reviewed_version": "08e2e03dbde5c41bcd74",
+        "evidence_scope": "title and bounded provider abstract/description excerpts"
+      },
+      "retrieval_round": 2
+    },
+    {
+      "source_ref": "crossref:10.5040/bci-0kgx.ch-010",
+      "provider": "crossref",
+      "run_id": "0031dbfd942e4e689d1a0e4692f91d06",
+      "version": "42efefc8efab05921150",
+      "title": "Prompt Engineering Guidelines and Best Practices",
+      "year": 2024,
+      "abstract_chars": 0,
+      "relevance": {
+        "label": "partial",
+        "reason": "Prompt best practices may relate to preparing model inputs, but title gives no evidence of measured generation outcomes.",
+        "evidence_quote": "",
+        "reviewed_version": "42efefc8efab05921150",
+        "evidence_scope": "title and bounded provider abstract/description excerpts"
+      },
+      "retrieval_round": 2
+    },
+    {
+      "source_ref": "crossref:10.2139/ssrn.6754124",
+      "provider": "crossref",
+      "run_id": "0031dbfd942e4e689d1a0e4692f91d06",
+      "version": "acc87ada7683c4757c45",
+      "title": "LLM-Driven Automated Framework for Intrinsic Medical Record Quality Assessment with Retrieval-Augmented Generation",
+      "year": 2026,
+      "abstract_chars": 1200,
+      "relevance": {
+        "label": "partial",
+        "reason": "Applies RAG to medical record assessment and mentions hallucination mitigation, but evaluates record quality rather than generated-output quality.",
+        "evidence_quote": "",
+        "reviewed_version": "acc87ada7683c4757c45",
+        "evidence_scope": "title and bounded provider abstract/description excerpts"
+      },
+      "retrieval_round": 2
+    },
+    {
+      "source_ref": "crossref:10.59350/72j34-60981",
+      "provider": "crossref",
+      "run_id": "0031dbfd942e4e689d1a0e4692f91d06",
+      "version": "cbf27cd00586d8ff0d5f",
+      "title": "Prompt engineering with Retrieval Augmented Generation systems - tread with caution!",
+      "year": 2024,
+      "abstract_chars": 4,
+      "relevance": {
+        "label": "partial",
+        "reason": "Prompt engineering in RAG is adjacent, but the excerpt provides no evidence about context changes or generation outcomes.",
+        "evidence_quote": "",
+        "reviewed_version": "cbf27cd00586d8ff0d5f",
+        "evidence_scope": "title and bounded provider abstract/description excerpts"
+      },
+      "retrieval_round": 2
+    },
+    {
+      "source_ref": "crossref:10.59350/try40-x4947",
+      "provider": "crossref",
+      "run_id": "0031dbfd942e4e689d1a0e4692f91d06",
+      "version": "c060e6c19d7e8ee66ab6",
+      "title": "Prompt engineering with Retrieval Augmented Generation systems - tread with caution!",
+      "year": 2024,
+      "abstract_chars": 4,
+      "relevance": {
+        "label": "partial",
+        "reason": "Prompt engineering in RAG is adjacent, but the excerpt provides no evidence about context changes or generation outcomes.",
+        "evidence_quote": "",
+        "reviewed_version": "c060e6c19d7e8ee66ab6",
+        "evidence_scope": "title and bounded provider abstract/description excerpts"
+      },
+      "retrieval_round": 2
+    },
+    {
+      "source_ref": "crossref:10.1109/access.2026.3731386",
+      "provider": "crossref",
+      "run_id": "0031dbfd942e4e689d1a0e4692f91d06",
+      "version": "5300d1ce3f6800213222",
+      "title": "A Hybrid LLM-Optimized Framework for Autonomous Viva Assessment Using Retrieval Augmented Generation and Prompt Engineering",
+      "year": 2026,
+      "abstract_chars": 0,
+      "relevance": {
+        "label": "partial",
+        "reason": "Uses RAG and prompt engineering for assessment, but supplied title does not establish an evaluation of context improvement.",
+        "evidence_quote": "",
+        "reviewed_version": "5300d1ce3f6800213222",
+        "evidence_scope": "title and bounded provider abstract/description excerpts"
+      },
+      "retrieval_round": 2
+    },
+    {
+      "source_ref": "crossref:10.1142/9789819827602_0006",
+      "provider": "crossref",
+      "run_id": "0031dbfd942e4e689d1a0e4692f91d06",
+      "version": "c0b6ef066f30c33ab324",
+      "title": "Query Transformation and Prompt Engineering",
+      "year": 2026,
+      "abstract_chars": 0,
+      "relevance": {
+        "label": "partial",
+        "reason": "Query transformation and prompt engineering may prepare model input, but no generation-quality impact is evident.",
+        "evidence_quote": "",
+        "reviewed_version": "c0b6ef066f30c33ab324",
+        "evidence_scope": "title and bounded provider abstract/description excerpts"
+      },
+      "retrieval_round": 2
+    },
+    {
+      "source_ref": "crossref:10.14711/thesis-hdl174632",
+      "provider": "crossref",
+      "run_id": "0031dbfd942e4e689d1a0e4692f91d06",
+      "version": "72a525de54595fcf462f",
+      "title": "Context-Constrained Retrieval for Evidence-Grounded Retrieval-Augmented Generation",
+      "year": null,
+      "abstract_chars": 0,
+      "relevance": {
+        "label": "partial",
+        "reason": "Retrieval context constraints for grounded RAG generation are relevantly adjacent, but title alone gives no outcome evidence.",
+        "evidence_quote": "",
+        "reviewed_version": "72a525de54595fcf462f",
+        "evidence_scope": "title and bounded provider abstract/description excerpts"
+      },
+      "retrieval_round": 2
+    },
+    {
+      "source_ref": "crossref:10.1007/s00117-025-01416-2",
+      "provider": "crossref",
+      "run_id": "0031dbfd942e4e689d1a0e4692f91d06",
+      "version": "bab3219d9b2d8911b2e8",
+      "title": "Optimierte Interaktion mit Large Language Models",
+      "year": 2025,
+      "abstract_chars": 0,
+      "relevance": {
+        "label": "unknown",
+        "reason": "The German title indicates LLM interaction optimization but supplies insufficient detail about input context or generation outcomes.",
+        "evidence_quote": "",
+        "reviewed_version": "bab3219d9b2d8911b2e8",
+        "evidence_scope": "title and bounded provider abstract/description excerpts"
+      },
+      "retrieval_round": 2
+    },
+    {
+      "source_ref": "crossref:10.5220/0012803100003767",
+      "provider": "crossref",
+      "run_id": "0031dbfd942e4e689d1a0e4692f91d06",
+      "version": "96f57e26d52749c941f2",
+      "title": "Manipulating Prompts and Retrieval-Augmented Generation for LLM Service Providers",
+      "year": 2024,
+      "abstract_chars": 0,
+      "relevance": {
+        "label": "partial",
+        "reason": "Prompt manipulation and RAG are adjacent, but title does not reveal whether context improvements or generation quality are evaluated.",
+        "evidence_quote": "",
+        "reviewed_version": "96f57e26d52749c941f2",
+        "evidence_scope": "title and bounded provider abstract/description excerpts"
+      },
+      "retrieval_round": 2
+    },
+    {
+      "source_ref": "crossref:10.2139/ssrn.5412645",
+      "provider": "crossref",
+      "run_id": "0031dbfd942e4e689d1a0e4692f91d06",
+      "version": "e8f34ac540d549fe3879",
+      "title": "Feedback-Guided Prompt Injection Defense in Retrieval-Augmented Text-to-Cypher Generation",
+      "year": 2025,
+      "abstract_chars": 0,
+      "relevance": {
+        "label": "partial",
+        "reason": "Studies prompt-injection defense in retrieval-augmented generation, adjacent to input preparation but not clearly context-quality improvement.",
+        "evidence_quote": "",
+        "reviewed_version": "e8f34ac540d549fe3879",
+        "evidence_scope": "title and bounded provider abstract/description excerpts"
+      },
+      "retrieval_round": 2
+    },
+    {
+      "source_ref": "crossref:10.2139/ssrn.5669662",
+      "provider": "crossref",
+      "run_id": "0031dbfd942e4e689d1a0e4692f91d06",
+      "version": "575206d3c64efb4e7b20",
+      "title": "Feedback-Guided Prompt Injection Defense in Retrieval-Augmented Text-to-Cypher Generation",
+      "year": 2025,
+      "abstract_chars": 0,
+      "relevance": {
+        "label": "partial",
+        "reason": "Studies prompt-injection defense in retrieval-augmented generation, adjacent to input preparation but not clearly context-quality improvement.",
+        "evidence_quote": "",
+        "reviewed_version": "575206d3c64efb4e7b20",
+        "evidence_scope": "title and bounded provider abstract/description excerpts"
+      },
+      "retrieval_round": 2
+    },
+    {
+      "source_ref": "crossref:10.1007/979-8-8688-1808-0_9",
+      "provider": "crossref",
+      "run_id": "0031dbfd942e4e689d1a0e4692f91d06",
+      "version": "e6053c55e2da5ec4eb61",
+      "title": "Prompt Templates: The Communication Experts That Structure Interactions with the LLM",
+      "year": 2025,
+      "abstract_chars": 0,
+      "relevance": {
+        "label": "partial",
+        "reason": "Prompt templates structure LLM interactions, but title provides no evidence about measured generation-quality effects.",
+        "evidence_quote": "",
+        "reviewed_version": "e6053c55e2da5ec4eb61",
+        "evidence_scope": "title and bounded provider abstract/description excerpts"
+      },
+      "retrieval_round": 2
+    },
+    {
+      "source_ref": "crossref:10.2139/ssrn.5097308",
+      "provider": "crossref",
+      "run_id": "0031dbfd942e4e689d1a0e4692f91d06",
+      "version": "9c03c0d14bd039ad4092",
+      "title": "Enhancing Visual-Llm Through Prompt Engineering and a Two-Stage Retrieval-Augmented Generation Algorithm for Construction Site Safety Compliance Checking",
+      "year": 2025,
+      "abstract_chars": 0,
+      "relevance": {
+        "label": "partial",
+        "reason": "Applies prompt engineering and RAG in a vision-language construction task, but title does not establish context-impact evaluation.",
+        "evidence_quote": "",
+        "reviewed_version": "9c03c0d14bd039ad4092",
+        "evidence_scope": "title and bounded provider abstract/description excerpts"
+      },
+      "retrieval_round": 2
+    }
+  ],
+  "llm_requests": [
+    {
+      "step": "plan",
+      "status": "response_received",
+      "model": "gpt-6-luna",
+      "body_sha256": "fa807bf8170761679ff827916cf691e8172bf883f06ecff96e3af2cffd1c8066",
+      "question": "What's the impact of how we improve the context model needs to have for better generation?",
+      "candidate_count": 0,
+      "purpose": "plan"
+    },
+    {
+      "step": "review1:0",
+      "status": "response_received",
+      "model": "gpt-6-luna",
+      "body_sha256": "83c3b82271bb9e635165e8b2480eb99042c9b2b835cccad3ffdbf53264604e33",
+      "question": "What's the impact of how we improve the context model needs to have for better generation?",
+      "focus": {
+        "object_of_change": "The context or contextual information supplied as input to a generative model, not the model architecture.",
+        "intervention": "Improve the quality, relevance, or organization of model input context.",
+        "desired_outcome": "Better generated outputs, such as improved relevance, accuracy, or coherence.",
+        "boundary": "Focus on effects of input-context improvement on generation; exclude changes to context-model architecture unless directly evaluated as a means of improving supplied context."
+      },
+      "candidate_count": 20,
+      "purpose": "review"
+    },
+    {
+      "step": "review2:0",
+      "status": "response_received",
+      "model": "gpt-6-luna",
+      "body_sha256": "7484e3aecc65681827a02f9c1f379818d4b663c6416cc278fedb5f518f70b0ea",
+      "question": "What's the impact of how we improve the context model needs to have for better generation?",
+      "focus": {
+        "object_of_change": "The context or contextual information supplied as input to a generative model, not the model architecture.",
+        "intervention": "Improve the quality, relevance, or organization of model input context.",
+        "desired_outcome": "Better generated outputs, such as improved relevance, accuracy, or coherence.",
+        "boundary": "Focus on effects of input-context improvement on generation; exclude changes to context-model architecture unless directly evaluated as a means of improving supplied context."
+      },
+      "candidate_count": 20,
+      "purpose": "review"
+    }
+  ],
+  "frames": [
+    {
+      "at": 1794281159876,
+      "status": "RUNNING",
+      "stage": "planning",
+      "round": 1,
+      "count": 0,
+      "related": 0,
+      "only_relevant": true
+    },
+    {
+      "at": 1794281159877,
+      "status": "RUNNING",
+      "stage": "planning",
+      "round": 1,
+      "count": 0,
+      "related": 0,
+      "only_relevant": true
+    },
+    {
+      "at": 1794281159877,
+      "status": "RUNNING",
+      "stage": "planning",
+      "round": 1,
+      "count": 0,
+      "related": 0,
+      "only_relevant": true
+    },
+    {
+      "at": 1794281159877,
+      "status": "RUNNING",
+      "stage": "retrieving",
+      "round": 1,
+      "count": 0,
+      "related": 0,
+      "only_relevant": true
+    },
+    {
+      "at": 1794281160756,
+      "status": "RUNNING",
+      "stage": "retrieving",
+      "round": 1,
+      "count": 0,
+      "related": 0,
+      "only_relevant": true
+    },
+    {
+      "at": 1794281160756,
+      "status": "RUNNING",
+      "stage": "retrieving",
+      "round": 1,
+      "count": 0,
+      "related": 0,
+      "only_relevant": true
+    },
+    {
+      "at": 1794281160756,
+      "status": "RUNNING",
+      "stage": "retrieving",
+      "round": 1,
+      "count": 0,
+      "related": 0,
+      "only_relevant": true
+    },
+    {
+      "at": 1794281160757,
+      "status": "RUNNING",
+      "stage": "retrieving",
+      "round": 1,
+      "count": 0,
+      "related": 0,
+      "only_relevant": true
+    },
+    {
+      "at": 1794281160757,
+      "status": "RUNNING",
+      "stage": "retrieving",
+      "round": 1,
+      "count": 0,
+      "related": 0,
+      "only_relevant": true
+    },
+    {
+      "at": 1794281160780,
+      "status": "RUNNING",
+      "stage": "retrieving",
+      "round": 1,
+      "count": 0,
+      "related": 0,
+      "only_relevant": true
+    },
+    {
+      "at": 1794281160841,
+      "status": "RUNNING",
+      "stage": "retrieving",
+      "round": 1,
+      "count": 0,
+      "related": 0,
+      "only_relevant": true
+    },
+    {
+      "at": 1794281160893,
+      "status": "RUNNING",
+      "stage": "retrieving",
+      "round": 1,
+      "count": 0,
+      "related": 0,
+      "only_relevant": true
+    },
+    {
+      "at": 1794281160893,
+      "status": "RUNNING",
+      "stage": "retrieving",
+      "round": 1,
+      "count": 0,
+      "related": 0,
+      "only_relevant": true
+    },
+    {
+      "at": 1794281160947,
+      "status": "RUNNING",
+      "stage": "retrieving",
+      "round": 1,
+      "count": 0,
+      "related": 0,
+      "only_relevant": true
+    },
+    {
+      "at": 1794281160948,
+      "status": "RUNNING",
+      "stage": "retrieving",
+      "round": 1,
+      "count": 0,
+      "related": 0,
+      "only_relevant": true
+    },
+    {
+      "at": 1794281164678,
+      "status": "RUNNING",
+      "stage": "retrieving",
+      "round": 1,
+      "count": 0,
+      "related": 0,
+      "only_relevant": true
+    },
+    {
+      "at": 1794281164679,
+      "status": "RUNNING",
+      "stage": "retrieving",
+      "round": 1,
+      "count": 0,
+      "related": 0,
+      "only_relevant": true
+    },
+    {
+      "at": 1794281165153,
+      "status": "RUNNING",
+      "stage": "retrieving",
+      "round": 1,
+      "count": 0,
+      "related": 0,
+      "only_relevant": true
+    },
+    {
+      "at": 1794281166246,
+      "status": "RUNNING",
+      "stage": "retrieving",
+      "round": 1,
+      "count": 0,
+      "related": 0,
+      "only_relevant": true
+    },
+    {
+      "at": 1794281166246,
+      "status": "RUNNING",
+      "stage": "retrieving",
+      "round": 1,
+      "count": 0,
+      "related": 0,
+      "only_relevant": true
+    },
+    {
+      "at": 1794281167535,
+      "status": "RUNNING",
+      "stage": "retrieving",
+      "round": 1,
+      "count": 0,
+      "related": 0,
+      "only_relevant": true
+    },
+    {
+      "at": 1794281167561,
+      "status": "RUNNING",
+      "stage": "retrieving",
+      "round": 1,
+      "count": 0,
+      "related": 0,
+      "only_relevant": true
+    },
+    {
+      "at": 1794281167839,
+      "status": "RUNNING",
+      "stage": "retrieving",
+      "round": 1,
+      "count": 0,
+      "related": 0,
+      "only_relevant": true
+    },
+    {
+      "at": 1794281168254,
+      "status": "RUNNING",
+      "stage": "retrieving",
+      "round": 1,
+      "count": 0,
+      "related": 0,
+      "only_relevant": true
+    },
+    {
+      "at": 1794281168255,
+      "status": "RUNNING",
+      "stage": "retrieving",
+      "round": 1,
+      "count": 0,
+      "related": 0,
+      "only_relevant": true
+    },
+    {
+      "at": 1794281168396,
+      "status": "RUNNING",
+      "stage": "reviewing",
+      "round": 1,
+      "count": 0,
+      "related": 0,
+      "only_relevant": true
+    },
+    {
+      "at": 1794281168415,
+      "status": "RUNNING",
+      "stage": "reviewing",
+      "round": 1,
+      "count": 0,
+      "related": 0,
+      "only_relevant": true
+    },
+    {
+      "at": 1794281168416,
+      "status": "RUNNING",
+      "stage": "reviewing",
+      "round": 1,
+      "count": 0,
+      "related": 0,
+      "only_relevant": true
+    },
+    {
+      "at": 1794281175145,
+      "status": "RUNNING",
+      "stage": "reviewing",
+      "round": 1,
+      "count": 0,
+      "related": 0,
+      "only_relevant": true
+    },
+    {
+      "at": 1794281175146,
+      "status": "RUNNING",
+      "stage": "reviewing",
+      "round": 1,
+      "count": 0,
+      "related": 0,
+      "only_relevant": true
+    },
+    {
+      "at": 1794281175147,
+      "status": "RUNNING",
+      "stage": "reviewing",
+      "round": 1,
+      "count": 0,
+      "related": 0,
+      "only_relevant": true
+    },
+    {
+      "at": 1794281175168,
+      "status": "RUNNING",
+      "stage": "retrieving",
+      "round": 1,
+      "count": 3,
+      "related": 17,
+      "only_relevant": true
+    },
+    {
+      "at": 1794281175234,
+      "status": "RUNNING",
+      "stage": "refining",
+      "round": 2,
+      "count": 3,
+      "related": 17,
+      "only_relevant": true
+    },
+    {
+      "at": 1794281176530,
+      "status": "RUNNING",
+      "stage": "retrieving",
+      "round": 2,
+      "count": 3,
+      "related": 17,
+      "only_relevant": true
+    },
+    {
+      "at": 1794281176532,
+      "status": "RUNNING",
+      "stage": "retrieving",
+      "round": 2,
+      "count": 3,
+      "related": 17,
+      "only_relevant": true
+    },
+    {
+      "at": 1794281176534,
+      "status": "RUNNING",
+      "stage": "retrieving",
+      "round": 2,
+      "count": 3,
+      "related": 17,
+      "only_relevant": true
+    },
+    {
+      "at": 1794281176536,
+      "status": "RUNNING",
+      "stage": "retrieving",
+      "round": 2,
+      "count": 3,
+      "related": 17,
+      "only_relevant": true
+    },
+    {
+      "at": 1794281176538,
+      "status": "RUNNING",
+      "stage": "retrieving",
+      "round": 2,
+      "count": 3,
+      "related": 17,
+      "only_relevant": true
+    },
+    {
+      "at": 1794281176608,
+      "status": "RUNNING",
+      "stage": "retrieving",
+      "round": 2,
+      "count": 3,
+      "related": 17,
+      "only_relevant": true
+    },
+    {
+      "at": 1794281176715,
+      "status": "RUNNING",
+      "stage": "retrieving",
+      "round": 2,
+      "count": 3,
+      "related": 17,
+      "only_relevant": true
+    },
+    {
+      "at": 1794281176860,
+      "status": "RUNNING",
+      "stage": "retrieving",
+      "round": 2,
+      "count": 3,
+      "related": 17,
+      "only_relevant": true
+    },
+    {
+      "at": 1794281176862,
+      "status": "RUNNING",
+      "stage": "retrieving",
+      "round": 2,
+      "count": 3,
+      "related": 17,
+      "only_relevant": true
+    },
+    {
+      "at": 1794281177012,
+      "status": "RUNNING",
+      "stage": "retrieving",
+      "round": 2,
+      "count": 3,
+      "related": 17,
+      "only_relevant": true
+    },
+    {
+      "at": 1794281177014,
+      "status": "RUNNING",
+      "stage": "retrieving",
+      "round": 2,
+      "count": 3,
+      "related": 17,
+      "only_relevant": true
+    },
+    {
+      "at": 1794281180292,
+      "status": "RUNNING",
+      "stage": "retrieving",
+      "round": 2,
+      "count": 3,
+      "related": 17,
+      "only_relevant": true
+    },
+    {
+      "at": 1794281180294,
+      "status": "RUNNING",
+      "stage": "retrieving",
+      "round": 2,
+      "count": 3,
+      "related": 17,
+      "only_relevant": true
+    },
+    {
+      "at": 1794281182801,
+      "status": "RUNNING",
+      "stage": "retrieving",
+      "round": 2,
+      "count": 3,
+      "related": 17,
+      "only_relevant": true
+    },
+    {
+      "at": 1794281182803,
+      "status": "RUNNING",
+      "stage": "retrieving",
+      "round": 2,
+      "count": 3,
+      "related": 17,
+      "only_relevant": true
+    },
+    {
+      "at": 1794281182918,
+      "status": "RUNNING",
+      "stage": "retrieving",
+      "round": 2,
+      "count": 3,
+      "related": 17,
+      "only_relevant": true
+    },
+    {
+      "at": 1794281183256,
+      "status": "RUNNING",
+      "stage": "retrieving",
+      "round": 2,
+      "count": 3,
+      "related": 17,
+      "only_relevant": true
+    },
+    {
+      "at": 1794281183807,
+      "status": "RUNNING",
+      "stage": "retrieving",
+      "round": 2,
+      "count": 3,
+      "related": 17,
+      "only_relevant": true
+    },
+    {
+      "at": 1794281183809,
+      "status": "RUNNING",
+      "stage": "retrieving",
+      "round": 2,
+      "count": 3,
+      "related": 17,
+      "only_relevant": true
+    },
+    {
+      "at": 1794281184324,
+      "status": "RUNNING",
+      "stage": "reviewing",
+      "round": 2,
+      "count": 3,
+      "related": 17,
+      "only_relevant": true
+    },
+    {
+      "at": 1794281184326,
+      "status": "RUNNING",
+      "stage": "reviewing",
+      "round": 2,
+      "count": 3,
+      "related": 17,
+      "only_relevant": true
+    },
+    {
+      "at": 1794281184328,
+      "status": "RUNNING",
+      "stage": "reviewing",
+      "round": 2,
+      "count": 3,
+      "related": 17,
+      "only_relevant": true
+    },
+    {
+      "at": 1794281192315,
+      "status": "RUNNING",
+      "stage": "reviewing",
+      "round": 2,
+      "count": 3,
+      "related": 17,
+      "only_relevant": true
+    },
+    {
+      "at": 1794281192317,
+      "status": "RUNNING",
+      "stage": "reviewing",
+      "round": 2,
+      "count": 3,
+      "related": 17,
+      "only_relevant": true
+    },
+    {
+      "at": 1794281192320,
+      "status": "RUNNING",
+      "stage": "reviewing",
+      "round": 2,
+      "count": 3,
+      "related": 17,
+      "only_relevant": true
+    },
+    {
+      "at": 1794281192369,
+      "status": "RUNNING",
+      "stage": "retrieving",
+      "round": 2,
+      "count": 5,
+      "related": 32,
+      "only_relevant": true
+    },
+    {
+      "at": 1794281192372,
+      "status": "RUNNING",
+      "stage": "completed",
+      "round": 2,
+      "count": 5,
+      "related": 32,
+      "only_relevant": true
+    },
+    {
+      "at": 1794281192499,
+      "status": "RUNNING",
+      "stage": "completed",
+      "round": 2,
+      "count": 5,
+      "related": 32,
+      "only_relevant": true
+    },
+    {
+      "at": 1794281192894,
+      "status": "SUCCEEDED",
+      "stage": "completed",
+      "round": 2,
+      "count": 5,
+      "related": 32,
+      "only_relevant": true
+    },
+    {
+      "at": 1794281193150,
+      "status": "SUCCEEDED",
+      "stage": "completed",
+      "round": 2,
+      "count": 5,
+      "related": 32,
+      "only_relevant": true
+    }
+  ],
+  "elapsed_ms": 40420,
+  "first_reviewed_sources_ms": 22402,
+  "progressive": true,
+  "reload_zero_new_calls": true,
+  "inspection_shows_only_selected_source": true,
+  "inspection_url": "http://127.0.0.1:3100/?run=e6771935098147c4b75900ea50c1de86&source=crossref%3A10.22541%2Fau.172538388.88528596%2Fv1&from_conversation=18525853da69447bbbabea29868a1443",
+  "inspection_pin_survives_reload": true,
+  "page_errors": []
+}

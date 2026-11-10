@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-09",
+  "scope": "Three design previews: two independent HabitQuest adaptations and a Dub/HabitQuest hybrid follow-up.",
+  "design_agents": [
+    "habitquest_preview_expressive",
+    "habitquest_preview_workbench"
+  ],
+  "application_files_checked": 40,
+  "application_files_changed": [],
+  "layout_checks": 12,
+  "interaction_flows": 6,
+  "passed": true,
+  "artifact_sha256": {
+    "README.md": "4e8d00672525ccd7c0fd4041ab74cf38a45faf54d5d86b006494df4465dea0b9",
+    "expressive-notes.md": "754d3414103294aeedcc018fbf6058b40ec32852dda2cf7134277db9901de02e",
+    "hybrid-notes.md": "45df78ecb503c383998f41f14c2b7b5e311a3b349d430e73a1a17af2766e5faa",
+    "hybrid.css": "7d1c2a3517e07bd6810c0a7fd108ed8682a56e761548da2a917f307142929431",
+    "index.html": "dc8319375b8e45d8b0fe104277e24ca0496821f0fb4645773fdbc515d63f4d29",
+    "preview-checks.json": "2115066231cb2cc0bf965d3d476fb733da2143212443f2788429082522d913d0",
+    "preview-expressive.html": "1ccced1f96d7ecd3ec114b0479a501f51292fd2ddaa4626b6fa838fa6bdae2d5",
+    "preview-hybrid.html": "5d65c5a6a305177e00359ac702e99379e0fdfef5998ffd3abcee3ffd0a2a93d0",
+    "preview-workbench.html": "c37de3b8e8572618a9d69cab2444486592ac3c7f383bff07567cd316e2b2f036",
+    "serve-preview.mjs": "c09b46b103144e23eecc85031987cd2051f6eec889bd421d2b064c7bc22d44e7",
+    "verify-previews.mjs": "6079b9a393aefcb06f77d78bbc2ac75a889b87868ddffafb19bea1bed70364b4",
+    "workbench-notes.md": "ca81909b8c736c81282ea71aa850bdfe5044cd01cef43941dbef44e9c5dcf554"
+  }
+}

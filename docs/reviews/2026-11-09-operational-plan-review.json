@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-09",
+  "scope": "Planning artifacts and read-only local health only; no provider/model operations, runtime changes or suite execution.",
+  "review_agents": [
+    "live_provider_plan",
+    "chat_agent_plan"
+  ],
+  "review_corrections": [
+    "Global single-active-turn-or-legacy-run admission made explicit.",
+    "Conversation-revision fence and projection reconciliation required before DOI checks/exports."
+  ],
+  "broken_relative_links": [],
+  "application_files_checked": 40,
+  "application_files_changed": [],
+  "env_file_created": false,
+  "passed": true,
+  "artifacts": {
+    "system-design/live-operations-and-chat-plan.md": "f61b6af0e0a4025bb31c223f01db0d404175dd2e86d4d8a8e76cd5460d8f28a2",
+    "docs/reviews/2026-11-09-live-provider-plan-audit.md": "ec9f0867e308abd1b33d6ff51aa45ecf1fc1fc3c2145d1b449688db9f4b2f7d1",
+    "docs/reviews/2026-11-09-chat-agent-plan-audit.md": "c7161bb8b711cde1a48b70530bf8c6d7e748e91d0e5279ef3923a4ebdcc901b1",
+    "system-design/README.md": "5503114c4c239a4f8644391a631be9dc679459fe15a5e488b4c9d71a5ffcf7eb",
+    "system-design/implementation-status.md": "427d9b91768a36cfaa341a378066c884a7af4d098699bc4811884688bfaad795",
+    "system-design/increment-1.md": "c3ae6be6aa0057f99607bac4e34a03a437d8b7d3188c0fa7814333f4be2e0b4f",
+    "docs/reviews/README.md": "db1020d2f3a632a4934f93b796b62edb70318ca7021756ab435f648579c3ba2a",
+    "README.md": "76dfcc0782c7bfe41c96e8702e0c5312ade2bf119571859c9fecad7e8e463615"
+  }
+}

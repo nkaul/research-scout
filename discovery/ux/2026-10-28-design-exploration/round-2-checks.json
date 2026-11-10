@@ -1,0 +1,419 @@
+{
+  "date": "2026-10-28",
+  "scope": "Authored HTML prototypes only; not production acceptance or complete accessibility conformance.",
+  "checks": [
+    {
+      "prototype": "prototype-04",
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 1100
+      },
+      "errors": [],
+      "externalRequests": [],
+      "title": "Lumen · Research Scout / 04",
+      "language": "en",
+      "h1Count": 1,
+      "horizontalOverflow": 0,
+      "unnamedButtons": 0,
+      "inputsWithoutLabels": 0,
+      "brokenImages": 0,
+      "duplicateIds": [],
+      "reducedMotion": true,
+      "animatedElementsInReducedMotion": 0,
+      "focus": {
+        "tag": "A",
+        "label": "Skip to source reader",
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      },
+      "sampledTextPairs": 64,
+      "unmeasuredTextPairs": 0,
+      "contrastIssues": [],
+      "interaction": {
+        "passed": true,
+        "inlineReader": true,
+        "earlySourceUsable": true,
+        "humanNoteAndSelectionRetained": true,
+        "noteFocusStableOnArrival": true,
+        "sourceDetails": true,
+        "syntheticExport": "lumen-fictional-demo-shortlist.md"
+      }
+    },
+    {
+      "prototype": "prototype-04",
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844
+      },
+      "errors": [],
+      "externalRequests": [],
+      "title": "Lumen · Research Scout / 04",
+      "language": "en",
+      "h1Count": 1,
+      "horizontalOverflow": 0,
+      "unnamedButtons": 0,
+      "inputsWithoutLabels": 0,
+      "brokenImages": 0,
+      "duplicateIds": [],
+      "reducedMotion": true,
+      "animatedElementsInReducedMotion": 0,
+      "focus": {
+        "tag": "A",
+        "label": "Skip to source reader",
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      },
+      "sampledTextPairs": 52,
+      "unmeasuredTextPairs": 0,
+      "contrastIssues": [],
+      "interaction": {
+        "passed": true,
+        "inlineReader": true,
+        "earlySourceUsable": true,
+        "humanNoteAndSelectionRetained": true,
+        "noteFocusStableOnArrival": true,
+        "sourceDetails": true,
+        "syntheticExport": "lumen-fictional-demo-shortlist.md"
+      }
+    },
+    {
+      "prototype": "prototype-04",
+      "viewport": {
+        "name": "narrow",
+        "width": 320,
+        "height": 900
+      },
+      "errors": [],
+      "externalRequests": [],
+      "title": "Lumen · Research Scout / 04",
+      "language": "en",
+      "h1Count": 1,
+      "horizontalOverflow": 0,
+      "unnamedButtons": 0,
+      "inputsWithoutLabels": 0,
+      "brokenImages": 0,
+      "duplicateIds": [],
+      "reducedMotion": true,
+      "animatedElementsInReducedMotion": 0,
+      "focus": {
+        "tag": "A",
+        "label": "Skip to source reader",
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      },
+      "sampledTextPairs": 52,
+      "unmeasuredTextPairs": 0,
+      "contrastIssues": [],
+      "interaction": null
+    },
+    {
+      "prototype": "prototype-05",
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 1100
+      },
+      "errors": [],
+      "externalRequests": [],
+      "title": "Forma · Research Scout design concept 05",
+      "language": "en",
+      "h1Count": 1,
+      "horizontalOverflow": 0,
+      "unnamedButtons": 0,
+      "inputsWithoutLabels": 0,
+      "brokenImages": 0,
+      "duplicateIds": [],
+      "reducedMotion": true,
+      "animatedElementsInReducedMotion": 0,
+      "focus": {
+        "tag": "A",
+        "label": "Skip to source reader",
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      },
+      "sampledTextPairs": 78,
+      "unmeasuredTextPairs": 0,
+      "contrastIssues": [],
+      "interaction": {
+        "passed": true,
+        "inlineReader": true,
+        "earlySourceUsable": true,
+        "humanNoteAndSelectionRetained": true,
+        "sourceFocusStableOnArrival": true,
+        "metadataOnlyDisclosed": true,
+        "syntheticExport": "forma-fictional-shortlist.md"
+      }
+    },
+    {
+      "prototype": "prototype-05",
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844
+      },
+      "errors": [],
+      "externalRequests": [],
+      "title": "Forma · Research Scout design concept 05",
+      "language": "en",
+      "h1Count": 1,
+      "horizontalOverflow": 0,
+      "unnamedButtons": 0,
+      "inputsWithoutLabels": 0,
+      "brokenImages": 0,
+      "duplicateIds": [],
+      "reducedMotion": true,
+      "animatedElementsInReducedMotion": 0,
+      "focus": {
+        "tag": "A",
+        "label": "Skip to source reader",
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      },
+      "sampledTextPairs": 63,
+      "unmeasuredTextPairs": 0,
+      "contrastIssues": [],
+      "interaction": {
+        "passed": true,
+        "inlineReader": true,
+        "earlySourceUsable": true,
+        "humanNoteAndSelectionRetained": true,
+        "sourceFocusStableOnArrival": true,
+        "metadataOnlyDisclosed": true,
+        "syntheticExport": "forma-fictional-shortlist.md"
+      }
+    },
+    {
+      "prototype": "prototype-05",
+      "viewport": {
+        "name": "narrow",
+        "width": 320,
+        "height": 900
+      },
+      "errors": [],
+      "externalRequests": [],
+      "title": "Forma · Research Scout design concept 05",
+      "language": "en",
+      "h1Count": 1,
+      "horizontalOverflow": 0,
+      "unnamedButtons": 0,
+      "inputsWithoutLabels": 0,
+      "brokenImages": 0,
+      "duplicateIds": [],
+      "reducedMotion": true,
+      "animatedElementsInReducedMotion": 0,
+      "focus": {
+        "tag": "A",
+        "label": "Skip to source reader",
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      },
+      "sampledTextPairs": 62,
+      "unmeasuredTextPairs": 0,
+      "contrastIssues": [],
+      "interaction": null
+    },
+    {
+      "prototype": "prototype-06",
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 1100
+      },
+      "errors": [],
+      "externalRequests": [],
+      "title": "Signal Board · Research Scout concept 06",
+      "language": "en",
+      "h1Count": 1,
+      "horizontalOverflow": 0,
+      "unnamedButtons": 0,
+      "inputsWithoutLabels": 0,
+      "brokenImages": 0,
+      "duplicateIds": [],
+      "reducedMotion": true,
+      "animatedElementsInReducedMotion": 0,
+      "focus": {
+        "tag": "A",
+        "label": "Skip to research collection",
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      },
+      "sampledTextPairs": 69,
+      "unmeasuredTextPairs": 0,
+      "contrastIssues": [],
+      "interaction": {
+        "passed": true,
+        "spatialSourceView": true,
+        "earlySourceUsable": true,
+        "sourceFocusStableOnArrival": true,
+        "humanNoteAndSelectionRetained": true,
+        "explicitRegistrySimulation": true,
+        "inspectorEscapeAndFocusReturn": true,
+        "boardAndListViews": true,
+        "syntheticExport": "research-scout-signal-board-fictional-shortlist.md"
+      }
+    },
+    {
+      "prototype": "prototype-06",
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844
+      },
+      "errors": [],
+      "externalRequests": [],
+      "title": "Signal Board · Research Scout concept 06",
+      "language": "en",
+      "h1Count": 1,
+      "horizontalOverflow": 0,
+      "unnamedButtons": 0,
+      "inputsWithoutLabels": 0,
+      "brokenImages": 0,
+      "duplicateIds": [],
+      "reducedMotion": true,
+      "animatedElementsInReducedMotion": 0,
+      "focus": {
+        "tag": "A",
+        "label": "Skip to research collection",
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      },
+      "sampledTextPairs": 67,
+      "unmeasuredTextPairs": 0,
+      "contrastIssues": [],
+      "interaction": {
+        "passed": true,
+        "spatialSourceView": true,
+        "earlySourceUsable": true,
+        "sourceFocusStableOnArrival": true,
+        "humanNoteAndSelectionRetained": true,
+        "explicitRegistrySimulation": true,
+        "inspectorEscapeAndFocusReturn": true,
+        "boardAndListViews": true,
+        "syntheticExport": "research-scout-signal-board-fictional-shortlist.md"
+      }
+    },
+    {
+      "prototype": "prototype-06",
+      "viewport": {
+        "name": "narrow",
+        "width": 320,
+        "height": 900
+      },
+      "errors": [],
+      "externalRequests": [],
+      "title": "Signal Board · Research Scout concept 06",
+      "language": "en",
+      "h1Count": 1,
+      "horizontalOverflow": 0,
+      "unnamedButtons": 0,
+      "inputsWithoutLabels": 0,
+      "brokenImages": 0,
+      "duplicateIds": [],
+      "reducedMotion": true,
+      "animatedElementsInReducedMotion": 0,
+      "focus": {
+        "tag": "A",
+        "label": "Skip to research collection",
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      },
+      "sampledTextPairs": 67,
+      "unmeasuredTextPairs": 0,
+      "contrastIssues": [],
+      "interaction": null
+    },
+    {
+      "prototype": "index",
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 1100
+      },
+      "errors": [],
+      "externalRequests": [],
+      "title": "Research Scout · Six design directions",
+      "language": "en",
+      "h1Count": 1,
+      "horizontalOverflow": 0,
+      "unnamedButtons": 0,
+      "inputsWithoutLabels": 0,
+      "brokenImages": 0,
+      "duplicateIds": [],
+      "reducedMotion": true,
+      "animatedElementsInReducedMotion": 0,
+      "focus": {
+        "tag": "A",
+        "label": "Skip to the concepts",
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      },
+      "sampledTextPairs": 81,
+      "unmeasuredTextPairs": 0,
+      "contrastIssues": [],
+      "interaction": null
+    },
+    {
+      "prototype": "index",
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844
+      },
+      "errors": [],
+      "externalRequests": [],
+      "title": "Research Scout · Six design directions",
+      "language": "en",
+      "h1Count": 1,
+      "horizontalOverflow": 0,
+      "unnamedButtons": 0,
+      "inputsWithoutLabels": 0,
+      "brokenImages": 0,
+      "duplicateIds": [],
+      "reducedMotion": true,
+      "animatedElementsInReducedMotion": 0,
+      "focus": {
+        "tag": "A",
+        "label": "Skip to the concepts",
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      },
+      "sampledTextPairs": 81,
+      "unmeasuredTextPairs": 0,
+      "contrastIssues": [],
+      "interaction": null
+    },
+    {
+      "prototype": "index",
+      "viewport": {
+        "name": "narrow",
+        "width": 320,
+        "height": 900
+      },
+      "errors": [],
+      "externalRequests": [],
+      "title": "Research Scout · Six design directions",
+      "language": "en",
+      "h1Count": 1,
+      "horizontalOverflow": 0,
+      "unnamedButtons": 0,
+      "inputsWithoutLabels": 0,
+      "brokenImages": 0,
+      "duplicateIds": [],
+      "reducedMotion": true,
+      "animatedElementsInReducedMotion": 0,
+      "focus": {
+        "tag": "A",
+        "label": "Skip to the concepts",
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      },
+      "sampledTextPairs": 81,
+      "unmeasuredTextPairs": 0,
+      "contrastIssues": [],
+      "interaction": null
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,163 @@
+{
+  "date": "2026-11-09",
+  "policy_version": "scout-query-relevance-v1",
+  "scope": "Offline diagnostic over two saved provider pools. Intent supplied from explicit user clarification; no new retrieval, model calls or independent relevance labels.",
+  "question": "What's the impact of how we improve the context model needs to have for better generation?",
+  "plan": {
+    "query": "What's the impact of how we improve the context model needs to have for better generation?",
+    "query_terms": [
+      "context engineering",
+      "language model",
+      "generation",
+      "retrieval augmented generation"
+    ],
+    "required_facets": [
+      {
+        "name": "language models",
+        "terms": [
+          "large language model",
+          "LLM",
+          "language model",
+          "大语言模型"
+        ]
+      },
+      {
+        "name": "context engineering",
+        "terms": [
+          "context engineering",
+          "context window",
+          "retrieval augmented generation",
+          "上下文工程"
+        ]
+      }
+    ],
+    "optional_facets": [
+      {
+        "name": "generation quality",
+        "terms": [
+          "generation quality",
+          "faithfulness",
+          "accuracy"
+        ]
+      }
+    ]
+  },
+  "network_calls": 0,
+  "model_calls": 0,
+  "baselines": [
+    {
+      "run_id": "a2f274ec38104eb1a602706fb5556dc9",
+      "provider": "openalex",
+      "source_snapshot_sha256": "ae9f8039ddc9d058a70acf859de8eba3f16c9c435b38ead1f5974f99b1e23fee",
+      "candidate_count": 20,
+      "supporting_text_missing": 0,
+      "full_required_facet_matches": 2,
+      "partial_required_facet_matches": 5,
+      "top_five": [
+        {
+          "source_ref": "openalex:W4406890592",
+          "title": "Provence: efficient and robust context pruning for retrieval-augmented generation",
+          "score": 78.677215,
+          "facet_tier": 2,
+          "missing_required_facets": []
+        },
+        {
+          "source_ref": "openalex:W4404390869",
+          "title": "Sufficient Context: A New Lens on Retrieval Augmented Generation Systems",
+          "score": 72.357196,
+          "facet_tier": 2,
+          "missing_required_facets": []
+        },
+        {
+          "source_ref": "openalex:W4387355352",
+          "title": "Attention Sorting Combats Recency Bias In Long Context Language Models",
+          "score": 50.062941,
+          "facet_tier": 1,
+          "missing_required_facets": [
+            "context engineering"
+          ]
+        },
+        {
+          "source_ref": "openalex:W4415796230",
+          "title": "ContextCite: Attributing Model Generation to Context",
+          "score": 49.286232,
+          "facet_tier": 1,
+          "missing_required_facets": [
+            "context engineering"
+          ]
+        },
+        {
+          "source_ref": "openalex:W2903887887",
+          "title": "Context based Text-generation using LSTM networks",
+          "score": 48.131587,
+          "facet_tier": 1,
+          "missing_required_facets": [
+            "context engineering"
+          ]
+        }
+      ]
+    },
+    {
+      "run_id": "b6360ea426e54cd0aa73cc2fcf0cc7e5",
+      "provider": "crossref",
+      "source_snapshot_sha256": "bdd53e4bffa80aa2a9296dbc29f0d70d6f5568798774cfc04584dd5d8e313933",
+      "candidate_count": 20,
+      "supporting_text_missing": 10,
+      "full_required_facet_matches": 0,
+      "partial_required_facet_matches": 0,
+      "top_five": [
+        {
+          "source_ref": "crossref:10.1515/9781503641068-010",
+          "title": "Appendix: Methods and Institutional Context",
+          "score": 20.641881,
+          "facet_tier": 0,
+          "missing_required_facets": [
+            "language models",
+            "context engineering"
+          ]
+        },
+        {
+          "source_ref": "crossref:10.5220/0014430400004052",
+          "title": "How Can We Effectively Identify Optimal Hyperparameters to Improve Model Reliability in Medical Applications?",
+          "score": 18.381039,
+          "facet_tier": 0,
+          "missing_required_facets": [
+            "language models",
+            "context engineering"
+          ]
+        },
+        {
+          "source_ref": "crossref:10.55140/2782-5817-2022-2-3-29-34",
+          "title": "We Have the Money, but We Need a Business Model: How a Social Entrepreneur Can Find an Impact Investor",
+          "score": 17.357005,
+          "facet_tier": 0,
+          "missing_required_facets": [
+            "language models",
+            "context engineering"
+          ]
+        },
+        {
+          "source_ref": "crossref:10.15530/urtec-2022-3723907",
+          "title": "How Much Better Could We Have Done? Using a Time Machine Method to Quantify the Impact of Incremental Geologic data on Machine Learning Forecast Accuracy",
+          "score": 10.0,
+          "facet_tier": 0,
+          "missing_required_facets": [
+            "language models",
+            "context engineering"
+          ]
+        },
+        {
+          "source_ref": "crossref:10.1108/jpmh-11-2019-0097",
+          "title": "Research into student mental health: where have we come and how can we improve?",
+          "score": 8.017552,
+          "facet_tier": 0,
+          "missing_required_facets": [
+            "language models",
+            "context engineering"
+          ]
+        }
+      ]
+    }
+  ],
+  "interpretation": "These are uncalibrated lexical/facet diagnostics on previously retrieved pools, not a live relevance benchmark or a measured quality gain. Reranking cannot recover relevant papers absent from those pools; a corrected retrieval plan still needs separately reviewed live evidence."
+}

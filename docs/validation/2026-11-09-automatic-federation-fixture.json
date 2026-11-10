@@ -1,0 +1,47 @@
+{
+  "date": "2026-11-09",
+  "evidence_kind": "authored_fixture_records_over_actual_local_agents_mcp_and_isolated_service_processes",
+  "question": "Institutional AI readiness in higher education",
+  "routing": "auto",
+  "providers": [
+    "openalex",
+    "crossref",
+    "arxiv",
+    "openaire"
+  ],
+  "primary_observations": 16,
+  "canonical_papers": 10,
+  "deduplicated_observations": 6,
+  "cross_provider_doi_groups": [
+    {
+      "paper_id": "doi:10.0000/scout.fixture.crossref.001",
+      "providers": [
+        "openalex",
+        "crossref",
+        "arxiv",
+        "openaire"
+      ],
+      "observations": 4,
+      "access_status": "succeeded"
+    },
+    {
+      "paper_id": "doi:10.0000/scout.fixture.datacite.002",
+      "providers": [
+        "openalex",
+        "crossref",
+        "arxiv",
+        "openaire"
+      ],
+      "observations": 4,
+      "access_status": "succeeded"
+    }
+  ],
+  "unpaywall_operations": 2,
+  "usage": {
+    "research_attempts": 10,
+    "model_http_attempts": 0,
+    "model_cost_usd": 0
+  },
+  "browser_reload_verified_zero_new_calls": true,
+  "limits": "Fictional records prove grouping, plumbing and replay; they do not measure live relevance."
+}

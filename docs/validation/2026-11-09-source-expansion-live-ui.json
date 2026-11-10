@@ -1,0 +1,1409 @@
+{
+  "date": "2026-11-09",
+  "scope": "Actual UI-submitted searches through LangGraph, Deep Agents, application MCP and independent live providers; no OpenAI calls.",
+  "providers": [
+    {
+      "provider": "arxiv",
+      "query": "retrieval augmented generation",
+      "integrated_route": "actual_ui_deepagents_mcp_provider_service",
+      "passed": true,
+      "conversation_id": "0413d758e68d4e16b4d81a8c03b23b8f",
+      "url": "http://127.0.0.1:3100/?conversation=0413d758e68d4e16b4d81a8c03b23b8f",
+      "turn_id": "0c7a5b7e0a6847bfa2ea9b49d31d3133",
+      "status": "SUCCEEDED",
+      "run_ids": [
+        "d093480977d94a8fad595352b5637971"
+      ],
+      "usage": {
+        "research_attempts": 1,
+        "model_http_attempts": 0,
+        "model_cost_usd": 0
+      },
+      "activity": [
+        {
+          "provider": "arxiv",
+          "operation": "hybrid_search",
+          "status": "SUCCEEDED",
+          "attempts": 1,
+          "source_count": 20
+        }
+      ],
+      "warnings": [],
+      "run_status": "SUCCEEDED",
+      "branch_status": {
+        "lexical": "succeeded",
+        "semantic": "succeeded"
+      },
+      "sources": [
+        {
+          "source_ref": "arxiv:2506.06962v3",
+          "version": "2a43db4c51eec62054d6",
+          "year": 2025,
+          "mode": "live",
+          "abstract_chars": 1398,
+          "description_chars": 0,
+          "content_state": "abstract"
+        },
+        {
+          "source_ref": "arxiv:2411.18583v1",
+          "version": "f17796b167d210567880",
+          "year": 2024,
+          "mode": "live",
+          "abstract_chars": 1378,
+          "description_chars": 0,
+          "content_state": "abstract"
+        },
+        {
+          "source_ref": "arxiv:2402.12317v2",
+          "version": "29d6ff179a429463a8d3",
+          "year": 2024,
+          "mode": "live",
+          "abstract_chars": 1357,
+          "description_chars": 0,
+          "content_state": "abstract"
+        },
+        {
+          "source_ref": "arxiv:2502.00306v2",
+          "version": "1fc8a6e43074dddba8b2",
+          "year": 2025,
+          "mode": "live",
+          "abstract_chars": 1206,
+          "description_chars": 0,
+          "content_state": "abstract"
+        },
+        {
+          "source_ref": "arxiv:2507.23334v2",
+          "version": "fc66d7e5898ad502460b",
+          "year": 2025,
+          "mode": "live",
+          "abstract_chars": 1374,
+          "description_chars": 0,
+          "content_state": "abstract"
+        },
+        {
+          "source_ref": "arxiv:2510.22344v1",
+          "version": "1ebcd2709730bb6ae2eb",
+          "year": 2025,
+          "mode": "live",
+          "abstract_chars": 1877,
+          "description_chars": 0,
+          "content_state": "abstract"
+        },
+        {
+          "source_ref": "arxiv:2601.05264v1",
+          "version": "24af8a8ed622d8906a81",
+          "year": 2025,
+          "mode": "live",
+          "abstract_chars": 1061,
+          "description_chars": 0,
+          "content_state": "abstract"
+        },
+        {
+          "source_ref": "arxiv:2601.11863v1",
+          "version": "a508b06c88f08ddb4e72",
+          "year": 2026,
+          "mode": "live",
+          "abstract_chars": 1480,
+          "description_chars": 0,
+          "content_state": "abstract"
+        },
+        {
+          "source_ref": "arxiv:2512.24268v1",
+          "version": "d11bfe49f8a59d66ba04",
+          "year": 2025,
+          "mode": "live",
+          "abstract_chars": 1303,
+          "description_chars": 0,
+          "content_state": "abstract"
+        },
+        {
+          "source_ref": "arxiv:2504.19754v1",
+          "version": "12b9ef3904dfa5c441d1",
+          "year": 2025,
+          "mode": "live",
+          "abstract_chars": 1206,
+          "description_chars": 0,
+          "content_state": "abstract"
+        },
+        {
+          "source_ref": "arxiv:2602.07525v1",
+          "version": "4d31e8552a355575b7e7",
+          "year": 2026,
+          "mode": "live",
+          "abstract_chars": 1359,
+          "description_chars": 0,
+          "content_state": "abstract"
+        },
+        {
+          "source_ref": "arxiv:2503.23013v2",
+          "version": "fdf8d54321cc8d2f6fad",
+          "year": 2025,
+          "mode": "live",
+          "abstract_chars": 1037,
+          "description_chars": 0,
+          "content_state": "abstract"
+        },
+        {
+          "source_ref": "arxiv:2604.23584v1",
+          "version": "cec30394354ea6ae04d6",
+          "year": 2026,
+          "mode": "live",
+          "abstract_chars": 1395,
+          "description_chars": 0,
+          "content_state": "abstract"
+        },
+        {
+          "source_ref": "arxiv:2405.17706v1",
+          "version": "a1bf5a943f00c0b35134",
+          "year": 2024,
+          "mode": "live",
+          "abstract_chars": 973,
+          "description_chars": 0,
+          "content_state": "abstract"
+        },
+        {
+          "source_ref": "arxiv:2411.00744v2",
+          "version": "8b00b3f7ee635f2a2180",
+          "year": 2024,
+          "mode": "live",
+          "abstract_chars": 1695,
+          "description_chars": 0,
+          "content_state": "abstract"
+        },
+        {
+          "source_ref": "arxiv:2509.25716v1",
+          "version": "d0b29708d38210f1b229",
+          "year": 2025,
+          "mode": "live",
+          "abstract_chars": 1148,
+          "description_chars": 0,
+          "content_state": "abstract"
+        },
+        {
+          "source_ref": "arxiv:2412.05838v1",
+          "version": "b2a3eea89022d69e0caa",
+          "year": 2024,
+          "mode": "live",
+          "abstract_chars": 1554,
+          "description_chars": 0,
+          "content_state": "abstract"
+        },
+        {
+          "source_ref": "arxiv:2404.07220v2",
+          "version": "b32a13abd9e485eaeade",
+          "year": 2024,
+          "mode": "live",
+          "abstract_chars": 955,
+          "description_chars": 0,
+          "content_state": "abstract"
+        },
+        {
+          "source_ref": "arxiv:2606.28358v2",
+          "version": "182cc733af49730a1707",
+          "year": 2026,
+          "mode": "live",
+          "abstract_chars": 1467,
+          "description_chars": 0,
+          "content_state": "abstract"
+        },
+        {
+          "source_ref": "arxiv:2503.16581v1",
+          "version": "cad1c2c60f407e1b8da5",
+          "year": 2025,
+          "mode": "live",
+          "abstract_chars": 1698,
+          "description_chars": 0,
+          "content_state": "abstract"
+        }
+      ],
+      "source_count": 20,
+      "abstract_count": 20,
+      "description_count": 0,
+      "progressive_snapshots": [
+        {
+          "at": 1794274146654,
+          "status": "QUEUED",
+          "count": 0,
+          "abstracts": 0,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274146654,
+          "status": "RUNNING",
+          "count": 0,
+          "abstracts": 0,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274146920,
+          "status": "RUNNING",
+          "count": 0,
+          "abstracts": 0,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274146920,
+          "status": "RUNNING",
+          "count": 0,
+          "abstracts": 0,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274146921,
+          "status": "RUNNING",
+          "count": 0,
+          "abstracts": 0,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274146921,
+          "status": "RUNNING",
+          "count": 0,
+          "abstracts": 0,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274146933,
+          "status": "RUNNING",
+          "count": 0,
+          "abstracts": 0,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274146974,
+          "status": "RUNNING",
+          "count": 0,
+          "abstracts": 0,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274146996,
+          "status": "RUNNING",
+          "count": 0,
+          "abstracts": 0,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274146996,
+          "status": "RUNNING",
+          "count": 0,
+          "abstracts": 0,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274147023,
+          "status": "RUNNING",
+          "count": 0,
+          "abstracts": 0,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274147023,
+          "status": "RUNNING",
+          "count": 0,
+          "abstracts": 0,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274147646,
+          "status": "RUNNING",
+          "count": 1,
+          "abstracts": 1,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274147646,
+          "status": "RUNNING",
+          "count": 4,
+          "abstracts": 4,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274147731,
+          "status": "RUNNING",
+          "count": 11,
+          "abstracts": 11,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274147989,
+          "status": "RUNNING",
+          "count": 20,
+          "abstracts": 20,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274148059,
+          "status": "RUNNING",
+          "count": 20,
+          "abstracts": 20,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274149321,
+          "status": "RUNNING",
+          "count": 20,
+          "abstracts": 20,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274149321,
+          "status": "RUNNING",
+          "count": 20,
+          "abstracts": 20,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274150302,
+          "status": "RUNNING",
+          "count": 20,
+          "abstracts": 20,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274150343,
+          "status": "RUNNING",
+          "count": 20,
+          "abstracts": 20,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274150574,
+          "status": "RUNNING",
+          "count": 20,
+          "abstracts": 20,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274150796,
+          "status": "RUNNING",
+          "count": 20,
+          "abstracts": 20,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274150832,
+          "status": "SUCCEEDED",
+          "count": 20,
+          "abstracts": 20,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274150870,
+          "status": "SUCCEEDED",
+          "count": 20,
+          "abstracts": 20,
+          "descriptions": 0
+        }
+      ],
+      "first_source_snapshot_ms": 1305,
+      "sources_observed_before_terminal": true,
+      "abstracts_observed_before_terminal": true,
+      "reload_zero_new_calls": true
+    },
+    {
+      "provider": "europe_pmc",
+      "query": "retrieval augmented generation medicine",
+      "integrated_route": "actual_ui_deepagents_mcp_provider_service",
+      "passed": true,
+      "conversation_id": "0c4f40cc11f544b08ee3e26f91846bcb",
+      "url": "http://127.0.0.1:3100/?conversation=0c4f40cc11f544b08ee3e26f91846bcb",
+      "turn_id": "bd2bce2d518149b6928ece267f87b82a",
+      "status": "SUCCEEDED",
+      "run_ids": [
+        "f221f0ae68cd4559b04c3f2196c58646"
+      ],
+      "usage": {
+        "research_attempts": 1,
+        "model_http_attempts": 0,
+        "model_cost_usd": 0
+      },
+      "activity": [
+        {
+          "provider": "europe_pmc",
+          "operation": "hybrid_search",
+          "status": "SUCCEEDED",
+          "attempts": 1,
+          "source_count": 20
+        }
+      ],
+      "warnings": [],
+      "run_status": "SUCCEEDED",
+      "branch_status": {
+        "lexical": "succeeded",
+        "semantic": "succeeded"
+      },
+      "sources": [
+        {
+          "source_ref": "europe_pmc:MED:42986508",
+          "version": "636daded547edbf9db8f",
+          "year": 2026,
+          "mode": "live",
+          "abstract_chars": 1416,
+          "description_chars": 0,
+          "content_state": "abstract"
+        },
+        {
+          "source_ref": "europe_pmc:MED:42994600",
+          "version": "48f29d1ab7bc28d62e05",
+          "year": 2026,
+          "mode": "live",
+          "abstract_chars": 1453,
+          "description_chars": 0,
+          "content_state": "abstract"
+        },
+        {
+          "source_ref": "europe_pmc:MED:42986217",
+          "version": "4e04e930176b1855c6cf",
+          "year": 2026,
+          "mode": "live",
+          "abstract_chars": 3440,
+          "description_chars": 0,
+          "content_state": "abstract"
+        },
+        {
+          "source_ref": "europe_pmc:MED:42551844",
+          "version": "bf23b9222b0d275bdb5b",
+          "year": 2026,
+          "mode": "live",
+          "abstract_chars": 2024,
+          "description_chars": 0,
+          "content_state": "abstract"
+        },
+        {
+          "source_ref": "europe_pmc:MED:42923637",
+          "version": "fc8204c6d8ec2ed5da0d",
+          "year": 2026,
+          "mode": "live",
+          "abstract_chars": 1925,
+          "description_chars": 0,
+          "content_state": "abstract"
+        },
+        {
+          "source_ref": "europe_pmc:MED:42882297",
+          "version": "84bc6e170551f0c44d36",
+          "year": 2026,
+          "mode": "live",
+          "abstract_chars": 2517,
+          "description_chars": 0,
+          "content_state": "abstract"
+        },
+        {
+          "source_ref": "europe_pmc:MED:42868526",
+          "version": "51d288e9ba426cfc2397",
+          "year": 2026,
+          "mode": "live",
+          "abstract_chars": 2731,
+          "description_chars": 0,
+          "content_state": "abstract"
+        },
+        {
+          "source_ref": "europe_pmc:MED:42710003",
+          "version": "3b17605641103ff4b912",
+          "year": 2026,
+          "mode": "live",
+          "abstract_chars": 1915,
+          "description_chars": 0,
+          "content_state": "abstract"
+        },
+        {
+          "source_ref": "europe_pmc:MED:42243630",
+          "version": "1f13c9721c26c95d62bb",
+          "year": 2026,
+          "mode": "live",
+          "abstract_chars": 1768,
+          "description_chars": 0,
+          "content_state": "abstract"
+        },
+        {
+          "source_ref": "europe_pmc:MED:42533201",
+          "version": "27676889ab05b9bd67ff",
+          "year": 2026,
+          "mode": "live",
+          "abstract_chars": 2056,
+          "description_chars": 0,
+          "content_state": "abstract"
+        },
+        {
+          "source_ref": "europe_pmc:MED:42612965",
+          "version": "44a24b487030eefe471e",
+          "year": 2026,
+          "mode": "live",
+          "abstract_chars": 1695,
+          "description_chars": 0,
+          "content_state": "abstract"
+        },
+        {
+          "source_ref": "europe_pmc:MED:42990834",
+          "version": "a12f6ebd4c8cbb3d7541",
+          "year": 2026,
+          "mode": "live",
+          "abstract_chars": 1968,
+          "description_chars": 0,
+          "content_state": "abstract"
+        },
+        {
+          "source_ref": "europe_pmc:MED:42952607",
+          "version": "f03a5e07c44858f2de96",
+          "year": 2026,
+          "mode": "live",
+          "abstract_chars": 1377,
+          "description_chars": 0,
+          "content_state": "abstract"
+        },
+        {
+          "source_ref": "europe_pmc:MED:42642958",
+          "version": "f301c22e04c5b2beb24a",
+          "year": 2026,
+          "mode": "live",
+          "abstract_chars": 1117,
+          "description_chars": 0,
+          "content_state": "abstract"
+        },
+        {
+          "source_ref": "europe_pmc:MED:42753254",
+          "version": "320adb73e8254cd95d99",
+          "year": 2026,
+          "mode": "live",
+          "abstract_chars": 3694,
+          "description_chars": 0,
+          "content_state": "abstract"
+        },
+        {
+          "source_ref": "europe_pmc:MED:42425448",
+          "version": "65d3a1521135f1b2982f",
+          "year": 2026,
+          "mode": "live",
+          "abstract_chars": 219,
+          "description_chars": 0,
+          "content_state": "abstract"
+        },
+        {
+          "source_ref": "europe_pmc:MED:42875467",
+          "version": "dcf63a85d97a8cffe579",
+          "year": 2026,
+          "mode": "live",
+          "abstract_chars": 1521,
+          "description_chars": 0,
+          "content_state": "abstract"
+        },
+        {
+          "source_ref": "europe_pmc:MED:42770666",
+          "version": "9a432ab7426d663af48c",
+          "year": 2026,
+          "mode": "live",
+          "abstract_chars": 2849,
+          "description_chars": 0,
+          "content_state": "abstract"
+        },
+        {
+          "source_ref": "europe_pmc:MED:42752477",
+          "version": "eb6d3853d7baf58dd1a9",
+          "year": 2026,
+          "mode": "live",
+          "abstract_chars": 1670,
+          "description_chars": 0,
+          "content_state": "abstract"
+        },
+        {
+          "source_ref": "europe_pmc:MED:42908869",
+          "version": "e6867856b4e9a5e2f99f",
+          "year": 2026,
+          "mode": "live",
+          "abstract_chars": 1518,
+          "description_chars": 0,
+          "content_state": "abstract"
+        }
+      ],
+      "source_count": 20,
+      "abstract_count": 20,
+      "description_count": 0,
+      "progressive_snapshots": [
+        {
+          "at": 1794274152437,
+          "status": "QUEUED",
+          "count": 0,
+          "abstracts": 0,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274152437,
+          "status": "RUNNING",
+          "count": 0,
+          "abstracts": 0,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274152641,
+          "status": "RUNNING",
+          "count": 0,
+          "abstracts": 0,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274152641,
+          "status": "RUNNING",
+          "count": 0,
+          "abstracts": 0,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274152641,
+          "status": "RUNNING",
+          "count": 0,
+          "abstracts": 0,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274152641,
+          "status": "RUNNING",
+          "count": 0,
+          "abstracts": 0,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274152653,
+          "status": "RUNNING",
+          "count": 0,
+          "abstracts": 0,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274152688,
+          "status": "RUNNING",
+          "count": 0,
+          "abstracts": 0,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274152709,
+          "status": "RUNNING",
+          "count": 0,
+          "abstracts": 0,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274152709,
+          "status": "RUNNING",
+          "count": 0,
+          "abstracts": 0,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274152735,
+          "status": "RUNNING",
+          "count": 0,
+          "abstracts": 0,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274152735,
+          "status": "RUNNING",
+          "count": 0,
+          "abstracts": 0,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274153538,
+          "status": "RUNNING",
+          "count": 1,
+          "abstracts": 1,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274153539,
+          "status": "RUNNING",
+          "count": 4,
+          "abstracts": 4,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274153605,
+          "status": "RUNNING",
+          "count": 10,
+          "abstracts": 10,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274153840,
+          "status": "RUNNING",
+          "count": 18,
+          "abstracts": 18,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274153979,
+          "status": "RUNNING",
+          "count": 20,
+          "abstracts": 20,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274155645,
+          "status": "RUNNING",
+          "count": 20,
+          "abstracts": 20,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274155645,
+          "status": "RUNNING",
+          "count": 20,
+          "abstracts": 20,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274157023,
+          "status": "RUNNING",
+          "count": 20,
+          "abstracts": 20,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274157072,
+          "status": "RUNNING",
+          "count": 20,
+          "abstracts": 20,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274157433,
+          "status": "RUNNING",
+          "count": 20,
+          "abstracts": 20,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274157740,
+          "status": "RUNNING",
+          "count": 20,
+          "abstracts": 20,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274157780,
+          "status": "SUCCEEDED",
+          "count": 20,
+          "abstracts": 20,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274157825,
+          "status": "SUCCEEDED",
+          "count": 20,
+          "abstracts": 20,
+          "descriptions": 0
+        }
+      ],
+      "first_source_snapshot_ms": 1156,
+      "sources_observed_before_terminal": true,
+      "abstracts_observed_before_terminal": true,
+      "reload_zero_new_calls": true
+    },
+    {
+      "provider": "openaire",
+      "query": "retrieval augmented generation",
+      "integrated_route": "actual_ui_deepagents_mcp_provider_service",
+      "passed": true,
+      "conversation_id": "99beb841d34f4100af26da7e868f4b35",
+      "url": "http://127.0.0.1:3100/?conversation=99beb841d34f4100af26da7e868f4b35",
+      "turn_id": "4c4e4950705a476b87b1e5660c7b5c3d",
+      "status": "PARTIAL",
+      "run_ids": [
+        "938a18e235284d3088a9a3d768991830"
+      ],
+      "usage": {
+        "research_attempts": 1,
+        "model_http_attempts": 0,
+        "model_cost_usd": 0
+      },
+      "activity": [
+        {
+          "provider": "openaire",
+          "operation": "hybrid_search",
+          "status": "PARTIAL",
+          "attempts": 1,
+          "source_count": 2
+        }
+      ],
+      "warnings": [],
+      "run_status": "PARTIAL",
+      "branch_status": {
+        "lexical": "partial",
+        "semantic": "succeeded"
+      },
+      "sources": [
+        {
+          "source_ref": "openaire:doi_________::85741f326a5c4fffd443b2fe9613841b",
+          "version": "d67cdbbf1193ec2140ba",
+          "year": 2024,
+          "mode": "live",
+          "abstract_chars": 0,
+          "description_chars": 66,
+          "content_state": "description"
+        },
+        {
+          "source_ref": "openaire:doi_dedup___::2a24fffbde01526ddec6a4a8396ce1ea",
+          "version": "3a7d63647153a0bffd67",
+          "year": 2025,
+          "mode": "live",
+          "abstract_chars": 0,
+          "description_chars": 106,
+          "content_state": "description"
+        }
+      ],
+      "source_count": 2,
+      "abstract_count": 0,
+      "description_count": 2,
+      "progressive_snapshots": [
+        {
+          "at": 1794274159230,
+          "status": "QUEUED",
+          "count": 0,
+          "abstracts": 0,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274159230,
+          "status": "RUNNING",
+          "count": 0,
+          "abstracts": 0,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274159674,
+          "status": "RUNNING",
+          "count": 0,
+          "abstracts": 0,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274159674,
+          "status": "RUNNING",
+          "count": 0,
+          "abstracts": 0,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274159674,
+          "status": "RUNNING",
+          "count": 0,
+          "abstracts": 0,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274159674,
+          "status": "RUNNING",
+          "count": 0,
+          "abstracts": 0,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274159695,
+          "status": "RUNNING",
+          "count": 0,
+          "abstracts": 0,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274159754,
+          "status": "RUNNING",
+          "count": 0,
+          "abstracts": 0,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274159792,
+          "status": "RUNNING",
+          "count": 0,
+          "abstracts": 0,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274159792,
+          "status": "RUNNING",
+          "count": 0,
+          "abstracts": 0,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274159831,
+          "status": "RUNNING",
+          "count": 0,
+          "abstracts": 0,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274159831,
+          "status": "RUNNING",
+          "count": 0,
+          "abstracts": 0,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274161243,
+          "status": "RUNNING",
+          "count": 1,
+          "abstracts": 0,
+          "descriptions": 1
+        },
+        {
+          "at": 1794274161243,
+          "status": "RUNNING",
+          "count": 2,
+          "abstracts": 0,
+          "descriptions": 2
+        },
+        {
+          "at": 1794274161282,
+          "status": "RUNNING",
+          "count": 2,
+          "abstracts": 0,
+          "descriptions": 2
+        },
+        {
+          "at": 1794274161282,
+          "status": "RUNNING",
+          "count": 2,
+          "abstracts": 0,
+          "descriptions": 2
+        },
+        {
+          "at": 1794274161297,
+          "status": "RUNNING",
+          "count": 2,
+          "abstracts": 0,
+          "descriptions": 2
+        },
+        {
+          "at": 1794274161321,
+          "status": "RUNNING",
+          "count": 2,
+          "abstracts": 0,
+          "descriptions": 2
+        },
+        {
+          "at": 1794274161350,
+          "status": "RUNNING",
+          "count": 2,
+          "abstracts": 0,
+          "descriptions": 2
+        },
+        {
+          "at": 1794274161363,
+          "status": "PARTIAL",
+          "count": 2,
+          "abstracts": 0,
+          "descriptions": 2
+        },
+        {
+          "at": 1794274161363,
+          "status": "PARTIAL",
+          "count": 2,
+          "abstracts": 0,
+          "descriptions": 2
+        }
+      ],
+      "first_source_snapshot_ms": 2082,
+      "sources_observed_before_terminal": true,
+      "abstracts_observed_before_terminal": false,
+      "reload_zero_new_calls": true
+    },
+    {
+      "provider": "crossref",
+      "query": "retrieval augmented generation",
+      "integrated_route": "actual_ui_deepagents_mcp_provider_service",
+      "passed": true,
+      "conversation_id": "3d5046d002234fa98ae392ca1a4398f2",
+      "url": "http://127.0.0.1:3100/?conversation=3d5046d002234fa98ae392ca1a4398f2",
+      "turn_id": "eb988bc8550040ceb9ff4b1306dfa05f",
+      "status": "SUCCEEDED",
+      "run_ids": [
+        "4e787bdfe8c849cb9e98e95595a9029c"
+      ],
+      "usage": {
+        "research_attempts": 1,
+        "model_http_attempts": 0,
+        "model_cost_usd": 0
+      },
+      "activity": [
+        {
+          "provider": "crossref",
+          "operation": "hybrid_search",
+          "status": "SUCCEEDED",
+          "attempts": 1,
+          "source_count": 20
+        }
+      ],
+      "warnings": [],
+      "run_status": "SUCCEEDED",
+      "branch_status": {
+        "lexical": "succeeded",
+        "semantic": "succeeded"
+      },
+      "sources": [
+        {
+          "source_ref": "crossref:10.5040/9781350865778",
+          "version": "57b15cee5f58a103acd1",
+          "year": 2024,
+          "mode": "live",
+          "abstract_chars": 0,
+          "description_chars": 0,
+          "content_state": "metadata"
+        },
+        {
+          "source_ref": "crossref:10.1002/9781394374717.ch03",
+          "version": "c46db12f7754400f24ac",
+          "year": 2026,
+          "mode": "live",
+          "abstract_chars": 0,
+          "description_chars": 0,
+          "content_state": "metadata"
+        },
+        {
+          "source_ref": "crossref:10.1002/9781394374717.ch07",
+          "version": "915d2fbf1c57328b4996",
+          "year": 2026,
+          "mode": "live",
+          "abstract_chars": 0,
+          "description_chars": 0,
+          "content_state": "metadata"
+        },
+        {
+          "source_ref": "crossref:10.59350/q2pq3-0fv85",
+          "version": "e98674af7b4803be4b15",
+          "year": 2024,
+          "mode": "live",
+          "abstract_chars": 439,
+          "description_chars": 0,
+          "content_state": "abstract"
+        },
+        {
+          "source_ref": "crossref:10.5040/bci-0kgd.ch-1",
+          "version": "5bf18a621da58dac51d1",
+          "year": 2024,
+          "mode": "live",
+          "abstract_chars": 0,
+          "description_chars": 0,
+          "content_state": "metadata"
+        },
+        {
+          "source_ref": "crossref:10.59350/r9dj1-zkx52",
+          "version": "3de25f723048085058b5",
+          "year": 2024,
+          "mode": "live",
+          "abstract_chars": 439,
+          "description_chars": 0,
+          "content_state": "abstract"
+        },
+        {
+          "source_ref": "crossref:10.2139/ssrn.5316632",
+          "version": "533b958774f03b949b48",
+          "year": 2025,
+          "mode": "live",
+          "abstract_chars": 0,
+          "description_chars": 0,
+          "content_state": "metadata"
+        },
+        {
+          "source_ref": "crossref:10.2139/ssrn.5253805",
+          "version": "a63f53976b4edb426aff",
+          "year": 2025,
+          "mode": "live",
+          "abstract_chars": 0,
+          "description_chars": 0,
+          "content_state": "metadata"
+        },
+        {
+          "source_ref": "crossref:10.1007/979-8-8688-1808-0_1",
+          "version": "5d0c975e10519cfbc08e",
+          "year": 2025,
+          "mode": "live",
+          "abstract_chars": 0,
+          "description_chars": 0,
+          "content_state": "metadata"
+        },
+        {
+          "source_ref": "crossref:10.1007/979-8-8688-1808-0_3",
+          "version": "91252c989fe5d697ecf2",
+          "year": 2025,
+          "mode": "live",
+          "abstract_chars": 0,
+          "description_chars": 0,
+          "content_state": "metadata"
+        },
+        {
+          "source_ref": "crossref:10.1007/979-8-8688-1808-0_2",
+          "version": "5a5d133fa472231e5d05",
+          "year": 2025,
+          "mode": "live",
+          "abstract_chars": 0,
+          "description_chars": 0,
+          "content_state": "metadata"
+        },
+        {
+          "source_ref": "crossref:10.1002/9781394374717.fmatter",
+          "version": "336e4ff9ede81c761133",
+          "year": 2026,
+          "mode": "live",
+          "abstract_chars": 0,
+          "description_chars": 0,
+          "content_state": "metadata"
+        },
+        {
+          "source_ref": "crossref:10.2139/ssrn.7546441",
+          "version": "32a2b87e0f65925904ba",
+          "year": 2026,
+          "mode": "live",
+          "abstract_chars": 1403,
+          "description_chars": 0,
+          "content_state": "abstract"
+        },
+        {
+          "source_ref": "crossref:10.1002/9781394336128.ch2",
+          "version": "82ee894721411b54fd98",
+          "year": 2026,
+          "mode": "live",
+          "abstract_chars": 0,
+          "description_chars": 0,
+          "content_state": "metadata"
+        },
+        {
+          "source_ref": "crossref:10.32388/4l83f7",
+          "version": "733600b2b77161d1309c",
+          "year": 2025,
+          "mode": "live",
+          "abstract_chars": 0,
+          "description_chars": 0,
+          "content_state": "metadata"
+        },
+        {
+          "source_ref": "crossref:10.32388/70qgzw",
+          "version": "1b0b088788e98600f94a",
+          "year": 2025,
+          "mode": "live",
+          "abstract_chars": 0,
+          "description_chars": 0,
+          "content_state": "metadata"
+        },
+        {
+          "source_ref": "crossref:10.32388/j2nqss",
+          "version": "0687b1b990d2ab2e9057",
+          "year": 2026,
+          "mode": "live",
+          "abstract_chars": 0,
+          "description_chars": 0,
+          "content_state": "metadata"
+        },
+        {
+          "source_ref": "crossref:10.21275/sr251104092705",
+          "version": "b623a713036cde5dc11d",
+          "year": 2025,
+          "mode": "live",
+          "abstract_chars": 0,
+          "description_chars": 0,
+          "content_state": "metadata"
+        },
+        {
+          "source_ref": "crossref:10.3390/engproc2025120047",
+          "version": "97298f1bd1eb3a57c694",
+          "year": 2026,
+          "mode": "live",
+          "abstract_chars": 0,
+          "description_chars": 0,
+          "content_state": "metadata"
+        },
+        {
+          "source_ref": "crossref:10.32388/nth9ey",
+          "version": "f8c4006aaa3361830fc0",
+          "year": 2025,
+          "mode": "live",
+          "abstract_chars": 0,
+          "description_chars": 0,
+          "content_state": "metadata"
+        }
+      ],
+      "source_count": 20,
+      "abstract_count": 3,
+      "description_count": 0,
+      "progressive_snapshots": [
+        {
+          "at": 1794274162636,
+          "status": "QUEUED",
+          "count": 0,
+          "abstracts": 0,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274162636,
+          "status": "RUNNING",
+          "count": 0,
+          "abstracts": 0,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274162890,
+          "status": "RUNNING",
+          "count": 0,
+          "abstracts": 0,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274162890,
+          "status": "RUNNING",
+          "count": 0,
+          "abstracts": 0,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274162890,
+          "status": "RUNNING",
+          "count": 0,
+          "abstracts": 0,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274162890,
+          "status": "RUNNING",
+          "count": 0,
+          "abstracts": 0,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274162901,
+          "status": "RUNNING",
+          "count": 0,
+          "abstracts": 0,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274162935,
+          "status": "RUNNING",
+          "count": 0,
+          "abstracts": 0,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274162957,
+          "status": "RUNNING",
+          "count": 0,
+          "abstracts": 0,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274162957,
+          "status": "RUNNING",
+          "count": 0,
+          "abstracts": 0,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274162981,
+          "status": "RUNNING",
+          "count": 0,
+          "abstracts": 0,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274162981,
+          "status": "RUNNING",
+          "count": 0,
+          "abstracts": 0,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274163629,
+          "status": "RUNNING",
+          "count": 1,
+          "abstracts": 0,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274163630,
+          "status": "RUNNING",
+          "count": 4,
+          "abstracts": 1,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274163760,
+          "status": "RUNNING",
+          "count": 13,
+          "abstracts": 3,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274164001,
+          "status": "RUNNING",
+          "count": 20,
+          "abstracts": 3,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274165263,
+          "status": "RUNNING",
+          "count": 20,
+          "abstracts": 3,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274165264,
+          "status": "RUNNING",
+          "count": 20,
+          "abstracts": 3,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274166038,
+          "status": "RUNNING",
+          "count": 20,
+          "abstracts": 3,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274166077,
+          "status": "RUNNING",
+          "count": 20,
+          "abstracts": 3,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274166242,
+          "status": "RUNNING",
+          "count": 20,
+          "abstracts": 3,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274166443,
+          "status": "RUNNING",
+          "count": 20,
+          "abstracts": 3,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274166480,
+          "status": "SUCCEEDED",
+          "count": 20,
+          "abstracts": 3,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274166481,
+          "status": "SUCCEEDED",
+          "count": 20,
+          "abstracts": 3,
+          "descriptions": 0
+        }
+      ],
+      "first_source_snapshot_ms": 1042,
+      "sources_observed_before_terminal": true,
+      "abstracts_observed_before_terminal": true,
+      "reload_zero_new_calls": true
+    }
+  ],
+  "errors": [],
+  "page_errors": [],
+  "model_http_attempts": 0,
+  "passed": true
+}

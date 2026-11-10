@@ -1,0 +1,278 @@
+{
+  "synthetic/orion-api": {
+    "id": "synthetic/orion-api",
+    "source": "SYNTHETIC",
+    "private": false,
+    "extractor": "demo-rake-tfidf-v2",
+    "evidence": [
+      {
+        "id": "E0",
+        "section": "GITHUB_METADATA",
+        "text": "orion-api. Patient intake API for the Orion Clinical Platform. Uses FastAPI and Python. Topics: . Language: unknown"
+      },
+      {
+        "id": "E1",
+        "section": "overview",
+        "text": "Patient intake API for the Orion Clinical Platform. Uses FastAPI and Python."
+      }
+    ],
+    "phrases": [
+      {
+        "text": "patient intake api",
+        "score": 9.0,
+        "normalized": "patient intake api",
+        "original": "Patient intake API",
+        "evidence_ids": [
+          "E0",
+          "E1"
+        ],
+        "spans": [
+          {
+            "id": "E0",
+            "start": 11,
+            "end": 29
+          },
+          {
+            "id": "E1",
+            "start": 0,
+            "end": 18
+          }
+        ]
+      },
+      {
+        "text": "orion clinical platform",
+        "score": 9.0,
+        "normalized": "orion clinical platform",
+        "original": "Orion Clinical Platform",
+        "evidence_ids": [
+          "E0",
+          "E1"
+        ],
+        "spans": [
+          {
+            "id": "E0",
+            "start": 38,
+            "end": 61
+          },
+          {
+            "id": "E1",
+            "start": 27,
+            "end": 50
+          }
+        ]
+      },
+      {
+        "text": "language unknown",
+        "score": 4.0,
+        "normalized": "language unknown",
+        "original": "Language: unknown",
+        "evidence_ids": [
+          "E0"
+        ],
+        "spans": [
+          {
+            "id": "E0",
+            "start": 98,
+            "end": 115
+          }
+        ]
+      },
+      {
+        "text": "topics",
+        "score": 1.0,
+        "normalized": "topics",
+        "original": "Topics",
+        "evidence_ids": [
+          "E0"
+        ],
+        "spans": [
+          {
+            "id": "E0",
+            "start": 88,
+            "end": 94
+          }
+        ]
+      },
+      {
+        "text": "python",
+        "score": 1.0,
+        "normalized": "python",
+        "original": "Python",
+        "evidence_ids": [
+          "E0",
+          "E1"
+        ],
+        "spans": [
+          {
+            "id": "E0",
+            "start": 80,
+            "end": 86
+          },
+          {
+            "id": "E1",
+            "start": 69,
+            "end": 75
+          }
+        ]
+      },
+      {
+        "text": "orion-api",
+        "score": 1.0,
+        "normalized": "orion-api",
+        "original": "orion-api",
+        "evidence_ids": [
+          "E0"
+        ],
+        "spans": [
+          {
+            "id": "E0",
+            "start": 0,
+            "end": 9
+          }
+        ]
+      },
+      {
+        "text": "fastapi",
+        "score": 1.0,
+        "normalized": "fastapi",
+        "original": "FastAPI",
+        "evidence_ids": [
+          "E0",
+          "E1"
+        ],
+        "spans": [
+          {
+            "id": "E0",
+            "start": 68,
+            "end": 75
+          },
+          {
+            "id": "E1",
+            "start": 57,
+            "end": 64
+          }
+        ]
+      }
+    ],
+    "hash": "0bc607b4506651aad2a2d77a6037b6060037ce58e3e19ba09ddeadc15b75d517",
+    "metadata_hash": "bce71292fe26718bff2debc3ae625341eac96998fbafa1f7528a463e518ea620",
+    "sha": "9973f49b46a653264ce93c3f2a2ed1ed016be45b1777d944c105785fc3b372cf",
+    "policy": "public_and_synthetic-v1"
+  },
+  "synthetic/orion-ui": {
+    "id": "synthetic/orion-ui",
+    "source": "SYNTHETIC",
+    "private": false,
+    "extractor": "demo-rake-tfidf-v2",
+    "evidence": [
+      {
+        "id": "E0",
+        "section": "GITHUB_METADATA",
+        "text": "orion-ui. Orion Clinical Platform patient intake dashboard using React and TypeScript. Topics: . Language: unknown"
+      },
+      {
+        "id": "E1",
+        "section": "overview",
+        "text": "Orion Clinical Platform patient intake dashboard using React and TypeScript."
+      }
+    ],
+    "phrases": [
+      {
+        "text": "language unknown",
+        "score": 4.0,
+        "normalized": "language unknown",
+        "original": "Language: unknown",
+        "evidence_ids": [
+          "E0"
+        ],
+        "spans": [
+          {
+            "id": "E0",
+            "start": 97,
+            "end": 114
+          }
+        ]
+      },
+      {
+        "text": "typescript",
+        "score": 1.0,
+        "normalized": "typescript",
+        "original": "TypeScript",
+        "evidence_ids": [
+          "E0",
+          "E1"
+        ],
+        "spans": [
+          {
+            "id": "E0",
+            "start": 75,
+            "end": 85
+          },
+          {
+            "id": "E1",
+            "start": 65,
+            "end": 75
+          }
+        ]
+      },
+      {
+        "text": "topics",
+        "score": 1.0,
+        "normalized": "topics",
+        "original": "Topics",
+        "evidence_ids": [
+          "E0"
+        ],
+        "spans": [
+          {
+            "id": "E0",
+            "start": 87,
+            "end": 93
+          }
+        ]
+      },
+      {
+        "text": "react",
+        "score": 1.0,
+        "normalized": "react",
+        "original": "React",
+        "evidence_ids": [
+          "E0",
+          "E1"
+        ],
+        "spans": [
+          {
+            "id": "E0",
+            "start": 65,
+            "end": 70
+          },
+          {
+            "id": "E1",
+            "start": 55,
+            "end": 60
+          }
+        ]
+      },
+      {
+        "text": "orion-ui",
+        "score": 1.0,
+        "normalized": "orion-ui",
+        "original": "orion-ui",
+        "evidence_ids": [
+          "E0"
+        ],
+        "spans": [
+          {
+            "id": "E0",
+            "start": 0,
+            "end": 8
+          }
+        ]
+      }
+    ],
+    "hash": "1f25aff5c0a4bfed635991dda38d67feedc922c0254cfd0ef1f727ead21bd2b0",
+    "metadata_hash": "8a83827953b2a9cdd8331d5ab194f4b6d4c602025480241a197745d99e158dc8",
+    "sha": "83a42550d2ba28be35eb7503a7556ed5d9f9d975c19328ae31421f6d54f0b4de",
+    "policy": "public_and_synthetic-v1"
+  }
+}

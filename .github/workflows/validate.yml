@@ -1,0 +1,67 @@
+name: Increment 1 validation
+
+on: [push, pull_request]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validation-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  fixture-validation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      SCOUT_MODE: fixture
+      NEXT_TELEMETRY_DISABLED: "1"
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+          cache: pip
+          cache-dependency-path: requirements.lock
+      - uses: actions/setup-node@v6
+        with:
+          node-version: "24.22.1"
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - name: Install Python dependencies
+        run: |
+          python -m venv .venv
+          .venv/bin/python -m pip install --upgrade pip
+          .venv/bin/python -m pip install --only-binary cryptography -r requirements.lock
+          .venv/bin/python -m pip install --no-deps -e .
+      - name: Python contracts, real MCP and isolated-process tests
+        run: |
+          .venv/bin/ruff check src tests scripts
+          .venv/bin/python -m pytest -q
+          .venv/bin/python -m research_scout.agents.evaluate --output .scout/ci-context-harness.json
+      - name: Install and build frontend
+        working-directory: frontend
+        run: |
+          npm ci
+          npm run typecheck
+          npm run build
+          PLAYWRIGHT_BROWSERS_PATH=.browser-cache npx playwright install --with-deps chromium
+      - name: Browser contracts and actual fixture-backend journey
+        run: |
+          .venv/bin/python scripts/dev.py --mode fixture --state-dir .scout/ci --no-frontend &
+          scout_stack_pid=$!
+          trap 'kill -TERM "$scout_stack_pid" 2>/dev/null || true' EXIT
+          .venv/bin/python - <<'PY'
+          import time, httpx
+          for attempt in range(100):
+              try:
+                  if httpx.get('http://127.0.0.1:8100/health', timeout=1).is_success:
+                      break
+              except httpx.HTTPError:
+                  pass
+              time.sleep(.2)
+          else:
+              raise SystemExit('Fixture backend did not become ready')
+          PY
+          cd frontend
+          SCOUT_BROWSER_INTEGRATION=1 npm run test:browser

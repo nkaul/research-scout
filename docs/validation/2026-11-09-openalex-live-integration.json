@@ -1,0 +1,113 @@
+{
+  "observed_at": "2026-11-10T00:03:11.704149+00:00",
+  "provider": "openalex",
+  "mode": "live",
+  "execution": "provider_asgi_contract_to_real_upstream",
+  "live_requested": true,
+  "operations": [
+    {
+      "operation": "search",
+      "http_status": 200,
+      "branches": [
+        {
+          "branch": "lexical",
+          "kind": "branch.completed",
+          "count": 2,
+          "error": null,
+          "message": null
+        },
+        {
+          "branch": "semantic",
+          "kind": "branch.completed",
+          "count": 2,
+          "error": null,
+          "message": null
+        }
+      ],
+      "sources": [
+        "openalex:W7225116528",
+        "openalex:W7212119446",
+        "openalex:W4417459816",
+        "openalex:W7171791902"
+      ],
+      "attempts": 2,
+      "status": "succeeded"
+    },
+    {
+      "operation": "details",
+      "http_status": 200,
+      "attempts": 1,
+      "error": null,
+      "agency": null,
+      "record": {
+        "source_ref": "openalex:W7225116528",
+        "record_id": "W7225116528",
+        "doi": "10.26434/chemrxiv.15011490/v1",
+        "year": 2026,
+        "resource_type": "preprint",
+        "mode": "live"
+      }
+    }
+  ],
+  "model_http_attempts": 0,
+  "configuration": {
+    "status": "ok",
+    "provider": "openalex",
+    "mode": "live",
+    "fixture": false,
+    "capabilities": {
+      "search": true,
+      "lexical": true,
+      "semantic": true,
+      "details": true,
+      "agency": false,
+      "metadata": false
+    },
+    "access_configured": true,
+    "readiness": "configured_unverified",
+    "access_method": "oauth_store",
+    "key_recommended": false,
+    "blocked_reason": null,
+    "encoder_status": "not_applicable",
+    "upstream_url": "https://mcp.openalex.org/mcp",
+    "last_verified_at": null,
+    "verified_capabilities": [],
+    "last_error": null,
+    "capability_status": "runtime_proof_required",
+    "semantic_execution": "provider_native",
+    "run_attempt_cap": 8
+  },
+  "readiness_after": {
+    "status": "ok",
+    "provider": "openalex",
+    "mode": "live",
+    "fixture": false,
+    "capabilities": {
+      "search": true,
+      "lexical": true,
+      "semantic": true,
+      "details": true,
+      "agency": false,
+      "metadata": false
+    },
+    "access_configured": true,
+    "readiness": "verified",
+    "access_method": "oauth_store",
+    "key_recommended": false,
+    "blocked_reason": null,
+    "encoder_status": "not_applicable",
+    "upstream_url": "https://mcp.openalex.org/mcp",
+    "last_verified_at": "2026-11-10T00:03:15.222470+00:00",
+    "verified_capabilities": [
+      "details",
+      "keyword",
+      "semantic"
+    ],
+    "last_error": null,
+    "capability_status": "partially_verified",
+    "semantic_execution": "provider_native",
+    "run_attempt_cap": 8
+  },
+  "status": "passed",
+  "research_upstream_attempts": 3
+}

@@ -1,0 +1,3408 @@
+{
+  "date": "2026-11-09",
+  "question": "What's the impact of how we improve the context model needs to have for better generation?",
+  "scope": "Actual UI query planning, DeepAgents/application MCP/provider retrieval, relevance review, ranked progressive sources. One explicitly admitted live turn; no answer generation.",
+  "passed": true,
+  "config": {
+    "retrieval": {
+      "enabled": true,
+      "ready": true,
+      "status": "ready",
+      "blocked_reason": null,
+      "model": "gpt-6-luna",
+      "policy": "scout-agentic-retrieval-v1",
+      "max_rounds": 2,
+      "max_model_calls": 5,
+      "max_turn_cost_usd": 0.05,
+      "max_candidates_per_provider_round": 20
+    }
+  },
+  "conversation_id": "97846fde51ac46579f3301eb9d3b7612",
+  "url": "http://127.0.0.1:3100/?conversation=97846fde51ac46579f3301eb9d3b7612",
+  "turn_id": "644aa0b5893d42d59ddf8717e0805626",
+  "turn_status": "SUCCEEDED",
+  "retrieval": {
+    "status": "completed",
+    "round": 1,
+    "max_rounds": 2,
+    "model": "gpt-6-luna",
+    "max_model_calls": 5,
+    "assessments": [
+      {
+        "source_ref": "openalex:W4412164558",
+        "version": "b216ae57c5a01867d029",
+        "provider": "openalex",
+        "run_id": "2be487c1f76847fabf31aa715ef583a2",
+        "round": 1,
+        "label": "relevant",
+        "reason": "Improves context-guided retrieval in RAG generation, directly relating context use to generation quality.",
+        "evidence_scope": "title and bounded provider abstract/description excerpts",
+        "abstract_chars_reviewed": 495,
+        "description_chars_reviewed": 0
+      },
+      {
+        "source_ref": "openalex:W4388736318",
+        "version": "23b34f3bf0b0d4d8a483",
+        "provider": "openalex",
+        "run_id": "2be487c1f76847fabf31aa715ef583a2",
+        "round": 1,
+        "label": "partial",
+        "reason": "Generates quality-related phrases using context, but does not clearly assess context modeling’s effect on generated outputs.",
+        "evidence_scope": "title and bounded provider abstract/description excerpts",
+        "abstract_chars_reviewed": 0,
+        "description_chars_reviewed": 0
+      },
+      {
+        "source_ref": "openalex:W2109444541",
+        "version": "5d39098167046ca96cde",
+        "provider": "openalex",
+        "run_id": "2be487c1f76847fabf31aa715ef583a2",
+        "round": 1,
+        "label": "partial",
+        "reason": "Studies rich context models for speech generation quality, adjacent to context modeling and generation.",
+        "evidence_scope": "title and bounded provider abstract/description excerpts",
+        "abstract_chars_reviewed": 496,
+        "description_chars_reviewed": 0
+      },
+      {
+        "source_ref": "openalex:W4393997407",
+        "version": "8fcffec24142a03199f8",
+        "provider": "openalex",
+        "run_id": "2be487c1f76847fabf31aa715ef583a2",
+        "round": 1,
+        "label": "irrelevant",
+        "reason": "Studies product sales, production, and inventory across upgrades, not language generation.",
+        "evidence_scope": "title and bounded provider abstract/description excerpts",
+        "abstract_chars_reviewed": 495,
+        "description_chars_reviewed": 0
+      },
+      {
+        "source_ref": "openalex:W7167899326",
+        "version": "256f1792a6dad6f3a5a3",
+        "provider": "openalex",
+        "run_id": "2be487c1f76847fabf31aa715ef583a2",
+        "round": 1,
+        "label": "irrelevant",
+        "reason": "Concerns circular economy and industry paradigms, not generative language systems.",
+        "evidence_scope": "title and bounded provider abstract/description excerpts",
+        "abstract_chars_reviewed": 0,
+        "description_chars_reviewed": 0
+      },
+      {
+        "source_ref": "openalex:W7215060537",
+        "version": "281b6027b31d0f7dbeee",
+        "provider": "openalex",
+        "run_id": "2be487c1f76847fabf31aa715ef583a2",
+        "round": 1,
+        "label": "partial",
+        "reason": "Uses context selection for language-model explanation generation in manufacturing, an adjacent application.",
+        "evidence_scope": "title and bounded provider abstract/description excerpts",
+        "abstract_chars_reviewed": 500,
+        "description_chars_reviewed": 0
+      },
+      {
+        "source_ref": "openalex:W4392647863",
+        "version": "86d060fb1a12ad0a8e99",
+        "provider": "openalex",
+        "run_id": "2be487c1f76847fabf31aa715ef583a2",
+        "round": 1,
+        "label": "irrelevant",
+        "reason": "Evaluates wind-speed reanalyses for energy generation, unrelated to language generation.",
+        "evidence_scope": "title and bounded provider abstract/description excerpts",
+        "abstract_chars_reviewed": 491,
+        "description_chars_reviewed": 0
+      },
+      {
+        "source_ref": "openalex:W4415796230",
+        "version": "30d803b0a97411cd2061",
+        "provider": "openalex",
+        "run_id": "2be487c1f76847fabf31aa715ef583a2",
+        "round": 1,
+        "label": "relevant",
+        "reason": "Investigates how context informs language-model generations and whether outputs are grounded in it.",
+        "evidence_scope": "title and bounded provider abstract/description excerpts",
+        "abstract_chars_reviewed": 499,
+        "description_chars_reviewed": 0
+      },
+      {
+        "source_ref": "openalex:W2136372576",
+        "version": "a3537c5769b9abd3060d",
+        "provider": "openalex",
+        "run_id": "2be487c1f76847fabf31aa715ef583a2",
+        "round": 1,
+        "label": "irrelevant",
+        "reason": "Builds sensor-fusion context models for autonomous vehicles, not language generation.",
+        "evidence_scope": "title and bounded provider abstract/description excerpts",
+        "abstract_chars_reviewed": 500,
+        "description_chars_reviewed": 0
+      },
+      {
+        "source_ref": "openalex:W4399425629",
+        "version": "4c0825b959f40c95e2c8",
+        "provider": "openalex",
+        "run_id": "2be487c1f76847fabf31aa715ef583a2",
+        "round": 1,
+        "label": "partial",
+        "reason": "Studies speech-generation quality and in-context learning, but not improvements to context modeling.",
+        "evidence_scope": "title and bounded provider abstract/description excerpts",
+        "abstract_chars_reviewed": 493,
+        "description_chars_reviewed": 0
+      },
+      {
+        "source_ref": "openalex:W4388717437",
+        "version": "0cd25467f4ba5914496b",
+        "provider": "openalex",
+        "run_id": "2be487c1f76847fabf31aa715ef583a2",
+        "round": 1,
+        "label": "relevant",
+        "reason": "Filters retrieved context to reduce misuse and hallucinations in RAG-generated outputs.",
+        "evidence_scope": "title and bounded provider abstract/description excerpts",
+        "abstract_chars_reviewed": 497,
+        "description_chars_reviewed": 0
+      },
+      {
+        "source_ref": "openalex:W2741363662",
+        "version": "60e0cdd04026cc779f1c",
+        "provider": "openalex",
+        "run_id": "2be487c1f76847fabf31aa715ef583a2",
+        "round": 1,
+        "label": "relevant",
+        "reason": "Empirically studies how context use affects generative conversational systems.",
+        "evidence_scope": "title and bounded provider abstract/description excerpts",
+        "abstract_chars_reviewed": 496,
+        "description_chars_reviewed": 0
+      },
+      {
+        "source_ref": "openalex:W4389523675",
+        "version": "de18e2bcf2ff092b41ae",
+        "provider": "openalex",
+        "run_id": "2be487c1f76847fabf31aa715ef583a2",
+        "round": 1,
+        "label": "relevant",
+        "reason": "Assesses and enhances LLM contextual faithfulness, linking context use to prediction quality.",
+        "evidence_scope": "title and bounded provider abstract/description excerpts",
+        "abstract_chars_reviewed": 495,
+        "description_chars_reviewed": 0
+      },
+      {
+        "source_ref": "openalex:W3092958231",
+        "version": "04f0a90fca4383fb8c89",
+        "provider": "openalex",
+        "run_id": "2be487c1f76847fabf31aa715ef583a2",
+        "round": 1,
+        "label": "partial",
+        "reason": "Evaluates factuality of generated text relative to input, but does not improve context modeling.",
+        "evidence_scope": "title and bounded provider abstract/description excerpts",
+        "abstract_chars_reviewed": 500,
+        "description_chars_reviewed": 0
+      },
+      {
+        "source_ref": "openalex:W2963371754",
+        "version": "7a3c3492888590bbabdc",
+        "provider": "openalex",
+        "run_id": "2be487c1f76847fabf31aa715ef583a2",
+        "round": 1,
+        "label": "relevant",
+        "reason": "Uses context-aware retrieval and editing to improve open-domain response generation.",
+        "evidence_scope": "title and bounded provider abstract/description excerpts",
+        "abstract_chars_reviewed": 498,
+        "description_chars_reviewed": 0
+      },
+      {
+        "source_ref": "openalex:W7133223610",
+        "version": "0c9b12c09f8cf42a4fee",
+        "provider": "openalex",
+        "run_id": "2be487c1f76847fabf31aa715ef583a2",
+        "round": 1,
+        "label": "partial",
+        "reason": "Improves factuality in text generation, but does not specifically investigate context modeling.",
+        "evidence_scope": "title and bounded provider abstract/description excerpts",
+        "abstract_chars_reviewed": 497,
+        "description_chars_reviewed": 0
+      },
+      {
+        "source_ref": "openalex:W4402671836",
+        "version": "43ff549387b84c7c2439",
+        "provider": "openalex",
+        "run_id": "2be487c1f76847fabf31aa715ef583a2",
+        "round": 1,
+        "label": "relevant",
+        "reason": "Studies how LLMs combine generated and retrieved contexts and the effects on responses.",
+        "evidence_scope": "title and bounded provider abstract/description excerpts",
+        "abstract_chars_reviewed": 500,
+        "description_chars_reviewed": 0
+      },
+      {
+        "source_ref": "openalex:W4389524463",
+        "version": "a70acd02300c2a6eb35a",
+        "provider": "openalex",
+        "run_id": "2be487c1f76847fabf31aa715ef583a2",
+        "round": 1,
+        "label": "partial",
+        "reason": "Evaluates generated knowledge quality, but does not focus on context-model improvements.",
+        "evidence_scope": "title and bounded provider abstract/description excerpts",
+        "abstract_chars_reviewed": 497,
+        "description_chars_reviewed": 0
+      },
+      {
+        "source_ref": "openalex:W2970647290",
+        "version": "b6bbc3c3befd010825e1",
+        "provider": "openalex",
+        "run_id": "2be487c1f76847fabf31aa715ef583a2",
+        "round": 1,
+        "label": "relevant",
+        "reason": "Directly studies improving question generation using context.",
+        "evidence_scope": "title and bounded provider abstract/description excerpts",
+        "abstract_chars_reviewed": 247,
+        "description_chars_reviewed": 0
+      },
+      {
+        "source_ref": "crossref:10.61686/cputr83367",
+        "version": "51691fa7b2bd77350c8b",
+        "provider": "crossref",
+        "run_id": "33efca0b2a9e47b6b94e77ac9ef30da5",
+        "round": 1,
+        "label": "unknown",
+        "reason": "No title or excerpt is available to assess relevance.",
+        "evidence_scope": "title and bounded provider abstract/description excerpts",
+        "abstract_chars_reviewed": 0,
+        "description_chars_reviewed": 0
+      },
+      {
+        "source_ref": "crossref:10.1007/978-3-319-57837-8_30",
+        "version": "14e0a528efa3f2a81e91",
+        "provider": "crossref",
+        "run_id": "33efca0b2a9e47b6b94e77ac9ef30da5",
+        "round": 1,
+        "label": "irrelevant",
+        "reason": "Addresses context and situation quality in IoT applications, not language generation.",
+        "evidence_scope": "title and bounded provider abstract/description excerpts",
+        "abstract_chars_reviewed": 0,
+        "description_chars_reviewed": 0
+      },
+      {
+        "source_ref": "crossref:10.5220/0010328303300336",
+        "version": "b4afc5d95f230f7b831c",
+        "provider": "crossref",
+        "run_id": "33efca0b2a9e47b6b94e77ac9ef30da5",
+        "round": 1,
+        "label": "irrelevant",
+        "reason": "Focuses on context-oriented programming and code generation, not generated language quality.",
+        "evidence_scope": "title and bounded provider abstract/description excerpts",
+        "abstract_chars_reviewed": 0,
+        "description_chars_reviewed": 0
+      },
+      {
+        "source_ref": "crossref:10.1049/ic:19970760",
+        "version": "2efd4b401938cb1345f6",
+        "provider": "crossref",
+        "run_id": "33efca0b2a9e47b6b94e77ac9ef30da5",
+        "round": 1,
+        "label": "relevant",
+        "reason": "Directly concerns context modeling for language and speech generation.",
+        "evidence_scope": "title and bounded provider abstract/description excerpts",
+        "abstract_chars_reviewed": 0,
+        "description_chars_reviewed": 0
+      },
+      {
+        "source_ref": "crossref:10.1016/s0922-3487(08)70131-x",
+        "version": "f2610c060e4449012748",
+        "provider": "crossref",
+        "run_id": "33efca0b2a9e47b6b94e77ac9ef30da5",
+        "round": 1,
+        "label": "irrelevant",
+        "reason": "Receptor modeling for particulate air quality is unrelated to generative language systems.",
+        "evidence_scope": "title and bounded provider abstract/description excerpts",
+        "abstract_chars_reviewed": 0,
+        "description_chars_reviewed": 0
+      },
+      {
+        "source_ref": "crossref:10.1007/978-3-642-40972-1_18",
+        "version": "48507083437842c7c2cb",
+        "provider": "crossref",
+        "run_id": "33efca0b2a9e47b6b94e77ac9ef30da5",
+        "round": 1,
+        "label": "irrelevant",
+        "reason": "Models a healthcare department workflow for quality control, not language generation.",
+        "evidence_scope": "title and bounded provider abstract/description excerpts",
+        "abstract_chars_reviewed": 0,
+        "description_chars_reviewed": 0
+      },
+      {
+        "source_ref": "crossref:10.1007/978-3-319-57837-8_36",
+        "version": "7094af9c2ac23be0d142",
+        "provider": "crossref",
+        "run_id": "33efca0b2a9e47b6b94e77ac9ef30da5",
+        "round": 1,
+        "label": "irrelevant",
+        "reason": "Title does not indicate language generation or its output quality.",
+        "evidence_scope": "title and bounded provider abstract/description excerpts",
+        "abstract_chars_reviewed": 0,
+        "description_chars_reviewed": 0
+      },
+      {
+        "source_ref": "crossref:10.1109/fuzz-ieee.2018.8491506",
+        "version": "661ea7659cc84624e812",
+        "provider": "crossref",
+        "run_id": "33efca0b2a9e47b6b94e77ac9ef30da5",
+        "round": 1,
+        "label": "partial",
+        "reason": "Context-aware referring expression generation is adjacent, but the title emphasizes size modeling rather than output quality.",
+        "evidence_scope": "title and bounded provider abstract/description excerpts",
+        "abstract_chars_reviewed": 0,
+        "description_chars_reviewed": 0
+      },
+      {
+        "source_ref": "crossref:10.1117/12.2682047.6331636087112",
+        "version": "f66ccaffb289a12423e8",
+        "provider": "crossref",
+        "run_id": "33efca0b2a9e47b6b94e77ac9ef30da5",
+        "round": 1,
+        "label": "unknown",
+        "reason": "No title or excerpt is available to assess relevance.",
+        "evidence_scope": "title and bounded provider abstract/description excerpts",
+        "abstract_chars_reviewed": 0,
+        "description_chars_reviewed": 0
+      },
+      {
+        "source_ref": "crossref:10.2139/ssrn.5500899",
+        "version": "0919a8516cac85f8ff1f",
+        "provider": "crossref",
+        "run_id": "33efca0b2a9e47b6b94e77ac9ef30da5",
+        "round": 1,
+        "label": "partial",
+        "reason": "Uses context-aware LLM generation, but for software test cases rather than general language-output quality.",
+        "evidence_scope": "title and bounded provider abstract/description excerpts",
+        "abstract_chars_reviewed": 900,
+        "description_chars_reviewed": 0
+      },
+      {
+        "source_ref": "crossref:10.1007/978-3-319-57837-8_22",
+        "version": "92d1b578ca6beef44785",
+        "provider": "crossref",
+        "run_id": "33efca0b2a9e47b6b94e77ac9ef30da5",
+        "round": 1,
+        "label": "partial",
+        "reason": "Concerns context in story generation, but the title does not indicate effects on generated-output quality.",
+        "evidence_scope": "title and bounded provider abstract/description excerpts",
+        "abstract_chars_reviewed": 0,
+        "description_chars_reviewed": 0
+      },
+      {
+        "source_ref": "crossref:10.2139/ssrn.4358524",
+        "version": "e9fa0d43264c9d781c78",
+        "provider": "crossref",
+        "run_id": "33efca0b2a9e47b6b94e77ac9ef30da5",
+        "round": 1,
+        "label": "irrelevant",
+        "reason": "Evaluates an air-quality model, not context modeling in language generation.",
+        "evidence_scope": "title and bounded provider abstract/description excerpts",
+        "abstract_chars_reviewed": 0,
+        "description_chars_reviewed": 0
+      },
+      {
+        "source_ref": "crossref:10.5194/egusphere-egu23-14938",
+        "version": "ee81dd2d2eab2bd373bc",
+        "provider": "crossref",
+        "run_id": "33efca0b2a9e47b6b94e77ac9ef30da5",
+        "round": 1,
+        "label": "irrelevant",
+        "reason": "Studies aviation-related air-quality impacts, unrelated to generated language outputs.",
+        "evidence_scope": "title and bounded provider abstract/description excerpts",
+        "abstract_chars_reviewed": 900,
+        "description_chars_reviewed": 0
+      },
+      {
+        "source_ref": "crossref:10.1109/access.2026.3658428",
+        "version": "4e5a8d046f7e1365a225",
+        "provider": "crossref",
+        "run_id": "33efca0b2a9e47b6b94e77ac9ef30da5",
+        "round": 1,
+        "label": "relevant",
+        "reason": "Directly evaluates generation quality in long-context extrapolation.",
+        "evidence_scope": "title and bounded provider abstract/description excerpts",
+        "abstract_chars_reviewed": 0,
+        "description_chars_reviewed": 0
+      },
+      {
+        "source_ref": "crossref:10.2139/ssrn.5175030",
+        "version": "1bbad9ecc5695047cceb",
+        "provider": "crossref",
+        "run_id": "33efca0b2a9e47b6b94e77ac9ef30da5",
+        "round": 1,
+        "label": "irrelevant",
+        "reason": "Studies food quality perceptions by generation cohort, not generative AI.",
+        "evidence_scope": "title and bounded provider abstract/description excerpts",
+        "abstract_chars_reviewed": 0,
+        "description_chars_reviewed": 0
+      },
+      {
+        "source_ref": "crossref:10.1007/3-540-48315-2_49",
+        "version": "b2ff2f0f75385f66bdf2",
+        "provider": "crossref",
+        "run_id": "33efca0b2a9e47b6b94e77ac9ef30da5",
+        "round": 1,
+        "label": "irrelevant",
+        "reason": "Concerns information search for quality management, not language generation.",
+        "evidence_scope": "title and bounded provider abstract/description excerpts",
+        "abstract_chars_reviewed": 0,
+        "description_chars_reviewed": 0
+      },
+      {
+        "source_ref": "crossref:10.5772/61209",
+        "version": "8707122408f379266ff1",
+        "provider": "crossref",
+        "run_id": "33efca0b2a9e47b6b94e77ac9ef30da5",
+        "round": 1,
+        "label": "irrelevant",
+        "reason": "Models electrical power-quality disturbances, unrelated to generative language systems.",
+        "evidence_scope": "title and bounded provider abstract/description excerpts",
+        "abstract_chars_reviewed": 0,
+        "description_chars_reviewed": 0
+      },
+      {
+        "source_ref": "crossref:10.1007/978-3-319-57837-8_46",
+        "version": "ddb60fd90413909ad89e",
+        "provider": "crossref",
+        "run_id": "33efca0b2a9e47b6b94e77ac9ef30da5",
+        "round": 1,
+        "label": "irrelevant",
+        "reason": "Addresses quality parameters in context-aware applications, not generated language quality.",
+        "evidence_scope": "title and bounded provider abstract/description excerpts",
+        "abstract_chars_reviewed": 0,
+        "description_chars_reviewed": 0
+      },
+      {
+        "source_ref": "crossref:10.1109/isqed.2002.996704",
+        "version": "80c0a5be4c999a83cf78",
+        "provider": "crossref",
+        "run_id": "33efca0b2a9e47b6b94e77ac9ef30da5",
+        "round": 1,
+        "label": "irrelevant",
+        "reason": "Concerns software test generation and stress testing, not context modeling for language output.",
+        "evidence_scope": "title and bounded provider abstract/description excerpts",
+        "abstract_chars_reviewed": 0,
+        "description_chars_reviewed": 0
+      },
+      {
+        "source_ref": "crossref:10.21437/interspeech.2026-513",
+        "version": "887f2a14eadc4db3cbf3",
+        "provider": "crossref",
+        "run_id": "33efca0b2a9e47b6b94e77ac9ef30da5",
+        "round": 1,
+        "label": "partial",
+        "reason": "Context-driven neural modeling generates acoustic responses, adjacent but not language generation.",
+        "evidence_scope": "title and bounded provider abstract/description excerpts",
+        "abstract_chars_reviewed": 0,
+        "description_chars_reviewed": 0
+      }
+    ],
+    "rejected_count": 16,
+    "query_history": [
+      {
+        "round": 1,
+        "lexical_query": "context modeling generation quality",
+        "semantic_query": "How do improvements to context modeling in generative language systems affect the quality, relevance, coherence, and factuality of generated outputs?",
+        "reason": "The wording most plausibly concerns context modeling in language generation; the search focuses on its relationship to output quality while leaving improvement methods and evaluation dimensions as optional facets."
+      }
+    ],
+    "model_reservation_usd": 0,
+    "intent": "Find scholarly research on how improving a context model affects the quality of generated outputs.",
+    "domain": "Natural language processing and generative AI",
+    "lexical_query": "context modeling generation quality",
+    "semantic_query": "How do improvements to context modeling in generative language systems affect the quality, relevance, coherence, and factuality of generated outputs?",
+    "query_terms": [
+      "context modeling",
+      "generation quality",
+      "generative language models"
+    ],
+    "required_facets": [
+      {
+        "name": "Context representation and modeling",
+        "terms": [
+          "context modeling",
+          "context representation",
+          "context encoder",
+          "long-context modeling"
+        ]
+      },
+      {
+        "name": "Generated output quality",
+        "terms": [
+          "generation quality",
+          "output quality",
+          "text generation quality",
+          "response quality"
+        ]
+      }
+    ],
+    "optional_facets": [
+      {
+        "name": "Evaluation dimensions",
+        "terms": [
+          "coherence",
+          "relevance",
+          "factuality",
+          "contextual consistency"
+        ]
+      },
+      {
+        "name": "Methods for improving context use",
+        "terms": [
+          "context integration",
+          "context utilization",
+          "retrieval-augmented generation",
+          "prompt context"
+        ]
+      }
+    ],
+    "assumptions": [
+      "Interpreted “context model” as context modeling or context representation in generative language systems, rather than a specific named model.",
+      "Interpreted “impact” as effects on generated-output quality."
+    ],
+    "rationale": "The wording most plausibly concerns context modeling in language generation; the search focuses on its relationship to output quality while leaving improvement methods and evaluation dimensions as optional facets.",
+    "needs_clarification": false,
+    "clarification_question": ""
+  },
+  "usage": {
+    "research_attempts": 3,
+    "model_http_attempts": 3,
+    "model_cost_usd": 0.001535875
+  },
+  "activity": [
+    {
+      "provider": "openalex",
+      "operation": "hybrid_search",
+      "status": "SUCCEEDED",
+      "attempts": 2,
+      "source_count": 15
+    },
+    {
+      "provider": "crossref",
+      "operation": "hybrid_search",
+      "status": "SUCCEEDED",
+      "attempts": 1,
+      "source_count": 8
+    },
+    {
+      "provider": "openai",
+      "operation": "search_refinement",
+      "status": "completed",
+      "attempts": 3,
+      "source_count": 0
+    }
+  ],
+  "warnings": [],
+  "response": "OpenAlex: 15 source records · succeeded.\n\nCrossref: 8 source records · succeeded.\n\n1. Context-Guided Dynamic Retrieval for Improving Generation Quality in RAG Models (2025). Source: OpenAlex.\n\n2. How to Make Context More Useful? An Empirical Study on Context-Aware Neural Conversational Models (2017). Source: OpenAlex.\n\n3. ContextCite: Attributing Model Generation to Context (2024). Source: OpenAlex.\n\n4. Learning to Filter Context for Retrieval-Augmented Generation (2023). Source: OpenAlex.\n\n5. Context-faithful Prompting for Large Language Models (2023). Source: OpenAlex.\n\n6. Blinded by Generated Contexts: How Language Models Merge Generated and Retrieved Contexts When Knowledge Conflicts? (2024). Source: OpenAlex.\n\nAI search refinement reviewed 39 candidate observations; 16 were withheld as unrelated. Relevance labels are model judgments over metadata/excerpts, not verified scientific findings. Stream answer remains a separate action over saved evidence.",
+  "sources": [
+    {
+      "source_ref": "openalex:W4412164558",
+      "provider": "openalex",
+      "run_id": "2be487c1f76847fabf31aa715ef583a2",
+      "version": "b216ae57c5a01867d029",
+      "title": "Context-Guided Dynamic Retrieval for Improving Generation Quality in RAG Models",
+      "year": 2025,
+      "abstract_chars": 495,
+      "relevance": {
+        "policy_version": "scout-query-relevance-v1",
+        "score": 52.387173,
+        "score_kind": "uncalibrated_heuristic_not_probability",
+        "facet_tier": 1,
+        "matched_terms": [
+          "generation quality"
+        ],
+        "missing_terms": [
+          "context modeling",
+          "generative language models"
+        ],
+        "matched_fields": {
+          "generation quality": [
+            "title"
+          ]
+        },
+        "matched_required_facets": [
+          "Generated output quality"
+        ],
+        "missing_required_facets": [
+          "Context representation and modeling"
+        ],
+        "matched_optional_facets": [
+          "Methods for improving context use"
+        ],
+        "missing_optional_facets": [
+          "Evaluation dimensions"
+        ],
+        "facet_evidence": [
+          {
+            "name": "Context representation and modeling",
+            "kind": "required",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Generated output quality",
+            "kind": "required",
+            "matched": true,
+            "matched_aliases": [
+              "generation quality"
+            ]
+          },
+          {
+            "name": "Evaluation dimensions",
+            "kind": "optional",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Methods for improving context use",
+            "kind": "optional",
+            "matched": true,
+            "matched_aliases": [
+              "retrieval-augmented generation"
+            ]
+          }
+        ],
+        "missing_content": [
+          "description"
+        ],
+        "supporting_text_available": true,
+        "evaluated_fields": [
+          "title",
+          "abstract",
+          "description"
+        ],
+        "truncated_fields": [],
+        "omitted_query_terms": 0,
+        "omitted_query_tokens": 0,
+        "evidence_scope": "title and bounded provider abstract/description excerpts",
+        "components": {
+          "lexical_bm25_like": 6.434075,
+          "query_token_coverage": 0.714286,
+          "required_facet_coverage": 0.5,
+          "optional_facet_coverage": 0.5
+        },
+        "rrf_tie_break_score": 0.01639344262295082,
+        "required_facets_are_hard_filters": false,
+        "label": "relevant",
+        "reason": "Improves context-guided retrieval in RAG generation, directly relating context use to generation quality.",
+        "reviewed_version": "b216ae57c5a01867d029"
+      },
+      "retrieval_round": 1
+    },
+    {
+      "source_ref": "openalex:W2741363662",
+      "provider": "openalex",
+      "run_id": "2be487c1f76847fabf31aa715ef583a2",
+      "version": "60e0cdd04026cc779f1c",
+      "title": "How to Make Context More Useful? An Empirical Study on Context-Aware Neural Conversational Models",
+      "year": 2017,
+      "abstract_chars": 496,
+      "relevance": {
+        "policy_version": "scout-query-relevance-v1",
+        "score": 24.418422,
+        "score_kind": "uncalibrated_heuristic_not_probability",
+        "facet_tier": 0,
+        "matched_terms": [],
+        "missing_terms": [
+          "context modeling",
+          "generation quality",
+          "generative language models"
+        ],
+        "matched_fields": {},
+        "matched_required_facets": [],
+        "missing_required_facets": [
+          "Context representation and modeling",
+          "Generated output quality"
+        ],
+        "matched_optional_facets": [],
+        "missing_optional_facets": [
+          "Evaluation dimensions",
+          "Methods for improving context use"
+        ],
+        "facet_evidence": [
+          {
+            "name": "Context representation and modeling",
+            "kind": "required",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Generated output quality",
+            "kind": "required",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Evaluation dimensions",
+            "kind": "optional",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Methods for improving context use",
+            "kind": "optional",
+            "matched": false,
+            "matched_aliases": []
+          }
+        ],
+        "missing_content": [
+          "description"
+        ],
+        "supporting_text_available": true,
+        "evaluated_fields": [
+          "title",
+          "abstract",
+          "description"
+        ],
+        "truncated_fields": [],
+        "omitted_query_terms": 0,
+        "omitted_query_tokens": 0,
+        "evidence_scope": "title and bounded provider abstract/description excerpts",
+        "components": {
+          "lexical_bm25_like": 4.721404,
+          "query_token_coverage": 0.571429,
+          "required_facet_coverage": 0,
+          "optional_facet_coverage": 0
+        },
+        "rrf_tie_break_score": 0.016129032258064516,
+        "required_facets_are_hard_filters": false,
+        "label": "relevant",
+        "reason": "Empirically studies how context use affects generative conversational systems.",
+        "reviewed_version": "60e0cdd04026cc779f1c"
+      },
+      "retrieval_round": 1
+    },
+    {
+      "source_ref": "openalex:W4415796230",
+      "provider": "openalex",
+      "run_id": "2be487c1f76847fabf31aa715ef583a2",
+      "version": "30d803b0a97411cd2061",
+      "title": "ContextCite: Attributing Model Generation to Context",
+      "year": 2024,
+      "abstract_chars": 499,
+      "relevance": {
+        "policy_version": "scout-query-relevance-v1",
+        "score": 22.506516,
+        "score_kind": "uncalibrated_heuristic_not_probability",
+        "facet_tier": 0,
+        "matched_terms": [],
+        "missing_terms": [
+          "context modeling",
+          "generation quality",
+          "generative language models"
+        ],
+        "matched_fields": {},
+        "matched_required_facets": [],
+        "missing_required_facets": [
+          "Context representation and modeling",
+          "Generated output quality"
+        ],
+        "matched_optional_facets": [],
+        "missing_optional_facets": [
+          "Evaluation dimensions",
+          "Methods for improving context use"
+        ],
+        "facet_evidence": [
+          {
+            "name": "Context representation and modeling",
+            "kind": "required",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Generated output quality",
+            "kind": "required",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Evaluation dimensions",
+            "kind": "optional",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Methods for improving context use",
+            "kind": "optional",
+            "matched": false,
+            "matched_aliases": []
+          }
+        ],
+        "missing_content": [
+          "description"
+        ],
+        "supporting_text_available": true,
+        "evaluated_fields": [
+          "title",
+          "abstract",
+          "description"
+        ],
+        "truncated_fields": [],
+        "omitted_query_terms": 0,
+        "omitted_query_tokens": 0,
+        "evidence_scope": "title and bounded provider abstract/description excerpts",
+        "components": {
+          "lexical_bm25_like": 3.70468,
+          "query_token_coverage": 0.571429,
+          "required_facet_coverage": 0,
+          "optional_facet_coverage": 0
+        },
+        "rrf_tie_break_score": 0.029631255487269532,
+        "required_facets_are_hard_filters": false,
+        "label": "relevant",
+        "reason": "Investigates how context informs language-model generations and whether outputs are grounded in it.",
+        "reviewed_version": "30d803b0a97411cd2061"
+      },
+      "retrieval_round": 1
+    },
+    {
+      "source_ref": "openalex:W4388717437",
+      "provider": "openalex",
+      "run_id": "2be487c1f76847fabf31aa715ef583a2",
+      "version": "0cd25467f4ba5914496b",
+      "title": "Learning to Filter Context for Retrieval-Augmented Generation",
+      "year": 2023,
+      "abstract_chars": 497,
+      "relevance": {
+        "policy_version": "scout-query-relevance-v1",
+        "score": 22.18845,
+        "score_kind": "uncalibrated_heuristic_not_probability",
+        "facet_tier": 0,
+        "matched_terms": [],
+        "missing_terms": [
+          "context modeling",
+          "generation quality",
+          "generative language models"
+        ],
+        "matched_fields": {},
+        "matched_required_facets": [],
+        "missing_required_facets": [
+          "Context representation and modeling",
+          "Generated output quality"
+        ],
+        "matched_optional_facets": [
+          "Methods for improving context use"
+        ],
+        "missing_optional_facets": [
+          "Evaluation dimensions"
+        ],
+        "facet_evidence": [
+          {
+            "name": "Context representation and modeling",
+            "kind": "required",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Generated output quality",
+            "kind": "required",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Evaluation dimensions",
+            "kind": "optional",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Methods for improving context use",
+            "kind": "optional",
+            "matched": true,
+            "matched_aliases": [
+              "retrieval-augmented generation"
+            ]
+          }
+        ],
+        "missing_content": [
+          "description"
+        ],
+        "supporting_text_available": true,
+        "evaluated_fields": [
+          "title",
+          "abstract",
+          "description"
+        ],
+        "truncated_fields": [],
+        "omitted_query_terms": 0,
+        "omitted_query_tokens": 0,
+        "evidence_scope": "title and bounded provider abstract/description excerpts",
+        "components": {
+          "lexical_bm25_like": 2.612903,
+          "query_token_coverage": 0.428571,
+          "required_facet_coverage": 0,
+          "optional_facet_coverage": 0.5
+        },
+        "rrf_tie_break_score": 0.01639344262295082,
+        "required_facets_are_hard_filters": false,
+        "label": "relevant",
+        "reason": "Filters retrieved context to reduce misuse and hallucinations in RAG-generated outputs.",
+        "reviewed_version": "0cd25467f4ba5914496b"
+      },
+      "retrieval_round": 1
+    },
+    {
+      "source_ref": "openalex:W4389523675",
+      "provider": "openalex",
+      "run_id": "2be487c1f76847fabf31aa715ef583a2",
+      "version": "de18e2bcf2ff092b41ae",
+      "title": "Context-faithful Prompting for Large Language Models",
+      "year": 2023,
+      "abstract_chars": 495,
+      "relevance": {
+        "policy_version": "scout-query-relevance-v1",
+        "score": 19.608713,
+        "score_kind": "uncalibrated_heuristic_not_probability",
+        "facet_tier": 0,
+        "matched_terms": [],
+        "missing_terms": [
+          "context modeling",
+          "generation quality",
+          "generative language models"
+        ],
+        "matched_fields": {},
+        "matched_required_facets": [],
+        "missing_required_facets": [
+          "Context representation and modeling",
+          "Generated output quality"
+        ],
+        "matched_optional_facets": [],
+        "missing_optional_facets": [
+          "Evaluation dimensions",
+          "Methods for improving context use"
+        ],
+        "facet_evidence": [
+          {
+            "name": "Context representation and modeling",
+            "kind": "required",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Generated output quality",
+            "kind": "required",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Evaluation dimensions",
+            "kind": "optional",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Methods for improving context use",
+            "kind": "optional",
+            "matched": false,
+            "matched_aliases": []
+          }
+        ],
+        "missing_content": [
+          "description"
+        ],
+        "supporting_text_available": true,
+        "evaluated_fields": [
+          "title",
+          "abstract",
+          "description"
+        ],
+        "truncated_fields": [],
+        "omitted_query_terms": 0,
+        "omitted_query_tokens": 0,
+        "evidence_scope": "title and bounded provider abstract/description excerpts",
+        "components": {
+          "lexical_bm25_like": 3.684819,
+          "query_token_coverage": 0.428571,
+          "required_facet_coverage": 0,
+          "optional_facet_coverage": 0
+        },
+        "rrf_tie_break_score": 0.015873015873015872,
+        "required_facets_are_hard_filters": false,
+        "label": "relevant",
+        "reason": "Assesses and enhances LLM contextual faithfulness, linking context use to prediction quality.",
+        "reviewed_version": "de18e2bcf2ff092b41ae"
+      },
+      "retrieval_round": 1
+    },
+    {
+      "source_ref": "openalex:W4402671836",
+      "provider": "openalex",
+      "run_id": "2be487c1f76847fabf31aa715ef583a2",
+      "version": "43ff549387b84c7c2439",
+      "title": "Blinded by Generated Contexts: How Language Models Merge Generated and Retrieved Contexts When Knowledge Conflicts?",
+      "year": 2024,
+      "abstract_chars": 500,
+      "relevance": {
+        "policy_version": "scout-query-relevance-v1",
+        "score": 19.131796,
+        "score_kind": "uncalibrated_heuristic_not_probability",
+        "facet_tier": 0,
+        "matched_terms": [],
+        "missing_terms": [
+          "context modeling",
+          "generation quality",
+          "generative language models"
+        ],
+        "matched_fields": {},
+        "matched_required_facets": [],
+        "missing_required_facets": [
+          "Context representation and modeling",
+          "Generated output quality"
+        ],
+        "matched_optional_facets": [],
+        "missing_optional_facets": [
+          "Evaluation dimensions",
+          "Methods for improving context use"
+        ],
+        "facet_evidence": [
+          {
+            "name": "Context representation and modeling",
+            "kind": "required",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Generated output quality",
+            "kind": "required",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Evaluation dimensions",
+            "kind": "optional",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Methods for improving context use",
+            "kind": "optional",
+            "matched": false,
+            "matched_aliases": []
+          }
+        ],
+        "missing_content": [
+          "description"
+        ],
+        "supporting_text_available": true,
+        "evaluated_fields": [
+          "title",
+          "abstract",
+          "description"
+        ],
+        "truncated_fields": [],
+        "omitted_query_terms": 0,
+        "omitted_query_tokens": 0,
+        "evidence_scope": "title and bounded provider abstract/description excerpts",
+        "components": {
+          "lexical_bm25_like": 3.456801,
+          "query_token_coverage": 0.428571,
+          "required_facet_coverage": 0,
+          "optional_facet_coverage": 0
+        },
+        "rrf_tie_break_score": 0.014705882352941176,
+        "required_facets_are_hard_filters": false,
+        "label": "relevant",
+        "reason": "Studies how LLMs combine generated and retrieved contexts and the effects on responses.",
+        "reviewed_version": "43ff549387b84c7c2439"
+      },
+      "retrieval_round": 1
+    },
+    {
+      "source_ref": "openalex:W2970647290",
+      "provider": "openalex",
+      "run_id": "2be487c1f76847fabf31aa715ef583a2",
+      "version": "b6bbc3c3befd010825e1",
+      "title": "Improving Question Generation With to the Point Context",
+      "year": 2019,
+      "abstract_chars": 247,
+      "relevance": {
+        "policy_version": "scout-query-relevance-v1",
+        "score": 17.039887,
+        "score_kind": "uncalibrated_heuristic_not_probability",
+        "facet_tier": 0,
+        "matched_terms": [],
+        "missing_terms": [
+          "context modeling",
+          "generation quality",
+          "generative language models"
+        ],
+        "matched_fields": {},
+        "matched_required_facets": [],
+        "missing_required_facets": [
+          "Context representation and modeling",
+          "Generated output quality"
+        ],
+        "matched_optional_facets": [],
+        "missing_optional_facets": [
+          "Evaluation dimensions",
+          "Methods for improving context use"
+        ],
+        "facet_evidence": [
+          {
+            "name": "Context representation and modeling",
+            "kind": "required",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Generated output quality",
+            "kind": "required",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Evaluation dimensions",
+            "kind": "optional",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Methods for improving context use",
+            "kind": "optional",
+            "matched": false,
+            "matched_aliases": []
+          }
+        ],
+        "missing_content": [
+          "description"
+        ],
+        "supporting_text_available": true,
+        "evaluated_fields": [
+          "title",
+          "abstract",
+          "description"
+        ],
+        "truncated_fields": [],
+        "omitted_query_terms": 0,
+        "omitted_query_tokens": 0,
+        "evidence_scope": "title and bounded provider abstract/description excerpts",
+        "components": {
+          "lexical_bm25_like": 2.553477,
+          "query_token_coverage": 0.428571,
+          "required_facet_coverage": 0,
+          "optional_facet_coverage": 0
+        },
+        "rrf_tie_break_score": 0.014285714285714285,
+        "required_facets_are_hard_filters": false,
+        "label": "relevant",
+        "reason": "Directly studies improving question generation using context.",
+        "reviewed_version": "b6bbc3c3befd010825e1"
+      },
+      "retrieval_round": 1
+    },
+    {
+      "source_ref": "openalex:W2963371754",
+      "provider": "openalex",
+      "run_id": "2be487c1f76847fabf31aa715ef583a2",
+      "version": "7a3c3492888590bbabdc",
+      "title": "Response Generation by Context-Aware Prototype Editing",
+      "year": 2019,
+      "abstract_chars": 498,
+      "relevance": {
+        "policy_version": "scout-query-relevance-v1",
+        "score": 14.818859,
+        "score_kind": "uncalibrated_heuristic_not_probability",
+        "facet_tier": 0,
+        "matched_terms": [],
+        "missing_terms": [
+          "context modeling",
+          "generation quality",
+          "generative language models"
+        ],
+        "matched_fields": {},
+        "matched_required_facets": [],
+        "missing_required_facets": [
+          "Context representation and modeling",
+          "Generated output quality"
+        ],
+        "matched_optional_facets": [],
+        "missing_optional_facets": [
+          "Evaluation dimensions",
+          "Methods for improving context use"
+        ],
+        "facet_evidence": [
+          {
+            "name": "Context representation and modeling",
+            "kind": "required",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Generated output quality",
+            "kind": "required",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Evaluation dimensions",
+            "kind": "optional",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Methods for improving context use",
+            "kind": "optional",
+            "matched": false,
+            "matched_aliases": []
+          }
+        ],
+        "missing_content": [
+          "description"
+        ],
+        "supporting_text_available": true,
+        "evaluated_fields": [
+          "title",
+          "abstract",
+          "description"
+        ],
+        "truncated_fields": [],
+        "omitted_query_terms": 0,
+        "omitted_query_tokens": 0,
+        "evidence_scope": "title and bounded provider abstract/description excerpts",
+        "components": {
+          "lexical_bm25_like": 2.81272,
+          "query_token_coverage": 0.285714,
+          "required_facet_coverage": 0,
+          "optional_facet_coverage": 0
+        },
+        "rrf_tie_break_score": 0.015384615384615385,
+        "required_facets_are_hard_filters": false,
+        "label": "relevant",
+        "reason": "Uses context-aware retrieval and editing to improve open-domain response generation.",
+        "reviewed_version": "7a3c3492888590bbabdc"
+      },
+      "retrieval_round": 1
+    },
+    {
+      "source_ref": "openalex:W2109444541",
+      "provider": "openalex",
+      "run_id": "2be487c1f76847fabf31aa715ef583a2",
+      "version": "5d39098167046ca96cde",
+      "title": "Parameter Generation Methods With Rich Context Models for High-Quality and Flexible Text-To-Speech Synthesis",
+      "year": 2014,
+      "abstract_chars": 496,
+      "relevance": {
+        "policy_version": "scout-query-relevance-v1",
+        "score": 31.495313,
+        "score_kind": "uncalibrated_heuristic_not_probability",
+        "facet_tier": 0,
+        "matched_terms": [],
+        "missing_terms": [
+          "context modeling",
+          "generation quality",
+          "generative language models"
+        ],
+        "matched_fields": {},
+        "matched_required_facets": [],
+        "missing_required_facets": [
+          "Context representation and modeling",
+          "Generated output quality"
+        ],
+        "matched_optional_facets": [],
+        "missing_optional_facets": [
+          "Evaluation dimensions",
+          "Methods for improving context use"
+        ],
+        "facet_evidence": [
+          {
+            "name": "Context representation and modeling",
+            "kind": "required",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Generated output quality",
+            "kind": "required",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Evaluation dimensions",
+            "kind": "optional",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Methods for improving context use",
+            "kind": "optional",
+            "matched": false,
+            "matched_aliases": []
+          }
+        ],
+        "missing_content": [
+          "description"
+        ],
+        "supporting_text_available": true,
+        "evaluated_fields": [
+          "title",
+          "abstract",
+          "description"
+        ],
+        "truncated_fields": [],
+        "omitted_query_terms": 0,
+        "omitted_query_tokens": 0,
+        "evidence_scope": "title and bounded provider abstract/description excerpts",
+        "components": {
+          "lexical_bm25_like": 7.738824,
+          "query_token_coverage": 0.714286,
+          "required_facet_coverage": 0,
+          "optional_facet_coverage": 0
+        },
+        "rrf_tie_break_score": 0.015873015873015872,
+        "required_facets_are_hard_filters": false,
+        "label": "partial",
+        "reason": "Studies rich context models for speech generation quality, adjacent to context modeling and generation.",
+        "reviewed_version": "5d39098167046ca96cde"
+      },
+      "retrieval_round": 1
+    },
+    {
+      "source_ref": "openalex:W7215060537",
+      "provider": "openalex",
+      "run_id": "2be487c1f76847fabf31aa715ef583a2",
+      "version": "281b6027b31d0f7dbeee",
+      "title": "Selecting Context for Rule-Grounded Explanation Generation: A Small Language Model Study in Injection Moulding Quality Prediction",
+      "year": 2026,
+      "abstract_chars": 500,
+      "relevance": {
+        "policy_version": "scout-query-relevance-v1",
+        "score": 31.254426,
+        "score_kind": "uncalibrated_heuristic_not_probability",
+        "facet_tier": 0,
+        "matched_terms": [],
+        "missing_terms": [
+          "context modeling",
+          "generation quality",
+          "generative language models"
+        ],
+        "matched_fields": {},
+        "matched_required_facets": [],
+        "missing_required_facets": [
+          "Context representation and modeling",
+          "Generated output quality"
+        ],
+        "matched_optional_facets": [],
+        "missing_optional_facets": [
+          "Evaluation dimensions",
+          "Methods for improving context use"
+        ],
+        "facet_evidence": [
+          {
+            "name": "Context representation and modeling",
+            "kind": "required",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Generated output quality",
+            "kind": "required",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Evaluation dimensions",
+            "kind": "optional",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Methods for improving context use",
+            "kind": "optional",
+            "matched": false,
+            "matched_aliases": []
+          }
+        ],
+        "missing_content": [
+          "description"
+        ],
+        "supporting_text_available": true,
+        "evaluated_fields": [
+          "title",
+          "abstract",
+          "description"
+        ],
+        "truncated_fields": [],
+        "omitted_query_terms": 0,
+        "omitted_query_tokens": 0,
+        "evidence_scope": "title and bounded provider abstract/description excerpts",
+        "components": {
+          "lexical_bm25_like": 7.528563,
+          "query_token_coverage": 0.714286,
+          "required_facet_coverage": 0,
+          "optional_facet_coverage": 0
+        },
+        "rrf_tie_break_score": 0.015151515151515152,
+        "required_facets_are_hard_filters": false,
+        "label": "partial",
+        "reason": "Uses context selection for language-model explanation generation in manufacturing, an adjacent application.",
+        "reviewed_version": "281b6027b31d0f7dbeee"
+      },
+      "retrieval_round": 1
+    },
+    {
+      "source_ref": "openalex:W4388736318",
+      "provider": "openalex",
+      "run_id": "2be487c1f76847fabf31aa715ef583a2",
+      "version": "23b34f3bf0b0d4d8a483",
+      "title": "Language model as an Annotator: Unsupervised context-aware quality phrase generation",
+      "year": 2023,
+      "abstract_chars": 0,
+      "relevance": {
+        "policy_version": "scout-query-relevance-v1",
+        "score": 30.172553,
+        "score_kind": "uncalibrated_heuristic_not_probability",
+        "facet_tier": 0,
+        "matched_terms": [],
+        "missing_terms": [
+          "context modeling",
+          "generation quality",
+          "generative language models"
+        ],
+        "matched_fields": {},
+        "matched_required_facets": [],
+        "missing_required_facets": [
+          "Context representation and modeling",
+          "Generated output quality"
+        ],
+        "matched_optional_facets": [],
+        "missing_optional_facets": [
+          "Evaluation dimensions",
+          "Methods for improving context use"
+        ],
+        "facet_evidence": [
+          {
+            "name": "Context representation and modeling",
+            "kind": "required",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Generated output quality",
+            "kind": "required",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Evaluation dimensions",
+            "kind": "optional",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Methods for improving context use",
+            "kind": "optional",
+            "matched": false,
+            "matched_aliases": []
+          }
+        ],
+        "missing_content": [
+          "abstract",
+          "description"
+        ],
+        "supporting_text_available": false,
+        "evaluated_fields": [
+          "title",
+          "abstract",
+          "description"
+        ],
+        "truncated_fields": [],
+        "omitted_query_terms": 0,
+        "omitted_query_tokens": 0,
+        "evidence_scope": "title and bounded provider abstract/description excerpts",
+        "components": {
+          "lexical_bm25_like": 6.649591,
+          "query_token_coverage": 0.714286,
+          "required_facet_coverage": 0,
+          "optional_facet_coverage": 0
+        },
+        "rrf_tie_break_score": 0.016129032258064516,
+        "required_facets_are_hard_filters": false,
+        "label": "partial",
+        "reason": "Generates quality-related phrases using context, but does not clearly assess context modeling’s effect on generated outputs.",
+        "reviewed_version": "23b34f3bf0b0d4d8a483"
+      },
+      "retrieval_round": 1
+    },
+    {
+      "source_ref": "openalex:W4399425629",
+      "provider": "openalex",
+      "run_id": "2be487c1f76847fabf31aa715ef583a2",
+      "version": "4c0825b959f40c95e2c8",
+      "title": "Seed-TTS: A Family of High-Quality Versatile Speech Generation Models",
+      "year": 2024,
+      "abstract_chars": 493,
+      "relevance": {
+        "policy_version": "scout-query-relevance-v1",
+        "score": 25.601493,
+        "score_kind": "uncalibrated_heuristic_not_probability",
+        "facet_tier": 0,
+        "matched_terms": [],
+        "missing_terms": [
+          "context modeling",
+          "generation quality",
+          "generative language models"
+        ],
+        "matched_fields": {},
+        "matched_required_facets": [],
+        "missing_required_facets": [
+          "Context representation and modeling",
+          "Generated output quality"
+        ],
+        "matched_optional_facets": [],
+        "missing_optional_facets": [
+          "Evaluation dimensions",
+          "Methods for improving context use"
+        ],
+        "facet_evidence": [
+          {
+            "name": "Context representation and modeling",
+            "kind": "required",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Generated output quality",
+            "kind": "required",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Evaluation dimensions",
+            "kind": "optional",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Methods for improving context use",
+            "kind": "optional",
+            "matched": false,
+            "matched_aliases": []
+          }
+        ],
+        "missing_content": [
+          "description"
+        ],
+        "supporting_text_available": true,
+        "evaluated_fields": [
+          "title",
+          "abstract",
+          "description"
+        ],
+        "truncated_fields": [],
+        "omitted_query_terms": 0,
+        "omitted_query_tokens": 0,
+        "evidence_scope": "title and bounded provider abstract/description excerpts",
+        "components": {
+          "lexical_bm25_like": 5.444036,
+          "query_token_coverage": 0.571429,
+          "required_facet_coverage": 0,
+          "optional_facet_coverage": 0
+        },
+        "rrf_tie_break_score": 0.014285714285714285,
+        "required_facets_are_hard_filters": false,
+        "label": "partial",
+        "reason": "Studies speech-generation quality and in-context learning, but not improvements to context modeling.",
+        "reviewed_version": "4c0825b959f40c95e2c8"
+      },
+      "retrieval_round": 1
+    },
+    {
+      "source_ref": "openalex:W7133223610",
+      "provider": "openalex",
+      "run_id": "2be487c1f76847fabf31aa715ef583a2",
+      "version": "0c9b12c09f8cf42a4fee",
+      "title": "Factuality Enhanced Language Models for Open-Ended Text Generation",
+      "year": 2022,
+      "abstract_chars": 497,
+      "relevance": {
+        "policy_version": "scout-query-relevance-v1",
+        "score": 25.070228,
+        "score_kind": "uncalibrated_heuristic_not_probability",
+        "facet_tier": 0,
+        "matched_terms": [],
+        "missing_terms": [
+          "context modeling",
+          "generation quality",
+          "generative language models"
+        ],
+        "matched_fields": {},
+        "matched_required_facets": [],
+        "missing_required_facets": [
+          "Context representation and modeling",
+          "Generated output quality"
+        ],
+        "matched_optional_facets": [
+          "Evaluation dimensions"
+        ],
+        "missing_optional_facets": [
+          "Methods for improving context use"
+        ],
+        "facet_evidence": [
+          {
+            "name": "Context representation and modeling",
+            "kind": "required",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Generated output quality",
+            "kind": "required",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Evaluation dimensions",
+            "kind": "optional",
+            "matched": true,
+            "matched_aliases": [
+              "factuality"
+            ]
+          },
+          {
+            "name": "Methods for improving context use",
+            "kind": "optional",
+            "matched": false,
+            "matched_aliases": []
+          }
+        ],
+        "missing_content": [
+          "description"
+        ],
+        "supporting_text_available": true,
+        "evaluated_fields": [
+          "title",
+          "abstract",
+          "description"
+        ],
+        "truncated_fields": [],
+        "omitted_query_terms": 0,
+        "omitted_query_tokens": 0,
+        "evidence_scope": "title and bounded provider abstract/description excerpts",
+        "components": {
+          "lexical_bm25_like": 3.914285,
+          "query_token_coverage": 0.428571,
+          "required_facet_coverage": 0,
+          "optional_facet_coverage": 0.5
+        },
+        "rrf_tie_break_score": 0.015151515151515152,
+        "required_facets_are_hard_filters": false,
+        "label": "partial",
+        "reason": "Improves factuality in text generation, but does not specifically investigate context modeling.",
+        "reviewed_version": "0c9b12c09f8cf42a4fee"
+      },
+      "retrieval_round": 1
+    },
+    {
+      "source_ref": "openalex:W4389524463",
+      "provider": "openalex",
+      "run_id": "2be487c1f76847fabf31aa715ef583a2",
+      "version": "a70acd02300c2a6eb35a",
+      "title": "Beyond Factuality: A Comprehensive Evaluation of Large Language Models as Knowledge Generators",
+      "year": 2023,
+      "abstract_chars": 497,
+      "relevance": {
+        "policy_version": "scout-query-relevance-v1",
+        "score": 18.549513,
+        "score_kind": "uncalibrated_heuristic_not_probability",
+        "facet_tier": 0,
+        "matched_terms": [],
+        "missing_terms": [
+          "context modeling",
+          "generation quality",
+          "generative language models"
+        ],
+        "matched_fields": {},
+        "matched_required_facets": [],
+        "missing_required_facets": [
+          "Context representation and modeling",
+          "Generated output quality"
+        ],
+        "matched_optional_facets": [
+          "Evaluation dimensions"
+        ],
+        "missing_optional_facets": [
+          "Methods for improving context use"
+        ],
+        "facet_evidence": [
+          {
+            "name": "Context representation and modeling",
+            "kind": "required",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Generated output quality",
+            "kind": "required",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Evaluation dimensions",
+            "kind": "optional",
+            "matched": true,
+            "matched_aliases": [
+              "relevance",
+              "factuality"
+            ]
+          },
+          {
+            "name": "Methods for improving context use",
+            "kind": "optional",
+            "matched": false,
+            "matched_aliases": []
+          }
+        ],
+        "missing_content": [
+          "description"
+        ],
+        "supporting_text_available": true,
+        "evaluated_fields": [
+          "title",
+          "abstract",
+          "description"
+        ],
+        "truncated_fields": [],
+        "omitted_query_terms": 0,
+        "omitted_query_tokens": 0,
+        "evidence_scope": "title and bounded provider abstract/description excerpts",
+        "components": {
+          "lexical_bm25_like": 2.307467,
+          "query_token_coverage": 0.285714,
+          "required_facet_coverage": 0,
+          "optional_facet_coverage": 0.5
+        },
+        "rrf_tie_break_score": 0.014492753623188406,
+        "required_facets_are_hard_filters": false,
+        "label": "partial",
+        "reason": "Evaluates generated knowledge quality, but does not focus on context-model improvements.",
+        "reviewed_version": "a70acd02300c2a6eb35a"
+      },
+      "retrieval_round": 1
+    },
+    {
+      "source_ref": "openalex:W3092958231",
+      "provider": "openalex",
+      "run_id": "2be487c1f76847fabf31aa715ef583a2",
+      "version": "04f0a90fca4383fb8c89",
+      "title": "Evaluating Factuality in Generation with Dependency-level Entailment",
+      "year": 2020,
+      "abstract_chars": 500,
+      "relevance": {
+        "policy_version": "scout-query-relevance-v1",
+        "score": 17.180819,
+        "score_kind": "uncalibrated_heuristic_not_probability",
+        "facet_tier": 0,
+        "matched_terms": [],
+        "missing_terms": [
+          "context modeling",
+          "generation quality",
+          "generative language models"
+        ],
+        "matched_fields": {},
+        "matched_required_facets": [],
+        "missing_required_facets": [
+          "Context representation and modeling",
+          "Generated output quality"
+        ],
+        "matched_optional_facets": [
+          "Evaluation dimensions"
+        ],
+        "missing_optional_facets": [
+          "Methods for improving context use"
+        ],
+        "facet_evidence": [
+          {
+            "name": "Context representation and modeling",
+            "kind": "required",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Generated output quality",
+            "kind": "required",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Evaluation dimensions",
+            "kind": "optional",
+            "matched": true,
+            "matched_aliases": [
+              "factuality"
+            ]
+          },
+          {
+            "name": "Methods for improving context use",
+            "kind": "optional",
+            "matched": false,
+            "matched_aliases": []
+          }
+        ],
+        "missing_content": [
+          "description"
+        ],
+        "supporting_text_available": true,
+        "evaluated_fields": [
+          "title",
+          "abstract",
+          "description"
+        ],
+        "truncated_fields": [],
+        "omitted_query_terms": 0,
+        "omitted_query_tokens": 0,
+        "evidence_scope": "title and bounded provider abstract/description excerpts",
+        "components": {
+          "lexical_bm25_like": 1.813038,
+          "query_token_coverage": 0.285714,
+          "required_facet_coverage": 0,
+          "optional_facet_coverage": 0.5
+        },
+        "rrf_tie_break_score": 0.015625,
+        "required_facets_are_hard_filters": false,
+        "label": "partial",
+        "reason": "Evaluates factuality of generated text relative to input, but does not improve context modeling.",
+        "reviewed_version": "04f0a90fca4383fb8c89"
+      },
+      "retrieval_round": 1
+    },
+    {
+      "source_ref": "crossref:10.1049/ic:19970760",
+      "provider": "crossref",
+      "run_id": "33efca0b2a9e47b6b94e77ac9ef30da5",
+      "version": "2efd4b401938cb1345f6",
+      "title": "Context modeling for language and speech generation",
+      "year": 1997,
+      "abstract_chars": 0,
+      "relevance": {
+        "policy_version": "scout-query-relevance-v1",
+        "score": 47.769174,
+        "score_kind": "uncalibrated_heuristic_not_probability",
+        "facet_tier": 1,
+        "matched_terms": [
+          "context modeling"
+        ],
+        "missing_terms": [
+          "generation quality",
+          "generative language models"
+        ],
+        "matched_fields": {
+          "context modeling": [
+            "title"
+          ]
+        },
+        "matched_required_facets": [
+          "Context representation and modeling"
+        ],
+        "missing_required_facets": [
+          "Generated output quality"
+        ],
+        "matched_optional_facets": [],
+        "missing_optional_facets": [
+          "Evaluation dimensions",
+          "Methods for improving context use"
+        ],
+        "facet_evidence": [
+          {
+            "name": "Context representation and modeling",
+            "kind": "required",
+            "matched": true,
+            "matched_aliases": [
+              "context modeling"
+            ]
+          },
+          {
+            "name": "Generated output quality",
+            "kind": "required",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Evaluation dimensions",
+            "kind": "optional",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Methods for improving context use",
+            "kind": "optional",
+            "matched": false,
+            "matched_aliases": []
+          }
+        ],
+        "missing_content": [
+          "abstract",
+          "description"
+        ],
+        "supporting_text_available": false,
+        "evaluated_fields": [
+          "title",
+          "abstract",
+          "description"
+        ],
+        "truncated_fields": [],
+        "omitted_query_terms": 0,
+        "omitted_query_tokens": 0,
+        "evidence_scope": "title and bounded provider abstract/description excerpts",
+        "components": {
+          "lexical_bm25_like": 9.327378,
+          "query_token_coverage": 0.571429,
+          "required_facet_coverage": 0.5,
+          "optional_facet_coverage": 0
+        },
+        "rrf_tie_break_score": 0.032018442622950824,
+        "required_facets_are_hard_filters": false,
+        "label": "relevant",
+        "reason": "Directly concerns context modeling for language and speech generation.",
+        "reviewed_version": "2efd4b401938cb1345f6"
+      },
+      "retrieval_round": 1
+    },
+    {
+      "source_ref": "crossref:10.1109/access.2026.3658428",
+      "provider": "crossref",
+      "run_id": "33efca0b2a9e47b6b94e77ac9ef30da5",
+      "version": "4e5a8d046f7e1365a225",
+      "title": "Quantifying Generation Quality for RoPE-Based Long Context Extrapolation",
+      "year": 2026,
+      "abstract_chars": 0,
+      "relevance": {
+        "policy_version": "scout-query-relevance-v1",
+        "score": 40.732259,
+        "score_kind": "uncalibrated_heuristic_not_probability",
+        "facet_tier": 1,
+        "matched_terms": [
+          "generation quality"
+        ],
+        "missing_terms": [
+          "context modeling",
+          "generative language models"
+        ],
+        "matched_fields": {
+          "generation quality": [
+            "title"
+          ]
+        },
+        "matched_required_facets": [
+          "Generated output quality"
+        ],
+        "missing_required_facets": [
+          "Context representation and modeling"
+        ],
+        "matched_optional_facets": [],
+        "missing_optional_facets": [
+          "Evaluation dimensions",
+          "Methods for improving context use"
+        ],
+        "facet_evidence": [
+          {
+            "name": "Context representation and modeling",
+            "kind": "required",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Generated output quality",
+            "kind": "required",
+            "matched": true,
+            "matched_aliases": [
+              "generation quality"
+            ]
+          },
+          {
+            "name": "Evaluation dimensions",
+            "kind": "optional",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Methods for improving context use",
+            "kind": "optional",
+            "matched": false,
+            "matched_aliases": []
+          }
+        ],
+        "missing_content": [
+          "abstract",
+          "description"
+        ],
+        "supporting_text_available": false,
+        "evaluated_fields": [
+          "title",
+          "abstract",
+          "description"
+        ],
+        "truncated_fields": [],
+        "omitted_query_terms": 0,
+        "omitted_query_tokens": 0,
+        "evidence_scope": "title and bounded provider abstract/description excerpts",
+        "components": {
+          "lexical_bm25_like": 5.76654,
+          "query_token_coverage": 0.428571,
+          "required_facet_coverage": 0.5,
+          "optional_facet_coverage": 0
+        },
+        "rrf_tie_break_score": 0.02821939586645469,
+        "required_facets_are_hard_filters": false,
+        "label": "relevant",
+        "reason": "Directly evaluates generation quality in long-context extrapolation.",
+        "reviewed_version": "4e5a8d046f7e1365a225"
+      },
+      "retrieval_round": 1
+    },
+    {
+      "source_ref": "crossref:10.2139/ssrn.5500899",
+      "provider": "crossref",
+      "run_id": "33efca0b2a9e47b6b94e77ac9ef30da5",
+      "version": "0919a8516cac85f8ff1f",
+      "title": "LLM-Driven Automated Test Case Generation: A Multi-Modal Context-Aware Framework with Formal Quality Guarantees",
+      "year": 2025,
+      "abstract_chars": 1200,
+      "relevance": {
+        "policy_version": "scout-query-relevance-v1",
+        "score": 29.869558,
+        "score_kind": "uncalibrated_heuristic_not_probability",
+        "facet_tier": 0,
+        "matched_terms": [],
+        "missing_terms": [
+          "context modeling",
+          "generation quality",
+          "generative language models"
+        ],
+        "matched_fields": {},
+        "matched_required_facets": [],
+        "missing_required_facets": [
+          "Context representation and modeling",
+          "Generated output quality"
+        ],
+        "matched_optional_facets": [],
+        "missing_optional_facets": [
+          "Evaluation dimensions",
+          "Methods for improving context use"
+        ],
+        "facet_evidence": [
+          {
+            "name": "Context representation and modeling",
+            "kind": "required",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Generated output quality",
+            "kind": "required",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Evaluation dimensions",
+            "kind": "optional",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Methods for improving context use",
+            "kind": "optional",
+            "matched": false,
+            "matched_aliases": []
+          }
+        ],
+        "missing_content": [
+          "description"
+        ],
+        "supporting_text_available": true,
+        "evaluated_fields": [
+          "title",
+          "abstract",
+          "description"
+        ],
+        "truncated_fields": [],
+        "omitted_query_terms": 0,
+        "omitted_query_tokens": 0,
+        "evidence_scope": "title and bounded provider abstract/description excerpts",
+        "components": {
+          "lexical_bm25_like": 6.42098,
+          "query_token_coverage": 0.714286,
+          "required_facet_coverage": 0,
+          "optional_facet_coverage": 0
+        },
+        "rrf_tie_break_score": 0.029211087420042643,
+        "required_facets_are_hard_filters": false,
+        "label": "partial",
+        "reason": "Uses context-aware LLM generation, but for software test cases rather than general language-output quality.",
+        "reviewed_version": "0919a8516cac85f8ff1f"
+      },
+      "retrieval_round": 1
+    },
+    {
+      "source_ref": "crossref:10.1109/fuzz-ieee.2018.8491506",
+      "provider": "crossref",
+      "run_id": "33efca0b2a9e47b6b94e77ac9ef30da5",
+      "version": "661ea7659cc84624e812",
+      "title": "An Approximation to Context-Aware Size Modeling for Referring Expression Generation",
+      "year": 2018,
+      "abstract_chars": 0,
+      "relevance": {
+        "policy_version": "scout-query-relevance-v1",
+        "score": 21.011575,
+        "score_kind": "uncalibrated_heuristic_not_probability",
+        "facet_tier": 0,
+        "matched_terms": [],
+        "missing_terms": [
+          "context modeling",
+          "generation quality",
+          "generative language models"
+        ],
+        "matched_fields": {},
+        "matched_required_facets": [],
+        "missing_required_facets": [
+          "Context representation and modeling",
+          "Generated output quality"
+        ],
+        "matched_optional_facets": [],
+        "missing_optional_facets": [
+          "Evaluation dimensions",
+          "Methods for improving context use"
+        ],
+        "facet_evidence": [
+          {
+            "name": "Context representation and modeling",
+            "kind": "required",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Generated output quality",
+            "kind": "required",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Evaluation dimensions",
+            "kind": "optional",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Methods for improving context use",
+            "kind": "optional",
+            "matched": false,
+            "matched_aliases": []
+          }
+        ],
+        "missing_content": [
+          "abstract",
+          "description"
+        ],
+        "supporting_text_available": false,
+        "evaluated_fields": [
+          "title",
+          "abstract",
+          "description"
+        ],
+        "truncated_fields": [],
+        "omitted_query_terms": 0,
+        "omitted_query_tokens": 0,
+        "evidence_scope": "title and bounded provider abstract/description excerpts",
+        "components": {
+          "lexical_bm25_like": 4.411428,
+          "query_token_coverage": 0.428571,
+          "required_facet_coverage": 0,
+          "optional_facet_coverage": 0
+        },
+        "rrf_tie_break_score": 0.030090497737556562,
+        "required_facets_are_hard_filters": false,
+        "label": "partial",
+        "reason": "Context-aware referring expression generation is adjacent, but the title emphasizes size modeling rather than output quality.",
+        "reviewed_version": "661ea7659cc84624e812"
+      },
+      "retrieval_round": 1
+    },
+    {
+      "source_ref": "crossref:10.21437/interspeech.2026-513",
+      "provider": "crossref",
+      "run_id": "33efca0b2a9e47b6b94e77ac9ef30da5",
+      "version": "887f2a14eadc4db3cbf3",
+      "title": "Explicit Context-Driven Neural Acoustic Modeling for High-Fidelity RIR Generation",
+      "year": 2026,
+      "abstract_chars": 0,
+      "relevance": {
+        "policy_version": "scout-query-relevance-v1",
+        "score": 21.011575,
+        "score_kind": "uncalibrated_heuristic_not_probability",
+        "facet_tier": 0,
+        "matched_terms": [],
+        "missing_terms": [
+          "context modeling",
+          "generation quality",
+          "generative language models"
+        ],
+        "matched_fields": {},
+        "matched_required_facets": [],
+        "missing_required_facets": [
+          "Context representation and modeling",
+          "Generated output quality"
+        ],
+        "matched_optional_facets": [],
+        "missing_optional_facets": [
+          "Evaluation dimensions",
+          "Methods for improving context use"
+        ],
+        "facet_evidence": [
+          {
+            "name": "Context representation and modeling",
+            "kind": "required",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Generated output quality",
+            "kind": "required",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Evaluation dimensions",
+            "kind": "optional",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Methods for improving context use",
+            "kind": "optional",
+            "matched": false,
+            "matched_aliases": []
+          }
+        ],
+        "missing_content": [
+          "abstract",
+          "description"
+        ],
+        "supporting_text_available": false,
+        "evaluated_fields": [
+          "title",
+          "abstract",
+          "description"
+        ],
+        "truncated_fields": [],
+        "omitted_query_terms": 0,
+        "omitted_query_tokens": 0,
+        "evidence_scope": "title and bounded provider abstract/description excerpts",
+        "components": {
+          "lexical_bm25_like": 4.411428,
+          "query_token_coverage": 0.428571,
+          "required_facet_coverage": 0,
+          "optional_facet_coverage": 0
+        },
+        "rrf_tie_break_score": 0.027651515151515153,
+        "required_facets_are_hard_filters": false,
+        "label": "partial",
+        "reason": "Context-driven neural modeling generates acoustic responses, adjacent but not language generation.",
+        "reviewed_version": "887f2a14eadc4db3cbf3"
+      },
+      "retrieval_round": 1
+    },
+    {
+      "source_ref": "crossref:10.1007/978-3-319-57837-8_22",
+      "provider": "crossref",
+      "run_id": "33efca0b2a9e47b6b94e77ac9ef30da5",
+      "version": "92d1b578ca6beef44785",
+      "title": "Cooperating Context Method: A Contextual Approach to Story Generation and Telling",
+      "year": 2017,
+      "abstract_chars": 0,
+      "relevance": {
+        "policy_version": "scout-query-relevance-v1",
+        "score": 12.142132,
+        "score_kind": "uncalibrated_heuristic_not_probability",
+        "facet_tier": 0,
+        "matched_terms": [],
+        "missing_terms": [
+          "context modeling",
+          "generation quality",
+          "generative language models"
+        ],
+        "matched_fields": {},
+        "matched_required_facets": [],
+        "missing_required_facets": [
+          "Context representation and modeling",
+          "Generated output quality"
+        ],
+        "matched_optional_facets": [],
+        "missing_optional_facets": [
+          "Evaluation dimensions",
+          "Methods for improving context use"
+        ],
+        "facet_evidence": [
+          {
+            "name": "Context representation and modeling",
+            "kind": "required",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Generated output quality",
+            "kind": "required",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Evaluation dimensions",
+            "kind": "optional",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Methods for improving context use",
+            "kind": "optional",
+            "matched": false,
+            "matched_aliases": []
+          }
+        ],
+        "missing_content": [
+          "abstract",
+          "description"
+        ],
+        "supporting_text_available": false,
+        "evaluated_fields": [
+          "title",
+          "abstract",
+          "description"
+        ],
+        "truncated_fields": [],
+        "omitted_query_terms": 0,
+        "omitted_query_tokens": 0,
+        "evidence_scope": "title and bounded provider abstract/description excerpts",
+        "components": {
+          "lexical_bm25_like": 1.799751,
+          "query_token_coverage": 0.285714,
+          "required_facet_coverage": 0,
+          "optional_facet_coverage": 0
+        },
+        "rrf_tie_break_score": 0.029709507042253523,
+        "required_facets_are_hard_filters": false,
+        "label": "partial",
+        "reason": "Concerns context in story generation, but the title does not indicate effects on generated-output quality.",
+        "reviewed_version": "92d1b578ca6beef44785"
+      },
+      "retrieval_round": 1
+    },
+    {
+      "source_ref": "crossref:10.61686/cputr83367",
+      "provider": "crossref",
+      "run_id": "33efca0b2a9e47b6b94e77ac9ef30da5",
+      "version": "51691fa7b2bd77350c8b",
+      "title": "Untitled provider record",
+      "year": null,
+      "abstract_chars": 0,
+      "relevance": {
+        "policy_version": "scout-query-relevance-v1",
+        "score": 0,
+        "score_kind": "uncalibrated_heuristic_not_probability",
+        "facet_tier": 0,
+        "matched_terms": [],
+        "missing_terms": [
+          "context modeling",
+          "generation quality",
+          "generative language models"
+        ],
+        "matched_fields": {},
+        "matched_required_facets": [],
+        "missing_required_facets": [
+          "Context representation and modeling",
+          "Generated output quality"
+        ],
+        "matched_optional_facets": [],
+        "missing_optional_facets": [
+          "Evaluation dimensions",
+          "Methods for improving context use"
+        ],
+        "facet_evidence": [
+          {
+            "name": "Context representation and modeling",
+            "kind": "required",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Generated output quality",
+            "kind": "required",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Evaluation dimensions",
+            "kind": "optional",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Methods for improving context use",
+            "kind": "optional",
+            "matched": false,
+            "matched_aliases": []
+          }
+        ],
+        "missing_content": [
+          "abstract",
+          "description"
+        ],
+        "supporting_text_available": false,
+        "evaluated_fields": [
+          "title",
+          "abstract",
+          "description"
+        ],
+        "truncated_fields": [],
+        "omitted_query_terms": 0,
+        "omitted_query_tokens": 0,
+        "evidence_scope": "title and bounded provider abstract/description excerpts",
+        "components": {
+          "lexical_bm25_like": 0,
+          "query_token_coverage": 0,
+          "required_facet_coverage": 0,
+          "optional_facet_coverage": 0
+        },
+        "rrf_tie_break_score": 0.02889344262295082,
+        "required_facets_are_hard_filters": false,
+        "label": "unknown",
+        "reason": "No title or excerpt is available to assess relevance.",
+        "reviewed_version": "51691fa7b2bd77350c8b"
+      },
+      "retrieval_round": 1
+    },
+    {
+      "source_ref": "crossref:10.1117/12.2682047.6331636087112",
+      "provider": "crossref",
+      "run_id": "33efca0b2a9e47b6b94e77ac9ef30da5",
+      "version": "f66ccaffb289a12423e8",
+      "title": "Untitled provider record",
+      "year": null,
+      "abstract_chars": 0,
+      "relevance": {
+        "policy_version": "scout-query-relevance-v1",
+        "score": 0,
+        "score_kind": "uncalibrated_heuristic_not_probability",
+        "facet_tier": 0,
+        "matched_terms": [],
+        "missing_terms": [
+          "context modeling",
+          "generation quality",
+          "generative language models"
+        ],
+        "matched_fields": {},
+        "matched_required_facets": [],
+        "missing_required_facets": [
+          "Context representation and modeling",
+          "Generated output quality"
+        ],
+        "matched_optional_facets": [],
+        "missing_optional_facets": [
+          "Evaluation dimensions",
+          "Methods for improving context use"
+        ],
+        "facet_evidence": [
+          {
+            "name": "Context representation and modeling",
+            "kind": "required",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Generated output quality",
+            "kind": "required",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Evaluation dimensions",
+            "kind": "optional",
+            "matched": false,
+            "matched_aliases": []
+          },
+          {
+            "name": "Methods for improving context use",
+            "kind": "optional",
+            "matched": false,
+            "matched_aliases": []
+          }
+        ],
+        "missing_content": [
+          "abstract",
+          "description"
+        ],
+        "supporting_text_available": false,
+        "evaluated_fields": [
+          "title",
+          "abstract",
+          "description"
+        ],
+        "truncated_fields": [],
+        "omitted_query_terms": 0,
+        "omitted_query_tokens": 0,
+        "evidence_scope": "title and bounded provider abstract/description excerpts",
+        "components": {
+          "lexical_bm25_like": 0,
+          "query_token_coverage": 0,
+          "required_facet_coverage": 0,
+          "optional_facet_coverage": 0
+        },
+        "rrf_tie_break_score": 0.02715098147128967,
+        "required_facets_are_hard_filters": false,
+        "label": "unknown",
+        "reason": "No title or excerpt is available to assess relevance.",
+        "reviewed_version": "f66ccaffb289a12423e8"
+      },
+      "retrieval_round": 1
+    }
+  ],
+  "run_ids": [
+    "2be487c1f76847fabf31aa715ef583a2",
+    "33efca0b2a9e47b6b94e77ac9ef30da5"
+  ],
+  "run_receipts": [
+    {
+      "id": "2be487c1f76847fabf31aa715ef583a2",
+      "provider": "openalex",
+      "status": "SUCCEEDED",
+      "original_question": "What's the impact of how we improve the context model needs to have for better generation?",
+      "filters": {
+        "year_from": null,
+        "year_to": null,
+        "resource_type": null
+      },
+      "plan": {
+        "strategy": "hybrid",
+        "raw_per_branch": 10,
+        "raw_union": 20,
+        "fusion": {
+          "method": "rrf",
+          "rank_constant": 60,
+          "weights": {
+            "lexical": 1,
+            "semantic": 1
+          }
+        },
+        "filter_policy": "required fields must be known and pass; no relaxed constraints",
+        "actual_queries": {
+          "lexical": "context modeling generation quality",
+          "semantic": "How do improvements to context modeling in generative language systems affect the quality, relevance, coherence, and factuality of generated outputs?"
+        },
+        "source_review_scope": "raw_candidates_conversation_review_separate",
+        "hard_constraints": "Only the explicit structured year/type filters are enforced; question wording is retrieval intent."
+      },
+      "usage": {
+        "research_attempts": 2,
+        "by_provider": {
+          "openalex": 2
+        },
+        "reserved_by_provider": {
+          "openalex": 0
+        }
+      },
+      "branches": {
+        "lexical": {
+          "status": "succeeded",
+          "raw_count": 10,
+          "count": 10,
+          "filtered_count": 0,
+          "invalid_count": 0,
+          "provenance": {
+            "transport": "official_mcp",
+            "tool": "search_works",
+            "tool_schema_hash": "ee899087ab35a717374d0f6800ecbc4abb4ef64553f3fc6baba8701e9c64f03b",
+            "executed_arguments": {
+              "query": "context modeling generation quality",
+              "mode": "keyword",
+              "limit": 10,
+              "rerank": false
+            },
+            "canonical_oql": "get non-retracted works about (context modeling generation quality)",
+            "reproduce_url": "https://api.openalex.org/?oql=get%20non-retracted%20works%20about%20(context%20modeling%20generation%20quality)",
+            "provider_usage": null,
+            "provider_internal_attempts": "unknown"
+          }
+        },
+        "semantic": {
+          "status": "succeeded",
+          "raw_count": 10,
+          "count": 10,
+          "filtered_count": 0,
+          "invalid_count": 0,
+          "provenance": {
+            "transport": "official_mcp",
+            "tool": "search_works",
+            "tool_schema_hash": "ee899087ab35a717374d0f6800ecbc4abb4ef64553f3fc6baba8701e9c64f03b",
+            "executed_arguments": {
+              "query": "How do improvements to context modeling in generative language systems affect the quality, relevance, coherence, and factuality of generated outputs?",
+              "mode": "semantic",
+              "limit": 10,
+              "rerank": false
+            },
+            "canonical_oql": null,
+            "reproduce_url": null,
+            "provider_usage": null,
+            "provider_internal_attempts": "unknown"
+          }
+        }
+      },
+      "raw_candidate_count": 19
+    },
+    {
+      "id": "33efca0b2a9e47b6b94e77ac9ef30da5",
+      "provider": "crossref",
+      "status": "SUCCEEDED",
+      "original_question": "What's the impact of how we improve the context model needs to have for better generation?",
+      "filters": {
+        "year_from": null,
+        "year_to": null,
+        "resource_type": null
+      },
+      "plan": {
+        "strategy": "hybrid",
+        "raw_per_branch": 20,
+        "raw_union": 20,
+        "fusion": {
+          "method": "rrf",
+          "rank_constant": 60,
+          "weights": {
+            "lexical": 1,
+            "semantic": 1
+          }
+        },
+        "filter_policy": "required fields must be known and pass; no relaxed constraints",
+        "actual_queries": {
+          "lexical": "context modeling generation quality",
+          "semantic": "How do improvements to context modeling in generative language systems affect the quality, relevance, coherence, and factuality of generated outputs?"
+        },
+        "source_review_scope": "raw_candidates_conversation_review_separate",
+        "hard_constraints": "Only the explicit structured year/type filters are enforced; question wording is retrieval intent.",
+        "semantic_scope": "same-provider lexical candidate pool; no independent semantic recall"
+      },
+      "usage": {
+        "research_attempts": 1,
+        "by_provider": {
+          "crossref": 1
+        },
+        "reserved_by_provider": {
+          "crossref": 0
+        }
+      },
+      "branches": {
+        "lexical": {
+          "status": "succeeded",
+          "raw_count": 20,
+          "count": 20,
+          "filtered_count": 0,
+          "invalid_count": 0,
+          "provenance": {
+            "transport": "official_rest",
+            "page_count": 1,
+            "pagination": "bounded_first_page_no_automatic_followup",
+            "filters": "deterministic_metadata_postfilter",
+            "semantic_scope": "lexical_candidate_pool",
+            "requested_filters": {
+              "year_from": null,
+              "year_to": null,
+              "resource_type": null
+            },
+            "upstream_filters": {},
+            "local_filters": {
+              "year_from": null,
+              "year_to": null,
+              "resource_type": null
+            },
+            "upstream_year_field": "published date; normalized record year rechecked locally",
+            "executed_arguments": {
+              "query": "context modeling generation quality",
+              "rows": 20,
+              "offset": 0
+            }
+          }
+        },
+        "semantic": {
+          "status": "succeeded",
+          "raw_count": 20,
+          "count": 20,
+          "filtered_count": 0,
+          "invalid_count": 0,
+          "provenance": {
+            "semantic_execution": "local_candidate_pool_rerank",
+            "scope": "fetched_lexical_pool_only",
+            "encoder": {
+              "model": "sentence-transformers/all-MiniLM-L6-v2",
+              "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+              "dimensions": 384,
+              "query_mode": "symmetric_sentence_embedding",
+              "document_mode": "symmetric_sentence_embedding",
+              "similarity": "cosine",
+              "execution": "local_onnx_cpu",
+              "precision": "uint8_avx2",
+              "pooling": "attention_mask_mean",
+              "max_sequence_length": 256,
+              "artifacts": {
+                "tokenizer.json": "be50c3628f2bf5bb5e3a7f17b1f74611b2561a3a27eeab05e5aa30f411572037",
+                "onnx/model_quint8_avx2.onnx": "b941bf19f1f1283680f449fa6a7336bb5600bdcd5f84d10ddc5cd72218a0fd21"
+              },
+              "input_scope": {
+                "query_truncated": false,
+                "documents_truncated": [
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  true,
+                  false,
+                  false,
+                  true,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false
+                ]
+              }
+            },
+            "embedding_batches": 2,
+            "embedding_texts": 21
+          }
+        }
+      },
+      "raw_candidate_count": 20
+    }
+  ],
+  "elapsed_ms": 32057,
+  "frames": [
+    {
+      "at": 1794279360955,
+      "status": "QUEUED",
+      "retrieval": "planning",
+      "round": 1,
+      "count": 0,
+      "assessed": true,
+      "providers": []
+    },
+    {
+      "at": 1794279360955,
+      "status": "RUNNING",
+      "retrieval": "planning",
+      "round": 1,
+      "count": 0,
+      "assessed": true,
+      "providers": []
+    },
+    {
+      "at": 1794279361031,
+      "status": "RUNNING",
+      "retrieval": "planning",
+      "round": 1,
+      "count": 0,
+      "assessed": true,
+      "providers": []
+    },
+    {
+      "at": 1794279361031,
+      "status": "RUNNING",
+      "retrieval": "planning",
+      "round": 1,
+      "count": 0,
+      "assessed": true,
+      "providers": []
+    },
+    {
+      "at": 1794279364649,
+      "status": "RUNNING",
+      "retrieval": "planning",
+      "round": 1,
+      "count": 0,
+      "assessed": true,
+      "providers": []
+    },
+    {
+      "at": 1794279364650,
+      "status": "RUNNING",
+      "retrieval": "planning",
+      "round": 1,
+      "count": 0,
+      "assessed": true,
+      "providers": []
+    },
+    {
+      "at": 1794279364650,
+      "status": "RUNNING",
+      "retrieval": "retrieving",
+      "round": 1,
+      "count": 0,
+      "assessed": true,
+      "providers": []
+    },
+    {
+      "at": 1794279365430,
+      "status": "RUNNING",
+      "retrieval": "retrieving",
+      "round": 1,
+      "count": 0,
+      "assessed": true,
+      "providers": []
+    },
+    {
+      "at": 1794279365430,
+      "status": "RUNNING",
+      "retrieval": "retrieving",
+      "round": 1,
+      "count": 0,
+      "assessed": true,
+      "providers": []
+    },
+    {
+      "at": 1794279365430,
+      "status": "RUNNING",
+      "retrieval": "retrieving",
+      "round": 1,
+      "count": 0,
+      "assessed": true,
+      "providers": []
+    },
+    {
+      "at": 1794279365430,
+      "status": "RUNNING",
+      "retrieval": "retrieving",
+      "round": 1,
+      "count": 0,
+      "assessed": true,
+      "providers": []
+    },
+    {
+      "at": 1794279365430,
+      "status": "RUNNING",
+      "retrieval": "retrieving",
+      "round": 1,
+      "count": 0,
+      "assessed": true,
+      "providers": []
+    },
+    {
+      "at": 1794279365449,
+      "status": "RUNNING",
+      "retrieval": "retrieving",
+      "round": 1,
+      "count": 0,
+      "assessed": true,
+      "providers": []
+    },
+    {
+      "at": 1794279365501,
+      "status": "RUNNING",
+      "retrieval": "retrieving",
+      "round": 1,
+      "count": 0,
+      "assessed": true,
+      "providers": []
+    },
+    {
+      "at": 1794279365586,
+      "status": "RUNNING",
+      "retrieval": "retrieving",
+      "round": 1,
+      "count": 0,
+      "assessed": true,
+      "providers": []
+    },
+    {
+      "at": 1794279365587,
+      "status": "RUNNING",
+      "retrieval": "retrieving",
+      "round": 1,
+      "count": 0,
+      "assessed": true,
+      "providers": []
+    },
+    {
+      "at": 1794279365736,
+      "status": "RUNNING",
+      "retrieval": "retrieving",
+      "round": 1,
+      "count": 0,
+      "assessed": true,
+      "providers": []
+    },
+    {
+      "at": 1794279365736,
+      "status": "RUNNING",
+      "retrieval": "retrieving",
+      "round": 1,
+      "count": 0,
+      "assessed": true,
+      "providers": []
+    },
+    {
+      "at": 1794279367215,
+      "status": "RUNNING",
+      "retrieval": "retrieving",
+      "round": 1,
+      "count": 0,
+      "assessed": true,
+      "providers": []
+    },
+    {
+      "at": 1794279367215,
+      "status": "RUNNING",
+      "retrieval": "retrieving",
+      "round": 1,
+      "count": 0,
+      "assessed": true,
+      "providers": []
+    },
+    {
+      "at": 1794279367292,
+      "status": "RUNNING",
+      "retrieval": "retrieving",
+      "round": 1,
+      "count": 0,
+      "assessed": true,
+      "providers": []
+    },
+    {
+      "at": 1794279368840,
+      "status": "RUNNING",
+      "retrieval": "retrieving",
+      "round": 1,
+      "count": 0,
+      "assessed": true,
+      "providers": []
+    },
+    {
+      "at": 1794279368840,
+      "status": "RUNNING",
+      "retrieval": "retrieving",
+      "round": 1,
+      "count": 0,
+      "assessed": true,
+      "providers": []
+    },
+    {
+      "at": 1794279369003,
+      "status": "RUNNING",
+      "retrieval": "retrieving",
+      "round": 1,
+      "count": 0,
+      "assessed": true,
+      "providers": []
+    },
+    {
+      "at": 1794279369194,
+      "status": "RUNNING",
+      "retrieval": "retrieving",
+      "round": 1,
+      "count": 0,
+      "assessed": true,
+      "providers": []
+    },
+    {
+      "at": 1794279369210,
+      "status": "RUNNING",
+      "retrieval": "retrieving",
+      "round": 1,
+      "count": 0,
+      "assessed": true,
+      "providers": []
+    },
+    {
+      "at": 1794279369322,
+      "status": "RUNNING",
+      "retrieval": "retrieving",
+      "round": 1,
+      "count": 0,
+      "assessed": true,
+      "providers": []
+    },
+    {
+      "at": 1794279369456,
+      "status": "RUNNING",
+      "retrieval": "retrieving",
+      "round": 1,
+      "count": 0,
+      "assessed": true,
+      "providers": []
+    },
+    {
+      "at": 1794279369536,
+      "status": "RUNNING",
+      "retrieval": "reviewing",
+      "round": 1,
+      "count": 0,
+      "assessed": true,
+      "providers": []
+    },
+    {
+      "at": 1794279369536,
+      "status": "RUNNING",
+      "retrieval": "reviewing",
+      "round": 1,
+      "count": 0,
+      "assessed": true,
+      "providers": []
+    },
+    {
+      "at": 1794279375398,
+      "status": "RUNNING",
+      "retrieval": "reviewing",
+      "round": 1,
+      "count": 0,
+      "assessed": true,
+      "providers": []
+    },
+    {
+      "at": 1794279375398,
+      "status": "RUNNING",
+      "retrieval": "reviewing",
+      "round": 1,
+      "count": 0,
+      "assessed": true,
+      "providers": []
+    },
+    {
+      "at": 1794279375415,
+      "status": "RUNNING",
+      "retrieval": "retrieving",
+      "round": 1,
+      "count": 15,
+      "assessed": true,
+      "providers": [
+        "openalex"
+      ]
+    },
+    {
+      "at": 1794279376327,
+      "status": "RUNNING",
+      "retrieval": "retrieving",
+      "round": 1,
+      "count": 15,
+      "assessed": true,
+      "providers": [
+        "openalex"
+      ]
+    },
+    {
+      "at": 1794279376379,
+      "status": "RUNNING",
+      "retrieval": "retrieving",
+      "round": 1,
+      "count": 15,
+      "assessed": true,
+      "providers": [
+        "openalex"
+      ]
+    },
+    {
+      "at": 1794279376381,
+      "status": "RUNNING",
+      "retrieval": "retrieving",
+      "round": 1,
+      "count": 15,
+      "assessed": true,
+      "providers": [
+        "openalex"
+      ]
+    },
+    {
+      "at": 1794279376382,
+      "status": "RUNNING",
+      "retrieval": "retrieving",
+      "round": 1,
+      "count": 15,
+      "assessed": true,
+      "providers": [
+        "openalex"
+      ]
+    },
+    {
+      "at": 1794279376384,
+      "status": "RUNNING",
+      "retrieval": "retrieving",
+      "round": 1,
+      "count": 15,
+      "assessed": true,
+      "providers": [
+        "openalex"
+      ]
+    },
+    {
+      "at": 1794279376438,
+      "status": "RUNNING",
+      "retrieval": "retrieving",
+      "round": 1,
+      "count": 15,
+      "assessed": true,
+      "providers": [
+        "openalex"
+      ]
+    },
+    {
+      "at": 1794279376492,
+      "status": "RUNNING",
+      "retrieval": "retrieving",
+      "round": 1,
+      "count": 15,
+      "assessed": true,
+      "providers": [
+        "openalex"
+      ]
+    },
+    {
+      "at": 1794279376613,
+      "status": "RUNNING",
+      "retrieval": "retrieving",
+      "round": 1,
+      "count": 15,
+      "assessed": true,
+      "providers": [
+        "openalex"
+      ]
+    },
+    {
+      "at": 1794279376663,
+      "status": "RUNNING",
+      "retrieval": "retrieving",
+      "round": 1,
+      "count": 15,
+      "assessed": true,
+      "providers": [
+        "openalex"
+      ]
+    },
+    {
+      "at": 1794279376760,
+      "status": "RUNNING",
+      "retrieval": "retrieving",
+      "round": 1,
+      "count": 15,
+      "assessed": true,
+      "providers": [
+        "openalex"
+      ]
+    },
+    {
+      "at": 1794279376762,
+      "status": "RUNNING",
+      "retrieval": "retrieving",
+      "round": 1,
+      "count": 15,
+      "assessed": true,
+      "providers": [
+        "openalex"
+      ]
+    },
+    {
+      "at": 1794279381320,
+      "status": "RUNNING",
+      "retrieval": "retrieving",
+      "round": 1,
+      "count": 15,
+      "assessed": true,
+      "providers": [
+        "openalex"
+      ]
+    },
+    {
+      "at": 1794279381322,
+      "status": "RUNNING",
+      "retrieval": "retrieving",
+      "round": 1,
+      "count": 15,
+      "assessed": true,
+      "providers": [
+        "openalex"
+      ]
+    },
+    {
+      "at": 1794279381699,
+      "status": "RUNNING",
+      "retrieval": "retrieving",
+      "round": 1,
+      "count": 15,
+      "assessed": true,
+      "providers": [
+        "openalex"
+      ]
+    },
+    {
+      "at": 1794279383630,
+      "status": "RUNNING",
+      "retrieval": "retrieving",
+      "round": 1,
+      "count": 15,
+      "assessed": true,
+      "providers": [
+        "openalex"
+      ]
+    },
+    {
+      "at": 1794279383631,
+      "status": "RUNNING",
+      "retrieval": "retrieving",
+      "round": 1,
+      "count": 15,
+      "assessed": true,
+      "providers": [
+        "openalex"
+      ]
+    },
+    {
+      "at": 1794279384425,
+      "status": "RUNNING",
+      "retrieval": "retrieving",
+      "round": 1,
+      "count": 15,
+      "assessed": true,
+      "providers": [
+        "openalex"
+      ]
+    },
+    {
+      "at": 1794279384542,
+      "status": "RUNNING",
+      "retrieval": "retrieving",
+      "round": 1,
+      "count": 15,
+      "assessed": true,
+      "providers": [
+        "openalex"
+      ]
+    },
+    {
+      "at": 1794279384851,
+      "status": "RUNNING",
+      "retrieval": "retrieving",
+      "round": 1,
+      "count": 15,
+      "assessed": true,
+      "providers": [
+        "openalex"
+      ]
+    },
+    {
+      "at": 1794279385181,
+      "status": "RUNNING",
+      "retrieval": "retrieving",
+      "round": 1,
+      "count": 15,
+      "assessed": true,
+      "providers": [
+        "openalex"
+      ]
+    },
+    {
+      "at": 1794279385691,
+      "status": "RUNNING",
+      "retrieval": "reviewing",
+      "round": 1,
+      "count": 15,
+      "assessed": true,
+      "providers": [
+        "openalex"
+      ]
+    },
+    {
+      "at": 1794279385745,
+      "status": "RUNNING",
+      "retrieval": "reviewing",
+      "round": 1,
+      "count": 15,
+      "assessed": true,
+      "providers": [
+        "openalex"
+      ]
+    },
+    {
+      "at": 1794279391177,
+      "status": "RUNNING",
+      "retrieval": "reviewing",
+      "round": 1,
+      "count": 15,
+      "assessed": true,
+      "providers": [
+        "openalex"
+      ]
+    },
+    {
+      "at": 1794279391179,
+      "status": "RUNNING",
+      "retrieval": "reviewing",
+      "round": 1,
+      "count": 15,
+      "assessed": true,
+      "providers": [
+        "openalex"
+      ]
+    },
+    {
+      "at": 1794279391181,
+      "status": "RUNNING",
+      "retrieval": "retrieving",
+      "round": 1,
+      "count": 23,
+      "assessed": true,
+      "providers": [
+        "openalex",
+        "crossref"
+      ]
+    },
+    {
+      "at": 1794279391183,
+      "status": "RUNNING",
+      "retrieval": "completed",
+      "round": 1,
+      "count": 23,
+      "assessed": true,
+      "providers": [
+        "openalex",
+        "crossref"
+      ]
+    },
+    {
+      "at": 1794279391316,
+      "status": "RUNNING",
+      "retrieval": "completed",
+      "round": 1,
+      "count": 23,
+      "assessed": true,
+      "providers": [
+        "openalex",
+        "crossref"
+      ]
+    },
+    {
+      "at": 1794279391519,
+      "status": "SUCCEEDED",
+      "retrieval": "completed",
+      "round": 1,
+      "count": 23,
+      "assessed": true,
+      "providers": [
+        "openalex",
+        "crossref"
+      ]
+    },
+    {
+      "at": 1794279391677,
+      "status": "SUCCEEDED",
+      "retrieval": "completed",
+      "round": 1,
+      "count": 23,
+      "assessed": true,
+      "providers": [
+        "openalex",
+        "crossref"
+      ]
+    }
+  ],
+  "first_reviewed_sources_ms": 14836,
+  "progressive_reviewed_batch": true,
+  "reload_zero_new_calls": true,
+  "page_errors": []
+}

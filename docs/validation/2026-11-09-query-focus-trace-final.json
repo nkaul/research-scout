@@ -1,0 +1,74 @@
+{
+  "date": "2026-11-09",
+  "scope": "Exact-query intent preservation, provider-specific retrieval, primary/related separation, visible LLM/source requests and safe source inspection.",
+  "policy": "scout-agentic-retrieval-v3",
+  "validation": {
+    "full_python": 234,
+    "subsequent_focused_retrieval": 19,
+    "subsequent_launcher": 6,
+    "browser": 39,
+    "structural_harness": 11,
+    "typecheck": "passed",
+    "build": "passed",
+    "ruff": "passed",
+    "note": "Full Python suite preceded a diagnostic-score merge correction; all 19 focused retrieval cases, including cohort-score parity, passed afterward."
+  },
+  "live": {
+    "url": "http://127.0.0.1:3100/?conversation=18525853da69447bbbabea29868a1443",
+    "question": "What's the impact of how we improve the context model needs to have for better generation?",
+    "status": "SUCCEEDED",
+    "primary": 5,
+    "related": 32,
+    "reviewed_observations": 40,
+    "usage": {
+      "research_attempts": 2,
+      "model_http_attempts": 3,
+      "model_cost_usd": 0.00206225
+    },
+    "first_primary_ms": 22402,
+    "completion_ms": 40420,
+    "reload_zero_new_calls": true,
+    "inspection_pin_survives_reload": true,
+    "actual_llm_and_provider_bodies_visible_verified": true,
+    "manual_query_rewrite": false,
+    "answer_generation": false
+  },
+  "independent_subagent_review": {
+    "receipt": "2026-11-09-specific-query-review.json",
+    "provider_calls": 0,
+    "model_calls": 0,
+    "authored_cases_not_human_ground_truth": true
+  },
+  "extra_provider_compatibility_probe": {
+    "provider": "crossref",
+    "upstream_calls": 1,
+    "rows": 5,
+    "model_calls": 0,
+    "query": "large language models retrieval augmented generation context"
+  },
+  "privacy": {
+    "files_scanned": 896,
+    "credential_or_contact_leaks_found": 0,
+    "env_mode": "0o600"
+  },
+  "known_limits": [
+    "Relevance judgments over metadata/excerpts are not independent scientific ground truth.",
+    "Crossref semantic branch reranks the same lexical page locally; it is not remote corpus-vector search.",
+    "One reused reported query is regression evidence, not broad retrieval accuracy.",
+    "Existing saved searches preserve their historical original interpretations."
+  ],
+  "source_sha256": {
+    "src/research_scout/retrieval.py": "921d8ee040dff787a21079e2879eb4875794d35561aaee5e2e2adbf0dcf162c8",
+    "src/research_scout/conversations.py": "5af87f9cca4207fc16f3ce56a3332a7fe7ac208578117d456038ee6fa1c71182",
+    "src/research_scout/providers/rest_discovery.py": "6f00fc17d261ffaa1a5fa5c62c9d7885b2ed3c18ba41933d69b33cad9f0640e8",
+    "src/research_scout/providers/adapters.py": "030e700c029231be340093c12c476a1a0492f7c8ac8403e9186520014e368351",
+    "scripts/dev.py": "1696bd8c851b845b7cbc7f3f58895b2ae4b5362eddfe35515db3dc0f86f45baf",
+    "frontend/src/components/research-workspace.tsx": "fb8c75e24e3a955e94f7de53c80a7ef5bbbe21399454ee9a67c848202f741fd1",
+    "frontend/src/components/exploration-chat.tsx": "985f5da35975284c7f7de5a4a20b838e2087f3111a4e687e9397e8f7cf32492e",
+    "frontend/src/components/chat-source-card.tsx": "3398cc00307bb78763bd9f6218cd9372ef5662e8b12c9ff0691710e4e7f6f339",
+    "frontend/src/components/search-refinement.tsx": "08dbc901b7c1a542fcd2ac5dc01ac660c3631a997709a0415e2b40355c3b0326",
+    "frontend/src/lib/conversations.ts": "1ae4f11acc4ee9a0c2a2038bed21023281f73f0bfeb7a1a65d4de9c66be5508e",
+    "frontend/src/lib/reviewed-sources.ts": "7245eaae012f9f47aedc5fdde0b82720aa8599f9a86b95e0b681bc70df57a0fd",
+    "frontend/src/app/globals.css": "13a9b39e9f93fabe989413686998239586345a4ccc689851350951903b57c5de"
+  }
+}

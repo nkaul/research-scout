@@ -1,0 +1,18 @@
+[
+  {
+    "figure": "01-agent-architecture",
+    "width": 1920,
+    "height": 1080,
+    "textElements": 44,
+    "outsideCanvas": [],
+    "rendered": true
+  },
+  {
+    "figure": "02-task-lifecycle",
+    "width": 1920,
+    "height": 1080,
+    "textElements": 46,
+    "outsideCanvas": [],
+    "rendered": true
+  }
+]

@@ -1,0 +1,52 @@
+{
+  "source": "PUBLIC_AND_SYNTHETIC",
+  "private": false,
+  "collection": [
+    {
+      "repo_id": "synthetic/orion-api",
+      "evidence": [
+        {
+          "id": "E0",
+          "section": "GITHUB_METADATA",
+          "text": "orion-api. Patient intake API for the Orion Clinical Platform. Uses FastAPI and Python. Topics: . Language: unknown"
+        },
+        {
+          "id": "E1",
+          "section": "overview",
+          "text": "Patient intake API for the Orion Clinical Platform. Uses FastAPI and Python."
+        }
+      ],
+      "phrases": [
+        "patient intake api",
+        "orion clinical platform",
+        "language unknown",
+        "topics",
+        "python",
+        "orion-api",
+        "fastapi"
+      ]
+    },
+    {
+      "repo_id": "synthetic/orion-ui",
+      "evidence": [
+        {
+          "id": "E0",
+          "section": "GITHUB_METADATA",
+          "text": "orion-ui. Orion Clinical Platform patient intake dashboard using React and TypeScript. Topics: . Language: unknown"
+        },
+        {
+          "id": "E1",
+          "section": "overview",
+          "text": "Orion Clinical Platform patient intake dashboard using React and TypeScript."
+        }
+      ],
+      "phrases": [
+        "language unknown",
+        "typescript",
+        "topics",
+        "react",
+        "orion-ui"
+      ]
+    }
+  ]
+}

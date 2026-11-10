@@ -1,0 +1,154 @@
+{
+  "date": "2026-11-09",
+  "status": "passed",
+  "scope": "Automatic connected-source discovery, canonical DOI paper grouping and automatic Unpaywall enrichment; isolated providers and reviewed query traces retained.",
+  "checks": {
+    "python": {
+      "passed": 270,
+      "failed": 0,
+      "skipped": 0,
+      "receipt": "docs/validation/2026-11-09-automatic-federation-python.xml"
+    },
+    "browser": {
+      "passed": 43,
+      "failed": 0,
+      "skipped": 0,
+      "receipt": "docs/validation/2026-11-09-automatic-federation-browser.json"
+    },
+    "harness": {
+      "passed": 11,
+      "receipt": "docs/validation/2026-11-09-automatic-federation-harness.json",
+      "evidence_kind": "structural authored fixtures, not a live relevance benchmark"
+    },
+    "ruff": "passed",
+    "typescript": "passed",
+    "next_production_build": "passed"
+  },
+  "fixture": {
+    "providers": [
+      "openalex",
+      "crossref",
+      "arxiv",
+      "openaire"
+    ],
+    "primary_observations": 16,
+    "canonical_papers": 10,
+    "deduplicated_observations": 6,
+    "cross_provider_doi_groups": [
+      {
+        "paper_id": "doi:10.0000/scout.fixture.crossref.001",
+        "providers": [
+          "openalex",
+          "crossref",
+          "arxiv",
+          "openaire"
+        ],
+        "observations": 4,
+        "access_status": "succeeded"
+      },
+      {
+        "paper_id": "doi:10.0000/scout.fixture.datacite.002",
+        "providers": [
+          "openalex",
+          "crossref",
+          "arxiv",
+          "openaire"
+        ],
+        "observations": 4,
+        "access_status": "succeeded"
+      }
+    ],
+    "unpaywall_operations": 2,
+    "usage": {
+      "research_attempts": 10,
+      "model_http_attempts": 0,
+      "model_cost_usd": 0
+    },
+    "browser_reload_verified_zero_new_calls": true
+  },
+  "live": {
+    "url": "http://127.0.0.1:3100/?conversation=9e6d5b2e5bbf4ef480ba01e22d215b5f",
+    "status": "PARTIAL",
+    "routing": "auto",
+    "providers": [
+      "openalex",
+      "arxiv",
+      "crossref"
+    ],
+    "raw_primary_observations": 26,
+    "canonical_papers": 26,
+    "deduplicated_observations": 0,
+    "access_outcomes": {
+      "succeeded": 6,
+      "not_found": 6,
+      "not_applicable": 7,
+      "deferred_budget": 7
+    },
+    "unpaywall_operations": 12,
+    "usage": {
+      "research_attempts": 17,
+      "model_http_attempts": 5,
+      "model_cost_usd": 0.004661375
+    },
+    "first_paper_ms": 22668,
+    "elapsed_ms": 124550,
+    "progressive_papers": true,
+    "progressive_access": true,
+    "reload_zero_new_calls": true,
+    "page_errors": []
+  },
+  "limits": {
+    "automatic_discovery_providers_max": 4,
+    "retrieval_rounds_max": 2,
+    "retrieval_model_http_attempts_max": 9,
+    "turn_research_attempts_and_holds_max": 24,
+    "automatic_primary_doi_access_lookups_max": 12,
+    "manual_providers_max": 2,
+    "no_doi_identity": "provider scoped; no fuzzy title merge",
+    "live_doi_overlap": "none in this accepted primary set; positive grouping established by authored fixture integration",
+    "live_access": "reported locations; not downloaded content or checked remote links",
+    "generation": "not invoked by this acceptance run",
+    "coverage": "one question demonstrates operational integration, not calibrated relevance or exhaustive coverage"
+  },
+  "privacy": {
+    "scanned_files": 862,
+    "credential_contact_hits": [],
+    "env_mode": "0o600",
+    "scope": [
+      "src",
+      "tests",
+      "scripts",
+      "system-design",
+      "docs",
+      "discovery",
+      "frontend/src",
+      "frontend/.next",
+      ".scout/logs"
+    ]
+  },
+  "source_sha256": {
+    "src/research_scout/contracts.py": "345b9f0f428c80bb86b54dc7ba89996d1c8d08a73dc62b6014f93b6e9a9abd06",
+    "src/research_scout/core.py": "8f2ec1b12cab9f7e1309ab2d090ac3b2689272f74d44ce7dbb388cfe79022f6d",
+    "src/research_scout/api.py": "17d7184248ae3259f0c47189a2ac25a13019b737faf1eed538323ee79dd3b29e",
+    "src/research_scout/conversations.py": "305c1946bb22528aa49d1995138cb73b56f30765e930574e8d02b57af2e83b59",
+    "src/research_scout/retrieval.py": "80ca13a9eadf0fc9429dc789ea7e1a926da95d8badb1e6a46e513315347e53b3",
+    "src/research_scout/federation.py": "02b05b7e7ddaa1cc600f1dbb95a0829bbf0e0bcfd9df56899986797865603043",
+    "src/research_scout/generation.py": "c8f72dc9b11505ea2459cb4f7a36e2eb63e3883f97a78ca9a647135fc010d5f3",
+    "src/research_scout/providers/service.py": "d9836b19c059adcd2255605b532e1f8341993f48d6bda9088a104c18d931e3b1",
+    "frontend/src/components/research-workspace.tsx": "71f9f626a60af4a7f0570dc42f5ba889d8c80e30035d6e7b4a514c8e51c2b5dd",
+    "frontend/src/components/exploration-chat.tsx": "5f3aa23c6f5ad88275534cae5694310022730b734b9f8a50e09541a708d8bcfe",
+    "frontend/src/components/connected-sources.tsx": "422f72f53886ce41f23c05998299cd919e84822cb0159fc5eebf23f1853be76b",
+    "frontend/src/components/open-access-result.tsx": "73ef6217446423bbc4dc90d83c2aaedc49b737c8b5f049163a03b01c74e8f09a",
+    "frontend/src/lib/api.ts": "e6463a99d0cef276a966b49cdd0e077d7b6fb25091323f16460a92e75f2c128b",
+    "frontend/src/lib/conversations.ts": "e4dff727bb58e4cb0abe186a0d2060b6efd4d23f67238d0f0beeda87a0314b86"
+  },
+  "receipts": {
+    "live": "docs/validation/2026-11-09-automatic-federation-live-ui.json",
+    "fixture": "docs/validation/2026-11-09-automatic-federation-fixture.json"
+  },
+  "app_left_running": {
+    "url": "http://127.0.0.1:3100/",
+    "profile": "live",
+    "launcher_session": 35118
+  }
+}

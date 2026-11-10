@@ -1,0 +1,20 @@
+{
+  "revision": 1,
+  "active_revision": 1,
+  "profile_hash": "0bc607b4506651aad2a2d77a6037b6060037ce58e3e19ba09ddeadc15b75d517",
+  "active_profile_hash": "0bc607b4506651aad2a2d77a6037b6060037ce58e3e19ba09ddeadc15b75d517",
+  "workspace": "0:samples",
+  "candidates": [
+    "p-orion",
+    "p-forge",
+    "t-api",
+    "t-packaging",
+    "g-fastapi",
+    "g-python"
+  ],
+  "evidence_ids": [
+    "E0",
+    "E1"
+  ],
+  "rejections": []
+}

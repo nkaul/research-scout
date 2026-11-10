@@ -1,0 +1,63 @@
+{
+  "date": "2026-11-09",
+  "scope": "Bounded unauthenticated candidate API probes, not Scout integrations or relevance evaluation",
+  "openai_requests": 0,
+  "results": [
+    {
+      "provider": "arxiv",
+      "http_status": 200,
+      "requests": 1,
+      "integrated": false,
+      "credential_required_for_probe": false,
+      "records": [
+        {
+          "id": "http://arxiv.org/abs/2411.18583v1",
+          "abstract_chars": 1378
+        },
+        {
+          "id": "http://arxiv.org/abs/2502.00306v2",
+          "abstract_chars": 1206
+        }
+      ]
+    },
+    {
+      "provider": "europe_pmc",
+      "http_status": 200,
+      "requests": 1,
+      "integrated": false,
+      "credential_required_for_probe": false,
+      "records": [
+        {
+          "id": "PPR1344393",
+          "source": "PPR",
+          "abstract_chars": 3899,
+          "is_open_access": "N"
+        },
+        {
+          "id": "42986508",
+          "source": "MED",
+          "abstract_chars": 1416,
+          "is_open_access": "N"
+        }
+      ]
+    },
+    {
+      "provider": "openaire",
+      "http_status": 200,
+      "requests": 1,
+      "integrated": false,
+      "credential_required_for_probe": false,
+      "endpoint_version": "graph/v3",
+      "records": [
+        {
+          "id": "doi_dedup___::88b72d51158f9c45208906340319166e",
+          "descriptions": []
+        },
+        {
+          "id": "doi_dedup___::26fe08ed698e0de33fdce45f203d68ad",
+          "descriptions": []
+        }
+      ]
+    }
+  ]
+}

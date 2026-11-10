@@ -1,0 +1,429 @@
+{
+  "date": "2026-10-29",
+  "scope": "Authored HTML prototypes only; not production acceptance or complete accessibility conformance.",
+  "checks": [
+    {
+      "prototype": "linear-trial",
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 1100
+      },
+      "errors": [],
+      "externalRequests": [],
+      "title": "Research Scout — Linear inspired trial",
+      "language": "en",
+      "h1Count": 1,
+      "horizontalOverflow": 0,
+      "unnamedButtons": 0,
+      "inputsWithoutLabels": 0,
+      "brokenImages": 0,
+      "duplicateIds": [],
+      "reducedMotion": true,
+      "animatedElementsInReducedMotion": 0,
+      "focus": {
+        "tag": "BUTTON",
+        "label": "Search workspace ⌘ K",
+        "outlineStyle": "solid",
+        "outlineWidth": "2px"
+      },
+      "sampledTextPairs": 102,
+      "unmeasuredTextPairs": 0,
+      "contrastIssues": [],
+      "interaction": {
+        "passed": true,
+        "earlySourceUsable": true,
+        "progressiveArrival": true,
+        "noteAndSelectionRetained": true,
+        "noteFocusStable": true,
+        "reader": true,
+        "searchFilter": true,
+        "preferences": true,
+        "syntheticExport": "research-scout-illustrative-shortlist.json"
+      }
+    },
+    {
+      "prototype": "linear-trial",
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844
+      },
+      "errors": [],
+      "externalRequests": [],
+      "title": "Research Scout — Linear inspired trial",
+      "language": "en",
+      "h1Count": 1,
+      "horizontalOverflow": 0,
+      "unnamedButtons": 0,
+      "inputsWithoutLabels": 0,
+      "brokenImages": 0,
+      "duplicateIds": [],
+      "reducedMotion": true,
+      "animatedElementsInReducedMotion": 0,
+      "focus": {
+        "tag": "BUTTON",
+        "label": "Open workspace navigation",
+        "outlineStyle": "solid",
+        "outlineWidth": "2px"
+      },
+      "sampledTextPairs": 51,
+      "unmeasuredTextPairs": 0,
+      "contrastIssues": [],
+      "interaction": {
+        "passed": true,
+        "earlySourceUsable": true,
+        "progressiveArrival": true,
+        "noteAndSelectionRetained": true,
+        "noteFocusStable": true,
+        "reader": true,
+        "searchFilter": true,
+        "preferences": true,
+        "syntheticExport": null
+      }
+    },
+    {
+      "prototype": "linear-trial",
+      "viewport": {
+        "name": "narrow",
+        "width": 320,
+        "height": 900
+      },
+      "errors": [],
+      "externalRequests": [],
+      "title": "Research Scout — Linear inspired trial",
+      "language": "en",
+      "h1Count": 1,
+      "horizontalOverflow": 0,
+      "unnamedButtons": 0,
+      "inputsWithoutLabels": 0,
+      "brokenImages": 0,
+      "duplicateIds": [],
+      "reducedMotion": true,
+      "animatedElementsInReducedMotion": 0,
+      "focus": {
+        "tag": "BUTTON",
+        "label": "Open workspace navigation",
+        "outlineStyle": "solid",
+        "outlineWidth": "2px"
+      },
+      "sampledTextPairs": 51,
+      "unmeasuredTextPairs": 0,
+      "contrastIssues": [],
+      "interaction": null
+    },
+    {
+      "prototype": "cal-trial",
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 1100
+      },
+      "errors": [],
+      "externalRequests": [],
+      "title": "Research Scout — Cal-inspired trial",
+      "language": "en",
+      "h1Count": 1,
+      "horizontalOverflow": 0,
+      "unnamedButtons": 0,
+      "inputsWithoutLabels": 0,
+      "brokenImages": 0,
+      "duplicateIds": [],
+      "reducedMotion": true,
+      "animatedElementsInReducedMotion": 0,
+      "focus": {
+        "tag": "BUTTON",
+        "label": "RSPersonalResearch workspace",
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      },
+      "sampledTextPairs": 110,
+      "unmeasuredTextPairs": 0,
+      "contrastIssues": [],
+      "interaction": {
+        "passed": true,
+        "earlySourceUsable": true,
+        "progressiveArrival": true,
+        "noteAndSelectionRetained": true,
+        "noteFocusStable": true,
+        "readerDialog": true,
+        "accessFilter": true,
+        "preferences": true,
+        "shortlistView": true,
+        "syntheticExport": "research-scout-cal-trial-shortlist.json"
+      }
+    },
+    {
+      "prototype": "cal-trial",
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844
+      },
+      "errors": [],
+      "externalRequests": [],
+      "title": "Research Scout — Cal-inspired trial",
+      "language": "en",
+      "h1Count": 1,
+      "horizontalOverflow": 0,
+      "unnamedButtons": 0,
+      "inputsWithoutLabels": 0,
+      "brokenImages": 0,
+      "duplicateIds": [],
+      "reducedMotion": true,
+      "animatedElementsInReducedMotion": 0,
+      "focus": {
+        "tag": "BUTTON",
+        "label": "Open workspace navigation",
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      },
+      "sampledTextPairs": 88,
+      "unmeasuredTextPairs": 0,
+      "contrastIssues": [],
+      "interaction": {
+        "passed": true,
+        "earlySourceUsable": true,
+        "progressiveArrival": true,
+        "noteAndSelectionRetained": true,
+        "noteFocusStable": true,
+        "readerDialog": true,
+        "accessFilter": true,
+        "preferences": true,
+        "shortlistView": true,
+        "syntheticExport": "research-scout-cal-trial-shortlist.json"
+      }
+    },
+    {
+      "prototype": "cal-trial",
+      "viewport": {
+        "name": "narrow",
+        "width": 320,
+        "height": 900
+      },
+      "errors": [],
+      "externalRequests": [],
+      "title": "Research Scout — Cal-inspired trial",
+      "language": "en",
+      "h1Count": 1,
+      "horizontalOverflow": 0,
+      "unnamedButtons": 0,
+      "inputsWithoutLabels": 0,
+      "brokenImages": 0,
+      "duplicateIds": [],
+      "reducedMotion": true,
+      "animatedElementsInReducedMotion": 0,
+      "focus": {
+        "tag": "BUTTON",
+        "label": "Open workspace navigation",
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      },
+      "sampledTextPairs": 88,
+      "unmeasuredTextPairs": 0,
+      "contrastIssues": [],
+      "interaction": null
+    },
+    {
+      "prototype": "dub-trial",
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 1100
+      },
+      "errors": [],
+      "externalRequests": [],
+      "title": "Research Scout — Dub study",
+      "language": "en",
+      "h1Count": 1,
+      "horizontalOverflow": 0,
+      "unnamedButtons": 0,
+      "inputsWithoutLabels": 0,
+      "brokenImages": 0,
+      "duplicateIds": [],
+      "reducedMotion": true,
+      "animatedElementsInReducedMotion": 0,
+      "focus": {
+        "tag": "A",
+        "label": "research scout",
+        "outlineStyle": "solid",
+        "outlineWidth": "2px"
+      },
+      "sampledTextPairs": 93,
+      "unmeasuredTextPairs": 2,
+      "contrastIssues": [],
+      "interaction": {
+        "passed": true,
+        "earlySourceUsable": true,
+        "progressiveArrival": true,
+        "noteAndSelectionRetained": true,
+        "noteFocusStable": true,
+        "readerTabs": true,
+        "accessFilter": true,
+        "preferences": true,
+        "syntheticExport": "research-scout-trial-shortlist.json"
+      }
+    },
+    {
+      "prototype": "dub-trial",
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844
+      },
+      "errors": [],
+      "externalRequests": [],
+      "title": "Research Scout — Dub study",
+      "language": "en",
+      "h1Count": 1,
+      "horizontalOverflow": 0,
+      "unnamedButtons": 0,
+      "inputsWithoutLabels": 0,
+      "brokenImages": 0,
+      "duplicateIds": [],
+      "reducedMotion": true,
+      "animatedElementsInReducedMotion": 0,
+      "focus": {
+        "tag": "BUTTON",
+        "label": "Open workspace settings",
+        "outlineStyle": "solid",
+        "outlineWidth": "2px"
+      },
+      "sampledTextPairs": 63,
+      "unmeasuredTextPairs": 2,
+      "contrastIssues": [],
+      "interaction": {
+        "passed": true,
+        "earlySourceUsable": true,
+        "progressiveArrival": true,
+        "noteAndSelectionRetained": true,
+        "noteFocusStable": true,
+        "readerTabs": true,
+        "accessFilter": true,
+        "preferences": true,
+        "syntheticExport": "research-scout-trial-shortlist.json"
+      }
+    },
+    {
+      "prototype": "dub-trial",
+      "viewport": {
+        "name": "narrow",
+        "width": 320,
+        "height": 900
+      },
+      "errors": [],
+      "externalRequests": [],
+      "title": "Research Scout — Dub study",
+      "language": "en",
+      "h1Count": 1,
+      "horizontalOverflow": 0,
+      "unnamedButtons": 0,
+      "inputsWithoutLabels": 0,
+      "brokenImages": 0,
+      "duplicateIds": [],
+      "reducedMotion": true,
+      "animatedElementsInReducedMotion": 0,
+      "focus": {
+        "tag": "BUTTON",
+        "label": "Open workspace settings",
+        "outlineStyle": "solid",
+        "outlineWidth": "2px"
+      },
+      "sampledTextPairs": 63,
+      "unmeasuredTextPairs": 2,
+      "contrastIssues": [],
+      "interaction": null
+    },
+    {
+      "prototype": "index",
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 1100
+      },
+      "errors": [],
+      "externalRequests": [],
+      "title": "Research Scout · Three design trials",
+      "language": "en",
+      "h1Count": 1,
+      "horizontalOverflow": 0,
+      "unnamedButtons": 0,
+      "inputsWithoutLabels": 0,
+      "brokenImages": 0,
+      "duplicateIds": [],
+      "reducedMotion": true,
+      "animatedElementsInReducedMotion": 0,
+      "focus": {
+        "tag": "A",
+        "label": "Research Scout",
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      },
+      "sampledTextPairs": 42,
+      "unmeasuredTextPairs": 0,
+      "contrastIssues": [],
+      "interaction": null
+    },
+    {
+      "prototype": "index",
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844
+      },
+      "errors": [],
+      "externalRequests": [],
+      "title": "Research Scout · Three design trials",
+      "language": "en",
+      "h1Count": 1,
+      "horizontalOverflow": 0,
+      "unnamedButtons": 0,
+      "inputsWithoutLabels": 0,
+      "brokenImages": 0,
+      "duplicateIds": [],
+      "reducedMotion": true,
+      "animatedElementsInReducedMotion": 0,
+      "focus": {
+        "tag": "A",
+        "label": "Research Scout",
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      },
+      "sampledTextPairs": 42,
+      "unmeasuredTextPairs": 0,
+      "contrastIssues": [],
+      "interaction": null
+    },
+    {
+      "prototype": "index",
+      "viewport": {
+        "name": "narrow",
+        "width": 320,
+        "height": 900
+      },
+      "errors": [],
+      "externalRequests": [],
+      "title": "Research Scout · Three design trials",
+      "language": "en",
+      "h1Count": 1,
+      "horizontalOverflow": 0,
+      "unnamedButtons": 0,
+      "inputsWithoutLabels": 0,
+      "brokenImages": 0,
+      "duplicateIds": [],
+      "reducedMotion": true,
+      "animatedElementsInReducedMotion": 0,
+      "focus": {
+        "tag": "A",
+        "label": "Research Scout",
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      },
+      "sampledTextPairs": 42,
+      "unmeasuredTextPairs": 0,
+      "contrastIssues": [],
+      "interaction": null
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,115 @@
+{
+  "observed_at": "2026-11-09T23:03:41.011Z",
+  "scope": "Read-only local liveness/configuration checks for operational planning; no provider/model operations.",
+  "services": [
+    {
+      "name": "frontend",
+      "url": "http://127.0.0.1:3100/",
+      "error": "ECONNREFUSED"
+    },
+    {
+      "name": "core",
+      "url": "http://127.0.0.1:8100/health",
+      "http_status": 200,
+      "body": {
+        "status": "ok",
+        "service": "research_scout_core",
+        "mode": "fixture",
+        "agent": "real-deepagents-scripted-model",
+        "live_model_configured": false
+      }
+    },
+    {
+      "name": "openalex",
+      "url": "http://127.0.0.1:8111/health",
+      "http_status": 200,
+      "body": {
+        "status": "ok",
+        "provider": "openalex",
+        "mode": "fixture",
+        "fixture": true,
+        "capabilities": {
+          "search": true,
+          "lexical": true,
+          "semantic": true,
+          "details": true,
+          "agency": false,
+          "metadata": false
+        },
+        "access_configured": true,
+        "capability_status": "authored_fixture",
+        "semantic_execution": "authored_fixture_not_model",
+        "run_attempt_cap": 8
+      }
+    },
+    {
+      "name": "crossref",
+      "url": "http://127.0.0.1:8112/health",
+      "http_status": 200,
+      "body": {
+        "status": "ok",
+        "provider": "crossref",
+        "mode": "fixture",
+        "fixture": true,
+        "capabilities": {
+          "search": false,
+          "lexical": false,
+          "semantic": false,
+          "details": false,
+          "agency": true,
+          "metadata": true
+        },
+        "access_configured": true,
+        "capability_status": "authored_fixture",
+        "semantic_execution": "authored_fixture_not_model",
+        "run_attempt_cap": 6
+      }
+    },
+    {
+      "name": "datacite",
+      "url": "http://127.0.0.1:8113/health",
+      "http_status": 200,
+      "body": {
+        "status": "ok",
+        "provider": "datacite",
+        "mode": "fixture",
+        "fixture": true,
+        "capabilities": {
+          "search": false,
+          "lexical": false,
+          "semantic": false,
+          "details": false,
+          "agency": false,
+          "metadata": true
+        },
+        "access_configured": true,
+        "capability_status": "authored_fixture",
+        "semantic_execution": "authored_fixture_not_model",
+        "run_attempt_cap": 3
+      }
+    },
+    {
+      "name": "semantic_scholar",
+      "url": "http://127.0.0.1:8114/health",
+      "http_status": 200,
+      "body": {
+        "status": "ok",
+        "provider": "semantic_scholar",
+        "mode": "fixture",
+        "fixture": true,
+        "capabilities": {
+          "search": true,
+          "lexical": true,
+          "semantic": true,
+          "details": true,
+          "agency": false,
+          "metadata": false
+        },
+        "access_configured": true,
+        "capability_status": "authored_fixture",
+        "semantic_execution": "authored_fixture_not_model",
+        "run_attempt_cap": 8
+      }
+    }
+  ]
+}

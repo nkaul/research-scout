@@ -1,0 +1,144 @@
+{
+  "date": "2026-11-09",
+  "question": "What's the impact of how we improve the context model needs to have for better generation?",
+  "scope": "Actual UI query planning, DeepAgents/application MCP/provider retrieval, relevance review, ranked progressive sources. One explicitly admitted live turn; no answer generation.",
+  "passed": false,
+  "config": {
+    "retrieval": {
+      "enabled": true,
+      "ready": true,
+      "status": "ready",
+      "blocked_reason": null,
+      "model": "gpt-6-luna",
+      "policy": "scout-agentic-retrieval-v1",
+      "max_rounds": 2,
+      "max_model_calls": 5,
+      "max_turn_cost_usd": 0.05,
+      "max_candidates_per_provider_round": 20
+    }
+  },
+  "conversation_id": "373b0e33a2b443828ffe9fb302e706f0",
+  "url": "http://127.0.0.1:3100/?conversation=373b0e33a2b443828ffe9fb302e706f0",
+  "turn_id": "74079c8aca04470f8afb3a261ee1bd26",
+  "turn_status": "FAILED",
+  "retrieval": {
+    "status": "failed",
+    "round": 1,
+    "max_rounds": 2,
+    "model": "gpt-6-luna",
+    "max_model_calls": 5,
+    "assessments": [],
+    "rejected_count": 0,
+    "query_history": [],
+    "model_reservation_usd": 0
+  },
+  "usage": {
+    "research_attempts": 0,
+    "model_http_attempts": 1,
+    "model_cost_usd": 0.000204625
+  },
+  "activity": [
+    {
+      "provider": "openai",
+      "operation": "search_refinement",
+      "status": "failed",
+      "attempts": 1,
+      "source_count": 0
+    }
+  ],
+  "warnings": [
+    "Routing stopped (ValidationError). Check provider readiness; uncertain request outcomes remain held."
+  ],
+  "response": "This route could not complete. Saved source records remain available; no alternate provider or generated answer was substituted.",
+  "sources": [],
+  "run_ids": [],
+  "run_receipts": [],
+  "elapsed_ms": 6079,
+  "frames": [
+    {
+      "at": 1794279143406,
+      "status": "QUEUED",
+      "retrieval": "planning",
+      "round": 1,
+      "count": 0,
+      "assessed": true,
+      "providers": []
+    },
+    {
+      "at": 1794279143406,
+      "status": "RUNNING",
+      "retrieval": "planning",
+      "round": 1,
+      "count": 0,
+      "assessed": true,
+      "providers": []
+    },
+    {
+      "at": 1794279143450,
+      "status": "RUNNING",
+      "retrieval": "planning",
+      "round": 1,
+      "count": 0,
+      "assessed": true,
+      "providers": []
+    },
+    {
+      "at": 1794279143450,
+      "status": "RUNNING",
+      "retrieval": "planning",
+      "round": 1,
+      "count": 0,
+      "assessed": true,
+      "providers": []
+    },
+    {
+      "at": 1794279147997,
+      "status": "RUNNING",
+      "retrieval": "planning",
+      "round": 1,
+      "count": 0,
+      "assessed": true,
+      "providers": []
+    },
+    {
+      "at": 1794279148013,
+      "status": "RUNNING",
+      "retrieval": "planning",
+      "round": 1,
+      "count": 0,
+      "assessed": true,
+      "providers": []
+    },
+    {
+      "at": 1794279148013,
+      "status": "RUNNING",
+      "retrieval": "failed",
+      "round": 1,
+      "count": 0,
+      "assessed": true,
+      "providers": []
+    },
+    {
+      "at": 1794279148031,
+      "status": "FAILED",
+      "retrieval": "failed",
+      "round": 1,
+      "count": 0,
+      "assessed": true,
+      "providers": []
+    },
+    {
+      "at": 1794279148031,
+      "status": "FAILED",
+      "retrieval": "failed",
+      "round": 1,
+      "count": 0,
+      "assessed": true,
+      "providers": []
+    }
+  ],
+  "first_reviewed_sources_ms": null,
+  "progressive_reviewed_batch": false,
+  "error": "Unexpected terminal status FAILED",
+  "page_errors": []
+}

@@ -1,0 +1,91 @@
+{
+  "observed_at": "2026-11-09T23:31:07.584250+00:00",
+  "provider": "crossref",
+  "mode": "live",
+  "execution": "provider_asgi_contract_to_real_upstream",
+  "live_requested": true,
+  "operations": [
+    {
+      "operation": "agency",
+      "http_status": 200,
+      "attempts": 1,
+      "error": null,
+      "agency": "crossref"
+    },
+    {
+      "operation": "metadata",
+      "http_status": 200,
+      "attempts": 1,
+      "error": null,
+      "agency": null,
+      "record": {
+        "source_ref": "crossref:10.1038/nphys1170",
+        "record_id": "10.1038/nphys1170",
+        "doi": "10.1038/nphys1170",
+        "year": 2009,
+        "resource_type": "journal-article",
+        "mode": "live"
+      }
+    }
+  ],
+  "model_http_attempts": 0,
+  "configuration": {
+    "status": "ok",
+    "provider": "crossref",
+    "mode": "live",
+    "fixture": false,
+    "capabilities": {
+      "search": false,
+      "lexical": false,
+      "semantic": false,
+      "details": false,
+      "agency": true,
+      "metadata": true
+    },
+    "access_configured": true,
+    "readiness": "configured_unverified",
+    "access_method": "public_anonymous",
+    "key_recommended": false,
+    "blocked_reason": null,
+    "encoder_status": null,
+    "upstream_url": "https://api.crossref.org",
+    "last_verified_at": null,
+    "verified_capabilities": [],
+    "last_error": null,
+    "capability_status": "runtime_proof_required",
+    "semantic_execution": "unavailable",
+    "run_attempt_cap": 6
+  },
+  "readiness_after": {
+    "status": "ok",
+    "provider": "crossref",
+    "mode": "live",
+    "fixture": false,
+    "capabilities": {
+      "search": false,
+      "lexical": false,
+      "semantic": false,
+      "details": false,
+      "agency": true,
+      "metadata": true
+    },
+    "access_configured": true,
+    "readiness": "verified",
+    "access_method": "public_anonymous",
+    "key_recommended": false,
+    "blocked_reason": null,
+    "encoder_status": null,
+    "upstream_url": "https://api.crossref.org",
+    "last_verified_at": "2026-11-09T23:31:08.245834+00:00",
+    "verified_capabilities": [
+      "agency",
+      "metadata"
+    ],
+    "last_error": null,
+    "capability_status": "partially_verified",
+    "semantic_execution": "unavailable",
+    "run_attempt_cap": 6
+  },
+  "status": "passed",
+  "research_upstream_attempts": 2
+}

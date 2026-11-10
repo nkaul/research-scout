@@ -1,0 +1,310 @@
+{
+  "copied_on": "2026-10-26",
+  "timezone": "America/New_York",
+  "title": "GitHub Manager Architecture",
+  "source_repository": "github-manager",
+  "source_commit_context": "6cd06704bed49b4773f5e7abc65dd7f3e8022a4c",
+  "source_working_tree_dirty": true,
+  "scope": "Historical AI pipeline reference, source examples and selected diagrams; no application implementation",
+  "source_walkthrough": {
+    "path": "docs/github-manager-ai-pipeline.md",
+    "sha256": "1aba341c57ea29e3d1762ff1249e49ee9b15e25a9ee842e8a33f0d1f99d7af70"
+  },
+  "source_artifact_notes": {
+    "path": "docs/assets/ai-input-flows/README.md",
+    "sha256": "d86875f54d709ef2ac5744a1ef457125c67c8e51c1cc58ea092ece9285448447"
+  },
+  "inspected_source_code": [
+    {
+      "path": "backend/app/demo/service.py",
+      "sha256": "5ce799b003763e79f1c17f9acb7a4c89c14ea6067a83812b6327f679101c5eef",
+      "copied": false
+    },
+    {
+      "path": "backend/app/demo/evidence.py",
+      "sha256": "0d8e5c5e7235cb23638d675a9ee8669e34b58432cfc6e65a309d3bb36228e99b",
+      "copied": false
+    },
+    {
+      "path": "backend/app/demo/cohorts.py",
+      "sha256": "49e67325568ddf009640f754f75e2c8990fc89fb4774752e8bac8e42c890c30f",
+      "copied": false
+    },
+    {
+      "path": "backend/app/demo/analysis.py",
+      "sha256": "67078e734c2ad0e4a66e37680b0af1ad06fb5e2a823a40e3fef2ef290eba23fe",
+      "copied": false
+    },
+    {
+      "path": "backend/app/demo/ai.py",
+      "sha256": "a86b004ca838b974dfc3a2563cac3e339aef6831b975fb1e6d16828d224cc8d6",
+      "copied": false
+    },
+    {
+      "path": "backend/app/demo/allowance.py",
+      "sha256": "e7582335d015f5e4d9a5dbee5e97153926f6b65823ae9418b7b74787a50ee118",
+      "copied": false
+    },
+    {
+      "path": "backend/app/demo/run_budget.py",
+      "sha256": "6f11caf7a96325704a4e0ae429b3e8a0f31efa40a05d40759ea8f2ed4f5cb5ba",
+      "copied": false
+    },
+    {
+      "path": "backend/app/demo/domain.py",
+      "sha256": "b99a7023d1817fe3f66acab9c4837715c6130ca729697ca5905ed0e62b134004",
+      "copied": false
+    },
+    {
+      "path": "backend/app/demo/taxonomy_review.py",
+      "sha256": "97f5dd9fe78ee8f70b7e4a7ea304f214614a016c212d3c73d8fac21ecd852a5f",
+      "copied": false
+    },
+    {
+      "path": "backend/app/demo/corpus.py",
+      "sha256": "28eca7e9e2580f68c384ee5a9346132c761c9a96dfa1770d64a6d12c577c8ac3",
+      "copied": false
+    },
+    {
+      "path": "backend/app/pretest/ai/evidence.py",
+      "sha256": "ba1194e2f1bf8e0c9b38b532f2b0655331f7cd2d9450c199eddfd7595adda0e2",
+      "copied": false
+    },
+    {
+      "path": "backend/app/pretest/ai/provider.py",
+      "sha256": "cede3419af589650680f139950e85016b6417510d83ba66ed62cc78160e677e3",
+      "copied": false
+    },
+    {
+      "path": "backend/app/pretest/ai/chains.py",
+      "sha256": "2721d1b6aa893d5c1807f3f664c99d4414fc444bfa32228f8be01c793567710a",
+      "copied": false
+    },
+    {
+      "path": "backend/app/pretest/ai/settings.py",
+      "sha256": "e3ba154c12200636c18aafd982685779d6bbae35409bfa824da2abe9fc427397",
+      "copied": false
+    },
+    {
+      "path": "backend/app/pretest/ai/schemas.py",
+      "sha256": "40c025ffe9478f4976f82ed4efcd5d1ffef5f626bf541e9bdb864a748a2501b0",
+      "copied": false
+    },
+    {
+      "path": "backend/app/pretest/ai/storage.py",
+      "sha256": "74cadb444925bff94d69e24e83a7d4565c13a74bfb712b45a19eafb3861b8156",
+      "copied": false
+    }
+  ],
+  "original_example_source_hashes_match": true,
+  "copied_files": [
+    {
+      "source": "docs/assets/ai-input-flows/classification-flow-v3.png",
+      "destination": "docs/assets/github-manager-architecture/classification-flow-v3.png",
+      "source_sha256": "ac57fb7bea70dd72cc98827face580a8fb66f86c74038b445636984d2859e29a",
+      "destination_sha256": "ac57fb7bea70dd72cc98827face580a8fb66f86c74038b445636984d2859e29a",
+      "mode": "exact_copy"
+    },
+    {
+      "source": "docs/assets/ai-input-flows/classification-messages.json",
+      "destination": "docs/assets/github-manager-architecture/classification-messages.json",
+      "source_sha256": "76954857000e7e39934442112554e25d18ab778c980c610f7eae8b52a2ef8c35",
+      "destination_sha256": "76954857000e7e39934442112554e25d18ab778c980c610f7eae8b52a2ef8c35",
+      "mode": "exact_copy"
+    },
+    {
+      "source": "docs/assets/ai-input-flows/classification-payload.json",
+      "destination": "docs/assets/github-manager-architecture/classification-payload.json",
+      "source_sha256": "b5918e0a7166a79d86f3d63b085936c107cd988617ba826b40a9fd0c58ae6cb8",
+      "destination_sha256": "b5918e0a7166a79d86f3d63b085936c107cd988617ba826b40a9fd0c58ae6cb8",
+      "mode": "exact_copy"
+    },
+    {
+      "source": "docs/assets/ai-input-flows/classification-request.json",
+      "destination": "docs/assets/github-manager-architecture/classification-request.json",
+      "source_sha256": "8bbf055f2249684c29de949f68dbd75249c1a787ae6b756f47d14534bffb8dfe",
+      "destination_sha256": "8bbf055f2249684c29de949f68dbd75249c1a787ae6b756f47d14534bffb8dfe",
+      "mode": "exact_copy"
+    },
+    {
+      "source": "docs/assets/ai-input-flows/classification-schema.json",
+      "destination": "docs/assets/github-manager-architecture/classification-schema.json",
+      "source_sha256": "f01b8390c1e1dda13c984fb19e4fd2e6fb860b2bb302455e146af52113df1e41",
+      "destination_sha256": "f01b8390c1e1dda13c984fb19e4fd2e6fb860b2bb302455e146af52113df1e41",
+      "mode": "exact_copy"
+    },
+    {
+      "source": "docs/assets/ai-input-flows/classification-server-context.json",
+      "destination": "docs/assets/github-manager-architecture/classification-server-context.json",
+      "source_sha256": "086034554ddbc67d6c2d9f231135bd92cbfcb83fdc87bb5a5b71dc8fc36696b5",
+      "destination_sha256": "086034554ddbc67d6c2d9f231135bd92cbfcb83fdc87bb5a5b71dc8fc36696b5",
+      "mode": "exact_copy"
+    },
+    {
+      "source": "docs/assets/ai-input-flows/classification-system-prompt.txt",
+      "destination": "docs/assets/github-manager-architecture/classification-system-prompt.txt",
+      "source_sha256": "d1afae5d4be95004e1b50a50ee307a5f739ea73ddb150ca69ba5c85d67b9a945",
+      "destination_sha256": "d1afae5d4be95004e1b50a50ee307a5f739ea73ddb150ca69ba5c85d67b9a945",
+      "mode": "exact_copy"
+    },
+    {
+      "source": "docs/assets/ai-input-flows/profiles.json",
+      "destination": "docs/assets/github-manager-architecture/profiles.json",
+      "source_sha256": "1f132ab0550cf198bff0ecc84481b8b96e89a08b6e91cc4d31c2696ab2492eda",
+      "destination_sha256": "1f132ab0550cf198bff0ecc84481b8b96e89a08b6e91cc4d31c2696ab2492eda",
+      "mode": "exact_copy"
+    },
+    {
+      "source": "docs/assets/ai-input-flows/provenance.json",
+      "destination": "docs/assets/github-manager-architecture/provenance.json",
+      "source_sha256": "15bece22e831395f8e530355c14fe0b02df5af47f5de68a9fe1f729f37b71a53",
+      "destination_sha256": "15bece22e831395f8e530355c14fe0b02df5af47f5de68a9fe1f729f37b71a53",
+      "mode": "exact_copy"
+    },
+    {
+      "source": "docs/assets/ai-input-flows/rag-classification-wide-v1.png",
+      "destination": "docs/assets/github-manager-architecture/rag-classification-wide-v1.png",
+      "source_sha256": "766b035d49dcdce1a5c089d3ab4dad18fce068e6ae6744aeb96661b28e0b3f68",
+      "destination_sha256": "766b035d49dcdce1a5c089d3ab4dad18fce068e6ae6744aeb96661b28e0b3f68",
+      "mode": "exact_copy"
+    },
+    {
+      "source": "docs/assets/ai-input-flows/rag-full-picture-wide-v1.png",
+      "destination": "docs/assets/github-manager-architecture/rag-full-picture-wide-v1.png",
+      "source_sha256": "1efcbc64b9e7e624995d49ab16ed51a13da89337beda9e08669a9ea5e88709c7",
+      "destination_sha256": "1efcbc64b9e7e624995d49ab16ed51a13da89337beda9e08669a9ea5e88709c7",
+      "mode": "exact_copy"
+    },
+    {
+      "source": "docs/assets/ai-input-flows/registry.json",
+      "destination": "docs/assets/github-manager-architecture/registry.json",
+      "source_sha256": "3933abd5e2955ee61cd56a67fa9ac3552e9e49fe1d1aab493db586fd84fbd66f",
+      "destination_sha256": "3933abd5e2955ee61cd56a67fa9ac3552e9e49fe1d1aab493db586fd84fbd66f",
+      "mode": "exact_copy"
+    },
+    {
+      "source": "docs/assets/ai-input-flows/retrieval.json",
+      "destination": "docs/assets/github-manager-architecture/retrieval.json",
+      "source_sha256": "9098d1c7847beed3eacbeefd151dfc5c8fea6874cf74aaa7522065967a994618",
+      "destination_sha256": "9098d1c7847beed3eacbeefd151dfc5c8fea6874cf74aaa7522065967a994618",
+      "mode": "exact_copy"
+    },
+    {
+      "source": "docs/assets/ai-input-flows/source-repositories.json",
+      "destination": "docs/assets/github-manager-architecture/source-repositories.json",
+      "source_sha256": "3412c16d452c9a45a417e878211a289bc4f30867e2e97276dabbeea6fa7cc8dc",
+      "destination_sha256": "3412c16d452c9a45a417e878211a289bc4f30867e2e97276dabbeea6fa7cc8dc",
+      "mode": "exact_copy"
+    },
+    {
+      "source": "docs/assets/ai-input-flows/taxonomy-flow-v3.png",
+      "destination": "docs/assets/github-manager-architecture/taxonomy-flow-v3.png",
+      "source_sha256": "18519e63aec2e5de4e282de6768c651e1a11802d2c69340b5d61bfe30e0996c8",
+      "destination_sha256": "18519e63aec2e5de4e282de6768c651e1a11802d2c69340b5d61bfe30e0996c8",
+      "mode": "exact_copy"
+    },
+    {
+      "source": "docs/assets/ai-input-flows/taxonomy-messages.json",
+      "destination": "docs/assets/github-manager-architecture/taxonomy-messages.json",
+      "source_sha256": "c1aa9dce89cc296cc8dfa9c69baad3576effbc3a022cd9cd237f111127150482",
+      "destination_sha256": "c1aa9dce89cc296cc8dfa9c69baad3576effbc3a022cd9cd237f111127150482",
+      "mode": "exact_copy"
+    },
+    {
+      "source": "docs/assets/ai-input-flows/taxonomy-payload.json",
+      "destination": "docs/assets/github-manager-architecture/taxonomy-payload.json",
+      "source_sha256": "7524247549a9f140cd4aa90fbb93dca0223a83c9cb20f526869cdd31c9d909ca",
+      "destination_sha256": "7524247549a9f140cd4aa90fbb93dca0223a83c9cb20f526869cdd31c9d909ca",
+      "mode": "exact_copy"
+    },
+    {
+      "source": "docs/assets/ai-input-flows/taxonomy-request.json",
+      "destination": "docs/assets/github-manager-architecture/taxonomy-request.json",
+      "source_sha256": "0bc558394e186f5374b5baac394121cca6106ac71f6f597f37072773741854c3",
+      "destination_sha256": "0bc558394e186f5374b5baac394121cca6106ac71f6f597f37072773741854c3",
+      "mode": "exact_copy"
+    },
+    {
+      "source": "docs/assets/ai-input-flows/taxonomy-schema.json",
+      "destination": "docs/assets/github-manager-architecture/taxonomy-schema.json",
+      "source_sha256": "450311d1944ab76aee0354eff684de14d37373b609f8e056f5eff39424b0f642",
+      "destination_sha256": "450311d1944ab76aee0354eff684de14d37373b609f8e056f5eff39424b0f642",
+      "mode": "exact_copy"
+    },
+    {
+      "source": "docs/assets/ai-input-flows/taxonomy-system-prompt.txt",
+      "destination": "docs/assets/github-manager-architecture/taxonomy-system-prompt.txt",
+      "source_sha256": "d300a04655a371b26400d8f195d53d676ddde7d71470662c3a176f479b9ab3b8",
+      "destination_sha256": "d300a04655a371b26400d8f195d53d676ddde7d71470662c3a176f479b9ab3b8",
+      "mode": "exact_copy"
+    }
+  ],
+  "adapted_files": [
+    {
+      "source": "docs/github-manager-ai-pipeline.md",
+      "destination": "docs/github-manager-architecture.md",
+      "sha256": "42e873efd8e30250a2a4341048f5771b06af2ff2bfcd4591d29c234d6a0bbad5",
+      "changes": "Research Scout reference title/scope and efficiency summary; rebased included assets; labeled original code paths; original reproduction context retained."
+    },
+    {
+      "source": "docs/assets/ai-input-flows/README.md",
+      "destination": "docs/assets/github-manager-architecture/README.md",
+      "sha256": "22f25a6adb5d2b009c1326e5e92fdb7ebe8b8a65ef621b5324d3da9e33f07713",
+      "changes": "Focused notes for the selected copied artifacts; original production history identified without broken links to omitted archives."
+    }
+  ],
+  "excluded": [
+    "Application implementation and dependencies",
+    "Private account/runtime data, credentials and budget grants",
+    "Earlier image variants, archives and generation prompts",
+    "Example-builder execution and new live provider calls"
+  ],
+  "integration_files": [
+    {
+      "path": "AGENTS.md",
+      "previous_sha256": "c43159730d1292439cb99bd00b88b259b47f4288a4161a41350f50f7a8596ab2",
+      "sha256": "db43d196dcf1d4b1521b292e150c85149d4cc17278c868d2c81126b143b6d706",
+      "change": "Added a reading-list link to the historical AI pipeline reference."
+    }
+  ],
+  "checks": {
+    "source_files_unchanged": true,
+    "source_git_status_unchanged": true,
+    "other_preexisting_research_scout_files_unchanged": 113,
+    "exact_artifact_copies_verified": 20,
+    "local_links_and_anchors_checked": 40,
+    "broken_links": [],
+    "json_artifacts_parse": true,
+    "prompt_constants_match_recorded_source": true,
+    "mock_request_prompt_and_payload_consistency": true,
+    "images": [
+      {
+        "file": "rag-classification-wide-v1.png",
+        "width": 1672,
+        "height": 941,
+        "unchanged_from_source": true
+      },
+      {
+        "file": "classification-flow-v3.png",
+        "width": 1672,
+        "height": 941,
+        "unchanged_from_source": true
+      },
+      {
+        "file": "rag-full-picture-wide-v1.png",
+        "width": 1672,
+        "height": 941,
+        "unchanged_from_source": true
+      },
+      {
+        "file": "taxonomy-flow-v3.png",
+        "width": 1672,
+        "height": 941,
+        "unchanged_from_source": true
+      }
+    ],
+    "new_live_requests": 0,
+    "new_generations": 0,
+    "application_code_copied": false
+  }
+}

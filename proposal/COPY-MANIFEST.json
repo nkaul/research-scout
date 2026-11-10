@@ -1,0 +1,253 @@
+{
+  "copied_on": "2026-10-25",
+  "project": "Research Scout",
+  "scope": "Research and proposals only; no implementation",
+  "source_repository": "github-manager",
+  "source_commit_context": "6cd06704bed49b4773f5e7abc65dd7f3e8022a4c",
+  "source_working_tree_was_dirty": true,
+  "commit_qualification": "Research documents included uncommitted work; source content hashes identify this snapshot.",
+  "destination_repository": "research-scout",
+  "destination_root": "proposal",
+  "source_integrity": "All selected source bytes and source git status unchanged after copying.",
+  "files": [
+    {
+      "source": "agentic-design/proposal.md",
+      "destination": "design/overview.md",
+      "mode": "historical_document_with_scope_notice_and_rebased_links",
+      "source_sha256": "ca6883f46cb2b2883de26c9f51017917e88014f48e3a8491468bf4bdf21aa8a4",
+      "destination_sha256": "a05466fea1397ee5c8a609e45a6a4150bf959b9a3caacaa857cb8c86791fee80",
+      "bytes": 17032
+    },
+    {
+      "source": "agentic-design/architecture.md",
+      "destination": "design/architecture.md",
+      "mode": "historical_document_with_scope_notice_and_rebased_links",
+      "source_sha256": "ddfaf7d32696111b641bec99c81058e1e3288ee2f6fc83e754d6a2cc9ba5d2be",
+      "destination_sha256": "95111b9a3f19b7994a7b29ad9dcf96c56cf463a0fbe24fda334f51decd275caf",
+      "bytes": 24464
+    },
+    {
+      "source": "agentic-design/implementation-plan.md",
+      "destination": "design/incremental-plan.md",
+      "mode": "historical_document_with_scope_notice_and_rebased_links",
+      "source_sha256": "d6cc354366bb1c2fd9d60d9d8ae5870e7508c6cea4befeede1976acc51915f1e",
+      "destination_sha256": "67325a77b657b688244ba290644ae1f50ce80052046c13c00d8d5b6b7315141b",
+      "bytes": 11889
+    },
+    {
+      "source": "agentic-design/evaluation-plan.md",
+      "destination": "design/evaluation-plan.md",
+      "mode": "historical_document_with_scope_notice_and_rebased_links",
+      "source_sha256": "1c966c6637a2d4f9596b86962a2a055fb7f318feceff92ae4cfe5c2c0f4f7d9b",
+      "destination_sha256": "3da3edff71eeda26ef17b73849c79178743d9d28fd4460a43d6675349cd0c405",
+      "bytes": 12271
+    },
+    {
+      "source": "agentic-design/design-review.md",
+      "destination": "design/design-review.md",
+      "mode": "historical_document_with_scope_notice_and_rebased_links",
+      "source_sha256": "3d7d5d7a240946c4355a8e31e213f3de97f5bcf50967f6802f3ceef490ce9b85",
+      "destination_sha256": "d9fe993994fdab0a9d4ab391ff955bab16f7f38312ab761715947cb4e5e3d356",
+      "bytes": 6485
+    },
+    {
+      "source": "agentic-design/product-proposals.md",
+      "destination": "design/product-direction.md",
+      "mode": "selected_scout_and_evidence_investigator_sections",
+      "source_sha256": "66d68b03dcf07ac2c68e20106007645a077ed265bf9bd3e44d00a645578e393d",
+      "destination_sha256": "eab03b6d61ae9590e2a4c43215357c63170eb3c1ae896d9316f108cc9f7bb1d5",
+      "bytes": 5367
+    },
+    {
+      "source": "agentic-design/research/framework-options.md",
+      "destination": "research/framework-options.md",
+      "mode": "historical_document_with_scope_notice_and_rebased_links",
+      "source_sha256": "e20a5f1121caa2c2bb4a5c8a074d94795a64ed15291833ffcc6cbdcdd55c610a",
+      "destination_sha256": "347433caf152056169d29858592480e35deaefabfa0a71f1f2337407b6fd724f",
+      "bytes": 25985
+    },
+    {
+      "source": "agentic-design/research/mcp-integration.md",
+      "destination": "research/mcp-integration.md",
+      "mode": "historical_document_with_scope_notice_and_rebased_links",
+      "source_sha256": "3dff1e75b65db543cc087edadce40fb3eb8aeb7d50a95101d4e7b3f17025dab6",
+      "destination_sha256": "e9dcd055ff06e5b4f40a9d5269dbbd8f41b5a8eaa14c1c38e50199a8faf1af01",
+      "bytes": 30949
+    },
+    {
+      "source": "agentic-design/docs/public-data-and-licenses.md",
+      "destination": "research/public-data-and-licenses.md",
+      "mode": "historical_document_with_scope_notice_and_rebased_links",
+      "source_sha256": "cb4065803ab43b51261e7522797c613ef82a5d94452cfa7bba9bf6b08fef1718",
+      "destination_sha256": "3caeed774e0f63a410169f220cc2c7d329ad999a6c8cae3b54d3cdf421d06c6c",
+      "bytes": 10836
+    },
+    {
+      "source": "agentic-design/docs/README.md",
+      "destination": "prototype-findings/README.md",
+      "mode": "historical_document_with_scope_notice_and_rebased_links",
+      "source_sha256": "d0f31ab02c459bcef5aac28798a5c2a6f99cd247d3120ee1110eee6b82991837",
+      "destination_sha256": "d69ced08e303cfab7b96cd95a5e2e1c1c40b245ac569f073e32e38268f83f3d2",
+      "bytes": 4731
+    },
+    {
+      "source": "agentic-design/diagrams/01-agent-architecture.png",
+      "destination": "diagrams/01-agent-architecture.png",
+      "mode": "exact_asset_copy",
+      "source_sha256": "8508bcc5908934c7889385febe0aefc8fd8d029831abeb2508cfa31760019023",
+      "destination_sha256": "8508bcc5908934c7889385febe0aefc8fd8d029831abeb2508cfa31760019023",
+      "bytes": 333136
+    },
+    {
+      "source": "agentic-design/diagrams/01-agent-architecture.svg",
+      "destination": "diagrams/01-agent-architecture.svg",
+      "mode": "exact_asset_copy",
+      "source_sha256": "5a2ff4bef92e0ec0452d11d633882852a3acbbf79558fb01716b4eab0000e777",
+      "destination_sha256": "5a2ff4bef92e0ec0452d11d633882852a3acbbf79558fb01716b4eab0000e777",
+      "bytes": 14996
+    },
+    {
+      "source": "agentic-design/diagrams/02-task-lifecycle.png",
+      "destination": "diagrams/02-task-lifecycle.png",
+      "mode": "exact_asset_copy",
+      "source_sha256": "fd829677b561392cb55b499c23718a4be4967896b76b9a053b2626953a6657fa",
+      "destination_sha256": "fd829677b561392cb55b499c23718a4be4967896b76b9a053b2626953a6657fa",
+      "bytes": 284273
+    },
+    {
+      "source": "agentic-design/diagrams/02-task-lifecycle.svg",
+      "destination": "diagrams/02-task-lifecycle.svg",
+      "mode": "exact_asset_copy",
+      "source_sha256": "b12aa48b8f8553d2c5ba473602c2735981ce3b74937852d6df361397e739ecc4",
+      "destination_sha256": "b12aa48b8f8553d2c5ba473602c2735981ce3b74937852d6df361397e739ecc4",
+      "bytes": 13521
+    },
+    {
+      "source": "agentic-design/diagrams/render-audit.json",
+      "destination": "diagrams/original-render-audit.json",
+      "mode": "exact_asset_copy",
+      "source_sha256": "968360bb73926d47dcceef6d9eb5146b175ea72f91ea179a7ac9b7853932ae7c",
+      "destination_sha256": "968360bb73926d47dcceef6d9eb5146b175ea72f91ea179a7ac9b7853932ae7c",
+      "bytes": 313
+    },
+    {
+      "source": "agentic-design/docs/user-guide.md",
+      "destination": "prototype-findings/user-guide.md",
+      "mode": "historical_document_with_scope_notice_and_rebased_links",
+      "source_sha256": "739678cd93f46b393b8e44fe2a183a862297ea0070a55b2b278d5f1a6463eaa0",
+      "destination_sha256": "279c844d3eb2df822f62562eef5c8089be7163e47c8012b5b1ea1d938e013622",
+      "bytes": 4466
+    },
+    {
+      "source": "agentic-design/docs/ui-research.md",
+      "destination": "prototype-findings/ui-research.md",
+      "mode": "historical_document_with_scope_notice_and_rebased_links",
+      "source_sha256": "bf07885e198584895b842218fc6552b85c20429ed2a96f362c766703bb59dde3",
+      "destination_sha256": "831d37cdb7808f60a73fdec9c8d18e27610e540ca9e08cdf0f79045d17eaa19b",
+      "bytes": 5474
+    },
+    {
+      "source": "agentic-design/docs/implementation.md",
+      "destination": "prototype-findings/implementation.md",
+      "mode": "historical_document_with_scope_notice_and_rebased_links",
+      "source_sha256": "80e2afe2b7d88a54bba89bff07107ce1a6d491b03caa1835801f547ca96c3cdd",
+      "destination_sha256": "057db4193f9af8ca539de5328e334786284f31ff83d5823770c62211cb7f8c41",
+      "bytes": 9745
+    },
+    {
+      "source": "agentic-design/docs/backend-storage.md",
+      "destination": "prototype-findings/backend-storage.md",
+      "mode": "historical_document_with_scope_notice_and_rebased_links",
+      "source_sha256": "7735b5491ec2b4e5440648084d694ce41978d377cabff4a5ea61209c2727d1ac",
+      "destination_sha256": "ab3bfd9f2bd9ada24e894d94f5845d18c3d27bab7cd08282957a4456b00e0e2f",
+      "bytes": 6537
+    },
+    {
+      "source": "agentic-design/docs/mcp-integration.md",
+      "destination": "prototype-findings/mcp-integration.md",
+      "mode": "historical_document_with_scope_notice_and_rebased_links",
+      "source_sha256": "a14aa2452dec4a4c3acafed7aa2d86400141f2dcd24f28cef14b73fa1a842fe2",
+      "destination_sha256": "6bbd35599a89b539682e09f8d10ec64a61f9277beea4f8d7ce5afec010a397d3",
+      "bytes": 9871
+    },
+    {
+      "source": "agentic-design/docs/framework-runtime.md",
+      "destination": "prototype-findings/framework-runtime.md",
+      "mode": "historical_document_with_scope_notice_and_rebased_links",
+      "source_sha256": "d3b3fc1778e2d9d0d99b75e650f5d1dfb27aed28e4e7a33ba14213e68b82282c",
+      "destination_sha256": "57b4c199bef5cee24f227aa252ce166a8d36a146e2c72d25277aaef483546d7d",
+      "bytes": 9464
+    },
+    {
+      "source": "agentic-design/docs/validation.md",
+      "destination": "prototype-findings/validation.md",
+      "mode": "historical_document_with_scope_notice_and_rebased_links",
+      "source_sha256": "2f7ab204a72e47125db742b14f7f3d2c26057aa520a37b667209c088a93c6195",
+      "destination_sha256": "db6304c665aeda812885e60d34ed9a769324c2b786f46753cd127116a9cedda7",
+      "bytes": 9784
+    },
+    {
+      "source": "agentic-design/docs/examples/sentiment-analysis/README.md",
+      "destination": "prototype-findings/examples/sentiment-analysis/README.md",
+      "mode": "historical_document_with_scope_notice_and_rebased_links",
+      "source_sha256": "ea7c357303d72167122504ca386b88664f7904a67183e22a9f0d2b446e1169df",
+      "destination_sha256": "96f7673b702b67976d0eefc5b90a7ca7c6fc2cab2d96a65f466a313822c0eb13",
+      "bytes": 1695
+    },
+    {
+      "source": "agentic-design/docs/examples/sentiment-analysis/research_report.md",
+      "destination": "prototype-findings/examples/sentiment-analysis/research_report.md",
+      "mode": "historical_document_with_scope_notice_and_rebased_links",
+      "source_sha256": "d56e78f796b03112fdf404c43377a210368c4b333e62baec686f4c3d1f1a4f87",
+      "destination_sha256": "6cb828863bc05be9ac3cdaf77af03d81af39733874062c32533f5f976790fad8",
+      "bytes": 6742
+    },
+    {
+      "source": "agentic-design/docs/examples/sentiment-analysis/implementation_approach.md",
+      "destination": "prototype-findings/examples/sentiment-analysis/implementation_approach.md",
+      "mode": "historical_document_with_scope_notice_and_rebased_links",
+      "source_sha256": "984c05ede60b43b2b81bf7c59449048491d8a167b7ce3c691438883371b0f3c0",
+      "destination_sha256": "815f6b29278a8fc78c17b4a690080eefa3db9abb9180ae5666666a279befc0b4",
+      "bytes": 3354
+    },
+    {
+      "source": "agentic-design/docs/examples/sentiment-analysis/narration.md",
+      "destination": "prototype-findings/examples/sentiment-analysis/narration.md",
+      "mode": "historical_document_with_scope_notice_and_rebased_links",
+      "source_sha256": "6596395567b35daaf9245a12521a76560f47fa98eb30a0ab046e8604c57c0d4d",
+      "destination_sha256": "f0a869d5dce00b4ef8b90c24cb768ff47166b993f30de65367dd2c7b839ecc5a",
+      "bytes": 4865
+    }
+  ],
+  "excluded": [
+    "All backend/frontend implementation source and tests",
+    "Dependency manifests, locks, installed packages and rendering scripts",
+    "Environment files, API keys, OAuth tokens and other credentials",
+    "Private SQLite databases, account data, raw runtime traces, grants and remaining API allowance",
+    "GitHub Manager application, taxonomy, 600-repository corpus and evaluation artifacts beyond the Scout-specific published findings",
+    "Unrelated product options: Workspace Curator, Project-family Detective, Maintenance Watch and Annotation Review Assistant",
+    "Source Git metadata, local agent/skill folders and source repository modifications"
+  ],
+  "project_documents": [
+    {
+      "destination": "README.md",
+      "mode": "new_standalone_orientation",
+      "sha256": "9208011ca003855ed1be7e89bec56c5d8b75e8396124267c031e8c91db5e00e6"
+    },
+    {
+      "destination": "scope-and-next-steps.md",
+      "mode": "new_standalone_orientation",
+      "sha256": "6593db1672b068868e62de7fee830fb3c6ce8fa388653022de1b79e8cf486165"
+    },
+    {
+      "destination": "provenance.md",
+      "mode": "new_standalone_orientation",
+      "sha256": "5dde6f664e79cf2384856522000728855d473dae2be95ead6d3d7c5aa22c3e2f"
+    },
+    {
+      "destination": "diagrams/README.md",
+      "mode": "new_standalone_orientation",
+      "sha256": "6a5d445c510d87405a4f391b689c17bddd3c52ccc0a8418c7930288221374e13"
+    }
+  ]
+}

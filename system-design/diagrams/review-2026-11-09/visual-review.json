@@ -1,0 +1,54 @@
+{
+  "date": "2026-11-09",
+  "scope": "Native diagram and review-viewer QA only, not application acceptance or live provider testing.",
+  "diagrams": [
+    {
+      "name": "implemented-architecture",
+      "width": 1920,
+      "height": 1280,
+      "textElements": 49,
+      "failures": []
+    },
+    {
+      "name": "agent-workflow",
+      "width": 1920,
+      "height": 1280,
+      "textElements": 26,
+      "failures": []
+    },
+    {
+      "name": "review-checkpoint",
+      "width": 1920,
+      "height": 1280,
+      "textElements": 40,
+      "failures": []
+    }
+  ],
+  "viewer": [
+    {
+      "width": 1440,
+      "errors": [],
+      "externalRequests": [],
+      "horizontalOverflow": 0,
+      "brokenImages": 0,
+      "tabAndZoomControls": true
+    },
+    {
+      "width": 390,
+      "errors": [],
+      "externalRequests": [],
+      "horizontalOverflow": 0,
+      "brokenImages": 0,
+      "tabAndZoomControls": true
+    },
+    {
+      "width": 320,
+      "errors": [],
+      "externalRequests": [],
+      "horizontalOverflow": 0,
+      "brokenImages": 0,
+      "tabAndZoomControls": true
+    }
+  ],
+  "passed": true
+}

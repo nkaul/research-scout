@@ -1,0 +1,123 @@
+{
+  "format": "Sanitized Playwright validation receipt",
+  "generated_from": "tests/browser/artifacts/browser-tests.json",
+  "command": "SCOUT_BROWSER_EXTERNAL_SERVER=1 SCOUT_BROWSER_INTEGRATION=1 npm run test:browser -- --max-failures=1 --reporter=list,json",
+  "environment": {
+    "frontend": "Production build at http://127.0.0.1:3100",
+    "backend": "Local fixture core at http://127.0.0.1:8100 with four fixture provider services",
+    "browser": "Full Chromium, disable-gpu",
+    "live_provider_or_paid_model_calls": false,
+    "coverage": "Six deterministic browser API fixtures plus one actual local fixture-process integration"
+  },
+  "stats": {
+    "startTime": "2026-10-26T08:39:47.898Z",
+    "duration": 20050.302,
+    "expected": 7,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "cases": [
+    {
+      "file": "tests/browser/local-integration.spec.ts",
+      "line": 3,
+      "title": "local fixture services reach a saved shortlist and deterministic export",
+      "project": "chromium",
+      "expected_status": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 2518,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "tests/browser/workspace.spec.ts",
+      "line": 4,
+      "title": "first rows can be inspected and saved before completion; updates preserve identity and focus",
+      "project": "chromium",
+      "expected_status": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 6057,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "tests/browser/workspace.spec.ts",
+      "line": 38,
+      "title": "reopen and exports use saved state; DOI observations remain separate and stale writes retain drafts",
+      "project": "chromium",
+      "expected_status": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 1498,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "tests/browser/workspace.spec.ts",
+      "line": 78,
+      "title": "provider edits are explicit and reconnection cannot rerun research or duplicate sources",
+      "project": "chromium",
+      "expected_status": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 852,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "tests/browser/workspace.spec.ts",
+      "line": 115,
+      "title": "mobile keyboard flow, modal focus and reading layout remain usable",
+      "project": "chromium",
+      "expected_status": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 5797,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "tests/browser/workspace.spec.ts",
+      "line": 141,
+      "title": "three-paper cap and eligibility updates preserve human decisions visibly",
+      "project": "chromium",
+      "expected_status": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 1053,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "tests/browser/workspace.spec.ts",
+      "line": 162,
+      "title": "untitled and truncated records remain honest and DOI checks require inclusion",
+      "project": "chromium",
+      "expected_status": "passed",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 1125,
+          "retry": 0
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Synthetic fixture validation does not prove live provider quality or paid model operation."
+  ]
+}

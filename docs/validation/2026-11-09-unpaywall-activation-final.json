@@ -1,0 +1,74 @@
+{
+  "date": "2026-11-09",
+  "observed_at": "2026-11-10T01:49:45.545569+00:00",
+  "scope": "Environment-only Unpaywall activation using user-authorized private contact; one actual UI lookup and zero-call saved review. No code or dependency changes.",
+  "live_ui_receipt": "2026-11-09-unpaywall-live-ui.json",
+  "unpaywall_status": "live_access_verified",
+  "contact_configured": true,
+  "contact_value_disclosed": false,
+  "contact_only_projected_to_unpaywall": true,
+  "external_research_operations_this_activation": {
+    "unpaywall": 1
+  },
+  "new_openai_requests": 0,
+  "workspace_generation_http_attempts_total": 1,
+  "code_unchanged_from_prior_validated_fingerprints": true,
+  "prior_code_validation": {
+    "python_tests": 185,
+    "browser_journeys": 27,
+    "harness_cases": 11
+  },
+  "provider_runtime": {
+    "id": "unpaywall",
+    "label": "Unpaywall",
+    "role": "DOI open-access resolution",
+    "mode": "live",
+    "status": "ready",
+    "provider": "unpaywall",
+    "fixture": false,
+    "capabilities": {
+      "search": false,
+      "lexical": false,
+      "semantic": false,
+      "details": false,
+      "agency": false,
+      "metadata": false,
+      "access": true
+    },
+    "access_configured": true,
+    "readiness": "verified",
+    "access_method": "contact_email",
+    "key_recommended": false,
+    "blocked_reason": null,
+    "encoder_status": "not_applicable",
+    "upstream_url": "https://api.unpaywall.org/v2",
+    "last_verified_at": "2026-11-10T01:46:37.613474+00:00",
+    "verified_capabilities": [
+      "access"
+    ],
+    "last_error": null,
+    "capability_status": "partially_verified",
+    "semantic_execution": "unavailable",
+    "run_attempt_cap": 3
+  },
+  "privacy_check": {
+    "public_literal_leaks": [],
+    "local_logs_with_contact_literal": [],
+    "public_files_scanned": 564,
+    "env_ignored": true,
+    "env_permissions_600": true
+  },
+  "fingerprints": {
+    "README.md": "f5cc48c0f8f98fecad275d4d371da9124e47e51b0806308cfecc99a8fc6a4918",
+    "AGENTS.md": "55a49deeffea4506d429139cba07ad78e9f7e73321a58b6d606dfd038c34fb2a",
+    "system-design/README.md": "932fb902dc638e7074b3c29593d2b1039b18ad634dab2c48316259156d683289",
+    "system-design/implementation-status.md": "65990829ce95dfd34140067cbbc96782c0004f42efbd8f49a04663b2ec2bca17",
+    "system-design/increment-1.md": "2b5506b7a1f61de6bd1fc57a3bb0f3f8004b9d80a033ac4310cf500f3e61542a",
+    "system-design/architecture.md": "cbbe14f813fe7f308f73dee111471b9d7d645c6ca1d9cc68e047d12653a8b8a4",
+    "system-design/provider-expansion-2026-11-09.md": "0f0bae887074dc4546dcb53db660784a7e36638fc779ddfe99808c6476ede2d5",
+    "docs/validation/2026-11-09-unpaywall-live-ui.json": "97e1265708ab14196abcaf520a9321907dc64b33bcd7e525cbd75b7cdfcf8890",
+    "docs/validation/2026-11-09-unpaywall-live-desktop.png": "55a67f230c59e81205c443317d62a9f9d3c941f8f2e95a4c6799bf7c8a835b61",
+    "docs/validation/2026-11-09-unpaywall-live-mobile.png": "f988b3eb49deaa2d3e2f068e9f5caf00e05472bfc9407dff3dc3a46a8e73165f"
+  },
+  "passed": true
+}

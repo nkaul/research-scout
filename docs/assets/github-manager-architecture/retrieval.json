@@ -1,0 +1,423 @@
+{
+  "query_tokens": [
+    "api",
+    "clinical",
+    "fastapi",
+    "intake",
+    "language",
+    "orion",
+    "orion-api",
+    "patient",
+    "platform",
+    "python",
+    "topics",
+    "unknown"
+  ],
+  "canonical_documents": 38,
+  "rows": [
+    {
+      "id": "p-orion",
+      "name": "Orion Clinical Platform",
+      "kind": "PROJECT",
+      "cosine": 0.7381683074096297,
+      "alias_boost": 3,
+      "score": 3.7381683074096297,
+      "shortlisted": true,
+      "matching_tokens": [
+        "clinical",
+        "intake",
+        "orion",
+        "patient",
+        "platform"
+      ]
+    },
+    {
+      "id": "p-helios",
+      "name": "Helios Grid Initiative",
+      "kind": "PROJECT",
+      "cosine": 0.0,
+      "alias_boost": 0,
+      "score": 0.0,
+      "shortlisted": false,
+      "matching_tokens": []
+    },
+    {
+      "id": "p-atlas",
+      "name": "Atlas Laboratory Suite",
+      "kind": "PROJECT",
+      "cosine": 0.0,
+      "alias_boost": 0,
+      "score": 0.0,
+      "shortlisted": false,
+      "matching_tokens": []
+    },
+    {
+      "id": "p-meridian",
+      "name": "Meridian Ocean Research",
+      "kind": "PROJECT",
+      "cosine": 0.0,
+      "alias_boost": 0,
+      "score": 0.0,
+      "shortlisted": false,
+      "matching_tokens": []
+    },
+    {
+      "id": "p-audit",
+      "name": "Compliance Audit Initiative",
+      "kind": "PROJECT",
+      "cosine": 0.0,
+      "alias_boost": 0,
+      "score": 0.0,
+      "shortlisted": false,
+      "matching_tokens": []
+    },
+    {
+      "id": "p-nova",
+      "name": "Nova Learning Tools",
+      "kind": "PROJECT",
+      "cosine": 0.0,
+      "alias_boost": 0,
+      "score": 0.0,
+      "shortlisted": false,
+      "matching_tokens": []
+    },
+    {
+      "id": "p-forge",
+      "name": "Forge Build Platform",
+      "kind": "PROJECT",
+      "cosine": 0.11117911815425492,
+      "alias_boost": 0,
+      "score": 0.11117911815425492,
+      "shortlisted": true,
+      "matching_tokens": [
+        "platform"
+      ]
+    },
+    {
+      "id": "p-cedar",
+      "name": "Cedar Commerce",
+      "kind": "PROJECT",
+      "cosine": 0.0,
+      "alias_boost": 0,
+      "score": 0.0,
+      "shortlisted": false,
+      "matching_tokens": []
+    },
+    {
+      "id": "p-maple",
+      "name": "Maple Logistics",
+      "kind": "PROJECT",
+      "cosine": 0.0,
+      "alias_boost": 0,
+      "score": 0.0,
+      "shortlisted": false,
+      "matching_tokens": []
+    },
+    {
+      "id": "p-aurora",
+      "name": "Aurora Imaging",
+      "kind": "PROJECT",
+      "cosine": 0.0,
+      "alias_boost": 0,
+      "score": 0.0,
+      "shortlisted": false,
+      "matching_tokens": []
+    },
+    {
+      "id": "t-api",
+      "name": "Web APIs",
+      "kind": "TOPIC",
+      "cosine": 0.1198970831486776,
+      "alias_boost": 3,
+      "score": 3.1198970831486776,
+      "shortlisted": true,
+      "matching_tokens": [
+        "fastapi"
+      ]
+    },
+    {
+      "id": "t-http",
+      "name": "HTTP Clients",
+      "kind": "TOPIC",
+      "cosine": 0.0,
+      "alias_boost": 0,
+      "score": 0.0,
+      "shortlisted": false,
+      "matching_tokens": []
+    },
+    {
+      "id": "t-validation",
+      "name": "Data Validation",
+      "kind": "TOPIC",
+      "cosine": 0.0,
+      "alias_boost": 0,
+      "score": 0.0,
+      "shortlisted": false,
+      "matching_tokens": []
+    },
+    {
+      "id": "t-packaging",
+      "name": "Package Management",
+      "kind": "TOPIC",
+      "cosine": 0.11906682348261886,
+      "alias_boost": 0,
+      "score": 0.11906682348261886,
+      "shortlisted": true,
+      "matching_tokens": [
+        "python"
+      ]
+    },
+    {
+      "id": "t-lint",
+      "name": "Code Linting",
+      "kind": "TOPIC",
+      "cosine": 0.0,
+      "alias_boost": 0,
+      "score": 0.0,
+      "shortlisted": false,
+      "matching_tokens": []
+    },
+    {
+      "id": "t-cli",
+      "name": "Command Line Interfaces",
+      "kind": "TOPIC",
+      "cosine": 0.0,
+      "alias_boost": 0,
+      "score": 0.0,
+      "shortlisted": false,
+      "matching_tokens": []
+    },
+    {
+      "id": "t-template",
+      "name": "Templating",
+      "kind": "TOPIC",
+      "cosine": 0.0,
+      "alias_boost": 0,
+      "score": 0.0,
+      "shortlisted": false,
+      "matching_tokens": []
+    },
+    {
+      "id": "t-testing",
+      "name": "Software Testing",
+      "kind": "TOPIC",
+      "cosine": 0.0,
+      "alias_boost": 0,
+      "score": 0.0,
+      "shortlisted": false,
+      "matching_tokens": []
+    },
+    {
+      "id": "t-telemetry",
+      "name": "Telemetry",
+      "kind": "TOPIC",
+      "cosine": 0.0,
+      "alias_boost": 0,
+      "score": 0.0,
+      "shortlisted": false,
+      "matching_tokens": []
+    },
+    {
+      "id": "t-forecast",
+      "name": "Forecasting",
+      "kind": "TOPIC",
+      "cosine": 0.0,
+      "alias_boost": 0,
+      "score": 0.0,
+      "shortlisted": false,
+      "matching_tokens": []
+    },
+    {
+      "id": "t-visual",
+      "name": "Visualization",
+      "kind": "TOPIC",
+      "cosine": 0.0,
+      "alias_boost": 0,
+      "score": 0.0,
+      "shortlisted": false,
+      "matching_tokens": []
+    },
+    {
+      "id": "t-scheduling",
+      "name": "Scheduling",
+      "kind": "TOPIC",
+      "cosine": 0.0,
+      "alias_boost": 0,
+      "score": 0.0,
+      "shortlisted": false,
+      "matching_tokens": []
+    },
+    {
+      "id": "t-samples",
+      "name": "Sample Tracking",
+      "kind": "TOPIC",
+      "cosine": 0.0,
+      "alias_boost": 0,
+      "score": 0.0,
+      "shortlisted": false,
+      "matching_tokens": []
+    },
+    {
+      "id": "t-audit",
+      "name": "Audit Logging",
+      "kind": "TOPIC",
+      "cosine": 0.0,
+      "alias_boost": 0,
+      "score": 0.0,
+      "shortlisted": false,
+      "matching_tokens": []
+    },
+    {
+      "id": "g-python",
+      "name": "python",
+      "kind": "TAG",
+      "cosine": 0.15758874832347586,
+      "alias_boost": 3,
+      "score": 3.1575887483234757,
+      "shortlisted": true,
+      "matching_tokens": [
+        "python"
+      ]
+    },
+    {
+      "id": "g-rust",
+      "name": "rust",
+      "kind": "TAG",
+      "cosine": 0.0,
+      "alias_boost": 0,
+      "score": 0.0,
+      "shortlisted": false,
+      "matching_tokens": []
+    },
+    {
+      "id": "g-typescript",
+      "name": "typescript",
+      "kind": "TAG",
+      "cosine": 0.0,
+      "alias_boost": 0,
+      "score": 0.0,
+      "shortlisted": false,
+      "matching_tokens": []
+    },
+    {
+      "id": "g-fastapi",
+      "name": "fastapi",
+      "kind": "TAG",
+      "cosine": 0.24463024118763724,
+      "alias_boost": 3,
+      "score": 3.2446302411876373,
+      "shortlisted": true,
+      "matching_tokens": [
+        "fastapi"
+      ]
+    },
+    {
+      "id": "g-react",
+      "name": "react",
+      "kind": "TAG",
+      "cosine": 0.0,
+      "alias_boost": 0,
+      "score": 0.0,
+      "shortlisted": false,
+      "matching_tokens": []
+    },
+    {
+      "id": "g-postgresql",
+      "name": "postgresql",
+      "kind": "TAG",
+      "cosine": 0.0,
+      "alias_boost": 0,
+      "score": 0.0,
+      "shortlisted": false,
+      "matching_tokens": []
+    },
+    {
+      "id": "g-aws",
+      "name": "aws",
+      "kind": "TAG",
+      "cosine": 0.0,
+      "alias_boost": 0,
+      "score": 0.0,
+      "shortlisted": false,
+      "matching_tokens": []
+    },
+    {
+      "id": "g-docker",
+      "name": "docker",
+      "kind": "TAG",
+      "cosine": 0.0,
+      "alias_boost": 0,
+      "score": 0.0,
+      "shortlisted": false,
+      "matching_tokens": []
+    },
+    {
+      "id": "g-mqtt",
+      "name": "mqtt",
+      "kind": "TAG",
+      "cosine": 0.0,
+      "alias_boost": 0,
+      "score": 0.0,
+      "shortlisted": false,
+      "matching_tokens": []
+    },
+    {
+      "id": "g-pandas",
+      "name": "pandas",
+      "kind": "TAG",
+      "cosine": 0.0,
+      "alias_boost": 0,
+      "score": 0.0,
+      "shortlisted": false,
+      "matching_tokens": []
+    },
+    {
+      "id": "g-redis",
+      "name": "redis",
+      "kind": "TAG",
+      "cosine": 0.0,
+      "alias_boost": 0,
+      "score": 0.0,
+      "shortlisted": false,
+      "matching_tokens": []
+    },
+    {
+      "id": "g-graphql",
+      "name": "graphql",
+      "kind": "TAG",
+      "cosine": 0.0,
+      "alias_boost": 0,
+      "score": 0.0,
+      "shortlisted": false,
+      "matching_tokens": []
+    },
+    {
+      "id": "g-kubernetes",
+      "name": "kubernetes",
+      "kind": "TAG",
+      "cosine": 0.0,
+      "alias_boost": 0,
+      "score": 0.0,
+      "shortlisted": false,
+      "matching_tokens": []
+    },
+    {
+      "id": "g-go",
+      "name": "go",
+      "kind": "TAG",
+      "cosine": 0.0,
+      "alias_boost": 0,
+      "score": 0.0,
+      "shortlisted": false,
+      "matching_tokens": []
+    }
+  ],
+  "shortlist": [
+    "p-orion",
+    "p-forge",
+    "t-api",
+    "t-packaging",
+    "g-fastapi",
+    "g-python"
+  ]
+}

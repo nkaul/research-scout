@@ -1,0 +1,167 @@
+{
+  "date": "2026-10-30",
+  "scope": "Read-only review of saved fixture data in the production build. No research or metadata-check operations.",
+  "checks": [
+    {
+      "width": 1440,
+      "state": "overview",
+      "horizontalOverflow": 0,
+      "unnamedButtons": 0,
+      "unlabeledInputs": 0,
+      "pairs": 112,
+      "unmeasured": 0,
+      "contrastIssues": []
+    },
+    {
+      "width": 1440,
+      "state": "metadata",
+      "horizontalOverflow": 0,
+      "unnamedButtons": 0,
+      "unlabeledInputs": 0,
+      "pairs": 126,
+      "unmeasured": 0,
+      "contrastIssues": []
+    },
+    {
+      "width": 1440,
+      "state": "notes",
+      "horizontalOverflow": 0,
+      "unnamedButtons": 0,
+      "unlabeledInputs": 0,
+      "pairs": 115,
+      "unmeasured": 0,
+      "contrastIssues": []
+    },
+    {
+      "width": 1440,
+      "state": "settings",
+      "horizontalOverflow": 0,
+      "unnamedButtons": 0,
+      "unlabeledInputs": 0,
+      "pairs": 130,
+      "unmeasured": 0,
+      "contrastIssues": []
+    },
+    {
+      "width": 1024,
+      "state": "overview",
+      "horizontalOverflow": 0,
+      "unnamedButtons": 0,
+      "unlabeledInputs": 0,
+      "pairs": 111,
+      "unmeasured": 0,
+      "contrastIssues": []
+    },
+    {
+      "width": 1024,
+      "state": "metadata",
+      "horizontalOverflow": 0,
+      "unnamedButtons": 0,
+      "unlabeledInputs": 0,
+      "pairs": 91,
+      "unmeasured": 0,
+      "contrastIssues": []
+    },
+    {
+      "width": 1024,
+      "state": "notes",
+      "horizontalOverflow": 0,
+      "unnamedButtons": 0,
+      "unlabeledInputs": 0,
+      "pairs": 80,
+      "unmeasured": 0,
+      "contrastIssues": []
+    },
+    {
+      "width": 1024,
+      "state": "settings",
+      "horizontalOverflow": 0,
+      "unnamedButtons": 0,
+      "unlabeledInputs": 0,
+      "pairs": 129,
+      "unmeasured": 0,
+      "contrastIssues": []
+    },
+    {
+      "width": 390,
+      "state": "overview",
+      "horizontalOverflow": 0,
+      "unnamedButtons": 0,
+      "unlabeledInputs": 0,
+      "pairs": 90,
+      "unmeasured": 0,
+      "contrastIssues": []
+    },
+    {
+      "width": 390,
+      "state": "metadata",
+      "horizontalOverflow": 0,
+      "unnamedButtons": 0,
+      "unlabeledInputs": 0,
+      "pairs": 104,
+      "unmeasured": 0,
+      "contrastIssues": []
+    },
+    {
+      "width": 390,
+      "state": "notes",
+      "horizontalOverflow": 0,
+      "unnamedButtons": 0,
+      "unlabeledInputs": 0,
+      "pairs": 93,
+      "unmeasured": 0,
+      "contrastIssues": []
+    },
+    {
+      "width": 390,
+      "state": "settings",
+      "horizontalOverflow": 0,
+      "unnamedButtons": 0,
+      "unlabeledInputs": 0,
+      "pairs": 85,
+      "unmeasured": 0,
+      "contrastIssues": []
+    },
+    {
+      "width": 320,
+      "state": "overview",
+      "horizontalOverflow": 0,
+      "unnamedButtons": 0,
+      "unlabeledInputs": 0,
+      "pairs": 69,
+      "unmeasured": 0,
+      "contrastIssues": []
+    },
+    {
+      "width": 320,
+      "state": "metadata",
+      "horizontalOverflow": 0,
+      "unnamedButtons": 0,
+      "unlabeledInputs": 0,
+      "pairs": 83,
+      "unmeasured": 0,
+      "contrastIssues": []
+    },
+    {
+      "width": 320,
+      "state": "notes",
+      "horizontalOverflow": 0,
+      "unnamedButtons": 0,
+      "unlabeledInputs": 0,
+      "pairs": 72,
+      "unmeasured": 0,
+      "contrastIssues": []
+    },
+    {
+      "width": 320,
+      "state": "settings",
+      "horizontalOverflow": 0,
+      "unnamedButtons": 0,
+      "unlabeledInputs": 0,
+      "pairs": 85,
+      "unmeasured": 0,
+      "contrastIssues": []
+    }
+  ],
+  "passed": true
+}

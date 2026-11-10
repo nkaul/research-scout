@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-09",
+  "saved_review": true,
+  "zero_new_calls": true,
+  "responsive_widths": [
+    1440,
+    390,
+    320
+  ],
+  "formatted_lists_and_headings": true,
+  "stable_turn_anchor": true,
+  "anchor_initial_y": 21.5,
+  "model_http_attempts": 1,
+  "research_attempts": 0,
+  "passed": true
+}

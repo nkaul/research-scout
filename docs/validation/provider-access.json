@@ -1,0 +1,95 @@
+{
+  "checked_at_utc": "2026-10-26T07:53:51.614367+00:00",
+  "mode": "live",
+  "authorization": "Approved Increment 1 validation: anonymous public metadata reads only",
+  "versions": {
+    "fastapi": "0.162.0",
+    "httpx": "0.28.1",
+    "mcp": "1.30.0",
+    "pydantic": "2.14.1"
+  },
+  "checks": [
+    {
+      "provider": "crossref",
+      "operation": "agency",
+      "requested_identifier": "10.1038/nphys1170",
+      "adapter_http_status": 200,
+      "attempts": 1,
+      "mode": "live",
+      "outcome": "passed",
+      "retries": 0,
+      "agency": "crossref"
+    },
+    {
+      "provider": "crossref",
+      "operation": "metadata",
+      "requested_identifier": "10.1038/nphys1170",
+      "adapter_http_status": 200,
+      "attempts": 1,
+      "mode": "live",
+      "outcome": "passed",
+      "retries": 0,
+      "observed_metadata": {
+        "source_ref": "crossref:10.1038/nphys1170",
+        "record_id": "10.1038/nphys1170",
+        "doi": "10.1038/nphys1170",
+        "year": 2009,
+        "resource_type": "journal-article",
+        "observed_at": "2026-10-26T07:53:52.234873+00:00",
+        "version": "7703946606cf710508c5",
+        "metadata_status": "provider_supplied",
+        "author_count": 1,
+        "title_present": true,
+        "abstract_available": false
+      }
+    },
+    {
+      "provider": "datacite",
+      "operation": "metadata",
+      "requested_identifier": "10.14454/qdd3-ps68",
+      "adapter_http_status": 200,
+      "attempts": 1,
+      "mode": "live",
+      "outcome": "passed",
+      "retries": 0,
+      "observed_metadata": {
+        "source_ref": "datacite:10.14454/qdd3-ps68",
+        "record_id": "10.14454/qdd3-ps68",
+        "doi": "10.14454/qdd3-ps68",
+        "year": 2026,
+        "resource_type": "Text",
+        "observed_at": "2026-10-26T07:53:53.007125+00:00",
+        "version": "816ef0eccd85448d95a5",
+        "metadata_status": "provider_supplied",
+        "author_count": 1,
+        "title_present": true,
+        "abstract_available": false
+      }
+    },
+    {
+      "provider": "semantic_scholar",
+      "operation": "details",
+      "requested_identifier": "DOI:10.1038/nphys1170",
+      "adapter_http_status": 429,
+      "attempts": 1,
+      "mode": "live",
+      "outcome": "unavailable",
+      "retries": 0,
+      "error": {
+        "error": "UPSTREAM_RATE_LIMIT",
+        "message": "Selected provider rate limit reached; no automatic retry."
+      }
+    }
+  ],
+  "limits": {
+    "maximum_upstream_attempts": 4,
+    "automatic_retries": 0,
+    "paid_or_model_calls": 0
+  },
+  "total_upstream_attempts": 4,
+  "gates": {
+    "openalex": "Not attempted: official MCP OAuth configuration and tool-schema proof required. No REST fallback or interactive sign-in.",
+    "semantic_scholar_semantic": "Not attempted: compatible local encoder/native semantic capability is unconfigured.",
+    "whole_increment_live_validation": "Not established: these are metadata adapter probes, not agent/UI/hybrid quality validation."
+  }
+}

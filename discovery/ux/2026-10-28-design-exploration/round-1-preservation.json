@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-28",
+  "reason": "Preserve round 1 while adding at least three new design variants after user feedback",
+  "original_sha256": {
+    "prototype-01.html": "4ba25cf4f37224e153545f43532f2bb1416dba4dfb71500eeb612039ad29c7d5",
+    "prototype-02.html": "a2b91d66e8d4a4ebd84d1aa835b0cc74e4ce23d477fc2b00a18625b89ca00be4",
+    "prototype-03.html": "b8acc627f115067a216235752c62aedc6494989c2d01a21c60d6b2614d640435",
+    "index.html": "2069ad8f7ee63fe013991208cf11e4933fc4cb2fff86ff55eff533bd8039a8c1",
+    "prototype-checks.json": "bc42f2fc54b92141d77b62af1f79afd5c0d4c5c732b5a0b5cc03a5c47fd46e2a",
+    "artifact-receipt.json": "ffbb8aab6bacf489f4af5d759ce6181ad6df4d52a5783af95ac86c50b4801671",
+    "validation.md": "149fefe7991ab152a98cd441cadeb046f6e6dbae036189065cc4648ac38e467e"
+  },
+  "preserved_gallery": "index-round-1.html"
+}

@@ -1,0 +1,249 @@
+{
+  "review_date": "2026-11-09",
+  "checked_at_utc": "2026-11-09T21:47:16.931Z",
+  "scope": "Local health, provider configuration and MCP initialize/tools-list only. No research, registry, export or model operations; no external provider requests.",
+  "services": [
+    {
+      "service": "frontend",
+      "port": 3100,
+      "status": "not_reachable"
+    },
+    {
+      "service": "core",
+      "port": 8100,
+      "status": 200,
+      "data": {
+        "status": "ok",
+        "service": "research_scout_core",
+        "mode": "fixture",
+        "agent": "real-deepagents-scripted-model",
+        "live_model_configured": false
+      }
+    },
+    {
+      "service": "openalex",
+      "port": 8111,
+      "status": 200,
+      "data": {
+        "status": "ok",
+        "provider": "openalex",
+        "mode": "fixture",
+        "fixture": true,
+        "capabilities": {
+          "search": true,
+          "lexical": true,
+          "semantic": true,
+          "details": true,
+          "agency": false,
+          "metadata": false
+        },
+        "access_configured": true,
+        "capability_status": "authored_fixture",
+        "semantic_execution": "authored_fixture_not_model",
+        "run_attempt_cap": 8
+      }
+    },
+    {
+      "service": "crossref",
+      "port": 8112,
+      "status": 200,
+      "data": {
+        "status": "ok",
+        "provider": "crossref",
+        "mode": "fixture",
+        "fixture": true,
+        "capabilities": {
+          "search": false,
+          "lexical": false,
+          "semantic": false,
+          "details": false,
+          "agency": true,
+          "metadata": true
+        },
+        "access_configured": true,
+        "capability_status": "authored_fixture",
+        "semantic_execution": "authored_fixture_not_model",
+        "run_attempt_cap": 6
+      }
+    },
+    {
+      "service": "datacite",
+      "port": 8113,
+      "status": 200,
+      "data": {
+        "status": "ok",
+        "provider": "datacite",
+        "mode": "fixture",
+        "fixture": true,
+        "capabilities": {
+          "search": false,
+          "lexical": false,
+          "semantic": false,
+          "details": false,
+          "agency": false,
+          "metadata": true
+        },
+        "access_configured": true,
+        "capability_status": "authored_fixture",
+        "semantic_execution": "authored_fixture_not_model",
+        "run_attempt_cap": 3
+      }
+    },
+    {
+      "service": "semantic_scholar",
+      "port": 8114,
+      "status": 200,
+      "data": {
+        "status": "ok",
+        "provider": "semantic_scholar",
+        "mode": "fixture",
+        "fixture": true,
+        "capabilities": {
+          "search": true,
+          "lexical": true,
+          "semantic": true,
+          "details": true,
+          "agency": false,
+          "metadata": false
+        },
+        "access_configured": true,
+        "capability_status": "authored_fixture",
+        "semantic_execution": "authored_fixture_not_model",
+        "run_attempt_cap": 8
+      }
+    }
+  ],
+  "provider_configuration": {
+    "status": 200,
+    "providers": [
+      {
+        "id": "openalex",
+        "label": "OpenAlex",
+        "role": "Primary discovery",
+        "mode": "fixture",
+        "status": "ready",
+        "provider": "openalex",
+        "fixture": true,
+        "capabilities": {
+          "search": true,
+          "lexical": true,
+          "semantic": true,
+          "details": true,
+          "agency": false,
+          "metadata": false
+        },
+        "access_configured": true,
+        "capability_status": "authored_fixture",
+        "semantic_execution": "authored_fixture_not_model",
+        "run_attempt_cap": 8
+      },
+      {
+        "id": "crossref",
+        "label": "Crossref",
+        "role": "DOI agency and metadata",
+        "mode": "fixture",
+        "status": "ready",
+        "provider": "crossref",
+        "fixture": true,
+        "capabilities": {
+          "search": false,
+          "lexical": false,
+          "semantic": false,
+          "details": false,
+          "agency": true,
+          "metadata": true
+        },
+        "access_configured": true,
+        "capability_status": "authored_fixture",
+        "semantic_execution": "authored_fixture_not_model",
+        "run_attempt_cap": 6
+      },
+      {
+        "id": "datacite",
+        "label": "DataCite",
+        "role": "DOI metadata",
+        "mode": "fixture",
+        "status": "ready",
+        "provider": "datacite",
+        "fixture": true,
+        "capabilities": {
+          "search": false,
+          "lexical": false,
+          "semantic": false,
+          "details": false,
+          "agency": false,
+          "metadata": true
+        },
+        "access_configured": true,
+        "capability_status": "authored_fixture",
+        "semantic_execution": "authored_fixture_not_model",
+        "run_attempt_cap": 3
+      },
+      {
+        "id": "semantic_scholar",
+        "label": "Semantic Scholar",
+        "role": "Complementary discovery",
+        "mode": "fixture",
+        "status": "ready",
+        "provider": "semantic_scholar",
+        "fixture": true,
+        "capabilities": {
+          "search": true,
+          "lexical": true,
+          "semantic": true,
+          "details": true,
+          "agency": false,
+          "metadata": false
+        },
+        "access_configured": true,
+        "capability_status": "authored_fixture",
+        "semantic_execution": "authored_fixture_not_model",
+        "run_attempt_cap": 8
+      }
+    ]
+  },
+  "application_mcp": {
+    "initialize_status": 200,
+    "protocolVersion": "2025-03-26",
+    "serverInfo": {
+      "name": "Research Scout",
+      "version": "1.30.0"
+    },
+    "list_status": 200,
+    "tools": [
+      {
+        "name": "search_papers",
+        "inputSchema": {
+          "properties": {
+            "run_id": {
+              "title": "Run Id",
+              "type": "string"
+            }
+          },
+          "required": [
+            "run_id"
+          ],
+          "title": "search_papersArguments",
+          "type": "object"
+        }
+      },
+      {
+        "name": "get_research_run",
+        "inputSchema": {
+          "properties": {
+            "run_id": {
+              "title": "Run Id",
+              "type": "string"
+            }
+          },
+          "required": [
+            "run_id"
+          ],
+          "title": "get_research_runArguments",
+          "type": "object"
+        }
+      }
+    ],
+    "errors": []
+  }
+}

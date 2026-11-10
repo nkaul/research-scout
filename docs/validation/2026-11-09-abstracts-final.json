@@ -1,0 +1,41 @@
+{
+  "date": "2026-11-09",
+  "scope": "Closing abstract implementation and source research review; previous receipts retain original scope",
+  "python_cases": 146,
+  "browser_cases": 20,
+  "harness_cases": 11,
+  "typecheck": "passed",
+  "production_build": "passed",
+  "ruff": "passed",
+  "credential_values_disclosed": false,
+  "credential_literal_leaks": [],
+  "files_scanned": 540,
+  "env_ignored": true,
+  "env_permissions_600": true,
+  "openai_attempts_this_task": 0,
+  "openai_attempts_total_in_workspace_ledger": 1,
+  "fingerprints": {
+    "src/research_scout/conversations.py": "312ddb4044f4a852ae762943016d430f60363fe60c822ef2d8da32355d60c6e6",
+    "src/research_scout/generation.py": "156483045bbff5a0c68a199659f239bd63aa6f34e2dcdb7559813826d2773a15",
+    "frontend/src/components/chat-abstract.tsx": "76188b821ad7b0f57274f651ae33c2c7739a484e17a7141e8411275ba2f80fb3",
+    "frontend/src/components/exploration-chat.tsx": "f53791d457d85b0c5fdf06a4eef397cbb8bd2cae82de290b81eb200bbd518c18",
+    "frontend/src/lib/conversations.ts": "ca1c3e4338442747e361ec50866a2564fe3e69a088a2122cbf59f891d165cef7",
+    "frontend/src/lib/api.ts": "89f89a6ee43780164467f84cd7d6d0d4512e2a12395c83a2feff51f419b9d811",
+    "frontend/src/app/globals.css": "ae52bfb51fbd06bedd1760d47b712952330d622c63b8c463c47fa7f01ba7fa45",
+    "tests/test_generation.py": "cf9225065881f0710911ea354e53f9f7a109cbc8e7d82f8b4070ddebac7abc83",
+    "tests/browser/exploration.spec.ts": "2416cf5174fe2303f3c123b3a4ecf4bccd93b714833ba2073d3c23267ddac558",
+    "system-design/richer-sources-and-abstracts.md": "f4f44d55c10f1914158a020ed4d1b363a94f1411fb3d37b3a0a9ea7505df90b9",
+    "discovery/research/free-scholarly-sources-review-2026-11-09.md": "e6fdbd2c9b16c1c50c4c25461f53f214284f86ce9d11914cc382244e0931667e",
+    "docs/validation/2026-11-09-abstracts-python.xml": "9b450e32bb26d84546a58ed5ddbdf0645d5ba51635a858ed44f6670c6c9f4a83",
+    "docs/validation/2026-11-09-abstracts-browser.json": "579e50c1c165d9a7d581a66a660a17cc56d090280214313ff54ad92bd334fd92",
+    "docs/validation/2026-11-09-abstracts-live-ui.json": "4f9358a000bf5a124e958859ff6800aa786db376599a0b55cd9b000283ddf469",
+    "docs/validation/2026-11-09-free-source-probes.json": "adb4e28b48a9db68e60003bab81948b0a1b8cf8930a8052806c637996858b2aa"
+  },
+  "new_external_research_operations_this_task": {
+    "openalex_details": 3,
+    "arxiv_probe": 1,
+    "europe_pmc_probe": 1,
+    "openaire_probe": 1
+  },
+  "request_count_scope": "Research tool/REST operations; MCP session/control requests, documentation browsing and any OAuth exchanges are not counted as research operations."
+}

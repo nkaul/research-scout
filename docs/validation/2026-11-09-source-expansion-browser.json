@@ -1,0 +1,301 @@
+{
+  "date": "2026-11-09",
+  "scope": "27 browser journeys across a full suite plus one targeted rerun after correcting the old four-provider health assertion to eight. Actual8fixture-process/MCP paths plus mockedUI/errorcases; no externalcalls.",
+  "execution_summaries": [
+    {
+      "stats": {
+        "startTime": "2026-11-10T01:24:26.891Z",
+        "duration": 75234.09999999999,
+        "expected": 26,
+        "skipped": 0,
+        "unexpected": 1,
+        "flaky": 0
+      },
+      "case_count": 27
+    },
+    {
+      "stats": {
+        "startTime": "2026-11-10T01:26:32.598Z",
+        "duration": 8781.914,
+        "expected": 1,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "case_count": 1
+    }
+  ],
+  "final_cases": [
+    {
+      "title": "actual fixture chat routes separate providers, reuses saved evidence and reopens without a search",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 5132
+        }
+      ]
+    },
+    {
+      "title": "actual fixture DOI chat routes to DataCite without creating a discovery run",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 1405
+        }
+      ]
+    },
+    {
+      "title": "exploration renders early separate-provider sources, retains drafts and cancels without duplicate search",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 1509
+        }
+      ]
+    },
+    {
+      "title": "a public DOI works with OpenAlex blocked and saved follow-up does not introduce year filters",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 2098
+        }
+      ]
+    },
+    {
+      "title": "exploration remains usable on a narrow phone and keeps over-budget input editable",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 1198
+        }
+      ]
+    },
+    {
+      "title": "a successful details lookup does not claim verified discovery and rate limits stay visible",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 1718
+        }
+      ]
+    },
+    {
+      "title": "explicit generation renders real response snapshots progressively, retains citations and reopens without another request",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 2162
+        }
+      ]
+    },
+    {
+      "title": "generation is disabled without a configured key and a failed stream retains evidence for an explicit retry",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 1903
+        }
+      ]
+    },
+    {
+      "title": "generated answer formatting stays React-safe during partial text and keeps source links and turn anchors",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 2149
+        }
+      ]
+    },
+    {
+      "title": "chat displays abstracts immediately and reads fuller same-provider details with cached replay",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 2007
+        }
+      ]
+    },
+    {
+      "title": "abstract lookup failure retains the visible excerpt and does not start another discovery or generation",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 1242
+        }
+      ]
+    },
+    {
+      "title": "local fixture services reach a saved shortlist and deterministic export",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 3005
+        }
+      ]
+    },
+    {
+      "title": "actual fixture services route all added discovery sources and keep Unpaywall access separate",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 11062
+        }
+      ]
+    },
+    {
+      "title": "six discovery choices remain explicit and at most two can be selected; access lookup is separate",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 1765
+        }
+      ]
+    },
+    {
+      "title": "early abstracts expand from saved records while another provider runs; only new details wait for the source run",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 1741
+        }
+      ]
+    },
+    {
+      "title": "Unpaywall locations stay separate, links are safe, closed access is valid and replay makes no lookup",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 1970
+        }
+      ]
+    },
+    {
+      "title": "missing Unpaywall contact and access failures remain visible without automatic provider fallback",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 1089
+        }
+      ]
+    },
+    {
+      "title": "OpenAIRE descriptions are not presented as abstracts",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 1360
+        }
+      ]
+    },
+    {
+      "title": "failed access lookup does not retry or switch to paper or registry search",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 1214
+        }
+      ]
+    },
+    {
+      "title": "first rows can be inspected and saved before completion; updates preserve identity and focus",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 7159
+        }
+      ]
+    },
+    {
+      "title": "reopen and exports use saved state; DOI observations remain separate and stale writes retain drafts",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 3262
+        }
+      ]
+    },
+    {
+      "title": "provider edits are explicit and reconnection cannot rerun research or duplicate sources",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 1940
+        }
+      ]
+    },
+    {
+      "title": "mobile keyboard flow, modal focus and reading layout remain usable",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 6617
+        }
+      ]
+    },
+    {
+      "title": "three-paper cap and eligibility updates preserve human decisions visibly",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 2160
+        }
+      ]
+    },
+    {
+      "title": "untitled and truncated records remain honest and DOI checks require inclusion",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 2106
+        }
+      ]
+    },
+    {
+      "title": "desktop split preview, notes and display preferences use existing saved data",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 3460
+        }
+      ]
+    },
+    {
+      "title": "Dub-inspired workspace remains readable at tablet and narrow phone widths",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 2889
+        }
+      ]
+    }
+  ],
+  "passed": true
+}

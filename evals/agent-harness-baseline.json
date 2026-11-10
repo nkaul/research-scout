@@ -1,0 +1,134 @@
+{
+  "report_version": 1,
+  "generated_at": "2026-10-26T07:50:41.444952+00:00",
+  "evidence_kind": "authored_synthetic_fixtures_with_scripted_BaseChatModel",
+  "framework_path": "actual create_deep_agent coordinator and specialist compiled graphs",
+  "transport": "injected application-search callback; actual HTTP MCP covered by separate test",
+  "framework_versions": {
+    "deepagents": "0.7.32",
+    "langchain": "1.4.7",
+    "langchain-core": "1.7.0",
+    "mcp": "1.30.0"
+  },
+  "case_count": 11,
+  "passed_count": 11,
+  "all_passed": true,
+  "denominator": "the listed harness/structural-context cases, not research questions or live LLM judgments",
+  "model_http_attempts": 0,
+  "model_charges_usd": 0,
+  "limitations": [
+    "No live model/provider accuracy, relevance, entailment or production-safety claim.",
+    "The injection case proves deterministic policy/capability handling, not a live LLM benchmark.",
+    "Durable cross-process admission and human-selection persistence are owned/tested by the app core."
+  ],
+  "cases": [
+    {
+      "case_id": "openalex-delegation",
+      "passed": true,
+      "expected": "bounded_success",
+      "observed_error_type": null,
+      "duration_ms": 89.5,
+      "model_generations": 4,
+      "delegations": 1,
+      "application_searches": 1
+    },
+    {
+      "case_id": "semantic-scholar-isolated-delegation",
+      "passed": true,
+      "expected": "bounded_success",
+      "observed_error_type": null,
+      "duration_ms": 37.27,
+      "model_generations": 4,
+      "delegations": 1,
+      "application_searches": 1
+    },
+    {
+      "case_id": "empty-success",
+      "passed": true,
+      "expected": "bounded_success",
+      "observed_error_type": null,
+      "duration_ms": 33.32,
+      "model_generations": 4,
+      "delegations": 1,
+      "application_searches": 1
+    },
+    {
+      "case_id": "source-instruction-is-data",
+      "passed": true,
+      "expected": "bounded_success",
+      "observed_error_type": null,
+      "duration_ms": 33.57,
+      "model_generations": 4,
+      "delegations": 1,
+      "application_searches": 1
+    },
+    {
+      "case_id": "foreign-provider-rejected",
+      "passed": true,
+      "expected": "structural_rejection_without_retry",
+      "observed_error_type": "ContextError",
+      "duration_ms": 28.26,
+      "model_generations": 2,
+      "delegations": 1,
+      "application_searches": 1
+    },
+    {
+      "case_id": "invented-source-id-rejected",
+      "passed": true,
+      "expected": "structural_rejection_without_retry",
+      "observed_error_type": "ContextError",
+      "duration_ms": 30.6,
+      "model_generations": 3,
+      "delegations": 1,
+      "application_searches": 1
+    },
+    {
+      "case_id": "human-mutation-rejected",
+      "passed": true,
+      "expected": "structural_rejection_without_retry",
+      "observed_error_type": "ContextError",
+      "duration_ms": 32.39,
+      "model_generations": 3,
+      "delegations": 1,
+      "application_searches": 1
+    },
+    {
+      "case_id": "invented-source-field-rejected",
+      "passed": true,
+      "expected": "structural_rejection_without_retry",
+      "observed_error_type": "ContextError",
+      "duration_ms": 36.29,
+      "model_generations": 3,
+      "delegations": 1,
+      "application_searches": 1
+    },
+    {
+      "case_id": "generation-cap-after-retrieval",
+      "passed": true,
+      "expected": "structural_rejection_without_retry",
+      "observed_error_type": "HarnessError",
+      "duration_ms": 35.94,
+      "model_generations": 3,
+      "delegations": 1,
+      "application_searches": 1
+    },
+    {
+      "case_id": "same-execution-no-replay",
+      "passed": true,
+      "expected": "bounded_success",
+      "observed_error_type": null,
+      "duration_ms": 34.53,
+      "model_generations": 4,
+      "delegations": 1,
+      "application_searches": 1
+    },
+    {
+      "case_id": "compact-context-hard-filters-and-identities",
+      "passed": true,
+      "expected": "bounded_previews_preserved_constraints_and_source_ids",
+      "candidate_identity_denominator": 20,
+      "preview_count": 5,
+      "omitted_preview_count": 15
+    }
+  ]
+}

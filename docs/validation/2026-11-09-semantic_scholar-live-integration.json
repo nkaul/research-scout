@@ -1,0 +1,89 @@
+{
+  "observed_at": "2026-11-09T23:31:09.099979+00:00",
+  "provider": "semantic_scholar",
+  "mode": "live",
+  "execution": "provider_asgi_contract_to_real_upstream",
+  "live_requested": true,
+  "operations": [
+    {
+      "operation": "search",
+      "http_status": 200,
+      "branches": [
+        {
+          "branch": "semantic",
+          "kind": "branch.failed",
+          "count": null,
+          "error": "SEMANTIC_UNAVAILABLE",
+          "message": "No compatible local encoder is configured; relevance search is not native vector search."
+        },
+        {
+          "branch": "lexical",
+          "kind": "branch.failed",
+          "count": null,
+          "error": "UPSTREAM_RATE_LIMIT",
+          "message": "Selected provider rate limit reached; no automatic retry."
+        }
+      ],
+      "sources": [],
+      "attempts": 1,
+      "status": "failed"
+    }
+  ],
+  "model_http_attempts": 0,
+  "configuration": {
+    "status": "ok",
+    "provider": "semantic_scholar",
+    "mode": "live",
+    "fixture": false,
+    "capabilities": {
+      "search": true,
+      "lexical": true,
+      "semantic": false,
+      "details": true,
+      "agency": false,
+      "metadata": false
+    },
+    "access_configured": true,
+    "readiness": "configured_unverified",
+    "access_method": "public_anonymous",
+    "key_recommended": true,
+    "blocked_reason": "Semantic reranking needs a configured compatible local encoder; lexical search remains available.",
+    "encoder_status": null,
+    "upstream_url": "https://api.semanticscholar.org/graph/v1",
+    "last_verified_at": null,
+    "verified_capabilities": [],
+    "last_error": null,
+    "capability_status": "runtime_proof_required",
+    "semantic_execution": "unavailable",
+    "run_attempt_cap": 8
+  },
+  "readiness_after": {
+    "status": "ok",
+    "provider": "semantic_scholar",
+    "mode": "live",
+    "fixture": false,
+    "capabilities": {
+      "search": true,
+      "lexical": true,
+      "semantic": false,
+      "details": true,
+      "agency": false,
+      "metadata": false
+    },
+    "access_configured": true,
+    "readiness": "configured_unverified",
+    "access_method": "public_anonymous",
+    "key_recommended": true,
+    "blocked_reason": "Semantic reranking needs a configured compatible local encoder; lexical search remains available.",
+    "encoder_status": null,
+    "upstream_url": "https://api.semanticscholar.org/graph/v1",
+    "last_verified_at": null,
+    "verified_capabilities": [],
+    "last_error": "UPSTREAM_RATE_LIMIT",
+    "capability_status": "runtime_proof_required",
+    "semantic_execution": "unavailable",
+    "run_attempt_cap": 8
+  },
+  "status": "partial_or_failed",
+  "research_upstream_attempts": 1
+}

@@ -1,0 +1,151 @@
+{
+  "observed_at": "2026-11-09T23:51:21.477Z",
+  "scope": "Final read-only running-process check; no provider/model operations.",
+  "frontend": {
+    "url": "http://127.0.0.1:3100/",
+    "http_status": 200
+  },
+  "core": {
+    "status": "ok",
+    "service": "research_scout_core",
+    "mode": "live",
+    "agent": "real-deepagents-deterministic-routing",
+    "live_model_configured": false,
+    "model_mode": "disabled",
+    "generation": "disabled",
+    "routing": "deterministic",
+    "frameworks": [
+      "langchain",
+      "langgraph",
+      "deepagents"
+    ],
+    "provider_modes": {
+      "openalex": "live",
+      "crossref": "live",
+      "datacite": "live",
+      "semantic_scholar": "live"
+    }
+  },
+  "providers": [
+    {
+      "id": "openalex",
+      "label": "OpenAlex",
+      "role": "Primary discovery",
+      "mode": "live",
+      "status": "needs_access",
+      "provider": "openalex",
+      "fixture": false,
+      "capabilities": {
+        "search": true,
+        "lexical": true,
+        "semantic": true,
+        "details": true,
+        "agency": false,
+        "metadata": false
+      },
+      "access_configured": false,
+      "readiness": "needs_access",
+      "access_method": "unconfigured",
+      "key_recommended": false,
+      "blocked_reason": "Run scripts/connect_openalex.py to authorize the official MCP.",
+      "encoder_status": "not_applicable",
+      "upstream_url": "https://mcp.openalex.org/mcp",
+      "last_verified_at": null,
+      "verified_capabilities": [],
+      "last_error": null,
+      "capability_status": "runtime_proof_required",
+      "semantic_execution": "provider_native",
+      "run_attempt_cap": 8
+    },
+    {
+      "id": "crossref",
+      "label": "Crossref",
+      "role": "DOI agency and metadata",
+      "mode": "live",
+      "status": "ready",
+      "provider": "crossref",
+      "fixture": false,
+      "capabilities": {
+        "search": false,
+        "lexical": false,
+        "semantic": false,
+        "details": false,
+        "agency": true,
+        "metadata": true
+      },
+      "access_configured": true,
+      "readiness": "configured_unverified",
+      "access_method": "public_anonymous",
+      "key_recommended": false,
+      "blocked_reason": null,
+      "encoder_status": "not_applicable",
+      "upstream_url": "https://api.crossref.org",
+      "last_verified_at": null,
+      "verified_capabilities": [],
+      "last_error": null,
+      "capability_status": "runtime_proof_required",
+      "semantic_execution": "unavailable",
+      "run_attempt_cap": 6
+    },
+    {
+      "id": "datacite",
+      "label": "DataCite",
+      "role": "DOI metadata",
+      "mode": "live",
+      "status": "ready",
+      "provider": "datacite",
+      "fixture": false,
+      "capabilities": {
+        "search": false,
+        "lexical": false,
+        "semantic": false,
+        "details": false,
+        "agency": false,
+        "metadata": true
+      },
+      "access_configured": true,
+      "readiness": "configured_unverified",
+      "access_method": "public_anonymous",
+      "key_recommended": false,
+      "blocked_reason": null,
+      "encoder_status": "not_applicable",
+      "upstream_url": "https://api.datacite.org",
+      "last_verified_at": null,
+      "verified_capabilities": [],
+      "last_error": null,
+      "capability_status": "runtime_proof_required",
+      "semantic_execution": "unavailable",
+      "run_attempt_cap": 3
+    },
+    {
+      "id": "semantic_scholar",
+      "label": "Semantic Scholar",
+      "role": "Complementary discovery",
+      "mode": "live",
+      "status": "ready",
+      "provider": "semantic_scholar",
+      "fixture": false,
+      "capabilities": {
+        "search": true,
+        "lexical": true,
+        "semantic": true,
+        "details": true,
+        "agency": false,
+        "metadata": false
+      },
+      "access_configured": true,
+      "readiness": "configured_unverified",
+      "access_method": "public_anonymous",
+      "key_recommended": true,
+      "blocked_reason": null,
+      "encoder_status": "configured_local",
+      "upstream_url": "https://api.semanticscholar.org/graph/v1",
+      "last_verified_at": null,
+      "verified_capabilities": [],
+      "last_error": null,
+      "capability_status": "runtime_proof_required",
+      "semantic_execution": "local_candidate_pool",
+      "run_attempt_cap": 8
+    }
+  ]
+}

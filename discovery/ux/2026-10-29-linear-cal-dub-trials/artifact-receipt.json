@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-29",
+  "scope": "Original standalone HTML design trials and UX documentation only; no production code changes.",
+  "designers": [
+    "linear_trial_designer",
+    "cal_trial_designer",
+    "dub_trial_designer"
+  ],
+  "browser_checks": {
+    "passed": true,
+    "page_viewport_combinations": 12,
+    "interaction_flows": 6,
+    "report": "trial-checks.json"
+  },
+  "application_preservation": {
+    "reference": "docs/validation/implementation-receipt.json",
+    "files_checked": 40,
+    "changed": []
+  },
+  "prior_html_preservation": {
+    "files_checked": 8,
+    "changed": [],
+    "expected_sha256": {
+      "discovery/ux/2026-10-28-design-exploration/prototype-06.html": "aa55642a318510c3ab08b5d0e0ebadd255799ea9261bfca0803c7d448f1a36af",
+      "discovery/ux/2026-10-28-design-exploration/index-round-1.html": "2069ad8f7ee63fe013991208cf11e4933fc4cb2fff86ff55eff533bd8039a8c1",
+      "discovery/ux/2026-10-28-design-exploration/index.html": "c44f503bf670f14d8c30bdaf72923b7be5206120979b7ca34ff7a1a83931a746",
+      "discovery/ux/2026-10-28-design-exploration/prototype-01.html": "4ba25cf4f37224e153545f43532f2bb1416dba4dfb71500eeb612039ad29c7d5",
+      "discovery/ux/2026-10-28-design-exploration/prototype-02.html": "a2b91d66e8d4a4ebd84d1aa835b0cc74e4ce23d477fc2b00a18625b89ca00be4",
+      "discovery/ux/2026-10-28-design-exploration/prototype-03.html": "b8acc627f115067a216235752c62aedc6494989c2d01a21c60d6b2614d640435",
+      "discovery/ux/2026-10-28-design-exploration/prototype-04.html": "216b3778bc02dc931b087a219bd89b497b001914ceccfcb4881b9804f19a365a",
+      "discovery/ux/2026-10-28-design-exploration/prototype-05.html": "ba9746c060a2b919eb4e0e52bdc77f0e8ad143eec8cb5e7a91a25905de3e0b98"
+    }
+  },
+  "local_link_check": {
+    "broken": []
+  },
+  "artifact_sha256": {
+    "README.md": "cc0e08c1f202ef40e9148d8fd1ee6d83e84c7c9658f38efe4efac1d0f37bf6a4",
+    "cal-notes.md": "1a7cd201741fe62942be0bb89b890add28bb75d2c667fb452c046e4d76a5588c",
+    "cal-trial.html": "6be3d6645772a04ca1891d4d232a9e767c3c4c832d815311f704f5f74b5edf2f",
+    "dub-notes.md": "54aa17332ed984a8407ba310e85e36fe5fa26978a0ac08f8390155550f03dce2",
+    "dub-trial.html": "419ca011a52eba906abc04e82df026912107986ddce2c47a3f7beaa470d2354c",
+    "index.html": "274e4a3316627e6d5af39e8721ab41a3046576f098e0d2a3b2f9fa1225cad82d",
+    "linear-notes.md": "c8c0c9d725a0acfd08e1559afcbe8eac414140353103ff3a7546368ff6fa8789",
+    "linear-trial.html": "500105bf27e5753b18ad63b13c2293e073d87c63aa1f21724b98e35cb00e404b",
+    "trial-checks.json": "6a78fb0e59f622a92a4adc31b87f2e958b1474000630bfed1f97ccf111a4101d",
+    "validation.md": "029605038fff55034a32b2b74bdbfa67fda43ff204283af6a816d382065bf2cc",
+    "verify-trials.mjs": "21204b4cde8011950268725310ec113dc54069c2233f39f2ed933daa96ecadfa"
+  }
+}

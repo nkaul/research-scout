@@ -1,0 +1,33 @@
+{
+  "source": "HabitQuest UI Design skill; Microsoft Fluent Emoji Flat",
+  "upstream_commit": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+  "assets": [
+    {
+      "asset": "assets/icons/book.svg",
+      "source_from_habitquest": "frontend/public/fluent-emoji/book.svg",
+      "sha256": "84809f80ba9252021198ee4f015f1e16ac76020727625c3ee611712c017108b4",
+      "bytes": 1885,
+      "upstream_commit": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+      "upstream_path": "assets/Open book/Flat/open_book_flat.svg",
+      "license": "Microsoft MIT"
+    },
+    {
+      "asset": "assets/icons/calendar.svg",
+      "source_from_habitquest": "frontend/public/fluent-emoji/calendar.svg",
+      "sha256": "a3840f324bdf1ddcb7001d2f238f438760934d24ce368129184f1f1e7ff915c9",
+      "bytes": 2625,
+      "upstream_commit": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+      "upstream_path": "assets/Calendar/Flat/calendar_flat.svg",
+      "license": "Microsoft MIT"
+    },
+    {
+      "asset": "assets/icons/sparkles.svg",
+      "source_from_habitquest": "frontend/public/fluent-emoji/sparkles.svg",
+      "sha256": "d5802877677464187a510c3fbb9d8c272dea164bcca2bf6a2270944e6cd2324e",
+      "bytes": 1752,
+      "upstream_commit": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+      "upstream_path": "assets/Sparkles/Flat/sparkles_flat.svg",
+      "license": "Microsoft MIT"
+    }
+  ]
+}

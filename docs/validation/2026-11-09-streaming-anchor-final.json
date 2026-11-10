@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-09",
+  "scope": "Final focused generation/formatting/deep-link browser regression after the full 18-case suite; APIs mocked, no external calls.",
+  "cases": [
+    {
+      "title": "explicit generation renders real response snapshots progressively, retains citations and reopens without another request",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 2657
+        }
+      ]
+    },
+    {
+      "title": "generation is disabled without a configured key and a failed stream retains evidence for an explicit retry",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 2085
+        }
+      ]
+    },
+    {
+      "title": "generated answer formatting stays React-safe during partial text and keeps source links and turn anchors",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 2242
+        }
+      ]
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,471 @@
+{
+  "d-software": {
+    "id": "d-software",
+    "kind": "DOMAIN",
+    "name": "Software Engineering",
+    "description": "Developer software and tooling",
+    "aliases": [],
+    "domain": null,
+    "workspace": "0:samples",
+    "active": true
+  },
+  "d-health": {
+    "id": "d-health",
+    "kind": "DOMAIN",
+    "name": "Healthcare",
+    "description": "Clinical workflow and laboratory systems",
+    "aliases": [],
+    "domain": null,
+    "workspace": "0:samples",
+    "active": true
+  },
+  "d-energy": {
+    "id": "d-energy",
+    "kind": "DOMAIN",
+    "name": "Energy",
+    "description": "Grid telemetry, power and renewable assets",
+    "aliases": [],
+    "domain": null,
+    "workspace": "0:samples",
+    "active": true
+  },
+  "d-science": {
+    "id": "d-science",
+    "kind": "DOMAIN",
+    "name": "Science",
+    "description": "Scientific computation and research",
+    "aliases": [],
+    "domain": null,
+    "workspace": "0:samples",
+    "active": true
+  },
+  "p-orion": {
+    "id": "p-orion",
+    "kind": "PROJECT",
+    "name": "Orion Clinical Platform",
+    "description": "Patient scheduling, intake and clinical services",
+    "aliases": [
+      "Orion",
+      "patient intake"
+    ],
+    "domain": "d-health",
+    "workspace": "0:samples",
+    "active": true
+  },
+  "p-helios": {
+    "id": "p-helios",
+    "kind": "PROJECT",
+    "name": "Helios Grid Initiative",
+    "description": "Grid telemetry, solar forecasts and energy dashboards",
+    "aliases": [
+      "Helios",
+      "solar grid"
+    ],
+    "domain": "d-energy",
+    "workspace": "0:samples",
+    "active": true
+  },
+  "p-atlas": {
+    "id": "p-atlas",
+    "kind": "PROJECT",
+    "name": "Atlas Laboratory Suite",
+    "description": "LIMS sample tracking and laboratory instruments",
+    "aliases": [
+      "Atlas",
+      "LIMS"
+    ],
+    "domain": "d-health",
+    "workspace": "0:samples",
+    "active": true
+  },
+  "p-meridian": {
+    "id": "p-meridian",
+    "kind": "PROJECT",
+    "name": "Meridian Ocean Research",
+    "description": "Ocean observations and marine science",
+    "aliases": [
+      "Meridian",
+      "marine observations"
+    ],
+    "domain": "d-science",
+    "workspace": "0:samples",
+    "active": true
+  },
+  "p-audit": {
+    "id": "p-audit",
+    "kind": "PROJECT",
+    "name": "Compliance Audit Initiative",
+    "description": "Audit records and regulated reporting",
+    "aliases": [
+      "regulatory audit"
+    ],
+    "domain": "d-software",
+    "workspace": "0:samples",
+    "active": true
+  },
+  "p-nova": {
+    "id": "p-nova",
+    "kind": "PROJECT",
+    "name": "Nova Learning Tools",
+    "description": "Educational courses and student assessment",
+    "aliases": [
+      "Nova education"
+    ],
+    "domain": "d-software",
+    "workspace": "0:samples",
+    "active": true
+  },
+  "p-forge": {
+    "id": "p-forge",
+    "kind": "PROJECT",
+    "name": "Forge Build Platform",
+    "description": "Build pipelines and artifact release automation",
+    "aliases": [
+      "Forge builds"
+    ],
+    "domain": "d-software",
+    "workspace": "0:samples",
+    "active": true
+  },
+  "p-cedar": {
+    "id": "p-cedar",
+    "kind": "PROJECT",
+    "name": "Cedar Commerce",
+    "description": "Product catalog, orders and storefronts",
+    "aliases": [
+      "Cedar shop"
+    ],
+    "domain": "d-software",
+    "workspace": "0:samples",
+    "active": true
+  },
+  "p-maple": {
+    "id": "p-maple",
+    "kind": "PROJECT",
+    "name": "Maple Logistics",
+    "description": "Shipment routing and fleet dispatch",
+    "aliases": [
+      "Maple shipping"
+    ],
+    "domain": "d-software",
+    "workspace": "0:samples",
+    "active": true
+  },
+  "p-aurora": {
+    "id": "p-aurora",
+    "kind": "PROJECT",
+    "name": "Aurora Imaging",
+    "description": "Astronomical image processing and telescope calibration",
+    "aliases": [
+      "Aurora astronomy"
+    ],
+    "domain": "d-science",
+    "workspace": "0:samples",
+    "active": true
+  },
+  "t-api": {
+    "id": "t-api",
+    "kind": "TOPIC",
+    "name": "Web APIs",
+    "description": "HTTP services, ASGI and web frameworks",
+    "aliases": [
+      "REST",
+      "FastAPI"
+    ],
+    "domain": null,
+    "workspace": "0:samples",
+    "active": true
+  },
+  "t-http": {
+    "id": "t-http",
+    "kind": "TOPIC",
+    "name": "HTTP Clients",
+    "description": "Outbound HTTP request clients",
+    "aliases": [
+      "HTTPX"
+    ],
+    "domain": null,
+    "workspace": "0:samples",
+    "active": true
+  },
+  "t-validation": {
+    "id": "t-validation",
+    "kind": "TOPIC",
+    "name": "Data Validation",
+    "description": "Typed validation and structured data schemas",
+    "aliases": [
+      "Pydantic"
+    ],
+    "domain": null,
+    "workspace": "0:samples",
+    "active": true
+  },
+  "t-packaging": {
+    "id": "t-packaging",
+    "kind": "TOPIC",
+    "name": "Package Management",
+    "description": "Dependency resolution and Python environments",
+    "aliases": [
+      "uv"
+    ],
+    "domain": null,
+    "workspace": "0:samples",
+    "active": true
+  },
+  "t-lint": {
+    "id": "t-lint",
+    "kind": "TOPIC",
+    "name": "Code Linting",
+    "description": "Static code checks and formatters",
+    "aliases": [
+      "Ruff"
+    ],
+    "domain": null,
+    "workspace": "0:samples",
+    "active": true
+  },
+  "t-cli": {
+    "id": "t-cli",
+    "kind": "TOPIC",
+    "name": "Command Line Interfaces",
+    "description": "Terminal command parsing and CLI frameworks",
+    "aliases": [
+      "Click"
+    ],
+    "domain": null,
+    "workspace": "0:samples",
+    "active": true
+  },
+  "t-template": {
+    "id": "t-template",
+    "kind": "TOPIC",
+    "name": "Templating",
+    "description": "Text and HTML template rendering",
+    "aliases": [
+      "Jinja"
+    ],
+    "domain": null,
+    "workspace": "0:samples",
+    "active": true
+  },
+  "t-testing": {
+    "id": "t-testing",
+    "kind": "TOPIC",
+    "name": "Software Testing",
+    "description": "Test runners, assertions and fixtures",
+    "aliases": [
+      "pytest"
+    ],
+    "domain": null,
+    "workspace": "0:samples",
+    "active": true
+  },
+  "t-telemetry": {
+    "id": "t-telemetry",
+    "kind": "TOPIC",
+    "name": "Telemetry",
+    "description": "Sensor observations and time series ingestion",
+    "aliases": [
+      "metrics"
+    ],
+    "domain": null,
+    "workspace": "0:samples",
+    "active": true
+  },
+  "t-forecast": {
+    "id": "t-forecast",
+    "kind": "TOPIC",
+    "name": "Forecasting",
+    "description": "Predict future values from historical data",
+    "aliases": [
+      "prediction"
+    ],
+    "domain": null,
+    "workspace": "0:samples",
+    "active": true
+  },
+  "t-visual": {
+    "id": "t-visual",
+    "kind": "TOPIC",
+    "name": "Visualization",
+    "description": "Charts and dashboards",
+    "aliases": [
+      "dashboard"
+    ],
+    "domain": null,
+    "workspace": "0:samples",
+    "active": true
+  },
+  "t-scheduling": {
+    "id": "t-scheduling",
+    "kind": "TOPIC",
+    "name": "Scheduling",
+    "description": "Appointment booking and calendar slots",
+    "aliases": [],
+    "domain": null,
+    "workspace": "0:samples",
+    "active": true
+  },
+  "t-samples": {
+    "id": "t-samples",
+    "kind": "TOPIC",
+    "name": "Sample Tracking",
+    "description": "Laboratory specimen lifecycle and LIMS",
+    "aliases": [
+      "LIMS"
+    ],
+    "domain": null,
+    "workspace": "0:samples",
+    "active": true
+  },
+  "t-audit": {
+    "id": "t-audit",
+    "kind": "TOPIC",
+    "name": "Audit Logging",
+    "description": "Immutable audit records and compliance trails",
+    "aliases": [],
+    "domain": null,
+    "workspace": "0:samples",
+    "active": true
+  },
+  "g-python": {
+    "id": "g-python",
+    "kind": "TAG",
+    "name": "python",
+    "description": "Python ecosystem, libraries, tools or implementation",
+    "aliases": [],
+    "domain": null,
+    "workspace": "0:samples",
+    "active": true
+  },
+  "g-rust": {
+    "id": "g-rust",
+    "kind": "TAG",
+    "name": "rust",
+    "description": "Rust implementation or ecosystem",
+    "aliases": [],
+    "domain": null,
+    "workspace": "0:samples",
+    "active": true
+  },
+  "g-typescript": {
+    "id": "g-typescript",
+    "kind": "TAG",
+    "name": "typescript",
+    "description": "TypeScript implementation",
+    "aliases": [],
+    "domain": null,
+    "workspace": "0:samples",
+    "active": true
+  },
+  "g-fastapi": {
+    "id": "g-fastapi",
+    "kind": "TAG",
+    "name": "fastapi",
+    "description": "FastAPI framework",
+    "aliases": [],
+    "domain": null,
+    "workspace": "0:samples",
+    "active": true
+  },
+  "g-react": {
+    "id": "g-react",
+    "kind": "TAG",
+    "name": "react",
+    "description": "React user interface framework",
+    "aliases": [],
+    "domain": null,
+    "workspace": "0:samples",
+    "active": true
+  },
+  "g-postgresql": {
+    "id": "g-postgresql",
+    "kind": "TAG",
+    "name": "postgresql",
+    "description": "PostgreSQL database",
+    "aliases": [],
+    "domain": null,
+    "workspace": "0:samples",
+    "active": true
+  },
+  "g-aws": {
+    "id": "g-aws",
+    "kind": "TAG",
+    "name": "aws",
+    "description": "Amazon Web Services integrations",
+    "aliases": [],
+    "domain": null,
+    "workspace": "0:samples",
+    "active": true
+  },
+  "g-docker": {
+    "id": "g-docker",
+    "kind": "TAG",
+    "name": "docker",
+    "description": "Docker container packaging",
+    "aliases": [],
+    "domain": null,
+    "workspace": "0:samples",
+    "active": true
+  },
+  "g-mqtt": {
+    "id": "g-mqtt",
+    "kind": "TAG",
+    "name": "mqtt",
+    "description": "MQTT messaging protocol",
+    "aliases": [],
+    "domain": null,
+    "workspace": "0:samples",
+    "active": true
+  },
+  "g-pandas": {
+    "id": "g-pandas",
+    "kind": "TAG",
+    "name": "pandas",
+    "description": "pandas dataframe library",
+    "aliases": [],
+    "domain": null,
+    "workspace": "0:samples",
+    "active": true
+  },
+  "g-redis": {
+    "id": "g-redis",
+    "kind": "TAG",
+    "name": "redis",
+    "description": "Redis storage or cache",
+    "aliases": [],
+    "domain": null,
+    "workspace": "0:samples",
+    "active": true
+  },
+  "g-graphql": {
+    "id": "g-graphql",
+    "kind": "TAG",
+    "name": "graphql",
+    "description": "GraphQL APIs",
+    "aliases": [],
+    "domain": null,
+    "workspace": "0:samples",
+    "active": true
+  },
+  "g-kubernetes": {
+    "id": "g-kubernetes",
+    "kind": "TAG",
+    "name": "kubernetes",
+    "description": "Kubernetes orchestration",
+    "aliases": [],
+    "domain": null,
+    "workspace": "0:samples",
+    "active": true
+  },
+  "g-go": {
+    "id": "g-go",
+    "kind": "TAG",
+    "name": "go",
+    "description": "Go implementation or ecosystem",
+    "aliases": [],
+    "domain": null,
+    "workspace": "0:samples",
+    "active": true
+  }
+}

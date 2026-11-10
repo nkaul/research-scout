@@ -1,0 +1,82 @@
+{
+  "$defs": {
+    "Proposal": {
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "enum": [
+            "DOMAIN",
+            "PROJECT",
+            "TOPIC",
+            "TAG"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "description": {
+          "title": "Description",
+          "type": "string"
+        },
+        "aliases": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Aliases",
+          "type": "array"
+        },
+        "parent_domain": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Parent Domain"
+        },
+        "supporting_repo_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Supporting Repo Ids",
+          "type": "array"
+        }
+      },
+      "required": [
+        "kind",
+        "name",
+        "description",
+        "aliases",
+        "parent_domain",
+        "supporting_repo_ids"
+      ],
+      "title": "Proposal",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "proposals": {
+      "items": {
+        "$ref": "#/$defs/Proposal"
+      },
+      "title": "Proposals",
+      "type": "array"
+    },
+    "notes": {
+      "title": "Notes",
+      "type": "string"
+    }
+  },
+  "required": [
+    "proposals",
+    "notes"
+  ],
+  "title": "TaxonomyDraft",
+  "type": "object"
+}

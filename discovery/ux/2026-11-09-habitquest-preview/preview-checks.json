@@ -1,0 +1,415 @@
+{
+  "date": "2026-11-09",
+  "scope": "Authored HTML prototypes only; not production acceptance or complete accessibility conformance.",
+  "checks": [
+    {
+      "prototype": "preview-expressive",
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 1100
+      },
+      "errors": [],
+      "externalRequests": [],
+      "title": "Research Scout · The discovery desk",
+      "language": "en",
+      "h1Count": 1,
+      "horizontalOverflow": 0,
+      "unnamedButtons": 0,
+      "inputsWithoutLabels": 0,
+      "brokenImages": 0,
+      "duplicateIds": [],
+      "reducedMotion": true,
+      "animatedElementsInReducedMotion": 0,
+      "focus": {
+        "tag": "A",
+        "label": "research scout",
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      },
+      "sampledTextPairs": 73,
+      "unmeasuredTextPairs": 0,
+      "contrastIssues": [],
+      "interaction": {
+        "passed": true,
+        "earlySourceReview": true,
+        "noteFocusAndSelectionRetained": true,
+        "threeSourceCap": true,
+        "abstractFilter": true,
+        "displayPreferences": true,
+        "mobileReaderAndFocusReturn": false
+      }
+    },
+    {
+      "prototype": "preview-expressive",
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844
+      },
+      "errors": [],
+      "externalRequests": [],
+      "title": "Research Scout · The discovery desk",
+      "language": "en",
+      "h1Count": 1,
+      "horizontalOverflow": 0,
+      "unnamedButtons": 0,
+      "inputsWithoutLabels": 0,
+      "brokenImages": 0,
+      "duplicateIds": [],
+      "reducedMotion": true,
+      "animatedElementsInReducedMotion": 0,
+      "focus": {
+        "tag": "A",
+        "label": "Gallery",
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      },
+      "sampledTextPairs": 43,
+      "unmeasuredTextPairs": 0,
+      "contrastIssues": [],
+      "interaction": {
+        "passed": true,
+        "earlySourceReview": true,
+        "noteFocusAndSelectionRetained": true,
+        "threeSourceCap": true,
+        "abstractFilter": true,
+        "displayPreferences": true,
+        "mobileReaderAndFocusReturn": true
+      }
+    },
+    {
+      "prototype": "preview-expressive",
+      "viewport": {
+        "name": "narrow",
+        "width": 320,
+        "height": 900
+      },
+      "errors": [],
+      "externalRequests": [],
+      "title": "Research Scout · The discovery desk",
+      "language": "en",
+      "h1Count": 1,
+      "horizontalOverflow": 0,
+      "unnamedButtons": 0,
+      "inputsWithoutLabels": 0,
+      "brokenImages": 0,
+      "duplicateIds": [],
+      "reducedMotion": true,
+      "animatedElementsInReducedMotion": 0,
+      "focus": {
+        "tag": "A",
+        "label": "Gallery",
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      },
+      "sampledTextPairs": 43,
+      "unmeasuredTextPairs": 0,
+      "contrastIssues": [],
+      "interaction": null
+    },
+    {
+      "prototype": "preview-workbench",
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 1100
+      },
+      "errors": [],
+      "externalRequests": [],
+      "title": "Research Scout · Lavender workbench",
+      "language": "en",
+      "h1Count": 1,
+      "horizontalOverflow": 0,
+      "unnamedButtons": 0,
+      "inputsWithoutLabels": 0,
+      "brokenImages": 0,
+      "duplicateIds": [],
+      "reducedMotion": true,
+      "animatedElementsInReducedMotion": 0,
+      "focus": {
+        "tag": "A",
+        "label": "Skip to workspace",
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      },
+      "sampledTextPairs": 76,
+      "unmeasuredTextPairs": 2,
+      "contrastIssues": [],
+      "interaction": {
+        "passed": true,
+        "earlySourceReview": true,
+        "noteFocusAndSelectionRetained": true,
+        "threeSourceCap": true,
+        "sourceTabs": true,
+        "localSearchAndYearFilters": true,
+        "displayPreferences": true
+      }
+    },
+    {
+      "prototype": "preview-workbench",
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844
+      },
+      "errors": [],
+      "externalRequests": [],
+      "title": "Research Scout · Lavender workbench",
+      "language": "en",
+      "h1Count": 1,
+      "horizontalOverflow": 0,
+      "unnamedButtons": 0,
+      "inputsWithoutLabels": 0,
+      "brokenImages": 0,
+      "duplicateIds": [],
+      "reducedMotion": true,
+      "animatedElementsInReducedMotion": 0,
+      "focus": {
+        "tag": "A",
+        "label": "Skip to workspace",
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      },
+      "sampledTextPairs": 54,
+      "unmeasuredTextPairs": 2,
+      "contrastIssues": [],
+      "interaction": {
+        "passed": true,
+        "earlySourceReview": true,
+        "noteFocusAndSelectionRetained": true,
+        "threeSourceCap": true,
+        "sourceTabs": true,
+        "localSearchAndYearFilters": true,
+        "displayPreferences": true
+      }
+    },
+    {
+      "prototype": "preview-workbench",
+      "viewport": {
+        "name": "narrow",
+        "width": 320,
+        "height": 900
+      },
+      "errors": [],
+      "externalRequests": [],
+      "title": "Research Scout · Lavender workbench",
+      "language": "en",
+      "h1Count": 1,
+      "horizontalOverflow": 0,
+      "unnamedButtons": 0,
+      "inputsWithoutLabels": 0,
+      "brokenImages": 0,
+      "duplicateIds": [],
+      "reducedMotion": true,
+      "animatedElementsInReducedMotion": 0,
+      "focus": {
+        "tag": "A",
+        "label": "Skip to workspace",
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      },
+      "sampledTextPairs": 54,
+      "unmeasuredTextPairs": 2,
+      "contrastIssues": [],
+      "interaction": null
+    },
+    {
+      "prototype": "preview-hybrid",
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 1100
+      },
+      "errors": [],
+      "externalRequests": [],
+      "title": "Research Scout · Hybrid workspace",
+      "language": "en",
+      "h1Count": 1,
+      "horizontalOverflow": 0,
+      "unnamedButtons": 0,
+      "inputsWithoutLabels": 0,
+      "brokenImages": 0,
+      "duplicateIds": [],
+      "reducedMotion": true,
+      "animatedElementsInReducedMotion": 0,
+      "focus": {
+        "tag": "A",
+        "label": "Skip to workspace",
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      },
+      "sampledTextPairs": 78,
+      "unmeasuredTextPairs": 0,
+      "contrastIssues": [],
+      "interaction": {
+        "passed": true,
+        "earlySourceReview": true,
+        "noteFocusAndSelectionRetained": true,
+        "threeSourceCap": true,
+        "sourceTabs": true,
+        "localSearchAndYearFilters": true,
+        "displayPreferences": true
+      }
+    },
+    {
+      "prototype": "preview-hybrid",
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844
+      },
+      "errors": [],
+      "externalRequests": [],
+      "title": "Research Scout · Hybrid workspace",
+      "language": "en",
+      "h1Count": 1,
+      "horizontalOverflow": 0,
+      "unnamedButtons": 0,
+      "inputsWithoutLabels": 0,
+      "brokenImages": 0,
+      "duplicateIds": [],
+      "reducedMotion": true,
+      "animatedElementsInReducedMotion": 0,
+      "focus": {
+        "tag": "A",
+        "label": "Skip to workspace",
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      },
+      "sampledTextPairs": 56,
+      "unmeasuredTextPairs": 0,
+      "contrastIssues": [],
+      "interaction": {
+        "passed": true,
+        "earlySourceReview": true,
+        "noteFocusAndSelectionRetained": true,
+        "threeSourceCap": true,
+        "sourceTabs": true,
+        "localSearchAndYearFilters": true,
+        "displayPreferences": true
+      }
+    },
+    {
+      "prototype": "preview-hybrid",
+      "viewport": {
+        "name": "narrow",
+        "width": 320,
+        "height": 900
+      },
+      "errors": [],
+      "externalRequests": [],
+      "title": "Research Scout · Hybrid workspace",
+      "language": "en",
+      "h1Count": 1,
+      "horizontalOverflow": 0,
+      "unnamedButtons": 0,
+      "inputsWithoutLabels": 0,
+      "brokenImages": 0,
+      "duplicateIds": [],
+      "reducedMotion": true,
+      "animatedElementsInReducedMotion": 0,
+      "focus": {
+        "tag": "A",
+        "label": "Skip to workspace",
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      },
+      "sampledTextPairs": 56,
+      "unmeasuredTextPairs": 0,
+      "contrastIssues": [],
+      "interaction": null
+    },
+    {
+      "prototype": "index",
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 1100
+      },
+      "errors": [],
+      "externalRequests": [],
+      "title": "Research Scout · HabitQuest design preview",
+      "language": "en",
+      "h1Count": 1,
+      "horizontalOverflow": 0,
+      "unnamedButtons": 0,
+      "inputsWithoutLabels": 0,
+      "brokenImages": 0,
+      "duplicateIds": [],
+      "reducedMotion": true,
+      "animatedElementsInReducedMotion": 0,
+      "focus": {
+        "tag": "A",
+        "label": "Open the hybrid Research Scout preview",
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      },
+      "sampledTextPairs": 27,
+      "unmeasuredTextPairs": 0,
+      "contrastIssues": [],
+      "interaction": null
+    },
+    {
+      "prototype": "index",
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844
+      },
+      "errors": [],
+      "externalRequests": [],
+      "title": "Research Scout · HabitQuest design preview",
+      "language": "en",
+      "h1Count": 1,
+      "horizontalOverflow": 0,
+      "unnamedButtons": 0,
+      "inputsWithoutLabels": 0,
+      "brokenImages": 0,
+      "duplicateIds": [],
+      "reducedMotion": true,
+      "animatedElementsInReducedMotion": 0,
+      "focus": {
+        "tag": "A",
+        "label": "Open the hybrid Research Scout preview",
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      },
+      "sampledTextPairs": 27,
+      "unmeasuredTextPairs": 0,
+      "contrastIssues": [],
+      "interaction": null
+    },
+    {
+      "prototype": "index",
+      "viewport": {
+        "name": "narrow",
+        "width": 320,
+        "height": 900
+      },
+      "errors": [],
+      "externalRequests": [],
+      "title": "Research Scout · HabitQuest design preview",
+      "language": "en",
+      "h1Count": 1,
+      "horizontalOverflow": 0,
+      "unnamedButtons": 0,
+      "inputsWithoutLabels": 0,
+      "brokenImages": 0,
+      "duplicateIds": [],
+      "reducedMotion": true,
+      "animatedElementsInReducedMotion": 0,
+      "focus": {
+        "tag": "A",
+        "label": "Open the hybrid Research Scout preview",
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      },
+      "sampledTextPairs": 27,
+      "unmeasuredTextPairs": 0,
+      "contrastIssues": [],
+      "interaction": null
+    }
+  ],
+  "passed": true
+}

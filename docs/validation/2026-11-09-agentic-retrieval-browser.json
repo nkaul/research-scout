@@ -1,0 +1,398 @@
+{
+  "date": "2026-11-09",
+  "scope": "All actual-fixture and mocked browser journeys; no hosted calls",
+  "stats": {
+    "startTime": "2026-11-10T02:49:44.097Z",
+    "duration": 96581.754,
+    "expected": 32,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "cases": [
+    {
+      "title": "actual fixture chat routes separate providers, reuses saved evidence and reopens without a search",
+      "project": "chromium",
+      "expected": "passed",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 6754
+        }
+      ]
+    },
+    {
+      "title": "actual fixture DOI chat routes to DataCite without creating a discovery run",
+      "project": "chromium",
+      "expected": "passed",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 1390
+        }
+      ]
+    },
+    {
+      "title": "exploration renders early separate-provider sources, retains drafts and cancels without duplicate search",
+      "project": "chromium",
+      "expected": "passed",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 2188
+        }
+      ]
+    },
+    {
+      "title": "a public DOI works with OpenAlex blocked and saved follow-up does not introduce year filters",
+      "project": "chromium",
+      "expected": "passed",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 2439
+        }
+      ]
+    },
+    {
+      "title": "exploration remains usable on a narrow phone and keeps over-budget input editable",
+      "project": "chromium",
+      "expected": "passed",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 1430
+        }
+      ]
+    },
+    {
+      "title": "a successful details lookup does not claim verified discovery and rate limits stay visible",
+      "project": "chromium",
+      "expected": "passed",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 1992
+        }
+      ]
+    },
+    {
+      "title": "explicit generation renders real response snapshots progressively, retains citations and reopens without another request",
+      "project": "chromium",
+      "expected": "passed",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 2491
+        }
+      ]
+    },
+    {
+      "title": "generation is disabled without a configured key and a failed stream retains evidence for an explicit retry",
+      "project": "chromium",
+      "expected": "passed",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 2127
+        }
+      ]
+    },
+    {
+      "title": "generated answer formatting stays React-safe during partial text and keeps source links and turn anchors",
+      "project": "chromium",
+      "expected": "passed",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 2314
+        }
+      ]
+    },
+    {
+      "title": "chat displays abstracts immediately and reads fuller same-provider details with cached replay",
+      "project": "chromium",
+      "expected": "passed",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 2185
+        }
+      ]
+    },
+    {
+      "title": "abstract lookup failure retains the visible excerpt and does not start another discovery or generation",
+      "project": "chromium",
+      "expected": "passed",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 1439
+        }
+      ]
+    },
+    {
+      "title": "local fixture services reach a saved shortlist and deterministic export",
+      "project": "chromium",
+      "expected": "passed",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 2647
+        }
+      ]
+    },
+    {
+      "title": "live discovery shows interpreted queries, reviewed batches and refinement history without an answer-generation call",
+      "project": "chromium",
+      "expected": "passed",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 2671
+        }
+      ]
+    },
+    {
+      "title": "fixture defaults and explicit opt-out preserve direct search, and metadata actions never request AI refinement",
+      "project": "chromium",
+      "expected": "passed",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 1528
+        }
+      ]
+    },
+    {
+      "title": "AI refinement can be explicitly opted out and failures do not erase reviewed records or automatically rerun",
+      "project": "chromium",
+      "expected": "passed",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 1656
+        }
+      ]
+    },
+    {
+      "title": "a clarification request shows the unresolved scope without fabricating searches or sources",
+      "project": "chromium",
+      "expected": "passed",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 1493
+        }
+      ]
+    },
+    {
+      "title": "a wrong-reference review rejection shows the error without inventing or automatically retrieving a source",
+      "project": "chromium",
+      "expected": "passed",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 1391
+        }
+      ]
+    },
+    {
+      "title": "actual fixture services route all added discovery sources and keep Unpaywall access separate",
+      "project": "chromium",
+      "expected": "passed",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 11197
+        }
+      ]
+    },
+    {
+      "title": "six discovery choices remain explicit and at most two can be selected; access lookup is separate",
+      "project": "chromium",
+      "expected": "passed",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 1694
+        }
+      ]
+    },
+    {
+      "title": "early abstracts expand from saved records while another provider runs; only new details wait for the source run",
+      "project": "chromium",
+      "expected": "passed",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 1935
+        }
+      ]
+    },
+    {
+      "title": "Unpaywall locations stay separate, links are safe, closed access is valid and replay makes no lookup",
+      "project": "chromium",
+      "expected": "passed",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 2227
+        }
+      ]
+    },
+    {
+      "title": "missing Unpaywall contact and access failures remain visible without automatic provider fallback",
+      "project": "chromium",
+      "expected": "passed",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 1286
+        }
+      ]
+    },
+    {
+      "title": "OpenAIRE descriptions are not presented as abstracts",
+      "project": "chromium",
+      "expected": "passed",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 1559
+        }
+      ]
+    },
+    {
+      "title": "failed access lookup does not retry or switch to paper or registry search",
+      "project": "chromium",
+      "expected": "passed",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 1416
+        }
+      ]
+    },
+    {
+      "title": "first rows can be inspected and saved before completion; updates preserve identity and focus",
+      "project": "chromium",
+      "expected": "passed",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 7411
+        }
+      ]
+    },
+    {
+      "title": "reopen and exports use saved state; DOI observations remain separate and stale writes retain drafts",
+      "project": "chromium",
+      "expected": "passed",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 3536
+        }
+      ]
+    },
+    {
+      "title": "provider edits are explicit and reconnection cannot rerun research or duplicate sources",
+      "project": "chromium",
+      "expected": "passed",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 2412
+        }
+      ]
+    },
+    {
+      "title": "mobile keyboard flow, modal focus and reading layout remain usable",
+      "project": "chromium",
+      "expected": "passed",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 6723
+        }
+      ]
+    },
+    {
+      "title": "three-paper cap and eligibility updates preserve human decisions visibly",
+      "project": "chromium",
+      "expected": "passed",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 2264
+        }
+      ]
+    },
+    {
+      "title": "untitled and truncated records remain honest and DOI checks require inclusion",
+      "project": "chromium",
+      "expected": "passed",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 2322
+        }
+      ]
+    },
+    {
+      "title": "desktop split preview, notes and display preferences use existing saved data",
+      "project": "chromium",
+      "expected": "passed",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 3645
+        }
+      ]
+    },
+    {
+      "title": "Dub-inspired workspace remains readable at tablet and narrow phone widths",
+      "project": "chromium",
+      "expected": "passed",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 3419
+        }
+      ]
+    }
+  ]
+}

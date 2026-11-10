@@ -1,0 +1,83 @@
+{
+  "observed_at": "2026-11-09T23:31:08.268099+00:00",
+  "provider": "datacite",
+  "mode": "live",
+  "execution": "provider_asgi_contract_to_real_upstream",
+  "live_requested": true,
+  "operations": [
+    {
+      "operation": "metadata",
+      "http_status": 200,
+      "attempts": 1,
+      "error": null,
+      "agency": null,
+      "record": {
+        "source_ref": "datacite:10.14454/qdd3-ps68",
+        "record_id": "10.14454/qdd3-ps68",
+        "doi": "10.14454/qdd3-ps68",
+        "year": 2026,
+        "resource_type": "Text",
+        "mode": "live"
+      }
+    }
+  ],
+  "model_http_attempts": 0,
+  "configuration": {
+    "status": "ok",
+    "provider": "datacite",
+    "mode": "live",
+    "fixture": false,
+    "capabilities": {
+      "search": false,
+      "lexical": false,
+      "semantic": false,
+      "details": false,
+      "agency": false,
+      "metadata": true
+    },
+    "access_configured": true,
+    "readiness": "configured_unverified",
+    "access_method": "public_anonymous",
+    "key_recommended": false,
+    "blocked_reason": null,
+    "encoder_status": null,
+    "upstream_url": "https://api.datacite.org",
+    "last_verified_at": null,
+    "verified_capabilities": [],
+    "last_error": null,
+    "capability_status": "runtime_proof_required",
+    "semantic_execution": "unavailable",
+    "run_attempt_cap": 3
+  },
+  "readiness_after": {
+    "status": "ok",
+    "provider": "datacite",
+    "mode": "live",
+    "fixture": false,
+    "capabilities": {
+      "search": false,
+      "lexical": false,
+      "semantic": false,
+      "details": false,
+      "agency": false,
+      "metadata": true
+    },
+    "access_configured": true,
+    "readiness": "verified",
+    "access_method": "public_anonymous",
+    "key_recommended": false,
+    "blocked_reason": null,
+    "encoder_status": null,
+    "upstream_url": "https://api.datacite.org",
+    "last_verified_at": "2026-11-09T23:31:08.954727+00:00",
+    "verified_capabilities": [
+      "metadata"
+    ],
+    "last_error": null,
+    "capability_status": "partially_verified",
+    "semantic_execution": "unavailable",
+    "run_attempt_cap": 3
+  },
+  "status": "passed",
+  "research_upstream_attempts": 1
+}

@@ -1,0 +1,37 @@
+{
+  "observed_at": "2026-11-09T23:37:40.085555+00:00",
+  "provider": "semantic_scholar",
+  "mode": "live",
+  "execution": "provider_asgi_contract_to_real_upstream",
+  "live_requested": false,
+  "operations": [],
+  "model_http_attempts": 0,
+  "configuration": {
+    "status": "ok",
+    "provider": "semantic_scholar",
+    "mode": "live",
+    "fixture": false,
+    "capabilities": {
+      "search": true,
+      "lexical": true,
+      "semantic": true,
+      "details": true,
+      "agency": false,
+      "metadata": false
+    },
+    "access_configured": true,
+    "readiness": "configured_unverified",
+    "access_method": "public_anonymous",
+    "key_recommended": true,
+    "blocked_reason": null,
+    "encoder_status": "configured_local",
+    "upstream_url": "https://api.semanticscholar.org/graph/v1",
+    "last_verified_at": null,
+    "verified_capabilities": [],
+    "last_error": null,
+    "capability_status": "runtime_proof_required",
+    "semantic_execution": "local_candidate_pool",
+    "run_attempt_cap": 8
+  },
+  "status": "configuration_only_not_live_proof"
+}

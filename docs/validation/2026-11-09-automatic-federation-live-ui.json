@@ -1,0 +1,4037 @@
+{
+  "date": "2026-11-09",
+  "question": "What's the impact of how we improve the context model needs to have for better generation?",
+  "scope": "Actual default automatic Search→LangGraph/DeepAgents/application MCP→multiple eligible live discovery sources→DOI canonical papers→automatic Unpaywall. No user source selection and no answer generation.",
+  "passed": true,
+  "profile": {
+    "enabled": true,
+    "ready": true,
+    "status": "ready",
+    "blocked_reason": null,
+    "model": "gpt-6-luna",
+    "policy": "scout-agentic-retrieval-v4",
+    "max_rounds": 2,
+    "max_model_calls": 9,
+    "max_discovery_providers": 4,
+    "max_turn_cost_usd": 0.05,
+    "max_candidates_per_provider_round": 20
+  },
+  "conversation_id": "9e6d5b2e5bbf4ef480ba01e22d215b5f",
+  "url": "http://127.0.0.1:3100/?conversation=9e6d5b2e5bbf4ef480ba01e22d215b5f",
+  "turn_id": "15d5663fbe174cb8a1568ca6ce42cb5e",
+  "status": "PARTIAL",
+  "routing": "auto",
+  "providers": [
+    "openalex",
+    "arxiv",
+    "crossref"
+  ],
+  "source_plan": [
+    {
+      "provider": "openalex",
+      "role": "discovery",
+      "status": "selected",
+      "reason": "Broad scholarly discovery with both focused lexical and semantic retrieval.",
+      "health_status": "ready",
+      "mode": "live",
+      "readiness": "configured_unverified"
+    },
+    {
+      "provider": "crossref",
+      "role": "discovery",
+      "status": "selected",
+      "reason": "Adds complementary bibliographic metadata recall using explicit method and model terms.",
+      "health_status": "ready",
+      "mode": "live",
+      "readiness": "configured_unverified"
+    },
+    {
+      "provider": "datacite",
+      "role": "registry",
+      "status": "metadata_only",
+      "reason": "Registration-aware exact DOI metadata; not a topic-discovery source.",
+      "health_status": "ready",
+      "mode": "live",
+      "readiness": "configured_unverified"
+    },
+    {
+      "provider": "semantic_scholar",
+      "role": "discovery",
+      "status": "skipped",
+      "reason": "Semantic Scholar needs configured access or verified search before automatic selection.",
+      "health_status": "ready",
+      "mode": "live",
+      "readiness": "configured_unverified"
+    },
+    {
+      "provider": "arxiv",
+      "role": "discovery",
+      "status": "selected",
+      "reason": "Preprint discovery is well suited to current technical work; the short query limits AND-term overrestriction.",
+      "health_status": "ready",
+      "mode": "live",
+      "readiness": "configured_unverified"
+    },
+    {
+      "provider": "openaire",
+      "role": "discovery",
+      "status": "skipped",
+      "reason": "Not needed by this question's bounded automatic route.",
+      "health_status": "ready",
+      "mode": "live",
+      "readiness": "configured_unverified"
+    },
+    {
+      "provider": "europe_pmc",
+      "role": "discovery",
+      "status": "skipped",
+      "reason": "Not needed by this question's bounded automatic route.",
+      "health_status": "ready",
+      "mode": "live",
+      "readiness": "configured_unverified"
+    },
+    {
+      "provider": "unpaywall",
+      "role": "access",
+      "status": "enrichment",
+      "reason": "Resolve unique discovered DOIs after discovery; no full-text download.",
+      "health_status": "ready",
+      "mode": "live",
+      "readiness": "configured_unverified"
+    }
+  ],
+  "usage": {
+    "research_attempts": 17,
+    "model_http_attempts": 5,
+    "model_cost_usd": 0.004661375
+  },
+  "warnings": [],
+  "intent_frame": {
+    "object_of_change": "The context supplied to a generative model",
+    "intervention": "Improve or augment the supplied context",
+    "desired_outcome": "Better generated outputs",
+    "boundary": "Focus on context input, retrieval, or conditioning; exclude changes to the model's architecture as the primary intervention."
+  },
+  "query_history": [
+    {
+      "provider": "openalex",
+      "round": 1,
+      "lexical_query": "context augmentation generative language models",
+      "semantic_query": "Research on improving context supplied to generative language models, such as retrieval or context selection, and its effects on generated output quality.",
+      "reason": "Broad scholarly discovery with both focused lexical and semantic retrieval."
+    },
+    {
+      "provider": "arxiv",
+      "round": 1,
+      "lexical_query": "context retrieval generative language models",
+      "semantic_query": "How retrieval, context selection, or context augmentation for language models changes the quality of generated outputs.",
+      "reason": "Preprint discovery is well suited to current technical work; the short query limits AND-term overrestriction."
+    },
+    {
+      "provider": "crossref",
+      "round": 1,
+      "lexical_query": "retrieval augmented generation language models",
+      "semantic_query": "Studies of retrieval-augmented generation and context improvement for language models, focusing on effects on output quality.",
+      "reason": "Adds complementary bibliographic metadata recall using explicit method and model terms."
+    },
+    {
+      "provider": "crossref",
+      "round": 2,
+      "lexical_query": "selective context augmentation retrieval augmented generation output quality",
+      "semantic_query": "Studies that modify or select retrieved context supplied to generative language models and evaluate resulting response quality, accuracy, relevance, faithfulness, or factuality.",
+      "reason": "Only a few candidates directly connect context changes to generation outcomes; refine the Crossref query with explicit context-selection and quality anchors."
+    }
+  ],
+  "source_requests": [
+    {
+      "provider": "openalex",
+      "run_id": "4d2dfc464c2d40218f3ae36c32dcb303",
+      "round": 1,
+      "branch": "lexical",
+      "status": "succeeded",
+      "transport": "official_mcp",
+      "tool": "search_works",
+      "executed_arguments": {
+        "query": "context augmentation generative language models",
+        "mode": "keyword",
+        "limit": 10,
+        "rerank": false
+      },
+      "query_input": "context augmentation generative language models",
+      "semantic_execution": null,
+      "query_policy": null,
+      "cache_hit": false
+    },
+    {
+      "provider": "openalex",
+      "run_id": "4d2dfc464c2d40218f3ae36c32dcb303",
+      "round": 1,
+      "branch": "semantic",
+      "status": "succeeded",
+      "transport": "official_mcp",
+      "tool": "search_works",
+      "executed_arguments": {
+        "query": "Research on improving context supplied to generative language models, such as retrieval or context selection, and its effects on generated output quality.",
+        "mode": "semantic",
+        "limit": 10,
+        "rerank": false
+      },
+      "query_input": "Research on improving context supplied to generative language models, such as retrieval or context selection, and its effects on generated output quality.",
+      "semantic_execution": null,
+      "query_policy": null,
+      "cache_hit": false
+    },
+    {
+      "provider": "arxiv",
+      "run_id": "930550ef6817489bbc314dd76e28bc20",
+      "round": 1,
+      "branch": "lexical",
+      "status": "succeeded",
+      "transport": "official_atom",
+      "tool": null,
+      "executed_arguments": {
+        "search_query": "all:\"context\" AND all:\"retrieval\" AND all:\"generative\" AND all:\"language\" AND all:\"models\"",
+        "start": 0,
+        "max_results": 20,
+        "sortBy": "relevance",
+        "sortOrder": "descending"
+      },
+      "query_input": "context retrieval generative language models",
+      "semantic_execution": null,
+      "query_policy": "scout-arxiv-literal-terms-v1",
+      "cache_hit": false
+    },
+    {
+      "provider": "arxiv",
+      "run_id": "930550ef6817489bbc314dd76e28bc20",
+      "round": 1,
+      "branch": "semantic",
+      "status": "succeeded",
+      "transport": "local_encoder",
+      "tool": null,
+      "executed_arguments": {},
+      "query_input": "How retrieval, context selection, or context augmentation for language models changes the quality of generated outputs.",
+      "semantic_execution": "local_candidate_pool_rerank",
+      "query_policy": null,
+      "cache_hit": false
+    },
+    {
+      "provider": "crossref",
+      "run_id": "ba478cc224214ce4a387ee159fd15ce0",
+      "round": 1,
+      "branch": "lexical",
+      "status": "succeeded",
+      "transport": "official_rest",
+      "tool": null,
+      "executed_arguments": {
+        "query.bibliographic": "retrieval augmented generation language models",
+        "rows": 20,
+        "offset": 0,
+        "sort": "relevance",
+        "order": "desc"
+      },
+      "query_input": "retrieval augmented generation language models",
+      "semantic_execution": null,
+      "query_policy": "scout-crossref-bibliographic-v2",
+      "cache_hit": false
+    },
+    {
+      "provider": "crossref",
+      "run_id": "ba478cc224214ce4a387ee159fd15ce0",
+      "round": 1,
+      "branch": "semantic",
+      "status": "succeeded",
+      "transport": "local_encoder",
+      "tool": null,
+      "executed_arguments": {},
+      "query_input": "Studies of retrieval-augmented generation and context improvement for language models, focusing on effects on output quality.",
+      "semantic_execution": "local_candidate_pool_rerank",
+      "query_policy": null,
+      "cache_hit": false
+    },
+    {
+      "provider": "crossref",
+      "run_id": "f986c194984242c18b68844e54155e41",
+      "round": 2,
+      "branch": "lexical",
+      "status": "succeeded",
+      "transport": "official_rest",
+      "tool": null,
+      "executed_arguments": {
+        "query.bibliographic": "selective context augmentation retrieval augmented generation output quality",
+        "rows": 20,
+        "offset": 0,
+        "sort": "relevance",
+        "order": "desc"
+      },
+      "query_input": "selective context augmentation retrieval augmented generation output quality",
+      "semantic_execution": null,
+      "query_policy": "scout-crossref-bibliographic-v2",
+      "cache_hit": false
+    },
+    {
+      "provider": "crossref",
+      "run_id": "f986c194984242c18b68844e54155e41",
+      "round": 2,
+      "branch": "semantic",
+      "status": "succeeded",
+      "transport": "local_encoder",
+      "tool": null,
+      "executed_arguments": {},
+      "query_input": "Studies that modify or select retrieved context supplied to generative language models and evaluate resulting response quality, accuracy, relevance, faithfulness, or factuality.",
+      "semantic_execution": "local_candidate_pool_rerank",
+      "query_policy": null,
+      "cache_hit": false
+    }
+  ],
+  "provider_quality": {
+    "openalex": {
+      "relevant": 8,
+      "partial": 4,
+      "unknown": 0,
+      "irrelevant": 8,
+      "last_batch_count": 20,
+      "last_batch_labels": {
+        "relevant": 8,
+        "partial": 4,
+        "unknown": 0,
+        "irrelevant": 8
+      },
+      "round": 1,
+      "status": "sufficient",
+      "reason": "Coverage is strong: multiple candidates directly address retrieval, context filtering, sufficiency, or context effects on generation outcomes."
+    },
+    "arxiv": {
+      "relevant": 10,
+      "partial": 5,
+      "unknown": 1,
+      "irrelevant": 4,
+      "last_batch_count": 20,
+      "last_batch_labels": {
+        "relevant": 10,
+        "partial": 5,
+        "unknown": 1,
+        "irrelevant": 4
+      },
+      "round": 1,
+      "status": "sufficient",
+      "reason": "Coverage is strong but mixed with retrieval-only and unrelated multimodal work; query anchors should emphasize RAG context and generated-output quality."
+    },
+    "crossref": {
+      "relevant": 8,
+      "partial": 27,
+      "unknown": 3,
+      "irrelevant": 0,
+      "last_batch_count": 20,
+      "last_batch_labels": {
+        "relevant": 7,
+        "partial": 12,
+        "unknown": 1,
+        "irrelevant": 0
+      },
+      "round": 2,
+      "status": "sufficient",
+      "reason": "Several candidates directly match, but Crossref results include generic RAG records and adjacent retrieval work; use tighter context-intervention and outcome anchors."
+    }
+  },
+  "raw_primary_observations": 26,
+  "canonical_papers": 26,
+  "deduplicated_observations": 0,
+  "access_outcomes": {
+    "succeeded": 6,
+    "not_found": 6,
+    "not_applicable": 7,
+    "deferred_budget": 7
+  },
+  "activity": [
+    {
+      "provider": "openalex",
+      "operation": "hybrid_search",
+      "status": "SUCCEEDED",
+      "attempts": 2,
+      "source_count": 8
+    },
+    {
+      "provider": "arxiv",
+      "operation": "hybrid_search",
+      "status": "SUCCEEDED",
+      "attempts": 1,
+      "source_count": 10
+    },
+    {
+      "provider": "crossref",
+      "operation": "hybrid_search",
+      "status": "SUCCEEDED",
+      "attempts": 1,
+      "source_count": 8
+    },
+    {
+      "provider": "crossref",
+      "operation": "hybrid_search",
+      "status": "SUCCEEDED",
+      "attempts": 1,
+      "source_count": 8
+    },
+    {
+      "provider": "unpaywall",
+      "operation": "access",
+      "status": "completed",
+      "attempts": 1,
+      "source_count": 0,
+      "doi": "10.1162/tacl_a_00605",
+      "access_location_count": 4
+    },
+    {
+      "provider": "unpaywall",
+      "operation": "access",
+      "status": "failed",
+      "attempts": 1,
+      "source_count": 0,
+      "error_code": "NOT_FOUND",
+      "doi": "10.48550/arxiv.2501.16214"
+    },
+    {
+      "provider": "unpaywall",
+      "operation": "access",
+      "status": "failed",
+      "attempts": 1,
+      "source_count": 0,
+      "error_code": "NOT_FOUND",
+      "doi": "10.48550/arxiv.2410.05983"
+    },
+    {
+      "provider": "unpaywall",
+      "operation": "access",
+      "status": "failed",
+      "attempts": 1,
+      "source_count": 0,
+      "error_code": "NOT_FOUND",
+      "doi": "10.48550/arxiv.2311.08377"
+    },
+    {
+      "provider": "unpaywall",
+      "operation": "access",
+      "status": "failed",
+      "attempts": 1,
+      "source_count": 0,
+      "error_code": "NOT_FOUND",
+      "doi": "10.48550/arxiv.2411.06037"
+    },
+    {
+      "provider": "unpaywall",
+      "operation": "access",
+      "status": "failed",
+      "attempts": 1,
+      "source_count": 0,
+      "error_code": "NOT_FOUND",
+      "doi": "10.48550/arxiv.2310.03025"
+    },
+    {
+      "provider": "unpaywall",
+      "operation": "access",
+      "status": "completed",
+      "attempts": 1,
+      "source_count": 0,
+      "doi": "10.18653/v1/p17-2036",
+      "access_location_count": 1
+    },
+    {
+      "provider": "unpaywall",
+      "operation": "access",
+      "status": "completed",
+      "attempts": 1,
+      "source_count": 0,
+      "doi": "10.18653/v1/2024.acl-long.337",
+      "access_location_count": 3
+    },
+    {
+      "provider": "unpaywall",
+      "operation": "access",
+      "status": "completed",
+      "attempts": 1,
+      "source_count": 0,
+      "doi": "10.14569/ijacsa.2025.01602134",
+      "access_location_count": 4
+    },
+    {
+      "provider": "unpaywall",
+      "operation": "access",
+      "status": "completed",
+      "attempts": 1,
+      "source_count": 0,
+      "doi": "10.18653/v1/2025.emnlp-main.1656",
+      "access_location_count": 3
+    },
+    {
+      "provider": "unpaywall",
+      "operation": "access",
+      "status": "failed",
+      "attempts": 1,
+      "source_count": 0,
+      "error_code": "NOT_FOUND",
+      "doi": "10.1145/3805712.3809722"
+    },
+    {
+      "provider": "unpaywall",
+      "operation": "access",
+      "status": "completed",
+      "attempts": 1,
+      "source_count": 0,
+      "doi": "10.21203/rs.3.rs-4652959/v1",
+      "access_location_count": 1
+    },
+    {
+      "provider": "openai",
+      "operation": "search_refinement",
+      "status": "completed",
+      "attempts": 5,
+      "source_count": 0
+    }
+  ],
+  "papers": [
+    {
+      "paper_id": "doi:10.1162/tacl_a_00605",
+      "doi": "10.1162/tacl_a_00605",
+      "title": "In-Context Retrieval-Augmented Language Models",
+      "provider": "openalex",
+      "providers": [
+        "openalex"
+      ],
+      "observations": [
+        {
+          "provider": "openalex",
+          "source_ref": "openalex:W4388778348",
+          "version": "858fd0c8ffcca541bbed",
+          "run_id": "4d2dfc464c2d40218f3ae36c32dcb303"
+        }
+      ],
+      "access": {
+        "status": "succeeded",
+        "observation": {
+          "provider": "unpaywall",
+          "doi": "10.1162/tacl_a_00605",
+          "is_oa": true,
+          "oa_status": "gold",
+          "best_oa_location": {
+            "url": "https://direct.mit.edu/tacl/article-pdf/doi/10.1162/tacl_a_00605/2178834/tacl_a_00605.pdf",
+            "url_for_pdf": "https://direct.mit.edu/tacl/article-pdf/doi/10.1162/tacl_a_00605/2178834/tacl_a_00605.pdf",
+            "url_for_landing_page": "https://doi.org/10.1162/tacl_a_00605",
+            "license": "cc-by",
+            "version": "publishedVersion",
+            "host_type": "publisher",
+            "evidence": "deprecated",
+            "is_best": true
+          },
+          "oa_locations": [
+            {
+              "url": "https://direct.mit.edu/tacl/article-pdf/doi/10.1162/tacl_a_00605/2178834/tacl_a_00605.pdf",
+              "url_for_pdf": "https://direct.mit.edu/tacl/article-pdf/doi/10.1162/tacl_a_00605/2178834/tacl_a_00605.pdf",
+              "url_for_landing_page": "https://doi.org/10.1162/tacl_a_00605",
+              "license": "cc-by",
+              "version": "publishedVersion",
+              "host_type": "publisher",
+              "evidence": "deprecated",
+              "is_best": true
+            },
+            {
+              "url": "https://arxiv.org/pdf/2302.00083",
+              "url_for_pdf": "https://arxiv.org/pdf/2302.00083",
+              "url_for_landing_page": "http://arxiv.org/abs/2302.00083",
+              "license": "public-domain",
+              "version": "submittedVersion",
+              "host_type": "repository",
+              "evidence": "deprecated",
+              "is_best": false
+            },
+            {
+              "url": "https://doaj.org/article/bdbe429d5b1441bba5613bb9742f8b3c",
+              "url_for_pdf": null,
+              "url_for_landing_page": "https://doaj.org/article/bdbe429d5b1441bba5613bb9742f8b3c",
+              "license": "cc-by-sa",
+              "version": "submittedVersion",
+              "host_type": "repository",
+              "evidence": "deprecated",
+              "is_best": false
+            },
+            {
+              "url": "https://doi.org/10.48550/arxiv.2302.00083",
+              "url_for_pdf": null,
+              "url_for_landing_page": "https://doi.org/10.48550/arxiv.2302.00083",
+              "license": "public-domain",
+              "version": null,
+              "host_type": "repository",
+              "evidence": "deprecated",
+              "is_best": false
+            }
+          ],
+          "observed_at": "2026-11-10T04:05:10.240165+00:00",
+          "version": "c501a61756aae92ab188",
+          "mode": "live",
+          "warnings": [],
+          "truncated_locations": 0,
+          "locations_omitted": 0
+        }
+      }
+    },
+    {
+      "paper_id": "doi:10.48550/arxiv.2501.16214",
+      "doi": "10.48550/arxiv.2501.16214",
+      "title": "Provence: efficient and robust context pruning for retrieval-augmented generation",
+      "provider": "openalex",
+      "providers": [
+        "openalex"
+      ],
+      "observations": [
+        {
+          "provider": "openalex",
+          "source_ref": "openalex:W4406890592",
+          "version": "c11283fe5595b78f5455",
+          "run_id": "4d2dfc464c2d40218f3ae36c32dcb303"
+        }
+      ],
+      "access": {
+        "status": "not_found",
+        "reason": "Unpaywall has no access observation for this DOI."
+      }
+    },
+    {
+      "paper_id": "doi:10.48550/arxiv.2410.05983",
+      "doi": "10.48550/arxiv.2410.05983",
+      "title": "Long-Context LLMs Meet RAG: Overcoming Challenges for Long Inputs in RAG",
+      "provider": "openalex",
+      "providers": [
+        "openalex"
+      ],
+      "observations": [
+        {
+          "provider": "openalex",
+          "source_ref": "openalex:W4403344273",
+          "version": "3feb73676267c7458df8",
+          "run_id": "4d2dfc464c2d40218f3ae36c32dcb303"
+        }
+      ],
+      "access": {
+        "status": "not_found",
+        "reason": "Unpaywall has no access observation for this DOI."
+      }
+    },
+    {
+      "paper_id": "doi:10.48550/arxiv.2311.08377",
+      "doi": "10.48550/arxiv.2311.08377",
+      "title": "Learning to Filter Context for Retrieval-Augmented Generation",
+      "provider": "openalex",
+      "providers": [
+        "openalex"
+      ],
+      "observations": [
+        {
+          "provider": "openalex",
+          "source_ref": "openalex:W4388717437",
+          "version": "0cd25467f4ba5914496b",
+          "run_id": "4d2dfc464c2d40218f3ae36c32dcb303"
+        }
+      ],
+      "access": {
+        "status": "not_found",
+        "reason": "Unpaywall has no access observation for this DOI."
+      }
+    },
+    {
+      "paper_id": "doi:10.48550/arxiv.2411.06037",
+      "doi": "10.48550/arxiv.2411.06037",
+      "title": "Sufficient Context: A New Lens on Retrieval Augmented Generation Systems",
+      "provider": "openalex",
+      "providers": [
+        "openalex"
+      ],
+      "observations": [
+        {
+          "provider": "openalex",
+          "source_ref": "openalex:W4404390869",
+          "version": "b8138daeb2448e29b91d",
+          "run_id": "4d2dfc464c2d40218f3ae36c32dcb303"
+        }
+      ],
+      "access": {
+        "status": "not_found",
+        "reason": "Unpaywall has no access observation for this DOI."
+      }
+    },
+    {
+      "paper_id": "doi:10.48550/arxiv.2310.03025",
+      "doi": "10.48550/arxiv.2310.03025",
+      "title": "Retrieval meets Long Context Large Language Models",
+      "provider": "openalex",
+      "providers": [
+        "openalex"
+      ],
+      "observations": [
+        {
+          "provider": "openalex",
+          "source_ref": "openalex:W4387390366",
+          "version": "b3130a06c4b3c89def9d",
+          "run_id": "4d2dfc464c2d40218f3ae36c32dcb303"
+        }
+      ],
+      "access": {
+        "status": "not_found",
+        "reason": "Unpaywall has no access observation for this DOI."
+      }
+    },
+    {
+      "paper_id": "doi:10.18653/v1/p17-2036",
+      "doi": "10.18653/v1/p17-2036",
+      "title": "How to Make Context More Useful? An Empirical Study on Context-Aware Neural Conversational Models",
+      "provider": "openalex",
+      "providers": [
+        "openalex"
+      ],
+      "observations": [
+        {
+          "provider": "openalex",
+          "source_ref": "openalex:W2741363662",
+          "version": "60e0cdd04026cc779f1c",
+          "run_id": "4d2dfc464c2d40218f3ae36c32dcb303"
+        }
+      ],
+      "access": {
+        "status": "succeeded",
+        "observation": {
+          "provider": "unpaywall",
+          "doi": "10.18653/v1/p17-2036",
+          "is_oa": true,
+          "oa_status": "hybrid",
+          "best_oa_location": {
+            "url": "https://www.aclweb.org/anthology/P17-2036.pdf",
+            "url_for_pdf": "https://www.aclweb.org/anthology/P17-2036.pdf",
+            "url_for_landing_page": "https://doi.org/10.18653/v1/p17-2036",
+            "license": "cc-by",
+            "version": "publishedVersion",
+            "host_type": "publisher",
+            "evidence": "deprecated",
+            "is_best": true
+          },
+          "oa_locations": [
+            {
+              "url": "https://www.aclweb.org/anthology/P17-2036.pdf",
+              "url_for_pdf": "https://www.aclweb.org/anthology/P17-2036.pdf",
+              "url_for_landing_page": "https://doi.org/10.18653/v1/p17-2036",
+              "license": "cc-by",
+              "version": "publishedVersion",
+              "host_type": "publisher",
+              "evidence": "deprecated",
+              "is_best": true
+            }
+          ],
+          "observed_at": "2026-11-10T04:05:21.236397+00:00",
+          "version": "8c94e3fe90cde33e5cab",
+          "mode": "live",
+          "warnings": [],
+          "truncated_locations": 0,
+          "locations_omitted": 0
+        }
+      }
+    },
+    {
+      "paper_id": "doi:10.18653/v1/2024.acl-long.337",
+      "doi": "10.18653/v1/2024.acl-long.337",
+      "title": "Blinded by Generated Contexts: How Language Models Merge Generated and Retrieved Contexts When Knowledge Conflicts?",
+      "provider": "openalex",
+      "providers": [
+        "openalex"
+      ],
+      "observations": [
+        {
+          "provider": "openalex",
+          "source_ref": "openalex:W4402671836",
+          "version": "43ff549387b84c7c2439",
+          "run_id": "4d2dfc464c2d40218f3ae36c32dcb303"
+        }
+      ],
+      "access": {
+        "status": "succeeded",
+        "observation": {
+          "provider": "unpaywall",
+          "doi": "10.18653/v1/2024.acl-long.337",
+          "is_oa": true,
+          "oa_status": "hybrid",
+          "best_oa_location": {
+            "url": "https://aclanthology.org/2024.acl-long.337.pdf",
+            "url_for_pdf": "https://aclanthology.org/2024.acl-long.337.pdf",
+            "url_for_landing_page": "https://doi.org/10.18653/v1/2024.acl-long.337",
+            "license": "cc-by",
+            "version": "publishedVersion",
+            "host_type": "publisher",
+            "evidence": "deprecated",
+            "is_best": true
+          },
+          "oa_locations": [
+            {
+              "url": "https://aclanthology.org/2024.acl-long.337.pdf",
+              "url_for_pdf": "https://aclanthology.org/2024.acl-long.337.pdf",
+              "url_for_landing_page": "https://doi.org/10.18653/v1/2024.acl-long.337",
+              "license": "cc-by",
+              "version": "publishedVersion",
+              "host_type": "publisher",
+              "evidence": "deprecated",
+              "is_best": true
+            },
+            {
+              "url": "https://arxiv.org/pdf/2401.11911",
+              "url_for_pdf": "https://arxiv.org/pdf/2401.11911",
+              "url_for_landing_page": "http://arxiv.org/abs/2401.11911",
+              "license": "public-domain",
+              "version": "submittedVersion",
+              "host_type": "repository",
+              "evidence": "deprecated",
+              "is_best": false
+            },
+            {
+              "url": "https://doi.org/10.48550/arxiv.2401.11911",
+              "url_for_pdf": null,
+              "url_for_landing_page": "https://doi.org/10.48550/arxiv.2401.11911",
+              "license": "public-domain",
+              "version": null,
+              "host_type": "repository",
+              "evidence": "deprecated",
+              "is_best": false
+            }
+          ],
+          "observed_at": "2026-11-10T04:05:22.739174+00:00",
+          "version": "602d88408931069fef81",
+          "mode": "live",
+          "warnings": [],
+          "truncated_locations": 0,
+          "locations_omitted": 0
+        }
+      }
+    },
+    {
+      "paper_id": "doi:10.14569/ijacsa.2025.01602134",
+      "doi": "10.14569/ijacsa.2025.01602134",
+      "title": "Investigating Retrieval-Augmented Generation in Quranic Studies: A Study of 13 Open-Source Large Language Models",
+      "provider": "arxiv",
+      "providers": [
+        "arxiv"
+      ],
+      "observations": [
+        {
+          "provider": "arxiv",
+          "source_ref": "arxiv:2503.16581v1",
+          "version": "cad1c2c60f407e1b8da5",
+          "run_id": "930550ef6817489bbc314dd76e28bc20"
+        }
+      ],
+      "access": {
+        "status": "succeeded",
+        "observation": {
+          "provider": "unpaywall",
+          "doi": "10.14569/ijacsa.2025.01602134",
+          "is_oa": true,
+          "oa_status": "gold",
+          "best_oa_location": {
+            "url": "https://thesai.org/Downloads/Volume16No2/Paper_134-Investigating_Retrieval_Augmented_Generation_in_Quranic_Studies.pdf",
+            "url_for_pdf": "https://thesai.org/Downloads/Volume16No2/Paper_134-Investigating_Retrieval_Augmented_Generation_in_Quranic_Studies.pdf",
+            "url_for_landing_page": "https://doi.org/10.14569/ijacsa.2025.01602134",
+            "license": "cc-by",
+            "version": "publishedVersion",
+            "host_type": "publisher",
+            "evidence": "deprecated",
+            "is_best": true
+          },
+          "oa_locations": [
+            {
+              "url": "https://thesai.org/Downloads/Volume16No2/Paper_134-Investigating_Retrieval_Augmented_Generation_in_Quranic_Studies.pdf",
+              "url_for_pdf": "https://thesai.org/Downloads/Volume16No2/Paper_134-Investigating_Retrieval_Augmented_Generation_in_Quranic_Studies.pdf",
+              "url_for_landing_page": "https://doi.org/10.14569/ijacsa.2025.01602134",
+              "license": "cc-by",
+              "version": "publishedVersion",
+              "host_type": "publisher",
+              "evidence": "deprecated",
+              "is_best": true
+            },
+            {
+              "url": "https://arxiv.org/pdf/2503.16581",
+              "url_for_pdf": "https://arxiv.org/pdf/2503.16581",
+              "url_for_landing_page": "http://arxiv.org/abs/2503.16581",
+              "license": "cc-by",
+              "version": "submittedVersion",
+              "host_type": "repository",
+              "evidence": "deprecated",
+              "is_best": false
+            },
+            {
+              "url": "https://thesai.org/Publications/ViewPaper?Volume=16&Issue=2&Code=IJACSA&SerialNo=134",
+              "url_for_pdf": null,
+              "url_for_landing_page": "https://thesai.org/Publications/ViewPaper?Volume=16&Issue=2&Code=IJACSA&SerialNo=134",
+              "license": "cc-by",
+              "version": "submittedVersion",
+              "host_type": "repository",
+              "evidence": "deprecated",
+              "is_best": false
+            },
+            {
+              "url": "https://doi.org/10.48550/arxiv.2503.16581",
+              "url_for_pdf": null,
+              "url_for_landing_page": "https://doi.org/10.48550/arxiv.2503.16581",
+              "license": "cc-by",
+              "version": null,
+              "host_type": "repository",
+              "evidence": "deprecated",
+              "is_best": false
+            }
+          ],
+          "observed_at": "2026-11-10T04:05:24.496398+00:00",
+          "version": "91edeba24692c6895055",
+          "mode": "live",
+          "warnings": [],
+          "truncated_locations": 0,
+          "locations_omitted": 0
+        }
+      }
+    },
+    {
+      "paper_id": "source:arxiv:2411.11895v1",
+      "doi": null,
+      "title": "Deploying Large Language Models With Retrieval Augmented Generation",
+      "provider": "arxiv",
+      "providers": [
+        "arxiv"
+      ],
+      "observations": [
+        {
+          "provider": "arxiv",
+          "source_ref": "arxiv:2411.11895v1",
+          "version": "80e7141ee220f6ca8930",
+          "run_id": "930550ef6817489bbc314dd76e28bc20"
+        }
+      ],
+      "access": {
+        "status": "not_applicable",
+        "reason": "No supported DOI was supplied."
+      }
+    },
+    {
+      "paper_id": "doi:10.18653/v1/2025.emnlp-main.1656",
+      "doi": "10.18653/v1/2025.emnlp-main.1656",
+      "title": "Stronger Baselines for Retrieval-Augmented Generation with Long-Context Language Models",
+      "provider": "arxiv",
+      "providers": [
+        "arxiv"
+      ],
+      "observations": [
+        {
+          "provider": "arxiv",
+          "source_ref": "arxiv:2506.03989v2",
+          "version": "57bd337046f3c442fcb9",
+          "run_id": "930550ef6817489bbc314dd76e28bc20"
+        }
+      ],
+      "access": {
+        "status": "succeeded",
+        "observation": {
+          "provider": "unpaywall",
+          "doi": "10.18653/v1/2025.emnlp-main.1656",
+          "is_oa": true,
+          "oa_status": "hybrid",
+          "best_oa_location": {
+            "url": "https://aclanthology.org/2025.emnlp-main.1656.pdf",
+            "url_for_pdf": "https://aclanthology.org/2025.emnlp-main.1656.pdf",
+            "url_for_landing_page": "https://doi.org/10.18653/v1/2025.emnlp-main.1656",
+            "license": "cc-by",
+            "version": "publishedVersion",
+            "host_type": "publisher",
+            "evidence": "deprecated",
+            "is_best": true
+          },
+          "oa_locations": [
+            {
+              "url": "https://aclanthology.org/2025.emnlp-main.1656.pdf",
+              "url_for_pdf": "https://aclanthology.org/2025.emnlp-main.1656.pdf",
+              "url_for_landing_page": "https://doi.org/10.18653/v1/2025.emnlp-main.1656",
+              "license": "cc-by",
+              "version": "publishedVersion",
+              "host_type": "publisher",
+              "evidence": "deprecated",
+              "is_best": true
+            },
+            {
+              "url": "https://arxiv.org/pdf/2506.03989",
+              "url_for_pdf": "https://arxiv.org/pdf/2506.03989",
+              "url_for_landing_page": "http://arxiv.org/abs/2506.03989",
+              "license": "cc-by",
+              "version": "submittedVersion",
+              "host_type": "repository",
+              "evidence": "deprecated",
+              "is_best": false
+            },
+            {
+              "url": "https://doi.org/10.48550/arxiv.2506.03989",
+              "url_for_pdf": null,
+              "url_for_landing_page": "https://doi.org/10.48550/arxiv.2506.03989",
+              "license": "cc-by",
+              "version": null,
+              "host_type": "repository",
+              "evidence": "deprecated",
+              "is_best": false
+            }
+          ],
+          "observed_at": "2026-11-10T04:05:26.092069+00:00",
+          "version": "54e3c3067235a7f7a237",
+          "mode": "live",
+          "warnings": [],
+          "truncated_locations": 0,
+          "locations_omitted": 0
+        }
+      }
+    },
+    {
+      "paper_id": "source:arxiv:2302.00083v3",
+      "doi": null,
+      "title": "In-Context Retrieval-Augmented Language Models",
+      "provider": "arxiv",
+      "providers": [
+        "arxiv"
+      ],
+      "observations": [
+        {
+          "provider": "arxiv",
+          "source_ref": "arxiv:2302.00083v3",
+          "version": "76c7be2edd9dcb0328c2",
+          "run_id": "930550ef6817489bbc314dd76e28bc20"
+        }
+      ],
+      "access": {
+        "status": "not_applicable",
+        "reason": "No supported DOI was supplied."
+      }
+    },
+    {
+      "paper_id": "source:arxiv:2501.08248v3",
+      "doi": null,
+      "title": "Eliciting In-context Retrieval and Reasoning for Long-context Large Language Models",
+      "provider": "arxiv",
+      "providers": [
+        "arxiv"
+      ],
+      "observations": [
+        {
+          "provider": "arxiv",
+          "source_ref": "arxiv:2501.08248v3",
+          "version": "19166f299dc94bf7fff0",
+          "run_id": "930550ef6817489bbc314dd76e28bc20"
+        }
+      ],
+      "access": {
+        "status": "not_applicable",
+        "reason": "No supported DOI was supplied."
+      }
+    },
+    {
+      "paper_id": "source:arxiv:2504.19754v1",
+      "doi": null,
+      "title": "Reconstructing Context: Evaluating Advanced Chunking Strategies for Retrieval-Augmented Generation",
+      "provider": "arxiv",
+      "providers": [
+        "arxiv"
+      ],
+      "observations": [
+        {
+          "provider": "arxiv",
+          "source_ref": "arxiv:2504.19754v1",
+          "version": "12b9ef3904dfa5c441d1",
+          "run_id": "930550ef6817489bbc314dd76e28bc20"
+        }
+      ],
+      "access": {
+        "status": "not_applicable",
+        "reason": "No supported DOI was supplied."
+      }
+    },
+    {
+      "paper_id": "source:arxiv:2510.22344v1",
+      "doi": null,
+      "title": "FAIR-RAG: Faithful Adaptive Iterative Refinement for Retrieval-Augmented Generation",
+      "provider": "arxiv",
+      "providers": [
+        "arxiv"
+      ],
+      "observations": [
+        {
+          "provider": "arxiv",
+          "source_ref": "arxiv:2510.22344v1",
+          "version": "1ebcd2709730bb6ae2eb",
+          "run_id": "930550ef6817489bbc314dd76e28bc20"
+        }
+      ],
+      "access": {
+        "status": "not_applicable",
+        "reason": "No supported DOI was supplied."
+      }
+    },
+    {
+      "paper_id": "doi:10.1145/3805712.3809722",
+      "doi": "10.1145/3805712.3809722",
+      "title": "When to Retrieve During Reasoning: Adaptive Retrieval for Large Reasoning Models",
+      "provider": "arxiv",
+      "providers": [
+        "arxiv"
+      ],
+      "observations": [
+        {
+          "provider": "arxiv",
+          "source_ref": "arxiv:2604.26649v1",
+          "version": "7662feaef68904ab7fb7",
+          "run_id": "930550ef6817489bbc314dd76e28bc20"
+        }
+      ],
+      "access": {
+        "status": "not_found",
+        "reason": "Unpaywall has no access observation for this DOI."
+      }
+    },
+    {
+      "paper_id": "source:arxiv:2310.03025v2",
+      "doi": null,
+      "title": "Retrieval meets Long Context Large Language Models",
+      "provider": "arxiv",
+      "providers": [
+        "arxiv"
+      ],
+      "observations": [
+        {
+          "provider": "arxiv",
+          "source_ref": "arxiv:2310.03025v2",
+          "version": "ee89b5f559ef7cd37eb6",
+          "run_id": "930550ef6817489bbc314dd76e28bc20"
+        }
+      ],
+      "access": {
+        "status": "not_applicable",
+        "reason": "No supported DOI was supplied."
+      }
+    },
+    {
+      "paper_id": "source:arxiv:2503.17876v1",
+      "doi": null,
+      "title": "Satisfactory Medical Consultation based on Terminology-Enhanced Information Retrieval and Emotional In-Context Learning",
+      "provider": "arxiv",
+      "providers": [
+        "arxiv"
+      ],
+      "observations": [
+        {
+          "provider": "arxiv",
+          "source_ref": "arxiv:2503.17876v1",
+          "version": "cef05989cee0720fb587",
+          "run_id": "930550ef6817489bbc314dd76e28bc20"
+        }
+      ],
+      "access": {
+        "status": "not_applicable",
+        "reason": "No supported DOI was supplied."
+      }
+    },
+    {
+      "paper_id": "doi:10.21203/rs.3.rs-4652959/v1",
+      "doi": "10.21203/rs.3.rs-4652959/v1",
+      "title": "Retrieval-Augmented Generation in Large Language Models through Selective Augmentation",
+      "provider": "crossref",
+      "providers": [
+        "crossref"
+      ],
+      "observations": [
+        {
+          "provider": "crossref",
+          "source_ref": "crossref:10.21203/rs.3.rs-4652959/v1",
+          "version": "48f32a45a1b7f9781917",
+          "run_id": "ba478cc224214ce4a387ee159fd15ce0"
+        }
+      ],
+      "access": {
+        "status": "succeeded",
+        "observation": {
+          "provider": "unpaywall",
+          "doi": "10.21203/rs.3.rs-4652959/v1",
+          "is_oa": true,
+          "oa_status": "green",
+          "best_oa_location": {
+            "url": "https://www.researchsquare.com/article/rs-4652959/latest.pdf",
+            "url_for_pdf": "https://www.researchsquare.com/article/rs-4652959/latest.pdf",
+            "url_for_landing_page": "https://doi.org/10.21203/rs.3.rs-4652959/v1",
+            "license": "cc-by",
+            "version": "submittedVersion",
+            "host_type": "repository",
+            "evidence": "deprecated",
+            "is_best": true
+          },
+          "oa_locations": [
+            {
+              "url": "https://www.researchsquare.com/article/rs-4652959/latest.pdf",
+              "url_for_pdf": "https://www.researchsquare.com/article/rs-4652959/latest.pdf",
+              "url_for_landing_page": "https://doi.org/10.21203/rs.3.rs-4652959/v1",
+              "license": "cc-by",
+              "version": "submittedVersion",
+              "host_type": "repository",
+              "evidence": "deprecated",
+              "is_best": true
+            }
+          ],
+          "observed_at": "2026-11-10T04:05:29.614796+00:00",
+          "version": "c51c785cfaf7f8a96333",
+          "mode": "live",
+          "warnings": [],
+          "truncated_locations": 0,
+          "locations_omitted": 0
+        }
+      }
+    },
+    {
+      "paper_id": "doi:10.36227/techrxiv.177219989.96070478/v1",
+      "doi": "10.36227/techrxiv.177219989.96070478/v1",
+      "title": "A Theoretical Analysis of Self-Contained Retrieval-Augmented Generation with Small Language Models",
+      "provider": "crossref",
+      "providers": [
+        "crossref"
+      ],
+      "observations": [
+        {
+          "provider": "crossref",
+          "source_ref": "crossref:10.36227/techrxiv.177219989.96070478/v1",
+          "version": "e84dd8b36ad3d2ad597e",
+          "run_id": "ba478cc224214ce4a387ee159fd15ce0"
+        }
+      ],
+      "access": {
+        "status": "deferred_budget",
+        "reason": "Automatic access lookup is limited to 12 unique DOIs and the turn's remaining 24 research requests."
+      }
+    },
+    {
+      "paper_id": "doi:10.2139/ssrn.6101486",
+      "doi": "10.2139/ssrn.6101486",
+      "title": "Context Denoising and Evidence Refinement for Retrieval Augmented Generation Models&amp;nbsp;",
+      "provider": "crossref",
+      "providers": [
+        "crossref"
+      ],
+      "observations": [
+        {
+          "provider": "crossref",
+          "source_ref": "crossref:10.2139/ssrn.6101486",
+          "version": "15fcb953e08b877cd188",
+          "run_id": "f986c194984242c18b68844e54155e41"
+        }
+      ],
+      "access": {
+        "status": "deferred_budget",
+        "reason": "Automatic access lookup is limited to 12 unique DOIs and the turn's remaining 24 research requests."
+      }
+    },
+    {
+      "paper_id": "doi:10.2139/ssrn.6101386",
+      "doi": "10.2139/ssrn.6101386",
+      "title": "Adaptive Context Reconstruction for Enhanced Retrieval Augmented Generation&amp;nbsp;",
+      "provider": "crossref",
+      "providers": [
+        "crossref"
+      ],
+      "observations": [
+        {
+          "provider": "crossref",
+          "source_ref": "crossref:10.2139/ssrn.6101386",
+          "version": "e6c55ae08a8155ab54bc",
+          "run_id": "f986c194984242c18b68844e54155e41"
+        }
+      ],
+      "access": {
+        "status": "deferred_budget",
+        "reason": "Automatic access lookup is limited to 12 unique DOIs and the turn's remaining 24 research requests."
+      }
+    },
+    {
+      "paper_id": "doi:10.2139/ssrn.6910258",
+      "doi": "10.2139/ssrn.6910258",
+      "title": "RETRIEVAL AUGMENTED GENERATION FOR PEDIATRIC EHR DATA INTEGRATION: EVALUATING RETRIEVAL FIDELITY AND OUTPUT ACCURACY ON SYNTHETIC CLINICAL RECORDS",
+      "provider": "crossref",
+      "providers": [
+        "crossref"
+      ],
+      "observations": [
+        {
+          "provider": "crossref",
+          "source_ref": "crossref:10.2139/ssrn.6910258",
+          "version": "1643d95125a679e02dfd",
+          "run_id": "f986c194984242c18b68844e54155e41"
+        }
+      ],
+      "access": {
+        "status": "deferred_budget",
+        "reason": "Automatic access lookup is limited to 12 unique DOIs and the turn's remaining 24 research requests."
+      }
+    },
+    {
+      "paper_id": "doi:10.32388/7hxkqe.3",
+      "doi": "10.32388/7hxkqe.3",
+      "title": "In RAG We Trust? Measuring Robustness of Retrieval-Augmented Generation Under Post-Retrieval Context Tampering",
+      "provider": "crossref",
+      "providers": [
+        "crossref"
+      ],
+      "observations": [
+        {
+          "provider": "crossref",
+          "source_ref": "crossref:10.32388/7hxkqe.3",
+          "version": "317d7f138a95a62fa6f8",
+          "run_id": "f986c194984242c18b68844e54155e41"
+        }
+      ],
+      "access": {
+        "status": "deferred_budget",
+        "reason": "Automatic access lookup is limited to 12 unique DOIs and the turn's remaining 24 research requests."
+      }
+    },
+    {
+      "paper_id": "doi:10.33774/coe-2025-50t75",
+      "doi": "10.33774/coe-2025-50t75",
+      "title": "Enhancing Context-Aware Interaction in Collaborative VR Using Retrieval-Augmented Generation",
+      "provider": "crossref",
+      "providers": [
+        "crossref"
+      ],
+      "observations": [
+        {
+          "provider": "crossref",
+          "source_ref": "crossref:10.33774/coe-2025-50t75",
+          "version": "1fa573b3e3b4126d3a4c",
+          "run_id": "f986c194984242c18b68844e54155e41"
+        }
+      ],
+      "access": {
+        "status": "deferred_budget",
+        "reason": "Automatic access lookup is limited to 12 unique DOIs and the turn's remaining 24 research requests."
+      }
+    },
+    {
+      "paper_id": "doi:10.2139/ssrn.7549418",
+      "doi": "10.2139/ssrn.7549418",
+      "title": "Counterfactual Evidence Repair for Retrieval-Augmented Generation: Selective Reliability under Source Shift",
+      "provider": "crossref",
+      "providers": [
+        "crossref"
+      ],
+      "observations": [
+        {
+          "provider": "crossref",
+          "source_ref": "crossref:10.2139/ssrn.7549418",
+          "version": "6229a3f7d5b089abe977",
+          "run_id": "f986c194984242c18b68844e54155e41"
+        }
+      ],
+      "access": {
+        "status": "deferred_budget",
+        "reason": "Automatic access lookup is limited to 12 unique DOIs and the turn's remaining 24 research requests."
+      }
+    }
+  ],
+  "frames": [
+    {
+      "at": 1794283419290,
+      "status": "RUNNING",
+      "papers": 0,
+      "observations": 0,
+      "providers": [
+        "openalex",
+        "europe_pmc",
+        "crossref",
+        "openaire"
+      ],
+      "access": {}
+    },
+    {
+      "at": 1794283419290,
+      "status": "RUNNING",
+      "papers": 0,
+      "observations": 0,
+      "providers": [
+        "openalex",
+        "europe_pmc",
+        "crossref",
+        "openaire"
+      ],
+      "access": {}
+    },
+    {
+      "at": 1794283419291,
+      "status": "RUNNING",
+      "papers": 0,
+      "observations": 0,
+      "providers": [
+        "openalex",
+        "europe_pmc",
+        "crossref",
+        "openaire"
+      ],
+      "access": {}
+    },
+    {
+      "at": 1794283419291,
+      "status": "RUNNING",
+      "papers": 0,
+      "observations": 0,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {}
+    },
+    {
+      "at": 1794283419291,
+      "status": "RUNNING",
+      "papers": 0,
+      "observations": 0,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {}
+    },
+    {
+      "at": 1794283420706,
+      "status": "RUNNING",
+      "papers": 0,
+      "observations": 0,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {}
+    },
+    {
+      "at": 1794283420729,
+      "status": "RUNNING",
+      "papers": 0,
+      "observations": 0,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {}
+    },
+    {
+      "at": 1794283420729,
+      "status": "RUNNING",
+      "papers": 0,
+      "observations": 0,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {}
+    },
+    {
+      "at": 1794283420730,
+      "status": "RUNNING",
+      "papers": 0,
+      "observations": 0,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {}
+    },
+    {
+      "at": 1794283420730,
+      "status": "RUNNING",
+      "papers": 0,
+      "observations": 0,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {}
+    },
+    {
+      "at": 1794283420754,
+      "status": "RUNNING",
+      "papers": 0,
+      "observations": 0,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {}
+    },
+    {
+      "at": 1794283420795,
+      "status": "RUNNING",
+      "papers": 0,
+      "observations": 0,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {}
+    },
+    {
+      "at": 1794283420853,
+      "status": "RUNNING",
+      "papers": 0,
+      "observations": 0,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {}
+    },
+    {
+      "at": 1794283420854,
+      "status": "RUNNING",
+      "papers": 0,
+      "observations": 0,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {}
+    },
+    {
+      "at": 1794283420990,
+      "status": "RUNNING",
+      "papers": 0,
+      "observations": 0,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {}
+    },
+    {
+      "at": 1794283421012,
+      "status": "RUNNING",
+      "papers": 0,
+      "observations": 0,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {}
+    },
+    {
+      "at": 1794283422447,
+      "status": "RUNNING",
+      "papers": 0,
+      "observations": 0,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {}
+    },
+    {
+      "at": 1794283422470,
+      "status": "RUNNING",
+      "papers": 0,
+      "observations": 0,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {}
+    },
+    {
+      "at": 1794283422492,
+      "status": "RUNNING",
+      "papers": 0,
+      "observations": 0,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {}
+    },
+    {
+      "at": 1794283424040,
+      "status": "RUNNING",
+      "papers": 0,
+      "observations": 0,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {}
+    },
+    {
+      "at": 1794283424041,
+      "status": "RUNNING",
+      "papers": 0,
+      "observations": 0,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {}
+    },
+    {
+      "at": 1794283424179,
+      "status": "RUNNING",
+      "papers": 0,
+      "observations": 0,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {}
+    },
+    {
+      "at": 1794283424206,
+      "status": "RUNNING",
+      "papers": 0,
+      "observations": 0,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {}
+    },
+    {
+      "at": 1794283424327,
+      "status": "RUNNING",
+      "papers": 0,
+      "observations": 0,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {}
+    },
+    {
+      "at": 1794283424506,
+      "status": "RUNNING",
+      "papers": 0,
+      "observations": 0,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {}
+    },
+    {
+      "at": 1794283424507,
+      "status": "RUNNING",
+      "papers": 0,
+      "observations": 0,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {}
+    },
+    {
+      "at": 1794283424670,
+      "status": "RUNNING",
+      "papers": 0,
+      "observations": 0,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {}
+    },
+    {
+      "at": 1794283424670,
+      "status": "RUNNING",
+      "papers": 0,
+      "observations": 0,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {}
+    },
+    {
+      "at": 1794283424695,
+      "status": "RUNNING",
+      "papers": 0,
+      "observations": 0,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {}
+    },
+    {
+      "at": 1794283433610,
+      "status": "RUNNING",
+      "papers": 0,
+      "observations": 0,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {}
+    },
+    {
+      "at": 1794283433611,
+      "status": "RUNNING",
+      "papers": 0,
+      "observations": 0,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {}
+    },
+    {
+      "at": 1794283433611,
+      "status": "RUNNING",
+      "papers": 0,
+      "observations": 0,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {}
+    },
+    {
+      "at": 1794283433638,
+      "status": "RUNNING",
+      "papers": 0,
+      "observations": 8,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {}
+    },
+    {
+      "at": 1794283433640,
+      "status": "RUNNING",
+      "papers": 8,
+      "observations": 8,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 8
+      }
+    },
+    {
+      "at": 1794283435391,
+      "status": "RUNNING",
+      "papers": 8,
+      "observations": 8,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 8
+      }
+    },
+    {
+      "at": 1794283435394,
+      "status": "RUNNING",
+      "papers": 8,
+      "observations": 8,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 8
+      }
+    },
+    {
+      "at": 1794283435397,
+      "status": "RUNNING",
+      "papers": 8,
+      "observations": 8,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 8
+      }
+    },
+    {
+      "at": 1794283435400,
+      "status": "RUNNING",
+      "papers": 8,
+      "observations": 8,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 8
+      }
+    },
+    {
+      "at": 1794283435403,
+      "status": "RUNNING",
+      "papers": 8,
+      "observations": 8,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 8
+      }
+    },
+    {
+      "at": 1794283435510,
+      "status": "RUNNING",
+      "papers": 8,
+      "observations": 8,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 8
+      }
+    },
+    {
+      "at": 1794283435652,
+      "status": "RUNNING",
+      "papers": 8,
+      "observations": 8,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 8
+      }
+    },
+    {
+      "at": 1794283435892,
+      "status": "RUNNING",
+      "papers": 8,
+      "observations": 8,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 8
+      }
+    },
+    {
+      "at": 1794283435895,
+      "status": "RUNNING",
+      "papers": 8,
+      "observations": 8,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 8
+      }
+    },
+    {
+      "at": 1794283436317,
+      "status": "RUNNING",
+      "papers": 8,
+      "observations": 8,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 8
+      }
+    },
+    {
+      "at": 1794283436319,
+      "status": "RUNNING",
+      "papers": 8,
+      "observations": 8,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 8
+      }
+    },
+    {
+      "at": 1794283439935,
+      "status": "RUNNING",
+      "papers": 8,
+      "observations": 8,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 8
+      }
+    },
+    {
+      "at": 1794283439938,
+      "status": "RUNNING",
+      "papers": 8,
+      "observations": 8,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 8
+      }
+    },
+    {
+      "at": 1794283440357,
+      "status": "RUNNING",
+      "papers": 8,
+      "observations": 8,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 8
+      }
+    },
+    {
+      "at": 1794283443089,
+      "status": "RUNNING",
+      "papers": 8,
+      "observations": 8,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 8
+      }
+    },
+    {
+      "at": 1794283443092,
+      "status": "RUNNING",
+      "papers": 8,
+      "observations": 8,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 8
+      }
+    },
+    {
+      "at": 1794283443543,
+      "status": "RUNNING",
+      "papers": 8,
+      "observations": 8,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 8
+      }
+    },
+    {
+      "at": 1794283443596,
+      "status": "RUNNING",
+      "papers": 8,
+      "observations": 8,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 8
+      }
+    },
+    {
+      "at": 1794283443963,
+      "status": "RUNNING",
+      "papers": 8,
+      "observations": 8,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 8
+      }
+    },
+    {
+      "at": 1794283444816,
+      "status": "RUNNING",
+      "papers": 8,
+      "observations": 8,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 8
+      }
+    },
+    {
+      "at": 1794283444819,
+      "status": "RUNNING",
+      "papers": 8,
+      "observations": 8,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 8
+      }
+    },
+    {
+      "at": 1794283445718,
+      "status": "RUNNING",
+      "papers": 8,
+      "observations": 8,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 8
+      }
+    },
+    {
+      "at": 1794283445721,
+      "status": "RUNNING",
+      "papers": 8,
+      "observations": 8,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 8
+      }
+    },
+    {
+      "at": 1794283445725,
+      "status": "RUNNING",
+      "papers": 8,
+      "observations": 8,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 8
+      }
+    },
+    {
+      "at": 1794283456687,
+      "status": "RUNNING",
+      "papers": 8,
+      "observations": 8,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 8
+      }
+    },
+    {
+      "at": 1794283456690,
+      "status": "RUNNING",
+      "papers": 8,
+      "observations": 8,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 8
+      }
+    },
+    {
+      "at": 1794283456693,
+      "status": "RUNNING",
+      "papers": 8,
+      "observations": 8,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 8
+      }
+    },
+    {
+      "at": 1794283456699,
+      "status": "RUNNING",
+      "papers": 8,
+      "observations": 18,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 8
+      }
+    },
+    {
+      "at": 1794283456705,
+      "status": "RUNNING",
+      "papers": 18,
+      "observations": 18,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 11,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283460513,
+      "status": "RUNNING",
+      "papers": 18,
+      "observations": 18,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 11,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283460519,
+      "status": "RUNNING",
+      "papers": 18,
+      "observations": 18,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 11,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283460525,
+      "status": "RUNNING",
+      "papers": 18,
+      "observations": 18,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 11,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283460531,
+      "status": "RUNNING",
+      "papers": 18,
+      "observations": 18,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 11,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283460635,
+      "status": "RUNNING",
+      "papers": 18,
+      "observations": 18,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 11,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283460868,
+      "status": "RUNNING",
+      "papers": 18,
+      "observations": 18,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 11,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283461234,
+      "status": "RUNNING",
+      "papers": 18,
+      "observations": 18,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 11,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283462036,
+      "status": "RUNNING",
+      "papers": 18,
+      "observations": 18,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 11,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283462041,
+      "status": "RUNNING",
+      "papers": 18,
+      "observations": 18,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 11,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283462979,
+      "status": "RUNNING",
+      "papers": 18,
+      "observations": 18,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 11,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283462985,
+      "status": "RUNNING",
+      "papers": 18,
+      "observations": 18,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 11,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283467028,
+      "status": "RUNNING",
+      "papers": 18,
+      "observations": 18,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 11,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283467034,
+      "status": "RUNNING",
+      "papers": 18,
+      "observations": 18,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 11,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283469547,
+      "status": "RUNNING",
+      "papers": 18,
+      "observations": 18,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 11,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283469552,
+      "status": "RUNNING",
+      "papers": 18,
+      "observations": 18,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 11,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283469861,
+      "status": "RUNNING",
+      "papers": 18,
+      "observations": 18,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 11,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283470374,
+      "status": "RUNNING",
+      "papers": 18,
+      "observations": 18,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 11,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283471435,
+      "status": "RUNNING",
+      "papers": 18,
+      "observations": 18,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 11,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283471441,
+      "status": "RUNNING",
+      "papers": 18,
+      "observations": 18,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 11,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283472626,
+      "status": "RUNNING",
+      "papers": 18,
+      "observations": 18,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 11,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283472712,
+      "status": "RUNNING",
+      "papers": 18,
+      "observations": 18,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 11,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283472718,
+      "status": "RUNNING",
+      "papers": 18,
+      "observations": 18,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 11,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283480959,
+      "status": "RUNNING",
+      "papers": 18,
+      "observations": 18,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 11,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283480965,
+      "status": "RUNNING",
+      "papers": 18,
+      "observations": 18,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 11,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283480972,
+      "status": "RUNNING",
+      "papers": 18,
+      "observations": 18,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 11,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283481072,
+      "status": "RUNNING",
+      "papers": 18,
+      "observations": 20,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 11,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283481079,
+      "status": "RUNNING",
+      "papers": 20,
+      "observations": 20,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 13,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283481418,
+      "status": "RUNNING",
+      "papers": 20,
+      "observations": 20,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 13,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283484894,
+      "status": "RUNNING",
+      "papers": 20,
+      "observations": 20,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 13,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283484901,
+      "status": "RUNNING",
+      "papers": 20,
+      "observations": 20,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 13,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283484908,
+      "status": "RUNNING",
+      "papers": 20,
+      "observations": 20,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 13,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283485039,
+      "status": "RUNNING",
+      "papers": 20,
+      "observations": 20,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 13,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283485047,
+      "status": "RUNNING",
+      "papers": 20,
+      "observations": 20,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 13,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283485387,
+      "status": "RUNNING",
+      "papers": 20,
+      "observations": 20,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 13,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283485706,
+      "status": "RUNNING",
+      "papers": 20,
+      "observations": 20,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 13,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283486293,
+      "status": "RUNNING",
+      "papers": 20,
+      "observations": 20,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 13,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283486300,
+      "status": "RUNNING",
+      "papers": 20,
+      "observations": 20,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 13,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283486984,
+      "status": "RUNNING",
+      "papers": 20,
+      "observations": 20,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 13,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283486991,
+      "status": "RUNNING",
+      "papers": 20,
+      "observations": 20,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 13,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283492858,
+      "status": "RUNNING",
+      "papers": 20,
+      "observations": 20,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 13,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283492865,
+      "status": "RUNNING",
+      "papers": 20,
+      "observations": 20,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 13,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283495176,
+      "status": "RUNNING",
+      "papers": 20,
+      "observations": 20,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 13,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283495183,
+      "status": "RUNNING",
+      "papers": 20,
+      "observations": 20,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 13,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283495673,
+      "status": "RUNNING",
+      "papers": 20,
+      "observations": 20,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 13,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283496205,
+      "status": "RUNNING",
+      "papers": 20,
+      "observations": 20,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 13,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283497179,
+      "status": "RUNNING",
+      "papers": 20,
+      "observations": 20,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 13,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283497187,
+      "status": "RUNNING",
+      "papers": 20,
+      "observations": 20,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 13,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283498532,
+      "status": "RUNNING",
+      "papers": 20,
+      "observations": 20,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 13,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283498540,
+      "status": "RUNNING",
+      "papers": 20,
+      "observations": 20,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 13,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283498547,
+      "status": "RUNNING",
+      "papers": 20,
+      "observations": 20,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 13,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283508085,
+      "status": "RUNNING",
+      "papers": 20,
+      "observations": 20,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 13,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283508095,
+      "status": "RUNNING",
+      "papers": 20,
+      "observations": 20,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 13,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283508102,
+      "status": "RUNNING",
+      "papers": 20,
+      "observations": 20,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 13,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283508220,
+      "status": "RUNNING",
+      "papers": 20,
+      "observations": 26,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 13,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283508229,
+      "status": "RUNNING",
+      "papers": 26,
+      "observations": 26,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 19,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283508384,
+      "status": "RUNNING",
+      "papers": 26,
+      "observations": 26,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 19,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283509957,
+      "status": "RUNNING",
+      "papers": 26,
+      "observations": 26,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 19,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283509966,
+      "status": "RUNNING",
+      "papers": 26,
+      "observations": 26,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "queued": 19,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283510106,
+      "status": "RUNNING",
+      "papers": 26,
+      "observations": 26,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "running": 1,
+        "queued": 18,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283510115,
+      "status": "RUNNING",
+      "papers": 26,
+      "observations": 26,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "running": 1,
+        "queued": 18,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283511731,
+      "status": "RUNNING",
+      "papers": 26,
+      "observations": 26,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "running": 1,
+        "queued": 18,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283511741,
+      "status": "RUNNING",
+      "papers": 26,
+      "observations": 26,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "succeeded": 1,
+        "queued": 18,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283511909,
+      "status": "RUNNING",
+      "papers": 26,
+      "observations": 26,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "succeeded": 1,
+        "running": 1,
+        "queued": 17,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283511919,
+      "status": "RUNNING",
+      "papers": 26,
+      "observations": 26,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "succeeded": 1,
+        "running": 1,
+        "queued": 17,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283513446,
+      "status": "RUNNING",
+      "papers": 26,
+      "observations": 26,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "succeeded": 1,
+        "running": 1,
+        "queued": 17,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283513455,
+      "status": "RUNNING",
+      "papers": 26,
+      "observations": 26,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "succeeded": 1,
+        "not_found": 1,
+        "queued": 17,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283513622,
+      "status": "RUNNING",
+      "papers": 26,
+      "observations": 26,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "succeeded": 1,
+        "not_found": 1,
+        "running": 1,
+        "queued": 16,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283513631,
+      "status": "RUNNING",
+      "papers": 26,
+      "observations": 26,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "succeeded": 1,
+        "not_found": 1,
+        "running": 1,
+        "queued": 16,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283515185,
+      "status": "RUNNING",
+      "papers": 26,
+      "observations": 26,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "succeeded": 1,
+        "not_found": 1,
+        "running": 1,
+        "queued": 16,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283515193,
+      "status": "RUNNING",
+      "papers": 26,
+      "observations": 26,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "succeeded": 1,
+        "not_found": 2,
+        "queued": 16,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283515333,
+      "status": "RUNNING",
+      "papers": 26,
+      "observations": 26,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "succeeded": 1,
+        "not_found": 2,
+        "running": 1,
+        "queued": 15,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283515340,
+      "status": "RUNNING",
+      "papers": 26,
+      "observations": 26,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "succeeded": 1,
+        "not_found": 2,
+        "running": 1,
+        "queued": 15,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283516701,
+      "status": "RUNNING",
+      "papers": 26,
+      "observations": 26,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "succeeded": 1,
+        "not_found": 2,
+        "running": 1,
+        "queued": 15,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283516710,
+      "status": "RUNNING",
+      "papers": 26,
+      "observations": 26,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "succeeded": 1,
+        "not_found": 3,
+        "queued": 15,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283516847,
+      "status": "RUNNING",
+      "papers": 26,
+      "observations": 26,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "succeeded": 1,
+        "not_found": 3,
+        "running": 1,
+        "queued": 14,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283516855,
+      "status": "RUNNING",
+      "papers": 26,
+      "observations": 26,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "succeeded": 1,
+        "not_found": 3,
+        "running": 1,
+        "queued": 14,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283518441,
+      "status": "RUNNING",
+      "papers": 26,
+      "observations": 26,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "succeeded": 1,
+        "not_found": 3,
+        "running": 1,
+        "queued": 14,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283518600,
+      "status": "RUNNING",
+      "papers": 26,
+      "observations": 26,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "succeeded": 1,
+        "not_found": 4,
+        "queued": 14,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283518610,
+      "status": "RUNNING",
+      "papers": 26,
+      "observations": 26,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "succeeded": 1,
+        "not_found": 4,
+        "running": 1,
+        "queued": 13,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283518639,
+      "status": "RUNNING",
+      "papers": 26,
+      "observations": 26,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "succeeded": 1,
+        "not_found": 4,
+        "running": 1,
+        "queued": 13,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283521033,
+      "status": "RUNNING",
+      "papers": 26,
+      "observations": 26,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "succeeded": 1,
+        "not_found": 4,
+        "running": 1,
+        "queued": 13,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283521042,
+      "status": "RUNNING",
+      "papers": 26,
+      "observations": 26,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "succeeded": 1,
+        "not_found": 5,
+        "queued": 13,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283521199,
+      "status": "RUNNING",
+      "papers": 26,
+      "observations": 26,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "succeeded": 1,
+        "not_found": 5,
+        "running": 1,
+        "queued": 12,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283521208,
+      "status": "RUNNING",
+      "papers": 26,
+      "observations": 26,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "succeeded": 1,
+        "not_found": 5,
+        "running": 1,
+        "queued": 12,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283522602,
+      "status": "RUNNING",
+      "papers": 26,
+      "observations": 26,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "succeeded": 1,
+        "not_found": 5,
+        "running": 1,
+        "queued": 12,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283522612,
+      "status": "RUNNING",
+      "papers": 26,
+      "observations": 26,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "succeeded": 2,
+        "not_found": 5,
+        "queued": 12,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283522759,
+      "status": "RUNNING",
+      "papers": 26,
+      "observations": 26,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "succeeded": 2,
+        "not_found": 5,
+        "running": 1,
+        "queued": 11,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283522767,
+      "status": "RUNNING",
+      "papers": 26,
+      "observations": 26,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "succeeded": 2,
+        "not_found": 5,
+        "running": 1,
+        "queued": 11,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283524340,
+      "status": "RUNNING",
+      "papers": 26,
+      "observations": 26,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "succeeded": 2,
+        "not_found": 5,
+        "running": 1,
+        "queued": 11,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283524350,
+      "status": "RUNNING",
+      "papers": 26,
+      "observations": 26,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "succeeded": 3,
+        "not_found": 5,
+        "queued": 11,
+        "not_applicable": 7
+      }
+    },
+    {
+      "at": 1794283524494,
+      "status": "RUNNING",
+      "papers": 26,
+      "observations": 26,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "succeeded": 3,
+        "not_found": 5,
+        "running": 1,
+        "not_applicable": 7,
+        "queued": 10
+      }
+    },
+    {
+      "at": 1794283524502,
+      "status": "RUNNING",
+      "papers": 26,
+      "observations": 26,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "succeeded": 3,
+        "not_found": 5,
+        "running": 1,
+        "not_applicable": 7,
+        "queued": 10
+      }
+    },
+    {
+      "at": 1794283525934,
+      "status": "RUNNING",
+      "papers": 26,
+      "observations": 26,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "succeeded": 3,
+        "not_found": 5,
+        "running": 1,
+        "not_applicable": 7,
+        "queued": 10
+      }
+    },
+    {
+      "at": 1794283525943,
+      "status": "RUNNING",
+      "papers": 26,
+      "observations": 26,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "succeeded": 4,
+        "not_found": 5,
+        "not_applicable": 7,
+        "queued": 10
+      }
+    },
+    {
+      "at": 1794283526087,
+      "status": "RUNNING",
+      "papers": 26,
+      "observations": 26,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "succeeded": 4,
+        "not_found": 5,
+        "not_applicable": 7,
+        "running": 1,
+        "queued": 9
+      }
+    },
+    {
+      "at": 1794283526096,
+      "status": "RUNNING",
+      "papers": 26,
+      "observations": 26,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "succeeded": 4,
+        "not_found": 5,
+        "not_applicable": 7,
+        "running": 1,
+        "queued": 9
+      }
+    },
+    {
+      "at": 1794283527497,
+      "status": "RUNNING",
+      "papers": 26,
+      "observations": 26,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "succeeded": 4,
+        "not_found": 5,
+        "not_applicable": 7,
+        "running": 1,
+        "queued": 9
+      }
+    },
+    {
+      "at": 1794283527506,
+      "status": "RUNNING",
+      "papers": 26,
+      "observations": 26,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "succeeded": 5,
+        "not_found": 5,
+        "not_applicable": 7,
+        "queued": 9
+      }
+    },
+    {
+      "at": 1794283527685,
+      "status": "RUNNING",
+      "papers": 26,
+      "observations": 26,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "succeeded": 5,
+        "not_found": 5,
+        "not_applicable": 7,
+        "running": 1,
+        "queued": 8
+      }
+    },
+    {
+      "at": 1794283527695,
+      "status": "RUNNING",
+      "papers": 26,
+      "observations": 26,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "succeeded": 5,
+        "not_found": 5,
+        "not_applicable": 7,
+        "running": 1,
+        "queued": 8
+      }
+    },
+    {
+      "at": 1794283529477,
+      "status": "RUNNING",
+      "papers": 26,
+      "observations": 26,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "succeeded": 5,
+        "not_found": 5,
+        "not_applicable": 7,
+        "running": 1,
+        "queued": 8
+      }
+    },
+    {
+      "at": 1794283529486,
+      "status": "RUNNING",
+      "papers": 26,
+      "observations": 26,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "succeeded": 5,
+        "not_found": 6,
+        "not_applicable": 7,
+        "queued": 8
+      }
+    },
+    {
+      "at": 1794283529647,
+      "status": "RUNNING",
+      "papers": 26,
+      "observations": 26,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "succeeded": 5,
+        "not_found": 6,
+        "not_applicable": 7,
+        "running": 1,
+        "queued": 7
+      }
+    },
+    {
+      "at": 1794283529655,
+      "status": "RUNNING",
+      "papers": 26,
+      "observations": 26,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "succeeded": 5,
+        "not_found": 6,
+        "not_applicable": 7,
+        "running": 1,
+        "queued": 7
+      }
+    },
+    {
+      "at": 1794283533503,
+      "status": "RUNNING",
+      "papers": 26,
+      "observations": 26,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "succeeded": 5,
+        "not_found": 6,
+        "not_applicable": 7,
+        "running": 1,
+        "queued": 7
+      }
+    },
+    {
+      "at": 1794283533512,
+      "status": "RUNNING",
+      "papers": 26,
+      "observations": 26,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "succeeded": 6,
+        "not_found": 6,
+        "not_applicable": 7,
+        "queued": 7
+      }
+    },
+    {
+      "at": 1794283533678,
+      "status": "RUNNING",
+      "papers": 26,
+      "observations": 26,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "succeeded": 6,
+        "not_found": 6,
+        "not_applicable": 7,
+        "deferred_budget": 1,
+        "queued": 6
+      }
+    },
+    {
+      "at": 1794283533687,
+      "status": "RUNNING",
+      "papers": 26,
+      "observations": 26,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "succeeded": 6,
+        "not_found": 6,
+        "not_applicable": 7,
+        "deferred_budget": 2,
+        "queued": 5
+      }
+    },
+    {
+      "at": 1794283533717,
+      "status": "RUNNING",
+      "papers": 26,
+      "observations": 26,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "succeeded": 6,
+        "not_found": 6,
+        "not_applicable": 7,
+        "deferred_budget": 3,
+        "queued": 4
+      }
+    },
+    {
+      "at": 1794283533727,
+      "status": "RUNNING",
+      "papers": 26,
+      "observations": 26,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "succeeded": 6,
+        "not_found": 6,
+        "not_applicable": 7,
+        "deferred_budget": 4,
+        "queued": 3
+      }
+    },
+    {
+      "at": 1794283533735,
+      "status": "RUNNING",
+      "papers": 26,
+      "observations": 26,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "succeeded": 6,
+        "not_found": 6,
+        "not_applicable": 7,
+        "deferred_budget": 5,
+        "queued": 2
+      }
+    },
+    {
+      "at": 1794283533873,
+      "status": "RUNNING",
+      "papers": 26,
+      "observations": 26,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "succeeded": 6,
+        "not_found": 6,
+        "not_applicable": 7,
+        "deferred_budget": 6,
+        "queued": 1
+      }
+    },
+    {
+      "at": 1794283533883,
+      "status": "RUNNING",
+      "papers": 26,
+      "observations": 26,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "succeeded": 6,
+        "not_found": 6,
+        "not_applicable": 7,
+        "deferred_budget": 7
+      }
+    },
+    {
+      "at": 1794283534017,
+      "status": "PARTIAL",
+      "papers": 26,
+      "observations": 26,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "succeeded": 6,
+        "not_found": 6,
+        "not_applicable": 7,
+        "deferred_budget": 7
+      }
+    },
+    {
+      "at": 1794283534330,
+      "status": "PARTIAL",
+      "papers": 26,
+      "observations": 26,
+      "providers": [
+        "openalex",
+        "arxiv",
+        "crossref"
+      ],
+      "access": {
+        "succeeded": 6,
+        "not_found": 6,
+        "not_applicable": 7,
+        "deferred_budget": 7
+      }
+    }
+  ],
+  "elapsed_ms": 124550,
+  "first_paper_ms": 22668,
+  "progressive_papers": true,
+  "progressive_access": true,
+  "unpaywall_operations": 12,
+  "reload_zero_new_calls": true,
+  "page_errors": []
+}

@@ -1,0 +1,36 @@
+{
+  "date": "2026-11-09",
+  "scope": "Explicit originating-provider OpenAlex MCP detail lookups over saved records; no generation or new discovery",
+  "run_id": "28336d5ce6254ef9be39856bfb7052e0",
+  "results": [
+    {
+      "source_ref": "openalex:W4416379250",
+      "status": 200,
+      "previous_abstract_chars": 494,
+      "abstract_chars": 1423,
+      "truncated_fields": [],
+      "details_loaded": true,
+      "version": "e6c184103a9101b41755"
+    },
+    {
+      "source_ref": "openalex:W4410705984",
+      "status": 200,
+      "previous_abstract_chars": 0,
+      "abstract_chars": 0,
+      "truncated_fields": [],
+      "details_loaded": true,
+      "version": "53585ffaf7dde273f3d8"
+    },
+    {
+      "source_ref": "openalex:W4406771321",
+      "status": 200,
+      "previous_abstract_chars": 0,
+      "abstract_chars": 0,
+      "truncated_fields": [],
+      "details_loaded": true,
+      "version": "7c280c2319200908c539"
+    }
+  ],
+  "new_research_attempts": 3,
+  "openai_requests": 0
+}

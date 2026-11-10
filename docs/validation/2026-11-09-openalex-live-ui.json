@@ -1,0 +1,122 @@
+{
+  "date": "2026-11-09",
+  "timezone": "America/New_York",
+  "scope": "Actual UI-submitted OpenAlex year-filtered discovery through LangGraph/DeepAgents/application MCP; saved result reused after validation-client URL error, no search redispatch.",
+  "conversation_id": "e872132dac1c4071bb7909daac55be4f",
+  "run_id": "28336d5ce6254ef9be39856bfb7052e0",
+  "turn_status": "SUCCEEDED",
+  "run_status": "SUCCEEDED",
+  "branch_status": {
+    "lexical": "succeeded",
+    "semantic": "succeeded"
+  },
+  "source_count": 14,
+  "source_refs": [
+    "openalex:W4410705984",
+    "openalex:W4416379250",
+    "openalex:W4402670290",
+    "openalex:W4406771321",
+    "openalex:W4406031095",
+    "openalex:W4411120544",
+    "openalex:W4416034797",
+    "openalex:W4400526126",
+    "openalex:W4411630045",
+    "openalex:W4393147129",
+    "openalex:W7118085507",
+    "openalex:W4404782883",
+    "openalex:W4406542750",
+    "openalex:W4401042808"
+  ],
+  "filters": {
+    "year_from": 2024,
+    "year_to": 2026,
+    "resource_type": null
+  },
+  "all_source_years_in_range": true,
+  "provider_scoped_live_sources": true,
+  "usage": {
+    "research_attempts": 2,
+    "model_http_attempts": 0,
+    "model_cost_usd": 0
+  },
+  "provenance": [
+    {
+      "source_ref": "openalex:W4410705984",
+      "version": "53585ffaf7dde273f3d8",
+      "query_provenance": {
+        "transport": "official_mcp",
+        "tool": "search_works",
+        "tool_schema_hash": "ee899087ab35a717374d0f6800ecbc4abb4ef64553f3fc6baba8701e9c64f03b",
+        "executed_arguments": {
+          "query": "retrieval augmented generation",
+          "mode": "semantic",
+          "limit": 10,
+          "rerank": false,
+          "from_year": 2024,
+          "to_year": 2026
+        },
+        "canonical_oql": null,
+        "reproduce_url": null,
+        "provider_usage": null,
+        "provider_internal_attempts": "unknown"
+      }
+    },
+    {
+      "source_ref": "openalex:W4416379250",
+      "version": "24fe84537016f0fd6e53",
+      "query_provenance": {
+        "transport": "official_mcp",
+        "tool": "search_works",
+        "tool_schema_hash": "ee899087ab35a717374d0f6800ecbc4abb4ef64553f3fc6baba8701e9c64f03b",
+        "executed_arguments": {
+          "query": "retrieval augmented generation",
+          "mode": "semantic",
+          "limit": 10,
+          "rerank": false,
+          "from_year": 2024,
+          "to_year": 2026
+        },
+        "canonical_oql": null,
+        "reproduce_url": null,
+        "provider_usage": null,
+        "provider_internal_attempts": "unknown"
+      }
+    }
+  ],
+  "errors": [],
+  "saved_reload_zero_new_calls": true,
+  "provider_health": {
+    "id": "openalex",
+    "label": "OpenAlex",
+    "role": "Primary discovery",
+    "mode": "live",
+    "status": "ready",
+    "provider": "openalex",
+    "fixture": false,
+    "capabilities": {
+      "search": true,
+      "lexical": true,
+      "semantic": true,
+      "details": true,
+      "agency": false,
+      "metadata": false
+    },
+    "access_configured": true,
+    "readiness": "verified",
+    "access_method": "oauth_store",
+    "key_recommended": false,
+    "blocked_reason": null,
+    "encoder_status": "not_applicable",
+    "upstream_url": "https://mcp.openalex.org/mcp",
+    "last_verified_at": "2026-11-10T00:04:53.114632+00:00",
+    "verified_capabilities": [
+      "keyword",
+      "semantic"
+    ],
+    "last_error": null,
+    "capability_status": "partially_verified",
+    "semantic_execution": "provider_native",
+    "run_attempt_cap": 8
+  },
+  "passed": true
+}

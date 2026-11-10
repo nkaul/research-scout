@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8fafc">
+  <meta name="description" content="Research Scout: an interactive design preview for finding sources, reading evidence, and connecting ideas.">
+  <title>Research Scout — A little more clarity</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to research workspace</a>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar" aria-label="Workspace navigation">
+      <a class="brand" href="#" aria-label="Research Scout home"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M16 3 20 12 29 16 20 20 16 29 12 20 3 16 12 12Z"/><circle cx="16" cy="16" r="3"/></svg></span><span>research scout<span class="brand-dot">.</span></span></a>
+      <button class="new-exploration" id="new-exploration"><span data-icon="plus"></span>New exploration<span class="small-key">N</span></button>
+      <div class="nav-label">WORKSPACE</div>
+      <nav class="primary-nav">
+        <button data-view="discover" class="nav-item active"><span data-icon="compass"></span>Discover</button>
+        <button data-view="library" class="nav-item"><span data-icon="bookmark"></span>Library<span class="nav-count" id="library-count">3</span></button>
+        <button data-view="evidence" class="nav-item"><span data-icon="columns"></span>Evidence</button>
+        <button data-view="brief" class="nav-item"><span data-icon="file"></span>Research brief</button>
+      </nav>
+      <div class="recent-section">
+        <div class="nav-label recent-heading">EXPLORATIONS<button class="icon-button tiny" id="add-exploration" aria-label="Create exploration"><span data-icon="plus"></span></button></div>
+        <button class="exploration active" data-topic="education"><span class="topic-dot"></span>AI in higher education</button>
+        <button class="exploration" data-topic="wellbeing"><span class="topic-dot muted"></span>Student wellbeing</button>
+      </div>
+      <div class="sidebar-bottom">
+        <button class="guide-link" id="guide-button"><span data-icon="spark"></span>A small guide to scouting<span data-icon="arrow-up-right"></span></button>
+        <div class="workspace-person"><span class="avatar">Y</span><div><strong>Your workspace</strong><span>Personal · Design preview</span></div><span class="workspace-status" aria-label="Local demo"></span></div>
+      </div>
+    </aside>
+    <div class="main-shell">
+      <header class="topbar">
+        <div class="breadcrumb"><button class="icon-button mobile-menu" id="mobile-menu" aria-label="Toggle navigation"><span data-icon="menu"></span></button><span data-icon="folder"></span><span>Explorations</span><span class="breadcrumb-slash">/</span><strong id="breadcrumb-title">AI in higher education</strong></div>
+        <div class="topbar-actions"><button class="preview-label" id="preview-info"><span></span>Interactive concept</button><button class="icon-button" id="command-button" aria-label="Open command menu" title="Command menu"><span data-icon="command"></span></button></div>
+      </header>
+      <main id="main" tabindex="-1">
+        <section class="discovery-header" id="discovery-header">
+          <div class="heading-line"><div><div class="eyebrow">A LITTLE CURIOSITY GOES A LONG WAY</div><h1>Explore the evidence<span>.</span></h1><p class="intro">Good research starts with a better question.</p></div><div class="quiet-orbit" aria-hidden="true"><span></span><i></i><b></b></div></div>
+          <form class="search-composer" id="search-form"><span class="search-symbol" data-icon="search"></span><label class="sr-only" for="research-query">Research question</label><input id="research-query" name="q" autocomplete="off" value="Institutional AI readiness in higher education" placeholder="What would you like to understand?"><span class="search-key">⌘ K</span><button class="search-submit" type="submit" aria-label="Search sources"><span data-icon="arrow-right"></span></button></form>
+          <div class="search-suggestions"><span>Try a direction</span><button data-query="Algorithmic accountability">Algorithmic accountability<span data-icon="arrow-up-right"></span></button><button data-query="Faculty readiness">Faculty readiness<span data-icon="arrow-up-right"></span></button><button data-query="AI policy frameworks">AI policy frameworks<span data-icon="arrow-up-right"></span></button></div>
+        </section>
+        <section class="workspace-content" id="workspace-content" aria-label="Research results"></section>
+        <footer class="workspace-footer"><span><span class="footer-spark">✳</span> Stay curious. Keep the evidence close.</span><button id="sample-info">Illustrative sample content</button></footer>
+      </main>
+    </div>
+  </div>
+  <aside class="source-inspector" id="source-inspector" aria-label="Source details" hidden></aside>
+  <div id="inspector-scrim" class="inspector-scrim" hidden></div>
+  <div class="selection-bar" id="selection-bar" hidden></div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <dialog id="exploration-dialog" class="dialog exploration-dialog">
+    <form id="exploration-form"><div class="dialog-heading"><span class="dialog-icon" data-icon="compass"></span><button type="button" class="icon-button" data-close-dialog aria-label="Close"><span data-icon="x"></span></button></div><h2>Follow a new question.</h2><p>Start with a topic. You can narrow the focus as you go.</p><label for="new-question">Research question</label><input id="new-question" required placeholder="What would you like to understand?" autocomplete="off"><div class="dialog-actions"><button type="button" class="button" data-close-dialog>Cancel</button><button class="button primary" type="submit">Start exploring<span data-icon="arrow-right"></span></button></div></form>
+  </dialog>
+  <dialog id="filters-dialog" class="dialog filter-dialog">
+    <div class="dialog-heading"><h2>Refine your search</h2><button class="icon-button" data-close-dialog aria-label="Close filters"><span data-icon="x"></span></button></div><p>A few useful boundaries for your next discovery.</p>
+    <form id="filters-form"><label for="year-filter">Publication year</label><select id="year-filter"><option value="all">Any year</option><option value="2024">2024–2026</option><option value="2025">2025–2026</option></select><label for="method-filter">Study type</label><select id="method-filter"><option value="all">All study types</option><option value="Review">Review</option><option value="Empirical study">Empirical study</option><option value="Framework">Framework</option></select><label class="checkbox-label"><input id="filter-oa" type="checkbox">Full text available</label><div class="dialog-actions"><button class="button" id="reset-filters" type="button">Reset</button><button class="button primary" type="submit">Apply filters</button></div></form>
+  </dialog>
+  <dialog id="command-dialog" class="dialog command-dialog"><div class="command-heading"><span data-icon="command"></span><strong>Go somewhere</strong><kbd>esc</kbd></div><div id="command-list"></div></dialog>
+  <dialog id="info-dialog" class="dialog info-dialog"><div class="dialog-heading"><span class="dialog-icon" data-icon="spark"></span><button class="icon-button" data-close-dialog aria-label="Close information"><span data-icon="x"></span></button></div><h2>A little room to think.</h2><p>This is an interactive UX concept for Research Scout. Explore sample papers, web sources, and videos; save a few; then compare the evidence.</p><ol><li>Find something interesting in <strong>Discover</strong>.</li><li>Save it to your <strong>Library</strong>, or select it to compare.</li><li>Open a source to inspect its access and sample evidence.</li><li>Bring selected ideas into a <strong>Research brief</strong>.</li></ol><div class="info-note">All records, counts, and passages are illustrative. Searches filter this local sample; no live research services are connected.</div><button class="button primary full-width" data-close-dialog>Let's explore<span data-icon="arrow-right"></span></button></dialog>
+</body>
+</html>

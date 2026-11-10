@@ -1,0 +1,163 @@
+{
+  "date": "2026-10-26",
+  "title": "Research Scout \u2014 Phase 1 Architecture",
+  "status": "Proposed Increment 1 design; no application implementation, deployment or live integration claim",
+  "generation_mode": "built-in image_gen; no CLI/API image-generation runner",
+  "image_tool_requests": 3,
+  "application_research_provider_or_model_calls": 0,
+  "selected_asset": "increment-1-architecture.png",
+  "sha256": "049bd2d5d7edb341a766a6584332cba2676349db1cb4533c7faf0c79b5fdd601",
+  "width": 1672,
+  "height": 941,
+  "requested_layout": "Landscape 16:9; requested larger native output was not returned; actual PNG retained without upscaling",
+  "source_snapshot_file": "increment-1-architecture-source-snapshot.json",
+  "source_documents_at_generation_start": [
+    {
+      "path": "system-design/README.md",
+      "sha256": "055d644fc8d36304afb3c1ff85bb4ba4addea183b010d4d06c6990822bebc11b"
+    },
+    {
+      "path": "system-design/architecture.md",
+      "sha256": "750c46f2a29e05c2bb267540927d4e01bda6c5bb105d8e6e85b63c0f2ffecf04"
+    },
+    {
+      "path": "system-design/increment-1.md",
+      "sha256": "7a4e8240b615683e21b305ddd70b090be18dd52af6b1ba4a5327c640ecbc0e16"
+    },
+    {
+      "path": "system-design/provider-routing.md",
+      "sha256": "0a12429c7300332efeb2a27f1287234379c7809db71fd33bf8842f5e6799c833"
+    },
+    {
+      "path": "system-design/hybrid-retrieval.md",
+      "sha256": "23285161ea71ea210d7790407764b72bfabeaca6cdabb2928be604986dc77092"
+    },
+    {
+      "path": "system-design/progressive-results.md",
+      "sha256": "94e32eee27ce582da232962339f6d993bec8367b349d2270b286e93327aa5997"
+    },
+    {
+      "path": "system-design/ux-research.md",
+      "sha256": "b18249590a6337feaae6f7f0d0f69968edca121a481a752da884a2f24b2383bf"
+    }
+  ],
+  "style_references": [
+    {
+      "path": ".agents/skills/illustrated-explainers/assets/style-overview.png",
+      "sha256": "b7595378eb5eb6a3b28a12ef710e4c88893f1715aa6afb6502863a7128346ca9",
+      "role": "Inspected and supplied as style reference only"
+    },
+    {
+      "path": "system-design/diagrams/history/2026-10-26-openalex-only/increment-1-architecture.png",
+      "sha256": "0a519066656e4c96a1991851032ffed2db11ce957c7981fd814646e22d377647",
+      "role": "Inspected previous figure; first edit target with superseded architectural content"
+    }
+  ],
+  "prompt_file": "increment-1-architecture-prompt.md",
+  "generations": [
+    {
+      "stage": "Revised composition",
+      "default_output_path": "/Users/nkaul/.codex/generated_images/01a176f2-49db-7c92-b6bb-45487c76cacb/exec-45fbf995-21b8-4520-8298-256c7e8cd5a2.png",
+      "archived_asset": "history/2026-10-26-provider-services-drafts/increment-1-architecture-draft.png",
+      "result": "Failed: conditional Semantic Scholar/DOI connectors entered wrong service cards",
+      "sha256": "2e79b10e1a2a38013efb37b64edd91b4d2196cf0ebd771050441e23b9fe47caa"
+    },
+    {
+      "stage": "Targeted routing correction",
+      "default_output_path": "/Users/nkaul/.codex/generated_images/01a176f2-49db-7c92-b6bb-45487c76cacb/exec-b808ef50-1541-402a-a95f-c690cae18306.png",
+      "archived_asset": "history/2026-10-26-provider-services-drafts/increment-1-architecture-routing-draft.png",
+      "result": "Failed: revision arrow corrected; nonprimary route endpoints still misaligned",
+      "sha256": "23c2e9bdc7430ea770a4c1d21de1b8169985fed5d337f07b154446168c69d899"
+    },
+    {
+      "stage": "Simplified conditional routes",
+      "default_output_path": "/Users/nkaul/.codex/generated_images/01a176f2-49db-7c92-b6bb-45487c76cacb/exec-adc55517-e9e9-47a9-b7cb-30bc75d10c7d.png",
+      "selected_asset": "increment-1-architecture.png",
+      "result": "Selected after author visual review: one clear primary edge; other conditional routes labeled on separate cards",
+      "sha256": "049bd2d5d7edb341a766a6584332cba2676349db1cb4533c7faf0c79b5fdd601"
+    }
+  ],
+  "visual_review": {
+    "reviewer": "UX Researcher",
+    "status": "Author visual review passed; root independent visual review passed",
+    "checks": [
+      "Research Scout / Phase 1 Architecture / PROPOSED Increment 1 labels readable at native size",
+      "Four separately bounded Python provider services sit outside the provider-agnostic application core",
+      "OpenAlex is primary via official MCP; lexical and semantic-text-to-provider-embedding branches combine within its own scope",
+      "Same-provider deduplication/rank fusion and compatible-filter qualifier are visible",
+      "Semantic Scholar is complementary and explicit; semantic route remains proof-gated",
+      "Crossref and DataCite are exact DOI REST checks with explicit agency labels; no provider-to-provider edges",
+      "Misleading nonprimary provider connectors removed; single OpenAlex conditional edge and no-automatic-fan-out rule remain",
+      "Coordinator to provider-bound specialist to local application MCP to deterministic router remains inside core",
+      "Human review/DOI checks have API-only path separate from agents",
+      "Validate/persist observations precedes progressive event return to UI before summary/completion",
+      "Separate observations/no-silent-merge note and metadata/abstract-only scope remain visible",
+      "Observation to saved revision to bibliography/manifest direction is correct",
+      "Database and model remain undecided; no full-text or deployed-system claim"
+    ],
+    "limitations": [
+      "Illustrative routing is deliberately schematic. Nonprimary service paths are stated by card labels; exact conditional arrows and contracts are in the linked Mermaid/source documents.",
+      "The single primary edge is drawn at the application-core boundary rather than tracing a long internal router connector.",
+      "Compatible filters means verified pushdown or deterministic supported postfiltering; unresolved filter results are not eligible candidates.",
+      "Native output is 1672 x 941, not the larger requested resolution; no unsupported resolution claim is made.",
+      "Source hashes capture generation-start context; later document reconciliation or image-embed edits may change source files."
+    ]
+  },
+  "independent_semantic_review": {
+    "agent": "Root",
+    "status": "pass",
+    "reviewed_sha256": "049bd2d5d7edb341a766a6584332cba2676349db1cb4533c7faf0c79b5fdd601",
+    "scope": "Actual current PNG: primary OpenAlex native hybrid; four separate service cards; no misleading nonprimary arrows; agent to application MCP to router; separate human review; persisted observations to progressive UI; saved-revision exports; proposed status and readability.",
+    "caption_qualifications": "Nonprimary connections are specified by card routing rules and full Mermaid/source documents. The OpenAlex Python service owns its MCP client; query embedding happens remotely inside OpenAlex."
+  },
+  "source_documents_after_integration": [
+    {
+      "path": "system-design/README.md",
+      "sha256": "c327ffab8469fe022932859c5f2a10f8c825f6ff102bdd3f257b977ffcb1ac4d"
+    },
+    {
+      "path": "system-design/architecture.md",
+      "sha256": "80dee119fc84d334a614727479006294abf7c5b36b0b94b8abff3def8e33682b"
+    },
+    {
+      "path": "system-design/increment-1.md",
+      "sha256": "fdfb00add95eb496d8e5c18488857cc94e7e092b6319f39d5a9fb07cbd59ce6c"
+    },
+    {
+      "path": "system-design/provider-routing.md",
+      "sha256": "0a12429c7300332efeb2a27f1287234379c7809db71fd33bf8842f5e6799c833"
+    },
+    {
+      "path": "system-design/hybrid-retrieval.md",
+      "sha256": "60681ecffc0cfaad317306578153f10b37367e50fa4ee98e8068f877173707fd"
+    },
+    {
+      "path": "system-design/progressive-results.md",
+      "sha256": "1ff485b476b6854fc7607dbb3ea864b25da1eb4a2bc092e0b4b157196ab8d85e"
+    },
+    {
+      "path": "system-design/ux-research.md",
+      "sha256": "b18249590a6337feaae6f7f0d0f69968edca121a481a752da884a2f24b2383bf"
+    }
+  ],
+  "source_snapshot_note": "Generation-start hashes preserve original input context. After-integration hashes were captured after the root added the illustration embed and completed filter/plan refinements. Later edits do not retroactively change the original generation context.",
+  "prompt_sha256": "e44db1ee537a6b9d4b22d4ad65802a10f220435efc5543fb735398f8e0282da5",
+  "preserved_historical_artifacts": [
+    {
+      "path": "system-design/diagrams/history/2026-10-26-openalex-only/README.md",
+      "sha256": "6de97ec5abd4a8f55516b175b879788506c7e4de0eedba9064fa843b80604de9"
+    },
+    {
+      "path": "system-design/diagrams/history/2026-10-26-openalex-only/increment-1-architecture-prompt.md",
+      "sha256": "54b54048792e45e71c98b4a03bea0c5018ebb71af4dfd026d7e4e291fbca40e7"
+    },
+    {
+      "path": "system-design/diagrams/history/2026-10-26-openalex-only/increment-1-architecture-review.json",
+      "sha256": "80807ec0fb437b885e7d37b591e3fcf608674fd24faf863998a1a4feb9954e12"
+    },
+    {
+      "path": "system-design/diagrams/history/2026-10-26-openalex-only/increment-1-architecture.png",
+      "sha256": "0a519066656e4c96a1991851032ffed2db11ce957c7981fd814646e22d377647"
+    }
+  ]
+}

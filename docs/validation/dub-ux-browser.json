@@ -1,0 +1,68 @@
+{
+  "date": "2026-10-30",
+  "scope": "Production Next.js build with application-request fixtures plus one actual local fixture-backend journey; no live provider/model evidence.",
+  "stats": {
+    "startTime": "2026-10-30T04:02:24.558Z",
+    "duration": 24972.761,
+    "expected": 9,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "cases": [
+    {
+      "title": "local fixture services reach a saved shortlist and deterministic export",
+      "status": "passed",
+      "duration_ms": 1662,
+      "project": "chromium"
+    },
+    {
+      "title": "first rows can be inspected and saved before completion; updates preserve identity and focus",
+      "status": "passed",
+      "duration_ms": 6274,
+      "project": "chromium"
+    },
+    {
+      "title": "reopen and exports use saved state; DOI observations remain separate and stale writes retain drafts",
+      "status": "passed",
+      "duration_ms": 1749,
+      "project": "chromium"
+    },
+    {
+      "title": "provider edits are explicit and reconnection cannot rerun research or duplicate sources",
+      "status": "passed",
+      "duration_ms": 1235,
+      "project": "chromium"
+    },
+    {
+      "title": "mobile keyboard flow, modal focus and reading layout remain usable",
+      "status": "passed",
+      "duration_ms": 5849,
+      "project": "chromium"
+    },
+    {
+      "title": "three-paper cap and eligibility updates preserve human decisions visibly",
+      "status": "passed",
+      "duration_ms": 1175,
+      "project": "chromium"
+    },
+    {
+      "title": "untitled and truncated records remain honest and DOI checks require inclusion",
+      "status": "passed",
+      "duration_ms": 1299,
+      "project": "chromium"
+    },
+    {
+      "title": "desktop split preview, notes and display preferences use existing saved data",
+      "status": "passed",
+      "duration_ms": 1981,
+      "project": "chromium"
+    },
+    {
+      "title": "Dub-inspired workspace remains readable at tablet and narrow phone widths",
+      "status": "passed",
+      "duration_ms": 2139,
+      "project": "chromium"
+    }
+  ]
+}

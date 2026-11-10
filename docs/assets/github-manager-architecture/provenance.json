@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-20",
+  "source": "Current local application code",
+  "example": "Existing authored Orion synthetic samples and published authored benchmark registry; documentation workspace 0:samples and revision 1 are illustrative.",
+  "model_settings": "Code defaults, not a reading of backend/.env or a claim about a live run's overrides.",
+  "real_network_requests": 0,
+  "live_generations": 0,
+  "mock_serializations": 2,
+  "app_state_writes": 0,
+  "registry_source": "eval/ai-system-design/publication/v2/examples/registry.json",
+  "source_sha256": {
+    "backend/app/demo/service.py": "5ce799b003763e79f1c17f9acb7a4c89c14ea6067a83812b6327f679101c5eef",
+    "backend/app/demo/evidence.py": "0d8e5c5e7235cb23638d675a9ee8669e34b58432cfc6e65a309d3bb36228e99b",
+    "backend/app/demo/cohorts.py": "49e67325568ddf009640f754f75e2c8990fc89fb4774752e8bac8e42c890c30f",
+    "backend/app/demo/taxonomy_review.py": "97f5dd9fe78ee8f70b7e4a7ea304f214614a016c212d3c73d8fac21ecd852a5f",
+    "backend/app/pretest/ai/evidence.py": "ba1194e2f1bf8e0c9b38b532f2b0655331f7cd2d9450c199eddfd7595adda0e2",
+    "backend/app/pretest/ai/chains.py": "2721d1b6aa893d5c1807f3f664c99d4414fc444bfa32228f8be01c793567710a",
+    "backend/app/pretest/ai/schemas.py": "40c025ffe9478f4976f82ed4efcd5d1ffef5f626bf541e9bdb864a748a2501b0",
+    "backend/app/pretest/ai/provider.py": "cede3419af589650680f139950e85016b6417510d83ba66ed62cc78160e677e3",
+    "backend/app/pretest/ai/settings.py": "e3ba154c12200636c18aafd982685779d6bbae35409bfa824da2abe9fc427397"
+  }
+}

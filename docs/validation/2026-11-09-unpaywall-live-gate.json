@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-09",
+  "scope": "Actual live-profile UI and server-side missing-contact gate; no upstream or OpenAI call",
+  "conversation_id": "47bcc59999a24d7f8fcff7269573329a",
+  "provider": "unpaywall",
+  "configured": false,
+  "client_submit_disabled": true,
+  "server_turn_status": "FAILED",
+  "research_attempts": 0,
+  "model_http_attempts": 0,
+  "no_alternate_provider_called": true,
+  "no_access_observation_invented": true,
+  "live_lookup": "awaiting_user_contact_email",
+  "fixture_access_end_to_end": "passed in source-expansion-integration browser case",
+  "passed": true
+}

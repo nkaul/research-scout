@@ -1,0 +1,506 @@
+{
+  "date": "2026-11-09",
+  "question": "What's the impact of how we improve the context model needs to have for better generation?",
+  "scope": "Saved live baseline; arrival order was the previous chat display order. RRF order is diagnostic; no new network calls.",
+  "runs": [
+    {
+      "id": "a2f274ec38104eb1a602706fb5556dc9",
+      "question": "What's the impact of how we improve the context model needs to have for better generation?",
+      "provider": "openalex",
+      "status": "SUCCEEDED",
+      "plan": {
+        "strategy": "hybrid",
+        "raw_per_branch": 10,
+        "raw_union": 20,
+        "fusion": {
+          "method": "rrf",
+          "rank_constant": 60,
+          "weights": {
+            "lexical": 1,
+            "semantic": 1
+          }
+        },
+        "filter_policy": "required fields must be known and pass; no relaxed constraints",
+        "actual_queries": {
+          "lexical": "What's the impact of how we improve the context model needs to have for better generation?",
+          "semantic": "What's the impact of how we improve the context model needs to have for better generation?"
+        },
+        "hard_constraints": "Only the explicit structured year/type filters are enforced; question wording is retrieval intent."
+      },
+      "usage": {
+        "research_attempts": 2,
+        "by_provider": {
+          "openalex": 2
+        },
+        "reserved_by_provider": {
+          "openalex": 0
+        }
+      },
+      "warnings": [],
+      "count": 20,
+      "previous_chat_first_ten": [
+        {
+          "source_ref": "openalex:W4412888668",
+          "title": "The Seventh Generation Pharmacist",
+          "branch_ranks": {
+            "lexical": 1
+          },
+          "rank_score": 0.01639344262295082
+        },
+        {
+          "source_ref": "openalex:W4366085242",
+          "title": "What Can Africa Learn from a Better Understanding of the Interaction among Growth, Inequality and Poverty in the Fight against the COVID-19 Pandemic?",
+          "branch_ranks": {
+            "lexical": 2
+          },
+          "rank_score": 0.016129032258064516
+        },
+        {
+          "source_ref": "openalex:W7111649377",
+          "title": "A matter of resources: how sustainability interacts with digitalization and financial performance",
+          "branch_ranks": {
+            "lexical": 3
+          },
+          "rank_score": 0.015873015873015872
+        },
+        {
+          "source_ref": "openalex:W7154494535",
+          "title": "What’s New in Biologics",
+          "branch_ranks": {
+            "lexical": 4
+          },
+          "rank_score": 0.015625
+        },
+        {
+          "source_ref": "openalex:W4396691556",
+          "title": "Transforming agricultural research and development systems to meet 21st Century needs for climate action",
+          "branch_ranks": {
+            "lexical": 5
+          },
+          "rank_score": 0.015384615384615385
+        },
+        {
+          "source_ref": "openalex:W4401464278",
+          "title": "When is enough enough? Implementation science models and frameworks",
+          "branch_ranks": {
+            "lexical": 6
+          },
+          "rank_score": 0.015151515151515152
+        },
+        {
+          "source_ref": "openalex:W4386526051",
+          "title": "Editor’s Spotlight/Take 5: Does “Hoarding” Impact Interview Distribution Among Orthopaedic Surgery Residency Applicants? A Modeling Study Based on a Large Database",
+          "branch_ranks": {
+            "lexical": 7
+          },
+          "rank_score": 0.014925373134328358
+        },
+        {
+          "source_ref": "openalex:W3134236590",
+          "title": "Bioinformatics helping to mitigate the impact of COVID-19 – Editorial",
+          "branch_ranks": {
+            "lexical": 8
+          },
+          "rank_score": 0.014705882352941176
+        },
+        {
+          "source_ref": "openalex:W7134270761",
+          "title": "Growing a Better Future through Responsible Crop Protection",
+          "branch_ranks": {
+            "lexical": 9
+          },
+          "rank_score": 0.014492753623188406
+        },
+        {
+          "source_ref": "openalex:W4396704609",
+          "title": "Effective communication skills: What engineers need most and least want",
+          "branch_ranks": {
+            "lexical": 10
+          },
+          "rank_score": 0.014285714285714285
+        }
+      ],
+      "rrf_first_ten": [
+        {
+          "source_ref": "openalex:W4387355352",
+          "title": "Attention Sorting Combats Recency Bias In Long Context Language Models",
+          "branch_ranks": {
+            "semantic": 1
+          },
+          "rank_score": 0.01639344262295082
+        },
+        {
+          "source_ref": "openalex:W4412888668",
+          "title": "The Seventh Generation Pharmacist",
+          "branch_ranks": {
+            "lexical": 1
+          },
+          "rank_score": 0.01639344262295082
+        },
+        {
+          "source_ref": "openalex:W4366085242",
+          "title": "What Can Africa Learn from a Better Understanding of the Interaction among Growth, Inequality and Poverty in the Fight against the COVID-19 Pandemic?",
+          "branch_ranks": {
+            "lexical": 2
+          },
+          "rank_score": 0.016129032258064516
+        },
+        {
+          "source_ref": "openalex:W4415796230",
+          "title": "ContextCite: Attributing Model Generation to Context",
+          "branch_ranks": {
+            "semantic": 2
+          },
+          "rank_score": 0.016129032258064516
+        },
+        {
+          "source_ref": "openalex:W4404390869",
+          "title": "Sufficient Context: A New Lens on Retrieval Augmented Generation Systems",
+          "branch_ranks": {
+            "semantic": 3
+          },
+          "rank_score": 0.015873015873015872
+        },
+        {
+          "source_ref": "openalex:W7111649377",
+          "title": "A matter of resources: how sustainability interacts with digitalization and financial performance",
+          "branch_ranks": {
+            "lexical": 3
+          },
+          "rank_score": 0.015873015873015872
+        },
+        {
+          "source_ref": "openalex:W2903887887",
+          "title": "Context based Text-generation using LSTM networks",
+          "branch_ranks": {
+            "semantic": 4
+          },
+          "rank_score": 0.015625
+        },
+        {
+          "source_ref": "openalex:W7154494535",
+          "title": "What’s New in Biologics",
+          "branch_ranks": {
+            "lexical": 4
+          },
+          "rank_score": 0.015625
+        },
+        {
+          "source_ref": "openalex:W4396691556",
+          "title": "Transforming agricultural research and development systems to meet 21st Century needs for climate action",
+          "branch_ranks": {
+            "lexical": 5
+          },
+          "rank_score": 0.015384615384615385
+        },
+        {
+          "source_ref": "openalex:W4406890592",
+          "title": "Provence: efficient and robust context pruning for retrieval-augmented generation",
+          "branch_ranks": {
+            "semantic": 5
+          },
+          "rank_score": 0.015384615384615385
+        }
+      ]
+    },
+    {
+      "id": "b6360ea426e54cd0aa73cc2fcf0cc7e5",
+      "question": "What's the impact of how we improve the context model needs to have for better generation?",
+      "provider": "crossref",
+      "status": "SUCCEEDED",
+      "plan": {
+        "strategy": "hybrid",
+        "raw_per_branch": 20,
+        "raw_union": 20,
+        "fusion": {
+          "method": "rrf",
+          "rank_constant": 60,
+          "weights": {
+            "lexical": 1,
+            "semantic": 1
+          }
+        },
+        "filter_policy": "required fields must be known and pass; no relaxed constraints",
+        "actual_queries": {
+          "lexical": "What's the impact of how we improve the context model needs to have for better generation?",
+          "semantic": "What's the impact of how we improve the context model needs to have for better generation?"
+        },
+        "hard_constraints": "Only the explicit structured year/type filters are enforced; question wording is retrieval intent.",
+        "semantic_scope": "same-provider lexical candidate pool; no independent semantic recall"
+      },
+      "usage": {
+        "research_attempts": 0,
+        "by_provider": {
+          "crossref": 0
+        },
+        "reserved_by_provider": {
+          "crossref": 0
+        }
+      },
+      "warnings": [],
+      "count": 20,
+      "previous_chat_first_ten": [
+        {
+          "source_ref": "crossref:10.59350/en017-zde95",
+          "title": "What's the Story, Learning Glory? How we can start telling better stories about teaching in Higher Education",
+          "branch_ranks": {
+            "lexical": 1,
+            "semantic": 14
+          },
+          "rank_score": 0.029906956136464335
+        },
+        {
+          "source_ref": "crossref:10.59350/oreilly.11284",
+          "title": "What's the Story, Learning Glory? How we can start telling better stories about teaching in Higher Education",
+          "branch_ranks": {
+            "lexical": 2,
+            "semantic": 15
+          },
+          "rank_score": 0.02946236559139785
+        },
+        {
+          "source_ref": "crossref:10.2139/ssrn.3962685",
+          "title": "Impact and Outcomes Frameworks: Why We Have Them, How We Got Them, How We Use Them",
+          "branch_ranks": {
+            "lexical": 3,
+            "semantic": 2
+          },
+          "rank_score": 0.03200204813108039
+        },
+        {
+          "source_ref": "crossref:10.55140/2782-5817-2022-2-3-29-34",
+          "title": "We Have the Money, but We Need a Business Model: How a Social Entrepreneur Can Find an Impact Investor",
+          "branch_ranks": {
+            "lexical": 4,
+            "semantic": 10
+          },
+          "rank_score": 0.029910714285714284
+        },
+        {
+          "source_ref": "crossref:10.15530/urtec-2022-3723907",
+          "title": "How Much Better Could We Have Done? Using a Time Machine Method to Quantify the Impact of Incremental Geologic data on Machine Learning Forecast Accuracy",
+          "branch_ranks": {
+            "lexical": 5,
+            "semantic": 16
+          },
+          "rank_score": 0.02854251012145749
+        },
+        {
+          "source_ref": "crossref:10.1097/coa.0000000000000006",
+          "title": "Treatment Trials for Viral Conjunctivitis: What We Have Learned and How We can Improve",
+          "branch_ranks": {
+            "lexical": 6,
+            "semantic": 20
+          },
+          "rank_score": 0.027651515151515153
+        },
+        {
+          "source_ref": "crossref:10.21203/rs.3.rs-1981191/v1",
+          "title": "Supervision of redeployed surgical trainees during the COVID-19 pandemic: What have we learnt and how can we improve?",
+          "branch_ranks": {
+            "lexical": 7,
+            "semantic": 12
+          },
+          "rank_score": 0.028814262023217248
+        },
+        {
+          "source_ref": "crossref:10.2307/j.ctv2r336r4.10",
+          "title": "Do We Really Have to Cut the Budget?",
+          "branch_ranks": {
+            "lexical": 8,
+            "semantic": 5
+          },
+          "rank_score": 0.030090497737556562
+        },
+        {
+          "source_ref": "crossref:10.1039/d0md00062k",
+          "title": "Chemotherapy for human schistosomiasis: how far have we come? What's new? Where do we go from here?",
+          "branch_ranks": {
+            "lexical": 9,
+            "semantic": 19
+          },
+          "rank_score": 0.02715098147128967
+        },
+        {
+          "source_ref": "crossref:10.1177/13623613231164495",
+          "title": "To better meet the needs of autistic people, we need to rethink how we measure services",
+          "branch_ranks": {
+            "lexical": 10,
+            "semantic": 4
+          },
+          "rank_score": 0.029910714285714284
+        }
+      ],
+      "rrf_first_ten": [
+        {
+          "source_ref": "crossref:10.2139/ssrn.3962685",
+          "title": "Impact and Outcomes Frameworks: Why We Have Them, How We Got Them, How We Use Them",
+          "branch_ranks": {
+            "lexical": 3,
+            "semantic": 2
+          },
+          "rank_score": 0.03200204813108039
+        },
+        {
+          "source_ref": "crossref:10.3390/insects12050377",
+          "title": "Insect Cultural Services: How Insects Have Changed Our Lives and How Can We Do Better for Them",
+          "branch_ranks": {
+            "lexical": 13,
+            "semantic": 1
+          },
+          "rank_score": 0.03009207275993712
+        },
+        {
+          "source_ref": "crossref:10.2307/j.ctv2r336r4.10",
+          "title": "Do We Really Have to Cut the Budget?",
+          "branch_ranks": {
+            "lexical": 8,
+            "semantic": 5
+          },
+          "rank_score": 0.030090497737556562
+        },
+        {
+          "source_ref": "crossref:10.1177/13623613231164495",
+          "title": "To better meet the needs of autistic people, we need to rethink how we measure services",
+          "branch_ranks": {
+            "lexical": 10,
+            "semantic": 4
+          },
+          "rank_score": 0.029910714285714284
+        },
+        {
+          "source_ref": "crossref:10.55140/2782-5817-2022-2-3-29-34",
+          "title": "We Have the Money, but We Need a Business Model: How a Social Entrepreneur Can Find an Impact Investor",
+          "branch_ranks": {
+            "lexical": 4,
+            "semantic": 10
+          },
+          "rank_score": 0.029910714285714284
+        },
+        {
+          "source_ref": "crossref:10.59350/en017-zde95",
+          "title": "What's the Story, Learning Glory? How we can start telling better stories about teaching in Higher Education",
+          "branch_ranks": {
+            "lexical": 1,
+            "semantic": 14
+          },
+          "rank_score": 0.029906956136464335
+        },
+        {
+          "source_ref": "crossref:10.1136/bmj.p744",
+          "title": "How can we make better use of ethnicity data to improve healthcare services?",
+          "branch_ranks": {
+            "lexical": 12,
+            "semantic": 3
+          },
+          "rank_score": 0.02976190476190476
+        },
+        {
+          "source_ref": "crossref:10.59350/oreilly.11284",
+          "title": "What's the Story, Learning Glory? How we can start telling better stories about teaching in Higher Education",
+          "branch_ranks": {
+            "lexical": 2,
+            "semantic": 15
+          },
+          "rank_score": 0.02946236559139785
+        },
+        {
+          "source_ref": "crossref:10.21203/rs.3.rs-1981191/v1",
+          "title": "Supervision of redeployed surgical trainees during the COVID-19 pandemic: What have we learnt and how can we improve?",
+          "branch_ranks": {
+            "lexical": 7,
+            "semantic": 12
+          },
+          "rank_score": 0.028814262023217248
+        },
+        {
+          "source_ref": "crossref:10.15530/urtec-2022-3723907",
+          "title": "How Much Better Could We Have Done? Using a Time Machine Method to Quantify the Impact of Incremental Geologic data on Machine Learning Forecast Accuracy",
+          "branch_ranks": {
+            "lexical": 5,
+            "semantic": 16
+          },
+          "rank_score": 0.02854251012145749
+        }
+      ]
+    },
+    {
+      "id": "ee54d144b573478e8c2b3b95182fdb65",
+      "question": "What's the impact of how we improve the context model needs to have for better generation?",
+      "provider": "arxiv",
+      "status": "EMPTY",
+      "plan": {
+        "strategy": "hybrid",
+        "raw_per_branch": 20,
+        "raw_union": 20,
+        "fusion": {
+          "method": "rrf",
+          "rank_constant": 60,
+          "weights": {
+            "lexical": 1,
+            "semantic": 1
+          }
+        },
+        "filter_policy": "required fields must be known and pass; no relaxed constraints",
+        "actual_queries": {
+          "lexical": "What's the impact of how we improve the context model needs to have for better generation?",
+          "semantic": "What's the impact of how we improve the context model needs to have for better generation?"
+        },
+        "hard_constraints": "Only the explicit structured year/type filters are enforced; question wording is retrieval intent.",
+        "semantic_scope": "same-provider lexical candidate pool; no independent semantic recall"
+      },
+      "usage": {
+        "research_attempts": 1,
+        "by_provider": {
+          "arxiv": 1
+        },
+        "reserved_by_provider": {
+          "arxiv": 0
+        }
+      },
+      "warnings": [],
+      "count": 0,
+      "previous_chat_first_ten": [],
+      "rrf_first_ten": []
+    },
+    {
+      "id": "393f8cddd2a347148cfa35c4b65b0cc6",
+      "question": "What's the impact of how we improve the context model needs to have for better generation?",
+      "provider": "semantic_scholar",
+      "status": "EMPTY",
+      "plan": {
+        "strategy": "hybrid",
+        "raw_per_branch": 20,
+        "raw_union": 20,
+        "fusion": {
+          "method": "rrf",
+          "rank_constant": 60,
+          "weights": {
+            "lexical": 1,
+            "semantic": 1
+          }
+        },
+        "filter_policy": "required fields must be known and pass; no relaxed constraints",
+        "actual_queries": {
+          "lexical": "What's the impact of how we improve the context model needs to have for better generation?",
+          "semantic": "What's the impact of how we improve the context model needs to have for better generation?"
+        },
+        "hard_constraints": "Only the explicit structured year/type filters are enforced; question wording is retrieval intent.",
+        "semantic_scope": "same-provider lexical candidate pool; no independent semantic recall"
+      },
+      "usage": {
+        "research_attempts": 1,
+        "by_provider": {
+          "semantic_scholar": 1
+        },
+        "reserved_by_provider": {
+          "semantic_scholar": 0
+        }
+      },
+      "warnings": [],
+      "count": 0,
+      "previous_chat_first_ten": [],
+      "rrf_first_ten": []
+    }
+  ]
+}

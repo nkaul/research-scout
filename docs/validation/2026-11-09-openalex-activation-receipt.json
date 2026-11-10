@@ -1,0 +1,35 @@
+{
+  "observed_at": "2026-11-10T00:07:31.714187+00:00",
+  "local_date": "2026-11-09",
+  "timezone": "America/New_York",
+  "authentication": {
+    "configured": true,
+    "method": "oauth_store",
+    "refreshable": true,
+    "needs_reconnect": false
+  },
+  "credential_file_mode": "0o600",
+  "credential_file_ignored": true,
+  "preflight_passed": true,
+  "ui_passed": true,
+  "year_filter": {
+    "year_from": 2024,
+    "year_to": 2026,
+    "resource_type": null
+  },
+  "eligible_source_count": 14,
+  "research_tool_calls_this_activation": 5,
+  "hosted_model_http_attempts": 0,
+  "focused_provider_regressions_passed": 8,
+  "credential_leak_paths": [],
+  "broken_local_links": [],
+  "source_and_evidence_sha256": {
+    "docs/validation/2026-11-09-openalex-live-integration.json": "92d3430de1a6ab96911d3da4a87983007a6c8b9a456d56070f3ae29ca38dd2f6",
+    "docs/validation/2026-11-09-openalex-live-ui.json": "1bba1d1d3225ce8b3337408b729b9be7cc606fd39946c6a0d5f4797afaafb3bd",
+    "system-design/openalex-connection-2026-11-09.md": "fa72bdf09ac6dfeb250729f309bf19d22e894836175e01a67badcdbc8de6a4c5",
+    "src/research_scout/providers/oauth.py": "361cc48642cb49600ca00d7a4b667b8b5dffd601082eed6bb9ef95825b78eb60",
+    "src/research_scout/providers/adapters.py": "e66a752915e4f8854454da8b7f5ab15197a64953c2d66174ca31ab1e18d2c967",
+    "scripts/connect_openalex.py": "69b3799ae654b4a655ded566c7d4b0c919d145c73a49989cb948e3ccff266381"
+  },
+  "passed": true
+}

@@ -1,0 +1,113 @@
+{
+  "date": "2026-11-09",
+  "timezone": "America/New_York",
+  "scope": "One actual UI-submitted Unpaywall DOI lookup through core and independent live access service; user-authorized contact configured privately.",
+  "conversation_id": "81e79327bc4044c78ced2be07bdfb39f",
+  "turn_id": "d0123203f3074387a1f36402130ac59a",
+  "url": "http://127.0.0.1:3100/?conversation=81e79327bc4044c78ced2be07bdfb39f#turn-d0123203f3074387a1f36402130ac59a",
+  "doi": "10.1038/nature12373",
+  "status": "SUCCEEDED",
+  "access": {
+    "provider": "unpaywall",
+    "doi": "10.1038/nature12373",
+    "is_oa": true,
+    "oa_status": "bronze",
+    "best_oa_location": {
+      "url": "https://www.nature.com/articles/nature12373.pdf",
+      "url_for_pdf": "https://www.nature.com/articles/nature12373.pdf",
+      "url_for_landing_page": "https://doi.org/10.1038/nature12373",
+      "license": null,
+      "version": "publishedVersion",
+      "host_type": "publisher",
+      "evidence": "deprecated",
+      "is_best": true
+    },
+    "oa_locations": [
+      {
+        "url": "https://www.nature.com/articles/nature12373.pdf",
+        "url_for_pdf": "https://www.nature.com/articles/nature12373.pdf",
+        "url_for_landing_page": "https://doi.org/10.1038/nature12373",
+        "license": null,
+        "version": "publishedVersion",
+        "host_type": "publisher",
+        "evidence": "deprecated",
+        "is_best": true
+      },
+      {
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/4221854",
+        "url_for_pdf": null,
+        "url_for_landing_page": "https://www.ncbi.nlm.nih.gov/pmc/articles/4221854",
+        "license": null,
+        "version": "acceptedVersion",
+        "host_type": "repository",
+        "evidence": "deprecated",
+        "is_best": false
+      },
+      {
+        "url": "https://arxiv.org/pdf/1304.1068",
+        "url_for_pdf": "https://arxiv.org/pdf/1304.1068",
+        "url_for_landing_page": "http://arxiv.org/abs/1304.1068",
+        "license": null,
+        "version": "submittedVersion",
+        "host_type": "repository",
+        "evidence": "deprecated",
+        "is_best": false
+      },
+      {
+        "url": "http://nrs.harvard.edu/urn-3:HUL.InstRepos:12285462",
+        "url_for_pdf": null,
+        "url_for_landing_page": "http://nrs.harvard.edu/urn-3:HUL.InstRepos:12285462",
+        "license": "cc-by",
+        "version": "submittedVersion",
+        "host_type": "repository",
+        "evidence": "deprecated",
+        "is_best": false
+      },
+      {
+        "url": "https://doi.org/10.48550/arxiv.1304.1068",
+        "url_for_pdf": null,
+        "url_for_landing_page": "https://doi.org/10.48550/arxiv.1304.1068",
+        "license": null,
+        "version": null,
+        "host_type": "repository",
+        "evidence": "deprecated",
+        "is_best": false
+      }
+    ],
+    "observed_at": "2026-11-10T01:46:37.613456+00:00",
+    "version": "0eb7b05dbd7944de948d",
+    "mode": "live",
+    "warnings": [],
+    "truncated_locations": 0
+  },
+  "usage": {
+    "research_attempts": 1,
+    "model_http_attempts": 0,
+    "model_cost_usd": 0
+  },
+  "activity": [
+    {
+      "provider": "unpaywall",
+      "operation": "access",
+      "status": "completed",
+      "attempts": 1,
+      "source_count": 0,
+      "access_location_count": 5
+    }
+  ],
+  "other_providers_queried": false,
+  "papers_or_abstracts_invented": false,
+  "files_downloaded": false,
+  "saved_reload_zero_new_calls": true,
+  "viewports_without_overflow": [
+    1440,
+    390,
+    320
+  ],
+  "page_errors": [],
+  "contact_value_disclosed": false,
+  "provider_verified_capabilities": [
+    "access"
+  ],
+  "passed": true
+}

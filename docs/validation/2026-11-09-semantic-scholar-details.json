@@ -1,0 +1,11 @@
+{
+  "observed_at": "2026-11-09T23:44:27.424972+00:00",
+  "scope": "One explicit Semantic Scholar detail capability probe through actual independent live process; no retry.",
+  "http_status": 200,
+  "provider": "semantic_scholar",
+  "mode": "live",
+  "attempts": 1,
+  "error": null,
+  "source_ref": "semantic_scholar:f8d2a86f907056af39c6ac8490ca3570112fa772",
+  "model_http_attempts": 0
+}

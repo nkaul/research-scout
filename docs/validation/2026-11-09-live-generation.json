@@ -1,0 +1,124 @@
+{
+  "date": "2026-11-09",
+  "timezone": "America/New_York",
+  "scope": "One actual UI-triggered Responses SSE answer over saved OpenAlex evidence; no new research calls.",
+  "conversation_id": "e872132dac1c4071bb7909daac55be4f",
+  "turn_id": "534ff8cc0e1240b6bb82303054f53173",
+  "url": "http://127.0.0.1:3100/?conversation=e872132dac1c4071bb7909daac55be4f",
+  "status": "SUCCEEDED",
+  "generation": {
+    "status": "completed",
+    "model": "gpt-6-luna",
+    "profile": "demo",
+    "omitted_source_count": 8,
+    "reservation_usd": 0.05,
+    "delta_events": 286,
+    "input_tokens": 1233,
+    "output_tokens": 290,
+    "cost_usd": 0.000299125,
+    "cost_basis": "conservative upper bound: all input at possible cache-write premium; output at standard rate; not invoice cost",
+    "cost_is_estimate": true,
+    "actual_model": "gpt-6-luna",
+    "validation": {
+      "references": "validated",
+      "entailment": "not automatically certified"
+    }
+  },
+  "usage": {
+    "research_attempts": 0,
+    "model_http_attempts": 1,
+    "model_cost_usd": 0.000299125,
+    "model_cost_hold_usd": 0
+  },
+  "sources_used": 6,
+  "sources_not_included": 8,
+  "citations": [
+    {
+      "label": "S1",
+      "provider": "openalex",
+      "run_id": "28336d5ce6254ef9be39856bfb7052e0",
+      "source_ref": "openalex:W4410705984",
+      "observation_version": "53585ffaf7dde273f3d8"
+    },
+    {
+      "label": "S2",
+      "provider": "openalex",
+      "run_id": "28336d5ce6254ef9be39856bfb7052e0",
+      "source_ref": "openalex:W4416379250",
+      "observation_version": "24fe84537016f0fd6e53"
+    },
+    {
+      "label": "S3",
+      "provider": "openalex",
+      "run_id": "28336d5ce6254ef9be39856bfb7052e0",
+      "source_ref": "openalex:W4402670290",
+      "observation_version": "4d0d0b675910c17d182f"
+    },
+    {
+      "label": "S4",
+      "provider": "openalex",
+      "run_id": "28336d5ce6254ef9be39856bfb7052e0",
+      "source_ref": "openalex:W4406771321",
+      "observation_version": "fa8dc76ded4c8351d8a5"
+    },
+    {
+      "label": "S5",
+      "provider": "openalex",
+      "run_id": "28336d5ce6254ef9be39856bfb7052e0",
+      "source_ref": "openalex:W4406031095",
+      "observation_version": "b33cdef21d2f589e6cb4"
+    },
+    {
+      "label": "S6",
+      "provider": "openalex",
+      "run_id": "28336d5ce6254ef9be39856bfb7052e0",
+      "source_ref": "openalex:W4411120544",
+      "observation_version": "8a2def7379337a411088"
+    }
+  ],
+  "activity": [
+    {
+      "provider": "openai",
+      "operation": "generation",
+      "status": "completed",
+      "attempts": 1,
+      "source_count": 0
+    }
+  ],
+  "first_visible_prefix_ms": 2260,
+  "completed_ms": 20358,
+  "raw_text_delta_events": 286,
+  "distinct_rendered_partial_prefixes": 7,
+  "rendered_partial_lengths": [
+    3,
+    65,
+    121,
+    158,
+    246,
+    359,
+    616
+  ],
+  "final_answer_length": 1512,
+  "reload_zero_new_calls": true,
+  "widths_without_horizontal_overflow": [
+    1440,
+    390,
+    320
+  ],
+  "page_errors": [],
+  "credential_catalog_requests": {
+    "rejected_credential": 1,
+    "working_authorized_credential": 1,
+    "generation_requests": 1
+  },
+  "passed": true,
+  "review_url": "http://127.0.0.1:3100/?conversation=e872132dac1c4071bb7909daac55be4f#turn-534ff8cc0e1240b6bb82303054f53173",
+  "qualitative_review": {
+    "scope": "One metadata-level example, manual comparison of saved answer with six previews",
+    "missing_abstract_limits_disclosed": true,
+    "truncated_excerpt_limits_disclosed": true,
+    "comparative_effectiveness_not_claimed": true,
+    "citation_identity_validation": "passed",
+    "claim_entailment_benchmark": "not performed"
+  }
+}

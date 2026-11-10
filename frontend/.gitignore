@@ -1,0 +1,4 @@
+node_modules/
+.next/
+.browser-cache/
+tsconfig.tsbuildinfo

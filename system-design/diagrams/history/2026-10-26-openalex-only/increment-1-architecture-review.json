@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-26",
+  "title": "Research Scout \u2014 Phase 1 Architecture",
+  "status": "Proposed Increment 1 architecture; no application deployment claim",
+  "generation_mode": "built-in image generation",
+  "image_tool_requests": 2,
+  "application_research_provider_or_model_calls": 0,
+  "selected_asset": "increment-1-architecture.png",
+  "sha256": "0a519066656e4c96a1991851032ffed2db11ce957c7981fd814646e22d377647",
+  "width": 1672,
+  "height": 941,
+  "source_documents": [
+    {
+      "path": "system-design/architecture.md",
+      "sha256": "c79dde5295faf67e09e6bfe00184fd2d7c6b45ada0ba48fa538f68f660639979"
+    },
+    {
+      "path": "system-design/increment-1.md",
+      "sha256": "a14c0cdbaa10ef54d4b00762c534dfa96c8122fdd24e37bd52c3ae12f75412d6"
+    }
+  ],
+  "style_reference": {
+    "path": ".agents/skills/illustrated-explainers/assets/style-overview.png",
+    "sha256": "b7595378eb5eb6a3b28a12ef710e4c88893f1715aa6afb6502863a7128346ca9",
+    "usage": "Visually inspected for style; original architecture content not copied"
+  },
+  "prompt_file": "increment-1-architecture-prompt.md",
+  "visual_review": {
+    "status": "reviewed",
+    "correction": "Replaced the draft local-MCP-to-provider-adapter bypass with local MCP to shared Python services.",
+    "checks": [
+      "Proposed status and model/storage decisions remain explicit",
+      "Coordinator delegates once to discovery specialist",
+      "Specialist search passes through local application MCP and shared services before provider adapter",
+      "Human review/details branch uses Python API and shared services",
+      "Local state is behind domain services; no direct browser persistence edge",
+      "Exports use saved revisions and are labeled provisional",
+      "Only OpenAlex appears as an external research provider",
+      "Metadata/abstract scope and future DOI/full-text work remain explicit"
+    ],
+    "limitations": [
+      "Conceptual illustration; exact contracts and limits remain in the source design documents."
+    ]
+  },
+  "independent_semantic_review": {
+    "agent": "Interim Research",
+    "result": "pass",
+    "scope": "Actual final PNG: roles, MCP boundaries, service routing, human decisions, exports, scope and legibility. No material semantic errors found."
+  },
+  "source_documents_after_integration": [
+    {
+      "path": "system-design/architecture.md",
+      "sha256": "ccbc85e1985282904ca4e4b0c78bddfb378b3491498513b49f05a65fb5f78b82"
+    },
+    {
+      "path": "system-design/increment-1.md",
+      "sha256": "eb2fdf497b599323ee2db4e7622fe1586745c1334d774ab323ede1e3483d4cda"
+    }
+  ],
+  "source_snapshot_note": "Original source hashes identify the generation context; post-integration hashes include illustration links and UX-reference notes."
+}

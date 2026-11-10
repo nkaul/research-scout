@@ -1,0 +1,395 @@
+{
+  "date": "2026-11-09",
+  "scope": "Actual OpenAIRE UI search after explicit-null field normalization fix; LangGraph/DeepAgents/application MCP/live provider/local reranking; no OpenAI calls.",
+  "providers": [
+    {
+      "provider": "openaire",
+      "query": "retrieval augmented generation",
+      "integrated_route": "actual_ui_deepagents_mcp_provider_service",
+      "passed": true,
+      "conversation_id": "19c1755db1c14109935c041bed208740",
+      "url": "http://127.0.0.1:3100/?conversation=19c1755db1c14109935c041bed208740",
+      "turn_id": "efda8b3aadf543aca2b906abc332e7a9",
+      "status": "SUCCEEDED",
+      "run_ids": [
+        "9526cdeeac5f4b78be93b215e8cebc49"
+      ],
+      "usage": {
+        "research_attempts": 1,
+        "model_http_attempts": 0,
+        "model_cost_usd": 0
+      },
+      "activity": [
+        {
+          "provider": "openaire",
+          "operation": "hybrid_search",
+          "status": "SUCCEEDED",
+          "attempts": 1,
+          "source_count": 20
+        }
+      ],
+      "warnings": [],
+      "run_status": "SUCCEEDED",
+      "branch_status": {
+        "lexical": "succeeded",
+        "semantic": "succeeded"
+      },
+      "sources": [
+        {
+          "source_ref": "openaire:doi_dedup___::36f6e19b0236f9b2abbcd0a3204d5348",
+          "version": "1055623ec4eacd59b9fe",
+          "year": 2025,
+          "mode": "live",
+          "abstract_chars": 0,
+          "description_chars": 0,
+          "content_state": "metadata"
+        },
+        {
+          "source_ref": "openaire:doi_dedup___::88b72d51158f9c45208906340319166e",
+          "version": "edd651e62b2a2b6e2be4",
+          "year": 2024,
+          "mode": "live",
+          "abstract_chars": 0,
+          "description_chars": 0,
+          "content_state": "metadata"
+        },
+        {
+          "source_ref": "openaire:doi_dedup___::26fe08ed698e0de33fdce45f203d68ad",
+          "version": "eeebc798101eefd1d289",
+          "year": 2025,
+          "mode": "live",
+          "abstract_chars": 0,
+          "description_chars": 0,
+          "content_state": "metadata"
+        },
+        {
+          "source_ref": "openaire:doi_________::767c9349f53472197880fb39c8cf455c",
+          "version": "bfaa2a5dfff7613a6fcc",
+          "year": 2025,
+          "mode": "live",
+          "abstract_chars": 0,
+          "description_chars": 0,
+          "content_state": "metadata"
+        },
+        {
+          "source_ref": "openaire:doi_________::85741f326a5c4fffd443b2fe9613841b",
+          "version": "d67cdbbf1193ec2140ba",
+          "year": 2024,
+          "mode": "live",
+          "abstract_chars": 0,
+          "description_chars": 66,
+          "content_state": "description"
+        },
+        {
+          "source_ref": "openaire:doi_dedup___::845d0c13e80fcc42c51493a3deae5a3f",
+          "version": "b3b8e6a355d38293a0bc",
+          "year": 2025,
+          "mode": "live",
+          "abstract_chars": 0,
+          "description_chars": 0,
+          "content_state": "metadata"
+        },
+        {
+          "source_ref": "openaire:doi_________::08614177b843398aa35c0fb0ccf8773d",
+          "version": "9c772ab3c178ce3afd49",
+          "year": 2025,
+          "mode": "live",
+          "abstract_chars": 0,
+          "description_chars": 0,
+          "content_state": "metadata"
+        },
+        {
+          "source_ref": "openaire:doi_________::09622c65823b2f42271cb839ed2cf523",
+          "version": "c2f253a80daa65bc5888",
+          "year": 2025,
+          "mode": "live",
+          "abstract_chars": 0,
+          "description_chars": 0,
+          "content_state": "metadata"
+        },
+        {
+          "source_ref": "openaire:doi_dedup___::c0db22bc77de9a89e3dbcc2e100981fe",
+          "version": "894e62af9ec79874cf12",
+          "year": 2025,
+          "mode": "live",
+          "abstract_chars": 0,
+          "description_chars": 0,
+          "content_state": "metadata"
+        },
+        {
+          "source_ref": "openaire:doi_dedup___::3994d70df86e464cf0ca971b4ea3f157",
+          "version": "35cf68829f4bd359c6a4",
+          "year": 2025,
+          "mode": "live",
+          "abstract_chars": 0,
+          "description_chars": 0,
+          "content_state": "metadata"
+        },
+        {
+          "source_ref": "openaire:doi_________::9494d30fb63f11eea186d8e0c01d5da6",
+          "version": "b3af201f5ad89dbf55e2",
+          "year": 2026,
+          "mode": "live",
+          "abstract_chars": 0,
+          "description_chars": 0,
+          "content_state": "metadata"
+        },
+        {
+          "source_ref": "openaire:doi_dedup___::697c6073ab615157c96295f8ceee06bd",
+          "version": "939dd791b557739e77c1",
+          "year": 2024,
+          "mode": "live",
+          "abstract_chars": 0,
+          "description_chars": 0,
+          "content_state": "metadata"
+        },
+        {
+          "source_ref": "openaire:doi_dedup___::7da1ac384e8f2c9567558777ffc003ca",
+          "version": "1d14e5357a61539c60f8",
+          "year": 2025,
+          "mode": "live",
+          "abstract_chars": 0,
+          "description_chars": 0,
+          "content_state": "metadata"
+        },
+        {
+          "source_ref": "openaire:doi_dedup___::5c9b1badd6eccd204778d09bbb7b13de",
+          "version": "70dc28fd43380c8e9d3f",
+          "year": 2025,
+          "mode": "live",
+          "abstract_chars": 0,
+          "description_chars": 0,
+          "content_state": "metadata"
+        },
+        {
+          "source_ref": "openaire:doi_dedup___::de3941931b27cb9472dc350d40699f88",
+          "version": "404d000628cc9f97d63c",
+          "year": 2025,
+          "mode": "live",
+          "abstract_chars": 0,
+          "description_chars": 0,
+          "content_state": "metadata"
+        },
+        {
+          "source_ref": "openaire:doi_dedup___::2a24fffbde01526ddec6a4a8396ce1ea",
+          "version": "3a7d63647153a0bffd67",
+          "year": 2025,
+          "mode": "live",
+          "abstract_chars": 0,
+          "description_chars": 106,
+          "content_state": "description"
+        },
+        {
+          "source_ref": "openaire:doi_dedup___::ebcdd8bee7e46bb5117afa78caccf2fc",
+          "version": "c5a56c2091971822e200",
+          "year": 2025,
+          "mode": "live",
+          "abstract_chars": 0,
+          "description_chars": 0,
+          "content_state": "metadata"
+        },
+        {
+          "source_ref": "openaire:doi_dedup___::1fcc2cdb64e563265209677897453731",
+          "version": "fa42fa00eb2cd9825bf7",
+          "year": 2025,
+          "mode": "live",
+          "abstract_chars": 0,
+          "description_chars": 0,
+          "content_state": "metadata"
+        },
+        {
+          "source_ref": "openaire:doi_dedup___::01e13ea5d9972f030a6ac70f3e9828b7",
+          "version": "921ba3b3219c2c7b306f",
+          "year": 2025,
+          "mode": "live",
+          "abstract_chars": 0,
+          "description_chars": 0,
+          "content_state": "metadata"
+        },
+        {
+          "source_ref": "openaire:doi_dedup___::4012f3cc62a6f30d129a5cbc059a6f95",
+          "version": "2de8b50652f6eb65b8b1",
+          "year": 2025,
+          "mode": "live",
+          "abstract_chars": 0,
+          "description_chars": 0,
+          "content_state": "metadata"
+        }
+      ],
+      "source_count": 20,
+      "abstract_count": 0,
+      "description_count": 2,
+      "progressive_snapshots": [
+        {
+          "at": 1794274418775,
+          "status": "QUEUED",
+          "count": 0,
+          "abstracts": 0,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274418776,
+          "status": "RUNNING",
+          "count": 0,
+          "abstracts": 0,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274419112,
+          "status": "RUNNING",
+          "count": 0,
+          "abstracts": 0,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274419112,
+          "status": "RUNNING",
+          "count": 0,
+          "abstracts": 0,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274419112,
+          "status": "RUNNING",
+          "count": 0,
+          "abstracts": 0,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274419112,
+          "status": "RUNNING",
+          "count": 0,
+          "abstracts": 0,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274419122,
+          "status": "RUNNING",
+          "count": 0,
+          "abstracts": 0,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274419162,
+          "status": "RUNNING",
+          "count": 0,
+          "abstracts": 0,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274419186,
+          "status": "RUNNING",
+          "count": 0,
+          "abstracts": 0,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274419186,
+          "status": "RUNNING",
+          "count": 0,
+          "abstracts": 0,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274419209,
+          "status": "RUNNING",
+          "count": 0,
+          "abstracts": 0,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274419209,
+          "status": "RUNNING",
+          "count": 0,
+          "abstracts": 0,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274420491,
+          "status": "RUNNING",
+          "count": 1,
+          "abstracts": 0,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274420491,
+          "status": "RUNNING",
+          "count": 4,
+          "abstracts": 0,
+          "descriptions": 0
+        },
+        {
+          "at": 1794274420563,
+          "status": "RUNNING",
+          "count": 11,
+          "abstracts": 0,
+          "descriptions": 1
+        },
+        {
+          "at": 1794274420621,
+          "status": "RUNNING",
+          "count": 14,
+          "abstracts": 0,
+          "descriptions": 1
+        },
+        {
+          "at": 1794274420778,
+          "status": "RUNNING",
+          "count": 20,
+          "abstracts": 0,
+          "descriptions": 2
+        },
+        {
+          "at": 1794274421995,
+          "status": "RUNNING",
+          "count": 20,
+          "abstracts": 0,
+          "descriptions": 2
+        },
+        {
+          "at": 1794274422033,
+          "status": "RUNNING",
+          "count": 20,
+          "abstracts": 0,
+          "descriptions": 2
+        },
+        {
+          "at": 1794274422184,
+          "status": "RUNNING",
+          "count": 20,
+          "abstracts": 0,
+          "descriptions": 2
+        },
+        {
+          "at": 1794274422362,
+          "status": "RUNNING",
+          "count": 20,
+          "abstracts": 0,
+          "descriptions": 2
+        },
+        {
+          "at": 1794274422398,
+          "status": "SUCCEEDED",
+          "count": 20,
+          "abstracts": 0,
+          "descriptions": 2
+        },
+        {
+          "at": 1794274422398,
+          "status": "SUCCEEDED",
+          "count": 20,
+          "abstracts": 0,
+          "descriptions": 2
+        }
+      ],
+      "first_source_snapshot_ms": 1995,
+      "sources_observed_before_terminal": true,
+      "abstracts_observed_before_terminal": false,
+      "reload_zero_new_calls": true
+    }
+  ],
+  "errors": [],
+  "page_errors": [],
+  "model_http_attempts": 0,
+  "passed": true
+}

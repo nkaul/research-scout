@@ -1,0 +1,77 @@
+{
+  "$defs": {
+    "Assignment": {
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "enum": [
+            "DOMAIN",
+            "PROJECT",
+            "TOPIC",
+            "TAG"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "concept_id": {
+          "title": "Concept Id",
+          "type": "string"
+        },
+        "confidence": {
+          "title": "Confidence",
+          "type": "number"
+        },
+        "evidence_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Evidence Ids",
+          "type": "array"
+        },
+        "reason": {
+          "title": "Reason",
+          "type": "string"
+        }
+      },
+      "required": [
+        "kind",
+        "concept_id",
+        "confidence",
+        "evidence_ids",
+        "reason"
+      ],
+      "title": "Assignment",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "status": {
+      "enum": [
+        "CLASSIFIED",
+        "NO_MATCH",
+        "NEEDS_MORE_CONTEXT"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "assignments": {
+      "items": {
+        "$ref": "#/$defs/Assignment"
+      },
+      "title": "Assignments",
+      "type": "array"
+    },
+    "summary": {
+      "title": "Summary",
+      "type": "string"
+    }
+  },
+  "required": [
+    "status",
+    "assignments",
+    "summary"
+  ],
+  "title": "Classification",
+  "type": "object"
+}

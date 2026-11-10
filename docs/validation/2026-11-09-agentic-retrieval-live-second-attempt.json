@@ -1,0 +1,168 @@
+{
+  "date": "2026-11-09",
+  "question": "What's the impact of how we improve the context model needs to have for better generation?",
+  "scope": "Actual UI query planning, DeepAgents/application MCP/provider retrieval, relevance review, ranked progressive sources. One explicitly admitted live turn; no answer generation.",
+  "passed": false,
+  "config": {
+    "retrieval": {
+      "enabled": true,
+      "ready": true,
+      "status": "ready",
+      "blocked_reason": null,
+      "model": "gpt-6-luna",
+      "policy": "scout-agentic-retrieval-v1",
+      "max_rounds": 2,
+      "max_model_calls": 5,
+      "max_turn_cost_usd": 0.05,
+      "max_candidates_per_provider_round": 20
+    }
+  },
+  "conversation_id": "e22676640cb240b399725ba92912fc11",
+  "url": "http://127.0.0.1:3100/?conversation=e22676640cb240b399725ba92912fc11",
+  "turn_id": "4cbf3c29fe2245aa9ed677c35c648bb4",
+  "turn_status": "FAILED",
+  "retrieval": {
+    "status": "failed",
+    "round": 1,
+    "max_rounds": 2,
+    "model": "gpt-6-luna",
+    "max_model_calls": 5,
+    "assessments": [],
+    "rejected_count": 0,
+    "query_history": [],
+    "model_reservation_usd": 0,
+    "validation_errors": [
+      {
+        "path": "assumptions",
+        "type": "value_error"
+      }
+    ]
+  },
+  "usage": {
+    "research_attempts": 0,
+    "model_http_attempts": 1,
+    "model_cost_usd": 0.000214125
+  },
+  "activity": [
+    {
+      "provider": "openai",
+      "operation": "search_refinement",
+      "status": "failed",
+      "attempts": 1,
+      "source_count": 0
+    }
+  ],
+  "warnings": [
+    "Routing stopped (GenerationError). Check provider readiness; uncertain request outcomes remain held."
+  ],
+  "response": "This route could not complete. Saved source records remain available; no alternate provider or generated answer was substituted.",
+  "sources": [],
+  "run_ids": [],
+  "run_receipts": [],
+  "elapsed_ms": 6089,
+  "frames": [
+    {
+      "at": 1794279257860,
+      "status": "QUEUED",
+      "retrieval": "planning",
+      "round": 1,
+      "count": 0,
+      "assessed": true,
+      "providers": []
+    },
+    {
+      "at": 1794279257860,
+      "status": "RUNNING",
+      "retrieval": "planning",
+      "round": 1,
+      "count": 0,
+      "assessed": true,
+      "providers": []
+    },
+    {
+      "at": 1794279257917,
+      "status": "RUNNING",
+      "retrieval": "planning",
+      "round": 1,
+      "count": 0,
+      "assessed": true,
+      "providers": []
+    },
+    {
+      "at": 1794279257917,
+      "status": "RUNNING",
+      "retrieval": "planning",
+      "round": 1,
+      "count": 0,
+      "assessed": true,
+      "providers": []
+    },
+    {
+      "at": 1794279263306,
+      "status": "RUNNING",
+      "retrieval": "planning",
+      "round": 1,
+      "count": 0,
+      "assessed": true,
+      "providers": []
+    },
+    {
+      "at": 1794279263306,
+      "status": "RUNNING",
+      "retrieval": "planning",
+      "round": 1,
+      "count": 0,
+      "assessed": true,
+      "providers": []
+    },
+    {
+      "at": 1794279263306,
+      "status": "RUNNING",
+      "retrieval": "planning",
+      "round": 1,
+      "count": 0,
+      "assessed": true,
+      "providers": []
+    },
+    {
+      "at": 1794279263319,
+      "status": "RUNNING",
+      "retrieval": "planning",
+      "round": 1,
+      "count": 0,
+      "assessed": true,
+      "providers": []
+    },
+    {
+      "at": 1794279263319,
+      "status": "RUNNING",
+      "retrieval": "failed",
+      "round": 1,
+      "count": 0,
+      "assessed": true,
+      "providers": []
+    },
+    {
+      "at": 1794279263338,
+      "status": "FAILED",
+      "retrieval": "failed",
+      "round": 1,
+      "count": 0,
+      "assessed": true,
+      "providers": []
+    },
+    {
+      "at": 1794279263338,
+      "status": "FAILED",
+      "retrieval": "failed",
+      "round": 1,
+      "count": 0,
+      "assessed": true,
+      "providers": []
+    }
+  ],
+  "first_reviewed_sources_ms": null,
+  "progressive_reviewed_batch": false,
+  "error": "Unexpected terminal status FAILED",
+  "page_errors": []
+}

@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-26",
+  "purpose": "Source hashes captured before revised illustration generation",
+  "sources": [
+    {
+      "path": "system-design/README.md",
+      "sha256": "055d644fc8d36304afb3c1ff85bb4ba4addea183b010d4d06c6990822bebc11b"
+    },
+    {
+      "path": "system-design/architecture.md",
+      "sha256": "750c46f2a29e05c2bb267540927d4e01bda6c5bb105d8e6e85b63c0f2ffecf04"
+    },
+    {
+      "path": "system-design/increment-1.md",
+      "sha256": "7a4e8240b615683e21b305ddd70b090be18dd52af6b1ba4a5327c640ecbc0e16"
+    },
+    {
+      "path": "system-design/provider-routing.md",
+      "sha256": "0a12429c7300332efeb2a27f1287234379c7809db71fd33bf8842f5e6799c833"
+    },
+    {
+      "path": "system-design/hybrid-retrieval.md",
+      "sha256": "23285161ea71ea210d7790407764b72bfabeaca6cdabb2928be604986dc77092"
+    },
+    {
+      "path": "system-design/progressive-results.md",
+      "sha256": "94e32eee27ce582da232962339f6d993bec8367b349d2270b286e93327aa5997"
+    },
+    {
+      "path": "system-design/ux-research.md",
+      "sha256": "b18249590a6337feaae6f7f0d0f69968edca121a481a752da884a2f24b2383bf"
+    }
+  ]
+}

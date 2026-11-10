@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-09",
+  "scope": "Actual running UI over saved live OpenAlex records after explicit detail probes; no mocks and no new external/model requests in this UI review",
+  "conversation_id": "e872132dac1c4071bb7909daac55be4f",
+  "run_id": "28336d5ce6254ef9be39856bfb7052e0",
+  "abstract_sections_in_discovery_turn": 14,
+  "saved_sources_with_abstracts": 12,
+  "expanded_source": "openalex:W4416379250",
+  "expanded_abstract_chars": 1423,
+  "full_saved_abstract_rendered": true,
+  "reload_reuses_saved_details": true,
+  "prior_answer_unchanged": true,
+  "viewports_without_overflow": [
+    1440,
+    390,
+    320
+  ],
+  "new_external_requests": 0,
+  "new_openai_requests": 0,
+  "page_errors": [],
+  "passed": true
+}

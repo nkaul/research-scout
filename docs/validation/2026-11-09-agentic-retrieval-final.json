@@ -1,0 +1,76 @@
+{
+  "date": "2026-11-09",
+  "scope": "Bounded agentic retrieval and ranking, current eight-provider application. No deployment/publication.",
+  "validation": {
+    "python_passed": 225,
+    "browser_passed": 32,
+    "synthetic_harness_passed": 11,
+    "ruff": "passed",
+    "typecheck": "passed",
+    "production_build": "passed",
+    "read_only_live_ui": {
+      "abstract_visible": true,
+      "model_activity_visible": true,
+      "raw_run_scope_banner_visible": true,
+      "zero_new_calls": true
+    }
+  },
+  "live_trial": {
+    "conversation_id": "97846fde51ac46579f3301eb9d3b7612",
+    "status": "SUCCEEDED",
+    "candidate_observations_reviewed": 39,
+    "rejected_as_irrelevant": 16,
+    "displayed": 23,
+    "usage": {
+      "research_attempts": 3,
+      "model_http_attempts": 3,
+      "model_cost_usd": 0.001535875
+    },
+    "first_reviewed_batch_ms": 14836,
+    "completion_ms": 32057,
+    "progressive": true,
+    "saved_reload_zero_new_calls": true
+  },
+  "development_probe_history": {
+    "failed_planner_attempts": 2,
+    "scholarly_calls_from_failed_attempts": 0,
+    "failure": "local assumption item length limit absent from requested schema; aligned and regression-tested",
+    "model_requests_total_investigation": 5,
+    "conservative_model_cost_usd_investigation": 0.001954625
+  },
+  "privacy": {
+    "credential_or_contact_leaks_found": 0,
+    "files_scanned": 870,
+    "private_env_permissions": "0600"
+  },
+  "limits": {
+    "search_rounds": 2,
+    "selected_providers": 2,
+    "model_requests_per_turn": 5,
+    "model_reservation_usd": 0.05,
+    "workspace_model_ceiling_usd": 0.25
+  },
+  "known_limits": [
+    "Relevance labels are model judgments over metadata/excerpts, not independent ground truth.",
+    "Actual live trial needed one round; second-round repair has authored graph proof.",
+    "Full-text acquisition/passage RAG and broader independent relevance benchmarking remain open.",
+    "Legacy Search workspace stays direct; raw child runs are labeled separately from reviewed chat results."
+  ],
+  "source_sha256": {
+    "src/research_scout/retrieval.py": "a1f47a7518801c28d326532e9220fd8f999bc80a630c20e991fe84737f7359bf",
+    "src/research_scout/relevance.py": "699d28df06c90a9d0ca4dd3250649b527211767981467bd9c92e6a6ef5e4fb58",
+    "src/research_scout/conversations.py": "71bceb3acc1c894f349dc1ca6c1f4236cbad064bd7a672055cbab58f28d6851f",
+    "src/research_scout/core.py": "40604d5da7359a4c7a6b61f25651e933b413cecc7e505add29e4a9a97012ffd9",
+    "src/research_scout/contracts.py": "ef3bbcd7c253591905d6d93a1d941df3f03044f2eb6060b76aad2807336bff7c",
+    "src/research_scout/generation.py": "dc693a3bbf5aea3a34b255fa3005c923b0b1977b6e3557024a22c27e7509efcd",
+    "src/research_scout/settings.py": "2d81a498d44512da8ebc4c8c55d0a956c4e3dccf1e5dd13adb244f145111212e",
+    "src/research_scout/api.py": "00d99db86713ae0d622a7151675f838dab8976aa542f3c5333fc30cf986fedae",
+    "scripts/dev.py": "4423577e2576e7a3ed469bd3edb30e14a5bba1dc84759c8659d1bd0e9421cc07",
+    "frontend/src/components/exploration-chat.tsx": "3e10648ee85345bbcc6f42656d1a578879306e245bc04484f23d7b6d29f46a57",
+    "frontend/src/components/search-refinement.tsx": "318c1e23bf144bb01d30bc984a839f6cca3aa471993d3bbbedf9f63fe30147cc",
+    "frontend/src/components/research-workspace.tsx": "25cd9d1245d60ef2266095a47f4f8e3c1add462dc5967cfdb17d16f95572c306",
+    "frontend/src/lib/api.ts": "e6463a99d0cef276a966b49cdd0e077d7b6fb25091323f16460a92e75f2c128b",
+    "frontend/src/lib/conversations.ts": "5af4c650998e0d755aa224f7566e2e4e1e95c611d17a45a6bdaf4ca7caa0ec99",
+    "frontend/src/app/globals.css": "67c0b39153645bacf4116a153d19c20e5a69cc2a181e711bf71f9fcb50bbdade"
+  }
+}

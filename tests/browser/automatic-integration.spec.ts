@@ -1,0 +1,30 @@
+import { test, expect } from '../../frontend/node_modules/@playwright/test';
+
+test('actual fixture automatic discovery merges shared DOIs and resolves Unpaywall without source selection', async ({ page, request }) => {
+  test.skip(process.env.SCOUT_BROWSER_INTEGRATION !== '1', 'Requires explicitly started local fixture services.');
+  const configured = await request.get('/api/providers'); expect(configured.ok()).toBe(true);
+  expect((await configured.json()).providers.every((provider: { mode: string }) => provider.mode === 'fixture')).toBe(true);
+  await page.goto('/');
+  await expect(page.getByRole('checkbox', { name: 'Choose sources manually', exact: true })).not.toBeChecked();
+  await expect(page.getByLabel('Discovery provider', { exact: true })).toHaveCount(0);
+  await expect(page.getByLabel('Automatically routed resources')).toContainText('Unpaywall');
+  await page.getByLabel('Research question', { exact: true }).fill('Institutional AI readiness in higher education');
+  await page.getByRole('button', { name: 'Search', exact: true }).click();
+  await page.waitForURL(/conversation=/);
+  await expect(page.getByTestId('chat-source').first()).toBeVisible();
+  await expect(page.getByTestId('exploration-turn')).toHaveAttribute('data-status', /succeeded|partial/, { timeout: 40_000 });
+  const id = new URL(page.url()).searchParams.get('conversation');
+  const before = await (await request.get(`/api/conversations/${id}`)).json(); const turn = before.turns.at(-1);
+  expect(turn.routing).toBe('auto'); expect(turn.providers.length).toBeGreaterThanOrEqual(2);
+  expect(turn.usage.model_http_attempts).toBe(0);
+  expect(turn.papers.length).toBeLessThan(turn.sources.length);
+  expect(new Set(turn.papers.map((paper: { paper_id: string }) => paper.paper_id)).size).toBe(turn.papers.length);
+  const grouped = turn.papers.filter((paper: { doi: string; providers: string[] }) => paper.doi && paper.providers.length > 1);
+  expect(grouped.length).toBe(2);
+  expect(grouped.every((paper: { access: { status: string; observation: { provider: string } } }) => paper.access.status === 'succeeded' && paper.access.observation.provider === 'unpaywall')).toBe(true);
+  expect(turn.activity.filter((activity: { provider: string }) => activity.provider === 'unpaywall')).toHaveLength(2);
+  await expect(page.getByTestId('chat-source')).toHaveCount(turn.papers.length);
+  await page.reload(); await expect(page.getByTestId('chat-source')).toHaveCount(turn.papers.length);
+  const after = await (await request.get(`/api/conversations/${id}`)).json();
+  expect(after.turns.at(-1).usage).toEqual(turn.usage); expect(after.turns.at(-1).papers).toEqual(turn.papers);
+});
