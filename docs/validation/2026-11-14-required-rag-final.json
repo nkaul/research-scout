@@ -1,0 +1,92 @@
+{
+  "date": "2026-11-14",
+  "passed": true,
+  "scope": "Required interactive agentic topic retrieval, stable Material focus chips and recorded request/stage timing plot.",
+  "implementation": "../../system-design/required-agentic-rag-and-timing-2026-11-14.md",
+  "backend": {
+    "unique_passed": 345,
+    "skipped": 1,
+    "total": 346,
+    "initial_socket_restrictions": 7,
+    "local_protocol_recheck_passed": 7,
+    "skip_reason": "Optional real encoder proof is opt-in; no model artifact download."
+  },
+  "browser": {
+    "passed": 178,
+    "failed": 0,
+    "skipped": 0,
+    "flaky": 0,
+    "duration_seconds": 312.819,
+    "kind": "Complete final production-build run; authored mocks and8 actual fixture MCP/service/SSE cases.",
+    "required_agentic_payload": true,
+    "no_raw_topic_fallback": true,
+    "doi_and_saved_actions_preserved": true,
+    "timeline_overlap_and_inputs_verified": true,
+    "stable_accessible_chip_colors": true
+  },
+  "harness": {
+    "passed": 11,
+    "total": 11,
+    "all_passed": true,
+    "model_http_attempts": 0,
+    "evidence_kind": "authored_synthetic_fixtures_with_scripted_BaseChatModel"
+  },
+  "checks": {
+    "ruff": true,
+    "typescript": true,
+    "isolated_next_production_build": true,
+    "production_matches_current_source_files": 54,
+    "source_manifest_sha256": "2a6d27dd1532417f00bd1bc528bcdb22089ad7c3fca813b116c392c58d272de4",
+    "git_diff_check": true,
+    "active_document_links_checked": 365,
+    "missing_active_document_links": 0,
+    "owned_isolated_validation_services_stopped": true
+  },
+  "live": {
+    "evidence": "2026-11-14-required-rag-live.json",
+    "healthy_services": 11,
+    "saved_paper_cards": 58,
+    "saved_video_cards": 10,
+    "responsive_widths": [
+      1440,
+      1100,
+      970,
+      768,
+      650,
+      390,
+      320
+    ],
+    "api_writes": 0,
+    "existing_live_json_and_env_files_unchanged": 712,
+    "projects_usage_allowance_preserved": true,
+    "required_agentic_state_visible": true,
+    "no_optional_refinement_checkbox": true,
+    "actual_allowance_block_visible": true,
+    "owned_services_restarted": true
+  },
+  "timing": {
+    "persisted_stages": [
+      "model planning",
+      "provider retrieval and local ranking",
+      "recorded lexical/semantic service branches",
+      "model relevance review",
+      "query repair application",
+      "DOI access and registry"
+    ],
+    "overlap_is_unioned_not_summed": true,
+    "history_without_detailed_timing_uses_recorded_total_only": true,
+    "unfinished_terminal_work_does_not_tick": true,
+    "inputs_are_saved_audit_records": true
+  },
+  "privacy_evidence": "2026-11-14-required-rag-privacy.json",
+  "previews": [
+    "2026-11-14-required-rag-timeline-fixture-1440.png",
+    "2026-11-14-required-rag-timeline-fixture-390.png"
+  ],
+  "boundaries": [
+    "No new live provider/model call, credential edit, model allowance increase or ledger reset.",
+    "The existing local shared model allowance is spent or held; new interactive topic research correctly remains blocked until sufficient allowance is available.",
+    "Scripted model/fixture tests do not establish live retrieval or generation quality.",
+    "Low-level explicit direct API operations remain diagnostic/fixture tools, not a user-facing topic-search option."
+  ]
+}

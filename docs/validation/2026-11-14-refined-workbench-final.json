@@ -1,0 +1,149 @@
+{
+  "date": "2026-11-14",
+  "passed": true,
+  "scope": "User-approved Refined + Workbench adoption into the existing Next.js frontend; backend/provider APIs and dependencies retained.",
+  "design": "../../discovery/ux/2026-11-13-ui-polish/hybrid-design-notes.md",
+  "implementation": "../../system-design/refined-workbench-adoption-2026-11-14.md",
+  "browser": {
+    "unique_cases_passed": 163,
+    "new_cases": 15,
+    "all_cases_pass_across_runs": true,
+    "actual_fixture_integration_cases": 7,
+    "runs": [
+      {
+        "name": "hybrid-adoption-browser",
+        "total": 162,
+        "passed": 151,
+        "failed": 11,
+        "skipped": 0,
+        "flaky": 0,
+        "duration_seconds": 435.675
+      },
+      {
+        "name": "hybrid-visual-recheck",
+        "total": 6,
+        "passed": 6,
+        "failed": 0,
+        "skipped": 0,
+        "flaky": 0,
+        "duration_seconds": 7.443
+      },
+      {
+        "name": "hybrid-query-recheck",
+        "total": 32,
+        "passed": 31,
+        "failed": 1,
+        "skipped": 0,
+        "flaky": 0,
+        "duration_seconds": 50.787
+      },
+      {
+        "name": "hybrid-query-recheck-final",
+        "total": 1,
+        "passed": 1,
+        "failed": 0,
+        "skipped": 0,
+        "flaky": 0,
+        "duration_seconds": 3.37
+      },
+      {
+        "name": "hybrid-release-browser",
+        "total": 45,
+        "passed": 45,
+        "failed": 0,
+        "skipped": 0,
+        "flaky": 0,
+        "duration_seconds": 122.936
+      }
+    ],
+    "cases_per_file": {
+      "automatic-discovery.spec.ts": 3,
+      "automatic-integration.spec.ts": 1,
+      "date-slider-loading.spec.ts": 3,
+      "exploration-integration.spec.ts": 2,
+      "exploration.spec.ts": 9,
+      "hybrid-material-layout.spec.ts": 3,
+      "hybrid-performance.spec.ts": 5,
+      "hybrid-query-trace.spec.ts": 6,
+      "icon-tooltips.spec.ts": 2,
+      "load-timing.spec.ts": 3,
+      "loading-performance.spec.ts": 7,
+      "local-integration.spec.ts": 1,
+      "navigation-stability.spec.ts": 6,
+      "paper-reader-density.spec.ts": 2,
+      "papers-cards.spec.ts": 3,
+      "papers-control-panel.spec.ts": 4,
+      "pdf-preview.spec.ts": 6,
+      "progressive-loading.spec.ts": 2,
+      "project-integration.spec.ts": 1,
+      "reader-and-abstracts.spec.ts": 6,
+      "reader-refinement.spec.ts": 5,
+      "refinement.spec.ts": 12,
+      "research-projects.spec.ts": 2,
+      "right-panel-layout.spec.ts": 3,
+      "seamless-results.spec.ts": 6,
+      "search-results-resilience.spec.ts": 7,
+      "search-workspace.spec.ts": 11,
+      "source-expansion-integration.spec.ts": 1,
+      "source-expansion.spec.ts": 6,
+      "video-cards-compact.spec.ts": 3,
+      "video-count-settings.spec.ts": 3,
+      "video-description-recovery.spec.ts": 3,
+      "video-details-recovery.spec.ts": 3,
+      "video-loading.spec.ts": 2,
+      "video-preview-intent.spec.ts": 4,
+      "video-preview-resilience.spec.ts": 4,
+      "video-reader-compact.spec.ts": 4,
+      "workspace.spec.ts": 8,
+      "youtube-integration.spec.ts": 1
+    },
+    "test_only_corrections": [
+      "Mock publish helpers now wait for first turn admission instead of dropping updates into an empty turn array.",
+      "Payload assertions await their asynchronous admissions.",
+      "Layout assertions target relocated real timing metrics and visible provider tags."
+    ],
+    "runtime_regression": {
+      "problem": "An older delayed full-turn GET could overwrite a newer streamed completion and query trace.",
+      "reproduced_against_earlier_build": true,
+      "guard": "Navigation identity, conversation revision and target-turn signature checked before applying saved full data or stale errors.",
+      "final_regression_passed": true
+    }
+  },
+  "checks": {
+    "typescript": true,
+    "isolated_next_production_build": true,
+    "final_affected_browser_cases": 45,
+    "final_build_matches_all_current_frontend_source_files": 51,
+    "source_manifest_sha256": "3c8d800b57d8098f2163ed6de34b0413d0f567d40ea4604eee4f11a8d58b1958",
+    "git_diff_check": true,
+    "active_document_links_checked": 411,
+    "missing_active_document_links": 0,
+    "owned_isolated_validation_services_stopped": true
+  },
+  "live": {
+    "evidence": "2026-11-14-refined-workbench-live.json",
+    "saved_paper_cards": 58,
+    "saved_video_cards": 10,
+    "responsive_widths": [
+      1440,
+      1100,
+      970,
+      768,
+      650,
+      390,
+      320
+    ],
+    "healthy_service_count": 11,
+    "api_writes": 0,
+    "projects_preserved": true,
+    "provider_usage_unchanged": true,
+    "model_cost_and_holds_unchanged": true,
+    "browser_errors": []
+  },
+  "privacy_evidence": "2026-11-14-refined-workbench-privacy.json",
+  "boundaries": [
+    "Browser acceptance uses authored fixtures and isolated fixture services; it does not establish live retrieval or model quality.",
+    "Live UI review uses existing saved research with API writes and external assets blocked.",
+    "No new live research, model operation, dependency, credential change, backend test run, remote CI run, commit or push is included."
+  ]
+}

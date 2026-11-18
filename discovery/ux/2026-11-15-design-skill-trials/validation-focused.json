@@ -1,0 +1,36 @@
+{
+  "date": "2026-11-15",
+  "passed": true,
+  "variants": [
+    {
+      "id": "datapulse-workspace",
+      "passed": true,
+      "widths": [
+        1440,
+        1100,
+        970,
+        768,
+        650,
+        390,
+        320
+      ],
+      "resource_tabs": 4,
+      "reader_notes": true,
+      "inline_expansion": true,
+      "metadata": true,
+      "toolbar": true,
+      "ai_toggle": true,
+      "local_filter": true,
+      "simulated_loading": true,
+      "mobile_navigation": true,
+      "browser_errors": 0
+    }
+  ],
+  "external_requests": 0,
+  "non_read_requests": 0,
+  "browser_errors": [],
+  "desktop_mobile_captures": true,
+  "authored_example_content": true,
+  "live_app_untouched": true,
+  "native_impeccable_engine_audit": false
+}

@@ -1,0 +1,274 @@
+{
+  "date": "2026-11-15",
+  "local_activation_passed": true,
+  "google_sign_in_operational": false,
+  "google_console_origin_configuration_required": true,
+  "health_and_preservation": {
+    "date": "2026-11-15",
+    "backend_health": [
+      {
+        "port": 8100,
+        "healthy": true
+      },
+      {
+        "port": 8111,
+        "healthy": true
+      },
+      {
+        "port": 8112,
+        "healthy": true
+      },
+      {
+        "port": 8113,
+        "healthy": true
+      },
+      {
+        "port": 8114,
+        "healthy": true
+      },
+      {
+        "port": 8115,
+        "healthy": true
+      },
+      {
+        "port": 8116,
+        "healthy": true
+      },
+      {
+        "port": 8117,
+        "healthy": true
+      },
+      {
+        "port": 8118,
+        "healthy": true
+      },
+      {
+        "port": 8119,
+        "healthy": true
+      },
+      {
+        "port": 8120,
+        "healthy": true
+      },
+      {
+        "port": 8121,
+        "healthy": true
+      }
+    ],
+    "frontend_auth": {
+      "enabled": true,
+      "client_configured": true,
+      "matches_saved_client": true,
+      "setup_required": true,
+      "client_secret_exposed": false
+    },
+    "preservation": {
+      "research_files_checked": 220,
+      "changed_research_files": 0,
+      "economics_and_owner_sessions_unchanged": true
+    },
+    "real_google_sign_in_tested": false,
+    "passed": true
+  },
+  "browser": {
+    "date": "2026-11-15",
+    "mutations": 0,
+    "runtime_errors": 0,
+    "origins": [
+      {
+        "origin": "http://localhost:3100",
+        "login_header_and_metadata_match": true,
+        "google_referrer_is_origin_only": true,
+        "google_button_status": 403,
+        "google_button_visible": false,
+        "google_origin_rejected": true
+      },
+      {
+        "origin": "http://127.0.0.1:3100",
+        "login_header_and_metadata_match": true,
+        "google_referrer_is_origin_only": true,
+        "google_button_status": 403,
+        "google_button_visible": false,
+        "google_origin_rejected": true
+      }
+    ],
+    "page_policies": [
+      {
+        "origin": "http://localhost:3100",
+        "path": "/",
+        "status": 200,
+        "referrer_policy": "no-referrer"
+      },
+      {
+        "origin": "http://localhost:3100",
+        "path": "/forgot-password",
+        "status": 200,
+        "referrer_policy": "no-referrer"
+      },
+      {
+        "origin": "http://localhost:3100",
+        "path": "/reset-password",
+        "status": 200,
+        "referrer_policy": "no-referrer"
+      },
+      {
+        "origin": "http://localhost:3100",
+        "path": "/account",
+        "status": 307,
+        "referrer_policy": "strict-origin"
+      },
+      {
+        "origin": "http://localhost:3100",
+        "path": "/app",
+        "status": 307,
+        "referrer_policy": "no-referrer"
+      },
+      {
+        "origin": "http://127.0.0.1:3100",
+        "path": "/",
+        "status": 200,
+        "referrer_policy": "no-referrer"
+      },
+      {
+        "origin": "http://127.0.0.1:3100",
+        "path": "/forgot-password",
+        "status": 200,
+        "referrer_policy": "no-referrer"
+      },
+      {
+        "origin": "http://127.0.0.1:3100",
+        "path": "/reset-password",
+        "status": 200,
+        "referrer_policy": "no-referrer"
+      },
+      {
+        "origin": "http://127.0.0.1:3100",
+        "path": "/account",
+        "status": 307,
+        "referrer_policy": "strict-origin"
+      },
+      {
+        "origin": "http://127.0.0.1:3100",
+        "path": "/app",
+        "status": 307,
+        "referrer_policy": "no-referrer"
+      }
+    ],
+    "real_google_account_sign_in_tested": false,
+    "local_app_checks_passed": true,
+    "google_button_ready": false,
+    "remaining": "Authorize the local origins on this exact Web client in Google Console; then recheck."
+  },
+  "checks": {
+    "typescript": true,
+    "production_build": true,
+    "git_diff_check": true,
+    "matching_production_page_sources": true,
+    "client_static_files_scanned_for_saved_google_client_secret": 20,
+    "client_secret_matches": 0
+  },
+  "changed_source_hashes": {
+    "frontend/next.config.mjs": "00fcfc6f777d71df04bad69565d84432d4ded8ea9623e976e65a7584af6e1843",
+    "frontend/src/app/login/page.tsx": "c4e1d3711c3da24140eae4a072b8b18ea60756c6ef71c5281c2341591bdd200b",
+    "frontend/src/app/account/page.tsx": "681b53d573e2ff0c7c80675f51e3917ff51a2b6e1da66229c9282ec57bdf6f69"
+  },
+  "qualification": "Local client activation and origin-only referrer regression checks. Real Google account sign-in was not attempted; Google rejects the configured client on both local origins. The earlier full auth acceptance remains a separate dated run. The owner subsequently reported saving all requested origins. Two fresh-browser rechecks still receive origin rejection on both addresses; the local client ID matches .env. Google-side authorization is not yet confirmed.",
+  "origin_authorization_recheck": {
+    "checked_at_utc": "2026-11-16T04:34:57.204549+00:00",
+    "user_reported_origins_saved": true,
+    "fresh_browser_checks_after_user_confirmation": 2,
+    "runtime_matches_saved_client": true,
+    "google_origin_authorization_confirmed": false,
+    "browser": {
+      "date": "2026-11-15",
+      "mutations": 0,
+      "runtime_errors": 0,
+      "origins": [
+        {
+          "origin": "http://localhost:3100",
+          "login_header_and_metadata_match": true,
+          "google_referrer_is_origin_only": true,
+          "google_button_status": 403,
+          "google_button_visible": false,
+          "google_origin_rejected": true
+        },
+        {
+          "origin": "http://127.0.0.1:3100",
+          "login_header_and_metadata_match": true,
+          "google_referrer_is_origin_only": true,
+          "google_button_status": 403,
+          "google_button_visible": false,
+          "google_origin_rejected": true
+        }
+      ],
+      "page_policies": [
+        {
+          "origin": "http://localhost:3100",
+          "path": "/",
+          "status": 200,
+          "referrer_policy": "no-referrer"
+        },
+        {
+          "origin": "http://localhost:3100",
+          "path": "/forgot-password",
+          "status": 200,
+          "referrer_policy": "no-referrer"
+        },
+        {
+          "origin": "http://localhost:3100",
+          "path": "/reset-password",
+          "status": 200,
+          "referrer_policy": "no-referrer"
+        },
+        {
+          "origin": "http://localhost:3100",
+          "path": "/account",
+          "status": 307,
+          "referrer_policy": "strict-origin"
+        },
+        {
+          "origin": "http://localhost:3100",
+          "path": "/app",
+          "status": 307,
+          "referrer_policy": "no-referrer"
+        },
+        {
+          "origin": "http://127.0.0.1:3100",
+          "path": "/",
+          "status": 200,
+          "referrer_policy": "no-referrer"
+        },
+        {
+          "origin": "http://127.0.0.1:3100",
+          "path": "/forgot-password",
+          "status": 200,
+          "referrer_policy": "no-referrer"
+        },
+        {
+          "origin": "http://127.0.0.1:3100",
+          "path": "/reset-password",
+          "status": 200,
+          "referrer_policy": "no-referrer"
+        },
+        {
+          "origin": "http://127.0.0.1:3100",
+          "path": "/account",
+          "status": 307,
+          "referrer_policy": "strict-origin"
+        },
+        {
+          "origin": "http://127.0.0.1:3100",
+          "path": "/app",
+          "status": 307,
+          "referrer_policy": "no-referrer"
+        }
+      ],
+      "real_google_account_sign_in_tested": false,
+      "local_app_checks_passed": true,
+      "google_button_ready": false,
+      "remaining": "Allow Google settings propagation; if origin rejection persists, compare the Console client ID with SCOUT_AUTH_GOOGLE_CLIENT_ID."
+    },
+    "propagation_guidance": "Google documents 5 minutes to a few hours for OAuth client setting changes. Propagation is a possible explanation, not verified as the cause.",
+    "source": "https://support.google.com/cloud/answer/15549257?hl=en"
+  }
+}

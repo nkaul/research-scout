@@ -1,0 +1,1846 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark light">
+<meta name="description" content="Static design preview of a retrieval analytics dashboard built from saved study evidence.">
+<title>Retrieval Observatory · Dashboard design preview v2</title>
+<script>
+(() => {
+  let theme = new URLSearchParams(location.search).get('theme');
+  if (theme !== 'light' && theme !== 'dark') {
+    try { theme = localStorage.getItem('retrieval-observatory-theme'); } catch (error) { theme = null; }
+  }
+  document.documentElement.dataset.theme = theme === 'light' ? 'light' : 'dark';
+})();
+</script>
+<style>
+/* Theme tokens: dark is the default; the light theme overrides the same names. */
+:root {
+  color-scheme: dark;
+  --r: 16px;
+  --sans: Inter, "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  --mono: "JetBrains Mono", "SF Mono", ui-monospace, Menlo, Consolas, monospace;
+  --bg: #060A13;
+  --bg-glow-1: rgba(34, 211, 238, .13);
+  --bg-glow-2: rgba(139, 92, 246, .14);
+  --dots: rgba(148, 163, 184, .14);
+  --surface: #0B1222;
+  --sheen: linear-gradient(180deg, rgba(255, 255, 255, .03), rgba(255, 255, 255, .006));
+  --kpi-sheen: linear-gradient(180deg, rgba(255, 255, 255, .035), rgba(255, 255, 255, .008));
+  --card-shadow: inset 0 1px 0 rgba(255, 255, 255, .04), 0 24px 48px -36px rgba(0, 0, 0, .9);
+  --lift: none;
+  --panel: rgba(6, 10, 19, .45);
+  --inset: rgba(6, 10, 19, .35);
+  --list-bg: rgba(6, 10, 19, .35);
+  --qhead-bg: radial-gradient(640px 140px at 0 0, rgba(34, 211, 238, .09), transparent), rgba(6, 10, 19, .45);
+  --tint: rgba(148, 163, 184, .06);
+  --tint-2: rgba(148, 163, 184, .1);
+  --field: rgba(15, 24, 43, .72);
+  --qitem: rgba(15, 24, 43, .45);
+  --rail-bg: linear-gradient(180deg, rgba(11, 18, 34, .92), rgba(6, 10, 19, .6));
+  --topbar-bg: rgba(6, 10, 19, .74);
+  --deck-bg: linear-gradient(180deg, rgba(21, 33, 57, .74), rgba(11, 18, 34, .74));
+  --deck-shadow: inset 0 1px 0 rgba(255, 255, 255, .06), 0 40px 80px -48px rgba(0, 0, 0, .9);
+  --line: rgba(148, 163, 184, .12);
+  --line-2: rgba(148, 163, 184, .22);
+  --sep: rgba(138, 151, 173, .45);
+  --text: #E6EDF7;
+  --text-2: #B9C4D6;
+  --muted: #8A97AD;
+  --cyan: #22D3EE;
+  --cyan-2: #67E8F9;
+  --slate: #7C8BA5;
+  --violet: #A78BFA;
+  --emerald: #34D399;
+  --rose: #FB7185;
+  --amber: #FBBF24;
+  --accent-soft: rgba(34, 211, 238, .08);
+  --accent-tint: rgba(34, 211, 238, .1);
+  --accent-line: rgba(34, 211, 238, .3);
+  --accent-strong: rgba(34, 211, 238, .55);
+  --accent-ink: #A5F3FC;
+  --accent-glow: 0 0 24px -8px rgba(34, 211, 238, .65);
+  --delta-ink: #7EEBFA;
+  --chip-on-bg: linear-gradient(180deg, rgba(34, 211, 238, .18), rgba(34, 211, 238, .05));
+  --chip-on-shadow: 0 0 0 3px rgba(34, 211, 238, .08), 0 0 24px -8px rgba(34, 211, 238, .75);
+  --chip-on-tag: rgba(34, 211, 238, .16);
+  --seg-bg: rgba(6, 10, 19, .55);
+  --seg-ink: #8A97AD;
+  --seg-on-bg: linear-gradient(180deg, #1B2944, #15213A);
+  --seg-on-shadow: inset 0 0 0 1px rgba(34, 211, 238, .45), 0 4px 14px -6px rgba(34, 211, 238, .5);
+  --locked: rgba(138, 151, 173, .55);
+  --sw-bg: rgba(34, 211, 238, .32);
+  --sw-knob: #ECFEFF;
+  --sw-knob-shadow: 0 0 10px rgba(34, 211, 238, .9);
+  --track: rgba(148, 163, 184, .16);
+  --bar-track: rgba(148, 163, 184, .12);
+  --ks-fill: linear-gradient(90deg, rgba(34, 211, 238, .3), #22D3EE);
+  --fill-glow: 0 0 12px rgba(34, 211, 238, .5);
+  --ks-tick: rgba(148, 163, 184, .5);
+  --ks-tick-in: rgba(6, 10, 19, .65);
+  --thumb-bg: #E6FBFF;
+  --thumb-shadow: 0 0 0 4px rgba(34, 211, 238, .18), 0 0 18px rgba(34, 211, 238, .7);
+  --bar-glow: 0 0 8px rgba(34, 211, 238, .7);
+  --qitem-on-bg: linear-gradient(90deg, rgba(34, 211, 238, .13), rgba(34, 211, 238, .02));
+  --tk-on-shadow: 0 0 0 1px rgba(34, 211, 238, .05), 0 20px 40px -30px rgba(34, 211, 238, .55);
+  --cell-r: linear-gradient(180deg, #5EEAD4, #34D399);
+  --cell-r-glow: 0 0 10px -3px rgba(52, 211, 153, .85);
+  --cell-o: #2A3850;
+  --violet-soft: rgba(167, 139, 250, .1);
+  --violet-line: rgba(167, 139, 250, .38);
+  --violet-ink: #C4B5FD;
+  --emerald-soft: rgba(52, 211, 153, .1);
+  --emerald-line: rgba(52, 211, 153, .4);
+  --emerald-ink: #6EE7B7;
+  --rose-soft: rgba(251, 113, 133, .05);
+  --rose-line: rgba(251, 113, 133, .22);
+  --rose-ink: #FDA4AF;
+  --amber-soft: rgba(251, 191, 36, .08);
+  --amber-line: rgba(251, 191, 36, .4);
+  --amber-ink: #FDE68A;
+  --live-shadow: 0 0 0 3px rgba(52, 211, 153, .16), 0 0 10px rgba(52, 211, 153, .8);
+  --brand-shadow: drop-shadow(0 8px 20px rgba(34, 211, 238, .35));
+  --grad-text: linear-gradient(90deg, #22D3EE, #7DD3FC 45%, #A78BFA);
+  --deck-icon-bg: linear-gradient(135deg, rgba(34, 211, 238, .22), rgba(167, 139, 250, .22));
+  --kpi-line: rgba(34, 211, 238, .7);
+  --flow-line: rgba(34, 211, 238, .85);
+  --flow-line-0: rgba(34, 211, 238, .1);
+  --halo: #0E1626;
+  --grid-line: rgba(148, 163, 184, .09);
+  --axis-line: rgba(148, 163, 184, .32);
+  --insight-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='%2367E8F9' stroke-width='1.6' stroke-linejoin='round'%3E%3Cpath d='m9 2.5 1.5 4.3 4.3 1.5-4.3 1.5L9 14.1l-1.5-4.3-4.3-1.5 4.3-1.5z'/%3E%3C/svg%3E");
+}
+:root[data-theme="light"] {
+  color-scheme: light;
+  --bg: #F4F6FA;
+  --bg-glow-1: rgba(6, 182, 212, .12);
+  --bg-glow-2: rgba(124, 58, 237, .08);
+  --dots: rgba(15, 23, 42, .08);
+  --surface: #FFFFFF;
+  --sheen: linear-gradient(180deg, #FFFFFF, #FFFFFF);
+  --kpi-sheen: linear-gradient(180deg, #FFFFFF, #FAFBFD);
+  --card-shadow: 0 1px 2px rgba(15, 23, 42, .05), 0 12px 32px -22px rgba(15, 23, 42, .28);
+  --lift: 0 1px 2px rgba(15, 23, 42, .05), 0 8px 24px -18px rgba(15, 23, 42, .25);
+  --panel: #FFFFFF;
+  --inset: #F8FAFC;
+  --list-bg: #FFFFFF;
+  --qhead-bg: radial-gradient(640px 140px at 0 0, rgba(8, 145, 178, .08), transparent), #F8FAFC;
+  --tint: #F8FAFC;
+  --tint-2: #F1F5F9;
+  --field: #FFFFFF;
+  --qitem: #FFFFFF;
+  --rail-bg: linear-gradient(180deg, #FFFFFF, #F8FAFC);
+  --topbar-bg: rgba(255, 255, 255, .84);
+  --deck-bg: linear-gradient(180deg, #FFFFFF, #F9FBFD);
+  --deck-shadow: 0 1px 2px rgba(15, 23, 42, .05), 0 24px 48px -32px rgba(15, 23, 42, .3);
+  --line: rgba(15, 23, 42, .09);
+  --line-2: rgba(15, 23, 42, .15);
+  --sep: rgba(91, 106, 128, .55);
+  --text: #0F172A;
+  --text-2: #334155;
+  --muted: #5B6A80;
+  --cyan: #0891B2;
+  --cyan-2: #0E7490;
+  --slate: #64748B;
+  --violet: #7C3AED;
+  --emerald: #059669;
+  --rose: #E11D48;
+  --amber: #B45309;
+  --accent-soft: rgba(8, 145, 178, .07);
+  --accent-tint: #E6F7FB;
+  --accent-line: rgba(8, 145, 178, .3);
+  --accent-strong: rgba(8, 145, 178, .6);
+  --accent-ink: #0E7490;
+  --accent-glow: none;
+  --delta-ink: #0E7490;
+  --chip-on-bg: linear-gradient(180deg, #E6F8FC, #F4FCFE);
+  --chip-on-shadow: 0 0 0 3px rgba(8, 145, 178, .1);
+  --chip-on-tag: #DDF6FB;
+  --seg-bg: #EEF2F6;
+  --seg-ink: #475569;
+  --seg-on-bg: #FFFFFF;
+  --seg-on-shadow: inset 0 0 0 1px rgba(8, 145, 178, .5), 0 1px 3px rgba(15, 23, 42, .14);
+  --locked: rgba(91, 106, 128, .6);
+  --sw-bg: #0891B2;
+  --sw-knob: #FFFFFF;
+  --sw-knob-shadow: 0 1px 2px rgba(15, 23, 42, .35);
+  --track: #E2E8F0;
+  --bar-track: #E8EDF3;
+  --ks-fill: linear-gradient(90deg, rgba(8, 145, 178, .35), #0891B2);
+  --fill-glow: none;
+  --ks-tick: #94A3B8;
+  --ks-tick-in: rgba(255, 255, 255, .9);
+  --thumb-bg: #FFFFFF;
+  --thumb-shadow: 0 0 0 4px rgba(8, 145, 178, .14), 0 1px 3px rgba(15, 23, 42, .25);
+  --bar-glow: none;
+  --qitem-on-bg: linear-gradient(90deg, #E6F7FB, #FFFFFF);
+  --tk-on-shadow: 0 12px 28px -22px rgba(8, 145, 178, .45);
+  --cell-r: linear-gradient(180deg, #34D399, #059669);
+  --cell-r-glow: none;
+  --cell-o: #C3CDDA;
+  --violet-soft: #F5F3FF;
+  --violet-line: rgba(124, 58, 237, .3);
+  --violet-ink: #6D28D9;
+  --emerald-soft: #ECFDF5;
+  --emerald-line: #A7F3D0;
+  --emerald-ink: #047857;
+  --rose-soft: #FFF1F2;
+  --rose-line: #FECDD3;
+  --rose-ink: #BE123C;
+  --amber-soft: #FFFBEB;
+  --amber-line: #FCD34D;
+  --amber-ink: #92400E;
+  --live-shadow: 0 0 0 3px rgba(5, 150, 105, .15);
+  --brand-shadow: drop-shadow(0 6px 14px rgba(8, 145, 178, .28));
+  --grad-text: linear-gradient(90deg, #0891B2, #2563EB 50%, #7C3AED);
+  --deck-icon-bg: linear-gradient(135deg, rgba(8, 145, 178, .12), rgba(124, 58, 237, .12));
+  --kpi-line: rgba(8, 145, 178, .55);
+  --flow-line: rgba(8, 145, 178, .7);
+  --flow-line-0: rgba(8, 145, 178, .1);
+  --halo: #FFFFFF;
+  --grid-line: rgba(15, 23, 42, .07);
+  --axis-line: rgba(15, 23, 42, .25);
+  --insight-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='%230891B2' stroke-width='1.6' stroke-linejoin='round'%3E%3Cpath d='m9 2.5 1.5 4.3 4.3 1.5-4.3 1.5L9 14.1l-1.5-4.3-4.3-1.5 4.3-1.5z'/%3E%3C/svg%3E");
+}
+* { box-sizing: border-box; }
+html { background: var(--bg); }
+body {
+  margin: 0;
+  color: var(--text);
+  font: 14px/1.5 var(--sans);
+  -webkit-font-smoothing: antialiased;
+  background:
+    radial-gradient(1000px 560px at 22% -180px, var(--bg-glow-1), transparent 70%),
+    radial-gradient(900px 520px at 96% -140px, var(--bg-glow-2), transparent 70%),
+    var(--bg);
+}
+button { font: inherit; color: inherit; }
+button:disabled { cursor: default; }
+fieldset { min-width: 0; margin: 0; padding: 0; border: 0; }
+h1, h2, h3, h4, p { margin: 0; }
+a { color: inherit; }
+.mono { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.icon { flex: none; width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.sdot { display: inline-block; flex: none; width: 8px; height: 8px; border-radius: 2px; }
+
+/* Shell */
+.app { display: grid; grid-template-columns: 76px minmax(0, 1fr); min-height: 100vh; }
+.rail { border-right: 1px solid var(--line); background: var(--rail-bg); }
+.rail-inner { position: sticky; top: 0; display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 14px 0 20px; }
+.brand { display: block; width: 40px; height: 40px; margin: 2px 0 18px; filter: var(--brand-shadow); }
+.brand svg { display: block; width: 40px; height: 40px; }
+.rail-btn { display: flex; flex-direction: column; align-items: center; gap: 4px; width: 62px; padding: 9px 0 7px; border: 1px solid transparent; border-radius: 12px; background: none; color: var(--muted); font-size: 10.5px; }
+.rail-btn .icon { width: 20px; height: 20px; }
+.rail-btn.active { color: var(--text); background: var(--accent-soft); border-color: var(--accent-line); box-shadow: var(--accent-glow); }
+.rail-btn.active .icon { color: var(--cyan); }
+.rail-sep { width: 30px; height: 1px; margin: 10px 0; background: var(--line-2); }
+.main { position: relative; min-width: 0; padding: 0 32px 48px; container: main / inline-size; }
+.main::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 560px; pointer-events: none; background-image: radial-gradient(var(--dots) 1px, transparent 1.3px); background-size: 24px 24px; -webkit-mask-image: linear-gradient(180deg, rgba(0, 0, 0, .9), transparent); mask-image: linear-gradient(180deg, rgba(0, 0, 0, .9), transparent); }
+.main > * { position: relative; }
+
+/* Top bar */
+.topbar { position: sticky; top: 0; z-index: 30; display: flex; align-items: center; gap: 18px; height: 62px; margin: 0 -32px; padding: 0 32px; border-bottom: 1px solid var(--line); background: var(--topbar-bg); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); }
+.m-brand { display: none; align-items: center; gap: 10px; font-size: 14px; font-weight: 600; white-space: nowrap; }
+.m-brand svg { width: 28px; height: 28px; }
+.crumbs { display: flex; align-items: center; gap: 9px; min-width: 0; color: var(--muted); font-size: 13px; white-space: nowrap; }
+.crumbs .sep { color: var(--sep); }
+.crumbs b { color: var(--text); font-weight: 600; }
+.search { display: flex; flex: 1; align-items: center; gap: 10px; max-width: 440px; height: 36px; margin-left: auto; padding: 0 8px 0 12px; border: 1px solid var(--line-2); border-radius: 10px; background: var(--field); color: var(--muted); font-size: 13px; }
+.search .icon { width: 16px; height: 16px; }
+.search span { flex: 1; min-width: 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+kbd { padding: 1px 6px; border: 1px solid var(--line-2); border-bottom-width: 2px; border-radius: 6px; background: var(--tint); color: var(--text-2); font: 500 11px var(--mono); }
+.top-right { display: flex; align-items: center; gap: 8px; }
+.pill { display: inline-flex; align-items: center; gap: 7px; height: 28px; padding: 0 11px; border: 1px solid var(--line-2); border-radius: 999px; background: var(--field); color: var(--text-2); font-size: 12px; white-space: nowrap; }
+.pill-amber { border-color: var(--amber-line); background: var(--amber-soft); color: var(--amber-ink); }
+.dot-live { width: 7px; height: 7px; border-radius: 50%; background: var(--emerald); box-shadow: var(--live-shadow); }
+.theme-switch button { height: 26px; padding: 0 10px; cursor: pointer; }
+.theme-switch button:not(.on):hover { color: var(--text); }
+.theme-switch button:focus-visible { outline: 2px solid var(--cyan); outline-offset: 2px; }
+.theme-switch .icon { width: 14px; height: 14px; }
+.sm-only { display: none; }
+
+/* Hero */
+.hero { padding: 30px 0 22px; }
+.eyebrow { display: inline-flex; align-items: center; gap: 10px; color: var(--cyan-2); font: 600 11px/1.3 var(--sans); letter-spacing: .14em; text-transform: uppercase; }
+.eyebrow::before { content: ""; flex: none; width: 22px; height: 1px; background: linear-gradient(90deg, transparent, var(--cyan)); }
+.hero h1 { margin: 12px 0 10px; font-size: 32px; font-weight: 650; line-height: 1.14; letter-spacing: -.025em; }
+.grad { background: var(--grad-text); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.lede { max-width: 880px; color: var(--text-2); font-size: 15px; }
+.lede b { color: var(--text); font-weight: 600; }
+
+/* Retrieval options deck */
+.deck { overflow: hidden; border: 1px solid var(--line-2); border-radius: 20px; background: var(--deck-bg); box-shadow: var(--deck-shadow); }
+.deck-head { display: flex; align-items: center; gap: 14px; padding: 16px 20px; border-bottom: 1px solid var(--line); }
+.deck-icon { display: grid; flex: none; place-items: center; width: 38px; height: 38px; border: 1px solid var(--accent-line); border-radius: 11px; background: var(--deck-icon-bg); color: var(--cyan-2); }
+.deck-head h2 { font-size: 16px; font-weight: 600; letter-spacing: -.01em; }
+.deck-head p { margin-top: 2px; color: var(--muted); font-size: 12.5px; }
+.deck-actions { display: flex; align-items: center; gap: 8px; margin-left: auto; }
+.ghost-btn { display: inline-flex; align-items: center; gap: 6px; height: 30px; padding: 0 11px; border: 1px solid var(--line-2); border-radius: 9px; background: var(--field); color: var(--text-2); font-size: 12.5px; }
+.ghost-btn .icon { width: 14px; height: 14px; }
+.deck-body { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.stage { display: flex; flex-direction: column; gap: 16px; padding: 16px 20px 20px; border-right: 1px solid var(--line); }
+.stage:last-child { border-right: 0; }
+.stage-head { display: flex; align-items: center; gap: 10px; }
+.stage-num { padding: 3px 7px; border: 1px solid var(--accent-line); border-radius: 7px; background: var(--accent-soft); color: var(--cyan-2); font: 600 11px var(--mono); }
+.stage-title { font-size: 14px; font-weight: 600; }
+.stage-sub { margin-left: auto; color: var(--muted); font-size: 11.5px; }
+.field { display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.field-label { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; color: var(--muted); font-size: 12px; }
+.field-label b { color: var(--text-2); font-size: 11.5px; font-weight: 500; text-align: right; }
+.field-note { color: var(--muted); font-size: 11.5px; line-height: 1.45; }
+.field-row { display: flex; flex-wrap: wrap; gap: 14px 18px; }
+.chips { display: flex; flex-wrap: wrap; gap: 7px; }
+.chip { display: inline-flex; align-items: center; gap: 7px; height: 32px; padding: 0 11px; border: 1px solid var(--line-2); border-radius: 9px; background: var(--field); color: var(--text-2); font-size: 12.5px; font-weight: 500; white-space: nowrap; }
+.chip .tag { padding: 1px 6px; border-radius: 5px; background: var(--tint-2); color: var(--muted); font: 500 10.5px var(--mono); }
+.chip .tag.ref { background: var(--violet-soft); color: var(--violet-ink); }
+.chip.on { border-color: var(--accent-strong); background: var(--chip-on-bg); color: var(--text); box-shadow: var(--chip-on-shadow); }
+.chip.on .tag { background: var(--chip-on-tag); color: var(--accent-ink); }
+.chip.sm { gap: 6px; height: 28px; padding: 0 9px; font-size: 12px; }
+.chip.sel { border-color: var(--accent-line); background: var(--accent-soft); color: var(--text); }
+.seg { display: inline-flex; gap: 2px; width: max-content; padding: 3px; border: 1px solid var(--line); border-radius: 11px; background: var(--seg-bg); }
+.seg button { display: inline-flex; align-items: center; gap: 5px; height: 28px; padding: 0 12px; border: 0; border-radius: 8px; background: none; color: var(--seg-ink); font-size: 12.5px; font-weight: 500; white-space: nowrap; }
+.seg button.on { background: var(--seg-on-bg); color: var(--text); box-shadow: var(--seg-on-shadow); }
+.seg button.locked { color: var(--locked); }
+.seg button.locked .icon { width: 11px; height: 11px; }
+.toggle { display: inline-flex; align-items: center; gap: 9px; color: var(--text-2); font-size: 12.5px; }
+.sw { position: relative; flex: none; width: 32px; height: 18px; border: 1px solid var(--accent-strong); border-radius: 9px; background: var(--sw-bg); }
+.sw::after { content: ""; position: absolute; top: 2px; left: 15px; width: 12px; height: 12px; border-radius: 50%; background: var(--sw-knob); box-shadow: var(--sw-knob-shadow); }
+.static-val { display: inline-block; height: 34px; padding: 0 12px; border: 1px dashed var(--line-2); border-radius: 10px; color: var(--text-2); font-size: 12px; line-height: 32px; white-space: nowrap; }
+.kval { color: var(--amber) !important; font-family: var(--mono); font-weight: 600 !important; }
+.kslider { padding: 10px 9px 0; }
+.ks-track { position: relative; height: 6px; border-radius: 3px; background: var(--track); }
+.ks-fill { position: absolute; inset: 0 auto 0 0; border-radius: 3px; background: var(--ks-fill); box-shadow: var(--fill-glow); }
+.ks-tick { position: absolute; top: 50%; width: 2px; height: 10px; margin: -5px 0 0 -1px; border-radius: 1px; background: var(--ks-tick); }
+.ks-tick.in { background: var(--ks-tick-in); }
+.ks-thumb { position: absolute; top: 50%; width: 18px; height: 18px; margin: -9px 0 0 -9px; border: 3px solid var(--cyan); border-radius: 50%; background: var(--thumb-bg); box-shadow: var(--thumb-shadow); }
+.ks-labels { position: relative; height: 16px; margin-top: 9px; }
+.ks-lab { position: absolute; transform: translateX(-50%); color: var(--muted); font: 10.5px var(--mono); }
+.ks-lab.on { color: var(--amber); font-weight: 600; }
+.radios { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.radio-card { display: flex; align-items: center; gap: 10px; min-width: 0; padding: 9px 11px; border: 1px solid var(--line-2); border-radius: 11px; background: var(--field); text-align: left; }
+.radio-card .rdot { flex: none; width: 15px; height: 15px; border: 1.5px solid var(--slate); border-radius: 50%; }
+.radio-card.on { border-color: var(--accent-strong); background: var(--accent-soft); }
+.radio-card.on .rdot { border-color: var(--cyan); background: radial-gradient(circle, var(--cyan) 0 3.5px, transparent 4px); }
+.rc-text { display: flex; flex-direction: column; min-width: 0; line-height: 1.3; }
+.rc-title { color: var(--text); font-size: 12.5px; font-weight: 500; }
+.rc-sub { overflow: hidden; color: var(--muted); font: 11px var(--mono); white-space: nowrap; text-overflow: ellipsis; }
+.select { display: flex; align-items: center; justify-content: space-between; gap: 8px; width: 100%; height: 34px; padding: 0 12px; border: 1px solid var(--line-2); border-radius: 10px; background: var(--field); color: var(--text); font-size: 12.5px; text-align: left; }
+.select .icon { width: 14px; height: 14px; color: var(--muted); }
+.select.compact { width: auto; flex: none; }
+.deck-mini { display: none; padding: 14px; border: 1px solid var(--line-2); border-radius: 16px; background: var(--deck-bg); box-shadow: var(--lift); }
+.dm-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; font-size: 14px; font-weight: 600; }
+
+/* Resolved run flow */
+.flow { display: flex; align-items: stretch; gap: 12px; margin-top: 14px; padding: 12px 14px; border: 1px solid var(--line); border-radius: 16px; background: var(--panel); box-shadow: var(--lift); }
+.flow-label { display: flex; flex-direction: column; justify-content: center; padding-right: 14px; border-right: 1px solid var(--line); color: var(--muted); font: 600 10.5px/1.4 var(--sans); letter-spacing: .12em; text-transform: uppercase; white-space: nowrap; }
+.flow ol { display: grid; flex: 1; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 24px; margin: 0; padding: 0; list-style: none; }
+.flow li { position: relative; display: flex; align-items: center; gap: 10px; min-width: 0; }
+.flow li + li::before { content: ""; position: absolute; top: 50%; left: -20px; width: 15px; height: 1px; background: linear-gradient(90deg, var(--flow-line-0), var(--flow-line)); }
+.flow li + li::after { content: ""; position: absolute; top: calc(50% - 3px); left: -7px; border-top: 3px solid transparent; border-bottom: 3px solid transparent; border-left: 5px solid var(--flow-line); }
+.fi { display: grid; flex: none; place-items: center; width: 34px; height: 34px; border: 1px solid var(--accent-line); border-radius: 10px; background: var(--accent-soft); color: var(--cyan-2); }
+.fi .icon { width: 17px; height: 17px; }
+.flow li.llm .fi { border-color: var(--violet-line); background: var(--violet-soft); color: var(--violet-ink); }
+.ft { display: flex; flex-direction: column; min-width: 0; line-height: 1.25; }
+.ft small { color: var(--muted); font-size: 10.5px; letter-spacing: .06em; text-transform: uppercase; }
+.ft b { font-size: 14.5px; font-weight: 600; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.ft > span { margin-top: 1px; color: var(--muted); font-size: 11px; }
+
+/* KPIs */
+.kpis { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 14px; margin: 16px 0 6px; }
+.kpi { position: relative; min-width: 0; overflow: hidden; padding: 14px 16px 10px; border: 1px solid var(--line); border-radius: var(--r); background: var(--kpi-sheen), var(--surface); box-shadow: var(--lift); }
+.kpi::before { content: ""; position: absolute; top: 0; right: 14px; left: 14px; height: 1px; background: linear-gradient(90deg, transparent, var(--kpi-line), transparent); }
+.kpi-head { display: flex; align-items: center; gap: 6px; color: var(--text-2); font-size: 12.5px; font-weight: 500; }
+.at { padding: 1px 5px; border-radius: 5px; background: var(--amber-soft); color: var(--amber); font: 500 10.5px var(--mono); }
+.kpi-hint { overflow: hidden; margin-top: 1px; color: var(--muted); font-size: 11.5px; white-space: nowrap; text-overflow: ellipsis; }
+.kpi-value { margin-top: 10px; font-size: 32px; font-weight: 650; line-height: 1; letter-spacing: -.03em; font-variant-numeric: tabular-nums; }
+.kpi-value small { margin-left: 2px; color: var(--text-2); font-size: 17px; font-weight: 600; letter-spacing: 0; }
+.kpi-row { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; margin-top: 9px; color: var(--muted); font-size: 11.5px; }
+.delta { padding: 1px 6px; border: 1px solid var(--accent-line); border-radius: 6px; background: var(--accent-tint); color: var(--delta-ink); font: 600 11.5px var(--mono); }
+.kpi-note { overflow: hidden; margin-top: 5px; color: var(--muted); font-size: 11px; white-space: nowrap; text-overflow: ellipsis; }
+.spark { height: 46px; margin-top: 8px; }
+
+/* Grid and cards */
+.grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 16px; }
+.s4 { grid-column: span 4; }
+.s5 { grid-column: span 5; }
+.s7 { grid-column: span 7; }
+.s8 { grid-column: span 8; }
+.s12 { grid-column: span 12; }
+.section-label { display: flex; grid-column: 1 / -1; align-items: center; gap: 12px; margin: 20px 0 -4px; color: var(--muted); font: 600 11px var(--sans); letter-spacing: .14em; text-transform: uppercase; }
+.section-label::after { content: ""; flex: 1; height: 1px; background: linear-gradient(90deg, var(--line-2), transparent); }
+.card { display: flex; flex-direction: column; min-width: 0; padding: 18px 18px 14px; border: 1px solid var(--line); border-radius: var(--r); background: var(--sheen), var(--surface); box-shadow: var(--card-shadow); }
+.card-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 14px; margin-bottom: 12px; }
+.card-title { font-size: 15px; font-weight: 600; letter-spacing: -.01em; }
+.card-sub { max-width: 680px; margin-top: 3px; color: var(--muted); font-size: 12.5px; }
+.card-foot { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; margin-top: auto; padding-top: 11px; border-top: 1px dashed var(--line-2); color: var(--muted); font-size: 11.5px; }
+.card > :nth-last-child(2) { margin-bottom: 14px; }
+.src { display: inline-flex; align-items: center; gap: 6px; max-width: 100%; padding: 2px 7px; overflow: hidden; border: 1px solid var(--line); border-radius: 6px; background: var(--tint); color: var(--text-2); font: 11px var(--mono); text-decoration: none; white-space: nowrap; text-overflow: ellipsis; }
+.src::before { content: ""; flex: none; width: 6px; height: 6px; border-radius: 2px; background: var(--cyan); opacity: .7; }
+.src:hover { border-color: var(--accent-strong); color: var(--text); }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 16px; margin: -2px 0 10px; color: var(--text-2); font-size: 12px; }
+.legend > span { display: inline-flex; align-items: center; gap: 7px; }
+.sw-line { display: inline-block; width: 20px; border-top: 2.5px solid currentColor; }
+.sw-line.dash { border-top-style: dashed; }
+.sw-line.thin { border-top-width: 1.5px; opacity: .6; }
+.sw-dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; background: currentColor; }
+.chart { width: 100%; min-width: 0; }
+.chart svg, .spark svg { display: block; }
+.chart text, .spark text { fill: var(--muted); font-family: var(--sans); font-size: 11px; }
+.chart .tick { font-family: var(--mono); font-size: 10.5px; }
+.chart .lbl { fill: var(--text-2); font-size: 11.5px; }
+.chart .val { font-family: var(--mono); font-size: 12px; font-weight: 600; }
+.chart .cap { font-size: 9.5px; font-weight: 600; letter-spacing: .09em; }
+.chart .cell { font-family: var(--mono); font-size: 11px; font-weight: 600; }
+.chart .halo { paint-order: stroke; stroke: var(--halo); stroke-width: 4px; stroke-linejoin: round; }
+.gl { stroke: var(--grid-line); stroke-width: 1; }
+.ax { stroke: var(--axis-line); stroke-width: 1; }
+
+/* Retrieval trace */
+.trace { display: grid; grid-template-columns: minmax(260px, 310px) minmax(0, 1fr); gap: 18px; }
+.qlist { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.ql-head { display: flex; align-items: center; justify-content: space-between; padding: 0 2px 4px; color: var(--muted); font-size: 11.5px; }
+.qitem { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 3px 10px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 12px; background: var(--qitem); }
+.qitem.on { border-color: var(--accent-strong); background: var(--qitem-on-bg); box-shadow: inset 3px 0 0 var(--cyan); }
+.qi-id { color: var(--muted); font-size: 11px; }
+.qi-delta { color: var(--muted); font-size: 11px; text-align: right; }
+.qi-delta b { color: var(--cyan-2); font-weight: 600; }
+.qi-title { grid-column: 1 / -1; overflow: hidden; color: var(--text); font-size: 13px; font-weight: 500; white-space: nowrap; text-overflow: ellipsis; }
+.qi-meta { display: flex; grid-column: 1 / -1; align-items: center; gap: 6px; min-width: 0; color: var(--muted); font-size: 11.5px; }
+.qi-bars { display: grid; grid-column: 1 / -1; gap: 3px; margin-top: 5px; }
+.qi-bar { position: relative; height: 4px; overflow: hidden; border-radius: 2px; background: var(--bar-track); }
+.qi-bar > span { position: absolute; inset: 0 auto 0 0; border-radius: 2px; }
+.qi-bar.b > span { background: var(--slate); }
+.qi-bar.a > span { background: var(--cyan); box-shadow: var(--bar-glow); }
+.more-btn { height: 34px; margin-top: 2px; border: 1px dashed var(--line-2); border-radius: 10px; background: none; color: var(--text-2); font-size: 12.5px; }
+.qdetail { display: flex; flex-direction: column; gap: 14px; min-width: 0; }
+.qhead { padding: 14px 16px; border: 1px solid var(--line); border-radius: 14px; background: var(--qhead-bg); }
+.qh-top { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; color: var(--muted); font-size: 12px; }
+.qh-id { color: var(--text-2); font-size: 11.5px; }
+.set-pill { display: inline-flex; align-items: center; gap: 6px; padding: 2px 9px; border: 1px solid var(--line-2); border-radius: 999px; color: var(--text-2); font-size: 11.5px; }
+.qh-title { margin: 8px 0 10px; font-size: 18px; font-weight: 600; letter-spacing: -.01em; }
+.qfields { display: flex; flex-wrap: wrap; gap: 6px; }
+.qf { display: inline-flex; align-items: baseline; gap: 6px; min-width: 0; padding: 4px 9px; border: 1px solid var(--line); border-radius: 8px; background: var(--tint); color: var(--text); font-size: 12px; }
+.qf small { color: var(--muted); font: 600 9.5px var(--mono); letter-spacing: .08em; text-transform: uppercase; }
+.bars { display: flex; flex-direction: column; gap: 10px; padding: 14px 16px; border: 1px solid var(--line); border-radius: 14px; background: var(--inset); }
+.bc { display: grid; grid-template-columns: 76px minmax(0, 1fr) 232px; align-items: center; gap: 14px; }
+.bc-label { font-size: 12.5px; font-weight: 600; }
+.bc-label small { display: block; color: var(--muted); font-size: 10.5px; font-weight: 400; }
+.cells { display: grid; grid-template-columns: repeat(30, minmax(0, 1fr)); gap: 3px; height: 24px; }
+.cells span { border-radius: 3px; }
+.cells .r { background: var(--cell-r); box-shadow: var(--cell-r-glow); }
+.cells .n { background: var(--rose); }
+.cells .o { background: var(--cell-o); }
+.bc-sum { color: var(--text-2); font-size: 11.5px; }
+.bc-sum b { color: var(--text); }
+.bc-axis { display: grid; grid-template-columns: 76px minmax(0, 1fr) 232px; gap: 14px; color: var(--muted); font: 10px var(--mono); }
+.bc-axis .ticks { position: relative; height: 14px; }
+.bc-axis .ticks span { position: absolute; transform: translateX(-50%); }
+.bc-foot { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; padding-top: 10px; border-top: 1px dashed var(--line); color: var(--muted); font-size: 11.5px; }
+.key { display: inline-flex; align-items: center; gap: 6px; }
+.key i { width: 10px; height: 10px; border-radius: 3px; }
+.ceiling { color: var(--amber-ink); }
+.topk { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.tk { min-width: 0; overflow: hidden; border: 1px solid var(--line); border-radius: 14px; background: var(--list-bg); }
+.tk.adapted { border-color: var(--accent-line); box-shadow: var(--tk-on-shadow); }
+.tk-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 11px 14px; border-bottom: 1px solid var(--line); font-size: 12.5px; }
+.tk-head b { font-weight: 600; }
+.tk-head .mono { color: var(--muted); font-size: 11px; }
+.tk.adapted .tk-head .mono { color: var(--emerald-ink); }
+.tk ol { margin: 0; padding: 0; list-style: none; }
+.tk li { display: grid; grid-template-columns: 22px minmax(0, 1fr); gap: 10px; padding: 11px 14px; border-bottom: 1px solid var(--line); }
+.tk li:last-child { border-bottom: 0; }
+.tk-rank { padding-top: 2px; color: var(--muted); font: 600 12px var(--mono); }
+.tk-body { min-width: 0; }
+.tk-top { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 8px; }
+.badge { display: inline-flex; align-items: center; height: 20px; padding: 0 7px; border: 1px solid; border-radius: 999px; font-size: 10.5px; font-weight: 600; }
+.badge.rel { border-color: var(--emerald-line); background: var(--emerald-soft); color: var(--emerald-ink); }
+.badge.oth { border-color: var(--line-2); background: var(--tint); color: var(--muted); }
+.tk-id { color: var(--text-2); font: 11px var(--mono); }
+.tk-score { display: inline-flex; align-items: center; gap: 7px; margin-left: auto; color: var(--text); font: 11.5px var(--mono); }
+.sbar { width: 48px; height: 4px; overflow: hidden; border-radius: 2px; background: var(--bar-track); }
+.sbar > span { display: block; height: 100%; border-radius: 2px; }
+.tk-text { display: -webkit-box; margin: 6px 0 5px; overflow: hidden; color: var(--text-2); font-size: 12.5px; line-height: 1.5; -webkit-line-clamp: 3; line-clamp: 3; -webkit-box-orient: vertical; }
+.tk-text code { padding: 0 4px; border-radius: 4px; background: var(--accent-tint); color: var(--accent-ink); font: 11.5px var(--mono); }
+.tk-set { display: inline-flex; align-items: center; gap: 6px; color: var(--muted); font-size: 11px; }
+
+/* Smaller panels */
+.outcome { margin-top: 12px; }
+.ob { display: flex; gap: 2px; height: 10px; overflow: hidden; border-radius: 5px; }
+.ob span { display: block; min-width: 3px; height: 100%; }
+.ob-legend { display: flex; flex-wrap: wrap; gap: 6px 14px; margin-top: 9px; color: var(--text-2); font-size: 12px; }
+.ob-legend span { display: inline-flex; align-items: center; gap: 6px; }
+.ob-legend i { width: 9px; height: 9px; border-radius: 3px; }
+.ob-legend b { color: var(--text); font-family: var(--mono); }
+.reg { margin-top: 14px; padding-top: 12px; border-top: 1px dashed var(--line); }
+.reg-title { margin-bottom: 8px; color: var(--muted); font-size: 10.5px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; }
+.reg-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 8px 10px; border: 1px solid var(--rose-line); border-radius: 10px; background: var(--rose-soft); }
+.reg-row + .reg-row { margin-top: 6px; }
+.reg-main { display: flex; flex-direction: column; min-width: 0; line-height: 1.35; }
+.reg-name { overflow: hidden; color: var(--text); font-size: 12.5px; font-weight: 500; white-space: nowrap; text-overflow: ellipsis; }
+.reg-meta { overflow: hidden; color: var(--muted); font-size: 10.5px; white-space: nowrap; text-overflow: ellipsis; }
+.reg-val { display: flex; flex: none; flex-direction: column; align-items: flex-end; color: var(--text-2); font-size: 11px; line-height: 1.35; }
+.reg-val b { color: var(--rose-ink); font-weight: 600; }
+.insight { margin-top: 12px; padding: 10px 12px 10px 34px; border: 1px solid var(--accent-line); border-radius: 10px; background: var(--insight-icon) 11px 11px / 15px 15px no-repeat, var(--accent-soft); color: var(--text-2); font-size: 12.5px; }
+.insight b { color: var(--text); font-weight: 600; }
+.ctx { display: grid; gap: 7px; margin-top: 10px; }
+.ctx-row { display: grid; grid-template-columns: 44px minmax(0, 1fr) auto; align-items: center; gap: 10px; padding: 7px 10px; border: 1px solid var(--line); border-radius: 10px; background: var(--inset); color: var(--muted); font-size: 12px; }
+.ctx-row.hot { border-color: var(--amber-line); background: var(--amber-soft); }
+.ctx-row .k { color: var(--cyan-2); font-size: 11.5px; font-weight: 600; }
+.ctx-row.hot .k { color: var(--amber); }
+.ctx-row b { color: var(--text); font-weight: 600; }
+.ctx-row .kept { color: var(--text-2); font-size: 11.5px; }
+.ctx-more { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-top: 3px; color: var(--muted); font-size: 11.5px; }
+.mini-chip { padding: 2px 8px; border: 1px solid var(--line); border-radius: 7px; background: var(--tint); color: var(--text-2); font: 11px var(--mono); }
+.lanes { display: flex; flex-direction: column; }
+.lane { padding: 6px 0 12px; }
+.lane + .lane { padding-top: 12px; border-top: 1px dashed var(--line); }
+.lane-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; margin-bottom: 4px; font-size: 12.5px; }
+.lane-head b { font-weight: 600; }
+.lane-head .mono { color: var(--muted); font-size: 11px; }
+.lane-stats { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+.stat { display: inline-flex; align-items: baseline; gap: 6px; padding: 4px 8px; border: 1px solid var(--line); border-radius: 8px; background: var(--tint); color: var(--muted); font-size: 11.5px; }
+.stat b { color: var(--text); font: 600 12px var(--mono); }
+.corpus { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 26px; }
+.cp { min-width: 0; }
+.cp h4 { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; margin-bottom: 10px; font-size: 12.5px; font-weight: 600; }
+.cp h4 span { color: var(--muted); font: 500 11px var(--mono); }
+.stack { display: flex; gap: 2px; height: 14px; overflow: hidden; border-radius: 7px; }
+.stack span { display: block; min-width: 2px; height: 100%; }
+.sl { display: grid; grid-template-columns: 1fr 1fr; gap: 7px 16px; margin-top: 12px; }
+.sl div { display: flex; align-items: center; gap: 7px; min-width: 0; color: var(--text-2); font-size: 12px; }
+.sl span { flex: 1; min-width: 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.sl b { color: var(--muted); font: 500 11px var(--mono); }
+table.splits { width: 100%; border-collapse: collapse; font-size: 12px; }
+.splits th { padding: 0 0 8px 8px; color: var(--muted); font-size: 11px; font-weight: 500; text-align: right; vertical-align: bottom; }
+.splits td { padding: 8px 0 8px 8px; border-top: 1px solid var(--line); color: var(--text-2); font-family: var(--mono); text-align: right; }
+.splits th:first-child, .splits td:first-child { padding-left: 0; text-align: left; }
+.splits td:first-child { color: var(--text); font-family: var(--sans); }
+.splits tr.cur td { color: var(--text); background: var(--accent-soft); }
+.splits tr.cur td:first-child { box-shadow: inset 2px 0 0 var(--cyan); padding-left: 8px; }
+.cp-stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; margin-top: 20px; }
+.cps { padding: 12px 14px; border: 1px solid var(--line); border-radius: 12px; background: var(--inset); }
+.cps b { display: block; font-size: 20px; font-weight: 650; letter-spacing: -.02em; font-variant-numeric: tabular-nums; }
+.cps span { color: var(--muted); font-size: 11.5px; }
+
+/* Footer */
+.foot { margin-top: 24px; padding: 18px 20px; border: 1px solid var(--line); border-radius: var(--r); background: var(--panel); box-shadow: var(--lift); }
+.foot h2 { margin-bottom: 12px; color: var(--muted); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; }
+.foot ul { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px 26px; margin: 0; padding: 0; list-style: none; }
+.foot li { position: relative; padding-left: 16px; color: var(--text-2); font-size: 12.5px; }
+.foot li::before { content: ""; position: absolute; top: 7px; left: 0; width: 6px; height: 6px; border-radius: 2px; background: var(--amber); opacity: .8; }
+.foot-meta { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; margin-top: 14px; padding-top: 12px; border-top: 1px dashed var(--line); color: var(--muted); font: 11px var(--mono); }
+.foot-meta a { color: var(--text-2); }
+noscript { display: block; margin: 16px 0; color: var(--amber-ink); }
+
+/* Responsive: based on available workspace width */
+@container main (max-width: 1099px) {
+  .kpis { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .grid > .card { grid-column: span 12; }
+  .grid > .card.m6 { grid-column: span 6; }
+  .deck-body { grid-template-columns: 1fr; }
+  .stage { border-right: 0; border-bottom: 1px solid var(--line); }
+  .stage:last-child { border-bottom: 0; }
+  .flow ol { grid-template-columns: repeat(3, minmax(0, 1fr)); row-gap: 14px; }
+  .flow li:nth-child(4)::before, .flow li:nth-child(4)::after { display: none; }
+  .trace { grid-template-columns: 1fr; }
+  .qlist { display: grid; grid-template-columns: 1fr 1fr; }
+  .ql-head, .more-btn { grid-column: 1 / -1; }
+  .corpus { grid-template-columns: 1fr 1fr; }
+  .corpus .cp:last-child { grid-column: 1 / -1; }
+  .foot ul { grid-template-columns: 1fr 1fr; }
+}
+@container main (max-width: 699px) {
+  .hero { padding: 22px 0 16px; }
+  .hero h1 { font-size: 24px; }
+  .lede { font-size: 14px; }
+  .deck { display: none; }
+  .deck-mini { display: block; }
+  .flow { flex-direction: column; gap: 10px; }
+  .flow-label { padding: 0 0 8px; border-right: 0; border-bottom: 1px solid var(--line); }
+  .flow-label br { display: none; }
+  .flow ol { grid-template-columns: 1fr 1fr; gap: 14px; }
+  .flow li::before, .flow li::after { display: none; }
+  .kpis { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .kpis .kpi:last-child { grid-column: 1 / -1; }
+  .kpi { padding: 12px 12px 8px; }
+  .kpi-value { font-size: 26px; }
+  .kpi-hint, .kpi-note { white-space: normal; }
+  .sbar { display: none; }
+  .grid { gap: 12px; }
+  .grid > .card.m6 { grid-column: span 12; }
+  .card { padding: 16px 14px 12px; }
+  .card-head { flex-direction: column; gap: 10px; }
+  .qlist { display: flex; }
+  .qlist .qitem:nth-child(n+6) { display: none; }
+  .bc { grid-template-areas: "l s" "c c"; grid-template-columns: auto minmax(0, 1fr); gap: 8px 12px; }
+  .bc-label { grid-area: l; }
+  .bc-sum { grid-area: s; text-align: right; }
+  .cells { grid-area: c; gap: 2px; }
+  .bc-axis { grid-template-columns: 1fr; }
+  .bc-axis > span:first-child, .bc-axis > span:last-child { display: none; }
+  .topk { grid-template-columns: 1fr; }
+  .corpus { grid-template-columns: 1fr; gap: 22px; }
+  .corpus .cp:last-child { grid-column: auto; }
+  .cp-stats { grid-template-columns: 1fr 1fr; }
+  .foot ul { grid-template-columns: 1fr; }
+}
+@media (max-width: 1280px) {
+  .top-right .pill:not(.pill-amber) { display: none; }
+}
+@media (max-width: 1024px) {
+  .search { display: none; }
+  .top-right { margin-left: auto; }
+  .theme-switch span { display: none; }
+  .theme-switch button { padding: 0 8px; }
+}
+@media (max-width: 760px) {
+  .app { grid-template-columns: minmax(0, 1fr); }
+  .rail { display: none; }
+  .main { padding: 0 16px 36px; }
+  .topbar { gap: 10px; height: 56px; margin: 0 -16px; padding: 0 16px; }
+  .m-brand { display: flex; }
+  .crumbs, .search, .top-right .pill:not(.pill-amber) { display: none; }
+  .top-right { margin-left: auto; }
+  .lg-only { display: none; }
+  .sm-only { display: inline; }
+}
+</style>
+</head>
+<body>
+<div class="app">
+  <nav class="rail" aria-label="Primary">
+    <div class="rail-inner">
+      <span class="brand" role="img" aria-label="Retrieval Observatory">
+        <svg viewBox="0 0 40 40" aria-hidden="true"><defs><linearGradient id="lg-brand" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22D3EE"/><stop offset="1" stop-color="#8B5CF6"/></linearGradient></defs><rect width="40" height="40" rx="11" fill="url(#lg-brand)"/><circle cx="20" cy="20" r="10" fill="none" stroke="#04111D" stroke-opacity=".55" stroke-width="2"/><path d="M20 20 28.5 13.5" stroke="#04111D" stroke-opacity=".55" stroke-width="1.6"/><circle cx="20" cy="20" r="4" fill="#04111D"/><circle cx="28.5" cy="13.5" r="2.6" fill="#fff"/></svg>
+      </span>
+      <button class="rail-btn active" type="button" aria-current="page" disabled><svg class="icon" viewBox="0 0 20 20"><path d="M3 3v14h14"/><path d="m6 13 3.5-4 3 2.5L17 6"/></svg>Explore</button>
+      <button class="rail-btn" type="button" disabled><svg class="icon" viewBox="0 0 20 20"><rect x="3" y="4" width="5.5" height="12" rx="1.6"/><rect x="11.5" y="4" width="5.5" height="12" rx="1.6"/></svg>Compare</button>
+      <button class="rail-btn" type="button" disabled><svg class="icon" viewBox="0 0 20 20"><circle cx="8.8" cy="8.8" r="5.3"/><path d="M12.8 12.8 17 17"/></svg>Queries</button>
+      <button class="rail-btn" type="button" disabled><svg class="icon" viewBox="0 0 20 20"><path d="M11 2.5 4.5 11h5l-1 6.5L15.5 9h-5z"/></svg>Index</button>
+      <button class="rail-btn" type="button" disabled><svg class="icon" viewBox="0 0 20 20"><ellipse cx="10" cy="4.8" rx="6" ry="2.3"/><path d="M4 4.8v10.4c0 1.3 2.7 2.3 6 2.3s6-1 6-2.3V4.8"/><path d="M4 10c0 1.3 2.7 2.3 6 2.3s6-1 6-2.3"/></svg>Corpus</button>
+      <span class="rail-sep" aria-hidden="true"></span>
+      <button class="rail-btn" type="button" disabled><svg class="icon" viewBox="0 0 20 20"><path d="M5.5 2.5h6l3 3v12h-9z"/><path d="M11.5 2.5v3h3M8 10h4.5M8 13h4.5"/></svg>Docs</button>
+    </div>
+  </nav>
+
+  <main class="main" id="main">
+    <header class="topbar">
+      <span class="m-brand"><svg viewBox="0 0 40 40" aria-hidden="true"><defs><linearGradient id="lg-brand-m" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22D3EE"/><stop offset="1" stop-color="#8B5CF6"/></linearGradient></defs><rect width="40" height="40" rx="11" fill="url(#lg-brand-m)"/><circle cx="20" cy="20" r="10" fill="none" stroke="#04111D" stroke-opacity=".55" stroke-width="2"/><circle cx="20" cy="20" r="4" fill="#04111D"/><circle cx="28.5" cy="13.5" r="2.6" fill="#fff"/></svg>Retrieval Observatory</span>
+      <nav class="crumbs" aria-label="Breadcrumb"><span>Retrieval Observatory</span><span class="sep">/</span><span>Biopharma retrieval adaptation</span><span class="sep">/</span><b>Explorer</b></nav>
+      <div class="search" aria-disabled="true"><svg class="icon" viewBox="0 0 20 20"><circle cx="8.8" cy="8.8" r="5.3"/><path d="M12.8 12.8 17 17"/></svg><span>Search questions, record IDs and labels</span><kbd>⌘K</kbd></div>
+      <div class="top-right">
+        <div class="seg theme-switch" role="group" aria-label="Color theme">
+          <button class="on" type="button" data-theme-set="dark" aria-label="Dark theme" aria-pressed="true"><svg class="icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M16.5 12.4A7 7 0 0 1 7.6 3.5a7 7 0 1 0 8.9 8.9z"/></svg><span>Dark</span></button>
+          <button type="button" data-theme-set="light" aria-label="Light theme" aria-pressed="false"><svg class="icon" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="3.4"/><path d="M10 2.5v2M10 15.5v2M2.5 10h2M15.5 10h2M4.7 4.7l1.4 1.4M13.9 13.9l1.4 1.4M4.7 15.3l1.4-1.4M13.9 6.1l1.4-1.4"/></svg><span>Light</span></button>
+        </div>
+        <span class="pill pill-amber"><span class="lg-only">Design preview v2</span><span class="sm-only">Preview</span></span>
+        <span class="pill"><span class="dot-live" aria-hidden="true"></span>Saved evidence · catalog <span class="mono">37b8c8cc</span></span>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="eyebrow">Retrieval evaluation · embedding adaptation · synthetic biopharma manufacturing</div>
+      <h1>Does domain adaptation keep more <span class="grad">useful evidence</span> in the shortlist?</h1>
+      <p class="lede">Saved evaluation of BGE-small, base versus adapted, on <b data-n="questions.test"></b> held-out test questions over a <b data-n="panels.test"></b>-document candidate pool. Every number here is read from the study's saved result files; nothing is simulated or interpolated.</p>
+    </section>
+
+    <section class="deck" aria-labelledby="deck-title">
+      <div class="deck-head">
+        <span class="deck-icon"><svg class="icon" viewBox="0 0 20 20"><path d="M3.5 6h7M14.5 6h2M3.5 14h2M9.5 14h7"/><circle cx="12.5" cy="6" r="2"/><circle cx="7.5" cy="14" r="2"/></svg></span>
+        <div>
+          <h2 id="deck-title">Retrieval options</h2>
+          <p>Pick a saved run. Combinations that were never measured stay locked instead of being simulated.</p>
+        </div>
+        <div class="deck-actions">
+          <span class="pill pill-amber">Preview · inputs not wired</span>
+          <button class="ghost-btn" type="button" disabled><svg class="icon" viewBox="0 0 20 20"><path d="M4 10a6 6 0 1 0 6-6H7"/><path d="M8.5 1.5 6 4l2.5 2.5"/></svg>Reset</button>
+        </div>
+      </div>
+      <div class="deck-body">
+        <fieldset class="stage" disabled>
+          <legend class="sr-only">Encode</legend>
+          <div class="stage-head"><span class="stage-num">01</span><span class="stage-title">Encode</span><span class="stage-sub">embedding model</span></div>
+          <div class="field">
+            <div class="field-label"><span>Embedding model</span><b class="mono">BAAI/bge-small-en-v1.5</b></div>
+            <div class="chips">
+              <button class="chip on" type="button" aria-pressed="true">BGE-small<span class="tag">384</span></button>
+              <button class="chip" type="button">E5-small<span class="tag">384</span></button>
+              <button class="chip" type="button">MiniLM-L6<span class="tag">384</span></button>
+              <button class="chip" type="button">mxbai-large<span class="tag">512 · 1024</span></button>
+              <button class="chip" type="button">OpenAI 3-small<span class="tag ref">reference</span></button>
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <div class="field-label"><span>Adaptation</span></div>
+              <div class="seg"><button type="button">Base</button><button class="on" type="button" aria-pressed="true">Adapted</button></div>
+            </div>
+            <div class="field">
+              <div class="field-label"><span>Dimensions</span></div>
+              <div class="seg"><button class="on" type="button" aria-pressed="true">384</button><button class="locked" type="button" title="Not measured for BGE-small"><svg class="icon" viewBox="0 0 20 20"><rect x="4.5" y="9" width="11" height="8" rx="2"/><path d="M7 9V6.5a3 3 0 0 1 6 0V9"/></svg>512</button><button class="locked" type="button" title="Not measured for BGE-small"><svg class="icon" viewBox="0 0 20 20"><rect x="4.5" y="9" width="11" height="8" rx="2"/><path d="M7 9V6.5a3 3 0 0 1 6 0V9"/></svg>1024</button></div>
+            </div>
+          </div>
+          <div class="toggle"><span class="sw" aria-hidden="true"></span>Overlay the base model at identical settings</div>
+          <p class="field-note">BGE-small is natively 384-d. Wider widths exist only for mxbai (512, 1024) and the OpenAI reference.</p>
+        </fieldset>
+
+        <fieldset class="stage" disabled>
+          <legend class="sr-only">Search</legend>
+          <div class="stage-head"><span class="stage-num">02</span><span class="stage-title">Search</span><span class="stage-sub">index &amp; shortlist</span></div>
+          <div class="field">
+            <div class="field-label"><span>Shortlist size · Top-K</span><b class="kval">K = 30</b></div>
+            <div class="kslider" id="kslider" role="slider" aria-label="Top-K" aria-valuemin="10" aria-valuemax="100" aria-valuenow="30" aria-disabled="true"></div>
+            <p class="field-note">11 saved cutoffs from K10 to K100; nothing between them is interpolated.</p>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <div class="field-label"><span>Search method</span></div>
+              <div class="seg"><button class="on" type="button" aria-pressed="true">Exact</button><button type="button">HNSW</button></div>
+            </div>
+            <div class="field">
+              <div class="field-label"><span>Similarity</span></div>
+              <span class="static-val mono">cosine</span>
+            </div>
+            <div class="field">
+              <div class="field-label"><span>HNSW index</span></div>
+              <span class="static-val mono">M <span data-n="latency.primary.M"></span> · ef <span data-n="latency.primary.ef"></span></span>
+            </div>
+          </div>
+          <div class="field">
+            <div class="field-label"><span>Candidate pool</span><b>measured pools only</b></div>
+            <div class="radios">
+              <button class="radio-card on" type="button" aria-pressed="true"><span class="rdot"></span><span class="rc-text"><span class="rc-title">Test panel</span><span class="rc-sub"><span data-n="panels.test"></span> documents</span></span></button>
+              <button class="radio-card" type="button"><span class="rdot"></span><span class="rc-text"><span class="rc-title">Corpus index</span><span class="rc-sub"><span data-n="corpus.documents"></span> documents</span></span></button>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="stage" disabled>
+          <legend class="sr-only">Evaluate</legend>
+          <div class="stage-head"><span class="stage-num">03</span><span class="stage-title">Evaluate</span><span class="stage-sub">questions &amp; labels</span></div>
+          <div class="field">
+            <div class="field-label"><span>Split</span><b>model chosen on validation</b></div>
+            <div class="seg"><button type="button"><span>Validation · <span data-n="questions.validation"></span></span></button><button class="on" type="button" aria-pressed="true"><span>Test · <span data-n="questions.test"></span></span></button></div>
+          </div>
+          <div class="field">
+            <div class="field-label"><span>Knowledge sets</span><b>6 of 6 selected</b></div>
+            <div class="chips" id="set-chips"></div>
+          </div>
+          <div class="field">
+            <div class="field-label"><span>Question cohort</span></div>
+            <button class="select" type="button"><span>All <span data-n="questions.test"></span> test questions</span><svg class="icon" viewBox="0 0 20 20"><path d="m6 8 4 4 4-4"/></svg></button>
+            <p class="field-note">Cohorts re-aggregate saved per-question results over the same pool and are labeled as derived.</p>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <section class="deck-mini" aria-label="Retrieval options summary">
+      <div class="dm-head"><span>Retrieval options</span><button class="ghost-btn" type="button" disabled>Edit</button></div>
+      <div class="chips">
+        <span class="chip sm on">BGE-small</span><span class="chip sm">Adapted vs base</span><span class="chip sm">384-d</span><span class="chip sm">K = 30</span><span class="chip sm">Exact cosine</span><span class="chip sm">Test · <span data-n="questions.test"></span></span><span class="chip sm"><span data-n="panels.test"></span> docs</span><span class="chip sm">6 sets</span>
+      </div>
+    </section>
+
+    <section class="flow" aria-label="Resolved retrieval run">
+      <div class="flow-label">Resolved <br>run</div>
+      <ol>
+        <li><span class="fi"><svg class="icon" viewBox="0 0 20 20"><ellipse cx="10" cy="4.8" rx="6" ry="2.3"/><path d="M4 4.8v10.4c0 1.3 2.7 2.3 6 2.3s6-1 6-2.3V4.8"/><path d="M4 10c0 1.3 2.7 2.3 6 2.3s6-1 6-2.3"/></svg></span><span class="ft"><small>Corpus</small><b data-n="corpus.records"></b><span>synthetic records · 6 knowledge sets</span></span></li>
+        <li><span class="fi"><svg class="icon" viewBox="0 0 20 20"><path d="M3 4h14l-5.2 6.2v5.3l-3.6 1.8v-7.1z"/></svg></span><span class="ft"><small>Candidate pool</small><b data-n="panels.test"></b><span>test documents, incl. <span data-n="splits.test.negatives"></span> negatives</span></span></li>
+        <li><span class="fi"><svg class="icon" viewBox="0 0 20 20"><rect x="5" y="5" width="10" height="10" rx="2"/><path d="M8 8h4v4H8zM8 2.5V5M12 2.5V5M8 15v2.5M12 15v2.5M2.5 8H5M2.5 12H5M15 8h2.5M15 12h2.5"/></svg></span><span class="ft"><small>Encoder</small><b>BGE-small</b><span>adapted · 384-d vectors</span></span></li>
+        <li><span class="fi"><svg class="icon" viewBox="0 0 20 20"><circle cx="10" cy="10" r="7"/><circle cx="10" cy="10" r="3.2"/><path d="m10 10 4.6-4.6"/></svg></span><span class="ft"><small>Search</small><b><span data-n="latency.primary.exact_ms" data-f="ms"></span> ms</b><span>exact cosine · mean per question</span></span></li>
+        <li><span class="fi"><svg class="icon" viewBox="0 0 20 20"><path d="M8 5.5h9M8 10h9M8 14.5h9"/><circle cx="4" cy="5.5" r="1.1"/><circle cx="4" cy="10" r="1.1"/><circle cx="4" cy="14.5" r="1.1"/></svg></span><span class="ft"><small>Shortlist</small><b>Top-30</b><span><span data-n="k30.adapted.matched"></span> / <span data-n="k30.adapted.relevant"></span> relevant pairs kept</span></span></li>
+        <li class="llm"><span class="fi"><svg class="icon" viewBox="0 0 20 20"><path d="m9 2.5 1.5 4.3 4.3 1.5-4.3 1.5L9 14.1l-1.5-4.3-4.3-1.5 4.3-1.5z"/><path d="m15.2 12.6.7 1.8 1.8.7-1.8.7-.7 1.8-.7-1.8-1.8-.7 1.8-.7z"/></svg></span><span class="ft"><small>LLM context</small><b><span data-n="context.30.p50"></span> tokens</b><span>median · answers not evaluated</span></span></li>
+      </ol>
+    </section>
+
+    <noscript>This preview draws its charts with JavaScript from the saved evidence embedded in this file.</noscript>
+
+    <section class="kpis" id="kpis" aria-label="Key metrics at K30"></section>
+
+    <section class="grid" aria-label="Analytics">
+      <h2 class="section-label">Retrieval quality</h2>
+      <article class="card s8">
+        <header class="card-head">
+          <div>
+            <h3 class="card-title">Recall frontier</h3>
+            <p class="card-sub">Macro recall, or average question coverage, at every saved shortlist size · BGE-small · test · <span data-n="questions.test"></span> questions.</p>
+          </div>
+          <div class="seg" role="group" aria-label="Metric"><button class="on" type="button" disabled aria-pressed="true">Macro</button><button type="button" disabled>Micro</button><button type="button" disabled>Precision</button><button type="button" disabled>MRR</button><button type="button" disabled>Hit</button></div>
+        </header>
+        <div class="legend"><span><i class="sw-line" style="color:var(--cyan)"></i>BGE adapted</span><span><i class="sw-line dash" style="color:var(--slate)"></i>BGE base</span><span><i class="sw-line thin" style="color:var(--cyan-2)"></i>E5 · MiniLM adapted</span><span><i class="sw-line thin dash" style="color:var(--slate)"></i>E5 · MiniLM base</span><span><i class="sw-dot" style="color:var(--amber)"></i>Selected K</span></div>
+        <div class="chart" id="chart-frontier"></div>
+        <footer class="card-foot"><span>Dots mark measured cutoffs; no values between them are interpolated.</span><a class="src" href="../results/shortlist/">results/shortlist/{bge,e5,minilm}/metrics.csv</a></footer>
+      </article>
+      <article class="card s4">
+        <header class="card-head">
+          <div>
+            <h3 class="card-title">Coverage vs. precision</h3>
+            <p class="card-sub">Each dot is a saved K. Larger shortlists keep more useful options but make the returned list less precise.</p>
+          </div>
+        </header>
+        <div class="legend"><span><i class="sw-line" style="color:var(--cyan)"></i>Adapted</span><span><i class="sw-line dash" style="color:var(--slate)"></i>Base</span><span><i class="sw-dot" style="color:var(--amber)"></i>K30</span></div>
+        <div class="chart" id="chart-tradeoff"></div>
+        <footer class="card-foot"><a class="src" href="../results/shortlist/bge/metrics.csv">results/shortlist/bge/metrics.csv</a></footer>
+      </article>
+
+      <h2 class="section-label">Retrieval trace</h2>
+      <article class="card s12">
+        <header class="card-head">
+          <div>
+            <h3 class="card-title">What did each model actually retrieve?</h3>
+            <p class="card-sub">Saved Top-30 rankings joined to the test candidate pool for one question. These are retrieved records, not LLM answers.</p>
+          </div>
+          <div class="seg" role="group" aria-label="Comparison view"><button class="on" type="button" disabled aria-pressed="true">Side by side</button><button type="button" disabled>Adapted</button><button type="button" disabled>Base</button></div>
+        </header>
+        <div class="trace" id="trace"></div>
+        <footer class="card-foot"><span>Scores are cosine similarities, not probabilities. Relevance comes from the panel's saved IDs.</span><a class="src" href="../results/primary/bge/">results/primary/bge/{base,adapted}/test/rankings.jsonl.gz</a><a class="src" href="../data/panels/test/">data/panels/test/</a></footer>
+      </article>
+
+      <h2 class="section-label">Model landscape</h2>
+      <article class="card s7">
+        <header class="card-head">
+          <div>
+            <h3 class="card-title">Model × shortlist size</h3>
+            <p class="card-sub">Macro recall on the same <span data-n="questions.test"></span> test questions. Only saved conditions appear as rows.</p>
+          </div>
+          <button class="select compact" type="button" disabled><span>Metric · Macro recall</span><svg class="icon" viewBox="0 0 20 20"><path d="m6 8 4 4 4-4"/></svg></button>
+        </header>
+        <div class="chart" id="chart-heatmap"></div>
+        <footer class="card-foot"><span>★ mxbai 512 was selected on validation; 1024 is secondary. mxbai also differs in capacity, loss and batch size. OpenAI rows are unchanged full-text references, not length-matched.</span><a class="src" href="../results/primary/">results/primary</a><a class="src" href="../results/mxbai/">results/mxbai</a><a class="src" href="../results/openai/">results/openai</a></footer>
+      </article>
+      <article class="card s5">
+        <header class="card-head">
+          <div>
+            <h3 class="card-title">Lift by knowledge set</h3>
+            <p class="card-sub">Macro recall@30 from base to adapted · BGE-small · test, sorted by gain.</p>
+          </div>
+        </header>
+        <div class="legend"><span><i class="sw-dot" style="color:var(--slate)"></i>Base</span><span><i class="sw-dot" style="color:var(--cyan)"></i>Adapted</span></div>
+        <div class="chart" id="chart-sets"></div>
+        <p class="insight" id="sets-insight"></p>
+        <footer class="card-foot"><span>n = test questions in each set.</span><a class="src" href="../results/primary/bge/adapted/test/metrics.csv">results/primary/bge/*/test/metrics.csv</a></footer>
+      </article>
+
+      <h2 class="section-label">Distribution, cost &amp; speed</h2>
+      <article class="card s4 m6">
+        <header class="card-head">
+          <div>
+            <h3 class="card-title">Per-question recall@30</h3>
+            <p class="card-sub">The same <span data-n="questions.test"></span> test questions in 10-point bins; the last bin includes 100%.</p>
+          </div>
+        </header>
+        <div class="chart" id="chart-dist"></div>
+        <div class="outcome" id="outcome"></div>
+        <footer class="card-foot"><a class="src" href="../results/primary/bge/adapted/test/query_metrics.csv">results/primary/bge/*/test/query_metrics.csv</a></footer>
+      </article>
+      <article class="card s4 m6">
+        <header class="card-head">
+          <div>
+            <h3 class="card-title">Context cost of a longer shortlist</h3>
+            <p class="card-sub">Median tokens to serialize the question and Top-K records (cl100k_base) against relevant pairs kept · BGE adapted · test.</p>
+          </div>
+        </header>
+        <div class="chart" id="chart-context"></div>
+        <div class="ctx" id="context-stats"></div>
+        <footer class="card-foot"><span>Token counts only: no LLM call, answer quality or charge was measured.</span><a class="src" href="../results/context/statistics.csv">results/context/statistics.csv</a></footer>
+      </article>
+      <article class="card s4">
+        <header class="card-head">
+          <div>
+            <h3 class="card-title">Index speed vs. fidelity</h3>
+            <p class="card-sub">Mean search time per question at K30 (dot) and p95 (tick), log scale · BGE adapted · <span data-n="latency.primary.queries"></span> test questions.</p>
+          </div>
+        </header>
+        <div class="legend"><span><i class="sw-dot" style="color:var(--violet)"></i>Exact</span><span><i class="sw-dot" style="color:var(--cyan)"></i>HNSW</span></div>
+        <div class="lanes">
+          <div class="lane">
+            <div class="lane-head"><b>Test panel</b><span class="mono"><span data-n="panels.test"></span> docs · HNSW M <span data-n="latency.primary.M"></span> / ef <span data-n="latency.primary.ef"></span></span></div>
+            <div class="chart" id="lat-primary"></div>
+            <div class="lane-stats"><span class="stat">Top-30 overlap with exact <b data-n="latency.primary.overlap" data-f="pct"></b></span><span class="stat">Recall@30 exact <b data-n="latency.primary.exact_recall" data-f="pct"></b> · HNSW <b data-n="latency.primary.hnsw_recall" data-f="pct"></b></span></div>
+          </div>
+          <div class="lane">
+            <div class="lane-head"><b>Corpus index</b><span class="mono"><span data-n="corpus.documents"></span> docs · HNSW M <span data-n="latency.scale.M"></span> / ef <span data-n="latency.scale.ef"></span></span></div>
+            <div class="chart" id="lat-scale"></div>
+            <div class="lane-stats"><span class="stat">Top-30 overlap with exact <b data-n="latency.scale.overlap" data-f="pct"></b></span><span class="stat">Recall@30 exact <b data-n="latency.scale.exact_recall" data-f="pct"></b> · HNSW <b data-n="latency.scale.hnsw_recall" data-f="pct"></b></span></div>
+          </div>
+        </div>
+        <footer class="card-foot"><span>Exact timing includes the full sort; HNSW covers native lookup only. Overlap is agreement with exact search, not domain recall. The corpus lane adds documents from other splits while relevance keeps the test IDs, so recall is not comparable across lanes.</span><a class="src" href="../results/indexes/">results/indexes/{primary,scale}/comparison.json</a></footer>
+      </article>
+
+      <h2 class="section-label">Corpus</h2>
+      <article class="card s12">
+        <header class="card-head">
+          <div>
+            <h3 class="card-title">Corpus &amp; evaluation panels</h3>
+            <p class="card-sub">Synthetic biopharma manufacturing knowledge base. Every semantic group stays inside one split.</p>
+          </div>
+        </header>
+        <div class="corpus"><div class="cp" id="cp-sets"></div><div class="cp" id="cp-types"></div><div class="cp" id="cp-splits"></div></div>
+        <div class="cp-stats" id="cp-stats"></div>
+        <footer class="card-foot"><span>Synthetic labels are not expert scientific judgments, and template repetition limits independence.</span><a class="src" href="../data/eda/corpus_counts.json">data/eda/corpus_counts.json</a><a class="src" href="../data/manifest.json">data/manifest.json</a></footer>
+      </article>
+    </section>
+
+    <footer class="foot">
+      <h2>Evidence boundaries</h2>
+      <ul>
+        <li>Everything shown is saved evidence from this repository. The page calls no model, index or API.</li>
+        <li>"Responses" are retrieved records, not LLM answers. Similarity scores are not probabilities, and synthetic relevance labels are not expert judgments.</li>
+        <li>Only measured pools appear: <span data-n="panels.test"></span> test, <span data-n="panels.validation"></span> validation and <span data-n="corpus.documents"></span> index documents. Unmeasured settings stay locked.</li>
+        <li>Macro recall averages coverage per question; micro recall is overall useful-option coverage; precision is the useful share of the returned list; MRR is the reciprocal rank of the first relevant result.</li>
+        <li>mxbai was selected at 512 on validation and differs in capacity, loss and batch size. OpenAI rows are unchanged full-text references.</li>
+        <li>HNSW neighbor overlap is agreement with exact search, not domain recall. Exact timing includes the full sort; HNSW timing covers native lookup only.</li>
+      </ul>
+      <div class="foot-meta"><span>Retrieval Observatory · static design preview v2 · theme switch works; retrieval controls are not wired</span><span><a href="../README.md">Study</a> · <a href="PLAN.md">Plan</a> · <a href="preview.html">Preview v1</a></span></div>
+    </footer>
+  </main>
+</div>
+
+<script type="application/json" id="evidence">
+{
+ "k":[10,20,30,50,60,70,75,80,85,90,100],
+ "sweep":{
+  "bge":{
+   "base":{
+    "macro_recall":[0.03077,0.078281,0.139139,0.226463,0.268562,0.296662,0.313411,0.327917,0.342621,0.354669,0.377965],
+    "micro_recall":[0.032236,0.074351,0.121657,0.207884,0.250299,0.284531,0.301497,0.316667,0.331138,0.34491,0.371158],
+    "micro_precision":[0.136864,0.157839,0.172175,0.176525,0.177119,0.172579,0.170678,0.168061,0.165404,0.162712,0.157585],
+    "macro_mrr":[0.163322,0.173774,0.175871,0.177695,0.177993,0.178242,0.178533,0.178699,0.178902,0.178902,0.179166],
+    "macro_hit":[0.211864,0.381356,0.436441,0.504237,0.521186,0.538136,0.559322,0.572034,0.588983,0.588983,0.614407]
+   },
+   "adapted":{
+    "macro_recall":[0.407987,0.536784,0.602618,0.719706,0.768837,0.802325,0.816219,0.826187,0.836039,0.843801,0.860605],
+    "micro_recall":[0.181936,0.292615,0.378244,0.536128,0.604491,0.657984,0.679042,0.698004,0.716068,0.733333,0.763872],
+    "micro_precision":[0.772458,0.621186,0.535311,0.455254,0.427754,0.399092,0.384407,0.370445,0.357677,0.345951,0.324322],
+    "macro_mrr":[0.937076,0.938502,0.938502,0.938587,0.938667,0.938728,0.938728,0.938728,0.938728,0.938728,0.938728],
+    "macro_hit":[0.961864,0.983051,0.983051,0.987288,0.991525,0.995763,0.995763,0.995763,0.995763,0.995763,0.995763]
+   }
+  },
+  "e5":{
+   "base":{
+    "macro_recall":[0.027308,0.059237,0.10303,0.180787,0.218303,0.245735,0.257972,0.272532,0.287128,0.306021,0.335776],
+    "micro_recall":[0.027944,0.058782,0.096906,0.168463,0.206088,0.238523,0.253094,0.269461,0.284431,0.300898,0.331138],
+    "micro_precision":[0.118644,0.124788,0.137147,0.143051,0.145833,0.144673,0.143277,0.143008,0.142074,0.141949,0.140593],
+    "macro_mrr":[0.153919,0.161496,0.163338,0.16603,0.166727,0.166986,0.167104,0.167322,0.167372,0.167519,0.167833],
+    "macro_hit":[0.186441,0.305085,0.351695,0.449153,0.487288,0.504237,0.512712,0.529661,0.533898,0.54661,0.576271]
+   },
+   "adapted":{
+    "macro_recall":[0.409725,0.526927,0.594271,0.699586,0.745501,0.780838,0.791933,0.803811,0.816191,0.828079,0.849108],
+    "micro_recall":[0.181038,0.287226,0.370359,0.519561,0.588224,0.641018,0.660778,0.68014,0.698802,0.717465,0.750599],
+    "micro_precision":[0.768644,0.609746,0.524153,0.441186,0.416243,0.388801,0.374068,0.360964,0.349053,0.338465,0.318686],
+    "macro_mrr":[0.94315,0.944596,0.944596,0.944596,0.944671,0.944737,0.944737,0.944737,0.944737,0.944737,0.944737],
+    "macro_hit":[0.970339,0.991525,0.991525,0.991525,0.995763,1.0,1.0,1.0,1.0,1.0,1.0]
+   }
+  },
+  "minilm":{
+   "base":{
+    "macro_recall":[0.015745,0.036506,0.063194,0.118268,0.13934,0.160776,0.170463,0.179476,0.192311,0.2071,0.231949],
+    "micro_recall":[0.019162,0.040319,0.06477,0.11517,0.138024,0.162974,0.174351,0.186228,0.199002,0.213373,0.236627],
+    "micro_precision":[0.081356,0.085593,0.091667,0.097797,0.097669,0.09885,0.098701,0.098835,0.099402,0.100659,0.100466],
+    "macro_mrr":[0.102225,0.109274,0.110806,0.112509,0.112993,0.113256,0.113487,0.113596,0.114003,0.114147,0.114414],
+    "macro_hit":[0.118644,0.228814,0.266949,0.334746,0.360169,0.377119,0.394068,0.402542,0.436441,0.449153,0.474576]
+   },
+   "adapted":{
+    "macro_recall":[0.402713,0.523065,0.579337,0.666724,0.711959,0.739649,0.748987,0.759004,0.76646,0.776266,0.794295],
+    "micro_recall":[0.17994,0.283633,0.362076,0.498802,0.559481,0.60499,0.621457,0.637425,0.653792,0.67006,0.697405],
+    "micro_precision":[0.763983,0.602119,0.512429,0.423559,0.395904,0.366949,0.351808,0.338294,0.32657,0.316102,0.296102],
+    "macro_mrr":[0.944456,0.945599,0.945599,0.945599,0.945827,0.945888,0.945888,0.945888,0.945888,0.945888,0.945933],
+    "macro_hit":[0.961864,0.978814,0.978814,0.978814,0.991525,0.995763,0.995763,0.995763,0.995763,0.995763,1.0]
+   }
+  }
+ },
+ "k30":{
+  "base":{"matched":1219,"returned":7080,"relevant":10020,"hits":103,"queries":236},
+  "adapted":{"matched":3790,"returned":7080,"relevant":10020,"hits":232,"queries":236}
+ },
+ "matrix":[
+  {"group":"compact","label":"BGE-small","width":384,"condition":"base","values":[0.03077,0.078281,0.139139,0.377965]},
+  {"group":"compact","label":"BGE-small","width":384,"condition":"adapted","values":[0.407987,0.536784,0.602618,0.860605]},
+  {"group":"compact","label":"E5-small","width":384,"condition":"base","values":[0.027308,0.059237,0.10303,0.335776]},
+  {"group":"compact","label":"E5-small","width":384,"condition":"adapted","values":[0.409725,0.526927,0.594271,0.849108]},
+  {"group":"compact","label":"MiniLM-L6","width":384,"condition":"base","values":[0.015745,0.036506,0.063194,0.231949]},
+  {"group":"compact","label":"MiniLM-L6","width":384,"condition":"adapted","values":[0.402713,0.523065,0.579337,0.794295]},
+  {"group":"mxbai","label":"mxbai-large","width":512,"condition":"base","values":[0.017485,0.03751,0.062194,0.208797]},
+  {"group":"mxbai","label":"mxbai-large","width":512,"condition":"adapted","values":[0.416548,0.556865,0.635241,0.900139]},
+  {"group":"mxbai","label":"mxbai-large","width":1024,"condition":"base","values":[0.015408,0.037855,0.065194,0.213528]},
+  {"group":"mxbai","label":"mxbai-large","width":1024,"condition":"adapted","values":[0.415031,0.558926,0.640077,0.908164]},
+  {"group":"openai","label":"text-embedding-3-small","width":384,"condition":"unchanged","values":[0.050607,0.101029,0.147641,0.359614]},
+  {"group":"openai","label":"text-embedding-3-small","width":512,"condition":"unchanged","values":[0.035716,0.085414,0.130933,0.334006]},
+  {"group":"openai","label":"text-embedding-3-small","width":1024,"condition":"unchanged","values":[0.037521,0.089537,0.138756,0.355528]}
+ ],
+ "sets":[
+  {"key":"terminology_concepts","name":"Terminology","queries":47,"base":0.069847,"adapted":0.368049},
+  {"key":"isa88_manufacturing_context","name":"ISA-88 context","queries":36,"base":0.244835,"adapted":0.724566},
+  {"key":"unit_operations_measurements","name":"Unit ops & measures","queries":36,"base":0.233994,"adapted":0.627249},
+  {"key":"equipment_instrumentation","name":"Equipment","queries":35,"base":0.175548,"adapted":0.743486},
+  {"key":"cpp_cqa_relationships","name":"CPP / CQA","queries":36,"base":0.011371,"adapted":0.410134},
+  {"key":"measurement_source_mapping","name":"Source mapping","queries":46,"base":0.125276,"adapted":0.771032}
+ ],
+ "histogram":{"base":[153,20,14,21,8,6,2,5,1,6],"adapted":[6,15,15,52,29,16,14,4,1,84]},
+ "changes":{"improved":210,"unchanged":24,"regressed":2},
+ "regressed":[
+  {"id":"bio-stage1-003633","measure":"Hold Time","operation":"Primary Drying","set":"terminology_concepts","relevant":128,"base":0.210938,"adapted":0.203125},
+  {"id":"bio-stage1-018006","measure":"pH","operation":"Quench","set":"isa88_manufacturing_context","relevant":62,"base":0.467742,"adapted":0.33871}
+ ],
+ "queries":[
+  {
+   "id":"bio-stage1-085019",
+   "measure":"Hold Time",
+   "operation":"Automated Visual Inspection",
+   "set":"measurement_source_mapping",
+   "relevant":128,
+   "base":0.0,
+   "adapted":0.234375,
+   "text":"Process: Drug Product Manufacturing | Stage: Inspection | Operation: Automated Visual Inspection | Phase: Defect inspection | Measure: Hold Time | Anchor: Canonical Drug Product Manufacturing > Inspection > Automated Vis"
+  },
+  {
+   "id":"bio-stage1-069397",
+   "measure":"Flow Rate",
+   "operation":"Column Loading",
+   "set":"equipment_instrumentation",
+   "relevant":3,
+   "base":0.0,
+   "adapted":1.0,
+   "text":"Process: Drug Substance Purification | Stage: Capture Chromatography | Operation: Column Loading | Phase: Load application | Measure: Flow Rate | Anchor: Column Loading | chromatography skid | Flow Rate"
+  },
+  {
+   "id":"bio-stage1-092607",
+   "measure":"Mixer Torque",
+   "operation":"Wet Granulation",
+   "set":"measurement_source_mapping",
+   "relevant":13,
+   "base":0.0,
+   "adapted":0.923077,
+   "text":"Process: Oral Solid Dose Manufacturing | Stage: Granulation | Operation: Wet Granulation | Phase: Binder addition and mixing | Measure: Mixer Torque | Anchor: Canonical Oral Solid Dose Manufacturing > Granulation > Wet G"
+  },
+  {
+   "id":"bio-stage1-077584",
+   "measure":"Hold Time",
+   "operation":"Reagent Addition",
+   "set":"cpp_cqa_relationships",
+   "relevant":13,
+   "base":0.0,
+   "adapted":0.384615,
+   "text":"Process: Active Pharmaceutical Ingredient Manufacturing | Stage: Reaction | Operation: Reagent Addition | Phase: Controlled charge | Measure: Hold Time | Anchor: Active Pharmaceutical Ingredient Manufacturing > Reaction "
+  },
+  {
+   "id":"bio-stage1-044081",
+   "measure":"Differential Pressure",
+   "operation":"Cake Filtration",
+   "set":"unit_operations_measurements",
+   "relevant":19,
+   "base":0.0,
+   "adapted":1.0,
+   "text":"Process: Active Pharmaceutical Ingredient Manufacturing | Stage: Isolation | Operation: Cake Filtration | Phase: Solid-liquid separation | Measure: Differential Pressure | Anchor: Cake Filtration measurement requirements"
+  },
+  {
+   "id":"bio-stage1-088023",
+   "measure":"Temperature",
+   "operation":"Primary Drying",
+   "set":"measurement_source_mapping",
+   "relevant":107,
+   "base":0.084112,
+   "adapted":0.280374,
+   "text":"Process: Drug Product Manufacturing | Stage: Lyophilization | Operation: Primary Drying | Phase: Sublimation | Measure: Temperature | Anchor: Canonical Drug Product Manufacturing > Lyophilization > Primary Drying > Tempe"
+  },
+  {
+   "id":"bio-stage1-051870",
+   "measure":"Pressure",
+   "operation":"Centrifugation",
+   "set":"unit_operations_measurements",
+   "relevant":12,
+   "base":0.0,
+   "adapted":0.916667,
+   "text":"Process: Drug Substance Purification | Stage: Clarification | Operation: Centrifugation | Phase: Solids separation | Measure: Pressure | Anchor: Centrifugation measurement requirements"
+  },
+  {
+   "id":"bio-stage1-033069",
+   "measure":"UV Absorbance",
+   "operation":"Impurity Removal",
+   "set":"unit_operations_measurements",
+   "relevant":68,
+   "base":0.176471,
+   "adapted":0.441176,
+   "text":"Process: Drug Substance Purification | Stage: Polishing Chromatography | Operation: Impurity Removal | Phase: Gradient elution | Measure: UV Absorbance | Anchor: Impurity Removal measurement requirements"
+  }
+ ],
+ "codes":{"base":"oooooooooooooooooooooooooooooo","adapted":"rrrrrrrrrrrrrrrrrrrrrrrrrrrrrr"},
+ "top":{
+  "base":[
+   {
+    "rank":1,
+    "id":"bio-stage1-041999",
+    "score":0.7991,
+    "set":"unit_operations_measurements",
+    "relevant":false,
+    "text":"Related meaning: Hold Time is a plausible measurement for Automated Visual Inspection during Defect inspection on an inspection machine. Evidence view: use the within-phase variability from the process order before phase initiation for semantic retrieval, reta"
+   },
+   {
+    "rank":2,
+    "id":"bio-stage1-014481",
+    "score":0.7983,
+    "set":"terminology_concepts",
+    "relevant":false,
+    "text":"Related meaning: In formulation manufacturing, drug product means finished dosage form containing drug substance and excipients; the context is Formulation. Evidence view: use the duration-aligned observation from the batch execution before phase initiation fo"
+   },
+   {
+    "rank":3,
+    "id":"bio-stage1-041789",
+    "score":0.7978,
+    "set":"unit_operations_measurements",
+    "relevant":false,
+    "text":"Related meaning: Hold Time is a plausible measurement for Automated Visual Inspection during Defect inspection on an inspection machine. Evidence view: use the phase-start value from the process order before phase initiation for semantic retrieval, retaining m"
+   },
+   {
+    "rank":4,
+    "id":"bio-stage1-041859",
+    "score":0.7972,
+    "set":"unit_operations_measurements",
+    "relevant":false,
+    "text":"Related meaning: Hold Time is a plausible measurement for Automated Visual Inspection during Defect inspection on an inspection machine. Evidence view: use the phase mean from the process order before phase initiation for semantic retrieval, retaining min and "
+   },
+   {
+    "rank":5,
+    "id":"bio-stage1-041824",
+    "score":0.797,
+    "set":"unit_operations_measurements",
+    "relevant":false,
+    "text":"Related meaning: Hold Time is a plausible measurement for Automated Visual Inspection during Defect inspection on an inspection machine. Evidence view: use the phase-end value from the process order before phase initiation for semantic retrieval, retaining h a"
+   }
+  ],
+  "adapted":[
+   {
+    "rank":1,
+    "id":"bio-stage1-085054",
+    "score":0.9477,
+    "set":"measurement_source_mapping",
+    "relevant":true,
+    "text":"Related meaning: The PLC representation INSPECTION-ELAPSED_HOLD-ACT is a plausible source label for canonical Hold Time during Automated Visual Inspection. Evidence view: use the raw observation from the batch execution before phase initiation for semantic ret"
+   },
+   {
+    "rank":2,
+    "id":"bio-stage1-087364",
+    "score":0.9476,
+    "set":"measurement_source_mapping",
+    "relevant":true,
+    "text":"Related meaning: The process historian representation DEFECT_INS_ELAPSED_HOLD_01 is a plausible source label for canonical Hold Time during Automated Visual Inspection. Evidence view: use the phase-start value from the batch execution before phase initiation f"
+   },
+   {
+    "rank":3,
+    "id":"bio-stage1-098380",
+    "score":0.9472,
+    "set":"measurement_source_mapping",
+    "relevant":true,
+    "text":"Related meaning: The PLC representation AUTOMATED_VI_HOLD_TIME_PV is a plausible source label for canonical Hold Time during Automated Visual Inspection. Evidence view: use the raw observation from the batch execution before phase initiation for semantic retri"
+   },
+   {
+    "rank":4,
+    "id":"bio-stage1-098800",
+    "score":0.9467,
+    "set":"measurement_source_mapping",
+    "relevant":true,
+    "text":"Related meaning: The process historian representation AUTOMATED_VI_HOLD_TIME_PV is a plausible source label for canonical Hold Time during Automated Visual Inspection. Evidence view: use the raw observation from the batch execution before phase initiation for "
+   },
+   {
+    "rank":5,
+    "id":"bio-stage1-085474",
+    "score":0.9465,
+    "set":"measurement_source_mapping",
+    "relevant":true,
+    "text":"Related meaning: The process historian representation INSPECTION-ELAPSED_HOLD-ACT is a plausible source label for canonical Hold Time during Automated Visual Inspection. Evidence view: use the raw observation from the batch execution before phase initiation fo"
+   }
+  ]
+ },
+ "relevant_in_pool":128,
+ "context":{
+  "10":{"p50":1287.0,"p95":1404.75},
+  "20":{"p50":2515.5,"p95":2734.75},
+  "30":{"p50":3752.0,"p95":4060.5},
+  "100":{"p50":12106.5,"p95":13336.5},
+  "200":{"p50":23677.0,"p95":25822.25},
+  "500":{"p50":58350.5,"p95":63797.25},
+  "1000":{"p50":115942.0,"p95":125493.25}
+ },
+ "latency":{
+  "primary":{
+   "exact_ms":1.5365,
+   "hnsw_ms":0.1866,
+   "exact_p95":1.5619,
+   "hnsw_p95":0.2503,
+   "overlap":0.992373,
+   "exact_recall":0.602618,
+   "hnsw_recall":0.602618,
+   "M":32,
+   "ef":128,
+   "queries":236
+  },
+  "scale":{
+   "exact_ms":17.9364,
+   "hnsw_ms":0.2116,
+   "exact_p95":18.1501,
+   "hnsw_p95":0.2877,
+   "overlap":0.984746,
+   "exact_recall":0.273433,
+   "hnsw_recall":0.271939,
+   "M":16,
+   "ef":128,
+   "queries":236
+  }
+ },
+ "corpus":{
+  "records":100000,
+  "documents":115000,
+  "sets":{
+   "terminology_concepts":18000,
+   "isa88_manufacturing_context":15000,
+   "unit_operations_measurements":22000,
+   "equipment_instrumentation":15000,
+   "cpp_cqa_relationships":15000,
+   "measurement_source_mapping":15000
+  },
+  "types":{
+   "positive_semantic_relationship":20000,
+   "contextual_relationship":15000,
+   "terminology_synonym_abbreviation":15000,
+   "hard_negative":15000,
+   "equipment_instrument_relationship":10000,
+   "hierarchy_relationship":10000,
+   "operation_measurement_relationship":10000,
+   "source_system_noisy_representation":5000
+  },
+  "groups":2411,
+  "negatives":15000
+ },
+ "splits":{
+  "train":{"records":79965,"groups":1940,"negatives":12122},
+  "validation":{"records":10015,"groups":235,"negatives":1408},
+  "test":{"records":10020,"groups":236,"negatives":1470}
+ },
+ "panels":{"validation":11423,"test":11490},
+ "questions":{"validation":235,"test":236}
+}
+</script>
+<script>
+(() => {
+  'use strict';
+  const D = JSON.parse(document.getElementById('evidence').textContent);
+  const NS = 'http://www.w3.org/2000/svg';
+  const THEMES = {
+    dark: {
+      cyan: '#22D3EE', cyan2: '#67E8F9', slate: '#7C8BA5', violet: '#A78BFA', emerald: '#34D399', rose: '#FB7185', amber: '#FBBF24', amberInk: '#FBBF24',
+      text: '#E6EDF7', text2: '#B9C4D6', muted: '#8A97AD', surface: '#0B1222', other: '#2A3850', unchanged: '#3B4A63',
+      glow: true, area: 0.3, band: [0.22, 0.03], ghost: [0.42, 0.5], pill: ['rgba(251,191,36,.12)', 'rgba(251,191,36,.6)'],
+      chipStroke: 'rgba(34,211,238,.55)', rowSel: 'rgba(34,211,238,.07)', track: 'rgba(148,163,184,.1)', laneTrack: 'rgba(148,163,184,.12)',
+      bars: [['#67E8F9', 0.95], ['#22D3EE', 0.35]], baseBar: ['#7C8BA5', 0.55], cellStroke: undefined, ink: ['#03141C', '#E6EDF7'],
+      heat: [[0, '#0E1A2E'], [0.15, '#0F2D48'], [0.35, '#0B5372'], [0.55, '#119AB2'], [0.75, '#19B9CC'], [0.9, '#6BE6F5'], [1, '#D4FBFF']],
+      sets: { terminology_concepts: '#38BDF8', isa88_manufacturing_context: '#818CF8', unit_operations_measurements: '#2DD4BF', equipment_instrumentation: '#F472B6', cpp_cqa_relationships: '#A3E635', measurement_source_mapping: '#FDBA74' },
+      types: ['#C7D2E3', '#A7B6CD', '#8C9EBB', '#7487A8', '#617496', '#506283', '#425270', '#FB7185']
+    },
+    light: {
+      cyan: '#0891B2', cyan2: '#0E7490', slate: '#64748B', violet: '#7C3AED', emerald: '#059669', rose: '#E11D48', amber: '#D97706', amberInk: '#B45309',
+      text: '#0F172A', text2: '#334155', muted: '#5B6A80', surface: '#FFFFFF', other: '#C3CDDA', unchanged: '#C3CDDA',
+      glow: false, area: 0.18, band: [0.16, 0.02], ghost: [0.45, 0.5], pill: ['#FFFBEB', '#F59E0B'],
+      chipStroke: 'rgba(8,145,178,.5)', rowSel: 'rgba(8,145,178,.08)', track: 'rgba(15,23,42,.06)', laneTrack: 'rgba(15,23,42,.07)',
+      bars: [['#0EA5C6', 1], ['#0891B2', 0.9]], baseBar: ['#7C8BA5', 1], cellStroke: 'rgba(15,23,42,.06)', ink: ['#0F172A', '#FFFFFF'],
+      heat: [[0, '#F1F5F9'], [0.15, '#E0F7FB'], [0.35, '#A5E9F5'], [0.55, '#4CC9E0'], [0.75, '#16A9C5'], [0.82, '#0E8EAD'], [0.9, '#0A6782'], [1, '#0B4A5E']],
+      sets: { terminology_concepts: '#0284C7', isa88_manufacturing_context: '#4F46E5', unit_operations_measurements: '#0D9488', equipment_instrumentation: '#DB2777', cpp_cqa_relationships: '#4D7C0F', measurement_source_mapping: '#EA580C' },
+      types: ['#1E293B', '#334155', '#475569', '#64748B', '#7C8BA5', '#94A3B8', '#B4C0D0', '#E11D48']
+    }
+  };
+  const THEME_KEY = 'retrieval-observatory-theme';
+  let C = THEMES[document.documentElement.dataset.theme === 'light' ? 'light' : 'dark'];
+  const SET_NAME = Object.fromEntries(D.sets.map(s => [s.key, s.name]));
+  const TYPES = [
+    ['positive_semantic_relationship', 'Semantic relation'],
+    ['contextual_relationship', 'Contextual'],
+    ['terminology_synonym_abbreviation', 'Synonym / abbrev.'],
+    ['equipment_instrument_relationship', 'Equipment–instrument'],
+    ['hierarchy_relationship', 'Hierarchy'],
+    ['operation_measurement_relationship', 'Operation–measure'],
+    ['source_system_noisy_representation', 'Noisy source label'],
+    ['hard_negative', 'Hard negative']
+  ];
+  const K = D.k;
+  const I30 = K.indexOf(30);
+  const BGE = D.sweep.bge;
+
+  const $ = (sel, root = document) => root.querySelector(sel);
+  const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
+  const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
+  const int = n => Math.round(n).toLocaleString('en-US');
+  const tok = n => n.toLocaleString('en-US', { maximumFractionDigits: 1 });
+  const pct = (v, d = 2) => (v * 100).toFixed(d) + '%';
+  const pctQ = v => (v === 0 ? '0%' : v === 1 ? '100%' : pct(v, 1));
+  const pp = (v, d = 2) => (v < 0 ? '−' : '+') + Math.abs(v * 100).toFixed(d) + ' pp';
+  const lin = (d0, d1, r0, r1) => v => r0 + ((v - d0) / (d1 - d0)) * (r1 - r0);
+  const P = p => p[0].toFixed(1) + ',' + p[1].toFixed(1);
+  const poly = pts => 'M' + pts.map(P).join('L');
+  const get = path => path.split('.').reduce((o, key) => o[key], D);
+  const widthOf = (host, min = 220) => Math.max(min, Math.floor(host.getBoundingClientRect().width));
+
+  function el(parent, tag, attrs, text) {
+    const node = document.createElementNS(NS, tag);
+    if (attrs) Object.keys(attrs).forEach(key => { if (attrs[key] !== undefined && attrs[key] !== null) node.setAttribute(key, attrs[key]); });
+    if (text !== undefined) node.textContent = text;
+    parent.appendChild(node);
+    return node;
+  }
+  function txt(svg, x, y, str, o = {}) {
+    const style = [];
+    if (o.color) style.push('fill:' + o.color);
+    if (o.size) style.push('font-size:' + o.size + 'px');
+    if (o.weight) style.push('font-weight:' + o.weight);
+    return el(svg, 'text', { x, y, 'text-anchor': o.anchor || 'start', class: o.cls, style: style.length ? style.join(';') : undefined, transform: o.transform }, String(str));
+  }
+  function makeSvg(host, w, h, label) {
+    const svg = document.createElementNS(NS, 'svg');
+    svg.setAttribute('viewBox', `0 0 ${w} ${h}`);
+    svg.setAttribute('width', w);
+    svg.setAttribute('height', h);
+    svg.setAttribute('role', 'img');
+    svg.setAttribute('aria-label', label);
+    svg.dataset.w = w;
+    svg.dataset.h = h;
+    host.replaceChildren(svg);
+    return svg;
+  }
+  const defsOf = svg => svg.querySelector('defs') || el(svg, 'defs');
+  function glow(svg, id, std) {
+    if (!C.glow) return undefined;
+    const f = el(defsOf(svg), 'filter', { id, filterUnits: 'userSpaceOnUse', x: 0, y: 0, width: svg.dataset.w, height: svg.dataset.h });
+    el(f, 'feGaussianBlur', { in: 'SourceGraphic', stdDeviation: std, result: 'blur' });
+    const merge = el(f, 'feMerge');
+    el(merge, 'feMergeNode', { in: 'blur' });
+    el(merge, 'feMergeNode', { in: 'SourceGraphic' });
+    return `url(#${id})`;
+  }
+  function grad(svg, id, stops, horizontal) {
+    const g = el(defsOf(svg), 'linearGradient', Object.assign({ id }, horizontal ? { x1: 0, y1: 0, x2: 1, y2: 0 } : { x1: 0, y1: 0, x2: 0, y2: 1 }));
+    stops.forEach(([o, c, a]) => el(g, 'stop', { offset: o, 'stop-color': c, 'stop-opacity': a === undefined ? 1 : a }));
+    return `url(#${id})`;
+  }
+  const hex = h => [1, 3, 5].map(i => parseInt(h.slice(i, i + 2), 16));
+  function heatRgb(v) {
+    const stops = C.heat;
+    for (let i = 1; i < stops.length; i += 1) {
+      if (v <= stops[i][0]) {
+        const t = (v - stops[i - 1][0]) / (stops[i][0] - stops[i - 1][0]);
+        const a = hex(stops[i - 1][1]);
+        const b = hex(stops[i][1]);
+        return a.map((x, j) => Math.round(x + (b[j] - x) * t));
+      }
+    }
+    return hex(stops[stops.length - 1][1]);
+  }
+  const luminance = rgb => rgb.reduce((sum, c, i) => {
+    const s = c / 255;
+    return sum + [0.2126, 0.7152, 0.0722][i] * (s <= 0.04045 ? s / 12.92 : ((s + 0.055) / 1.055) ** 2.4);
+  }, 0);
+  const contrast = (a, b) => (Math.max(a, b) + 0.05) / (Math.min(a, b) + 0.05);
+  function inkOn(rgb) {
+    const bg = luminance(rgb);
+    const [dark, light] = C.ink;
+    return contrast(bg, luminance(hex(dark))) >= contrast(bg, luminance(hex(light))) ? dark : light;
+  }
+  const shorten = (t, n) => {
+    const cut = t.slice(0, n);
+    const space = cut.lastIndexOf(' ');
+    return (space > n * 0.6 ? cut.slice(0, space) : cut).replace(/[\s,;:.]+$/, '') + '…';
+  };
+  const mark = t => esc(t).replace(/\b[A-Z][A-Z0-9]*(?:[-_][A-Z0-9]+)+\b/g, m => `<code>${m}</code>`);
+
+  function bind() {
+    $$('[data-n]').forEach(node => {
+      const v = get(node.dataset.n);
+      const f = node.dataset.f;
+      node.textContent = f === 'ms' ? v.toFixed(2) : f === 'pct' ? pct(v) : f === 'tok' ? tok(v) : int(v);
+    });
+  }
+
+  const KPI = [
+    { f: 'macro_recall', name: 'Macro recall', hint: 'Average question coverage', note: `${D.k30.adapted.queries} questions, equal weight` },
+    { f: 'micro_recall', name: 'Micro recall', hint: 'Overall useful-option coverage', note: `${int(D.k30.adapted.matched)} / ${int(D.k30.adapted.relevant)} relevant pairs` },
+    { f: 'micro_precision', name: 'Precision', hint: 'Useful share of the returned list', note: `${int(D.k30.adapted.matched)} / ${int(D.k30.adapted.returned)} returned slots` },
+    { f: 'macro_mrr', name: 'MRR', hint: 'Rank of the first relevant record', note: 'mean of 1 / first relevant rank', raw: true },
+    { f: 'macro_hit', name: 'Hit rate', hint: 'Questions with ≥1 relevant record', note: `${D.k30.adapted.hits} / ${D.k30.adapted.queries} questions` }
+  ];
+  function renderKpiTiles() {
+    $('#kpis').innerHTML = KPI.map(k => {
+      const a = BGE.adapted[k.f][I30];
+      const b = BGE.base[k.f][I30];
+      const value = k.raw ? a.toFixed(4) : `${(a * 100).toFixed(2)}<small>%</small>`;
+      const delta = k.raw ? (a >= b ? '+' : '−') + Math.abs(a - b).toFixed(4) : pp(a - b);
+      const base = k.raw ? b.toFixed(4) : pct(b);
+      return `<article class="kpi"><div class="kpi-head">${k.name}<span class="at">@K30</span></div><div class="kpi-hint">${k.hint}</div><div class="kpi-value">${value}</div><div class="kpi-row"><span class="delta">${delta}</span><span>vs base ${base}</span></div><div class="kpi-note mono">${k.note}</div><div class="spark" data-f="${k.f}"></div></article>`;
+    }).join('');
+  }
+  function spark(host, f) {
+    const w = widthOf(host, 80);
+    const h = 46;
+    const m = { l: 1, r: 5, t: 6, b: 5 };
+    const svg = makeSvg(host, w, h, `Adapted and base ${f.replace('_', ' ')} across the saved K values, with K30 marked.`);
+    const x = lin(10, 100, m.l, w - m.r);
+    const y = lin(0, 1, h - m.b, m.t);
+    const A = K.map((k, i) => [x(k), y(BGE.adapted[f][i])]);
+    const B = K.map((k, i) => [x(k), y(BGE.base[f][i])]);
+    const fill = grad(svg, 'sp-' + f, [[0, C.cyan, C.area], [1, C.cyan, 0]]);
+    el(svg, 'path', { d: poly(A) + 'L' + P([A[A.length - 1][0], h - m.b]) + 'L' + P([A[0][0], h - m.b]) + 'Z', fill, stroke: 'none' });
+    el(svg, 'line', { x1: m.l, x2: w - m.r, y1: h - m.b + 0.5, y2: h - m.b + 0.5, class: 'ax' });
+    el(svg, 'path', { d: poly(B), fill: 'none', stroke: C.slate, 'stroke-width': 1.4, 'stroke-dasharray': '4 3' });
+    el(svg, 'path', { d: poly(A), fill: 'none', stroke: C.cyan, 'stroke-width': 1.8, 'stroke-linejoin': 'round' });
+    el(svg, 'line', { x1: x(30), x2: x(30), y1: 2, y2: h - m.b, stroke: C.amber, 'stroke-opacity': 0.5, 'stroke-dasharray': '2 3' });
+    el(svg, 'circle', { cx: x(30), cy: B[I30][1], r: 2.6, fill: C.surface, stroke: C.slate, 'stroke-width': 1.3 });
+    el(svg, 'circle', { cx: x(30), cy: A[I30][1], r: 3.4, fill: C.amber, stroke: C.surface, 'stroke-width': 1.5 });
+  }
+
+  function renderSlider() {
+    const pos = k => (((k - 10) / 90) * 100).toFixed(2);
+    const ticks = K.map(k => `<span class="ks-tick${k <= 30 ? ' in' : ''}" style="left:${pos(k)}%"></span>`).join('');
+    const labels = [10, 20, 30, 50, 70, 100].map(k => `<span class="ks-lab${k === 30 ? ' on' : ''}" style="left:${pos(k)}%">${k}</span>`).join('');
+    $('#kslider').innerHTML = `<div class="ks-track"><div class="ks-fill" style="width:${pos(30)}%"></div>${ticks}<span class="ks-thumb" style="left:${pos(30)}%"></span></div><div class="ks-labels">${labels}</div>`;
+  }
+  function renderSetChips() {
+    $('#set-chips').innerHTML = D.sets.map(s => `<button class="chip sm sel" type="button" aria-pressed="true"><i class="sdot" style="background:${C.sets[s.key]}"></i>${esc(s.name)}<span class="tag">${s.queries}</span></button>`).join('');
+  }
+
+  function renderFrontier() {
+    const host = $('#chart-frontier');
+    const w = widthOf(host);
+    const narrow = w < 560;
+    const h = narrow ? 260 : 310;
+    const m = { l: 44, r: narrow ? 14 : 112, t: 34, b: 42 };
+    const a30 = BGE.adapted.macro_recall[I30];
+    const b30 = BGE.base.macro_recall[I30];
+    const svg = makeSvg(host, w, h, `Macro recall by saved K for BGE-small on the test split. At K30 adapted is ${pct(a30)} and base is ${pct(b30)}. Faint lines show E5-small and MiniLM-L6.`);
+    const x = lin(10, 100, m.l, w - m.r);
+    const y = lin(0, 1, h - m.b, m.t);
+    const G = glow(svg, 'fr-glow', 3);
+    const band = grad(svg, 'fr-band', [[0, C.cyan, C.band[0]], [1, C.cyan, C.band[1]]]);
+    [0, 0.25, 0.5, 0.75, 1].forEach(v => {
+      el(svg, 'line', { x1: m.l, x2: w - m.r, y1: y(v), y2: y(v), class: 'gl' });
+      txt(svg, m.l - 10, y(v) + 3.5, Math.round(v * 100) + '%', { anchor: 'end', cls: 'tick' });
+    });
+    el(svg, 'line', { x1: m.l, x2: w - m.r, y1: h - m.b, y2: h - m.b, class: 'ax' });
+    K.forEach(k => el(svg, 'line', { x1: x(k), x2: x(k), y1: h - m.b, y2: h - m.b + 4, class: 'ax' }));
+    (narrow ? [10, 30, 50, 70, 100] : [10, 20, 30, 50, 60, 70, 80, 90, 100]).forEach(k => txt(svg, x(k), h - m.b + 17, k, { anchor: 'middle', cls: 'tick', color: k === 30 ? C.amberInk : undefined }));
+    txt(svg, w - m.r, h - 5, 'SHORTLIST SIZE K · SAVED CUTOFFS', { anchor: 'end', cls: 'cap' });
+    const pts = arr => K.map((k, i) => [x(k), y(arr[i])]);
+    const A = pts(BGE.adapted.macro_recall);
+    const B = pts(BGE.base.macro_recall);
+    el(svg, 'path', { d: poly(A) + 'L' + B.slice().reverse().map(P).join('L') + 'Z', fill: band, stroke: 'none' });
+    ['e5', 'minilm'].forEach(f => {
+      el(svg, 'path', { d: poly(pts(D.sweep[f].base.macro_recall)), fill: 'none', stroke: C.slate, 'stroke-opacity': C.ghost[1], 'stroke-width': 1.1, 'stroke-dasharray': '2 3' });
+      el(svg, 'path', { d: poly(pts(D.sweep[f].adapted.macro_recall)), fill: 'none', stroke: C.cyan2, 'stroke-opacity': C.ghost[0], 'stroke-width': 1.2 });
+    });
+    el(svg, 'path', { d: poly(B), fill: 'none', stroke: C.slate, 'stroke-width': 2, 'stroke-dasharray': '6 5' });
+    el(svg, 'path', { d: poly(A), fill: 'none', stroke: C.cyan, 'stroke-width': 2.6, 'stroke-linejoin': 'round', filter: G });
+    B.forEach(p => el(svg, 'circle', { cx: p[0], cy: p[1], r: 2.4, fill: C.surface, stroke: C.slate, 'stroke-width': 1.3 }));
+    A.forEach(p => el(svg, 'circle', { cx: p[0], cy: p[1], r: 2.8, fill: C.surface, stroke: C.cyan, 'stroke-width': 1.6 }));
+    const kx = x(30);
+    const ya = A[I30][1];
+    const yb = B[I30][1];
+    el(svg, 'line', { x1: kx, x2: kx, y1: m.t - 8, y2: h - m.b, stroke: C.amber, 'stroke-opacity': 0.65, 'stroke-dasharray': '3 4' });
+    el(svg, 'rect', { x: kx - 22, y: m.t - 29, width: 44, height: 20, rx: 10, fill: C.pill[0], stroke: C.pill[1] });
+    txt(svg, kx, m.t - 15, 'K30', { anchor: 'middle', cls: 'val', color: C.amberInk, size: 11 });
+    el(svg, 'circle', { cx: kx, cy: ya, r: 6.5, fill: 'none', stroke: C.amber, 'stroke-width': 1.6 });
+    el(svg, 'circle', { cx: kx, cy: yb, r: 5.5, fill: 'none', stroke: C.amber, 'stroke-opacity': 0.75, 'stroke-width': 1.3 });
+    txt(svg, kx - 11, ya - 10, pct(a30), { anchor: 'end', cls: 'val halo', color: C.cyan2 });
+    txt(svg, kx + 11, yb + 18, pct(b30), { cls: 'val halo', color: C.text2 });
+    const bx = kx + 16;
+    el(svg, 'path', { d: `M${bx - 4},${(ya + 9).toFixed(1)}H${bx}V${(yb - 9).toFixed(1)}H${bx - 4}`, fill: 'none', stroke: C.cyan2, 'stroke-opacity': 0.7, 'stroke-width': 1.2 });
+    const cy = (ya + yb) / 2;
+    el(svg, 'rect', { x: bx + 8, y: cy - 12, width: 82, height: 24, rx: 7, fill: C.surface, stroke: C.chipStroke });
+    txt(svg, bx + 49, cy + 4, pp(a30 - b30), { anchor: 'middle', cls: 'val', color: C.cyan2 });
+    if (!narrow) {
+      const ex = w - m.r + 12;
+      const last = K.length - 1;
+      txt(svg, ex, A[last][1] - 2, 'BGE adapted', { cls: 'lbl', color: C.text });
+      txt(svg, ex, A[last][1] + 12, pct(BGE.adapted.macro_recall[last]), { cls: 'tick', color: C.cyan2 });
+      txt(svg, ex, B[last][1] - 2, 'BGE base', { cls: 'lbl' });
+      txt(svg, ex, B[last][1] + 12, pct(BGE.base.macro_recall[last]), { cls: 'tick' });
+    }
+  }
+
+  function renderTradeoff() {
+    const host = $('#chart-tradeoff');
+    const w = widthOf(host);
+    const h = Math.round(Math.max(260, Math.min(310, w * 0.78)));
+    const m = { l: 50, r: 14, t: 14, b: 44 };
+    const svg = makeSvg(host, w, h, `Micro recall against precision at each saved K for BGE-small. At K30 adapted keeps ${pct(BGE.adapted.micro_recall[I30])} of relevant pairs with ${pct(BGE.adapted.micro_precision[I30])} precision.`);
+    const x = lin(0, 0.8, m.l, w - m.r);
+    const y = lin(0, 0.8, h - m.b, m.t);
+    const G = glow(svg, 'to-glow', 2.6);
+    [0, 0.2, 0.4, 0.6, 0.8].forEach(v => {
+      el(svg, 'line', { x1: x(v), x2: x(v), y1: m.t, y2: h - m.b, class: 'gl' });
+      el(svg, 'line', { x1: m.l, x2: w - m.r, y1: y(v), y2: y(v), class: 'gl' });
+      txt(svg, x(v), h - m.b + 16, Math.round(v * 100) + '%', { anchor: 'middle', cls: 'tick' });
+      txt(svg, m.l - 8, y(v) + 3.5, Math.round(v * 100) + '%', { anchor: 'end', cls: 'tick' });
+    });
+    txt(svg, w - m.r, h - 6, 'MICRO RECALL · OVERALL COVERAGE', { anchor: 'end', cls: 'cap' });
+    txt(svg, 0, 0, 'PRECISION', { anchor: 'end', cls: 'cap', transform: `translate(11 ${m.t}) rotate(-90)` });
+    const pts = c => K.map((k, i) => [x(BGE[c].micro_recall[i]), y(BGE[c].micro_precision[i])]);
+    const A = pts('adapted');
+    const B = pts('base');
+    const last = K.length - 1;
+    el(svg, 'path', { d: poly(B), fill: 'none', stroke: C.slate, 'stroke-width': 1.6, 'stroke-dasharray': '5 4' });
+    B.forEach(p => el(svg, 'circle', { cx: p[0], cy: p[1], r: 2.6, fill: C.surface, stroke: C.slate, 'stroke-width': 1.3 }));
+    el(svg, 'path', { d: poly(A), fill: 'none', stroke: C.cyan, 'stroke-width': 2.2, 'stroke-linejoin': 'round', filter: G });
+    A.forEach(p => el(svg, 'circle', { cx: p[0], cy: p[1], r: 3, fill: C.surface, stroke: C.cyan, 'stroke-width': 1.6 }));
+    el(svg, 'circle', { cx: A[I30][0], cy: A[I30][1], r: 7.5, fill: 'none', stroke: C.amber, 'stroke-width': 1.6 });
+    txt(svg, A[0][0] + 9, A[0][1] + 4, 'K10', { cls: 'tick halo', color: C.cyan2 });
+    txt(svg, A[I30][0] + 11, A[I30][1] - 8, 'K30', { cls: 'val halo', color: C.amberInk, size: 11 });
+    txt(svg, A[last][0], A[last][1] + 19, 'K100', { anchor: 'end', cls: 'tick halo', color: C.cyan2 });
+    txt(svg, B[0][0] + 4, B[0][1] + 17, 'base K10', { cls: 'tick halo' });
+    txt(svg, B[last][0] + 8, B[last][1] + 4, 'K100', { cls: 'tick halo' });
+    txt(svg, w - m.r - 4, y(0.74), 'Larger K: more coverage,', { anchor: 'end', color: C.text2 });
+    txt(svg, w - m.r - 4, y(0.74) + 15, 'lower precision', { anchor: 'end', color: C.text2 });
+  }
+
+  function renderHeatmap() {
+    const host = $('#chart-heatmap');
+    const w = widthOf(host);
+    const narrow = w < 560;
+    const labelW = narrow ? 148 : Math.round(Math.min(300, w * 0.4));
+    const headH = 28;
+    const groupH = 28;
+    const rowH = narrow ? 27 : 30;
+    const gap = 3;
+    const groups = [
+      ['compact', narrow ? 'Compact · 384-d' : 'Compact encoders · native 384-d'],
+      ['mxbai', narrow ? 'mxbai-large · wider' : 'mxbai-large · ~335M parameters'],
+      ['openai', narrow ? 'OpenAI 3-small · ref' : 'OpenAI text-embedding-3-small · reference']
+    ];
+    const h = headH + groups.length * groupH + D.matrix.length * rowH + 46;
+    const svg = makeSvg(host, w, h, 'Heatmap of macro recall at K10, K20, K30 and K100 for 13 saved model conditions on the test split.');
+    const cw = (w - labelW) / 4;
+    ['K10', 'K20', 'K30', 'K100'].forEach((c, j) => txt(svg, labelW + j * cw + cw / 2, 17, c, { anchor: 'middle', cls: 'tick', color: j === 2 ? C.amberInk : undefined, weight: j === 2 ? 600 : undefined }));
+    el(svg, 'line', { x1: labelW + 2 * cw + cw * 0.3, x2: labelW + 3 * cw - cw * 0.3, y1: 23, y2: 23, stroke: C.amber, 'stroke-opacity': 0.7, 'stroke-width': 1.5 });
+    let yy = headH;
+    groups.forEach(([g, title]) => {
+      txt(svg, 0, yy + 18, title.toUpperCase(), { cls: 'cap' });
+      yy += groupH;
+      D.matrix.filter(r => r.group === g).forEach(r => {
+        const sel = g === 'compact' && r.label === 'BGE-small' && r.condition === 'adapted';
+        if (sel) {
+          el(svg, 'rect', { x: 0, y: yy, width: w, height: rowH, rx: 7, fill: C.rowSel });
+          el(svg, 'rect', { x: 0, y: yy + 5, width: 3, height: rowH - 10, rx: 1.5, fill: C.cyan });
+        }
+        const star = g === 'mxbai' && r.width === 512 && r.condition === 'adapted' ? ' ★' : '';
+        const name = g === 'compact' ? r.label : g === 'mxbai' ? (narrow ? 'mxbai ' : 'mxbai-large · ') + r.width : (narrow ? '3-small ' : '3-small · ') + r.width;
+        txt(svg, 12, yy + rowH / 2 + 4, name + star, { cls: 'lbl', color: sel ? C.text : undefined, weight: sel ? 600 : undefined });
+        const tag = r.condition === 'unchanged' ? (narrow ? 'ref' : 'reference') : r.condition;
+        txt(svg, labelW - 12, yy + rowH / 2 + 4, tag, { anchor: 'end', cls: 'tick', color: r.condition === 'adapted' ? C.cyan2 : r.condition === 'unchanged' ? C.violet : C.slate });
+        r.values.forEach((v, j) => {
+          const cx = labelW + j * cw;
+          const rgb = heatRgb(v);
+          el(svg, 'rect', { x: cx + gap / 2, y: yy + gap / 2, width: cw - gap, height: rowH - gap, rx: 5, fill: `rgb(${rgb.join(',')})`, stroke: C.cellStroke });
+          txt(svg, cx + cw / 2, yy + rowH / 2 + 4, (v * 100).toFixed(1), { anchor: 'middle', cls: 'cell', color: inkOn(rgb) });
+          if (sel && j === 2) el(svg, 'rect', { x: cx + gap / 2 + 0.8, y: yy + gap / 2 + 0.8, width: cw - gap - 1.6, height: rowH - gap - 1.6, rx: 5, fill: 'none', stroke: C.amber, 'stroke-width': 1.8 });
+        });
+        yy += rowH;
+      });
+    });
+    const scale = grad(svg, 'hm-scale', C.heat.map(([o, c]) => [o, c, 1]), true);
+    const ly = yy + 16;
+    txt(svg, 0, ly + 8, 'MACRO RECALL', { cls: 'cap' });
+    el(svg, 'rect', { x: labelW, y: ly, width: w - labelW, height: 8, rx: 4, fill: scale });
+    [0, 0.25, 0.5, 0.75, 1].forEach(v => txt(svg, labelW + v * (w - labelW), ly + 22, Math.round(v * 100) + '%', { anchor: v === 0 ? 'start' : v === 1 ? 'end' : 'middle', cls: 'tick' }));
+  }
+
+  function renderSets() {
+    const host = $('#chart-sets');
+    const w = widthOf(host);
+    const narrow = w < 470;
+    const labelW = narrow ? 0 : 140;
+    const valW = 98;
+    const rowH = narrow ? 54 : 56;
+    const rows = D.sets.slice().sort((a, b) => (b.adapted - b.base) - (a.adapted - a.base));
+    const h = rows.length * rowH + 26;
+    const svg = makeSvg(host, w, h, 'Dumbbell chart of macro recall at K30 by knowledge set, from base to adapted, for BGE-small on test.');
+    const x = lin(0, 1, labelW + 8, w - valW - 8);
+    const G = glow(svg, 'db-glow', 2.4);
+    [0, 0.25, 0.5, 0.75, 1].forEach(v => {
+      el(svg, 'line', { x1: x(v), x2: x(v), y1: 0, y2: rows.length * rowH, class: 'gl' });
+      txt(svg, x(v), h - 5, Math.round(v * 100) + '%', { anchor: 'middle', cls: 'tick' });
+    });
+    rows.forEach((r, i) => {
+      const y0 = i * rowH;
+      const cy = narrow ? y0 + 36 : y0 + rowH / 2;
+      if (narrow) {
+        el(svg, 'rect', { x: 0, y: y0 + 9, width: 8, height: 8, rx: 2, fill: C.sets[r.key] });
+        txt(svg, 14, y0 + 17, r.name, { cls: 'lbl', color: C.text });
+        txt(svg, x(1), y0 + 17, `n = ${r.queries}`, { anchor: 'end', cls: 'tick' });
+      } else {
+        el(svg, 'rect', { x: 0, y: cy - 11, width: 8, height: 8, rx: 2, fill: C.sets[r.key] });
+        txt(svg, 14, cy - 3, r.name, { cls: 'lbl', color: C.text });
+        txt(svg, 14, cy + 12, `n = ${r.queries}`, { cls: 'tick' });
+      }
+      el(svg, 'line', { x1: x(0), x2: x(1), y1: cy, y2: cy, stroke: C.track, 'stroke-width': 6, 'stroke-linecap': 'round' });
+      const g = el(defsOf(svg), 'linearGradient', { id: 'db-g' + i, gradientUnits: 'userSpaceOnUse', x1: x(r.base), y1: 0, x2: x(r.adapted), y2: 0 });
+      el(g, 'stop', { offset: 0, 'stop-color': C.slate, 'stop-opacity': 0.7 });
+      el(g, 'stop', { offset: 1, 'stop-color': C.cyan });
+      el(svg, 'line', { x1: x(r.base), x2: x(r.adapted), y1: cy, y2: cy, stroke: `url(#db-g${i})`, 'stroke-width': 3.5, 'stroke-linecap': 'round' });
+      el(svg, 'circle', { cx: x(r.base), cy, r: 5, fill: C.surface, stroke: C.slate, 'stroke-width': 2 });
+      el(svg, 'circle', { cx: x(r.adapted), cy, r: 6, fill: C.cyan, filter: G });
+      txt(svg, w - valW + 10, cy - 1, pp(r.adapted - r.base, 1), { cls: 'val', color: C.cyan2 });
+      txt(svg, w - valW + 10, cy + 13, `${(r.base * 100).toFixed(1)} → ${(r.adapted * 100).toFixed(1)}%`, { cls: 'tick' });
+    });
+  }
+
+  function renderDist() {
+    const host = $('#chart-dist');
+    const w = widthOf(host);
+    const h = w >= 380 ? 284 : 240;
+    const m = { l: 6, r: 6, t: 22, b: 16 };
+    const band = 22;
+    const H = (h - m.t - m.b - band) / 2;
+    const max = Math.max(...D.histogram.base, ...D.histogram.adapted);
+    const bw = (w - m.l - m.r) / 10;
+    const yTop = m.t + H;
+    const yBot = yTop + band;
+    const svg = makeSvg(host, w, h, `Per-question recall at K30 in ten bins. Adapted: ${D.histogram.adapted.join(', ')}. Base: ${D.histogram.base.join(', ')}.`);
+    const fillA = grad(svg, 'di-a', [[0, C.bars[0][0], C.bars[0][1]], [1, C.bars[1][0], C.bars[1][1]]]);
+    const hh = c => (c / max) * (H - 14);
+    for (let i = 0; i < 10; i += 1) {
+      const a = D.histogram.adapted[i];
+      const b = D.histogram.base[i];
+      const x0 = m.l + i * bw + 2;
+      const cx = m.l + i * bw + bw / 2;
+      if (a) {
+        el(svg, 'rect', { x: x0, y: yTop - hh(a), width: bw - 4, height: hh(a), rx: 3, fill: fillA });
+        txt(svg, cx, yTop - hh(a) - 4, a, { anchor: 'middle', cls: 'tick', color: C.cyan2 });
+      }
+      if (b) {
+        el(svg, 'rect', { x: x0, y: yBot, width: bw - 4, height: hh(b), rx: 3, fill: C.baseBar[0], 'fill-opacity': C.baseBar[1] });
+        txt(svg, cx, yBot + hh(b) + 11, b, { anchor: 'middle', cls: 'tick' });
+      }
+    }
+    el(svg, 'line', { x1: m.l, x2: w - m.r, y1: yTop + 0.5, y2: yTop + 0.5, class: 'ax' });
+    el(svg, 'line', { x1: m.l, x2: w - m.r, y1: yBot - 0.5, y2: yBot - 0.5, class: 'ax' });
+    [0, 20, 40, 60, 80, 100].forEach(v => txt(svg, m.l + (v / 10) * bw, yTop + 15, v === 100 ? '100%' : v, { anchor: v === 0 ? 'start' : v === 100 ? 'end' : 'middle', cls: 'tick' }));
+    txt(svg, m.l, 12, '▲ ADAPTED', { cls: 'cap', color: C.cyan2 });
+    txt(svg, m.l, h - 2, '▼ BASE', { cls: 'cap' });
+  }
+  function renderOutcome() {
+    const c = D.changes;
+    const n = c.improved + c.unchanged + c.regressed;
+    $('#outcome').innerHTML = `<div class="ob" role="img" aria-label="${c.improved} improved, ${c.unchanged} unchanged and ${c.regressed} regressed of ${n} questions"><span style="flex:${c.improved} 1 0;background:var(--emerald)"></span><span style="flex:${c.unchanged} 1 0;background:${C.unchanged}"></span><span style="flex:${c.regressed} 1 0;background:var(--rose)"></span></div><div class="ob-legend"><span><i style="background:var(--emerald)"></i>Improved <b>${c.improved}</b></span><span><i style="background:${C.unchanged}"></i>Unchanged <b>${c.unchanged}</b></span><span><i style="background:var(--rose)"></i>Regressed <b>${c.regressed}</b></span></div>` + renderRegressed();
+  }
+  function renderRegressed() {
+    const rows = D.regressed.slice().sort((a, b) => (a.adapted - a.base) - (b.adapted - b.base));
+    return `<div class="reg"><div class="reg-title">Regressed questions</div>${rows.map(r => `<div class="reg-row"><span class="reg-main"><span class="reg-name">${esc(r.measure)} · ${esc(r.operation)}</span><span class="reg-meta mono">${esc(r.id)} · ${esc(SET_NAME[r.set])} · ${r.relevant} relevant</span></span><span class="reg-val mono">${pct(r.base, 1)} → ${pct(r.adapted, 1)}<b>${pp(r.adapted - r.base, 1)}</b></span></div>`).join('')}</div>`;
+  }
+
+  function renderContext() {
+    const host = $('#chart-context');
+    const w = widthOf(host);
+    const h = w >= 380 ? 268 : 240;
+    const m = { l: 50, r: 14, t: 16, b: 40 };
+    const pts = [10, 20, 30, 100].map(k => ({ k, t: D.context[k].p50, r: BGE.adapted.micro_recall[K.indexOf(k)] }));
+    const svg = makeSvg(host, w, h, `Median context tokens against micro recall for BGE adapted on test. K30 needs ${tok(D.context[30].p50)} tokens and keeps ${pct(pts[2].r)} of relevant pairs.`);
+    const lo = Math.log10(1000);
+    const hi = Math.log10(16000);
+    const x = t => m.l + ((Math.log10(t) - lo) / (hi - lo)) * (w - m.l - m.r);
+    const y = lin(0, 1, h - m.b, m.t);
+    const G = glow(svg, 'cx-glow', 2.4);
+    [0, 0.25, 0.5, 0.75, 1].forEach(v => {
+      el(svg, 'line', { x1: m.l, x2: w - m.r, y1: y(v), y2: y(v), class: 'gl' });
+      txt(svg, m.l - 8, y(v) + 3.5, Math.round(v * 100) + '%', { anchor: 'end', cls: 'tick' });
+    });
+    [1000, 2000, 4000, 8000, 16000].forEach(t => {
+      el(svg, 'line', { x1: x(t), x2: x(t), y1: m.t, y2: h - m.b, class: 'gl' });
+      txt(svg, x(t), h - m.b + 16, t / 1000 + 'K', { anchor: t === 1000 ? 'start' : t === 16000 ? 'end' : 'middle', cls: 'tick' });
+    });
+    el(svg, 'line', { x1: m.l, x2: w - m.r, y1: h - m.b, y2: h - m.b, class: 'ax' });
+    txt(svg, w - m.r, h - 6, 'MEDIAN CONTEXT TOKENS · LOG SCALE', { anchor: 'end', cls: 'cap' });
+    txt(svg, 0, 0, 'MICRO RECALL', { anchor: 'end', cls: 'cap', transform: `translate(11 ${m.t}) rotate(-90)` });
+    pts.forEach(p => {
+      const px = x(p.t);
+      const py = y(p.r);
+      const hot = p.k === 30;
+      el(svg, 'line', { x1: px, x2: px, y1: py, y2: h - m.b, stroke: hot ? C.amber : C.cyan, 'stroke-opacity': 0.4, 'stroke-dasharray': '2 3' });
+      if (hot) el(svg, 'circle', { cx: px, cy: py, r: 9, fill: 'none', stroke: C.amber, 'stroke-width': 1.5 });
+      el(svg, 'circle', { cx: px, cy: py, r: hot ? 5 : 4.2, fill: C.cyan, filter: G });
+      if (p.k === 100) txt(svg, px - 12, py + 4, 'K100', { anchor: 'end', cls: 'tick halo', color: C.cyan2 });
+      else if (hot) txt(svg, px, py - 15, 'K30', { anchor: 'middle', cls: 'val halo', color: C.amberInk, size: 11 });
+      else txt(svg, px, py + 20, 'K' + p.k, { anchor: 'middle', cls: 'tick halo', color: C.cyan2 });
+    });
+  }
+  function renderContextStats() {
+    const rows = [30, 100].map(k => {
+      const c = D.context[k];
+      const r = BGE.adapted.micro_recall[K.indexOf(k)];
+      return `<div class="ctx-row${k === 30 ? ' hot' : ''}"><span class="k mono">K${k}</span><span><b class="mono">${tok(c.p50)}</b> tokens · p95 ${tok(c.p95)}</span><span class="kept mono">${pct(r)} kept</span></div>`;
+    }).join('');
+    const more = [200, 500, 1000].map(k => `<span class="mini-chip">K${k} · ${tok(D.context[k].p50)}</span>`).join('');
+    $('#context-stats').innerHTML = rows + `<div class="ctx-more"><span>Larger saved cutoffs, median tokens:</span>${more}</div>`;
+  }
+
+  function renderLatency() {
+    [['primary', '#lat-primary', false, 'Test panel'], ['scale', '#lat-scale', true, 'Corpus index']].forEach(([key, sel, last, name]) => {
+      const L = D.latency[key];
+      const host = $(sel);
+      const w = widthOf(host);
+      const h = last ? 86 : 66;
+      const m = { l: 56, r: 76 };
+      const svg = makeSvg(host, w, h, `${name}: exact search mean ${L.exact_ms} ms with p95 ${L.exact_p95} ms; HNSW mean ${L.hnsw_ms} ms with p95 ${L.hnsw_p95} ms.`);
+      const lo = Math.log10(0.1);
+      const hi = Math.log10(30);
+      const lx = v => m.l + ((Math.log10(v) - lo) / (hi - lo)) * (w - m.l - m.r);
+      const G = glow(svg, 'lat-glow-' + key, 2.4);
+      [0.1, 0.3, 1, 3, 10, 30].forEach(v => {
+        el(svg, 'line', { x1: lx(v), x2: lx(v), y1: 6, y2: 62, class: 'gl' });
+        if (last) txt(svg, lx(v), 80, v === 30 ? '30 ms' : v, { anchor: v === 30 ? 'end' : v === 0.1 ? 'start' : 'middle', cls: 'tick' });
+      });
+      [['Exact', L.exact_ms, L.exact_p95, C.violet, 20], ['HNSW', L.hnsw_ms, L.hnsw_p95, C.cyan, 48]].forEach(([label, mean, p95, col, yy]) => {
+        txt(svg, 0, yy + 4, label, { cls: 'lbl', color: C.text });
+        el(svg, 'line', { x1: lx(0.1), x2: lx(30), y1: yy, y2: yy, stroke: C.laneTrack, 'stroke-width': 4, 'stroke-linecap': 'round' });
+        el(svg, 'line', { x1: lx(mean), x2: lx(p95), y1: yy, y2: yy, stroke: col, 'stroke-width': 2 });
+        el(svg, 'line', { x1: lx(p95), x2: lx(p95), y1: yy - 6, y2: yy + 6, stroke: col, 'stroke-width': 1.6 });
+        el(svg, 'circle', { cx: lx(mean), cy: yy, r: 5.5, fill: col, filter: G });
+        txt(svg, w - m.r + 12, yy + 4, (mean < 1 ? mean.toFixed(3) : mean.toFixed(2)) + ' ms', { cls: 'val', color: col });
+      });
+    });
+  }
+
+  function renderTrace() {
+    const q = D.queries[0];
+    const f = {};
+    q.text.split(' | ').forEach(part => {
+      const i = part.indexOf(': ');
+      if (i > 0) f[part.slice(0, i)] = part.slice(i + 2);
+    });
+    const count = (code, c) => code.split('').filter(x => x === c).length;
+    const WORD = { r: 'relevant', n: 'explicit negative', o: 'other record' };
+    const cells = code => code.split('').map((c, i) => `<span class="${c}" title="Rank ${i + 1}: ${WORD[c]}"></span>`).join('');
+    const ceiling = Math.min(30, q.relevant) / q.relevant;
+    const items = D.queries.map((it, i) => `<div class="qitem${i ? '' : ' on'}"${i ? '' : ' aria-current="true"'}><span class="qi-id mono">${esc(it.id)}</span><span class="qi-delta mono">${pctQ(it.base)} → <b>${pctQ(it.adapted)}</b></span><span class="qi-title">${esc(it.measure)} · ${esc(it.operation)}</span><span class="qi-meta"><i class="sdot" style="background:${C.sets[it.set]}"></i>${esc(SET_NAME[it.set])} · ${it.relevant} relevant</span><span class="qi-bars" aria-hidden="true"><span class="qi-bar b"><span style="width:${(it.base * 100).toFixed(2)}%"></span></span><span class="qi-bar a"><span style="width:${(it.adapted * 100).toFixed(2)}%"></span></span></span></div>`).join('');
+    const bar = (label, code, recall) => `<div class="bc"><span class="bc-label">${label}<small>BGE-small</small></span><div class="cells" role="img" aria-label="${label}: ${count(code, 'r')} relevant, ${count(code, 'n')} explicit negatives and ${count(code, 'o')} other records in the top 30">${cells(code)}</div><span class="bc-sum mono"><b>${count(code, 'r')}</b>/30 relevant · recall ${pct(recall)}</span></div>`;
+    const recs = cond => D.top[cond].map(r => `<li><span class="tk-rank">${r.rank}</span><div class="tk-body"><div class="tk-top"><span class="badge ${r.relevant ? 'rel' : 'oth'}">${r.relevant ? 'Relevant' : 'Not relevant'}</span><span class="tk-id">${esc(r.id)}</span><span class="tk-score" title="Cosine similarity score, not a probability"><span class="sbar"><span style="width:${(r.score * 100).toFixed(1)}%;background:${cond === 'adapted' ? C.cyan : C.slate}"></span></span>${r.score.toFixed(4)}</span></div><p class="tk-text">${mark(shorten(r.text, 210))}</p><span class="tk-set"><i class="sdot" style="background:${C.sets[r.set]}"></i>${esc(SET_NAME[r.set])}</span></div></li>`).join('');
+    const rel = cond => D.top[cond].filter(r => r.relevant).length;
+    const ticks = [1, 10, 20, 30].map(r => `<span style="left:${(((r - 0.5) / 30) * 100).toFixed(2)}%">${r}</span>`).join('');
+    const ceilingNote = q.relevant > 30 ? `<span class="ceiling">${q.relevant} relevant records exceed K = 30, so ${pct(ceiling)} is the highest recall@30 possible${Math.abs(q.adapted - ceiling) < 1e-9 ? '; the adapted model reaches it' : ''}.</span>` : '';
+    $('#trace').innerHTML = `
+      <div class="qlist">
+        <div class="ql-head"><span>Test questions · frozen order</span><span class="mono">${D.queries.length} of ${D.questions.test}</span></div>
+        ${items}
+        <button class="more-btn" type="button" disabled>Browse all ${D.questions.test} questions</button>
+      </div>
+      <div class="qdetail">
+        <div class="qhead">
+          <div class="qh-top"><span class="mono qh-id">${esc(q.id)}</span><span class="set-pill"><i class="sdot" style="background:${C.sets[q.set]}"></i>${esc(SET_NAME[q.set])}</span><span>${q.relevant} relevant records among ${int(D.panels.test)} candidates</span></div>
+          <h4 class="qh-title">${esc(f.Measure)} during ${esc(f.Operation)}</h4>
+          <div class="qfields">${['Process', 'Stage', 'Operation', 'Phase', 'Measure'].filter(k => f[k]).map(k => `<span class="qf"><small>${k}</small>${esc(f[k])}</span>`).join('')}</div>
+        </div>
+        <div class="bars">
+          ${bar('Base', D.codes.base, q.base)}
+          ${bar('Adapted', D.codes.adapted, q.adapted)}
+          <div class="bc-axis" aria-hidden="true"><span>rank</span><span class="ticks">${ticks}</span><span></span></div>
+          <div class="bc-foot"><span class="key"><i style="background:${C.emerald}"></i>Relevant</span><span class="key"><i style="background:${C.rose}"></i>Explicit negative</span><span class="key"><i style="background:${C.other}"></i>Other record</span>${ceilingNote}</div>
+        </div>
+        <div class="topk">
+          <div class="tk"><div class="tk-head"><span><b>Base</b> · top 5 of 30</span><span class="mono">${rel('base')}/5 relevant</span></div><ol>${recs('base')}</ol></div>
+          <div class="tk adapted"><div class="tk-head"><span><b>Adapted</b> · top 5 of 30</span><span class="mono">${rel('adapted')}/5 relevant</span></div><ol>${recs('adapted')}</ol></div>
+        </div>
+      </div>`;
+  }
+
+  function renderCorpus() {
+    const sets = Object.entries(D.corpus.sets);
+    const nSets = sets.reduce((a, [, v]) => a + v, 0);
+    const nTypes = TYPES.reduce((a, [key]) => a + D.corpus.types[key], 0);
+    const stack = rows => `<div class="stack" role="img" aria-label="${rows.map(r => `${r.name} ${int(r.v)}`).join(', ')}">${rows.map(r => `<span style="flex:${r.v} 1 0;background:${r.c}" title="${esc(r.name)}: ${int(r.v)}"></span>`).join('')}</div><div class="sl">${rows.map(r => `<div><i class="sdot" style="background:${r.c}"></i><span>${esc(r.name)}</span><b>${int(r.v)}</b></div>`).join('')}</div>`;
+    $('#cp-sets').innerHTML = `<h4>Knowledge sets<span>${int(nSets)} records</span></h4>` + stack(sets.map(([k, v]) => ({ name: SET_NAME[k], v, c: C.sets[k] })));
+    $('#cp-types').innerHTML = `<h4>Item types<span>${int(nTypes)} records</span></h4>` + stack(TYPES.map(([k, name], i) => ({ name, v: D.corpus.types[k], c: C.types[i] })));
+    const sp = D.splits;
+    const row = (label, s, panel, cur) => `<tr${cur ? ' class="cur"' : ''}><td>${label}</td><td>${int(s.records)}</td><td>${int(s.groups)}</td><td>${int(s.negatives)}</td><td${panel ? '' : ' title="No retrieval panel"'}>${panel ? int(panel) : '—'}</td></tr>`;
+    $('#cp-splits').innerHTML = `<h4>Frozen splits<span>no group overlap</span></h4><table class="splits"><thead><tr><th scope="col">Split</th><th scope="col">Positive pairs</th><th scope="col">Groups</th><th scope="col">Negatives</th><th scope="col">Panel docs</th></tr></thead><tbody>${row('Train', sp.train, 0, false)}${row('Validation', sp.validation, D.panels.validation, false)}${row('Test', sp.test, D.panels.test, true)}</tbody></table>`;
+    $('#cp-stats').innerHTML = [[D.corpus.records, 'source records'], [D.corpus.documents, 'candidate documents'], [D.corpus.groups, 'semantic groups'], [D.corpus.negatives, 'records with explicit negatives']].map(([v, label]) => `<div class="cps"><b>${int(v)}</b><span>${label}</span></div>`).join('');
+  }
+
+  function renderSetsInsight() {
+    const rows = D.sets.slice().sort((a, b) => (b.adapted - b.base) - (a.adapted - a.base));
+    const top = rows[0];
+    const low = rows[rows.length - 1];
+    const improved = rows.filter(r => r.adapted > r.base).length;
+    const lowest = D.sets.reduce((a, b) => (b.adapted < a.adapted ? b : a));
+    const tail = lowest.key === low.key ? `, which also remains the lowest after adaptation at <b>${pct(low.adapted, 1)}</b>` : '';
+    $('#sets-insight').innerHTML = `<b>${improved} of ${rows.length}</b> knowledge sets improve at K30. Largest lift: <b>${esc(top.name)}</b> (${pp(top.adapted - top.base, 1)}). Smallest: <b>${esc(low.name)}</b> (${pp(low.adapted - low.base, 1)})${tail}.`;
+  }
+
+  function renderCharts() {
+    $$('#kpis .spark').forEach(node => spark(node, node.dataset.f));
+    renderFrontier();
+    renderTradeoff();
+    renderHeatmap();
+    renderSets();
+    renderDist();
+    renderContext();
+    renderLatency();
+  }
+
+  function syncThemeSwitch() {
+    const theme = document.documentElement.dataset.theme;
+    $$('[data-theme-set]').forEach(button => {
+      const on = button.dataset.themeSet === theme;
+      button.classList.toggle('on', on);
+      button.setAttribute('aria-pressed', String(on));
+    });
+  }
+  function setTheme(theme) {
+    if (!THEMES[theme] || theme === document.documentElement.dataset.theme) return;
+    document.documentElement.dataset.theme = theme;
+    C = THEMES[theme];
+    try {
+      localStorage.setItem(THEME_KEY, theme);
+    } catch (error) {
+      // Storage can be blocked for local files; the switch still applies to this page.
+    }
+    syncThemeSwitch();
+    renderSetChips();
+    renderTrace();
+    renderOutcome();
+    renderCorpus();
+    renderCharts();
+  }
+
+  try {
+    bind();
+    syncThemeSwitch();
+    renderKpiTiles();
+    renderSlider();
+    renderSetChips();
+    renderTrace();
+    renderOutcome();
+    renderContextStats();
+    renderSetsInsight();
+    renderCorpus();
+    renderCharts();
+    $$('[data-theme-set]').forEach(button => button.addEventListener('click', () => setTheme(button.dataset.themeSet)));
+    window.__renderOk = true;
+  } catch (error) {
+    window.__renderError = String((error && error.stack) || error);
+    throw error;
+  }
+
+  let lastWidth = $('#main').clientWidth;
+  let timer;
+  window.addEventListener('resize', () => {
+    clearTimeout(timer);
+    timer = setTimeout(() => {
+      const width = $('#main').clientWidth;
+      if (width !== lastWidth) {
+        lastWidth = width;
+        renderCharts();
+      }
+    }, 120);
+  });
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(renderCharts);
+})();
+</script>
+</body>
+</html>

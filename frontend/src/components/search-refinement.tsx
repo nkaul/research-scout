@@ -1,6 +1,7 @@
 import { humanStatus, providerLabel } from '@/lib/api';
 import type { ChatSource, RetrievalState } from '@/lib/conversations';
 import Icon from './icon';
+import AiQueryPlan from './ai-query-plan';
 
 export function retrievalStatus(status?: string) {
   const labels: Record<string, string> = { planning: 'Interpreting your question', retrieving: 'Searching selected resources', reviewing: 'Reviewing relevance', refining: 'Refining the search query', completed: 'Relevance review complete', failed: 'Search refinement interrupted', cancelled: 'Search refinement stopped', interrupted: 'Search refinement interrupted', clarification_needed: 'Clarification needed' };
@@ -21,6 +22,7 @@ export default function SearchRefinement({ retrieval }: { retrieval: RetrievalSt
     {retrieval.intent_frame && <dl className="refinement-intent" aria-label="Interpreted question frame"><div><dt>Object of change</dt><dd>{retrieval.intent_frame.object_of_change}</dd></div><div><dt>Intervention</dt><dd>{retrieval.intent_frame.intervention || 'Not specified'}</dd></div><div><dt>Desired outcome</dt><dd>{retrieval.intent_frame.desired_outcome}</dd></div><div><dt>Boundary</dt><dd>{retrieval.intent_frame.boundary}</dd></div></dl>}
     {!!retrieval.keywords?.length && <div className="planner-terms" aria-label="Search keywords"><strong>Search keywords</strong><div>{retrieval.keywords.map((item, index) => <span key={index}>{item}</span>)}</div></div>}
     {!!retrieval.tags?.length && <div className="planner-terms" aria-label="Planner tags"><strong>Planner tags</strong><div>{retrieval.tags.map((item, index) => <span key={index}>{item}</span>)}</div></div>}
+    <AiQueryPlan retrieval={retrieval} />
     {!!retrieval.assumptions?.length && <details className="refinement-assumptions"><summary>Search assumptions<Icon name="chevron" /></summary><ul>{retrieval.assumptions.map((item, index) => <li key={index}>{item}</li>)}</ul></details>}
     {retrieval.provider_queries?.length ? <div className="refinement-provider-queries">{retrieval.provider_queries.map(item => <section key={item.provider} aria-label={`${providerLabel(item.provider)} search query`}><h4>{providerLabel(item.provider)}</h4><dl className="refinement-queries"><div><dt>Lexical query</dt><dd>{item.lexical_query}</dd></div><div><dt>Semantic query</dt><dd>{item.semantic_query}</dd></div></dl>{item.rationale && <p className="refinement-rationale">{item.rationale}</p>}</section>)}</div> : (retrieval.lexical_query || retrieval.semantic_query) && <dl className="refinement-queries">{retrieval.lexical_query && <div><dt>Lexical query</dt><dd>{retrieval.lexical_query}</dd></div>}{retrieval.semantic_query && <div><dt>Semantic query</dt><dd>{retrieval.semantic_query}</dd></div>}</dl>}
     {retrieval.rationale && <p className="refinement-rationale">{retrieval.rationale}</p>}

@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-11",
+  "evidence_kind": "Actual live YouTube Data API search through Research Scout conversation graph, Deep Agents/application MCP, isolated YouTube provider and main Search UI.",
+  "conversation_id": "8f8fdd99629a4dc89370f8417a3bf5db",
+  "search_url": "http://127.0.0.1:3100/?search=8f8fdd99629a4dc89370f8417a3bf5db",
+  "routing": "auto",
+  "filters": {
+    "year_from": 2020,
+    "year_to": null,
+    "resource_type": "video"
+  },
+  "providers": [
+    "youtube"
+  ],
+  "status": "SUCCEEDED",
+  "warnings": [],
+  "source_count": 10,
+  "canonical_resources": 10,
+  "usage": {
+    "research_attempts": 1,
+    "model_http_attempts": 0,
+    "model_cost_usd": 0
+  },
+  "activity": [
+    {
+      "provider": "youtube",
+      "operation": "hybrid_search",
+      "status": "SUCCEEDED",
+      "attempts": 1,
+      "source_count": 10
+    }
+  ],
+  "youtube_configured": true,
+  "content_scope": "Public video search metadata and descriptions only; no transcript acquired.",
+  "live_probe": "One explicit video-only discovery turn; no LLM planning or answer generation.",
+  "passed": true,
+  "read_only_replay_post_requests": 0,
+  "saved_usage_unchanged": true,
+  "model_ledger_cost_and_holds_unchanged": true,
+  "browser_errors": [],
+  "responsive_widths": [
+    1440,
+    390
+  ],
+  "screenshots": [
+    "docs/validation/2026-11-11-youtube-live-1440.png",
+    "docs/validation/2026-11-11-youtube-live-390.png"
+  ],
+  "privacy": {
+    "configured_youtube_key_exact_value_scan_files": 957,
+    "matching_paths": [],
+    "env_ignored": true,
+    "env_mode": "0o600",
+    "scope": "Current Git-listed project files plus frontend build and local logs. Exact value scan, excluding dependencies/private env/credentials/state; not an unknown-secret or history audit."
+  },
+  "current_youtube_readiness": {
+    "id": "youtube",
+    "mode": "live",
+    "status": "ready",
+    "access_configured": true
+  },
+  "app_left_running": {
+    "url": "http://127.0.0.1:3100/",
+    "launcher_session": 87222,
+    "provider_processes": 9
+  }
+}

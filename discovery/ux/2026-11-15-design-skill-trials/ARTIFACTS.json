@@ -1,0 +1,185 @@
+{
+  "date": "2026-11-15",
+  "files": [
+    {
+      "path": "CONTRACT.md",
+      "sha256": "a47be081ce1d9725d459b0f5eb782bfb5e6839377c992b34f39d1ea88d5f657e"
+    },
+    {
+      "path": "README.md",
+      "sha256": "6c2fabadf9fb42f2faec8a97055489ebb97e902e48c032541552639e54edf02b"
+    },
+    {
+      "path": "accessibility-checks.json",
+      "sha256": "fa6cfbd6b769171d5e2a98ee2a51e6d77576c05c4f329aa8c61bfb08eb9efa1c"
+    },
+    {
+      "path": "datapulse-workspace.html",
+      "sha256": "dbfbf1b8e1315cb389cda743df3500eae95126dfb057e0ceaef6b1310df7f857"
+    },
+    {
+      "path": "family-notes-impeccable.md",
+      "sha256": "e0ac01f8f806b256bf2ac9471bb5abeb96083e7a8b619dc15202da75bc4379f2"
+    },
+    {
+      "path": "family-notes-pro.md",
+      "sha256": "f3f704945c251b026718bae03be8530cf58292ac341b31107859fad6ae855dae"
+    },
+    {
+      "path": "family-notes-reference.md",
+      "sha256": "1f20b2b2b77ad3b284a16c8a42c59f24c586db63144af940c4267ed61eeab4fc"
+    },
+    {
+      "path": "impeccable-folio.html",
+      "sha256": "92c94be304308809940f01c390957c585c215d807939de82172ead05ca749d54"
+    },
+    {
+      "path": "impeccable-quiet.html",
+      "sha256": "b0856b53e71e2137c29d296397960dd6a1e4d847da9695ce95e70eae7a6a0382"
+    },
+    {
+      "path": "impeccable-signal.html",
+      "sha256": "954380d0aa945bc91333b82d33e53e110aa0ba21dedec5bf9c9f8fabfd9cf4f3"
+    },
+    {
+      "path": "impeccable-skill-validation.json",
+      "sha256": "07c8984bd56330e1981fd05d9d376f2da3851e261da46791c536ed4d8e28928c"
+    },
+    {
+      "path": "index.html",
+      "sha256": "e81ee0e8645d039e0ec5408ea58203b0d59a619325f8fd0620982f7c31c50805"
+    },
+    {
+      "path": "plan.md",
+      "sha256": "12c639ca59cd0c70e82d78d39e5bb8cde4719fcb0ebaf5bdb83ac94b7adf1a53"
+    },
+    {
+      "path": "pro-material.html",
+      "sha256": "469939c0e2c92081ee3d2e37ab3108bd428adac73ce9cbbc15807d8a9937b519"
+    },
+    {
+      "path": "pro-scholar.html",
+      "sha256": "8cd4c917a3ff75b39dffb5d0020247c76e8086468084f2084f4a1becd00076ed"
+    },
+    {
+      "path": "pro-swiss.html",
+      "sha256": "a7ca38ead01ffeeaa16fc662df9d58477be1a6399875ba58ae3a450bffc75b34"
+    },
+    {
+      "path": "receipts-pro.json",
+      "sha256": "b3af318013ec70c5ef2b6cd7ad9ce4df48699e7ac43b36b12d054e756374758a"
+    },
+    {
+      "path": "screenshots/datapulse-workspace-desktop.png",
+      "sha256": "e61e824c871b775eeeb02e7fec1ef3fa85b339cefd0e64ae411a4aef799477a3"
+    },
+    {
+      "path": "screenshots/datapulse-workspace-mobile.png",
+      "sha256": "17cd834ddf26b8998a4ce04c0523bc8adf5416484d1c4258e47cde05127b3488"
+    },
+    {
+      "path": "screenshots/gallery-desktop.png",
+      "sha256": "c3097f9897e267acdfb4950859b8fdc688ed888489e82585426d68184c30bae8"
+    },
+    {
+      "path": "screenshots/gallery-mobile.png",
+      "sha256": "ee44efa58803674d23e709c34dd0965a876302e22065fcb5b3ed0455174666e2"
+    },
+    {
+      "path": "screenshots/impeccable-folio-desktop.png",
+      "sha256": "0b45ee25489ba81ddc6bf6ef6fa94625fcff08af0644ca8ef52fce8338de1de9"
+    },
+    {
+      "path": "screenshots/impeccable-folio-mobile.png",
+      "sha256": "2d79b5228016e456d34b834a536e79853013130872223c66b1cc48a875c79f91"
+    },
+    {
+      "path": "screenshots/impeccable-quiet-desktop.png",
+      "sha256": "900e6d23f49f97f8e54e91a24c53b262e7a4458f39f4417e8546d294a2a0b071"
+    },
+    {
+      "path": "screenshots/impeccable-quiet-mobile.png",
+      "sha256": "6be3b51cae078ec10f7317f8a844ff78c9c3cca1566346d1822e3c4ab5e22fcd"
+    },
+    {
+      "path": "screenshots/impeccable-signal-desktop.png",
+      "sha256": "e134e564cf78d4bc6cd38c5807d52302174090c5ba000bdbdb2df57ae14b4850"
+    },
+    {
+      "path": "screenshots/impeccable-signal-mobile.png",
+      "sha256": "c03e74c8f9c117c4164587fa3697e2fad0f3a821316346ba23b5f0197b04813a"
+    },
+    {
+      "path": "screenshots/pro-material-desktop.png",
+      "sha256": "a539b74bf9f56d1c90af2f5f86ad8798e5e28be18bc8b41e7e0a7ea50cd9d212"
+    },
+    {
+      "path": "screenshots/pro-material-mobile.png",
+      "sha256": "821be4f23765b73066ade685d063b5001dcfb668599af991454164851d7b836e"
+    },
+    {
+      "path": "screenshots/pro-scholar-desktop.png",
+      "sha256": "7a6fbb5021d7924c7ff23b68a46bfce5c31fbdd72239e1b717b83acf537cb5a3"
+    },
+    {
+      "path": "screenshots/pro-scholar-mobile.png",
+      "sha256": "4c7499a861722300ba33d5ec3446e7507c8afec3c692408f5c838b572ebee2eb"
+    },
+    {
+      "path": "screenshots/pro-swiss-desktop.png",
+      "sha256": "a899a50b607b80fa6a69de70f2109bde606c25075cb1da65939930257792be2b"
+    },
+    {
+      "path": "screenshots/pro-swiss-mobile.png",
+      "sha256": "2ac6825ada063cca04b5ac8b086d556bb0c6fa6c038b7906bff68ecb65dd5c61"
+    },
+    {
+      "path": "serve-preview.mjs",
+      "sha256": "c92e9b82498b2d607efe9da3c09ab8ce2b613803e87e0f498945a3f14a52bc8c"
+    },
+    {
+      "path": "shared/base.css",
+      "sha256": "639d3a245184c904fe78a921ff9f2a63d29a788fb2c0a0c806a55a0c86026747"
+    },
+    {
+      "path": "shared/mockup.js",
+      "sha256": "a1a0e1c67a6d4788faddc65ecfd80d28d6846056d1e80075e93aa515eb089105"
+    },
+    {
+      "path": "styles/datapulse-workspace.css",
+      "sha256": "53567c3fd804c06849913c57ace2e17fcc35e7995877c043b1a7c8d0b4930bbf"
+    },
+    {
+      "path": "styles/impeccable-folio.css",
+      "sha256": "277ec6c082d2a17ce9159cb0cb293be4457909b05e04b927cc5c584850a6877a"
+    },
+    {
+      "path": "styles/impeccable-quiet.css",
+      "sha256": "c642a7ff5948d93bddbb3f73671c91ceffa6fc6a8aeba0da196532087f7ae201"
+    },
+    {
+      "path": "styles/impeccable-signal.css",
+      "sha256": "c5c429478e5cb92fb7ee0e9e333193583b425438a1f36a7c3931e6fc6f3f580f"
+    },
+    {
+      "path": "styles/pro-material.css",
+      "sha256": "63f1a5ac3214b53d9a0df1e67c72e9e6e6ed9984d8681aaae1ab0d8e70b7bf2e"
+    },
+    {
+      "path": "styles/pro-scholar.css",
+      "sha256": "d5b468e71b447bb39c42d02c93686196924a0b6c4e7f77fa00439b6b2059cbe0"
+    },
+    {
+      "path": "styles/pro-swiss.css",
+      "sha256": "b3a38b18c66086830146da1b91811378fb6384367111878b2e1e2545f11b0730"
+    },
+    {
+      "path": "validation-focused.json",
+      "sha256": "a42e24aeb888b2a5bc182200afbba91b7d1d88d00b30e0700436dabae4dd581e"
+    },
+    {
+      "path": "validation.json",
+      "sha256": "258a6b168d190ae0cebe3b71367ced344392899ffe3f53b3aa774fe752f2778c"
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "date": "2026-11-11",
+  "status": "passed",
+  "scope": "Requested parallel UI refinement: nonmodal right-hand reader, compact video/result layout, date slider, atom and incremental skeletons; current YouTube retrieval/MCP/semantic research documented separately.",
+  "agents": [
+    "right_panel_design",
+    "date_loading_controls",
+    "youtube_retrieval_research"
+  ],
+  "checks": {
+    "backend_passed": 294,
+    "backend_failed": 0,
+    "backend_skipped": 0,
+    "browser_passed": 78,
+    "browser_failed": 0,
+    "browser_skipped": 0,
+    "browser_flaky": 0,
+    "harness_passed": 11,
+    "typescript": "passed",
+    "production_next_build": "passed",
+    "ruff": "passed",
+    "diff_check": "passed"
+  },
+  "browser": "docs/validation/2026-11-11-docked-ui-browser.json",
+  "backend": "docs/validation/2026-11-11-docked-ui-python.xml",
+  "harness": "docs/validation/2026-11-11-docked-ui-harness.json",
+  "live_cached_inspection": {
+    "date": "2026-11-11",
+    "passed": true,
+    "evidence": "Read-only saved live video and captions; API mutations blocked. No new provider, transcript or model operation.",
+    "post_requests": 0,
+    "browser_errors": [],
+    "caption_segments": 92,
+    "source_attempts_unchanged": true,
+    "model_cost_and_holds_unchanged": true,
+    "thumbnail_width_px": 140,
+    "filter_and_draft_retained": true,
+    "skeleton_stops_at_saved_completion": true,
+    "responsive": [
+      {
+        "width": 1440,
+        "overflow": false,
+        "placement": "right",
+        "nonmodal": true
+      },
+      {
+        "width": 1024,
+        "overflow": false,
+        "placement": "right",
+        "nonmodal": true
+      },
+      {
+        "width": 900,
+        "overflow": false,
+        "placement": "inline-above",
+        "nonmodal": true
+      },
+      {
+        "width": 768,
+        "overflow": false,
+        "placement": "inline-above",
+        "nonmodal": true
+      },
+      {
+        "width": 390,
+        "overflow": false,
+        "placement": "inline-above",
+        "nonmodal": true
+      },
+      {
+        "width": 320,
+        "overflow": false,
+        "placement": "inline-above",
+        "nonmodal": true
+      }
+    ],
+    "screenshots": [
+      "docs/validation/2026-11-11-docked-ui-1440.png",
+      "docs/validation/2026-11-11-docked-ui-390.png"
+    ]
+  },
+  "privacy": "docs/validation/2026-11-11-docked-ui-privacy.json",
+  "source_sha256": {
+    "frontend/src/components/research-workspace.tsx": "62b6b3a5542f94960a976df894a9b8324984e4f753c93363df894abcac3fd97f",
+    "frontend/src/components/search-results.tsx": "fb88ce0021f71b0a1169b66278bc4f76864d2018b1fc4589acc54f6b59f17747",
+    "frontend/src/components/search-options.tsx": "f47f91c40060c0c583e5e099910f8e35e61e4e48cddfb8c6dd654e660f655fda",
+    "frontend/src/components/source-preview.tsx": "f9503e99f4fd1608d537760b5d37314434cbd81f326e3df33d49aa7f7fa4ac4e",
+    "frontend/src/components/video-preview.tsx": "2e794ac163595a03817ad1aa296ef5e9b3b7605dde773b4a83d9469cf49eed9f",
+    "frontend/src/lib/search-preferences.ts": "19a53a356654de2bbb8e4c27833dd61f34f4ef235bd87a6465b2b2865d7ef83a",
+    "frontend/src/app/globals.css": "669ef01298831163fb6dbd713ecd1491ecc806fedd60f9574f3987c16a5ef61e",
+    "tests/browser/search-controls.ts": "f3818a88edd1ffb2d16a19efcace5e7c9757019326d4c84bb0c26005336f2d81",
+    "tests/browser/search-workspace.spec.ts": "f5465927719f21bbf1dcdbf648cc547a188c0e5acfc46aafa0bae5b7526ac56b",
+    "tests/browser/search-results-resilience.spec.ts": "007b6b2a81776895722ba206a67db9bcc275af3aa4bbca64252ee37dde74b926",
+    "tests/browser/video-preview-resilience.spec.ts": "892a7c498f96dd8b861a66129d563b1b30938ca7884cbca1d1200ce1a08b398c",
+    "tests/browser/youtube-integration.spec.ts": "8087905375212b1c08592b35f6ca8cd29f46795ba046916c494eed5bd15f80e2",
+    "tests/browser/date-slider-loading.spec.ts": "5636c36110713fd881eb84c5cda5fb44099422e1c96065c7751c7577708ec260",
+    "tests/browser/right-panel-layout.spec.ts": "65f77754b3809490876ae5a40d682301fc02e40fdc5a2a09b34fda0cc81d2311",
+    "tests/browser/progressive-loading.spec.ts": "880ff6d4422a2561c8c7e16984ac9b1f04a34f622d66194cadf49f916d8f5b90"
+  },
+  "limitations": [
+    "Fixture/harness checks do not establish live model relevance quality.",
+    "Read-only live UI evidence reuses one existing video caption observation; no new provider/transcript/model calls.",
+    "External YouTube MCP and timestamped transcript-passage similarity remain researched follow-ups, not new integrations.",
+    "Existing live model allowance and uncertain holds were preserved."
+  ],
+  "app_left_running": {
+    "url": "http://127.0.0.1:3100/",
+    "launcher_session": 72025,
+    "provider_services": 9,
+    "configuration": "Existing root .env; all provider modes live"
+  }
+}

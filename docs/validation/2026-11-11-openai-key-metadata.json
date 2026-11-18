@@ -1,0 +1,8 @@
+{
+  "date": "2026-11-11",
+  "scope": "One read-only model metadata request; no Responses generation, research search, budget reset or retry.",
+  "model": "gpt-6-luna",
+  "http_status": 200,
+  "status": "model_metadata_available",
+  "returned_model": "gpt-6-luna"
+}

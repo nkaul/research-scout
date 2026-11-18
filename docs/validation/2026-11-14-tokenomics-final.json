@@ -1,0 +1,78 @@
+{
+  "date": "2026-11-14",
+  "passed": true,
+  "scope": "Daily 100 model invocation credits, explicit reset, content-free SQLite accounting and Admin without login.",
+  "policy": {
+    "daily_credits": 100,
+    "per_dispatched_model_request": 1,
+    "timezone": "America/New_York",
+    "source_or_local_ranking_credits": 0,
+    "manual_reset_preserves_history": true,
+    "late_work_stays_in_original_window": true,
+    "old_lifetime_usd_gate_replaced": true,
+    "costs_are_retained_app_estimates_not_verified_prices": true
+  },
+  "backend": {
+    "passed": 407,
+    "skipped": 1,
+    "skip": "Optional separately enabled local encoder proof",
+    "seconds": 136.29,
+    "ruff": "passed",
+    "initial_sandbox_run": "Interrupted after localhost MCP bind tests were denied; full approved localhost run passes."
+  },
+  "browser": {
+    "unique_cases_verified": 206,
+    "full_run": {
+      "passed": 205,
+      "failed": 1
+    },
+    "corrected_regression": "Mobile fixture/live label restored without relaxing its existing assertion; credit disclosure also constrained inside viewport.",
+    "final_affected_run": {
+      "passed": 65,
+      "failed": 0
+    },
+    "final_credit_run": {
+      "passed": 7,
+      "failed": 0
+    },
+    "no_retries": true
+  },
+  "harness": {
+    "passed": 11,
+    "total": 11,
+    "evidence": "Authored scripted agent fixtures; not a paid-model quality evaluation.",
+    "report": "2026-11-14-tokenomics-harness.json"
+  },
+  "frontend": {
+    "typecheck": "passed",
+    "production_build": "passed",
+    "built_source_files_matched": 70
+  },
+  "live": {
+    "url": "http://127.0.0.1:3100",
+    "admin": "http://127.0.0.1:3100/admin",
+    "services_healthy": 13,
+    "current_available": 100,
+    "current_used": 0,
+    "current_reserved": 0,
+    "historical_operations": 13,
+    "historical_model_invocations": 27,
+    "historical_unknown_usage_invocations": 4,
+    "original_ledger_and_backup_verified": true,
+    "sqlite_integrity": "ok",
+    "topic_retrieval_ready": true,
+    "paid_model_calls": 0,
+    "real_allowance_reset": false,
+    "saved_papers": 58,
+    "saved_videos": 10,
+    "protected_existing_files_unchanged": 719
+  },
+  "reports": {
+    "migration_rehearsal": "2026-11-14-tokenomics-migration-rehearsal.json",
+    "live_migration": "2026-11-14-tokenomics-live-migration.json",
+    "fixture_ui": "2026-11-14-tokenomics-fixture-ui.json",
+    "live_readonly": "2026-11-14-tokenomics-live-readonly.json",
+    "preservation": "2026-11-14-tokenomics-preservation.json",
+    "privacy": "2026-11-14-tokenomics-privacy.json"
+  }
+}

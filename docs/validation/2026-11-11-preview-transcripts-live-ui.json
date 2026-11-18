@@ -1,0 +1,34 @@
+{
+  "date": "2026-11-11",
+  "passed": true,
+  "profile": "live",
+  "evidence_kind": "One explicit bounded live detail/caption action on an existing saved YouTube record. No new search or model call.",
+  "search_url": "http://127.0.0.1:3100/?search=8f8fdd99629a4dc89370f8417a3bf5db",
+  "transcript_status": "available",
+  "transcript_origin": "public_youtube_captions",
+  "transcript_language": "English",
+  "caption_segment_count": 92,
+  "caption_truncated": false,
+  "caption_code": null,
+  "caption_already_saved": true,
+  "explicit_detail_posts": 0,
+  "new_provider_attempts": 0,
+  "reopen_new_posts": 0,
+  "reopen_new_provider_calls": 0,
+  "thumbnail_loaded": true,
+  "search_component_stayed_mounted": true,
+  "url_tab_filter_draft_preserved": true,
+  "model_ledger_unchanged": true,
+  "browser_errors": [],
+  "responsive_widths": [
+    1440,
+    390,
+    320
+  ],
+  "screenshots": [
+    "docs/validation/2026-11-11-preview-transcripts-live-dialog.png",
+    "docs/validation/2026-11-11-preview-transcripts-live-results.png",
+    "docs/validation/2026-11-11-preview-transcripts-live-390.png",
+    "docs/validation/2026-11-11-preview-transcripts-live-320.png"
+  ]
+}

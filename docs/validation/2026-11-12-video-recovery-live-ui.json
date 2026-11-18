@@ -1,0 +1,47 @@
+{
+  "date": "2026-11-12",
+  "passed": true,
+  "evidence": "Explicit metadata and caption actions against one existing live YouTube source; no new search or model work. Embedded preview tested as a user-requested frame, not a playback-quality claim.",
+  "metadata_origin": "youtube_video_details",
+  "left_and_right_description_recovered": true,
+  "metadata_only_did_not_fetch_captions": true,
+  "metadata_view_operational": true,
+  "transcript_status": "available",
+  "transcript_code": null,
+  "saved_caption_segments": 133,
+  "left_thumbnail_opens_player": true,
+  "eye_reopen_does_not_play": true,
+  "explicit_api_writes": [
+    "details",
+    "transcript"
+  ],
+  "new_provider_attempts": 4,
+  "model_cost_and_holds_unchanged": true,
+  "browser_errors": [],
+  "responsive": [
+    {
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "width": 900,
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "overflow": false
+    }
+  ]
+}

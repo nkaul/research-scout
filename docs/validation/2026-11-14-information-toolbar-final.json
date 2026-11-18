@@ -1,0 +1,126 @@
+{
+  "date": "2026-11-14",
+  "passed": true,
+  "scope": "Four saved-search information icons beside Sources/Date/Limits/AI, compact timing, automatic saved AI query focus and explicit heavy trace details.",
+  "frontend": {
+    "typecheck": "passed",
+    "production_build": "passed",
+    "source_files_matched": 93,
+    "desktop_mobile_visual_review": "passed",
+    "responsive_widths": [
+      {
+        "width": 1440,
+        "overflow": false
+      },
+      {
+        "width": 1100,
+        "overflow": false
+      },
+      {
+        "width": 970,
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "overflow": false
+      },
+      {
+        "width": 650,
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "overflow": false
+      },
+      {
+        "width": 320,
+        "overflow": false
+      }
+    ]
+  },
+  "browser": {
+    "unique_cases_verified": 80,
+    "new_toolbar_cases": 7,
+    "final_source_matched_run": {
+      "passed": 80,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "seconds": 144.649659
+    },
+    "runs": [
+      {
+        "passed": 77,
+        "failed": 3,
+        "skipped": 0,
+        "flaky": 0,
+        "seconds": 213.76809899999998
+      },
+      {
+        "passed": 11,
+        "failed": 1,
+        "skipped": 0,
+        "flaky": 0,
+        "seconds": 16.381936000000003
+      },
+      {
+        "passed": 1,
+        "failed": 0,
+        "skipped": 0,
+        "flaky": 0,
+        "seconds": 3.073389
+      },
+      {
+        "passed": 80,
+        "failed": 0,
+        "skipped": 0,
+        "flaky": 0,
+        "seconds": 144.649659
+      }
+    ],
+    "automatic_retries": 0,
+    "actual_isolated_http_mcp_direct_search_and_saved_readme_notes": true,
+    "note": "Initial assertion/baseline failures are retained in runs. A source comparison caught the first preview before the toolbar CSS had finished writing; all 80 affected cases were repeated against the source-matched final build."
+  },
+  "behavior": {
+    "four_icons_inside_search_settings_toolbar": true,
+    "one_details_host_outside_search_form": true,
+    "compact_recorded_timing_visible": true,
+    "no_duplicate_section_tab_strip": true,
+    "automatic_saved_ai_focus_query_and_material_terms": true,
+    "inline_term_and_query_expansion": true,
+    "heavy_model_provider_requests_explicit": true,
+    "saved_context_independent_of_next_query_preferences": true,
+    "lane_specific_source_coverage": true,
+    "missing_or_compacted_facts_not_invented": true,
+    "new_scope_hides_old_focus_and_details": true,
+    "accessible_tooltips_keyboard_and_close_focus": true,
+    "filter_enter_and_icon_actions_do_not_submit": true,
+    "no_extra_get_sse_owner_or_acquisition": true
+  },
+  "backend": {
+    "changed": false,
+    "tests_rerun": false,
+    "reason": "Presentation and browser acceptance change; existing backend request, credit and provider behavior is unchanged."
+  },
+  "live": {
+    "api_writes": 0,
+    "validation_model_calls": 0,
+    "validation_provider_searches": 0,
+    "saved_paper_cards": 58,
+    "saved_video_cards": 10,
+    "accounting_during_readonly_check": {
+      "before_used": 24,
+      "after_used": 24,
+      "same_reset_epoch": true,
+      "note": "Concurrent interactive activity is allowed; validation never resets or alters accounting."
+    },
+    "screenshots_private": true,
+    "app_hot_reloaded_without_backend_restart": true
+  },
+  "evidence": {
+    "saved_live": "2026-11-14-information-toolbar-live.json",
+    "privacy": "2026-11-14-information-toolbar-privacy.json",
+    "design": "../../system-design/search-information-toolbar-2026-11-14.md"
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "date": "2026-11-11",
+  "status": "passed",
+  "scope": "Project/concept/query/resource organization; passive row-following metadata, compact controls, inline abstracts/PDFs and source-version boundaries.",
+  "checks": {
+    "backend_passed": 301,
+    "backend_failed": 0,
+    "backend_skipped": 0,
+    "full_browser_passed_before_last_read_fence": 87,
+    "final_focused_browser_cases": 21,
+    "final_focused_first_run_passed": 19,
+    "final_focused_page_setup_timeouts": 2,
+    "isolated_setup_reruns_passed": 2,
+    "unique_browser_cases_passed": 88,
+    "harness_passed": 11,
+    "typescript": "passed",
+    "production_build": "passed in isolated copy of final source using existing dependencies and original config plus isolated bundler root",
+    "ruff": "passed",
+    "diff_check": "passed"
+  },
+  "browser": "docs/validation/2026-11-11-project-workspace-browser.json",
+  "backend": "docs/validation/2026-11-11-project-workspace-python.xml",
+  "harness": "docs/validation/2026-11-11-project-workspace-harness.json",
+  "privacy": "docs/validation/2026-11-11-project-workspace-privacy.json",
+  "live_cached_inspection": {
+    "date": "2026-11-11",
+    "passed": true,
+    "evidence": "Read-only live saved metadata/captions. Browser blocks API writes; no new search, transcript acquisition or model call.",
+    "post_requests": 0,
+    "browser_errors": [],
+    "pointer_preview_follows_rows": true,
+    "keyboard_preview_follows_rows": true,
+    "passive_preview_keeps_metadata_tab_and_focus": true,
+    "abstract_display_toggle_no_writes": true,
+    "saved_captions_present": true,
+    "source_attempts_unchanged": true,
+    "model_cost_and_holds_unchanged": true,
+    "responsive": [
+      {
+        "width": 1440,
+        "overflow": false
+      },
+      {
+        "width": 1024,
+        "overflow": false
+      },
+      {
+        "width": 900,
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "overflow": false
+      },
+      {
+        "width": 320,
+        "overflow": false
+      }
+    ],
+    "screenshots": [
+      "docs/validation/2026-11-11-project-workspace-1440.png",
+      "docs/validation/2026-11-11-project-workspace-390.png"
+    ]
+  },
+  "source_sha256": {
+    "src/research_scout/projects.py": "a1eb57ce5dc7c3316ec98c1e44c0e79af51ff9d85cc7cbf967ada6aa18451ded",
+    "src/research_scout/api.py": "b0b92ff7da1584c782e526ccc6935b4a695ea3cd0e2d23af63c3770b4dc0635c",
+    "frontend/src/components/research-workspace.tsx": "9e3d1ab924b382af23402c1948806e864aa286f56a8442d5f9eb2565fb23aaea",
+    "frontend/src/components/research-projects.tsx": "a3715165e942f51dff5acb92507d9305e52c2ca1c535252f836185dc9f180bbf",
+    "frontend/src/lib/projects.ts": "a8b3a25d3c1caa4a570ae5c76b863f916cbdaefff52582ccd66a93b869888d08",
+    "frontend/src/components/search-results.tsx": "0eef3c4fa0be123d1576f27bc3bc3781b8c48b505fe04205d64c22899c9d41e7",
+    "frontend/src/components/chat-abstract.tsx": "76e26e9e435b00f2fe584f481245cfa15f6fe8bffdc8803b23404d2e09725cef",
+    "frontend/src/components/source-preview.tsx": "0fb90532f847be23d38a80bcc72e09f1373fd3a2e501e222577ef4525c456907",
+    "frontend/src/components/inline-document.tsx": "4f20faa2d04927931d6be5caa2fc1c5b88605f20b64540937cf1e3f9e8653ee2",
+    "frontend/src/app/globals.css": "e7f3f5a2924b9bcb7dd03d259149827ddfb1a2425c88c9385f1f345fdeba3533",
+    "tests/test_projects.py": "672bb8f7df4a5f16cb5b79b60bd70ae9df20c645012d62c3f0ea6f20da6d3b8f",
+    "tests/browser/seamless-results.spec.ts": "95e596739b9e716cd663dbcbe8898ee70919788a70d6a50677273a0ae7b6df05",
+    "tests/browser/research-projects.spec.ts": "72af6148dfc5a8055244ad9a4f123ad2eb8a419cd387870c87a4e5ba05f5beba",
+    "tests/browser/project-integration.spec.ts": "3a41be09059de871071f6bf6f4aaf9aec2cad66193a56dc44abfbde3730fc6e3",
+    "tests/browser/search-results-resilience.spec.ts": "4e00310efe8bc52c7e72fde018b6740d6f5e4022417e6358f53b5ae805db1c7d"
+  },
+  "notes": [
+    "Full87 acceptance was followed by one final row-intent correction; 21 related cases covered it, with two browser-page setup timeouts passing isolated reruns. New regression plus prior suite gives88 unique cases.",
+    "Cached live inspection passed with API writes blocked and unchanged retrieval/model usage.",
+    "An active user research operation was detected after inspection; live app was left running and final build used an isolated copy.",
+    "PDF preview opens available provider links in the browser; blocked embedding has a new-tab fallback. No PDF indexing/model-context ingestion was added.",
+    "Local project JSON persists saved provider versions; production database/authentication remain unselected.",
+    "JUnit hostnames were omitted; counts/results unchanged."
+  ],
+  "app_left_running": {
+    "url": "http://127.0.0.1:3100/",
+    "launcher_session": 21740,
+    "provider_services": 9,
+    "configuration": "Existing local live configuration; active research preserved"
+  }
+}

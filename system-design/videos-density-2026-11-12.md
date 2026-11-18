@@ -1,0 +1,15 @@
+# Compact Videos workspace and reader
+
+November 12, 2026. Three parallel agents covered video cards, the video reader and an independent alignment/interaction audit. This applies the Papers tab’s established density and alignment to Videos while retaining the Dub-inspired UI and existing Next.js/Python stack.
+
+Video cards now put the title, Video/YouTube/year chips and one channel byline beside a small thumbnail. Descriptions use the available card width with an inline expand/collapse icon. They remain provider text, separate from transcripts. The single aligned action row contains Preview details, Save to project, Open on YouTube and the provider-record disclosure. Videos do not show paper PDF or Unpaywall controls. The provider disclosure retains original references and latest saved versions; project saves retain the exact displayed run/reference/version.
+
+The shared controls use **Descriptions** on Videos and **Abstracts** on Papers. Expanding already available descriptions performs no provider or model request. If the saved preview is shortened, an explicit expansion can read its saved full record. Description expansion never automatically fetches captions.
+
+On desktop with a fine pointer, Videos now opens its first saved record in the right-hand reader, as Papers already does. Mouse/keyboard row intent continues to update selection without moving focus. Existing close/replay fences, stale-request guards, note-editing protection and historical project pins remain intact. Narrow/touch layouts retain explicit opening and the inline responsive reader.
+
+The video reader uses a small title and one channel line, then the thumbnail/player, a compact action/status row, expandable description and bounded transcript. Caption availability, origin and language use small status chips. Published and automatically generated captions stay distinguishable. Saved timestamps link to the original video. Unavailable/blocked/error results remain explicit and do not trigger automatic retries. Playback and uncached caption lookup still require their own buttons; opening a record loads neither an iframe nor captions.
+
+Live thumbnail, player and caption loaders retain skeletons and elapsed feedback. Completed timings move to quiet clock tooltips. A late visibility callback must not start a thumbnail timer after its image has already loaded or failed; stale callbacks must also match the currently observed image. This fixes a fast-image ordering race discovered during saved-live review.
+
+The [validation receipt](../docs/validation/2026-11-12-video-density-final.json) records mocked layout/loading/playback/version/save checks, Papers/navigation regressions, TypeScript and an isolated production build. Saved-live review uses ten existing videos and 92 saved caption segments at six widths (320–1440px), with API writes blocked and unchanged provider/model usage. It does not claim new live research or new caption availability. Backend services, provider routing/ranking, dependencies and stored evidence are unchanged.

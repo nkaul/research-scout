@@ -1,0 +1,5 @@
+.thumbnailTime { position: absolute; right: 4px; top: 4px; max-width: calc(100% - 8px); border-radius: 3px; background: #ffffffec; padding: 1px 3px; pointer-events: none; }
+.thumbnailTime:empty { display:none; }
+.thumbnailTime > span { display:block; font-size:9px; }
+.thumbnailClock { position: absolute; right: 4px; bottom: 4px; display: inline-flex; padding: 2px; border-radius: 3px; background: #ffffffdc; color: #6a788c; pointer-events: none; }
+.thumbnailClock svg { width: 11px; height: 11px; }

@@ -1,0 +1,112 @@
+{
+  "date": "2026-11-15",
+  "passed": true,
+  "scope": "Approved Observatory landing plus local single-owner authentication; existing workspace retained at /app.",
+  "application": {
+    "url": "http://localhost:3100",
+    "workspace": "/app",
+    "owner_setup_required_at_verification": true,
+    "services_healthy": 13,
+    "production_frontend": true
+  },
+  "backend": {
+    "unique_tests_passed": 485,
+    "optional_encoder_skipped": 1,
+    "initial_full_run": {
+      "passed": 474,
+      "failed": 5,
+      "errors": 5,
+      "skipped": 1
+    },
+    "resolution": "Nine loopback-restricted checks and one corrected issuer-test fixture passed in the ten-case rerun; one additional auth-on real HTTP MCP test passed.",
+    "auth_api_settings_subset": 72,
+    "auth_on_real_mcp_passed": true,
+    "ruff_passed": true
+  },
+  "browser": {
+    "existing_workspace_cases_passed": 243,
+    "auth_flow_cases_passed": 8,
+    "additional_account_menu_case_passed": 1,
+    "unique_cases_covered": 252,
+    "full_legacy_run": {
+      "passed": 240,
+      "failed": 3,
+      "skipped": 18
+    },
+    "legacy_failures_resolved_in_production": 3,
+    "existing_optional_service_integration_profiles_not_enabled": 10,
+    "public_focused_rerun_passed": 2,
+    "final_reflow_passed": true,
+    "widths": [
+      1440,
+      1100,
+      970,
+      768,
+      650,
+      390,
+      320
+    ],
+    "source_files_final_verified": 13,
+    "captured_source_files_unchanged": 11,
+    "post_capture_client_protocol": {
+      "passed": true,
+      "files": 2,
+      "scope": "Synthetic HTTP protocol: saved reads, explicit Google session rotation, next mutation proof, rejection invalidation and no automatic retry.",
+      "network_calls": 0
+    },
+    "visual_review": {
+      "status": "passed",
+      "observed": "Final landing/login desktop and phone captures plus the authenticated320px Account menu inspected. Illustration badges leave header, source text, footer, legend and caption visible. Account links and Sign out fit fully; Escape returns focus.",
+      "qualification": "Bounded visual/keyboard/reflow proof, not a full WCAG or screen-reader audit. Long phone captures should be viewed at native width."
+    }
+  },
+  "harness": {
+    "passed": 11,
+    "total": 11,
+    "hosted_model_attempts": 0
+  },
+  "builds": {
+    "fixture_and_live_passed": true,
+    "typescript_passed": true,
+    "frontend_source_files_matched": 108,
+    "live_rewrites_match_runtime_api": true
+  },
+  "preservation": {
+    "date": "2026-11-15",
+    "passed": true,
+    "research_files_checked": 1165,
+    "missing_files": 0,
+    "changed_files": 0,
+    "economics_tables_checked": 7,
+    "economics_changed_tables": [],
+    "prototype_artifacts_checked": 92,
+    "prototype_changes": 0
+  },
+  "configuration": {
+    "one_owner": true,
+    "reset_delivery": "private local outbox",
+    "google_client": "Separate Research Scout client setup prepared; client ID not yet configured",
+    "habitquest_modified": false,
+    "real_google_login_tested": false,
+    "smtp_tested": false
+  },
+  "limitations": [
+    "Local single-owner access over the existing shared workspace; no multi-user tenancy or public hosting is introduced.",
+    "Real Google sign-in requires creating the separate Web client, authorizing localhost origins and setting its public client ID.",
+    "Browser/keyboard/reflow review is bounded; it is not a complete WCAG or screen-reader audit.",
+    "Two client transport files were subsequently checked with an offline HTTP-protocol regression and rebuilt; no later browser or real-Google rerun is claimed."
+  ],
+  "evidence": {
+    "security": "landing-auth-2026-11-15-security.md",
+    "browser": "landing-auth-2026-11-15-browser.json",
+    "public_regression": "landing-auth-2026-11-15-public-regression.json",
+    "account": "landing-auth-2026-11-15-account-geometry.json",
+    "backend_rerun": "landing-auth-2026-11-15-backend-rerun.xml",
+    "auth_mcp_test": "../../backend/tests/test_auth_mcp_integration.py",
+    "harness": "landing-auth-2026-11-15-harness.json",
+    "live": "landing-auth-2026-11-15-live.json",
+    "live_browser": "landing-auth-2026-11-15-live-browser.json",
+    "preservation": "landing-auth-2026-11-15-preservation.json",
+    "google_setup": "../google-oauth-localhost.md"
+  }
+}

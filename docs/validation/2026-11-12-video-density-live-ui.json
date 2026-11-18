@@ -1,0 +1,51 @@
+{
+  "date": "2026-11-12",
+  "passed": true,
+  "evidence": "Saved live YouTube conversation. API writes blocked; no new provider/model/caption retrieval or playback.",
+  "cards": 10,
+  "default_desktop_reader": true,
+  "compact_title_px": 14,
+  "saved_transcript_segments": 92,
+  "duplicate_channel_removed": true,
+  "descriptions_control": true,
+  "compact_cards": true,
+  "completed_thumbnail_has_no_active_timer": true,
+  "keyboard_selection_and_draft_preserved": true,
+  "responsive": [
+    {
+      "width": 1440,
+      "overflow": false,
+      "action_row_aligned": true
+    },
+    {
+      "width": 1024,
+      "overflow": false,
+      "action_row_aligned": true
+    },
+    {
+      "width": 900,
+      "overflow": false,
+      "action_row_aligned": true
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "action_row_aligned": true
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "action_row_aligned": true
+    },
+    {
+      "width": 320,
+      "overflow": false,
+      "action_row_aligned": true
+    }
+  ],
+  "api_writes": 0,
+  "implicit_embeds": 0,
+  "browser_errors": [],
+  "provider_usage_unchanged": true,
+  "model_cost_and_holds_unchanged": true
+}

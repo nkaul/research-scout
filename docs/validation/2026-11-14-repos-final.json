@@ -1,0 +1,176 @@
+{
+  "date": "2026-11-14",
+  "implemented": true,
+  "agents": [
+    "Analysis",
+    "Execution"
+  ],
+  "scope": "Separate Repos tab, saved AI-context repository workflow and isolated public GitHub provider; vectorless metadata/README retrieval and core sparse reranking.",
+  "architecture": "../../system-design/github-repositories-2026-11-14.md",
+  "source_analysis": "../../discovery/research/github-repository-source-analysis-2026-11-14.md",
+  "provider": {
+    "id": "github",
+    "port": 8121,
+    "transport": "Official GitHub REST inside isolated process; Research Scout application MCP specialist boundary",
+    "remote_github_mcp_connected": false,
+    "anonymous_public_readme_and_identity": true,
+    "search_token_optional": true,
+    "vectors": false,
+    "new_dependencies": false
+  },
+  "limits": {
+    "repositories": {
+      "default": 10,
+      "min": 1,
+      "max": 20
+    },
+    "readmes": 5,
+    "public_id_rechecks": 5,
+    "http_requests_maximum": 11,
+    "automatic_retries": 0,
+    "per_upstream_total_deadline_seconds": 20,
+    "application_mcp_http_timeout_seconds": 300
+  },
+  "validation": {
+    "backend": {
+      "passed": 387,
+      "skipped": 1,
+      "skip_reason": "Optional real encoder proof",
+      "evidence": "One clean complete final socket-enabled pytest run",
+      "duration_seconds": 107.03
+    },
+    "browser": {
+      "passed": 194,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "evidence": "One complete final-source isolated production-build browser run; includes8 existing actual local fixture integration cases and8 new Repos cases."
+    },
+    "harness": {
+      "passed": 11,
+      "total": 11,
+      "all_passed": true,
+      "evidence": "Scripted synthetic structural/context checks; zero hosted calls"
+    },
+    "ruff": {
+      "passed": true,
+      "evidence": "Execution full backend Ruff after targeted52-case gate and source freeze"
+    },
+    "typescript": true,
+    "production_build": true,
+    "source_build_agreement": {
+      "files": 61,
+      "mismatches": [],
+      "all_equal": true
+    },
+    "actual_repository_fixture": {
+      "passed": true,
+      "records": 3,
+      "candidate_matches": 1,
+      "public_identity_checked": true,
+      "authored_unrelated_high_star_case_unassessed": true,
+      "model_http_attempts": 0,
+      "usage": {
+        "github_http_attempts": 0,
+        "search_attempts": 0,
+        "readme_attempts": 0,
+        "identity_attempts": 0,
+        "model_http_attempts": 0,
+        "simulated_attempts": 7
+      },
+      "measured_spans": 7,
+      "only_one_explicit_post": true,
+      "reload_attempts_unchanged": true,
+      "parent_unchanged": true,
+      "fixture_backend_restarted_after_source_freeze": true,
+      "responsive_widths": [
+        1440,
+        1100,
+        970,
+        901,
+        768,
+        390,
+        320
+      ],
+      "receipt": "2026-11-14-repos-fixture.json"
+    },
+    "generic_live_public_probe": {
+      "date": "2026-11-14",
+      "scope": "One anonymous official GitHub repository search for a fixed public Requests/Python example, at most one README and one public identity check; no saved user context/model/credential/code execution.",
+      "status": "succeeded",
+      "records": 1,
+      "usage": {
+        "github_http_attempts": 3,
+        "search_attempts": 1,
+        "readme_attempts": 1,
+        "identity_attempts": 1,
+        "model_http_attempts": 0,
+        "simulated_attempts": 0
+      },
+      "error_code": null,
+      "record_shapes": [
+        {
+          "full_name": "psf/requests",
+          "public": true,
+          "readme_status": "available",
+          "readme_evidence_sections": 7,
+          "blob_version_present": true,
+          "public_repository_id_revalidated": true,
+          "match_status": "candidate"
+        }
+      ],
+      "qualification": "Adapter/API access proof; not a saved-user-query end-to-end or live relevance benchmark."
+    },
+    "live_saved_app": {
+      "passed": true,
+      "healthy_services": 13,
+      "papers": 58,
+      "videos": 10,
+      "api_writes": 0,
+      "repos_controls": true,
+      "no_repo_lookup": true,
+      "projects_preserved": true,
+      "model_ledger_preserved": true,
+      "responsive_widths": [
+        1440,
+        1100,
+        970,
+        768,
+        650,
+        390,
+        320
+      ],
+      "receipt": "2026-11-14-repos-live-readonly.json"
+    },
+    "protected_state": {
+      "files": 712,
+      "unchanged": 712,
+      "changed": 0,
+      "missing": 0
+    },
+    "privacy_receipt": "2026-11-14-repos-privacy.json",
+    "document_links": {
+      "checked": 402,
+      "broken": []
+    },
+    "diff_check": true,
+    "temporary_fixture_services_stopped": true,
+    "live_application_left_running": true
+  },
+  "preserved": {
+    "credentials": true,
+    "model_allowance": true,
+    "existing_research_projects_and_notes": true
+  },
+  "limitations": [
+    "Local sparse score is not calibrated confidence or a new LLM endorsement",
+    "Bounded candidate/excerpt coverage, synonyms, multilingual text and negation can affect retrieval",
+    "Separate GitHub requests do not establish an atomic source snapshot",
+    "No code clone/execution, dependency audit, functional suitability benchmark or repo-specific project pins",
+    "Generic live access proof is not a saved-user-query end-to-end relevance benchmark"
+  ],
+  "previews": [
+    "2026-11-14-repos-fixture-1440.png",
+    "2026-11-14-repos-fixture-320.png"
+  ]
+}

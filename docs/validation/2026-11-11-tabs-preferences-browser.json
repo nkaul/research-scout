@@ -1,0 +1,833 @@
+{
+  "date": "2026-11-11",
+  "passed": true,
+  "unique_cases": 51,
+  "final_passed": 51,
+  "failed": 0,
+  "skipped": 0,
+  "run_history": [
+    {
+      "run": "tabs-preferences-browser",
+      "startTime": "2026-11-11T17:11:15.345Z",
+      "duration": 209001.407,
+      "expected": 47,
+      "skipped": 0,
+      "unexpected": 3,
+      "flaky": 0
+    },
+    {
+      "run": "tabs-preferences-final-browser",
+      "startTime": "2026-11-11T17:16:12.309Z",
+      "duration": 173615.91400000002,
+      "expected": 50,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    {
+      "run": "tabs-preferences-release-browser",
+      "startTime": "2026-11-11T17:19:45.677Z",
+      "duration": 49330.203,
+      "expected": 9,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    }
+  ],
+  "notes": "Initial run found two stale date-bound expectations and an accessible name including the N shortcut. Corrected full run passed all50. Final scholarly/registry classification addition passed nine focused cases including one new registry case. A subsequent static note clarifies that filters apply to the next explicit Search; final build and visual checks cover that copy.",
+  "cases": [
+    {
+      "file": "automatic-discovery.spec.ts",
+      "title": "default Search automatically routes four resources and progressively groups DOI observations with integrated access",
+      "history": [
+        {
+          "run": "tabs-preferences-browser",
+          "status": "expected"
+        },
+        {
+          "run": "tabs-preferences-final-browser",
+          "status": "expected"
+        }
+      ],
+      "final_status": "expected"
+    },
+    {
+      "file": "automatic-discovery.spec.ts",
+      "title": "default chat needs no provider selection and a blocked automatic access check stays visible without retrying",
+      "history": [
+        {
+          "run": "tabs-preferences-browser",
+          "status": "expected"
+        },
+        {
+          "run": "tabs-preferences-final-browser",
+          "status": "expected"
+        }
+      ],
+      "final_status": "expected"
+    },
+    {
+      "file": "automatic-discovery.spec.ts",
+      "title": "compacted history restores one saved turn with a GET and retains it across compact SSE updates",
+      "history": [
+        {
+          "run": "tabs-preferences-browser",
+          "status": "expected"
+        },
+        {
+          "run": "tabs-preferences-final-browser",
+          "status": "expected"
+        }
+      ],
+      "final_status": "expected"
+    },
+    {
+      "file": "automatic-integration.spec.ts",
+      "title": "actual fixture automatic discovery merges shared DOIs and resolves Unpaywall without source selection",
+      "history": [
+        {
+          "run": "tabs-preferences-browser",
+          "status": "expected"
+        },
+        {
+          "run": "tabs-preferences-final-browser",
+          "status": "expected"
+        },
+        {
+          "run": "tabs-preferences-release-browser",
+          "status": "expected"
+        }
+      ],
+      "final_status": "expected"
+    },
+    {
+      "file": "exploration-integration.spec.ts",
+      "title": "actual fixture chat routes separate providers, reuses saved evidence and reopens without a search",
+      "history": [
+        {
+          "run": "tabs-preferences-browser",
+          "status": "expected"
+        },
+        {
+          "run": "tabs-preferences-final-browser",
+          "status": "expected"
+        }
+      ],
+      "final_status": "expected"
+    },
+    {
+      "file": "exploration-integration.spec.ts",
+      "title": "actual fixture DOI chat routes to DataCite without creating a discovery run",
+      "history": [
+        {
+          "run": "tabs-preferences-browser",
+          "status": "expected"
+        },
+        {
+          "run": "tabs-preferences-final-browser",
+          "status": "expected"
+        }
+      ],
+      "final_status": "expected"
+    },
+    {
+      "file": "exploration.spec.ts",
+      "title": "exploration renders early separate-provider sources, retains drafts and cancels without duplicate search",
+      "history": [
+        {
+          "run": "tabs-preferences-browser",
+          "status": "expected"
+        },
+        {
+          "run": "tabs-preferences-final-browser",
+          "status": "expected"
+        }
+      ],
+      "final_status": "expected"
+    },
+    {
+      "file": "exploration.spec.ts",
+      "title": "a public DOI works with OpenAlex blocked and saved follow-up does not introduce year filters",
+      "history": [
+        {
+          "run": "tabs-preferences-browser",
+          "status": "expected"
+        },
+        {
+          "run": "tabs-preferences-final-browser",
+          "status": "expected"
+        }
+      ],
+      "final_status": "expected"
+    },
+    {
+      "file": "exploration.spec.ts",
+      "title": "exploration remains usable on a narrow phone and keeps over-budget input editable",
+      "history": [
+        {
+          "run": "tabs-preferences-browser",
+          "status": "expected"
+        },
+        {
+          "run": "tabs-preferences-final-browser",
+          "status": "expected"
+        }
+      ],
+      "final_status": "expected"
+    },
+    {
+      "file": "exploration.spec.ts",
+      "title": "a successful details lookup does not claim verified discovery and rate limits stay visible",
+      "history": [
+        {
+          "run": "tabs-preferences-browser",
+          "status": "expected"
+        },
+        {
+          "run": "tabs-preferences-final-browser",
+          "status": "expected"
+        }
+      ],
+      "final_status": "expected"
+    },
+    {
+      "file": "exploration.spec.ts",
+      "title": "explicit generation renders real response snapshots progressively, retains citations and reopens without another request",
+      "history": [
+        {
+          "run": "tabs-preferences-browser",
+          "status": "expected"
+        },
+        {
+          "run": "tabs-preferences-final-browser",
+          "status": "expected"
+        }
+      ],
+      "final_status": "expected"
+    },
+    {
+      "file": "exploration.spec.ts",
+      "title": "generation is disabled without a configured key and a failed stream retains evidence for an explicit retry",
+      "history": [
+        {
+          "run": "tabs-preferences-browser",
+          "status": "expected"
+        },
+        {
+          "run": "tabs-preferences-final-browser",
+          "status": "expected"
+        }
+      ],
+      "final_status": "expected"
+    },
+    {
+      "file": "exploration.spec.ts",
+      "title": "generated answer formatting stays React-safe during partial text and keeps source links and turn anchors",
+      "history": [
+        {
+          "run": "tabs-preferences-browser",
+          "status": "expected"
+        },
+        {
+          "run": "tabs-preferences-final-browser",
+          "status": "expected"
+        }
+      ],
+      "final_status": "expected"
+    },
+    {
+      "file": "exploration.spec.ts",
+      "title": "chat displays abstracts immediately and reads fuller same-provider details with cached replay",
+      "history": [
+        {
+          "run": "tabs-preferences-browser",
+          "status": "expected"
+        },
+        {
+          "run": "tabs-preferences-final-browser",
+          "status": "expected"
+        }
+      ],
+      "final_status": "expected"
+    },
+    {
+      "file": "exploration.spec.ts",
+      "title": "abstract lookup failure retains the visible excerpt and does not start another discovery or generation",
+      "history": [
+        {
+          "run": "tabs-preferences-browser",
+          "status": "expected"
+        },
+        {
+          "run": "tabs-preferences-final-browser",
+          "status": "expected"
+        }
+      ],
+      "final_status": "expected"
+    },
+    {
+      "file": "local-integration.spec.ts",
+      "title": "local fixture services reach a saved shortlist and deterministic export",
+      "history": [
+        {
+          "run": "tabs-preferences-browser",
+          "status": "expected"
+        },
+        {
+          "run": "tabs-preferences-final-browser",
+          "status": "expected"
+        }
+      ],
+      "final_status": "expected"
+    },
+    {
+      "file": "refinement.spec.ts",
+      "title": "live discovery shows interpreted queries, reviewed batches and refinement history without an answer-generation call",
+      "history": [
+        {
+          "run": "tabs-preferences-browser",
+          "status": "expected"
+        },
+        {
+          "run": "tabs-preferences-final-browser",
+          "status": "expected"
+        }
+      ],
+      "final_status": "expected"
+    },
+    {
+      "file": "refinement.spec.ts",
+      "title": "fixture defaults and explicit opt-out preserve direct search, and metadata actions never request AI refinement",
+      "history": [
+        {
+          "run": "tabs-preferences-browser",
+          "status": "expected"
+        },
+        {
+          "run": "tabs-preferences-final-browser",
+          "status": "expected"
+        }
+      ],
+      "final_status": "expected"
+    },
+    {
+      "file": "refinement.spec.ts",
+      "title": "AI refinement can be explicitly opted out and failures do not erase reviewed records or automatically rerun",
+      "history": [
+        {
+          "run": "tabs-preferences-browser",
+          "status": "expected"
+        },
+        {
+          "run": "tabs-preferences-final-browser",
+          "status": "expected"
+        }
+      ],
+      "final_status": "expected"
+    },
+    {
+      "file": "refinement.spec.ts",
+      "title": "a clarification request shows the unresolved scope without fabricating searches or sources",
+      "history": [
+        {
+          "run": "tabs-preferences-browser",
+          "status": "expected"
+        },
+        {
+          "run": "tabs-preferences-final-browser",
+          "status": "expected"
+        }
+      ],
+      "final_status": "expected"
+    },
+    {
+      "file": "refinement.spec.ts",
+      "title": "a wrong-reference review rejection shows the error without inventing or automatically retrieving a source",
+      "history": [
+        {
+          "run": "tabs-preferences-browser",
+          "status": "expected"
+        },
+        {
+          "run": "tabs-preferences-final-browser",
+          "status": "expected"
+        }
+      ],
+      "final_status": "expected"
+    },
+    {
+      "file": "refinement.spec.ts",
+      "title": "saved mixed v1 records are grouped without changing their data and weak provider queries remain explicit",
+      "history": [
+        {
+          "run": "tabs-preferences-browser",
+          "status": "expected"
+        },
+        {
+          "run": "tabs-preferences-final-browser",
+          "status": "expected"
+        }
+      ],
+      "final_status": "expected"
+    },
+    {
+      "file": "refinement.spec.ts",
+      "title": "only related results do not enable generation and partial failures keep their explicit error text",
+      "history": [
+        {
+          "run": "tabs-preferences-browser",
+          "status": "expected"
+        },
+        {
+          "run": "tabs-preferences-final-browser",
+          "status": "expected"
+        }
+      ],
+      "final_status": "expected"
+    },
+    {
+      "file": "refinement.spec.ts",
+      "title": "Search workspace shows reviewed results below the composer with the chosen provider and filters, admitting a duplicate click only once",
+      "history": [
+        {
+          "run": "tabs-preferences-browser",
+          "status": "expected"
+        },
+        {
+          "run": "tabs-preferences-final-browser",
+          "status": "expected"
+        }
+      ],
+      "final_status": "expected"
+    },
+    {
+      "file": "refinement.spec.ts",
+      "title": "an uncertain reviewed-search POST is not automatically repeated and explicit retry retains its send key",
+      "history": [
+        {
+          "run": "tabs-preferences-browser",
+          "status": "expected"
+        },
+        {
+          "run": "tabs-preferences-final-browser",
+          "status": "expected"
+        }
+      ],
+      "final_status": "expected"
+    },
+    {
+      "file": "refinement.spec.ts",
+      "title": "actual planner prompts, intent facets, keywords and provider arguments remain auditable saved text",
+      "history": [
+        {
+          "run": "tabs-preferences-browser",
+          "status": "expected"
+        },
+        {
+          "run": "tabs-preferences-final-browser",
+          "status": "expected"
+        }
+      ],
+      "final_status": "expected"
+    },
+    {
+      "file": "refinement.spec.ts",
+      "title": "inspection pins the exact reviewed source across reload; invalid pins never expose other raw candidates",
+      "history": [
+        {
+          "run": "tabs-preferences-browser",
+          "status": "expected"
+        },
+        {
+          "run": "tabs-preferences-final-browser",
+          "status": "expected"
+        }
+      ],
+      "final_status": "expected"
+    },
+    {
+      "file": "refinement.spec.ts",
+      "title": "Search workspace retains an explicit direct-search opt-out",
+      "history": [
+        {
+          "run": "tabs-preferences-browser",
+          "status": "expected"
+        },
+        {
+          "run": "tabs-preferences-final-browser",
+          "status": "expected"
+        }
+      ],
+      "final_status": "expected"
+    },
+    {
+      "file": "search-workspace.spec.ts",
+      "title": "top Search keeps progressive papers and videos in separate remembered tabs without opening chat",
+      "history": [
+        {
+          "run": "tabs-preferences-browser",
+          "status": "expected"
+        },
+        {
+          "run": "tabs-preferences-final-browser",
+          "status": "expected"
+        },
+        {
+          "run": "tabs-preferences-release-browser",
+          "status": "expected"
+        }
+      ],
+      "final_status": "expected"
+    },
+    {
+      "file": "search-workspace.spec.ts",
+      "title": "a flat search source opens its exact saved reader and returns to Search without rerunning",
+      "history": [
+        {
+          "run": "tabs-preferences-browser",
+          "status": "expected"
+        },
+        {
+          "run": "tabs-preferences-final-browser",
+          "status": "expected"
+        },
+        {
+          "run": "tabs-preferences-release-browser",
+          "status": "expected"
+        }
+      ],
+      "final_status": "expected"
+    },
+    {
+      "file": "search-workspace.spec.ts",
+      "title": "AI-refined top Search stays a search and mobile category views do not add requests",
+      "history": [
+        {
+          "run": "tabs-preferences-browser",
+          "status": "expected"
+        },
+        {
+          "run": "tabs-preferences-final-browser",
+          "status": "expected"
+        },
+        {
+          "run": "tabs-preferences-release-browser",
+          "status": "expected"
+        }
+      ],
+      "final_status": "expected"
+    },
+    {
+      "file": "search-workspace.spec.ts",
+      "title": "a new explicit manual direct search replaces prior grouped Search results",
+      "history": [
+        {
+          "run": "tabs-preferences-browser",
+          "status": "expected"
+        },
+        {
+          "run": "tabs-preferences-final-browser",
+          "status": "expected"
+        },
+        {
+          "run": "tabs-preferences-release-browser",
+          "status": "expected"
+        }
+      ],
+      "final_status": "expected"
+    },
+    {
+      "file": "search-workspace.spec.ts",
+      "title": "source removals and adaptive date presets survive reload, history and New research",
+      "history": [
+        {
+          "run": "tabs-preferences-browser",
+          "status": "unexpected"
+        },
+        {
+          "run": "tabs-preferences-final-browser",
+          "status": "expected"
+        },
+        {
+          "run": "tabs-preferences-release-browser",
+          "status": "expected"
+        }
+      ],
+      "final_status": "expected"
+    },
+    {
+      "file": "search-workspace.spec.ts",
+      "title": "custom years persist and removing every source prevents an accidental fallback search",
+      "history": [
+        {
+          "run": "tabs-preferences-browser",
+          "status": "expected"
+        },
+        {
+          "run": "tabs-preferences-final-browser",
+          "status": "expected"
+        },
+        {
+          "run": "tabs-preferences-release-browser",
+          "status": "expected"
+        }
+      ],
+      "final_status": "expected"
+    },
+    {
+      "file": "source-expansion-integration.spec.ts",
+      "title": "actual fixture services route all added discovery sources and keep Unpaywall access separate",
+      "history": [
+        {
+          "run": "tabs-preferences-browser",
+          "status": "expected"
+        },
+        {
+          "run": "tabs-preferences-final-browser",
+          "status": "expected"
+        }
+      ],
+      "final_status": "expected"
+    },
+    {
+      "file": "source-expansion.spec.ts",
+      "title": "seven discovery choices remain explicit and at most two can be selected; access lookup is separate",
+      "history": [
+        {
+          "run": "tabs-preferences-browser",
+          "status": "expected"
+        },
+        {
+          "run": "tabs-preferences-final-browser",
+          "status": "expected"
+        }
+      ],
+      "final_status": "expected"
+    },
+    {
+      "file": "source-expansion.spec.ts",
+      "title": "early abstracts expand from saved records while another provider runs; only new details wait for the source run",
+      "history": [
+        {
+          "run": "tabs-preferences-browser",
+          "status": "expected"
+        },
+        {
+          "run": "tabs-preferences-final-browser",
+          "status": "expected"
+        }
+      ],
+      "final_status": "expected"
+    },
+    {
+      "file": "source-expansion.spec.ts",
+      "title": "Unpaywall locations stay separate, links are safe, closed access is valid and replay makes no lookup",
+      "history": [
+        {
+          "run": "tabs-preferences-browser",
+          "status": "expected"
+        },
+        {
+          "run": "tabs-preferences-final-browser",
+          "status": "expected"
+        }
+      ],
+      "final_status": "expected"
+    },
+    {
+      "file": "source-expansion.spec.ts",
+      "title": "missing Unpaywall contact and access failures remain visible without automatic provider fallback",
+      "history": [
+        {
+          "run": "tabs-preferences-browser",
+          "status": "expected"
+        },
+        {
+          "run": "tabs-preferences-final-browser",
+          "status": "expected"
+        }
+      ],
+      "final_status": "expected"
+    },
+    {
+      "file": "source-expansion.spec.ts",
+      "title": "OpenAIRE descriptions are not presented as abstracts",
+      "history": [
+        {
+          "run": "tabs-preferences-browser",
+          "status": "expected"
+        },
+        {
+          "run": "tabs-preferences-final-browser",
+          "status": "expected"
+        }
+      ],
+      "final_status": "expected"
+    },
+    {
+      "file": "source-expansion.spec.ts",
+      "title": "failed access lookup does not retry or switch to paper or registry search",
+      "history": [
+        {
+          "run": "tabs-preferences-browser",
+          "status": "expected"
+        },
+        {
+          "run": "tabs-preferences-final-browser",
+          "status": "expected"
+        }
+      ],
+      "final_status": "expected"
+    },
+    {
+      "file": "workspace.spec.ts",
+      "title": "first rows can be inspected and saved before completion; updates preserve identity and focus",
+      "history": [
+        {
+          "run": "tabs-preferences-browser",
+          "status": "expected"
+        },
+        {
+          "run": "tabs-preferences-final-browser",
+          "status": "expected"
+        }
+      ],
+      "final_status": "expected"
+    },
+    {
+      "file": "workspace.spec.ts",
+      "title": "reopen and exports use saved state; DOI observations remain separate and stale writes retain drafts",
+      "history": [
+        {
+          "run": "tabs-preferences-browser",
+          "status": "expected"
+        },
+        {
+          "run": "tabs-preferences-final-browser",
+          "status": "expected"
+        }
+      ],
+      "final_status": "expected"
+    },
+    {
+      "file": "workspace.spec.ts",
+      "title": "provider edits are explicit and reconnection cannot rerun research or duplicate sources",
+      "history": [
+        {
+          "run": "tabs-preferences-browser",
+          "status": "unexpected"
+        },
+        {
+          "run": "tabs-preferences-final-browser",
+          "status": "expected"
+        }
+      ],
+      "final_status": "expected"
+    },
+    {
+      "file": "workspace.spec.ts",
+      "title": "mobile keyboard flow, modal focus and reading layout remain usable",
+      "history": [
+        {
+          "run": "tabs-preferences-browser",
+          "status": "expected"
+        },
+        {
+          "run": "tabs-preferences-final-browser",
+          "status": "expected"
+        }
+      ],
+      "final_status": "expected"
+    },
+    {
+      "file": "workspace.spec.ts",
+      "title": "three-paper cap and eligibility updates preserve human decisions visibly",
+      "history": [
+        {
+          "run": "tabs-preferences-browser",
+          "status": "expected"
+        },
+        {
+          "run": "tabs-preferences-final-browser",
+          "status": "expected"
+        }
+      ],
+      "final_status": "expected"
+    },
+    {
+      "file": "workspace.spec.ts",
+      "title": "untitled and truncated records remain honest and DOI checks require inclusion",
+      "history": [
+        {
+          "run": "tabs-preferences-browser",
+          "status": "expected"
+        },
+        {
+          "run": "tabs-preferences-final-browser",
+          "status": "expected"
+        }
+      ],
+      "final_status": "expected"
+    },
+    {
+      "file": "workspace.spec.ts",
+      "title": "desktop split preview, notes and display preferences use existing saved data",
+      "history": [
+        {
+          "run": "tabs-preferences-browser",
+          "status": "unexpected"
+        },
+        {
+          "run": "tabs-preferences-final-browser",
+          "status": "expected"
+        }
+      ],
+      "final_status": "expected"
+    },
+    {
+      "file": "workspace.spec.ts",
+      "title": "Dub-inspired workspace remains readable at tablet and narrow phone widths",
+      "history": [
+        {
+          "run": "tabs-preferences-browser",
+          "status": "expected"
+        },
+        {
+          "run": "tabs-preferences-final-browser",
+          "status": "expected"
+        }
+      ],
+      "final_status": "expected"
+    },
+    {
+      "file": "youtube-integration.spec.ts",
+      "title": "restored workspace retains automatic YouTube descriptions alongside papers and saved replay",
+      "history": [
+        {
+          "run": "tabs-preferences-browser",
+          "status": "expected"
+        },
+        {
+          "run": "tabs-preferences-final-browser",
+          "status": "expected"
+        },
+        {
+          "run": "tabs-preferences-release-browser",
+          "status": "expected"
+        }
+      ],
+      "final_status": "expected"
+    },
+    {
+      "file": "search-workspace.spec.ts",
+      "title": "the Papers lane retains exact registry metadata when there is no combined All tab",
+      "history": [
+        {
+          "run": "tabs-preferences-release-browser",
+          "status": "expected"
+        }
+      ],
+      "final_status": "expected"
+    }
+  ]
+}

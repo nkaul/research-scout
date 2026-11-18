@@ -7,7 +7,7 @@
     "build": "NEXT_TELEMETRY_DISABLED=1 next build",
     "start": "NEXT_TELEMETRY_DISABLED=1 next start --hostname 127.0.0.1 --port 3100",
     "typecheck": "tsc --noEmit",
-    "test:browser": "PLAYWRIGHT_BROWSERS_PATH=.browser-cache playwright test --config ../tests/browser/playwright.config.ts"
+    "test:browser": "PLAYWRIGHT_BROWSERS_PATH=\"$PWD/.browser-cache\" playwright test --config tests/browser/playwright.config.ts"
   },
   "dependencies": {
     "next": "16.4.3",

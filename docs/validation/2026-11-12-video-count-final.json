@@ -1,0 +1,1951 @@
+{
+  "date": "2026-11-12",
+  "status": "passed",
+  "scope": "Visible remembered video count, validated propagation, saved intent and old-cache migration within unchanged paper/context/request limits.",
+  "checks": {
+    "unique_backend_passed": 331,
+    "backend_skipped": 1,
+    "backend_skip_reason": "Optional explicit local CPU encoder proof",
+    "mocked_browser_passed": 24,
+    "new_browser_cases": 3,
+    "synthetic_harness_passed": 11,
+    "typescript": "passed",
+    "isolated_production_build": "passed",
+    "ruff": "passed",
+    "diff_check": "passed",
+    "dependencies": "unchanged"
+  },
+  "backend_runs": [
+    {
+      "name": "pytest",
+      "source": ".scout/video-count-python.local.xml",
+      "errors": "0",
+      "failures": "1",
+      "skipped": "1",
+      "tests": "332",
+      "time": "89.948",
+      "timestamp": "2026-11-12T19:27:09.341113-05:00",
+      "hostname": "Nitins-MacBook-Pro.local",
+      "cases": [
+        {
+          "class": "tests.test_agentic_retrieval",
+          "name": "test_wire_schema_and_local_list_item_limits_agree",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_agentic_retrieval",
+          "name": "test_plan_review_repair_real_graph_preserves_question_filters_and_replays",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_agentic_retrieval",
+          "name": "test_two_provider_progressive_reviewed_batches_and_five_call_ceiling",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_agentic_retrieval",
+          "name": "test_failure_does_not_publish_unreviewed_or_fallback[unknown_id]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_agentic_retrieval",
+          "name": "test_failure_does_not_publish_unreviewed_or_fallback[transport]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_agentic_retrieval",
+          "name": "test_failure_does_not_publish_unreviewed_or_fallback[malformed_plan]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_agentic_retrieval",
+          "name": "test_clarification_no_research_or_answer_generation",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_agentic_retrieval",
+          "name": "test_zero_relevance_is_valid_empty_and_no_unbounded_loop",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_agentic_retrieval",
+          "name": "test_cancel_fences_model_response_and_retains_unknown_hold",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_agentic_retrieval",
+          "name": "test_disabled_gate_and_query_idempotency",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_agentic_retrieval",
+          "name": "test_cancel_after_dispatch_journal_before_request_is_fenced",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_agentic_retrieval",
+          "name": "test_generation_keeps_exact_reviewed_version_after_details_change",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_agentic_retrieval",
+          "name": "test_good_openalex_results_do_not_hide_weak_crossref_repair",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_agentic_retrieval",
+          "name": "test_adjacent_and_unknown_stay_out_of_primary_and_legacy_generation",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_agentic_retrieval",
+          "name": "test_planner_cannot_change_or_duplicate_provider_scope[provider_ids0]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_agentic_retrieval",
+          "name": "test_planner_cannot_change_or_duplicate_provider_scope[provider_ids1]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_agentic_retrieval",
+          "name": "test_unobservable_record_cannot_become_primary_despite_model_verdict",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_agentic_retrieval",
+          "name": "test_visible_prompt_audit_matches_model_body_and_preserves_extracted_terms",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_agentic_retrieval",
+          "name": "test_model_cannot_invent_a_supporting_quote_to_enter_primary_results",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_agentic_retrieval",
+          "name": "test_automatic_agent_selects_four_eligible_routes_without_user_selection",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_agentic_retrieval",
+          "name": "test_optional_refinement_defers_when_remaining_grant_cannot_fit",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_agentic_retrieval",
+          "name": "test_agentic_planner_must_keep_user_selected_eligible_scope[False]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_agentic_retrieval",
+          "name": "test_agentic_planner_must_keep_user_selected_eligible_scope[True]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_agents",
+          "name": "test_real_deepagents_delegation_and_effective_catalog[openalex]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_agents",
+          "name": "test_real_deepagents_delegation_and_effective_catalog[semantic_scholar]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_agents",
+          "name": "test_real_deepagents_delegation_and_effective_catalog[crossref]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_agents",
+          "name": "test_real_deepagents_delegation_and_effective_catalog[arxiv]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_agents",
+          "name": "test_real_deepagents_delegation_and_effective_catalog[openaire]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_agents",
+          "name": "test_real_deepagents_delegation_and_effective_catalog[europe_pmc]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_agents",
+          "name": "test_compiled_framework_has_no_filesystem_shell_or_default_task_handler",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_agents",
+          "name": "test_dispatch_rejects_hidden_tools_and_provider_override_before_handler",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_agents",
+          "name": "test_one_execution_cannot_replay_or_expand_model_allowance",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_agents",
+          "name": "test_foreign_provider_response_rejected_without_fallback",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_agents",
+          "name": "test_source_instruction_text_is_data_and_human_state_is_untouched",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_agents",
+          "name": "test_context_preserves_hard_filters_and_rejects_oversize_instead_of_relaxing",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_agents",
+          "name": "test_input_boundary_runs_actual_graphs_without_changing_brief[openalex-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_agents",
+          "name": "test_input_boundary_runs_actual_graphs_without_changing_brief[openalex-\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814ab]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_agents",
+          "name": "test_input_boundary_runs_actual_graphs_without_changing_brief[semantic_scholar-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_agents",
+          "name": "test_input_boundary_runs_actual_graphs_without_changing_brief[semantic_scholar-\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814ab]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_agents",
+          "name": "test_unsupported_input_is_rejected_by_pure_preflight_before_execution[aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_agents",
+          "name": "test_unsupported_input_is_rejected_by_pure_preflight_before_execution[\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_agents",
+          "name": "test_escaped_input_is_rejected_before_admission_without_changing_question[\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_agents",
+          "name": "test_escaped_input_is_rejected_before_admission_without_changing_question[\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_agents",
+          "name": "test_escaped_input_is_rejected_before_admission_without_changing_question[\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_agents",
+          "name": "test_identity_overflow_keeps_saved_sources_without_research_replay",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_agents",
+          "name": "test_full_versions_that_exceed_remaining_budget_keep_saved_observations",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_agents",
+          "name": "test_compaction_bounds_previews_but_preserves_identity_versions_and_missingness",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_agents",
+          "name": "test_output_validation_rejects_foreign_ids_invented_fields_and_mutations[bad0]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_agents",
+          "name": "test_output_validation_rejects_foreign_ids_invented_fields_and_mutations[bad1]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_agents",
+          "name": "test_output_validation_rejects_foreign_ids_invented_fields_and_mutations[bad2]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_agents",
+          "name": "test_output_validation_rejects_foreign_ids_invented_fields_and_mutations[bad3]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_agents",
+          "name": "test_field_reference_is_bound_to_exact_observation_version_and_value",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_agents",
+          "name": "test_live_mode_has_no_implicit_model_or_spending_configuration",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_agents",
+          "name": "test_agent_cannot_use_arbitrary_provider_or_credential_urls[https://api.openalex.org/mcp]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_agents",
+          "name": "test_agent_cannot_use_arbitrary_provider_or_credential_urls[file:///tmp/mcp]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_agents",
+          "name": "test_agent_cannot_use_arbitrary_provider_or_credential_urls[http://user:secret@127.0.0.1/mcp]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_agents",
+          "name": "test_agent_cannot_use_arbitrary_provider_or_credential_urls[http://127.0.0.1/mcp?api_key=secret]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_agents",
+          "name": "test_real_streamable_http_mcp_protocol_reaches_only_bound_search",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_api",
+          "name": "test_caption_endpoint_rejects_unknown_run_without_provider_dispatch",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_api",
+          "name": "test_invalid_start_never_dispatches[change0]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_api",
+          "name": "test_invalid_start_never_dispatches[change1]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_api",
+          "name": "test_invalid_start_never_dispatches[change2]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_api",
+          "name": "test_invalid_start_never_dispatches[change3]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_api",
+          "name": "test_invalid_start_never_dispatches[change4]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_api",
+          "name": "test_invalid_start_never_dispatches[change5]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_api",
+          "name": "test_invalid_start_never_dispatches[change6]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_api",
+          "name": "test_invalid_start_never_dispatches[change7]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_api",
+          "name": "test_supported_question_boundary_is_preserved_exactly[aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_api",
+          "name": "test_supported_question_boundary_is_preserved_exactly[\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814\\u7814]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_api",
+          "name": "test_unknown_saved_run_does_not_create_research",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_api",
+          "name": "test_core_starts_without_any_provider_and_reports_each_independently",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_api",
+          "name": "test_application_mcp_exposes_no_human_mutation_or_filesystem_tools",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_api",
+          "name": "test_public_configuration_exposes_video_count_bounds",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_conversations",
+          "name": "test_real_turn_graph_progressively_runs_separate_provider_graphs",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_conversations",
+          "name": "test_turn_idempotency_global_admission_and_saved_followup",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_conversations",
+          "name": "test_exact_doi_routes_to_only_its_registry_and_preserves_provenance",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_conversations",
+          "name": "test_unresolved_agency_does_not_try_another_provider",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_conversations",
+          "name": "test_registry_http_failure_is_not_shown_as_completed_activity",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_conversations",
+          "name": "test_explicit_access_keeps_unpaywall_observations_out_of_research_sources[True]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_conversations",
+          "name": "test_explicit_access_keeps_unpaywall_observations_out_of_research_sources[False]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_conversations",
+          "name": "test_unpaywall_missing_contact_has_zero_attempts_and_no_registry_fallback",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_conversations",
+          "name": "test_access_cancellation_before_dispatch_and_unsafe_links_are_rejected",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_conversations",
+          "name": "test_expanded_chat_discovers_only_explicit_selected_providers[providers0-ports0]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_conversations",
+          "name": "test_expanded_chat_discovers_only_explicit_selected_providers[providers1-ports1]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_conversations",
+          "name": "test_description_and_version_metadata_survive_without_becoming_abstracts",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_conversations",
+          "name": "test_cancel_retains_early_sources_and_fences_second_child",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_conversations",
+          "name": "test_saved_conversation_restart_makes_no_external_calls",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_conversations",
+          "name": "test_interrupted_turn_recovers_without_replaying_a_request",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_conversations",
+          "name": "test_registry_cannot_return_a_different_doi_or_origin",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_conversations",
+          "name": "test_cancel_between_child_admission_and_link_never_dispatches",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_conversations",
+          "name": "test_one_provider_failure_preserves_other_provider_results",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_conversations",
+          "name": "test_chat_api_validation_and_saved_reads_do_not_query_providers",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_conversations",
+          "name": "test_cancelled_access_does_not_publish_a_late_provider_observation",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_conversations",
+          "name": "test_access_response_for_another_doi_is_rejected_without_links",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_conversations",
+          "name": "test_automatic_contract_default_and_advanced_manual_compatibility",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_conversations",
+          "name": "test_search_source_scope_is_bounded_and_separate_from_manual_routing",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_conversations",
+          "name": "test_selected_sources_inherit_scope_and_never_replace_removed_providers",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_conversations",
+          "name": "test_unavailable_selected_source_has_no_out_of_scope_fallback",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_conversations",
+          "name": "test_auto_progressively_discovers_four_sources_and_enriches_unique_dois",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_conversations",
+          "name": "test_auto_eligibility_skips_blocked_limited_and_fixture_for_ai",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_conversations",
+          "name": "test_historical_missing_routing_stays_manual_and_turn_override_is_explicit",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_conversations",
+          "name": "test_automatic_all_unavailable_has_no_research_or_model_dispatch",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_conversations",
+          "name": "test_large_auto_history_is_bounded_and_single_saved_turn_restores_data",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_conversations",
+          "name": "test_cancel_auto_enrichment_fences_late_access_and_pending_projection",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_conversations",
+          "name": "test_auto_access_recovery_stops_display_without_releasing_unknown_grant",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_conversations",
+          "name": "test_video_count_is_inherited_overridden_and_forwarded_to_each_child",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_core",
+          "name": "test_single_writer_rejects_second_state_owner",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_core",
+          "name": "test_new_discovery_routes_keep_twenty_record_pool_and_filter_scope[crossref-8112]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_core",
+          "name": "test_new_discovery_routes_keep_twenty_record_pool_and_filter_scope[arxiv-8115]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_core",
+          "name": "test_new_discovery_routes_keep_twenty_record_pool_and_filter_scope[openaire-8116]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_core",
+          "name": "test_new_discovery_routes_keep_twenty_record_pool_and_filter_scope[europe_pmc-8117]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_core",
+          "name": "test_restart_retains_records_and_marks_interrupted_without_research",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_core",
+          "name": "test_completed_run_and_replay_cursor_survive_restart",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_core",
+          "name": "test_same_start_key_reuses_run_and_changed_request_conflicts",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_core",
+          "name": "test_one_active_run_does_not_prevent_saved_reads_or_cancelled_replacement",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_core",
+          "name": "test_missing_required_filter_is_not_published_as_an_eligible_source",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_core",
+          "name": "test_same_provider_identity_accumulates_branch_contributions_once",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_core",
+          "name": "test_effective_ranks_exclude_filtered_hits_and_update_without_rewriting_raw_ranks",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_core",
+          "name": "test_new_ineligible_observation_preserves_saved_selection_and_old_export",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_core",
+          "name": "test_three_included_limit_and_any_candidate_can_be_excluded",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_core",
+          "name": "test_stale_selection_revision_has_no_partial_write_or_event",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_core",
+          "name": "test_reopen_select_and_export_use_only_saved_state",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_core",
+          "name": "test_details_are_cached_and_new_metadata_does_not_mutate_chosen_snapshot",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_core",
+          "name": "test_registry_record_conflicts_remain_separate_and_route_exact_agency",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_core",
+          "name": "test_known_datacite_route_works_without_crossref_service",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_core",
+          "name": "test_registry_route_is_not_a_blind_try_both_fallback[crossref-registry_match]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_core",
+          "name": "test_registry_route_is_not_a_blind_try_both_fallback[other-agency-unsupported_agency]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_core",
+          "name": "test_registry_route_is_not_a_blind_try_both_fallback[None-agency_unresolved]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_core",
+          "name": "test_agency_failure_preserves_source_and_does_not_probe_registry_fallback",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_core",
+          "name": "test_metadata_check_requires_human_inclusion_and_supported_doi",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_core",
+          "name": "test_model_failure_after_search_preserves_sources_without_provider_fallback",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_core",
+          "name": "test_partial_branch_retains_valid_sources_and_reports_partial_run",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_core",
+          "name": "test_cancelled_run_fences_late_candidate_effects",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_core",
+          "name": "test_agent_deadline_cannot_publish_a_later_shielded_provider_response",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_core",
+          "name": "test_duplicate_search_capability_reads_one_completed_operation",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_core",
+          "name": "test_foreign_provider_stream_cannot_replace_selected_provider",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_core",
+          "name": "test_per_provider_and_global_grants_are_independent_finite_caps",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_core",
+          "name": "test_completed_settlement_and_duplicate_admission_cannot_create_negative_holds",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_core",
+          "name": "test_uncertain_hold_survives_restart_and_usage_cannot_move_backwards",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_core",
+          "name": "test_event_replay_is_ordered_repeatable_and_expired_gap_needs_snapshot",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_core",
+          "name": "test_rejected_atomic_mutation_does_not_publish_state_or_event",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_crossref_query_policy",
+          "name": "test_crossref_bibliographic_policy_invalidates_old_general_query_pool",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_crossref_query_policy",
+          "name": "test_other_provider_existing_pool_keys_remain_compatible",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_federation",
+          "name": "test_doi_identity_is_strict_and_normalizes_resolver_prefixes[ DOI:10.1234/ABC.Def -10.1234/abc.def]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_federation",
+          "name": "test_doi_identity_is_strict_and_normalizes_resolver_prefixes[HTTPS://DOI.ORG/10.1234/ABC%2Fdef-10.1234/abc/def]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_federation",
+          "name": "test_doi_identity_is_strict_and_normalizes_resolver_prefixes[http://dx.doi.org/10.1234/ABC-10.1234/abc]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_federation",
+          "name": "test_doi_identity_is_strict_and_normalizes_resolver_prefixes[10.1234/abc?tracking=1-None]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_federation",
+          "name": "test_doi_identity_is_strict_and_normalizes_resolver_prefixes[https://doi.org/10.1234/abc#page2-None]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_federation",
+          "name": "test_doi_identity_is_strict_and_normalizes_resolver_prefixes[https://doi.org.evil/10.1234/abc-None]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_federation",
+          "name": "test_doi_identity_is_strict_and_normalizes_resolver_prefixes[https://user:secret@doi.org/10.1234/abc-None]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_federation",
+          "name": "test_doi_identity_is_strict_and_normalizes_resolver_prefixes[A paper about 10.1234/abc-None]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_federation",
+          "name": "test_doi_identity_is_strict_and_normalizes_resolver_prefixes[10.123/too-short-None]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_federation",
+          "name": "test_doi_identity_is_strict_and_normalizes_resolver_prefixes[10.1234/invalid%0Adoi-None]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_federation",
+          "name": "test_doi_identity_is_strict_and_normalizes_resolver_prefixes[None-None]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_federation",
+          "name": "test_same_doi_preserves_observations_conflicts_versions_and_whole_representative",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_federation",
+          "name": "test_missing_doi_same_title_and_distinct_preprints_stay_distinct",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_federation",
+          "name": "test_refresh_preserves_focus_order_access_and_no_removed_observation_resurrection",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_federation",
+          "name": "test_untrusted_identity_relationship_cannot_reassign_a_source",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_federation",
+          "name": "test_unique_access_once_progressive_private_observation_and_replay",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_federation",
+          "name": "test_access_gate_and_parent_budget_include_uncertain_holds[False-operations0-0-blocked]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_federation",
+          "name": "test_access_gate_and_parent_budget_include_uncertain_holds[True-operations1-0-deferred_budget]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_federation",
+          "name": "test_access_gate_and_parent_budget_include_uncertain_holds[True-operations2-1-deferred_budget]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_federation",
+          "name": "test_hard_cap_twelve_doi_groups_and_explicit_overflow",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_federation",
+          "name": "test_failure_not_found_mismatch_closed_and_unknown_hold_do_not_hide_papers",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_federation",
+          "name": "test_provider_reports_missing_configuration_stops_noisy_remaining_access",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_federation",
+          "name": "test_concurrent_federation_instances_cannot_redispatch_saved_running_intent",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_federation",
+          "name": "test_running_intent_and_terminal_turn_never_dispatch_or_change_source",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_federation",
+          "name": "test_provider_journal_allows_twelve_unique_dois_then_blocks_thirteenth",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_generation",
+          "name": "test_actual_stream_deltas_precede_completion_and_use_only_saved_sources",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_generation",
+          "name": "test_unknown_citations_are_not_accepted_but_usage_is_settled",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_generation",
+          "name": "test_repeated_generation_reuses_original_evidence_pool_without_retrieval",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_generation",
+          "name": "test_unknown_end_retains_global_reservation_across_restart",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_generation",
+          "name": "test_cancellation_fences_late_model_text_and_keeps_cost_hold",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_generation",
+          "name": "test_cancel_after_reservation_before_dispatch_makes_zero_model_calls",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_generation",
+          "name": "test_overall_generation_timeout_leaves_partial_sources_and_hold",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_generation",
+          "name": "test_bounded_context_omits_unadmitted_sources_and_rejects_fixtures",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_generation",
+          "name": "test_generate_without_evidence_does_not_admit_a_model_request",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_generation",
+          "name": "test_raw_responses_adapter_reads_real_sse_boundaries",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_generation",
+          "name": "test_abstract_excerpt_scope_is_separate_from_author_preview_truncation",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_generation",
+          "name": "test_generation_reads_richer_saved_abstract_locally_and_preserves_old_citations[True]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_generation",
+          "name": "test_generation_reads_richer_saved_abstract_locally_and_preserves_old_citations[False]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_history_summaries",
+          "name": "test_headers_project_under_lock_without_hydrating_payloads[Store-fields0-kwargs0-12]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_history_summaries",
+          "name": "test_headers_project_under_lock_without_hydrating_payloads[Store-fields1-kwargs1-2]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_history_summaries",
+          "name": "test_headers_project_under_lock_without_hydrating_payloads[ConversationStore-fields2-kwargs2-14]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_history_summaries",
+          "name": "test_run_summary_opt_in_limits_and_full_list_compatibility",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_history_summaries",
+          "name": "test_run_summary_rejects_unbounded_limits[0]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_history_summaries",
+          "name": "test_run_summary_rejects_unbounded_limits[101]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_history_summaries",
+          "name": "test_run_summary_rejects_unbounded_limits[-1]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_history_summaries",
+          "name": "test_run_summary_rejects_unbounded_limits[invalid]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_history_summaries",
+          "name": "test_conversation_list_preserves_summary_contract_without_full_public_copy",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_integration",
+          "name": "test_real_agent_mcp_progressive_save_registry_export_and_replay",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_integration",
+          "name": "test_registration_aware_datacite_route_preserves_resource_type_and_cache",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_integration",
+          "name": "test_branch_failure_keeps_progressive_candidates",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_integration",
+          "name": "test_cancellation_fences_late_results",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_integration",
+          "name": "test_independent_complementary_provider_and_saved_outage_behavior",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_launcher",
+          "name": "test_occupied_port_rejected_before_starting_any_process",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_launcher",
+          "name": "test_duplicate_planned_ports_are_rejected",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_launcher",
+          "name": "test_invalid_port_is_rejected[0]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_launcher",
+          "name": "test_invalid_port_is_rejected[65536]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_launcher",
+          "name": "test_env_modes_survive_unspecified_cli_and_explicit_fixture_isolated",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_launcher",
+          "name": "test_expanded_fixture_config_cannot_inherit_live_provider_or_generation_flags",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_local_encoder",
+          "name": "test_cached_artifacts_cannot_be_blessed_by_rewriting_a_manifest",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_local_encoder",
+          "name": "test_real_pinned_cpu_encoder_dimensions_similarity_and_truncation",
+          "status": "skipped"
+        },
+        {
+          "class": "tests.test_new_scholarly_providers",
+          "name": "test_structured_abstract_plaintext_preserves_boundaries_and_untrusted_text",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_new_scholarly_providers",
+          "name": "test_arxiv_query_shape_normal_question_and_literal_operators",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_new_scholarly_providers",
+          "name": "test_arxiv_versions_atom_abstract_and_entity_safety",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_new_scholarly_providers",
+          "name": "test_openaire_descriptions_do_not_become_author_abstracts",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_new_scholarly_providers",
+          "name": "test_europe_pmc_preserves_source_identity_structured_abstract",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_new_scholarly_providers",
+          "name": "test_openaire_nullable_arrays_keep_valid_metadata_record[changes0]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_new_scholarly_providers",
+          "name": "test_openaire_nullable_arrays_keep_valid_metadata_record[changes1]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_new_scholarly_providers",
+          "name": "test_openaire_nullable_arrays_keep_valid_metadata_record[changes2]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_new_scholarly_providers",
+          "name": "test_openaire_nullable_arrays_keep_valid_metadata_record[changes3]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_new_scholarly_providers",
+          "name": "test_openaire_nullable_arrays_keep_valid_metadata_record[changes4]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_new_scholarly_providers",
+          "name": "test_openaire_nullable_arrays_keep_valid_metadata_record[changes5]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_new_scholarly_providers",
+          "name": "test_new_discovery_bounded_page_local_rerank_cache_and_details[arxiv]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_new_scholarly_providers",
+          "name": "test_new_discovery_bounded_page_local_rerank_cache_and_details[openaire]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_new_scholarly_providers",
+          "name": "test_new_discovery_bounded_page_local_rerank_cache_and_details[europe_pmc]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_new_scholarly_providers",
+          "name": "test_new_discovery_bounded_page_local_rerank_cache_and_details[crossref]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_new_scholarly_providers",
+          "name": "test_arxiv_single_connection_and_three_second_pacing",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_new_scholarly_providers",
+          "name": "test_durable_quota_window_rejects_new_run_after_restart",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_new_scholarly_providers",
+          "name": "test_unpaywall_missing_email_zero_attempts_and_access_only",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_new_scholarly_providers",
+          "name": "test_pool_cache_expiry_does_not_expire_saved_operation_replay",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_new_scholarly_providers",
+          "name": "test_unpaywall_location_bounds_cache_and_contact_not_in_receipts",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_projects",
+          "name": "test_create_projects_and_concepts_are_idempotent_bounded_and_local",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_projects",
+          "name": "test_query_contexts_retain_exact_turns_filters_and_multiple_queries",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_projects",
+          "name": "test_run_query_and_request_errors_never_create_work",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_projects",
+          "name": "test_papers_deduplicate_doi_with_immutable_provider_observations",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_projects",
+          "name": "test_resource_version_is_exact_and_unknown_or_foreign_refs_cannot_be_saved",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_projects",
+          "name": "test_project_resources_are_separate_from_three_source_run_shortlist",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_projects",
+          "name": "test_project_store_ownership_restart_and_concurrent_updates",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_provider_operations",
+          "name": "test_hosted_endpoint_config_rejects_origin_and_url_credentials",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_provider_operations",
+          "name": "test_credentials_never_sent_to_foreign_origin",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_provider_operations",
+          "name": "test_readiness_is_zero_call_and_separate_from_configured_access",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_provider_operations",
+          "name": "test_verified_metadata_capability_changes_only_after_normalization",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_provider_operations",
+          "name": "test_openalex_store_restores_discovered_refresh_endpoint_and_expiry",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_provider_operations",
+          "name": "test_unconfigured_openalex_never_starts_interactive_auth",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_provider_operations",
+          "name": "test_s2_search_details_share_pacing_and_429_cooldown",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_provider_operations",
+          "name": "test_encoder_factory_shared_loader_is_explicit_and_sanitized",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_providers",
+          "name": "test_fixture_hybrid_overlap_missingness_filter_and_replay",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_providers",
+          "name": "test_first_source_published_before_delayed_semantic",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_providers",
+          "name": "test_controlled_fixture_outcomes[empty-empty]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_providers",
+          "name": "test_controlled_fixture_outcomes[fail-semantic-partial]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_providers",
+          "name": "test_controlled_fixture_outcomes[fail-provider-failed]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_providers",
+          "name": "test_provider_and_operation_scope_conflicts",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_providers",
+          "name": "test_operation_grant_and_run_ceiling_survive_restart",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_providers",
+          "name": "test_interrupted_operation_is_not_redispatched",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_providers",
+          "name": "test_separate_registry_observations_and_cached_zero_grant",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_providers",
+          "name": "test_live_registry_routes_use_only_selected_fake_upstream",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_providers",
+          "name": "test_live_semantic_scholar_never_fakes_semantic_or_switches_provider",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_providers",
+          "name": "test_native_mcp_schema_checked_and_two_bounded_tools",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_providers",
+          "name": "test_missing_mcp_schema_does_not_call_research_tool",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_providers",
+          "name": "test_provider_missing_metadata_does_not_create_values",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_providers",
+          "name": "test_configured_local_encoder_requires_compatible_vectors[False]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_providers",
+          "name": "test_configured_local_encoder_requires_compatible_vectors[True]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_providers",
+          "name": "test_native_raw_limits_do_not_overfetch_or_discard_semantic_capacity",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_providers",
+          "name": "test_zero_grant_never_constructs_upstream_session",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_providers",
+          "name": "test_local_semantic_dependency_failure_finishes_without_hanging",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_providers",
+          "name": "test_provider_lifespan_enforces_writer_and_preserves_restart_receipts",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_providers",
+          "name": "test_provider_writer_lock_excludes_real_second_process_and_releases",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_providers",
+          "name": "test_atomic_json_uses_unique_files_and_cleans_failed_publication",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_relevance",
+          "name": "test_intent_facets_demote_generic_generation_model_hard_negatives",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_relevance",
+          "name": "test_clinical_language_model_context_is_not_excluded_by_domain",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_relevance",
+          "name": "test_title_weight_and_saturated_frequency_resist_generic_keyword_stuffing",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_relevance",
+          "name": "test_description_is_evidence_without_fabricating_an_abstract",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_relevance",
+          "name": "test_multilingual_literal_facets_and_acronyms_use_word_boundaries",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_relevance",
+          "name": "test_missing_content_is_disclosed_and_does_not_turn_into_an_exclusion",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_relevance",
+          "name": "test_plural_acronyms_normalize_without_a_subject_domain_rule",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_relevance",
+          "name": "test_rrf_only_breaks_equal_local_scores_and_original_data_is_immutable",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_relevance",
+          "name": "test_no_terms_empty_cohort_and_unknown_review_references_are_safe",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_relevance",
+          "name": "test_rejects_unbounded_or_ambiguous_inputs[records0-plan0]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_relevance",
+          "name": "test_rejects_unbounded_or_ambiguous_inputs[records1-plan1]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_relevance",
+          "name": "test_rejects_unbounded_or_ambiguous_inputs[records2-plan2]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_relevance",
+          "name": "test_rejects_unbounded_or_ambiguous_inputs[records3-plan3]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_relevance",
+          "name": "test_rejects_unbounded_or_ambiguous_inputs[records4-plan4]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_retrieval_budget",
+          "name": "test_five_retrieval_calls_share_one_reservation_without_enabling_writer",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_retrieval_budget",
+          "name": "test_automatic_four_provider_loop_remains_one_nine_call_reservation",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_retrieval_budget",
+          "name": "test_retrieval_steps_cannot_replay_or_expand_fixed_topology",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_retrieval_budget",
+          "name": "test_unknown_retrieval_charge_survives_restart_and_blocks_replay",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_retrieval_budget",
+          "name": "test_pre_dispatch_failure_releases_only_provably_unused_group_reservation",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_retrieval_budget",
+          "name": "test_writer_and_retrieval_share_workspace_ceiling_across_conversations",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_retrieval_budget",
+          "name": "test_invalid_retrieval_usage_cannot_release_or_change_reservation[usage0]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_retrieval_budget",
+          "name": "test_invalid_retrieval_usage_cannot_release_or_change_reservation[usage1]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_retrieval_budget",
+          "name": "test_invalid_retrieval_usage_cannot_release_or_change_reservation[usage2]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_retrieval_budget",
+          "name": "test_invalid_retrieval_usage_cannot_release_or_change_reservation[usage3]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_retrieval_budget",
+          "name": "test_invalid_retrieval_usage_cannot_release_or_change_reservation[usage4]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_retrieval_budget",
+          "name": "test_reported_usage_over_reservation_is_retained_and_stops_future_steps",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_retrieval_budget",
+          "name": "test_concurrent_retrieval_admissions_do_not_race_past_global_cap",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_retrieval_budget",
+          "name": "test_retrieval_rejects_unreviewed_model_and_writer_method_confusion",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_settings",
+          "name": "test_provider_specific_mode_and_legacy_compatibility",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_settings",
+          "name": "test_generation_cannot_be_enabled_by_provider_mode_or_key",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_settings",
+          "name": "test_each_child_gets_only_its_own_settings_and_no_model_credentials",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_settings",
+          "name": "test_explicit_generation_shares_key_with_core_only",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_settings",
+          "name": "test_new_provider_secrets_and_local_encoder_projection_are_isolated",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_settings",
+          "name": "test_agentic_retrieval_credential_is_core_only_and_requires_its_own_flag",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_video_count",
+          "name": "test_invalid_video_counts_are_rejected_before_dispatch[0]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_video_count",
+          "name": "test_invalid_video_counts_are_rejected_before_dispatch[21]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_video_count",
+          "name": "test_invalid_video_counts_are_rejected_before_dispatch[-1]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_video_count",
+          "name": "test_invalid_video_counts_are_rejected_before_dispatch[3.5]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_video_count",
+          "name": "test_invalid_video_counts_are_rejected_before_dispatch[True]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_video_count",
+          "name": "test_invalid_video_counts_are_rejected_before_dispatch[15]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_video_count",
+          "name": "test_requested_video_count_controls_upstream_and_retained_pool[2]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_video_count",
+          "name": "test_requested_video_count_controls_upstream_and_retained_pool[15]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_video_count",
+          "name": "test_requested_video_count_controls_upstream_and_retained_pool[20]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_video_count",
+          "name": "test_larger_video_count_does_not_expand_other_provider_branches",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_video_count",
+          "name": "test_core_persists_count_and_forwards_it_without_changing_request_grant[2]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_video_count",
+          "name": "test_core_persists_count_and_forwards_it_without_changing_request_grant[15]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_video_recovery",
+          "name": "test_separate_actions_preserve_metadata_captions_and_exact_saved_choice[False]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_video_recovery",
+          "name": "test_separate_actions_preserve_metadata_captions_and_exact_saved_choice[True]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_video_recovery",
+          "name": "test_caption_only_observation_survives_a_late_discovery_record",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_video_recovery",
+          "name": "test_legacy_details_loaded_snippet_can_recover_and_retry_failed_captions",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_video_recovery",
+          "name": "test_cached_caption_failure_explains_cooldown_without_replacing_saved_metadata",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_video_recovery",
+          "name": "test_malformed_caption_reply_retains_saved_source_and_settles_usage",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_video_recovery",
+          "name": "test_exhausted_caption_allowance_is_not_a_revision_conflict",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_youtube",
+          "name": "test_youtube_normalization_and_contracts",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_youtube",
+          "name": "test_youtube_one_bounded_page_key_header_filters_and_zero_call_replay",
+          "status": "failed"
+        },
+        {
+          "class": "tests.test_youtube",
+          "name": "test_missing_key_health_and_search_make_no_upstream_attempt",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_youtube",
+          "name": "test_quota_error_is_sanitized_without_retry",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_youtube",
+          "name": "test_youtube_key_stays_in_only_its_process",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_youtube",
+          "name": "test_automatic_video_type_scope_and_missing_access_are_preflight_only",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_youtube_captions",
+          "name": "test_public_caption_reads_are_bounded_and_sanitize_failures[available-available-3]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_youtube_captions",
+          "name": "test_public_caption_reads_are_bounded_and_sanitize_failures[blocked-blocked-1]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_youtube_captions",
+          "name": "test_public_caption_reads_are_bounded_and_sanitize_failures[missing-unavailable-1]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_youtube_captions",
+          "name": "test_public_caption_reads_are_bounded_and_sanitize_failures[origin-error-2]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_youtube_captions",
+          "name": "test_public_caption_reads_are_bounded_and_sanitize_failures[origin_port-error-2]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_youtube_captions",
+          "name": "test_public_caption_reads_are_bounded_and_sanitize_failures[origin_credentials-error-2]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_youtube_captions",
+          "name": "test_public_caption_reads_are_bounded_and_sanitize_failures[limit-error-3]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_youtube_captions",
+          "name": "test_caption_payload_has_finite_time_and_length_bounds",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_youtube_captions",
+          "name": "test_malformed_caption_rows_do_not_hide_valid_rows_and_scanning_is_finite",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_youtube_captions",
+          "name": "test_cancellation_finishes_admitted_request_without_dispatching_another",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_youtube_captions",
+          "name": "test_admission_timeout_cancels_the_callback_and_never_dispatches",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_youtube_captions",
+          "name": "test_cancellation_during_admission_does_not_send_after_reservation",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_youtube_captions",
+          "name": "test_youtube_metadata_and_captions_are_separate_and_cache_outcomes",
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "name": "pytest",
+      "source": ".scout/video-count-corrected-python.local.xml",
+      "errors": "0",
+      "failures": "0",
+      "skipped": "0",
+      "tests": "19",
+      "time": "3.094",
+      "timestamp": "2026-11-12T19:29:06.013345-05:00",
+      "hostname": "Nitins-MacBook-Pro.local",
+      "cases": [
+        {
+          "class": "tests.test_video_count",
+          "name": "test_invalid_video_counts_are_rejected_before_dispatch[0]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_video_count",
+          "name": "test_invalid_video_counts_are_rejected_before_dispatch[21]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_video_count",
+          "name": "test_invalid_video_counts_are_rejected_before_dispatch[-1]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_video_count",
+          "name": "test_invalid_video_counts_are_rejected_before_dispatch[3.5]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_video_count",
+          "name": "test_invalid_video_counts_are_rejected_before_dispatch[True]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_video_count",
+          "name": "test_invalid_video_counts_are_rejected_before_dispatch[15]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_video_count",
+          "name": "test_requested_video_count_controls_upstream_and_retained_pool[2]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_video_count",
+          "name": "test_requested_video_count_controls_upstream_and_retained_pool[15]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_video_count",
+          "name": "test_requested_video_count_controls_upstream_and_retained_pool[20]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_video_count",
+          "name": "test_larger_video_count_does_not_expand_other_provider_branches",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_video_count",
+          "name": "test_core_persists_count_and_forwards_it_without_changing_request_grant[2]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_video_count",
+          "name": "test_core_persists_count_and_forwards_it_without_changing_request_grant[15]",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_youtube",
+          "name": "test_youtube_normalization_and_contracts",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_youtube",
+          "name": "test_youtube_one_bounded_page_key_header_filters_and_zero_call_replay",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_youtube",
+          "name": "test_missing_key_health_and_search_make_no_upstream_attempt",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_youtube",
+          "name": "test_quota_error_is_sanitized_without_retry",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_youtube",
+          "name": "test_youtube_key_stays_in_only_its_process",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_youtube",
+          "name": "test_automatic_video_type_scope_and_missing_access_are_preflight_only",
+          "status": "passed"
+        },
+        {
+          "class": "tests.test_conversations",
+          "name": "test_video_count_is_inherited_overridden_and_forwarded_to_each_child",
+          "status": "passed"
+        }
+      ]
+    }
+  ],
+  "browser": {
+    "source": ".scout/video-count-browser.local.json",
+    "stats": {
+      "startTime": "2026-11-13T00:27:02.874Z",
+      "duration": 69792.421,
+      "expected": 24,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    }
+  },
+  "saved_live": {
+    "date": "2026-11-12",
+    "passed": true,
+    "evidence": "Running app with saved videos and all API writes blocked; no new provider/model search.",
+    "public_configuration": {
+      "video_count": {
+        "default": 10,
+        "min": 1,
+        "max": 20
+      },
+      "request_limit_per_run": 8,
+      "metadata_request_grant": 1,
+      "transcript_request_grant": 3
+    },
+    "visible_control": true,
+    "remembered_count": 15,
+    "options": 20,
+    "saved_results_unchanged": 10,
+    "exploration_shares_count": true,
+    "responsive": [
+      {
+        "width": 1440,
+        "overflow": false
+      },
+      {
+        "width": 1024,
+        "overflow": false
+      },
+      {
+        "width": 900,
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "overflow": false
+      },
+      {
+        "width": 320,
+        "overflow": false
+      }
+    ],
+    "api_writes": 0,
+    "browser_errors": [],
+    "provider_usage_unchanged": true,
+    "model_cost_and_holds_unchanged": true,
+    "owned_app_restarted": true,
+    "health": [
+      {
+        "port": 3100,
+        "healthy": true
+      },
+      {
+        "port": 8100,
+        "healthy": true
+      },
+      {
+        "port": 8111,
+        "healthy": true
+      },
+      {
+        "port": 8112,
+        "healthy": true
+      },
+      {
+        "port": 8113,
+        "healthy": true
+      },
+      {
+        "port": 8114,
+        "healthy": true
+      },
+      {
+        "port": 8115,
+        "healthy": true
+      },
+      {
+        "port": 8116,
+        "healthy": true
+      },
+      {
+        "port": 8117,
+        "healthy": true
+      },
+      {
+        "port": 8118,
+        "healthy": true
+      },
+      {
+        "port": 8119,
+        "healthy": true
+      }
+    ]
+  },
+  "limits": {
+    "video_count": {
+      "default": 10,
+      "min": 1,
+      "max": 20
+    },
+    "youtube_request_budget": 8,
+    "overall_request_budget": 16,
+    "request_budgets_increased": false
+  },
+  "sha256": {
+    "src/research_scout/contracts.py": "ab4ea1db400af81036db4960cfaeb2f6d14e5c3fdf7035f550848eee06d02227",
+    "src/research_scout/core.py": "dcf8c232dc8e470ae07e8cc8fbae7f1f6459422806fbb01a903690fb7485d7fe",
+    "src/research_scout/conversations.py": "707a03af03aaa8b24b1b755801482428579807bca2d131c31214a91c0cba15cd",
+    "src/research_scout/api.py": "feee3f859c6de1177885900d1d4f758cef290d3b73bbf7146544e767883f5f3f",
+    "src/research_scout/providers/service.py": "0aee46fa6fe279a0c608cf02a18e5b96cb75d31adf0bd5403c887955d1db0fb6",
+    "src/research_scout/providers/rest_discovery.py": "38d909639efe2cbb802ce95b14d0d67d48780db11fc327eab0bfde106ca7520b",
+    "src/research_scout/providers/adapters.py": "fc3c88d0910b355f189154ec7cca22321915eff30d69f8f706dc235ec9e53577",
+    "frontend/src/lib/search-preferences.ts": "3a6257c828aa97351db6004162573660fb056ed7888c75620987bfb650a2277d",
+    "frontend/src/components/search-options.tsx": "e65dc93b3247187d539ccb45c4d49542814231de519f3d444504216822f094a1",
+    "frontend/src/components/video-count-control.tsx": "31c3c6dd125e7bad46ba889affe21e9a0fa14299419142bcef1f559c3b97fcc8",
+    "frontend/src/components/video-count-control.module.css": "ace40780a9403b17ac5dfd119151daf0a60e698bd107658f3cb13625b011f250",
+    "frontend/src/components/research-workspace.tsx": "43d9b317ab17b77609c10c67c1270a754407a1e0ed24f3ab064c2091ba0fdaea",
+    "frontend/src/components/exploration-chat.tsx": "ff5ef121de4f32fadcf2fd66f5aa247953fa453951f778c67e39ce221508642e",
+    "frontend/src/components/search-results.tsx": "c1193cf506e7bc03ba7cbe4d41ed6bc2f604cbc31f40204b21de0e944b62f0d4",
+    "frontend/src/lib/conversations.ts": "176d863863eacfc32910f90af2c9e10cc9a869d61c125b76bb994a7ab5f9f2d6",
+    "tests/test_video_count.py": "608c249e4513deb729b1a1210dfe0f4a9c1a6c965c89a70632ac90e5f0703efb",
+    "tests/test_youtube.py": "941e172c583990a39bc964b259c0efcdf0c4ad5be8a72ed85cd2d3af31fc28ac",
+    "tests/test_conversations.py": "16ce5d96340971cf9872b8654720eb8f5c1db8155955225f6f1c0b33fc9f5971",
+    "tests/test_api.py": "c19a2a4b237f7a1b6245c7a9cd94f0a321550cc8fa82526acfcd4fe3149986fb",
+    "tests/browser/video-count-settings.spec.ts": "30b747281aa0a299fd7f7025dbb0aaeeaec03e4dd3078eebc06a82cf9dd4b194"
+  },
+  "screenshots": [
+    "2026-11-12-video-count-1440.png",
+    "2026-11-12-video-count-390.png"
+  ],
+  "notes": [
+    "Broad backend run: 330 passed, one legacy fixture assertion failed, one optional encoder proof skipped. The fixture now explicitly requests the default ten videos; final 19 focused checks pass. All 331 unique unskipped cases pass across recorded runs.",
+    "Final focused checks prove requested/retained counts of 2, 15 and 20, including a preseeded old nominal-twenty/actual-ten cache entry. Count-aware policy prevents stale reuse.",
+    "UI count edits make no research call. New saved searches retain their original requested count separately from later preferences.",
+    "Saved-live review blocks API writes at six widths and preserves provider/model usage. Owned app restarted and all services healthy. No new live search, env edit, budget increase, commit or push occurred."
+  ]
+}

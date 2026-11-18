@@ -1,0 +1,476 @@
+{
+  "artifact": "datapulse-observatory",
+  "generated_at": "2026-11-15T13:00:18.826Z",
+  "origin": "http://127.0.0.1:3215",
+  "reducedMotion": "reduce",
+  "sources": [
+    {
+      "file": "datapulse-observatory.html",
+      "sha256": "b7fca7434c6a43c8c2192b69507384315588a238ff8bc99a5d4504a6baa4f696"
+    },
+    {
+      "file": "datapulse-observatory.js",
+      "sha256": "0da6c87b85aa8c420dc37813afae6b541a3c6ca2890ca5f69fd62e30e85cfc6a"
+    },
+    {
+      "file": "styles/datapulse-observatory.css",
+      "sha256": "2f2bdf8a474ef3ad6522b95d935e4bbf525acd2c6aaf8d7019e293c3e8d3b54e"
+    }
+  ],
+  "checks": [
+    {
+      "name": "1440px initial layout reflows",
+      "status": "passed"
+    },
+    {
+      "name": "1100px initial layout reflows",
+      "status": "passed"
+    },
+    {
+      "name": "970px initial layout reflows",
+      "status": "passed"
+    },
+    {
+      "name": "768px initial layout reflows",
+      "status": "passed"
+    },
+    {
+      "name": "650px initial layout reflows",
+      "status": "passed"
+    },
+    {
+      "name": "390px initial layout reflows",
+      "status": "passed"
+    },
+    {
+      "name": "320px initial layout reflows",
+      "status": "passed"
+    },
+    {
+      "name": "new reference-led composition is distinct from the preserved sidebar variants",
+      "status": "passed",
+      "detail": {
+        "heroFont": 64,
+        "nav": {
+          "left": 80,
+          "top": 16,
+          "radius": 19
+        },
+        "cardGrid": 6,
+        "workspaceTransform": "none"
+      }
+    },
+    {
+      "name": "all four modalities work from tabs and reference cards",
+      "status": "passed",
+      "detail": {
+        "papers": 3,
+        "videos": 2,
+        "data": 2,
+        "repos": 2
+      }
+    },
+    {
+      "name": "native controls have accessible names and form fields have labels",
+      "status": "passed",
+      "detail": {
+        "unnamedVisibleControls": 0
+      }
+    },
+    {
+      "name": "phone navigation is operable and anchors clear the floating bar",
+      "status": "passed",
+      "detail": {
+        "navBottom": 94,
+        "headingTop": 276.140625
+      }
+    },
+    {
+      "name": "project choice, preview credits, query details and note map entrances remain available",
+      "status": "passed"
+    },
+    {
+      "name": "source/date/limits popovers operate and Escape restores their trigger",
+      "status": "passed"
+    },
+    {
+      "name": "AI context follows the visible refinement switch",
+      "status": "passed"
+    },
+    {
+      "name": "resource tabs support arrow keys and keyboard focus stays visible",
+      "status": "passed",
+      "detail": {
+        "width": "3px",
+        "style": "solid",
+        "unobscured": true
+      }
+    },
+    {
+      "name": "reader has original/points, expansion, notes and independent scrolling",
+      "status": "passed",
+      "detail": {
+        "scrollRegions": [
+          {
+            "tag": "DIV",
+            "className": "reader-body",
+            "client": 409,
+            "scroll": 409
+          },
+          {
+            "tag": "TEXTAREA",
+            "className": "source-note",
+            "client": 184,
+            "scroll": 184
+          }
+        ]
+      }
+    },
+    {
+      "name": "filter and progressive search are local-only and retain modality access",
+      "status": "passed"
+    },
+    {
+      "name": "representative solid text/background pairs meet 4.5:1",
+      "status": "passed",
+      "detail": [
+        {
+          "selector": "#research-form button[type=submit]",
+          "measured": true,
+          "foreground": [
+            255,
+            255,
+            255,
+            1
+          ],
+          "background": [
+            23,
+            105,
+            200,
+            1
+          ],
+          "ratio": 5.396948182590255
+        },
+        {
+          "selector": "#research-form .setting-button",
+          "measured": true,
+          "foreground": [
+            82,
+            105,
+            133,
+            1
+          ],
+          "background": [
+            251,
+            253,
+            255,
+            1
+          ],
+          "ratio": 5.539393720341456
+        },
+        {
+          "selector": "#ai-toggle",
+          "measured": true,
+          "foreground": [
+            117,
+            69,
+            167,
+            1
+          ],
+          "background": [
+            248,
+            244,
+            255,
+            1
+          ],
+          "ratio": 6.120594712121557
+        },
+        {
+          "selector": ".floating-nav",
+          "measured": false,
+          "reason": "gradient/image backdrop"
+        },
+        {
+          "selector": ".map-card h3",
+          "measured": false,
+          "reason": "gradient/image backdrop"
+        },
+        {
+          "selector": ".map-card p",
+          "measured": false,
+          "reason": "gradient/image backdrop"
+        },
+        {
+          "selector": "#query-context",
+          "measured": false,
+          "reason": "gradient/image backdrop"
+        },
+        {
+          "selector": ".evidence-card h4",
+          "measured": true,
+          "foreground": [
+            44,
+            67,
+            97,
+            1
+          ],
+          "background": [
+            249,
+            252,
+            255,
+            1
+          ],
+          "ratio": 9.793720944422718
+        },
+        {
+          "selector": ".card-byline",
+          "measured": true,
+          "foreground": [
+            97,
+            115,
+            138,
+            1
+          ],
+          "background": [
+            249,
+            252,
+            255,
+            1
+          ],
+          "ratio": 4.713066503006144
+        },
+        {
+          "selector": ".preview-credits strong",
+          "measured": true,
+          "foreground": [
+            83,
+            121,
+            165,
+            1
+          ],
+          "background": [
+            255,
+            255,
+            255,
+            1
+          ],
+          "ratio": 4.519947814562926
+        },
+        {
+          "selector": ".preview-credits",
+          "measured": true,
+          "foreground": [
+            97,
+            115,
+            138,
+            1
+          ],
+          "background": [
+            255,
+            255,
+            255,
+            1
+          ],
+          "ratio": 4.852611711260372
+        }
+      ]
+    },
+    {
+      "name": "desktop and mobile preview captures",
+      "status": "passed",
+      "detail": {
+        "desktop": {
+          "width": 1440,
+          "height": 1080
+        },
+        "mobile": {
+          "width": 390,
+          "fullPage": true
+        }
+      }
+    },
+    {
+      "name": "no runtime errors, external/API requests or HTTP write requests occurred",
+      "status": "passed",
+      "detail": {
+        "errors": [],
+        "externalRequests": [],
+        "apiRequests": [],
+        "mutations": [],
+        "policyViolations": []
+      }
+    }
+  ],
+  "viewports": [
+    {
+      "width": 1440,
+      "viewport": 1440,
+      "document": 1440,
+      "nav": {
+        "x": 80,
+        "y": 16,
+        "width": 1280,
+        "height": 78,
+        "top": 16,
+        "right": 1360,
+        "bottom": 94,
+        "left": 80
+      },
+      "heroFont": "64px",
+      "question": {
+        "client": 82,
+        "scroll": 82
+      }
+    },
+    {
+      "width": 1100,
+      "viewport": 1100,
+      "document": 1100,
+      "nav": {
+        "x": 24,
+        "y": 16,
+        "width": 1052,
+        "height": 78,
+        "top": 16,
+        "right": 1076,
+        "bottom": 94,
+        "left": 24
+      },
+      "heroFont": "56px",
+      "question": {
+        "client": 82,
+        "scroll": 82
+      }
+    },
+    {
+      "width": 970,
+      "viewport": 970,
+      "document": 970,
+      "nav": {
+        "x": 24,
+        "y": 16,
+        "width": 922,
+        "height": 78,
+        "top": 16,
+        "right": 946,
+        "bottom": 94,
+        "left": 24
+      },
+      "heroFont": "46px",
+      "question": {
+        "client": 82,
+        "scroll": 82
+      }
+    },
+    {
+      "width": 768,
+      "viewport": 768,
+      "document": 768,
+      "nav": {
+        "x": 24,
+        "y": 16,
+        "width": 720,
+        "height": 92.375,
+        "top": 16,
+        "right": 744,
+        "bottom": 108.375,
+        "left": 24
+      },
+      "heroFont": "46px",
+      "question": {
+        "client": 82,
+        "scroll": 82
+      }
+    },
+    {
+      "width": 650,
+      "viewport": 650,
+      "document": 650,
+      "nav": {
+        "x": 12,
+        "y": 10,
+        "width": 626,
+        "height": 65,
+        "top": 10,
+        "right": 638,
+        "bottom": 75,
+        "left": 12
+      },
+      "heroFont": "56px",
+      "question": {
+        "client": 86,
+        "scroll": 86
+      }
+    },
+    {
+      "width": 390,
+      "viewport": 390,
+      "document": 390,
+      "nav": {
+        "x": 12,
+        "y": 10,
+        "width": 366,
+        "height": 65,
+        "top": 10,
+        "right": 378,
+        "bottom": 75,
+        "left": 12
+      },
+      "heroFont": "42px",
+      "question": {
+        "client": 86,
+        "scroll": 86
+      }
+    },
+    {
+      "width": 320,
+      "viewport": 320,
+      "document": 320,
+      "nav": {
+        "x": 12,
+        "y": 10,
+        "width": 296,
+        "height": 65,
+        "top": 10,
+        "right": 308,
+        "bottom": 75,
+        "left": 12
+      },
+      "heroFont": "42px",
+      "question": {
+        "client": 86,
+        "scroll": 86
+      }
+    }
+  ],
+  "network": {
+    "externalRequests": [],
+    "apiRequests": [],
+    "mutations": [],
+    "policyViolations": []
+  },
+  "runtimeErrors": [],
+  "screenshots": [
+    "screenshots/datapulse-observatory-desktop.png",
+    "screenshots/datapulse-observatory-mobile.png"
+  ],
+  "limitations": [
+    "Authored static preview only; no live model, provider, backend, production or durability verification.",
+    "Representative computed solid-color contrast samples and keyboard checks are not a complete WCAG or screen-reader audit.",
+    "Gradient/image backdrops are reported as unmeasured rather than assigned a fabricated contrast ratio."
+  ],
+  "passed": true,
+  "visual_review": {
+    "inspected": [
+      "screenshots/datapulse-observatory-desktop.png",
+      "screenshots/datapulse-observatory-mobile.png",
+      "temporary evidence-desk detail capture"
+    ],
+    "observed": [
+      "Floating horizontal navigation, oversized split hero, layered evidence illustration and six-card research map establish a clearly different reference-led composition.",
+      "The embedded evidence desk remains level and provides a denser card browser plus separate source reader. No overlap or clipped initial question was observed in the final reviewed captures.",
+      "The mobile page is substantially longer than the earlier compact workspace variants; the large introduction and six stacked entrance cards are a deliberate reference-led tradeoff."
+    ],
+    "diagnostic_capture_note": "The temporary evidence-desk element image hides unrelated floating navigation/toast during capture only; final desktop/mobile previews retain normal UI."
+  }
+}

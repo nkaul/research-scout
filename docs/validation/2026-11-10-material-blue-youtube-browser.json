@@ -1,0 +1,749 @@
+{
+  "date": "2026-11-10",
+  "scope": "Full actual-nine-service fixture browser suite plus focused rerun of an obsolete paper-count wording assertion. No application code changed between the full run and follow-up; the test now expects resource counts for mixed paper/video results.",
+  "full_run": {
+    "startTime": "2026-11-10T09:22:56.886Z",
+    "duration": 171519.675,
+    "expected": 43,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  },
+  "followup_run": {
+    "startTime": "2026-11-10T09:26:42.122Z",
+    "duration": 9054.797999999999,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "final_unique_case_status": {
+    "passed": 44,
+    "failed": 0,
+    "skipped": 0
+  },
+  "cases": [
+    {
+      "title": "default Search automatically routes four resources and progressively groups DOI observations with integrated access",
+      "file": "automatic-discovery.spec.ts",
+      "runs": [
+        {
+          "status": "unexpected",
+          "results": [
+            {
+              "status": "failed",
+              "duration_ms": 9997
+            }
+          ]
+        },
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration_ms": 2994
+            }
+          ]
+        }
+      ],
+      "status": "expected"
+    },
+    {
+      "title": "default chat needs no provider selection and a blocked automatic access check stays visible without retrying",
+      "file": "automatic-discovery.spec.ts",
+      "runs": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration_ms": 2405
+            }
+          ]
+        },
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration_ms": 2218
+            }
+          ]
+        }
+      ],
+      "status": "expected"
+    },
+    {
+      "title": "compacted history restores one saved turn with a GET and retains it across compact SSE updates",
+      "file": "automatic-discovery.spec.ts",
+      "runs": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration_ms": 1661
+            }
+          ]
+        }
+      ],
+      "status": "expected"
+    },
+    {
+      "title": "actual fixture automatic discovery merges shared DOIs and resolves Unpaywall without source selection",
+      "file": "automatic-integration.spec.ts",
+      "runs": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration_ms": 16003
+            }
+          ]
+        }
+      ],
+      "status": "expected"
+    },
+    {
+      "title": "actual fixture chat routes separate providers, reuses saved evidence and reopens without a search",
+      "file": "exploration-integration.spec.ts",
+      "runs": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration_ms": 7345
+            }
+          ]
+        }
+      ],
+      "status": "expected"
+    },
+    {
+      "title": "actual fixture DOI chat routes to DataCite without creating a discovery run",
+      "file": "exploration-integration.spec.ts",
+      "runs": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration_ms": 1518
+            }
+          ]
+        }
+      ],
+      "status": "expected"
+    },
+    {
+      "title": "exploration renders early separate-provider sources, retains drafts and cancels without duplicate search",
+      "file": "exploration.spec.ts",
+      "runs": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration_ms": 1841
+            }
+          ]
+        }
+      ],
+      "status": "expected"
+    },
+    {
+      "title": "a public DOI works with OpenAlex blocked and saved follow-up does not introduce year filters",
+      "file": "exploration.spec.ts",
+      "runs": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration_ms": 2660
+            }
+          ]
+        }
+      ],
+      "status": "expected"
+    },
+    {
+      "title": "exploration remains usable on a narrow phone and keeps over-budget input editable",
+      "file": "exploration.spec.ts",
+      "runs": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration_ms": 1463
+            }
+          ]
+        }
+      ],
+      "status": "expected"
+    },
+    {
+      "title": "a successful details lookup does not claim verified discovery and rate limits stay visible",
+      "file": "exploration.spec.ts",
+      "runs": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration_ms": 2215
+            }
+          ]
+        }
+      ],
+      "status": "expected"
+    },
+    {
+      "title": "explicit generation renders real response snapshots progressively, retains citations and reopens without another request",
+      "file": "exploration.spec.ts",
+      "runs": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration_ms": 2788
+            }
+          ]
+        }
+      ],
+      "status": "expected"
+    },
+    {
+      "title": "generation is disabled without a configured key and a failed stream retains evidence for an explicit retry",
+      "file": "exploration.spec.ts",
+      "runs": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration_ms": 2485
+            }
+          ]
+        }
+      ],
+      "status": "expected"
+    },
+    {
+      "title": "generated answer formatting stays React-safe during partial text and keeps source links and turn anchors",
+      "file": "exploration.spec.ts",
+      "runs": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration_ms": 2679
+            }
+          ]
+        }
+      ],
+      "status": "expected"
+    },
+    {
+      "title": "chat displays abstracts immediately and reads fuller same-provider details with cached replay",
+      "file": "exploration.spec.ts",
+      "runs": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration_ms": 2607
+            }
+          ]
+        }
+      ],
+      "status": "expected"
+    },
+    {
+      "title": "abstract lookup failure retains the visible excerpt and does not start another discovery or generation",
+      "file": "exploration.spec.ts",
+      "runs": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration_ms": 1642
+            }
+          ]
+        }
+      ],
+      "status": "expected"
+    },
+    {
+      "title": "local fixture services reach a saved shortlist and deterministic export",
+      "file": "local-integration.spec.ts",
+      "runs": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration_ms": 3432
+            }
+          ]
+        }
+      ],
+      "status": "expected"
+    },
+    {
+      "title": "live discovery shows interpreted queries, reviewed batches and refinement history without an answer-generation call",
+      "file": "refinement.spec.ts",
+      "runs": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration_ms": 2957
+            }
+          ]
+        }
+      ],
+      "status": "expected"
+    },
+    {
+      "title": "fixture defaults and explicit opt-out preserve direct search, and metadata actions never request AI refinement",
+      "file": "refinement.spec.ts",
+      "runs": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration_ms": 1899
+            }
+          ]
+        }
+      ],
+      "status": "expected"
+    },
+    {
+      "title": "AI refinement can be explicitly opted out and failures do not erase reviewed records or automatically rerun",
+      "file": "refinement.spec.ts",
+      "runs": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration_ms": 2046
+            }
+          ]
+        }
+      ],
+      "status": "expected"
+    },
+    {
+      "title": "a clarification request shows the unresolved scope without fabricating searches or sources",
+      "file": "refinement.spec.ts",
+      "runs": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration_ms": 1723
+            }
+          ]
+        }
+      ],
+      "status": "expected"
+    },
+    {
+      "title": "a wrong-reference review rejection shows the error without inventing or automatically retrieving a source",
+      "file": "refinement.spec.ts",
+      "runs": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration_ms": 1698
+            }
+          ]
+        }
+      ],
+      "status": "expected"
+    },
+    {
+      "title": "saved mixed v1 records are grouped without changing their data and weak provider queries remain explicit",
+      "file": "refinement.spec.ts",
+      "runs": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration_ms": 2643
+            }
+          ]
+        }
+      ],
+      "status": "expected"
+    },
+    {
+      "title": "only related results do not enable generation and partial failures keep their explicit error text",
+      "file": "refinement.spec.ts",
+      "runs": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration_ms": 1842
+            }
+          ]
+        }
+      ],
+      "status": "expected"
+    },
+    {
+      "title": "Search workspace opens a reviewed exploration with the chosen provider and filters, admitting a duplicate click only once",
+      "file": "refinement.spec.ts",
+      "runs": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration_ms": 1944
+            }
+          ]
+        }
+      ],
+      "status": "expected"
+    },
+    {
+      "title": "an uncertain reviewed-search POST is not automatically repeated and explicit retry retains its send key",
+      "file": "refinement.spec.ts",
+      "runs": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration_ms": 1709
+            }
+          ]
+        }
+      ],
+      "status": "expected"
+    },
+    {
+      "title": "actual planner prompts, intent facets, keywords and provider arguments remain auditable saved text",
+      "file": "refinement.spec.ts",
+      "runs": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration_ms": 2521
+            }
+          ]
+        }
+      ],
+      "status": "expected"
+    },
+    {
+      "title": "inspection pins the exact reviewed source across reload; invalid pins never expose other raw candidates",
+      "file": "refinement.spec.ts",
+      "runs": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration_ms": 4158
+            }
+          ]
+        }
+      ],
+      "status": "expected"
+    },
+    {
+      "title": "Search workspace retains an explicit direct-search opt-out",
+      "file": "refinement.spec.ts",
+      "runs": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration_ms": 1560
+            }
+          ]
+        }
+      ],
+      "status": "expected"
+    },
+    {
+      "title": "actual fixture services route all added discovery sources and keep Unpaywall access separate",
+      "file": "source-expansion-integration.spec.ts",
+      "runs": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration_ms": 12746
+            }
+          ]
+        }
+      ],
+      "status": "expected"
+    },
+    {
+      "title": "seven discovery choices remain explicit and at most two can be selected; access lookup is separate",
+      "file": "source-expansion.spec.ts",
+      "runs": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration_ms": 1851
+            }
+          ]
+        }
+      ],
+      "status": "expected"
+    },
+    {
+      "title": "early abstracts expand from saved records while another provider runs; only new details wait for the source run",
+      "file": "source-expansion.spec.ts",
+      "runs": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration_ms": 2361
+            }
+          ]
+        }
+      ],
+      "status": "expected"
+    },
+    {
+      "title": "Unpaywall locations stay separate, links are safe, closed access is valid and replay makes no lookup",
+      "file": "source-expansion.spec.ts",
+      "runs": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration_ms": 2612
+            }
+          ]
+        }
+      ],
+      "status": "expected"
+    },
+    {
+      "title": "missing Unpaywall contact and access failures remain visible without automatic provider fallback",
+      "file": "source-expansion.spec.ts",
+      "runs": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration_ms": 1493
+            }
+          ]
+        }
+      ],
+      "status": "expected"
+    },
+    {
+      "title": "OpenAIRE descriptions are not presented as abstracts",
+      "file": "source-expansion.spec.ts",
+      "runs": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration_ms": 1897
+            }
+          ]
+        }
+      ],
+      "status": "expected"
+    },
+    {
+      "title": "failed access lookup does not retry or switch to paper or registry search",
+      "file": "source-expansion.spec.ts",
+      "runs": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration_ms": 1823
+            }
+          ]
+        }
+      ],
+      "status": "expected"
+    },
+    {
+      "title": "first rows can be inspected and saved before completion; updates preserve identity and focus",
+      "file": "workspace.spec.ts",
+      "runs": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration_ms": 7861
+            }
+          ]
+        }
+      ],
+      "status": "expected"
+    },
+    {
+      "title": "reopen and exports use saved state; DOI observations remain separate and stale writes retain drafts",
+      "file": "workspace.spec.ts",
+      "runs": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration_ms": 3952
+            }
+          ]
+        }
+      ],
+      "status": "expected"
+    },
+    {
+      "title": "provider edits are explicit and reconnection cannot rerun research or duplicate sources",
+      "file": "workspace.spec.ts",
+      "runs": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration_ms": 2404
+            }
+          ]
+        }
+      ],
+      "status": "expected"
+    },
+    {
+      "title": "mobile keyboard flow, modal focus and reading layout remain usable",
+      "file": "workspace.spec.ts",
+      "runs": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration_ms": 7060
+            }
+          ]
+        }
+      ],
+      "status": "expected"
+    },
+    {
+      "title": "three-paper cap and eligibility updates preserve human decisions visibly",
+      "file": "workspace.spec.ts",
+      "runs": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration_ms": 2686
+            }
+          ]
+        }
+      ],
+      "status": "expected"
+    },
+    {
+      "title": "untitled and truncated records remain honest and DOI checks require inclusion",
+      "file": "workspace.spec.ts",
+      "runs": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration_ms": 2454
+            }
+          ]
+        }
+      ],
+      "status": "expected"
+    },
+    {
+      "title": "desktop split preview, notes and display preferences use existing saved data",
+      "file": "workspace.spec.ts",
+      "runs": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration_ms": 4245
+            }
+          ]
+        }
+      ],
+      "status": "expected"
+    },
+    {
+      "title": "Dub-inspired workspace remains readable at tablet and narrow phone widths",
+      "file": "workspace.spec.ts",
+      "runs": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration_ms": 3727
+            }
+          ]
+        }
+      ],
+      "status": "expected"
+    },
+    {
+      "title": "Material blue workspace automatically retrieves video descriptions with papers and filters locally",
+      "file": "youtube-integration.spec.ts",
+      "runs": [
+        {
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "duration_ms": 17036
+            }
+          ]
+        }
+      ],
+      "status": "expected"
+    }
+  ]
+}

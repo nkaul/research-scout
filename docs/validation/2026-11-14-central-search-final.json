@@ -1,0 +1,101 @@
+{
+  "date": "2026-11-14",
+  "passed": true,
+  "scope": "Central explicit Search across Papers/Videos/Data/Repos, bounded visible limits, independent failure handling and larger 3D atom.",
+  "backend": {
+    "passed": 426,
+    "skipped": 1,
+    "skip": "Optional local encoder proof",
+    "seconds": 129.943,
+    "ruff": "passed",
+    "new_parser_caps_and_lifecycle_cases": 16,
+    "scripted_harness_passed": 11
+  },
+  "browser": {
+    "unique_cases_verified": 223,
+    "full": {
+      "passed": 223,
+      "failed": 0,
+      "skipped": 0,
+      "seconds": 356.336235
+    },
+    "final_affected": {
+      "passed": 10,
+      "failed": 0
+    },
+    "automatic_retries": 0,
+    "actual_isolated_http_mcp_fixture_search": true
+  },
+  "frontend": {
+    "typecheck": "passed",
+    "production_build": "passed",
+    "source_files_matched": 83,
+    "desktop_mobile_visual_review": "passed"
+  },
+  "behavior": {
+    "one_main_search_admits_all_enabled_types": true,
+    "no_secondary_find_on_central_search": true,
+    "unvisited_tabs_follow_child_get_sse": true,
+    "read_only_history_never_replays_acquisition": true,
+    "limits": {
+      "default": {
+        "papers": 20,
+        "videos": 10,
+        "datasets": 10,
+        "repos": 10
+      },
+      "minimum": 0,
+      "maximum": 20,
+      "zero_disables": true,
+      "all_zero_rejected": true,
+      "datasets_per_catalog": true,
+      "editing_does_not_search": true
+    },
+    "global_canonical_paper_cap_manual_and_auto": true,
+    "attributable_overflow_preserved": true,
+    "partial_and_unassessed_records_not_promoted": true,
+    "phased_final_answer_parser": true,
+    "failed_paper_review_does_not_stop_youtube": true,
+    "one_shared_ai_plan_no_extra_data_repo_model_calls": true,
+    "data_repo_only_ai_one_credit": true,
+    "cancel_joins_owned_children": true,
+    "restart_no_implicit_replay": true,
+    "larger_atom_pixels": 104,
+    "true_ring_axis_precession": true,
+    "reduced_motion_static": true
+  },
+  "saved_case": {
+    "query": "embedding model domain adaptation approaches",
+    "saved_display_papers": 6,
+    "reported_five_not_substantiated_by_saved_snapshot": true,
+    "openalex_candidates": 20,
+    "openalex_relevant_observations": 6,
+    "crossref_candidates": 20,
+    "crossref_relevant": 0,
+    "crossref_partial": 15,
+    "crossref_irrelevant": 5,
+    "related_observations": 25,
+    "failure": "arXiv model review concatenated commentary and valid final JSON; stopped before YouTube",
+    "dataset_repo_jobs_previously_not_started": true,
+    "no_fresh_paid_relevance_claim": true
+  },
+  "live": {
+    "services_healthy": 13,
+    "protected_existing_files": 809,
+    "existing_file_changes": 0,
+    "accounting_unchanged": true,
+    "used_credits": 10,
+    "available_credits": 90,
+    "paid_model_calls": 0,
+    "live_provider_searches": 0,
+    "live_api_writes": 0,
+    "allowance_resets": 0,
+    "screenshots_private": true
+  },
+  "evidence": {
+    "python": "2026-11-14-central-search-python.xml",
+    "harness": "2026-11-14-central-search-harness.json",
+    "saved_live": "2026-11-14-central-search-live-readonly.json",
+    "privacy": "2026-11-14-central-search-privacy.json"
+  }
+}

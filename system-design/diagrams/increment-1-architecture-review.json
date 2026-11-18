@@ -57,21 +57,21 @@
   "generations": [
     {
       "stage": "Revised composition",
-      "default_output_path": "/Users/nkaul/.codex/generated_images/01a176f2-49db-7c92-b6bb-45487c76cacb/exec-45fbf995-21b8-4520-8298-256c7e8cd5a2.png",
+      "default_output_path": "~/.codex/generated_images/01a176f2-49db-7c92-b6bb-45487c76cacb/exec-45fbf995-21b8-4520-8298-256c7e8cd5a2.png",
       "archived_asset": "history/2026-10-26-provider-services-drafts/increment-1-architecture-draft.png",
       "result": "Failed: conditional Semantic Scholar/DOI connectors entered wrong service cards",
       "sha256": "2e79b10e1a2a38013efb37b64edd91b4d2196cf0ebd771050441e23b9fe47caa"
     },
     {
       "stage": "Targeted routing correction",
-      "default_output_path": "/Users/nkaul/.codex/generated_images/01a176f2-49db-7c92-b6bb-45487c76cacb/exec-b808ef50-1541-402a-a95f-c690cae18306.png",
+      "default_output_path": "~/.codex/generated_images/01a176f2-49db-7c92-b6bb-45487c76cacb/exec-b808ef50-1541-402a-a95f-c690cae18306.png",
       "archived_asset": "history/2026-10-26-provider-services-drafts/increment-1-architecture-routing-draft.png",
       "result": "Failed: revision arrow corrected; nonprimary route endpoints still misaligned",
       "sha256": "23c2e9bdc7430ea770a4c1d21de1b8169985fed5d337f07b154446168c69d899"
     },
     {
       "stage": "Simplified conditional routes",
-      "default_output_path": "/Users/nkaul/.codex/generated_images/01a176f2-49db-7c92-b6bb-45487c76cacb/exec-adc55517-e9e9-47a9-b7cb-30bc75d10c7d.png",
+      "default_output_path": "~/.codex/generated_images/01a176f2-49db-7c92-b6bb-45487c76cacb/exec-adc55517-e9e9-47a9-b7cb-30bc75d10c7d.png",
       "selected_asset": "increment-1-architecture.png",
       "result": "Selected after author visual review: one clear primary edge; other conditional routes labeled on separate cards",
       "sha256": "049bd2d5d7edb341a766a6584332cba2676349db1cb4533c7faf0c79b5fdd601"

@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-10",
+  "passed": true,
+  "scope": "Read-only check against restored live profile; no new research/model/YouTube search.",
+  "registered_providers": 9,
+  "youtube": {
+    "mode": "live",
+    "access_configured": false,
+    "access_method": "api_key",
+    "readiness": "needs_access",
+    "blocked_reason": "Configure SCOUT_YOUTUBE_API_KEY and enable YouTube Data API v3 in your Google Cloud project."
+  },
+  "legacy_saved_papers": 26,
+  "legacy_papers_filter_preserved": true,
+  "reload_zero_new_calls": true,
+  "post_requests": 0,
+  "browser_errors": [],
+  "app_url": "http://127.0.0.1:3100",
+  "screenshot": "docs/validation/2026-11-10-material-blue-youtube-live-dashboard.png"
+}

@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-10",
+  "scanned_files": 920,
+  "configured_secret_or_contact_hits": [],
+  "env_mode": "0o600",
+  "youtube_key_configured": false,
+  "reference_sha256": {
+    "proposal/ref/preview-v2.html": "8331fb6a527c1966e0ad6ef2a470281eb030a61e223b1da1edc728749c16b11d",
+    "discovery/ux/research-scout-design-handoff/research-scout-mockup.html": "dabb62b0391063b4eb2ef6fd72943652f775e76fa731c7c5d674a4ce6b572a89"
+  },
+  "palette_contrast_ratios": {
+    "white_on_primary_1565c0": 5.75,
+    "primary_text_on_white": 15.96,
+    "muted_text_on_white": 5.66
+  },
+  "contrast_scope": "Selected palette pairs only; not a comprehensive accessibility audit."
+}

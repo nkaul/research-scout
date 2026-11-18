@@ -1,0 +1,108 @@
+{
+  "date": "2026-11-14",
+  "passed": true,
+  "evidence": "Restarted live app using existing saved research with all API writes and external browser assets blocked; no new live search.",
+  "single_information_pane_all_tabs": true,
+  "collapsed_by_default": true,
+  "under_resource_tabs": true,
+  "no_top_duplicate_trace": true,
+  "exact_saved_question_preserved": true,
+  "historical_first_evidence_unavailable": true,
+  "access_details_in_papers_only": true,
+  "central_data_repo_no_second_find": true,
+  "child_snapshots_unchanged": true,
+  "saved_paper_cards": 58,
+  "saved_video_cards": 10,
+  "provider_usage_unchanged": true,
+  "projects_unchanged": true,
+  "model_economics_unchanged": true,
+  "used_credits": 17,
+  "available_credits": 83,
+  "api_writes": 0,
+  "browser_errors": [],
+  "responsive": [
+    {
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "width": 1100,
+      "overflow": false
+    },
+    {
+      "width": 970,
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "width": 650,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "overflow": false
+    }
+  ],
+  "health": [
+    {
+      "port": 3100,
+      "healthy": true
+    },
+    {
+      "port": 8100,
+      "healthy": true
+    },
+    {
+      "port": 8111,
+      "healthy": true
+    },
+    {
+      "port": 8112,
+      "healthy": true
+    },
+    {
+      "port": 8113,
+      "healthy": true
+    },
+    {
+      "port": 8114,
+      "healthy": true
+    },
+    {
+      "port": 8115,
+      "healthy": true
+    },
+    {
+      "port": 8116,
+      "healthy": true
+    },
+    {
+      "port": 8117,
+      "healthy": true
+    },
+    {
+      "port": 8118,
+      "healthy": true
+    },
+    {
+      "port": 8119,
+      "healthy": true
+    },
+    {
+      "port": 8120,
+      "healthy": true
+    },
+    {
+      "port": 8121,
+      "healthy": true
+    }
+  ],
+  "screenshots_private": true
+}

@@ -1,0 +1,415 @@
+{
+  "config": {
+    "argv": [
+      "./.tools/node/bin/node",
+      "./frontend/node_modules/@playwright/test/cli.js",
+      "test",
+      "--config",
+      "tests/browser/playwright.config.ts",
+      "landing-auth.spec.ts",
+      "--reporter",
+      "list,json",
+      "--output",
+      "../.scout/landing-auth-browser-artifacts"
+    ],
+    "configFile": "./frontend/tests/browser/playwright.config.ts",
+    "rootDir": "./frontend/tests/browser",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "./.scout/landing-auth-browser-artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "./frontend/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 35000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "./.scout/landing-auth-browser-artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "chromium",
+        "testDir": "./frontend/tests/browser",
+        "snapshotDir": "./frontend/tests/browser",
+        "testIgnore": [],
+        "testMatch": "**/*.spec.ts",
+        "timeout": 35000,
+        "use": {
+          "baseURL": "http://127.0.0.1:3190",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure",
+          "acceptDownloads": true,
+          "channel": "chromium",
+          "launchOptions": {
+            "args": [
+              "--disable-gpu"
+            ]
+          },
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Safari/537.36",
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chromium"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "landing-auth.spec.ts",
+      "file": "landing-auth.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "landing and real authentication boundaries",
+          "file": "landing-auth.spec.ts",
+          "line": 105,
+          "column": 6,
+          "specs": [
+            {
+              "title": "public landing keeps the question as a draft and does not start research",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 35000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2079,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-16T03:06:31.878Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "dde190e0e546137bee20-8c7777a03a3167aebf02",
+              "file": "landing-auth.spec.ts",
+              "line": 114,
+              "column": 7
+            },
+            {
+              "title": "anonymous and forged-cookie access fail at Next SSR and the core API",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 35000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1814,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-16T03:06:34.721Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "dde190e0e546137bee20-259b60b6bbd144320b98",
+              "file": "landing-auth.spec.ts",
+              "line": 134,
+              "column": 7
+            },
+            {
+              "title": "login mutations reject missing CSRF and hostile origins without creating a session",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 35000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 49,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-16T03:06:36.558Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "dde190e0e546137bee20-682d92c0c3b202f96318",
+              "file": "landing-auth.spec.ts",
+              "line": 154,
+              "column": 7
+            },
+            {
+              "title": "owner setup/sign-in preserve a draft and logout revokes the real backend session",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 35000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 7347,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-16T03:06:36.632Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "dde190e0e546137bee20-a0163258da856d14505f",
+              "file": "landing-auth.spec.ts",
+              "line": 166,
+              "column": 7
+            },
+            {
+              "title": "forgot/reset is generic, private, single use and revokes prior sessions",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 8691,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-16T03:06:44.002Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "dde190e0e546137bee20-0f06c3f405632b05f23d",
+              "file": "landing-auth.spec.ts",
+              "line": 213,
+              "column": 7
+            },
+            {
+              "title": "invalid Google credentials and replayed nonce cannot establish a session",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 35000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 91,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-16T03:06:52.746Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "dde190e0e546137bee20-3df383307310c43b4cbc",
+              "file": "landing-auth.spec.ts",
+              "line": 264,
+              "column": 7
+            },
+            {
+              "title": "sign-in return destinations cannot navigate outside protected local routes",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 35000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5018,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-16T03:06:52.863Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "dde190e0e546137bee20-7f961b26a1016a2b03ea",
+              "file": "landing-auth.spec.ts",
+              "line": 274,
+              "column": 7
+            },
+            {
+              "title": "public landing and auth forms reflow with operable keyboard navigation",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5837,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-16T03:06:57.897Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "dde190e0e546137bee20-77b3ae5a4b85a2480cee",
+              "file": "landing-auth.spec.ts",
+              "line": 284,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-16T03:06:30.637Z",
+    "duration": 33445.281,
+    "expected": 8,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "date": "2026-11-12",
+  "passed": true,
+  "evidence": "Saved live paper search; API writes blocked. No new provider/model/document retrieval.",
+  "default_reader_visible": true,
+  "metadata_timing_in_footer": true,
+  "readable_points_match_original": true,
+  "duplicate_citation_collapsed": true,
+  "raw_paper_cards": 59,
+  "visible_paper_cards": 58,
+  "flat_metadata": true,
+  "reader_title_px": 14,
+  "unified_controls": true,
+  "access_only_partial_explained": true,
+  "keyboard_selection_follows": true,
+  "api_writes": 0,
+  "browser_errors": [],
+  "provider_usage_unchanged": true,
+  "model_cost_and_holds_unchanged": true,
+  "responsive": [
+    {
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "width": 900,
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "overflow": false
+    }
+  ]
+}

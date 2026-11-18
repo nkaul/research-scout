@@ -1,0 +1,30 @@
+# Parallel UI stability review
+
+**November 11, 2026 · user-requested multi-agent analysis and fixes.** Three independent agents reviewed navigation/state, video/transcript behavior, and reader UX/accessibility. Root reviewed Search result streaming/filter behavior and combined the changes. The Next.js/Python/provider stack and current Dub-inspired design remain in place.
+
+## Confirmed findings and fixes
+
+| Review | Findings and resulting behavior |
+| --- | --- |
+| Navigation/state agent | Delayed provider-run reads and create/send responses could reclaim abandoned navigation. Request-intent fences now reject stale UI updates, stop an abandoned create from dispatching a turn, and preserve already accepted server work in history. Chat inspection retains the main Search ID/draft; Saved, Notes, Exploration and history transitions retain a separate local filter per search. Provider readiness no longer waits for unrelated history/config/run-list reads. Late history responses merge rather than erase newer entries. |
+| Video/transcript agent | Stored provider thumbnails were ignored; a failed image could stay failed after metadata changed. Valid same-video provider images now take priority with safe fallback/recovery. Player state belongs to the video ID and survives same-video metadata updates. Invalid IDs cannot produce unsafe external links, broken seek links or caption requests. Caption cancellation now stops future admissions/dispatches and waits for already-admitted work before the caller closes its journal. Admission timeouts cancel pending callbacks. Malformed caption rows retain usable captions within finite scan/output bounds. |
+| UX/accessibility agent | Video readers duplicated original-source actions and showed inapplicable DOI/full-text guidance. Video-specific actions/copy now reflect metadata and captions. Reader tabs, close and footer actions have 44 px targets; the reading panel can receive keyboard focus and scroll. Mobile safe-area spacing and scroll containment are applied. |
+| Root integration review | Local filtering now includes available abstracts. A filter hiding saved videos explains the filtered result count and offers Clear result filter rather than claiming missing access. Related/uncertain records respect the active Papers/Videos tab and remain outside primary counts/evidence. Stale preview/restore/cancel errors and busy flags cannot contaminate another search. Expanded running-history snapshots cannot mask later compact completion updates. Main-card YouTube links use the validated canonical video ID. |
+
+## State and cancellation boundaries
+
+Source/date presets and the last tab retain their existing browser preferences. Per-search text filters are current-session state in the parent workspace; one search's filter is not applied to another. New research starts with an empty text filter. Reading old results does not change the next search's source/date defaults.
+
+Abandoning UI intent is not a claim that an accepted backend turn was cancelled. A turn already dispatched remains saved and subject to normal global admission/accounting; it is not automatically repeated. Unknown-operation holds are not released by these navigation changes.
+
+Caption cancellation cannot forcibly terminate a synchronous HTTP call already admitted. Its existing connect/read timeout remains in force, and the caller awaits that worker before declaring its journal interrupted. Cancellation fences prevent subsequent work. No account cookies, proxy rotation, live model calls or allowance increases were added.
+
+## Evidence
+
+Individual agent checks passed: six mocked navigation cases, four mocked video-preview cases and thirteen caption unit cases. Root added five mocked Search-result regressions. The UX agent performed read-only cached-live inspection at 1440, 1024, 768, 390 and 320 px: no horizontal overflow, POST requests or browser errors; native focus remained within the dialog over twenty Tab presses, Escape restored the invoking control, and paper actions/PageDown scrolling remained usable. Reader controls measured 44 px after the change. Baseline wheel checks already kept the background stationary; scroll containment is a preventive rule, not a claimed reproduction of background scrolling.
+
+Combined validation passed **294 backend tests, 70 unique browser cases and 11 context/tool harness cases**, with zero final failures or skips. TypeScript, production build and lint passed. The full browser run passed all 70; a final canonical YouTube card-link guard then passed five focused cases. [Browser run/case history](../docs/validation/2026-11-11-multi-agent-ui-browser.json), [backend results](../docs/validation/2026-11-11-multi-agent-ui-python.xml), [harness](../docs/validation/2026-11-11-multi-agent-ui-harness.json), [final receipt](../docs/validation/2026-11-11-multi-agent-ui-final.json).
+
+After restoring the live app, a read-only check traversed Exploration and Saved back to the same main Search, preserving its unsent draft and per-search filter. It opened the existing 92-segment live caption result and checked all five widths again: minimum reader target 44 px, zero horizontal overflow/browser errors, one YouTube action, no inapplicable DOI controls, and native focus containment. API mutations were blocked in the test browser; it made **zero POST requests** and preserved provider usage/model-cost holds. [Read-only live evidence](../docs/validation/2026-11-11-multi-agent-ui-live-ui.json), [desktop](../docs/validation/2026-11-11-multi-agent-ui-1440.png), [mobile](../docs/validation/2026-11-11-multi-agent-ui-390.png).
+
+The live app is left running at **http://127.0.0.1:3100/** with its nine provider services. No new live search, transcript fetch or hosted-model request was submitted in this review. Prior live caption acceptance remains a dated single-video access check. The existing model allowance remains separately blocked at $0.21650213 of recorded cost/holds; it was not reset or increased. Web search remains deferred. [Credential scan scope](../docs/validation/2026-11-11-multi-agent-ui-privacy.json).

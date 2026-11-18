@@ -1,0 +1,129 @@
+{
+  "schema_version": 1,
+  "repository": "https://github.com/pbakaus/impeccable",
+  "commit": "2b86d9c07b97d4bed7de23583e1bd1e58dd2baae",
+  "retrieved_at": "2026-11-15",
+  "upstream_skill_version": "4.9.1",
+  "integration": "Written guidance only; upstream runtime is not installed",
+  "staging": {
+    "helper": "OpenAI Codex skill-installer/scripts/install-skill-from-github.py",
+    "method": "git sparse",
+    "destination": "Temporary directory outside skill discovery",
+    "initial_download_result": "Local Python SSL certificate verification failed; retained verification and used Git fallback"
+  },
+  "engine_executed": false,
+  "runtime_scripts_or_binaries_imported": false,
+  "hooks_installed": false,
+  "imported_files": [
+    {
+      "path": "references/upstream-skill.md",
+      "source_path": ".agents/skills/impeccable/SKILL.md",
+      "source_url": "https://github.com/pbakaus/impeccable/blob/2b86d9c07b97d4bed7de23583e1bd1e58dd2baae/.agents/skills/impeccable/SKILL.md",
+      "source_sha256": "233c81d5a07f0ed0c9d16d200057178b2e026c139c11ad1c161eadfb7ee467a8",
+      "bundled_sha256": "d6a0a6dd36fe1af086a8cc7521ff4af252a59448a2d33a2fe68a8e68b511e47e",
+      "modifications": [
+        "Prepended guidance-only provenance/modification notice",
+        "Expanded relative Markdown links to immutable upstream GitHub links"
+      ]
+    },
+    {
+      "path": "references/upstream/operate.md",
+      "source_path": ".agents/skills/impeccable/reference/operate.md",
+      "source_url": "https://github.com/pbakaus/impeccable/blob/2b86d9c07b97d4bed7de23583e1bd1e58dd2baae/.agents/skills/impeccable/reference/operate.md",
+      "source_sha256": "a9d2203acd45ca33a13d5c68b02b23ed512425ac15f0e8438318ed124b43729d",
+      "bundled_sha256": "25c5b285186956dfa4b95b0b7f080b4b70341d22fdb1ba820fc021c48520dea1",
+      "modifications": [
+        "Prepended guidance-only provenance/modification notice",
+        "Expanded relative Markdown links to immutable upstream GitHub links"
+      ]
+    },
+    {
+      "path": "references/upstream/polish.md",
+      "source_path": ".agents/skills/impeccable/reference/polish.md",
+      "source_url": "https://github.com/pbakaus/impeccable/blob/2b86d9c07b97d4bed7de23583e1bd1e58dd2baae/.agents/skills/impeccable/reference/polish.md",
+      "source_sha256": "81666fc7f783b4e3514db6554e713dc0479bd9cdedb06e93d15f8b579aae869a",
+      "bundled_sha256": "1fdd7e9994f1c28f754c6cf229a0b065f1c811bc23c916f3ea433e77476ccf63",
+      "modifications": [
+        "Prepended guidance-only provenance/modification notice",
+        "Expanded relative Markdown links to immutable upstream GitHub links"
+      ]
+    },
+    {
+      "path": "references/upstream/layout.md",
+      "source_path": ".agents/skills/impeccable/reference/layout.md",
+      "source_url": "https://github.com/pbakaus/impeccable/blob/2b86d9c07b97d4bed7de23583e1bd1e58dd2baae/.agents/skills/impeccable/reference/layout.md",
+      "source_sha256": "0bc7d7971b3edf2acd0580e847458dc6d84129d90715b452799ace3bed815c7c",
+      "bundled_sha256": "0cc1eaeb9e5c3ad4e73f9cbaf08b1c840cf7a2a8b35e44eb45484488368fea2b",
+      "modifications": [
+        "Prepended guidance-only provenance/modification notice",
+        "Expanded relative Markdown links to immutable upstream GitHub links"
+      ]
+    },
+    {
+      "path": "references/upstream/typeset.md",
+      "source_path": ".agents/skills/impeccable/reference/typeset.md",
+      "source_url": "https://github.com/pbakaus/impeccable/blob/2b86d9c07b97d4bed7de23583e1bd1e58dd2baae/.agents/skills/impeccable/reference/typeset.md",
+      "source_sha256": "f943b43e009cedb13e97ab3c44049950b905b36b4325cfefc2155ea810d1b626",
+      "bundled_sha256": "dd3486b97d3133bf62e05dfa941d19b0f9133fae5cdd55fe921f49cca98ac0b4",
+      "modifications": [
+        "Prepended guidance-only provenance/modification notice",
+        "Expanded relative Markdown links to immutable upstream GitHub links"
+      ]
+    },
+    {
+      "path": "references/upstream/clarify.md",
+      "source_path": ".agents/skills/impeccable/reference/clarify.md",
+      "source_url": "https://github.com/pbakaus/impeccable/blob/2b86d9c07b97d4bed7de23583e1bd1e58dd2baae/.agents/skills/impeccable/reference/clarify.md",
+      "source_sha256": "173dd66abe65633910dcb04a51f40d6ff2a793f87088f022a02fc4cad24dd133",
+      "bundled_sha256": "fca13c67f0989abe771ee740a8908382b403c57293f01964dde3e3c74ddbc720",
+      "modifications": [
+        "Prepended guidance-only provenance/modification notice",
+        "Expanded relative Markdown links to immutable upstream GitHub links"
+      ]
+    },
+    {
+      "path": "references/upstream/audit.md",
+      "source_path": ".agents/skills/impeccable/reference/audit.md",
+      "source_url": "https://github.com/pbakaus/impeccable/blob/2b86d9c07b97d4bed7de23583e1bd1e58dd2baae/.agents/skills/impeccable/reference/audit.md",
+      "source_sha256": "c1cc198c61bf4cc32416210f490e9245ecf58d57c17d4a0659f79da0f6ffac2b",
+      "bundled_sha256": "71a93e013ffd9d6468241d94b61c27f72ff836669d3225b9956bea90583c344e",
+      "modifications": [
+        "Prepended guidance-only provenance/modification notice",
+        "Expanded relative Markdown links to immutable upstream GitHub links"
+      ]
+    },
+    {
+      "path": "references/upstream/critique.md",
+      "source_path": ".agents/skills/impeccable/reference/critique.md",
+      "source_url": "https://github.com/pbakaus/impeccable/blob/2b86d9c07b97d4bed7de23583e1bd1e58dd2baae/.agents/skills/impeccable/reference/critique.md",
+      "source_sha256": "945c46add59c1519b137263b1dc7b68d631f65f4e48c6bac1a944499dbbbdb42",
+      "bundled_sha256": "b5ddda471ae40153d87032f11045ec4b076c6e51560a7944806b241a4c217fe0",
+      "modifications": [
+        "Prepended guidance-only provenance/modification notice",
+        "Expanded relative Markdown links to immutable upstream GitHub links"
+      ]
+    },
+    {
+      "path": "LICENSE",
+      "source_path": "LICENSE",
+      "source_url": "https://github.com/pbakaus/impeccable/blob/2b86d9c07b97d4bed7de23583e1bd1e58dd2baae/LICENSE",
+      "source_sha256": "02bb8c3b4e70190e3986c0404ad2fd8d639b4f534252d82379cc1b502b6d1812",
+      "bundled_sha256": "02bb8c3b4e70190e3986c0404ad2fd8d639b4f534252d82379cc1b502b6d1812",
+      "modifications": []
+    },
+    {
+      "path": "NOTICE.md",
+      "source_path": "NOTICE.md",
+      "source_url": "https://github.com/pbakaus/impeccable/blob/2b86d9c07b97d4bed7de23583e1bd1e58dd2baae/NOTICE.md",
+      "source_sha256": "c60a093c2845fd9fb82f9c6f742ece31f379f8190b535309d32d66c45ccffdcb",
+      "bundled_sha256": "c60a093c2845fd9fb82f9c6f742ece31f379f8190b535309d32d66c45ccffdcb",
+      "modifications": []
+    }
+  ],
+  "locally_authored_files": [
+    "SKILL.md",
+    "agents/openai.yaml",
+    "references/engine-boundary.md",
+    "UPSTREAM.md"
+  ]
+}

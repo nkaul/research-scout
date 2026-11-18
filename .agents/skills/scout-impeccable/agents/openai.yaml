@@ -1,0 +1,4 @@
+interface:
+  display_name: "Scout Impeccable"
+  short_description: "Preserve Scout workflows while refining UI craft"
+  default_prompt: "Use $scout-impeccable to refine or compare a Research Scout interface within its current workflow, using pinned Impeccable guidance and honest visual evidence."

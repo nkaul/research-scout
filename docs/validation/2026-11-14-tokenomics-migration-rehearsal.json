@@ -1,0 +1,19 @@
+{
+  "date": "2026-11-14",
+  "passed": true,
+  "scope": "Private copy of actual historical ledger into isolated SQLite; original live ledger unchanged.",
+  "operations": 13,
+  "unknown_usage_invocations": 4,
+  "retained_known_estimate_usd": 0.016502125,
+  "retained_unknown_hold_usd": 0.2,
+  "new_allowance": 100,
+  "new_used": 0,
+  "new_reserved": 0,
+  "idempotent_import": true,
+  "sqlite_integrity": "ok",
+  "foreign_key_violations": 0,
+  "journal_mode": "delete",
+  "paid_model_calls": 0,
+  "live_database_initialized": false,
+  "original_ledger_sha256": "2c9907fcc6086659a7f662b24e964ae231bce6a7e0b6aaf750bf5f1a4eaf5a5c"
+}

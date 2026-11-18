@@ -1,0 +1,74 @@
+{
+  "date": "2026-11-14",
+  "passed": true,
+  "scope": "Optional remembered AI refinement beside source/date controls; explicit direct mode and used/100 credit display.",
+  "backend": {
+    "passed": 410,
+    "skipped": 1,
+    "seconds": 106.49,
+    "ruff": "passed"
+  },
+  "browser": {
+    "unique_cases_verified": 213,
+    "full": {
+      "passed": 211,
+      "failed": 1
+    },
+    "regression": "Always-visible date fields invoked native constraint validation before the existing inline guard; form now uses the existing application date guard. Original assertion retained.",
+    "final_affected": {
+      "passed": 58,
+      "failed": 1
+    },
+    "final_guard": {
+      "passed": 3,
+      "failed": 0
+    },
+    "selector_correction": "The settings field locator uses its exact accessible label now that compact custom-date fields are always visible; all behavior assertions retained.",
+    "additional_regression_case": "Direct invalid-range admission and DOI filter independence",
+    "automatic_retries": 0
+  },
+  "frontend": {
+    "typecheck": "passed",
+    "production_build": "passed",
+    "source_files_matched": 72
+  },
+  "harness": {
+    "passed": 11,
+    "total": 11,
+    "report": "2026-11-14-optional-ai-harness.json",
+    "scope": "Authored/scripted agent fixtures, not paid model quality evaluation"
+  },
+  "behavior": {
+    "default_ai_refinement": true,
+    "choice_remembered": true,
+    "shared_search_and_exploration": true,
+    "toggle_never_submits": true,
+    "off_sends_explicit_agentic_false": true,
+    "direct_uses_no_model_credits": true,
+    "ai_failure_never_downgrades": true,
+    "source_date_video_scope_preserved": true,
+    "saved_trace_uses_actual_mode": true,
+    "direct_data_and_repos_supported": true,
+    "credit_numerator": "used"
+  },
+  "live": {
+    "services_healthy": 13,
+    "used_credits": 6,
+    "available_credits": 94,
+    "reserved_credits": 0,
+    "accounting_unchanged": true,
+    "protected_existing_files": 739,
+    "existing_file_changes": 0,
+    "saved_paper_cards": 58,
+    "saved_video_cards": 10,
+    "paid_model_calls": 0,
+    "live_source_searches": 0,
+    "allowance_resets": 0,
+    "api_writes_in_live_ui_check": 0
+  },
+  "evidence": {
+    "direct_fixture": "2026-11-14-optional-ai-direct-fixture.json",
+    "saved_live_ui": "2026-11-14-optional-ai-live-readonly.json",
+    "privacy": "2026-11-14-optional-ai-privacy.json"
+  }
+}

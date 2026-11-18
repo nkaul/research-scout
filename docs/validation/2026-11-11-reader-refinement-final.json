@@ -1,0 +1,502 @@
+{
+  "date": "2026-11-11",
+  "status": "passed",
+  "scope": "Compact reader, stable aligned actions, collapsible reporting, record loading masks and explicit custom-date refresh.",
+  "checks": {
+    "unique_browser_cases_passed": 45,
+    "final_followup_passed": 20,
+    "final_loading_guard_related_passed": 10,
+    "new_inert_guard_passed": 1,
+    "typescript": "passed",
+    "production_build": "passed in isolated source copy",
+    "diff_check": "passed"
+  },
+  "browser_runs": [
+    {
+      "name": "reader-acceptance",
+      "stats": {
+        "startTime": "2026-11-12T04:10:47.601Z",
+        "duration": 212482.22699999998,
+        "expected": 40,
+        "skipped": 0,
+        "unexpected": 4,
+        "flaky": 0
+      },
+      "cases": [
+        {
+          "file": "automatic-discovery.spec.ts",
+          "title": "default Search automatically routes four resources and progressively groups DOI observations with integrated access",
+          "status": "expected"
+        },
+        {
+          "file": "automatic-discovery.spec.ts",
+          "title": "default chat needs no provider selection and a blocked automatic access check stays visible without retrying",
+          "status": "expected"
+        },
+        {
+          "file": "automatic-discovery.spec.ts",
+          "title": "compacted history restores one saved turn with a GET and retains it across compact SSE updates",
+          "status": "expected"
+        },
+        {
+          "file": "date-slider-loading.spec.ts",
+          "title": "date slider uses accessible adaptive year stops and submits the selected publication bounds",
+          "status": "expected"
+        },
+        {
+          "file": "date-slider-loading.spec.ts",
+          "title": "custom slider stop retains edited bounds and existing browser preferences",
+          "status": "expected"
+        },
+        {
+          "file": "date-slider-loading.spec.ts",
+          "title": "atom and result skeleton cover pending admission and stop after retrieval completes",
+          "status": "expected"
+        },
+        {
+          "file": "navigation-stability.spec.ts",
+          "title": "Search survives chat source inspection and returns with its draft and per-search filter",
+          "status": "expected"
+        },
+        {
+          "file": "navigation-stability.spec.ts",
+          "title": "filters survive saved views and history without leaking into another search",
+          "status": "expected"
+        },
+        {
+          "file": "navigation-stability.spec.ts",
+          "title": "a delayed legacy run cannot resurrect after New research",
+          "status": "expected"
+        },
+        {
+          "file": "navigation-stability.spec.ts",
+          "title": "slow history does not block readiness or erase the current recent search",
+          "status": "expected"
+        },
+        {
+          "file": "navigation-stability.spec.ts",
+          "title": "New research fences a late create response without replay or UI resurrection",
+          "status": "expected"
+        },
+        {
+          "file": "navigation-stability.spec.ts",
+          "title": "New research fences a late send response without replay or UI resurrection",
+          "status": "expected"
+        },
+        {
+          "file": "reader-refinement.spec.ts",
+          "title": "reader suppresses duplicate identity in every tab and keeps secondary reports collapsed",
+          "status": "expected"
+        },
+        {
+          "file": "reader-refinement.spec.ts",
+          "title": "paper and video actions stay on one line while reports open separately",
+          "status": "expected"
+        },
+        {
+          "file": "reader-refinement.spec.ts",
+          "title": "slow paper and video reads show a skeleton without allowing an obsolete read to win",
+          "status": "expected"
+        },
+        {
+          "file": "reader-refinement.spec.ts",
+          "title": "applying a custom range dispatches the new bounds and replaces the results",
+          "status": "expected"
+        },
+        {
+          "file": "research-projects.spec.ts",
+          "title": "projects group concepts, multiple queries and explicitly saved source versions across reload",
+          "status": "unexpected"
+        },
+        {
+          "file": "research-projects.spec.ts",
+          "title": "save chooser pins the resource and adding another concept remains possible",
+          "status": "expected"
+        },
+        {
+          "file": "right-panel-layout.spec.ts",
+          "title": "desktop details dock on the right and leave research controls interactive",
+          "status": "expected"
+        },
+        {
+          "file": "right-panel-layout.spec.ts",
+          "title": "video cards keep a small thumbnail next to their description and saved captions in the panel",
+          "status": "expected"
+        },
+        {
+          "file": "right-panel-layout.spec.ts",
+          "title": "narrow details remain an inline panel with no horizontal overflow or backdrop",
+          "status": "expected"
+        },
+        {
+          "file": "seamless-results.spec.ts",
+          "title": "hover and row keyboard movement follow the newest saved source without stealing focus",
+          "status": "expected"
+        },
+        {
+          "file": "seamless-results.spec.ts",
+          "title": "abstracts expand inline and the global display toggle adds no retrieval calls",
+          "status": "expected"
+        },
+        {
+          "file": "seamless-results.spec.ts",
+          "title": "returning to the active row supersedes a different pending metadata read",
+          "status": "expected"
+        },
+        {
+          "file": "seamless-results.spec.ts",
+          "title": "reported PDFs embed only on request and HTTP arXiv records use the canonical HTTPS document",
+          "status": "expected"
+        },
+        {
+          "file": "seamless-results.spec.ts",
+          "title": "PDF locations validate legacy IDs and exclude malformed, local and credential-bearing URLs",
+          "status": "expected"
+        },
+        {
+          "file": "seamless-results.spec.ts",
+          "title": "a touch pointer does not open or fetch the reader automatically",
+          "status": "expected"
+        },
+        {
+          "file": "search-results-resilience.spec.ts",
+          "title": "local filtering includes available abstracts and distinguishes hidden videos from missing access",
+          "status": "expected"
+        },
+        {
+          "file": "search-results-resilience.spec.ts",
+          "title": "a project query reopens its exact earlier turn and keeps that query on reload",
+          "status": "expected"
+        },
+        {
+          "file": "search-results-resilience.spec.ts",
+          "title": "related evidence stays in the current resource tab and outside primary counts",
+          "status": "expected"
+        },
+        {
+          "file": "search-results-resilience.spec.ts",
+          "title": "an obsolete preview failure cannot contaminate or block the next search preview",
+          "status": "expected"
+        },
+        {
+          "file": "search-results-resilience.spec.ts",
+          "title": "an obsolete compact-history failure does not replace the current results with an error",
+          "status": "expected"
+        },
+        {
+          "file": "search-results-resilience.spec.ts",
+          "title": "opening a full running history cannot freeze subsequent compact completion updates",
+          "status": "expected"
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "top Search keeps progressive papers and videos in separate remembered tabs without opening chat",
+          "status": "expected"
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "a source opens a right panel while preserving the search, tab, filter and draft",
+          "status": "unexpected"
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "AI-refined top Search stays a search and mobile category views do not add requests",
+          "status": "expected"
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "a new explicit manual direct search replaces prior grouped Search results",
+          "status": "unexpected"
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "source removals and adaptive date presets survive reload, history and New research",
+          "status": "expected"
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "custom years persist and removing every source prevents an accidental fallback search",
+          "status": "expected"
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "the Papers lane retains exact registry metadata when there is no combined All tab",
+          "status": "expected"
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "video thumbnails open a stable preview and transcript loading is explicit and saved",
+          "status": "expected"
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "blocked captions leave the video usable and do not retry automatically",
+          "status": "expected"
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "a delayed preview cannot replace a newly cleared search",
+          "status": "unexpected"
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "startup tabs wait for hydration and an early Videos choice survives a delayed saved search",
+          "status": "expected"
+        }
+      ]
+    },
+    {
+      "name": "reader-final-followup",
+      "stats": {
+        "startTime": "2026-11-12T04:14:49.001Z",
+        "duration": 63695.791000000005,
+        "expected": 20,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "cases": [
+        {
+          "file": "automatic-discovery.spec.ts",
+          "title": "default Search automatically routes four resources and progressively groups DOI observations with integrated access",
+          "status": "expected"
+        },
+        {
+          "file": "automatic-discovery.spec.ts",
+          "title": "default chat needs no provider selection and a blocked automatic access check stays visible without retrying",
+          "status": "expected"
+        },
+        {
+          "file": "automatic-discovery.spec.ts",
+          "title": "compacted history restores one saved turn with a GET and retains it across compact SSE updates",
+          "status": "expected"
+        },
+        {
+          "file": "reader-refinement.spec.ts",
+          "title": "reader suppresses duplicate identity in every tab and keeps secondary reports collapsed",
+          "status": "expected"
+        },
+        {
+          "file": "reader-refinement.spec.ts",
+          "title": "paper and video actions stay on one line while reports open separately",
+          "status": "expected"
+        },
+        {
+          "file": "reader-refinement.spec.ts",
+          "title": "slow paper and video reads show a skeleton without allowing an obsolete read to win",
+          "status": "expected"
+        },
+        {
+          "file": "reader-refinement.spec.ts",
+          "title": "applying a custom range dispatches the new bounds and replaces the results",
+          "status": "expected"
+        },
+        {
+          "file": "research-projects.spec.ts",
+          "title": "projects group concepts, multiple queries and explicitly saved source versions across reload",
+          "status": "expected"
+        },
+        {
+          "file": "research-projects.spec.ts",
+          "title": "save chooser pins the resource and adding another concept remains possible",
+          "status": "expected"
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "top Search keeps progressive papers and videos in separate remembered tabs without opening chat",
+          "status": "expected"
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "a source opens a right panel while preserving the search, tab, filter and draft",
+          "status": "expected"
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "AI-refined top Search stays a search and mobile category views do not add requests",
+          "status": "expected"
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "a new explicit manual direct search replaces prior grouped Search results",
+          "status": "expected"
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "source removals and adaptive date presets survive reload, history and New research",
+          "status": "expected"
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "custom years persist and removing every source prevents an accidental fallback search",
+          "status": "expected"
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "the Papers lane retains exact registry metadata when there is no combined All tab",
+          "status": "expected"
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "video thumbnails open a stable preview and transcript loading is explicit and saved",
+          "status": "expected"
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "blocked captions leave the video usable and do not retry automatically",
+          "status": "expected"
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "a delayed preview cannot replace a newly cleared search",
+          "status": "expected"
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "startup tabs wait for hydration and an early Videos choice survives a delayed saved search",
+          "status": "expected"
+        }
+      ]
+    },
+    {
+      "name": "reader-guard",
+      "stats": {
+        "startTime": "2026-11-12T04:19:30.452Z",
+        "duration": 29363.898999999998,
+        "expected": 10,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "cases": [
+        {
+          "file": "reader-refinement.spec.ts",
+          "title": "reader suppresses duplicate identity in every tab and keeps secondary reports collapsed",
+          "status": "expected"
+        },
+        {
+          "file": "reader-refinement.spec.ts",
+          "title": "paper and video actions stay on one line while reports open separately",
+          "status": "expected"
+        },
+        {
+          "file": "reader-refinement.spec.ts",
+          "title": "slow paper and video reads show a skeleton without allowing an obsolete read to win",
+          "status": "expected"
+        },
+        {
+          "file": "reader-refinement.spec.ts",
+          "title": "applying a custom range dispatches the new bounds and replaces the results",
+          "status": "expected"
+        },
+        {
+          "file": "seamless-results.spec.ts",
+          "title": "hover and row keyboard movement follow the newest saved source without stealing focus",
+          "status": "expected"
+        },
+        {
+          "file": "seamless-results.spec.ts",
+          "title": "abstracts expand inline and the global display toggle adds no retrieval calls",
+          "status": "expected"
+        },
+        {
+          "file": "seamless-results.spec.ts",
+          "title": "returning to the active row supersedes a different pending metadata read",
+          "status": "expected"
+        },
+        {
+          "file": "seamless-results.spec.ts",
+          "title": "reported PDFs embed only on request and HTTP arXiv records use the canonical HTTPS document",
+          "status": "expected"
+        },
+        {
+          "file": "seamless-results.spec.ts",
+          "title": "PDF locations validate legacy IDs and exclude malformed, local and credential-bearing URLs",
+          "status": "expected"
+        },
+        {
+          "file": "seamless-results.spec.ts",
+          "title": "a touch pointer does not open or fetch the reader automatically",
+          "status": "expected"
+        }
+      ]
+    },
+    {
+      "name": "reader-inert",
+      "stats": {
+        "startTime": "2026-11-12T04:20:32.069Z",
+        "duration": 4214.872,
+        "expected": 1,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "cases": [
+        {
+          "file": "reader-refinement.spec.ts",
+          "title": "loading another record makes old actions inert and closing prevents a late reopen",
+          "status": "expected"
+        }
+      ]
+    }
+  ],
+  "live_cached_inspection": {
+    "date": "2026-11-11",
+    "passed": true,
+    "evidence": "Read-only live saved metadata/captions. Browser blocks API writes; no new search, transcript acquisition or model call.",
+    "post_requests": 0,
+    "browser_errors": [],
+    "pointer_preview_follows_rows": true,
+    "keyboard_preview_follows_rows": true,
+    "passive_preview_keeps_metadata_tab_and_focus": true,
+    "abstract_display_toggle_no_writes": true,
+    "saved_captions_present": true,
+    "source_attempts_unchanged": true,
+    "model_cost_and_holds_unchanged": true,
+    "responsive": [
+      {
+        "width": 1440,
+        "overflow": false
+      },
+      {
+        "width": 1024,
+        "overflow": false
+      },
+      {
+        "width": 900,
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "overflow": false
+      },
+      {
+        "width": 320,
+        "overflow": false
+      }
+    ],
+    "screenshots": [
+      "docs/validation/2026-11-11-reader-refinement-1440.png",
+      "docs/validation/2026-11-11-reader-refinement-390.png"
+    ]
+  },
+  "source_sha256": {
+    "frontend/src/components/source-preview.tsx": "5bab5ce4959595d542b827796454a9250728e73f0c698404294f59290f02efd1",
+    "frontend/src/components/research-workspace.tsx": "20750bbeacd43771b8335108d34a14deef23686f70c7e7a5fdca95ce33f9d1e7",
+    "frontend/src/components/search-options.tsx": "ba8a973f361318510e55ac2dbe5da235400b4c4f7417df597ec87d22270c1514",
+    "frontend/src/components/search-results.tsx": "9ef9d32eb4bf162fb6adf6a3ab8ec59b866860d642b4664ce0c4ba74009ffb82",
+    "frontend/src/app/globals.css": "c85523324c5ac486c3c35d720581b6b2d99020e62c803520bd9ce2f98aaa490c",
+    "tests/browser/reader-refinement.spec.ts": "3e6eb2f31121ce4fd7989ccf5e12409aa7f93226dc21d08f193ffc3a3380ff9a",
+    "tests/browser/fixture-api.ts": "347f98891e309d381748a2192c5effbe1ca14499d6cae1d348f012e1008f7e6b"
+  },
+  "notes": [
+    "Initial44-case run passed40; one legacy metadata selector and three mock-SSE timing cases were corrected, then affected20-case rerun passed. Final loading guard passed10 related cases plus1 new inert/late-close case.",
+    "No backend code changed; previous301-case backend checkpoint remains dated evidence and was not rerun.",
+    "No new live retrieval, caption acquisition or model work was performed. The live app was not restarted.",
+    "Custom date edits refresh on explicit Apply range & search, preserving saved history and selected sources."
+  ]
+}

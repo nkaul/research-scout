@@ -1,0 +1,213 @@
+{
+  "generated_at": "2026-11-16T03:30:46.971Z",
+  "frontend": "http://127.0.0.1:3190",
+  "core": "http://127.0.0.1:8190",
+  "screenshots": [
+    "landing-auth-2026-11-15-landing-desktop.png",
+    "landing-auth-2026-11-15-login-desktop.png",
+    "landing-auth-2026-11-15-landing-mobile.png",
+    "landing-auth-2026-11-15-login-mobile.png",
+    "landing-auth-2026-11-15-account-320.png"
+  ],
+  "sourceHashes": [
+    {
+      "file": "backend/src/research_scout/auth.py",
+      "sha256": "11eca0cfde71d927138bb032260afa131a0e6f20db63cc390d9ea1cebafb0295"
+    },
+    {
+      "file": "backend/src/research_scout/settings.py",
+      "sha256": "f279a59375962df8684493996e2dda133d51908434c5541547feb51c55063a30"
+    },
+    {
+      "file": "backend/src/research_scout/api.py",
+      "sha256": "6dc1cd5f1a8172c2c4aab3802697ac8919bc52d95b5a4dfbc6464bb14de6666d"
+    },
+    {
+      "file": "frontend/src/lib/auth-client.ts",
+      "sha256": "5cd905387f23e2b53ef7da812ba2b51c3326166253629fef0ceee79226203319"
+    },
+    {
+      "file": "frontend/src/lib/auth-server.ts",
+      "sha256": "38955595738a0a00101593fa073484f7ff7784547fd5c66976152a9deaafbe5c"
+    },
+    {
+      "file": "frontend/src/lib/api.ts",
+      "sha256": "53390a964582ac3a76e98460c72ec0d2b106a3c227212c88f69dda32962adfe4"
+    },
+    {
+      "file": "frontend/src/components/auth-panel.tsx",
+      "sha256": "497d8d7b121cbe8bf91d7a6514eb3e4cc535572f0adaf42d80beed5331ebb396"
+    },
+    {
+      "file": "frontend/src/components/google-sign-in.tsx",
+      "sha256": "b187dc44c6adf7c268255acf6f6f4ffb912779b4aeeb51179bab29fc7e2ab5d1"
+    },
+    {
+      "file": "frontend/src/components/workspace-account.tsx",
+      "sha256": "6c7e421294b981244db77ed3de120781fd0366026b65c96dc9f131cda0c581fa"
+    },
+    {
+      "file": "frontend/src/components/workspace-account.module.css",
+      "sha256": "9f43bdfb5d44ca1b631b7ab70c677b89126dc9d2402684a29ee416bd14fe0ed7"
+    },
+    {
+      "file": "frontend/src/components/landing-page.tsx",
+      "sha256": "c5fccd1d7450721b803f5189fe7892c7df4fb5f931c719ececb81c8a1d00e777"
+    },
+    {
+      "file": "frontend/src/components/landing-page.module.css",
+      "sha256": "df91ff9521a09471afea435a5040b2719c44fb8ce90b93abaef35e7aeaf675c0"
+    },
+    {
+      "file": "frontend/src/components/auth-panel.module.css",
+      "sha256": "71ce31b755f0800442e41ca6c40774c652abd9cce2a1c73df7394e6ad7ade18e"
+    }
+  ],
+  "runtimeErrors": [],
+  "blockedExternalRequests": [
+    "https://accounts.google.com/gsi/client",
+    "https://accounts.google.com/gsi/client"
+  ],
+  "limitations": [
+    "Disposable fixture validation only; no real Google account sign-in, delivery-provider or hosted model/provider operation is exercised.",
+    "Google Identity Services is blocked during offline captures. Any unavailable-button message documents that fallback, not successful Google OAuth."
+  ],
+  "screenshot_dimensions": [
+    {
+      "file": "landing-auth-2026-11-15-landing-desktop.png",
+      "width": 1440,
+      "height": 1080,
+      "sha256": "f57342b2cc8b35423416a8db4bc4feb19c02a2518c6daf0426dca4b1fe394719"
+    },
+    {
+      "file": "landing-auth-2026-11-15-login-desktop.png",
+      "width": 1440,
+      "height": 1080,
+      "sha256": "a7502dc6e9fe2f6194f88e9d41c0e8110dac06c92fb1ee943846c6d86835d025"
+    },
+    {
+      "file": "landing-auth-2026-11-15-landing-mobile.png",
+      "width": 390,
+      "height": 6035,
+      "sha256": "fe9d43a634e6217d7a764cf0c272de2a504a89fe4013c090e639b8a841b08516"
+    },
+    {
+      "file": "landing-auth-2026-11-15-login-mobile.png",
+      "width": 390,
+      "height": 1253,
+      "sha256": "1e5bd3ddd69dec6ae2faf93a4f0218683b6e1bf850cff20ce10396883e629b4a"
+    },
+    {
+      "file": "landing-auth-2026-11-15-account-320.png",
+      "width": 320,
+      "height": 1080,
+      "sha256": "0fc88e8a7e675ebd6ac4fe59ba2816f42f5120f494e130c80e3678846dfdb88c"
+    }
+  ],
+  "visual_review": {
+    "status": "passed",
+    "observed": "Final landing/login desktop and phone captures plus the authenticated320px Account menu inspected. Illustration badges leave header, source text, footer, legend and caption visible. Account links and Sign out fit fully; Escape returns focus.",
+    "qualification": "Bounded visual/keyboard/reflow proof, not a full WCAG or screen-reader audit. Long phone captures should be viewed at native width."
+  },
+  "evidence": {
+    "original_auth_browser": {
+      "file": "landing-auth-2026-11-15-browser.json",
+      "passed": 8
+    },
+    "public_regression": {
+      "file": "landing-auth-2026-11-15-public-regression.json",
+      "passed": 2
+    },
+    "final_readonly_reflow": {
+      "file": "landing-auth-2026-11-15-final-reflow.json",
+      "passed": 1
+    },
+    "authenticated_account_geometry": {
+      "file": "landing-auth-2026-11-15-account-geometry.json",
+      "passed": 1
+    },
+    "original_eight_auth_flows_repeated_after_css_changes": false,
+    "csrf_rotation": {
+      "file": "landing-auth-2026-11-15-csrf-rotation.json",
+      "passed": true,
+      "network_calls": 0
+    }
+  },
+  "capturedSourceHashes": [
+    {
+      "file": "backend/src/research_scout/auth.py",
+      "sha256": "11eca0cfde71d927138bb032260afa131a0e6f20db63cc390d9ea1cebafb0295"
+    },
+    {
+      "file": "backend/src/research_scout/settings.py",
+      "sha256": "f279a59375962df8684493996e2dda133d51908434c5541547feb51c55063a30"
+    },
+    {
+      "file": "backend/src/research_scout/api.py",
+      "sha256": "6dc1cd5f1a8172c2c4aab3802697ac8919bc52d95b5a4dfbc6464bb14de6666d"
+    },
+    {
+      "file": "frontend/src/lib/auth-client.ts",
+      "sha256": "ae7bcf9ed8c86c29b88b62daee8fd85392d91d09b82f05fc5ba5bd867e41646f"
+    },
+    {
+      "file": "frontend/src/lib/auth-server.ts",
+      "sha256": "38955595738a0a00101593fa073484f7ff7784547fd5c66976152a9deaafbe5c"
+    },
+    {
+      "file": "frontend/src/lib/api.ts",
+      "sha256": "11d173e5f9e48f4a9a6e01f0da15e5e8646d2411bf4392cbef1b89bef9bfcd2e"
+    },
+    {
+      "file": "frontend/src/components/auth-panel.tsx",
+      "sha256": "497d8d7b121cbe8bf91d7a6514eb3e4cc535572f0adaf42d80beed5331ebb396"
+    },
+    {
+      "file": "frontend/src/components/google-sign-in.tsx",
+      "sha256": "b187dc44c6adf7c268255acf6f6f4ffb912779b4aeeb51179bab29fc7e2ab5d1"
+    },
+    {
+      "file": "frontend/src/components/workspace-account.tsx",
+      "sha256": "6c7e421294b981244db77ed3de120781fd0366026b65c96dc9f131cda0c581fa"
+    },
+    {
+      "file": "frontend/src/components/workspace-account.module.css",
+      "sha256": "9f43bdfb5d44ca1b631b7ab70c677b89126dc9d2402684a29ee416bd14fe0ed7"
+    },
+    {
+      "file": "frontend/src/components/landing-page.tsx",
+      "sha256": "c5fccd1d7450721b803f5189fe7892c7df4fb5f931c719ececb81c8a1d00e777"
+    },
+    {
+      "file": "frontend/src/components/landing-page.module.css",
+      "sha256": "df91ff9521a09471afea435a5040b2719c44fb8ce90b93abaef35e7aeaf675c0"
+    },
+    {
+      "file": "frontend/src/components/auth-panel.module.css",
+      "sha256": "71ce31b755f0800442e41ca6c40774c652abd9cce2a1c73df7394e6ad7ade18e"
+    }
+  ],
+  "source_hash_scope": "sourceHashes identifies the final implementation; capturedSourceHashes preserves the browser capture build. Only the two listed client modules changed afterward and are covered by the synthetic protocol proof.",
+  "post_capture_changes": {
+    "reviewed_at": "2026-11-16T03:45:53.434Z",
+    "files": [
+      {
+        "file": "frontend/src/lib/auth-client.ts",
+        "capturedSha256": "ae7bcf9ed8c86c29b88b62daee8fd85392d91d09b82f05fc5ba5bd867e41646f",
+        "currentSha256": "5cd905387f23e2b53ef7da812ba2b51c3326166253629fef0ceee79226203319",
+        "evidence": "landing-auth-2026-11-15-csrf-rotation.json"
+      },
+      {
+        "file": "frontend/src/lib/api.ts",
+        "capturedSha256": "11d173e5f9e48f4a9a6e01f0da15e5e8646d2411bf4392cbef1b89bef9bfcd2e",
+        "currentSha256": "53390a964582ac3a76e98460c72ec0d2b106a3c227212c88f69dda32962adfe4",
+        "evidence": "landing-auth-2026-11-15-csrf-rotation.json"
+      }
+    ],
+    "dom_or_css_changed": false,
+    "screenshots_changed": false,
+    "browser_rerun": false,
+    "validation": "Actual TypeScript clients against a synthetic sequential HTTP protocol; zero network calls. This is not real Google sign-in or browser coverage.",
+    "protocol_script_sha256": "0900427130a426ea55306d3bbb628b04a158f293efbd954891b74d7deb748d65"
+  }
+}

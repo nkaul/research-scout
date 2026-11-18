@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-14",
+  "passed": true,
+  "evidence": "Actual local fixture browser → repository API → LangGraph/DeepAgents → application MCP → isolated public GitHub fixture service. Authored saved AI-plan context; no hosted model or live provider call.",
+  "records": 3,
+  "candidate_matches": 1,
+  "unrelated_high_star_repository_unassessed": true,
+  "readme_identity_checks_confirmed": true,
+  "usage": {
+    "github_http_attempts": 0,
+    "search_attempts": 0,
+    "readme_attempts": 0,
+    "identity_attempts": 0,
+    "model_http_attempts": 0,
+    "simulated_attempts": 7
+  },
+  "readme_limit": 3,
+  "request_limit": 7,
+  "measured_timing_spans": 7,
+  "parent_unchanged": true,
+  "reload_attempts_unchanged": true,
+  "only_one_explicit_post": true,
+  "external_browser_requests": 0,
+  "browser_errors": [],
+  "responsive": [
+    {
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "width": 1100,
+      "overflow": false
+    },
+    {
+      "width": 970,
+      "overflow": false
+    },
+    {
+      "width": 901,
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "overflow": false
+    }
+  ]
+}

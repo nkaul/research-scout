@@ -1,0 +1,77 @@
+/* Impeccable-guided Read emphasis: UI stays ordinary; prose gets a reading role. */
+body {
+  --bg: #f7f5f0;
+  --surface: #fffefb;
+  --surface-alt: #f0ede6;
+  --ink: #282f39;
+  --muted: #626975;
+  --line: #e0dcd3;
+  --brand: #1967d2;
+  --brand-soft: #eaf1fc;
+  --radius: 11px;
+  --radius-sm: 6px;
+  --shadow: 0 5px 16px rgb(49 45 35 / 4%);
+  --font-ui: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-reading: "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  --reader-width: 460px;
+  --sidebar-width: 218px;
+  --row-gap: 16px;
+  --main-gap: 26px;
+  --card-pad: 22px;
+}
+.sidebar { background: #f0ede6; border-inline-end: 1px solid #e0dcd3; }
+.brand { letter-spacing: -.025em; }
+.brand-tagline { max-width: 21ch; line-height: 1.7; }
+.workspace-switch { background: #faf8f3; }
+.topbar { background: #faf9f5; border-color: #e5e0d7; }
+.workspace { padding-block-start: 28px; }
+.page-heading { margin-block-end: 23px; }
+.page-heading h1 { font-size: 28px; line-height: 1.2; letter-spacing: -.04em; }
+.page-subtitle { max-width: 60ch; line-height: 1.7; }
+.search-panel { background: #fffefb; border-color: #ddd8cf; box-shadow: 0 4px 12px rgb(49 45 35 / 3%); }
+.query-main { padding-block: 20px; }
+.query-field textarea { font-size: 19px; line-height: 1.55; }
+.toolbar { background: #fbfaf6; border-color: #e9e3d9; }
+.focus-strip { background: transparent; border: 0; border-bottom: 1px solid #ded9cf; border-radius: 0; padding: 16px 0; gap: 8px; }
+.focus-query { max-width: 88ch; font-size: 14px; line-height: 1.65; }
+.focus-chips { margin-block-start: 5px; }
+.resource-tabs { margin-block-start: 17px; gap: 8px; }
+.resource-tabs button { border-radius: 7px; }
+.resource-tabs button[aria-selected="true"] { color: #174d9a; background: #eaf1fc; border-color: #cbdcf3; }
+.result-tools { min-height: 40px; margin-block-end: 8px; }
+.results-label { font-size: 12px; }
+.result-list { gap: 16px; }
+.result-card { padding: 22px; border: 1px solid #e0dcd3; border-radius: 10px; background: #fffefb; box-shadow: none; }
+.result-card.is-selected { background: #fff; border-color: #a8bfdc; }
+.card-heading { display: block; }
+.card-title button { font-family: var(--font-reading); font-size: 20px; font-weight: 600; line-height: 1.4; letter-spacing: -.018em; }
+.provider-chips { margin-block-start: 8px; }
+.byline { margin-block: 9px 12px; font-size: 12px; line-height: 1.65; }
+.card-tags { margin-block-end: 10px; }
+.excerpt { font-family: var(--font-reading); font-size: 15px; line-height: 1.8; }
+.key-points { padding-inline-start: 19px; }
+.key-points li + li { margin-block-start: 7px; }
+.card-actions { border-top: 1px solid #ebe6dc; margin-block-start: 13px; padding-block-start: 11px; gap: 7px; }
+.reader { background: #fffefb; border: 1px solid #ded8ce; box-shadow: 0 5px 18px rgb(49 45 35 / 4%); }
+.reader-heading { padding: 20px 22px 17px; background: #fffefb; }
+.reader-title { font-family: var(--font-reading); font-size: 23px; line-height: 1.4; font-weight: 600; letter-spacing: -.02em; }
+.reader-kind { font-family: var(--font-ui); }
+.reader-tabs { padding-inline: 18px; border-color: #e9e3d9; }
+.reader-body { padding: 20px 24px; }
+.reader-content { max-width: 66ch; margin-inline: auto; font-family: var(--font-reading); font-size: 16px; line-height: 1.85; }
+.readable-controls, .reader-authors, .fit-note { font-family: var(--font-ui); }
+.reader-authors { font-size: 12px; line-height: 1.7; margin-block-start: 20px; }
+.fit-note { padding: 13px; background: #f4f2eb; border-color: #e5ded0; line-height: 1.7; }
+.reader-footer { padding-inline: 22px; border-color: #e9e3d9; }
+@media (min-width: 901px) { .result-grid.has-reader { grid-template-columns: minmax(0, 1fr) var(--reader-width); } }
+@media (min-width: 901px) and (max-width: 1200px) { body { --reader-width: 400px; --sidebar-width: 204px; --main-gap: 20px; } .result-card { padding: 18px; } }
+@media (max-width: 700px) {
+  .page-heading { margin-block-end: 18px; }
+  .page-heading h1 { font-size: 25px; }
+  .query-field textarea { font-size: 18px; }
+  .result-card { padding: 18px; }
+  .card-title button { font-size: 19px; }
+  .reader-heading { padding: 17px 18px; }
+  .reader-body { padding: 18px; }
+  .reader-title { font-size: 21px; }
+}

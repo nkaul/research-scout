@@ -1,0 +1,231 @@
+{
+  "date": "2026-11-15",
+  "previous_artifact_records": [
+    "ARTIFACTS.json",
+    "ARTIFACTS-observatory.json"
+  ],
+  "preserved_previous_preview_files": [
+    {
+      "path": "datapulse-observatory.html",
+      "sha256": "b7fca7434c6a43c8c2192b69507384315588a238ff8bc99a5d4504a6baa4f696"
+    },
+    {
+      "path": "datapulse-observatory.js",
+      "sha256": "0da6c87b85aa8c420dc37813afae6b541a3c6ca2890ca5f69fd62e30e85cfc6a"
+    },
+    {
+      "path": "datapulse-workspace.html",
+      "sha256": "dbfbf1b8e1315cb389cda743df3500eae95126dfb057e0ceaef6b1310df7f857"
+    },
+    {
+      "path": "impeccable-folio.html",
+      "sha256": "92c94be304308809940f01c390957c585c215d807939de82172ead05ca749d54"
+    },
+    {
+      "path": "impeccable-quiet.html",
+      "sha256": "b0856b53e71e2137c29d296397960dd6a1e4d847da9695ce95e70eae7a6a0382"
+    },
+    {
+      "path": "impeccable-signal.html",
+      "sha256": "954380d0aa945bc91333b82d33e53e110aa0ba21dedec5bf9c9f8fabfd9cf4f3"
+    },
+    {
+      "path": "pro-material.html",
+      "sha256": "469939c0e2c92081ee3d2e37ab3108bd428adac73ce9cbbc15807d8a9937b519"
+    },
+    {
+      "path": "pro-scholar.html",
+      "sha256": "8cd4c917a3ff75b39dffb5d0020247c76e8086468084f2084f4a1becd00076ed"
+    },
+    {
+      "path": "pro-swiss.html",
+      "sha256": "a7ca38ead01ffeeaa16fc662df9d58477be1a6399875ba58ae3a450bffc75b34"
+    },
+    {
+      "path": "screenshots/datapulse-observatory-desktop.png",
+      "sha256": "7fbe96fc23fdf04733c2717d953e232ea37bb1a4aae9ab5e245f23470fdb7137"
+    },
+    {
+      "path": "screenshots/datapulse-observatory-mobile.png",
+      "sha256": "4b0c83a59573fdf2d2e511401a7aae0d26b820c4c9c517148676fd1e8d9c06c0"
+    },
+    {
+      "path": "screenshots/datapulse-workspace-desktop.png",
+      "sha256": "e61e824c871b775eeeb02e7fec1ef3fa85b339cefd0e64ae411a4aef799477a3"
+    },
+    {
+      "path": "screenshots/datapulse-workspace-mobile.png",
+      "sha256": "17cd834ddf26b8998a4ce04c0523bc8adf5416484d1c4258e47cde05127b3488"
+    },
+    {
+      "path": "screenshots/gallery-desktop.png",
+      "sha256": "c3097f9897e267acdfb4950859b8fdc688ed888489e82585426d68184c30bae8"
+    },
+    {
+      "path": "screenshots/gallery-eight-desktop.png",
+      "sha256": "3820b7e927dcfa7a4118b095464cde81688af84d202fe3f7cf761ab90cd03fd8"
+    },
+    {
+      "path": "screenshots/gallery-eight-mobile.png",
+      "sha256": "7195d9d5c94c9522aae2da1fb4085bcc7566f6cbf66f62a6ca7556260db3ef5b"
+    },
+    {
+      "path": "screenshots/gallery-mobile.png",
+      "sha256": "ee44efa58803674d23e709c34dd0965a876302e22065fcb5b3ed0455174666e2"
+    },
+    {
+      "path": "screenshots/impeccable-folio-desktop.png",
+      "sha256": "0b45ee25489ba81ddc6bf6ef6fa94625fcff08af0644ca8ef52fce8338de1de9"
+    },
+    {
+      "path": "screenshots/impeccable-folio-mobile.png",
+      "sha256": "2d79b5228016e456d34b834a536e79853013130872223c66b1cc48a875c79f91"
+    },
+    {
+      "path": "screenshots/impeccable-quiet-desktop.png",
+      "sha256": "900e6d23f49f97f8e54e91a24c53b262e7a4458f39f4417e8546d294a2a0b071"
+    },
+    {
+      "path": "screenshots/impeccable-quiet-mobile.png",
+      "sha256": "6be3b51cae078ec10f7317f8a844ff78c9c3cca1566346d1822e3c4ab5e22fcd"
+    },
+    {
+      "path": "screenshots/impeccable-signal-desktop.png",
+      "sha256": "e134e564cf78d4bc6cd38c5807d52302174090c5ba000bdbdb2df57ae14b4850"
+    },
+    {
+      "path": "screenshots/impeccable-signal-mobile.png",
+      "sha256": "c03e74c8f9c117c4164587fa3697e2fad0f3a821316346ba23b5f0197b04813a"
+    },
+    {
+      "path": "screenshots/pro-material-desktop.png",
+      "sha256": "a539b74bf9f56d1c90af2f5f86ad8798e5e28be18bc8b41e7e0a7ea50cd9d212"
+    },
+    {
+      "path": "screenshots/pro-material-mobile.png",
+      "sha256": "821be4f23765b73066ade685d063b5001dcfb668599af991454164851d7b836e"
+    },
+    {
+      "path": "screenshots/pro-scholar-desktop.png",
+      "sha256": "7a6fbb5021d7924c7ff23b68a46bfce5c31fbdd72239e1b717b83acf537cb5a3"
+    },
+    {
+      "path": "screenshots/pro-scholar-mobile.png",
+      "sha256": "4c7499a861722300ba33d5ec3446e7507c8afec3c692408f5c838b572ebee2eb"
+    },
+    {
+      "path": "screenshots/pro-swiss-desktop.png",
+      "sha256": "a899a50b607b80fa6a69de70f2109bde606c25075cb1da65939930257792be2b"
+    },
+    {
+      "path": "screenshots/pro-swiss-mobile.png",
+      "sha256": "2ac6825ada063cca04b5ac8b086d556bb0c6fa6c038b7906bff68ecb65dd5c61"
+    },
+    {
+      "path": "shared/base.css",
+      "sha256": "639d3a245184c904fe78a921ff9f2a63d29a788fb2c0a0c806a55a0c86026747"
+    },
+    {
+      "path": "shared/mockup.js",
+      "sha256": "a1a0e1c67a6d4788faddc65ecfd80d28d6846056d1e80075e93aa515eb089105"
+    },
+    {
+      "path": "styles/datapulse-observatory.css",
+      "sha256": "2f2bdf8a474ef3ad6522b95d935e4bbf525acd2c6aaf8d7019e293c3e8d3b54e"
+    },
+    {
+      "path": "styles/datapulse-workspace.css",
+      "sha256": "53567c3fd804c06849913c57ace2e17fcc35e7995877c043b1a7c8d0b4930bbf"
+    },
+    {
+      "path": "styles/impeccable-folio.css",
+      "sha256": "277ec6c082d2a17ce9159cb0cb293be4457909b05e04b927cc5c584850a6877a"
+    },
+    {
+      "path": "styles/impeccable-quiet.css",
+      "sha256": "c642a7ff5948d93bddbb3f73671c91ceffa6fc6a8aeba0da196532087f7ae201"
+    },
+    {
+      "path": "styles/impeccable-signal.css",
+      "sha256": "c5c429478e5cb92fb7ee0e9e333193583b425438a1f36a7c3931e6fc6f3f580f"
+    },
+    {
+      "path": "styles/pro-material.css",
+      "sha256": "63f1a5ac3214b53d9a0df1e67c72e9e6e6ed9984d8681aaae1ab0d8e70b7bf2e"
+    },
+    {
+      "path": "styles/pro-scholar.css",
+      "sha256": "d5b468e71b447bb39c42d02c93686196924a0b6c4e7f77fa00439b6b2059cbe0"
+    },
+    {
+      "path": "styles/pro-swiss.css",
+      "sha256": "b3a38b18c66086830146da1b91811378fb6384367111878b2e1e2545f11b0730"
+    }
+  ],
+  "added_or_updated_files": [
+    {
+      "path": "datapulse-app-refined.html",
+      "sha256": "6cd74d7c4a7d62dc6905a4fd134475f5f4f01d58dfb94768011f717d82c08fc9"
+    },
+    {
+      "path": "datapulse-app-refined.js",
+      "sha256": "2e7bcb323fadbfb53bfbc05a1cca6d0605e5f8d46cf87e4b13f5bdc9b6ee05fa"
+    },
+    {
+      "path": "styles/datapulse-app-base.css",
+      "sha256": "639d3a245184c904fe78a921ff9f2a63d29a788fb2c0a0c806a55a0c86026747"
+    },
+    {
+      "path": "styles/datapulse-app-refined.css",
+      "sha256": "8427325cb6c2691bcaf477a1fa3049bb1927d497d4b7b9b7079d885aa293c112"
+    },
+    {
+      "path": "app-refinement-brief.md",
+      "sha256": "ddc10a1d9367b8016f378d267e5545050903a9dd587ed8caec86b375dd447cc9"
+    },
+    {
+      "path": "app-refinement-catalog.json",
+      "sha256": "e93eb71c2cd204d5a57b68a1356ee88a1253955d4157a04336d805308ac072cf"
+    },
+    {
+      "path": "validation-app-refinement.json",
+      "sha256": "637fc84e1995810e1110ad414e085d052eff2d2ba22744ff67cdeba8449a896d"
+    },
+    {
+      "path": "validation-gallery-nine.json",
+      "sha256": "c20e5e81e7447af6342cf1084ec509ee7b145b05a54f016a7c43210929d5bb40"
+    },
+    {
+      "path": "verification-app-refinement.json",
+      "sha256": "d4a34e3b21f2085ba0c8292b233221a1a8ea96a065cfe1d2595e7c7be2471029"
+    },
+    {
+      "path": "privacy-app-refinement.json",
+      "sha256": "22f98f9c9f2bf75562b729e512ad2aa43aa408d227bc9cd2e1b35e80fd9170bc"
+    },
+    {
+      "path": "screenshots/datapulse-app-refined-desktop.png",
+      "sha256": "cabcf5a0d3822062a057de22bbd1e9f5dc69fb8852feeb82c8dae3f45e4d86cd"
+    },
+    {
+      "path": "screenshots/datapulse-app-refined-mobile.png",
+      "sha256": "adf79eafaa69de98b0adbc01d2b9abcd23a146f6794d56eece112c0e984782a8"
+    },
+    {
+      "path": "screenshots/gallery-nine-desktop.png",
+      "sha256": "99732de08eb0f793c7d79347dafb29095370fbf5998e52afa3f6a8717eab3953"
+    },
+    {
+      "path": "screenshots/gallery-nine-mobile.png",
+      "sha256": "c29ef2ffa009a0b3949cdb48caa156bfc36622042798b3329eed34a0892e2ded"
+    },
+    {
+      "path": "index.html",
+      "sha256": "1d8de8fdfae1a930a85fa156fd3003d986ed6f66fdb1ffba08d20ffb05081bd7"
+    },
+    {
+      "path": "README.md",
+      "sha256": "2234c40c77c0d81880422749bf23e2cc3cbb4c8bc32d563852478b8bf4800450"
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "date": "2026-11-10",
+  "status": "passed",
+  "scope": "Full existing Material blue/light-reference UI refresh and isolated YouTube public-video discovery. Google/web search excluded by user direction.",
+  "checks": {
+    "backend": {
+      "passed": 276,
+      "failed": 0,
+      "skipped": 0,
+      "receipt": "docs/validation/2026-11-10-material-blue-youtube-python.xml"
+    },
+    "youtube_readiness_followup": {
+      "passed": 6,
+      "receipt": "docs/validation/2026-11-10-youtube-readiness.xml"
+    },
+    "browser": {
+      "passed": 44,
+      "failed": 0,
+      "skipped": 0
+    },
+    "browser_receipt": "docs/validation/2026-11-10-material-blue-youtube-browser.json",
+    "harness": {
+      "passed": 11,
+      "evidence": "authored structural fixtures; no live accuracy claim"
+    },
+    "ruff": "passed",
+    "typescript": "passed",
+    "production_next_build": "passed"
+  },
+  "fixture_ui": {
+    "date": "2026-11-10",
+    "passed": true,
+    "evidence_kind": "authored fixture videos and papers through actual isolated services and Deep Agents/application MCP; screenshots and saved reads are not live YouTube proof",
+    "status": "SUCCEEDED",
+    "warnings": [],
+    "routing": "auto",
+    "providers": [
+      "openalex",
+      "youtube",
+      "crossref",
+      "arxiv"
+    ],
+    "observations": 24,
+    "canonical_resources": 20,
+    "videos": 6,
+    "video_content": "description only; no abstract/transcript/content acquired",
+    "doi_groups": 2,
+    "access_operations": 2,
+    "usage": {
+      "research_attempts": 8,
+      "model_http_attempts": 0,
+      "model_cost_usd": 0
+    },
+    "read_only_preview_post_requests": 0,
+    "reload_or_description_read_new_calls": 0,
+    "browser_errors": [],
+    "responsive_widths": [
+      1440,
+      390,
+      320
+    ],
+    "screenshots": [
+      "docs/validation/2026-11-10-material-blue-youtube-dashboard.png",
+      "docs/validation/2026-11-10-material-blue-youtube-videos.png",
+      "docs/validation/2026-11-10-material-blue-youtube-390.png",
+      "docs/validation/2026-11-10-material-blue-youtube-320.png"
+    ]
+  },
+  "restored_live_profile": {
+    "date": "2026-11-10",
+    "passed": true,
+    "scope": "Read-only check against restored live profile; no new research/model/YouTube search.",
+    "registered_providers": 9,
+    "youtube": {
+      "mode": "live",
+      "access_configured": false,
+      "access_method": "api_key",
+      "readiness": "needs_access",
+      "blocked_reason": "Configure SCOUT_YOUTUBE_API_KEY and enable YouTube Data API v3 in your Google Cloud project."
+    },
+    "legacy_saved_papers": 26,
+    "legacy_papers_filter_preserved": true,
+    "reload_zero_new_calls": true,
+    "post_requests": 0,
+    "browser_errors": [],
+    "app_url": "http://127.0.0.1:3100",
+    "screenshot": "docs/validation/2026-11-10-material-blue-youtube-live-dashboard.png"
+  },
+  "youtube_live_search": "Not performed: user has no API key yet. Adapter transport/schema tests use authored payloads; actual processes/MCP/browser use labeled fixtures.",
+  "privacy": {
+    "date": "2026-11-10",
+    "scanned_files": 920,
+    "configured_secret_or_contact_hits": [],
+    "env_mode": "0o600",
+    "youtube_key_configured": false,
+    "reference_sha256": {
+      "proposal/ref/preview-v2.html": "8331fb6a527c1966e0ad6ef2a470281eb030a61e223b1da1edc728749c16b11d",
+      "discovery/ux/research-scout-design-handoff/research-scout-mockup.html": "dabb62b0391063b4eb2ef6fd72943652f775e76fa731c7c5d674a4ce6b572a89"
+    },
+    "palette_contrast_ratios": {
+      "white_on_primary_1565c0": 5.75,
+      "primary_text_on_white": 15.96,
+      "muted_text_on_white": 5.66
+    },
+    "contrast_scope": "Selected palette pairs only; not a comprehensive accessibility audit."
+  },
+  "source_sha256": {
+    "frontend/src/app/globals.css": "50f8946213458184ef4ca54758a0ba01d33ab9d3f5b43170649ff4866e6f5678",
+    "frontend/src/components/atom-mark.tsx": "fc86ee9be2fd91cd283c7b09f8d40aca99433e3f61de801b2756a545207e008a",
+    "frontend/src/components/chat-abstract.tsx": "4fc0bfe9fe96c97531f7e051438d210c4f624d1dcacbbd5a61cb7a72b9f822fe",
+    "frontend/src/components/chat-source-card.tsx": "c0b2fb7ebd1cd8d35dede5f035359a36e895b19c884ae65c17d1590ec40bedd6",
+    "frontend/src/components/exploration-chat.tsx": "b6f0865322115601ac1e742fe9fc24f7dce84cd6c14b7047b66b6a75fc2b0980",
+    "frontend/src/components/icon.tsx": "8a889fb07a728b451f712ca73d8031a32c7ca0d553b98c84db455c8dedd4e8bc",
+    "frontend/src/components/research-workspace.tsx": "05a8c3ec856be8b091a2355d4d5fea6cc73675668ca65764bc12d95002d18bb4",
+    "frontend/src/components/resource-filters.tsx": "dd21cabe465aaca0f6ba8649bd16dc87a6720197af69f582078b0e07ef763739",
+    "frontend/src/components/resource-results.tsx": "5b13fb9e9f1e0eaa3db2b5375791e324b893b59317328c59c7232d1fac6c550a",
+    "frontend/src/components/source-preview.tsx": "aaddb0db3870e1125a37d1be91f4bf0a3f2b374916d21001fa89151da0fa95b6",
+    "frontend/src/lib/api.ts": "23e7a47a2d12ab2b1d812790c687b852161b2c4bb409edf09ce581b00e5a0c45",
+    "frontend/src/lib/conversations.ts": "e7c7bf742c89d53dbc13c26cf005859f028b85a0b7c746e7ab08ac58e8a0bb27",
+    "frontend/src/lib/reviewed-sources.ts": "28a96d61028c2b39a7408fd153daba2cfb14cb75e38b75791c8f5633dd8027fb",
+    "scripts/dev.py": "9a6b4a3feda18abc9349fc183f18d025254d4db4f67eddf80c5fa617d515fc3d",
+    "src/research_scout/agents/context.py": "52afa9166f0d95e9fc2b64a1c3a0df994b4a8543f1d63fe84dd332b966b7156d",
+    "src/research_scout/contracts.py": "e9504c609b4e078e097328e1b725ceb5ea5e7beb1ab98c87e3bc7e342e70b728",
+    "src/research_scout/conversations.py": "0bd8b7fc4b5319aa014257d7f5108e97d382449cb81bd66bea6b736c895efdc2",
+    "src/research_scout/core.py": "87c800ccef64e5ee9a1c9fe79a7a6339eeb6ba5085e620ba5cc37217a985c04f",
+    "src/research_scout/federation.py": "81626641c3f8ca85e2497548b5c7037a413afb938d50eb40f14647996ed52b56",
+    "src/research_scout/providers/adapters.py": "52d66fc588ad06c1e9966603e2dbb8a892b81990c7592acc898e741138c2b5f0",
+    "src/research_scout/providers/fixtures.py": "e408788a85eade5b0ea6a10924d40fe9165ddafb0e83fcf1e5b85595d186dd53",
+    "src/research_scout/providers/normalization.py": "a7af91fc873b2a97e83ce5c039780e64840b90742bb80716e3faf12529dd146a",
+    "src/research_scout/providers/rest_discovery.py": "2ad181acc228de18a9d0fb04d4c67f0654a1a5d23c768d6675e8426cb407d587",
+    "src/research_scout/providers/service.py": "2e2f325bedcfbfaabbcf0357adfea35fdde0cc29fce6c11013cbd5f3cffe4914",
+    "src/research_scout/providers/upstream.py": "bb20a5f96174d7103b08b2486bed4eca293612d0824786260fead38ae2e1f8bf",
+    "src/research_scout/retrieval.py": "bf9856fd48e1cb7a6ff151a5c895e4a46252930fbdf2fb476efb4783fc540280",
+    "src/research_scout/settings.py": "c72f0589fe72365466f3edf17971225c7d91c38ca72e2f21981dcf82be6bf900",
+    "tests/browser/automatic-discovery.spec.ts": "8c5b062e1e2fe0feff37426823ab33e66aab7a93eaf37b664e6afaed42665443",
+    "tests/browser/exploration-integration.spec.ts": "b6796981e0f51e379f2991ecb1837e8ef6dfd876cec7bde5df67a41adce8fcde",
+    "tests/browser/source-expansion.spec.ts": "17e035caf3b3a6e927e676b13128f752bcaddcf196ad886ab135195caded458b",
+    "tests/browser/workspace.spec.ts": "25bb976ac4fa0eb4bbdd67bc1a93f7cbfe6ada789ad45d52bae52e2b71bac1a1",
+    "tests/browser/youtube-integration.spec.ts": "ec149a414d6ba934f6a3418dadf456c35c54b929c71e2ec4f178631ba95c22eb",
+    "tests/test_api.py": "b132742510d8ee7fe44a630bae40bb8f9d2586c35791bc163428cf87eacea914",
+    "tests/test_conversations.py": "226aeb148b3728b7a5209892419d874ffc8bf551960e9f24c8be3420b603dbdc",
+    "tests/test_launcher.py": "5b47786d7c834a1d1896680ff7b8b24c7f90d8ac53be6eccf8d846dd557f1c4a",
+    "tests/test_youtube.py": "3593ddaf3ae8d48e2d71b6d1f51bb7f2148ea14384c77d6f9ea1e5e59d09ec1e"
+  },
+  "app_left_running": {
+    "url": "http://127.0.0.1:3100/",
+    "launcher_session": 51578,
+    "providers": 9
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "date": "2026-11-14",
+  "implemented": true,
+  "agents": [
+    "Analysis",
+    "Execution"
+  ],
+  "scope": "Shared model planningv7 across Papers/Videos/Data/Repos, structured missing-context augmentation, clarification continuation and source-bound non-evidence generation context.",
+  "design": "../../system-design/shared-ai-query-refinement-2026-11-14.md",
+  "audit": "../../discovery/research/ai-refinement-integration-audit-2026-11-14.md",
+  "model_call_topology": {
+    "initial_planning_calls_unchanged": true,
+    "resource_plans_in_same_response": 4,
+    "per_tab_model_calls": 0,
+    "existing_provider_review_repair_loop": true,
+    "new_data_repo_result_model_review": false,
+    "generation_uses_existing_model_call": true,
+    "output_token_cap": 2600,
+    "model_changed": false,
+    "paid_allowance_changed": false
+  },
+  "validation": {
+    "backend": {
+      "passed": 393,
+      "skipped": 1,
+      "skip_reason": "Optional real encoder proof",
+      "duration_seconds": 84.83,
+      "evidence": "One complete clean final socket-enabled pytest run"
+    },
+    "new_shared_planning_regressions": 6,
+    "browser": {
+      "unique_passed": 199,
+      "full": {
+        "passed": 198,
+        "failed": 1,
+        "skipped": 0,
+        "flaky": 0
+      },
+      "final_affected": {
+        "passed": 46,
+        "failed": 0,
+        "skipped": 0,
+        "flaky": 0
+      },
+      "unresolved": [],
+      "qualification": "Full run exposed one mobile trace-label wrapping regression. Final mobile label fixes it; original850px assertion retained, all46 affected cases pass on final source. Union verified by stable test IDs."
+    },
+    "harness": {
+      "passed": 11,
+      "total": 11,
+      "all_passed": true,
+      "evidence": "Scripted structural/context harness, not live quality judgments"
+    },
+    "backend_ruff": {
+      "passed": true,
+      "evidence": "Execution full backend Ruff after89-case affected gate and freeze"
+    },
+    "typescript": true,
+    "isolated_production_build": true,
+    "source_build_agreement": {
+      "files": 64,
+      "mismatches": [],
+      "all_equal": true
+    },
+    "actual_resource_fixture": {
+      "date": "2026-11-14",
+      "passed": true,
+      "evidence": "Actual local browser→resource APIs→LangGraph/DeepAgents→application MCP→isolated provider fixtures using authored v7 saved model-plan output. Initial planner/model quality is covered by separate scripted contracts, not live OpenAI.",
+      "four_resource_plans_visible": true,
+      "optional_gaps_and_inferred_domain_visible": true,
+      "canonical_query_preserved": true,
+      "distinct_model_resource_queries_used": true,
+      "shared_plan_fingerprint_bound": true,
+      "resources": {
+        "datasets": {
+          "records": 4,
+          "usage": {
+            "catalog_attempts": 2,
+            "model_http_attempts": 0
+          },
+          "query_origin": "saved_model_resource_query"
+        },
+        "repos": {
+          "records": 3,
+          "usage": {
+            "github_http_attempts": 0,
+            "search_attempts": 0,
+            "readme_attempts": 0,
+            "identity_attempts": 0,
+            "model_http_attempts": 0,
+            "simulated_attempts": 7
+          },
+          "query_origin": "saved_model_resource_query"
+        }
+      },
+      "model_http_attempts": 0,
+      "only_two_explicit_posts": true,
+      "reload_added_attempts": false,
+      "parent_unchanged": true,
+      "external_browser_requests": 0,
+      "browser_errors": [],
+      "responsive_widths": [
+        1440,
+        1100,
+        970,
+        901,
+        768,
+        390,
+        320
+      ]
+    },
+    "saved_live_ui": {
+      "passed": true,
+      "healthy_services": 13,
+      "papers": 58,
+      "videos": 10,
+      "api_writes": 0,
+      "legacy_plan_gate_visible": true,
+      "projects_preserved": true,
+      "model_ledger_preserved": true,
+      "receipt": "2026-11-14-ai-refinement-live-readonly.json"
+    },
+    "protected_state": {
+      "files": 712,
+      "unchanged": 712,
+      "changed": 0,
+      "missing": 0
+    },
+    "privacy_receipt": "2026-11-14-ai-refinement-privacy.json",
+    "document_links": {
+      "checked": 417,
+      "broken": []
+    },
+    "diff_check": true,
+    "temporary_validation_services_stopped": true,
+    "live_application_left_running": true
+  },
+  "live_model_validation": {
+    "performed": false,
+    "new_hosted_calls": 0,
+    "new_upstream_provider_queries": 0,
+    "reason": "Existing shared model allowance is spent or held, blocking new paid topic planning before admission.",
+    "budget_or_holds_modified": false
+  },
+  "limitations": [
+    "Scripted planner/clarification/generation tests are not live model interpretation or relevance acceptance",
+    "Data/Repos use local metadata/README ranking after the shared model plan, not a newly added model result-review loop",
+    "Separate dataset/Repo snapshots are not new generation evidence",
+    "Historical saved reads/retries persist; new Data/Repos acquisition requires a validated v7 lane plan"
+  ],
+  "previews": [
+    "2026-11-14-ai-refinement-fixture-1440.png",
+    "2026-11-14-ai-refinement-fixture-320.png"
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "date": "2026-11-11",
+  "passed": true,
+  "checked_idle_before_restart": true,
+  "health": [
+    {
+      "port": 8100,
+      "status": 200
+    },
+    {
+      "port": 8111,
+      "status": 200
+    },
+    {
+      "port": 8112,
+      "status": 200
+    },
+    {
+      "port": 8113,
+      "status": 200
+    },
+    {
+      "port": 8114,
+      "status": 200
+    },
+    {
+      "port": 8115,
+      "status": 200
+    },
+    {
+      "port": 8116,
+      "status": 200
+    },
+    {
+      "port": 8117,
+      "status": 200
+    },
+    {
+      "port": 8118,
+      "status": 200
+    },
+    {
+      "port": 8119,
+      "status": 200
+    }
+  ],
+  "frontend_status": 200,
+  "model_cost_and_holds_unchanged": true
+}

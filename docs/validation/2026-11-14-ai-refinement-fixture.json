@@ -1,0 +1,47 @@
+{
+  "date": "2026-11-14",
+  "passed": true,
+  "evidence": "Actual local browser→resource APIs→LangGraph/DeepAgents→application MCP→isolated provider fixtures using authored v7 saved model-plan output. Initial planner/model quality is covered by separate scripted contracts, not live OpenAI.",
+  "four_resource_plans_visible": true,
+  "optional_gaps_and_inferred_domain_visible": true,
+  "canonical_query_preserved": true,
+  "distinct_model_resource_queries_used": true,
+  "shared_plan_fingerprint_bound": true,
+  "resources": {
+    "datasets": {
+      "records": 4,
+      "usage": {
+        "catalog_attempts": 2,
+        "model_http_attempts": 0
+      },
+      "query_origin": "saved_model_resource_query"
+    },
+    "repos": {
+      "records": 3,
+      "usage": {
+        "github_http_attempts": 0,
+        "search_attempts": 0,
+        "readme_attempts": 0,
+        "identity_attempts": 0,
+        "model_http_attempts": 0,
+        "simulated_attempts": 7
+      },
+      "query_origin": "saved_model_resource_query"
+    }
+  },
+  "model_http_attempts": 0,
+  "only_two_explicit_posts": true,
+  "reload_added_attempts": false,
+  "parent_unchanged": true,
+  "external_browser_requests": 0,
+  "browser_errors": [],
+  "responsive_widths": [
+    1440,
+    1100,
+    970,
+    901,
+    768,
+    390,
+    320
+  ]
+}

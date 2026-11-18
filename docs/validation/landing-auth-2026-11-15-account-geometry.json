@@ -1,0 +1,190 @@
+{
+  "config": {
+    "argv": [
+      "./.tools/node/bin/node",
+      "./frontend/node_modules/@playwright/test/cli.js",
+      "test",
+      "--config",
+      "frontend/tests/browser/playwright.config.ts",
+      "landing-auth.spec.ts",
+      "--grep",
+      "authenticated account menu",
+      "--reporter",
+      "list,json",
+      "--output",
+      ".scout/landing-auth-account-artifacts"
+    ],
+    "configFile": "./frontend/tests/browser/playwright.config.ts",
+    "rootDir": "./frontend/tests/browser",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "./.scout/landing-auth-account-artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "./frontend/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 35000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "./.scout/landing-auth-account-artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "chromium",
+        "testDir": "./frontend/tests/browser",
+        "snapshotDir": "./frontend/tests/browser",
+        "testIgnore": [],
+        "testMatch": "**/*.spec.ts",
+        "timeout": 35000,
+        "use": {
+          "baseURL": "http://127.0.0.1:3190",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure",
+          "acceptDownloads": true,
+          "channel": "chromium",
+          "launchOptions": {
+            "args": [
+              "--disable-gpu"
+            ]
+          },
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Safari/537.36",
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chromium"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "landing-auth.spec.ts",
+      "file": "landing-auth.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "landing and real authentication boundaries",
+          "file": "landing-auth.spec.ts",
+          "line": 106,
+          "column": 6,
+          "specs": [
+            {
+              "title": "authenticated account menu fits the viewport and restores keyboard focus",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 35000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1791,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-16T03:30:48.538Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "account-menu-320",
+                          "contentType": "image/png",
+                          "path": "./.scout/landing-auth-account-artifacts/landing-auth-landing-and-r-c0f82-and-restores-keyboard-focus-chromium/attachments/account-menu-320-6f9220b47f1eb8db4eaff935f97e36bc22a4ba9e.png"
+                        },
+                        {
+                          "name": "account-menu-geometry",
+                          "contentType": "application/json",
+                          "body": "W3sid2lkdGgiOjE0NDAsIngiOjczNC43MTg3NSwicmlnaHQiOjEwMTQuNzE4NzUsInBhbmVsV2lkdGgiOjI4MCwiaGVhZGVyT3ZlcmZsb3ciOjB9LHsid2lkdGgiOjM5MCwieCI6OTgsInJpZ2h0IjozNzgsInBhbmVsV2lkdGgiOjI4MCwiaGVhZGVyT3ZlcmZsb3ciOjB9LHsid2lkdGgiOjMyMCwieCI6MjgsInJpZ2h0IjozMDgsInBhbmVsV2lkdGgiOjI4MCwiaGVhZGVyT3ZlcmZsb3ciOjB9XQ=="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "dde190e0e546137bee20-b60d52083d25f3983c2d",
+              "file": "landing-auth.spec.ts",
+              "line": 325,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-16T03:30:47.688Z",
+    "duration": 3232.673,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

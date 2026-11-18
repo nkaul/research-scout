@@ -1,0 +1,118 @@
+{
+  "date": "2026-11-14",
+  "passed": true,
+  "evidence": "Actual live app using saved paper/video research with all API writes blocked; no new research/model action.",
+  "required_agentic_badge_removed": true,
+  "legacy_refinement_checkbox_absent": true,
+  "compact_desktop_toolbar_visible": true,
+  "project_actions_in_workspace_header": true,
+  "navigation_brand_and_tagline_visible": true,
+  "used_credit_count_visible": true,
+  "refinement_toggle_visible": true,
+  "preference_changes_do_not_rewrite_saved_trace": true,
+  "new_topic_search_ready": true,
+  "data_tab_and_catalog_controls_visible": true,
+  "no_catalog_lookup_started": true,
+  "repos_tab_and_controls_visible": true,
+  "no_repo_lookup_started": true,
+  "historical_mode_controls_resource_eligibility": true,
+  "saved_paper_cards": 58,
+  "saved_video_cards": 10,
+  "controls_before_performance_bar": true,
+  "original_question_preserved": true,
+  "exact_saved_trace_entry_available": true,
+  "unmeasured_historical_first_evidence_unavailable": true,
+  "source_request_timing_not_invented": true,
+  "passive_video_does_not_start_player": true,
+  "provider_usage_unchanged": true,
+  "projects_unchanged": true,
+  "model_cost_and_holds_unchanged": true,
+  "api_writes": 0,
+  "browser_errors": [],
+  "responsive": [
+    {
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "width": 1100,
+      "overflow": false
+    },
+    {
+      "width": 970,
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "width": 650,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "overflow": false
+    }
+  ],
+  "health": [
+    {
+      "port": 3100,
+      "healthy": true
+    },
+    {
+      "port": 8100,
+      "healthy": true
+    },
+    {
+      "port": 8111,
+      "healthy": true
+    },
+    {
+      "port": 8112,
+      "healthy": true
+    },
+    {
+      "port": 8113,
+      "healthy": true
+    },
+    {
+      "port": 8114,
+      "healthy": true
+    },
+    {
+      "port": 8115,
+      "healthy": true
+    },
+    {
+      "port": 8116,
+      "healthy": true
+    },
+    {
+      "port": 8117,
+      "healthy": true
+    },
+    {
+      "port": 8118,
+      "healthy": true
+    },
+    {
+      "port": 8119,
+      "healthy": true
+    },
+    {
+      "port": 8120,
+      "healthy": true
+    },
+    {
+      "port": 8121,
+      "healthy": true
+    }
+  ],
+  "external_assets_intercepted": 9,
+  "live_screenshots_private": true
+}

@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-11",
+  "scanned_at_utc": "2026-11-11T12:53:56.056180+00:00",
+  "status": "passed",
+  "backend_scripts_hashes": {
+    "reference": "docs/validation/2026-11-10-material-blue-youtube-final.json",
+    "expected": 14,
+    "matched": 14,
+    "changed_paths": [],
+    "missing_paths": []
+  },
+  "exact_value_scan": {
+    "scanned_files": 943,
+    "scanned_bytes": 181282679,
+    "build_or_log_files": 446,
+    "configured_secret_contact_oauth_values_checked": 4,
+    "oauth_store_files_read_for_comparison_only": 1,
+    "matching_paths": [],
+    "unreadable_paths": [],
+    "changed_during_scan_paths": []
+  },
+  "environment_mode": "0o600",
+  "scope": "Current Git-listed tracked/untracked project files plus frontend/.next and .scout/logs; private env and credential files are read only to derive exact comparison values, never published or scanned as artifacts.",
+  "excluded": "Environment files except blank example, credentials, dependencies, browser caches, generated test traces and user runtime state.",
+  "limitations": [
+    "Exact byte matching only; does not detect unknown credentials, encrypted/encoded values, rendered image text or content inside compressed archives.",
+    "Point-in-time file scan, not a Git history/object scan or an external provider access test.",
+    "Hash confirmation covers only the fourteen backend/scripts paths listed by the referenced checkpoint; it is not a full-tree equivalence claim.",
+    "No source, configuration or ledger changes and no provider/model calls were made."
+  ]
+}

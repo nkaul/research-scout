@@ -1,0 +1,77 @@
+{
+  "date": "2026-11-11",
+  "profile": "live",
+  "registered_providers": 9,
+  "providers": [
+    {
+      "id": "openalex",
+      "mode": "live",
+      "status": "ready",
+      "access_configured": true
+    },
+    {
+      "id": "crossref",
+      "mode": "live",
+      "status": "ready",
+      "access_configured": true
+    },
+    {
+      "id": "datacite",
+      "mode": "live",
+      "status": "ready",
+      "access_configured": true
+    },
+    {
+      "id": "semantic_scholar",
+      "mode": "live",
+      "status": "ready",
+      "access_configured": true
+    },
+    {
+      "id": "arxiv",
+      "mode": "live",
+      "status": "ready",
+      "access_configured": true
+    },
+    {
+      "id": "openaire",
+      "mode": "live",
+      "status": "ready",
+      "access_configured": true
+    },
+    {
+      "id": "europe_pmc",
+      "mode": "live",
+      "status": "ready",
+      "access_configured": true
+    },
+    {
+      "id": "unpaywall",
+      "mode": "live",
+      "status": "ready",
+      "access_configured": true
+    },
+    {
+      "id": "youtube",
+      "mode": "live",
+      "status": "needs_access",
+      "access_configured": false
+    }
+  ],
+  "retrieval": {
+    "enabled": true,
+    "ready": false,
+    "status": "blocked",
+    "blocked_reason": "The shared model allowance is spent or held by unresolved requests."
+  },
+  "generation": {
+    "enabled": true,
+    "status": "budget_exhausted",
+    "blocked_reason": "Generation session allowance is spent or held by unresolved requests.",
+    "session_cost_and_holds_usd": 0.21650213,
+    "max_session_cost_usd": 0.25,
+    "max_turn_cost_usd": 0.05
+  },
+  "web_search": "Deferred by user; no provider configured",
+  "external_search_or_generation_submitted": false
+}

@@ -1,0 +1,13 @@
+.control { display: inline-flex; flex: 0 0 auto; min-width: 0; color: #415674; }
+.control > button { display: inline-flex; align-items: center; gap: 5px; min-height: 32px; padding: 4px 7px; white-space: nowrap; border: 1px solid #d3deed; border-radius: 6px; background: #fff; font-size: 11px; font-weight: 550; }
+.control > button:hover:not(:disabled) { background: #f0f5fd; border-color: #b3cae8; }
+.control > button[aria-expanded="true"] { background: #edf4ff; border-color: #a5bfe6; }
+.control > button svg { width: 13px; height: 13px; }
+.control > button svg:last-child { width: 10px; height: 10px; }
+.control > button strong { min-width: 16px; text-align: center; font-size: 10px; padding: 0 3px; background: #edf2f9; color: #315789; border-radius: 3px; font-variant-numeric: tabular-nums; }
+.heading { display: flex; align-items: center; justify-content: space-between; margin-bottom: 13px; }
+.heading label { font-weight: 600; }
+.heading output { color: #285fae; font-size: 16px; font-weight: 650; font-variant-numeric: tabular-nums; }
+.heading + input { width: 100%; margin: 0; accent-color: #356dc7; }
+.ends { display: flex; justify-content: space-between; margin: 4px 0 10px; color: #708198; font-size: 10px; }
+.ends + p { font-size: 11px; color: #62748c; line-height: 1.65; }

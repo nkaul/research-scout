@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-15",
+  "skill": "scout-impeccable",
+  "scope": "Repository-local active bundle and portable mirror only",
+  "upstream_commit": "2b86d9c07b97d4bed7de23583e1bd1e58dd2baae",
+  "upstream_skill_version": "4.9.1",
+  "official_validator": {
+    "command": "UV_CACHE_DIR=/tmp/research-scout-impeccable-validation-cache .tools/uv/bin/uv run --project backend --locked --offline --extra encoder --no-sync python ~/.codex/skills/.system/skill-creator/scripts/quick_validate.py .agents/skills/scout-impeccable",
+    "exit_code": 0,
+    "output": "Skill is valid!",
+    "portable_mirror_validation": "Skill is valid!"
+  },
+  "integrity": {
+    "mirror_files_compared": 15,
+    "mirror_equality": true,
+    "imported_file_hashes_verified": 10,
+    "imported_hashes_match_manifest": true,
+    "runtime_scripts_or_binaries_in_bundle": 0
+  },
+  "boundaries": {
+    "global_installation": false,
+    "upstream_engine_executed": false,
+    "upstream_hooks_installed": false,
+    "provider_or_model_calls": false,
+    "application_code_modified": false,
+    "tls_verification_disabled": false
+  },
+  "notes": [
+    "The official installer helper staged the pinned public skill into a temporary directory using Git after local Python certificate-chain validation blocked its download method.",
+    "The official validator initially encountered the sandbox-protected default uv cache; the successful run used a temporary cache and did not synchronize the project environment.",
+    "This validates skill structure, mirror equality and recorded import integrity. It is not an Impeccable native engine audit or live retrieval test."
+  ]
+}

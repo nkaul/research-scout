@@ -1,0 +1,266 @@
+{
+  "date": "2026-11-11",
+  "status": "passed",
+  "scope": "Keep main Search in the restored Dub workspace, present progressive flat resources with local categories, make chat explicit, improve readability and restart the live app. Web search remains deferred.",
+  "checks": {
+    "typescript": "passed",
+    "production_next_build": "passed",
+    "browser": {
+      "unique_cases": 48,
+      "final_passed": 48,
+      "final_failed": 0,
+      "final_skipped": 0,
+      "receipt": "docs/validation/2026-11-11-search-workspace-browser.json",
+      "method": "Full run plus focused follow-ups after test-selector updates; application source unchanged between runs."
+    },
+    "backend": "No backend changes in this slice. Fourteen backend/launcher hashes match the November 10 checkpoint that passed 276 backend tests; those tests were not rerun today.",
+    "diff_check": "passed"
+  },
+  "fixture_inspection": {
+    "date": "2026-11-11",
+    "passed": true,
+    "profile": "fixture",
+    "evidence_kind": "Authored fixture records through actual isolated services, application MCP and Deep Agents. No live YouTube proof.",
+    "status": "SUCCEEDED",
+    "providers": [
+      "openalex",
+      "youtube",
+      "crossref",
+      "arxiv"
+    ],
+    "canonical_resources": 12,
+    "papers": 8,
+    "videos": 4,
+    "observations": 16,
+    "post_requests": 0,
+    "browser_errors": [],
+    "unchanged_saved_usage": true,
+    "explicit_chat_and_back": true,
+    "exact_source_inspection_and_back": true,
+    "category_tabs_local": true,
+    "advanced_settings_collapsed": true,
+    "responsive": [
+      {
+        "width": 1440,
+        "overflow": false,
+        "bodyPx": "15px",
+        "resultTitlePx": "17px",
+        "tabsY": 489.09375
+      },
+      {
+        "width": 1024,
+        "overflow": false,
+        "bodyPx": "15px",
+        "resultTitlePx": "17px",
+        "tabsY": 489.09375
+      },
+      {
+        "width": 768,
+        "overflow": false,
+        "bodyPx": "15px",
+        "resultTitlePx": "17px",
+        "tabsY": 541.59375
+      },
+      {
+        "width": 390,
+        "overflow": false,
+        "bodyPx": "15px",
+        "resultTitlePx": "16px",
+        "tabsY": 665.109375
+      },
+      {
+        "width": 320,
+        "overflow": false,
+        "bodyPx": "15px",
+        "resultTitlePx": "16px",
+        "tabsY": 684.109375
+      }
+    ],
+    "screenshots": [
+      "docs/validation/2026-11-11-search-workspace-fixture-dashboard.png",
+      "docs/validation/2026-11-11-search-workspace-fixture-videos.png",
+      "docs/validation/2026-11-11-search-workspace-fixture-390.png",
+      "docs/validation/2026-11-11-search-workspace-fixture-320.png"
+    ]
+  },
+  "live_saved_result_inspection": {
+    "date": "2026-11-11",
+    "passed": true,
+    "profile": "live",
+    "evidence_kind": "Read-only presentation of previously saved live provider results. No new provider or model query.",
+    "status": "PARTIAL",
+    "providers": [
+      "openalex",
+      "arxiv",
+      "crossref"
+    ],
+    "canonical_resources": 26,
+    "papers": 26,
+    "videos": 0,
+    "observations": 26,
+    "post_requests": 0,
+    "browser_errors": [],
+    "unchanged_saved_usage": true,
+    "explicit_chat_and_back": true,
+    "exact_source_inspection_and_back": true,
+    "category_tabs_local": true,
+    "advanced_settings_collapsed": true,
+    "responsive": [
+      {
+        "width": 1440,
+        "overflow": false,
+        "bodyPx": "15px",
+        "resultTitlePx": "17px",
+        "tabsY": 489.09375
+      },
+      {
+        "width": 1024,
+        "overflow": false,
+        "bodyPx": "15px",
+        "resultTitlePx": "17px",
+        "tabsY": 489.09375
+      },
+      {
+        "width": 768,
+        "overflow": false,
+        "bodyPx": "15px",
+        "resultTitlePx": "17px",
+        "tabsY": 541.59375
+      },
+      {
+        "width": 390,
+        "overflow": false,
+        "bodyPx": "15px",
+        "resultTitlePx": "16px",
+        "tabsY": 643.671875
+      },
+      {
+        "width": 320,
+        "overflow": false,
+        "bodyPx": "15px",
+        "resultTitlePx": "16px",
+        "tabsY": 684.109375
+      }
+    ],
+    "screenshots": [
+      "docs/validation/2026-11-11-search-workspace-live-dashboard.png",
+      "docs/validation/2026-11-11-search-workspace-live-videos.png",
+      "docs/validation/2026-11-11-search-workspace-live-390.png",
+      "docs/validation/2026-11-11-search-workspace-live-320.png"
+    ]
+  },
+  "live_paper_card_screenshots": [
+    "docs/validation/2026-11-11-search-workspace-live-cards-1440.png",
+    "docs/validation/2026-11-11-search-workspace-live-cards-390.png"
+  ],
+  "selected_text_contrast_ratios_on_white": {
+    "body": 14.86,
+    "secondary": 7.81,
+    "muted": 6.32,
+    "accent": 5.95,
+    "scope": "Selected palette pairs only; not a complete accessibility audit."
+  },
+  "current_readiness": {
+    "date": "2026-11-11",
+    "profile": "live",
+    "registered_providers": 9,
+    "providers": [
+      {
+        "id": "openalex",
+        "mode": "live",
+        "status": "ready",
+        "access_configured": true
+      },
+      {
+        "id": "crossref",
+        "mode": "live",
+        "status": "ready",
+        "access_configured": true
+      },
+      {
+        "id": "datacite",
+        "mode": "live",
+        "status": "ready",
+        "access_configured": true
+      },
+      {
+        "id": "semantic_scholar",
+        "mode": "live",
+        "status": "ready",
+        "access_configured": true
+      },
+      {
+        "id": "arxiv",
+        "mode": "live",
+        "status": "ready",
+        "access_configured": true
+      },
+      {
+        "id": "openaire",
+        "mode": "live",
+        "status": "ready",
+        "access_configured": true
+      },
+      {
+        "id": "europe_pmc",
+        "mode": "live",
+        "status": "ready",
+        "access_configured": true
+      },
+      {
+        "id": "unpaywall",
+        "mode": "live",
+        "status": "ready",
+        "access_configured": true
+      },
+      {
+        "id": "youtube",
+        "mode": "live",
+        "status": "needs_access",
+        "access_configured": false
+      }
+    ],
+    "retrieval": {
+      "enabled": true,
+      "ready": false,
+      "status": "blocked",
+      "blocked_reason": "The shared model allowance is spent or held by unresolved requests."
+    },
+    "generation": {
+      "enabled": true,
+      "status": "budget_exhausted",
+      "blocked_reason": "Generation session allowance is spent or held by unresolved requests.",
+      "session_cost_and_holds_usd": 0.21650213,
+      "max_session_cost_usd": 0.25,
+      "max_turn_cost_usd": 0.05
+    },
+    "web_search": "Deferred by user; no provider configured",
+    "external_search_or_generation_submitted": false
+  },
+  "privacy_receipt": "docs/validation/2026-11-11-search-workspace-privacy.json",
+  "openai_credential_metadata_probe": "docs/validation/2026-11-11-openai-key-metadata.json",
+  "limitations": [
+    "YouTube live search unproved: SCOUT_YOUTUBE_API_KEY remains empty. Fixture video descriptions are authored records.",
+    "AI query refinement and optional answers blocked by the existing shared model-cost ledger. No allowance increase, unresolved-hold release or ledger reset performed.",
+    "Live UI inspection used existing saved research only. No new live research or generation was submitted; the metadata authentication probe does not prove Responses generation.",
+    "No general-web provider configured or added, following user direction."
+  ],
+  "source_sha256": {
+    "frontend/src/app/globals.css": "199cbf0ddb8fe6ed2806fadb01bcd12a7d4751544b6257e5b0e6f2c97ddd0d6a",
+    "frontend/src/components/research-workspace.tsx": "fcde3b4389e1d515306c4c8d37864aa1b1ecc1e2389a0f73e7916f68b4ec5de8",
+    "frontend/src/components/search-results.tsx": "7081f041ccb4e289f0032d6216e5dafa442ab5633c648fcecb19f06603f14ee9",
+    "frontend/src/lib/search-resources.ts": "b90a6ea2123e8ae2d3abea51cbfd7622a0555defaf02623ebc8cce4ceab4cc51",
+    "tests/browser/search-workspace.spec.ts": "ea2aa3e95323d66135b3c2334926708fcf33c2bec0920e5841bdc180f222d96e",
+    "tests/browser/search-controls.ts": "1e8dc751aa79a111de4a1ccf6705d3503b49eb725c2c6c211b79dd3e1c70da71",
+    "tests/browser/automatic-discovery.spec.ts": "52087cfc2c06032e8f63468e043cfdcc164a7b4f5813265184b97c170b6f8068",
+    "tests/browser/automatic-integration.spec.ts": "f0f343ae422e18746cff273b65cc2be7a14c71105b4b8dc5278eabf6ceb7300e",
+    "tests/browser/youtube-integration.spec.ts": "8a28fd6a8bc70e7fdd86a5e13b22ddfea2119bd26f737ec5c3c4d855c15071ce",
+    "tests/browser/refinement.spec.ts": "850dab0f983ea5db0c6274bcaeefad3fdba104d8abb7a4ebdca82746b3483bbb"
+  },
+  "app_left_running": {
+    "url": "http://127.0.0.1:3100/",
+    "mode": "live",
+    "launcher_session": 85273,
+    "registered_provider_processes": 9
+  }
+}

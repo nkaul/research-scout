@@ -1,0 +1,413 @@
+{
+  "date": "2026-11-12",
+  "status": "passed",
+  "scope": "Observed load timings with adaptive ms/s/min units and original-search duration; explicit inline PDF download with bounded transfer, PDF signature validation and host-blocked fallback.",
+  "checks": {
+    "unique_browser_cases": 53,
+    "final_pdf_cases": 6,
+    "typescript": "passed",
+    "isolated_production_build": "passed",
+    "diff_check": "passed",
+    "backend": "unchanged; no backend or harness rerun",
+    "dependencies": "unchanged"
+  },
+  "browser_runs": [
+    {
+      "name": "affected",
+      "stats": {
+        "startTime": "2026-11-12T07:31:00.740Z",
+        "duration": 169414.36800000002,
+        "expected": 52,
+        "skipped": 0,
+        "unexpected": 1,
+        "flaky": 0
+      },
+      "cases": [
+        {
+          "file": "load-timing.spec.ts",
+          "title": "duration units cover sub-millisecond, millisecond, second and minute waits",
+          "status": "expected"
+        },
+        {
+          "file": "load-timing.spec.ts",
+          "title": "saved-view and metadata waits show live elapsed time, stop on completion and stay separate from original search duration",
+          "status": "expected"
+        },
+        {
+          "file": "load-timing.spec.ts",
+          "title": "a late paper response cannot replace the selected paper’s completed load time",
+          "status": "expected"
+        },
+        {
+          "file": "loading-performance.spec.ts",
+          "title": "initial Papers loading shows a skeleton and requests history once with compact recent runs",
+          "status": "expected"
+        },
+        {
+          "file": "loading-performance.spec.ts",
+          "title": "switching saved paper rows reuses one run snapshot without starting provider work",
+          "status": "expected"
+        },
+        {
+          "file": "loading-performance.spec.ts",
+          "title": "concurrent same-run preview reads share the request and preserve the latest row intent",
+          "status": "expected"
+        },
+        {
+          "file": "loading-performance.spec.ts",
+          "title": "newer SSE revisions seed saved previews and older replay cannot overwrite them",
+          "status": "expected"
+        },
+        {
+          "file": "loading-performance.spec.ts",
+          "title": "a saved mutation arriving during an older read wins and explicit details update cache eligibility and decisions",
+          "status": "expected"
+        },
+        {
+          "file": "loading-performance.spec.ts",
+          "title": "a new progressive paper refreshes an incomplete cached run once",
+          "status": "expected"
+        },
+        {
+          "file": "loading-performance.spec.ts",
+          "title": "expired saved previews refresh before showing current eligibility",
+          "status": "expected"
+        },
+        {
+          "file": "paper-reader-density.spec.ts",
+          "title": "reader keeps a small visible title, honest author context and compact metadata with an explained DOI gate",
+          "status": "expected"
+        },
+        {
+          "file": "paper-reader-density.spec.ts",
+          "title": "notes distinguish the run shortlist from project saving and missing DOIs remain explained",
+          "status": "expected"
+        },
+        {
+          "file": "papers-cards.spec.ts",
+          "title": "paper chips follow its title and all source, PDF, provider and access actions share one row",
+          "status": "expected"
+        },
+        {
+          "file": "papers-cards.spec.ts",
+          "title": "inline abstract icon expands and collapses already available text without provider work",
+          "status": "expected"
+        },
+        {
+          "file": "papers-cards.spec.ts",
+          "title": "a provider excerpt expands through an explicit saved read and retains latest source-version notice",
+          "status": "expected"
+        },
+        {
+          "file": "papers-control-panel.spec.ts",
+          "title": "one common panel holds source/date, display tools and explicit partial coverage without repeated summary panels",
+          "status": "expected"
+        },
+        {
+          "file": "papers-control-panel.spec.ts",
+          "title": "desktop opens saved metadata once without moving focus and respects closing across stream updates",
+          "status": "expected"
+        },
+        {
+          "file": "papers-control-panel.spec.ts",
+          "title": "narrow touch-style layouts keep metadata closed until an explicit record action",
+          "status": "expected"
+        },
+        {
+          "file": "papers-control-panel.spec.ts",
+          "title": "missing Unpaywall records are explained as access outcomes when discovery completed successfully",
+          "status": "expected"
+        },
+        {
+          "file": "pdf-preview.spec.ts",
+          "title": "real PDFs load inline without sandbox blocking and open in a browser tab without a download attribute",
+          "status": "expected"
+        },
+        {
+          "file": "pdf-preview.spec.ts",
+          "title": "delayed inline PDF keeps a loader and the source actions remain on one line",
+          "status": "expected"
+        },
+        {
+          "file": "pdf-preview.spec.ts",
+          "title": "Download PDF saves validated PDF bytes from the inline preview and shows its preparation time",
+          "status": "expected"
+        },
+        {
+          "file": "pdf-preview.spec.ts",
+          "title": "a blocked direct download explains the new-tab fallback without automatically retrying",
+          "status": "expected"
+        },
+        {
+          "file": "pdf-preview.spec.ts",
+          "title": "a host login/error page is not saved as a PDF download",
+          "status": "expected"
+        },
+        {
+          "file": "pdf-preview.spec.ts",
+          "title": "closing an inline PDF cancels a pending download without a late file save",
+          "status": "unexpected"
+        },
+        {
+          "file": "reader-refinement.spec.ts",
+          "title": "reader keeps a small title in every tab and secondary reports collapsed",
+          "status": "expected"
+        },
+        {
+          "file": "reader-refinement.spec.ts",
+          "title": "paper and video actions stay on one line while reports open separately",
+          "status": "expected"
+        },
+        {
+          "file": "reader-refinement.spec.ts",
+          "title": "slow paper and video reads show a skeleton without allowing an obsolete read to win",
+          "status": "expected"
+        },
+        {
+          "file": "reader-refinement.spec.ts",
+          "title": "applying a custom range dispatches the new bounds and replaces the results",
+          "status": "expected"
+        },
+        {
+          "file": "reader-refinement.spec.ts",
+          "title": "loading another record makes old actions inert and closing prevents a late reopen",
+          "status": "expected"
+        },
+        {
+          "file": "seamless-results.spec.ts",
+          "title": "hover and row keyboard movement follow the newest saved source without stealing focus",
+          "status": "expected"
+        },
+        {
+          "file": "seamless-results.spec.ts",
+          "title": "abstracts expand inline and the global display toggle adds no retrieval calls",
+          "status": "expected"
+        },
+        {
+          "file": "seamless-results.spec.ts",
+          "title": "returning to the active row supersedes a different pending metadata read",
+          "status": "expected"
+        },
+        {
+          "file": "seamless-results.spec.ts",
+          "title": "reported PDFs embed only on request and HTTP arXiv records use the canonical HTTPS document",
+          "status": "expected"
+        },
+        {
+          "file": "seamless-results.spec.ts",
+          "title": "PDF locations validate legacy IDs and exclude malformed, local and credential-bearing URLs",
+          "status": "expected"
+        },
+        {
+          "file": "seamless-results.spec.ts",
+          "title": "a touch pointer does not open or fetch the reader automatically",
+          "status": "expected"
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "top Search keeps progressive papers and videos in separate remembered tabs without opening chat",
+          "status": "expected"
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "a source opens a right panel while preserving the search, tab, filter and draft",
+          "status": "expected"
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "AI-refined top Search stays a search and mobile category views do not add requests",
+          "status": "expected"
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "a new explicit manual direct search replaces prior grouped Search results",
+          "status": "expected"
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "source removals and adaptive date presets survive reload, history and New research",
+          "status": "expected"
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "custom years persist and removing every source prevents an accidental fallback search",
+          "status": "expected"
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "the Papers lane retains exact registry metadata when there is no combined All tab",
+          "status": "expected"
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "video thumbnails open a stable preview and transcript loading is explicit and saved",
+          "status": "expected"
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "blocked captions leave the video usable and do not retry automatically",
+          "status": "expected"
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "a delayed preview cannot replace a newly cleared search",
+          "status": "expected"
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "startup tabs wait for hydration and an early Videos choice survives a delayed saved search",
+          "status": "expected"
+        },
+        {
+          "file": "video-loading.spec.ts",
+          "title": "a delayed thumbnail shows a skeleton until its image loads without starting a player or provider work",
+          "status": "expected"
+        },
+        {
+          "file": "video-loading.spec.ts",
+          "title": "an explicitly opened video shows its player loader until iframe load and retains playback across saved captions",
+          "status": "expected"
+        },
+        {
+          "file": "video-preview-resilience.spec.ts",
+          "title": "a failed thumbnail recovers when same-video saved details supply a new safe image",
+          "status": "expected"
+        },
+        {
+          "file": "video-preview-resilience.spec.ts",
+          "title": "updating same-video transcript metadata retains an already opened player",
+          "status": "expected"
+        },
+        {
+          "file": "video-preview-resilience.spec.ts",
+          "title": "an invalid saved video identity has no unsafe URL or broken seek target (no captions)",
+          "status": "expected"
+        },
+        {
+          "file": "video-preview-resilience.spec.ts",
+          "title": "an invalid saved video identity has no unsafe URL or broken seek target (saved captions)",
+          "status": "expected"
+        }
+      ]
+    },
+    {
+      "name": "pdf-final",
+      "stats": {
+        "startTime": "2026-11-12T07:34:27.190Z",
+        "duration": 18199.145999999997,
+        "expected": 6,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "cases": [
+        {
+          "file": "pdf-preview.spec.ts",
+          "title": "real PDFs load inline without sandbox blocking and open in a browser tab without a download attribute",
+          "status": "expected"
+        },
+        {
+          "file": "pdf-preview.spec.ts",
+          "title": "delayed inline PDF keeps a loader and the source actions remain on one line",
+          "status": "expected"
+        },
+        {
+          "file": "pdf-preview.spec.ts",
+          "title": "Download PDF saves validated PDF bytes from the inline preview and shows its preparation time",
+          "status": "expected"
+        },
+        {
+          "file": "pdf-preview.spec.ts",
+          "title": "a blocked direct download explains the new-tab fallback without automatically retrying",
+          "status": "expected"
+        },
+        {
+          "file": "pdf-preview.spec.ts",
+          "title": "a host login/error page is not saved as a PDF download",
+          "status": "expected"
+        },
+        {
+          "file": "pdf-preview.spec.ts",
+          "title": "closing an inline PDF cancels a pending download without a late file save",
+          "status": "expected"
+        }
+      ]
+    }
+  ],
+  "cached_live": {
+    "date": "2026-11-12",
+    "passed": true,
+    "evidence": "Saved live paper search; API writes blocked. No new provider/model/document retrieval.",
+    "default_reader_visible": true,
+    "completed_metadata_timing_visible": true,
+    "completed_saved_result_timing_visible": true,
+    "reader_title_px": 14,
+    "unified_controls": true,
+    "access_only_partial_explained": true,
+    "keyboard_selection_follows": true,
+    "api_writes": 0,
+    "browser_errors": [],
+    "provider_usage_unchanged": true,
+    "model_cost_and_holds_unchanged": true,
+    "responsive": [
+      {
+        "width": 1440,
+        "overflow": false
+      },
+      {
+        "width": 1024,
+        "overflow": false
+      },
+      {
+        "width": 900,
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "overflow": false
+      },
+      {
+        "width": 320,
+        "overflow": false
+      }
+    ]
+  },
+  "privacy": {
+    "date": "2026-11-12",
+    "passed": true,
+    "scope": "Exact configured env key/token/contact values in git-visible tracked and untracked working files. Excludes ignored env/state/dependencies; not Git history, encoded values, unknown secrets or OCR.",
+    "files_scanned": 650,
+    "configured_distinct_values_checked": 3,
+    "matching_files": []
+  },
+  "source_sha256": {
+    "frontend/src/lib/load-timing.ts": "50c96171f3e358d4067d7198551eff97c5a8f033e9240e145169dd3d40564e27",
+    "frontend/src/lib/pdf-download.ts": "06b0329ba21240330fa7a282b99a36f2248d60a888bbcb8f1c9a7c739d3237ea",
+    "frontend/src/components/load-time.tsx": "d5299aabb2bbb36993cf871e67d6243319f8e236a3187274668a5f19f45223e2",
+    "frontend/src/components/load-time.module.css": "9f29996f6ba5b9bdfd99ec62e05f8e402562e6d013fe9a38dc9bb88c11496553",
+    "frontend/src/components/pdf-download.tsx": "8a4c32645edf87720763fb1387a92476aef010360fe36383cb2b4acc624e00d8",
+    "frontend/src/components/inline-document.tsx": "97bab2e675ed134404f88f81044b633f2616c157d3d329c64fe5c0d137a7fcbb",
+    "frontend/src/components/inline-document.module.css": "4edba33aac9f59160c8438dc6ed21c11aedbc289dad2e4fb28a6b2d9b9a910be",
+    "frontend/src/components/video-preview.tsx": "9216dee2782fd7d5629aa520691e99d6e31adcdc062af9780f80f5b8677b5bb2",
+    "frontend/src/components/video-timing.module.css": "c11a3ffd307b85158e3bab89cc211b699f6ce555f79cb7dab6930b5480f0a976",
+    "frontend/src/components/search-results.tsx": "35654898aeee75def541434f4f491a0e4cc7b31df6b87f4c7710e9238330ede8",
+    "frontend/src/components/search-controls.module.css": "8d4e41004393d47dc8653d7870875afe35e7805e81dab5d1f0aac614c8a592f1",
+    "frontend/src/components/research-workspace.tsx": "25393d78ed667d564cba30aa5691f98ebd2f897ea5a649ad3af26403f594af14",
+    "frontend/src/components/source-preview.tsx": "56ce255824cdc0a2bc99a70b829d7d58f04550fc43be5546f7606c5b01acf82e",
+    "frontend/src/components/chat-abstract.tsx": "2f5cb76230ab512a93ded66e20c084157db55b5a29f0a7b0a3392aead42c596b",
+    "tests/browser/load-timing.spec.ts": "e453e5f6444e3120acc00390a2c6ce26b9aeb01b2c0e4561424a81a82a6b8b57",
+    "tests/browser/pdf-preview.spec.ts": "0efd952e67b949790207d219409fa4c27f4a23cb2df3a2dd98f1a0b8db2ce7d6",
+    "tests/browser/video-loading.spec.ts": "2c4ca1d03b0ddd66be70b78f7ee0d16146c78ca99aad0f7f22af808d06a3aead"
+  },
+  "notes": [
+    "53 affected cases are covered; initial52passed and one cancellation test expected a browser network-failure event for an intercepted fetch. The corrected test observes the real AbortSignal and verifies no late file save; final6PDF cases pass. No runtime change was needed for that test correction.",
+    "Durations cover saved view, original search timestamps, metadata/details/DOI, abstract requests and media/PDF operations. A frame load does not prove all pages rendered or video buffering finished.",
+    "The inline download saves actual PDF bytes on explicit action, validates the PDF signature, caps transfer at50MB and30seconds, and supports cancellation. It does not parse or index full text.",
+    "Publisher/browser CORS or login restrictions can block direct download. The explicit new-tab/native-viewer fallback remains available; no automatic retry or server relay was added.",
+    "Saved-live checks at6 widths blocked API writes and preserved provider/model usage. No new live research, document fetch, model request, restart, commit or push was performed."
+  ]
+}

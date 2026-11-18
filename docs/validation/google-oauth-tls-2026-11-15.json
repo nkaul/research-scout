@@ -1,0 +1,139 @@
+{
+  "date": "2026-11-15",
+  "reported_error": "Google sign-in is temporarily unavailable.",
+  "root_cause": "The backend PyJWKClient could not fetch Google public signing keys because the Python framework installation has no default CA trust files; reproduced SSL CERTIFICATE_VERIFY_FAILED / unable to get local issuer certificate.",
+  "fix": "Retain platform/configured trust and supplement a verified SSL context with the already pinned certifi bundle. Pass that context to PyJWKClient. Log failure classes only; retain signature, issuer, audience, expiry, nonce and verified-email checks.",
+  "backend_tests": {
+    "passed": 488,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 1
+  },
+  "focused_auth_mcp_settings_tests": {
+    "passed": 61,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "checks": {
+    "ruff": true,
+    "offline_uv_lock_check": true,
+    "locked_package_count": 100,
+    "new_dependency_downloads": 0,
+    "existing_certifi_pin_promoted_to_direct_dependency": true
+  },
+  "harness": {
+    "passed_count": 11,
+    "case_count": 11,
+    "all_passed": true,
+    "model_http_attempts": 0
+  },
+  "public_signing_keys": {
+    "date": "2026-11-15",
+    "google_public_keys_fetched": true,
+    "public_key_count": 2,
+    "tls_certificate_verification_required": true,
+    "tls_hostname_verification_enabled": true,
+    "trusted_ca_count": 118,
+    "identity_token_sent": false,
+    "real_google_account_sign_in_tested": false
+  },
+  "restarted_live_backend": {
+    "date": "2026-11-15",
+    "live_synthetic_invalid_signature_status": 401,
+    "expected_invalid_signature_rejected": true,
+    "authenticated_session_created": false,
+    "credential_kind": "Locally authored invalid RSA signature using a public Google key ID; not a real Google identity.",
+    "actual_google_identity_token_used": false,
+    "real_google_account_sign_in_tested": false,
+    "backend_health": [
+      {
+        "port": 8100,
+        "healthy": true
+      },
+      {
+        "port": 8111,
+        "healthy": true
+      },
+      {
+        "port": 8112,
+        "healthy": true
+      },
+      {
+        "port": 8113,
+        "healthy": true
+      },
+      {
+        "port": 8114,
+        "healthy": true
+      },
+      {
+        "port": 8115,
+        "healthy": true
+      },
+      {
+        "port": 8116,
+        "healthy": true
+      },
+      {
+        "port": 8117,
+        "healthy": true
+      },
+      {
+        "port": 8118,
+        "healthy": true
+      },
+      {
+        "port": 8119,
+        "healthy": true
+      },
+      {
+        "port": 8120,
+        "healthy": true
+      },
+      {
+        "port": 8121,
+        "healthy": true
+      }
+    ],
+    "passed": true
+  },
+  "preservation": {
+    "saved_research_files_compared": 221,
+    "changed_research_files": 0,
+    "economics_tables_compared": 7,
+    "economics_unchanged": true,
+    "owner_and_session_records_unchanged": true,
+    "active_research_at_restart": 0
+  },
+  "separate_google_button_probe": {
+    "google_button_ready": false,
+    "origins": [
+      {
+        "origin": "http://localhost:3100",
+        "login_header_and_metadata_match": true,
+        "google_referrer_is_origin_only": true,
+        "google_button_status": 403,
+        "google_button_visible": false,
+        "google_origin_rejected": true
+      },
+      {
+        "origin": "http://127.0.0.1:3100",
+        "login_header_and_metadata_match": true,
+        "google_referrer_is_origin_only": true,
+        "google_button_status": 403,
+        "google_button_visible": false,
+        "google_origin_rejected": true
+      }
+    ],
+    "qualification": "Fresh headless browser still observes Google origin rejection. This is separate from the user-reported callback reaching the backend and failing key acquisition."
+  },
+  "real_google_account_sign_in_tested": false,
+  "source_hashes": {
+    "backend/src/research_scout/auth.py": "66329a7666be4bcd5eaa4e2b77afe5e9eb855f0bba2ff36cf645067d4c8013d3",
+    "backend/tests/test_auth.py": "d106da2e499dbc4d1788cdc40a1ad9baee05ae57613a06bf9afeb481af30def8",
+    "backend/pyproject.toml": "a048f7bd3b804179bff3917f68d5e01cfe7768fe05a5661a4199c1e35e786895",
+    "backend/uv.lock": "3d6ff6ab7e13ef33caffb3a13db361355f986f056b87edd20f82adc37d1310da"
+  },
+  "reported_tls_failure_fixed": true
+}

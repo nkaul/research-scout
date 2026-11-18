@@ -1,0 +1,632 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-15",
+  "artifact": "Direction 10 Observatory App",
+  "scope": "New authored app mockup only; preserve all nine earlier mockups",
+  "sources": {
+    "ui_ux_pro_max": {
+      "repository": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+      "commit": "d643997c82e94742dd3bee43210b0198e8bbba3d",
+      "license": "MIT",
+      "copyright": "Copyright (c) 2024 Next Level Builder",
+      "included_notice": "../../../.agents/skills/scout-ui-ux-pro-max/LICENSE"
+    },
+    "impeccable": {
+      "repository": "https://github.com/pbakaus/impeccable",
+      "commit": "2b86d9c07b97d4bed7de23583e1bd1e58dd2baae",
+      "mode": "Written typeset/Operate guidance; engine not executed"
+    }
+  },
+  "execution": {
+    "catalog_searches": 5,
+    "all_exit_codes_zero": true,
+    "environment": "Existing locked backend uv environment; offline; --extra encoder --no-sync; temporary cache",
+    "new_dependencies": false,
+    "provider_or_model_calls": false,
+    "design_system_generator_run": false,
+    "engine_executed": false
+  },
+  "decisions": [
+    {
+      "source": "Initial typography search",
+      "choice": "Reject literal style recommendations",
+      "reason": "Bauhaus/Neubrutalist poster styling is not the requested operational research UI. Keep result in receipt, retry once."
+    },
+    {
+      "source": "Typography retry",
+      "choice": [
+        "Friendly SaaS",
+        "Enterprise SaaS Mobile (Plus Jakarta Sans)"
+      ],
+      "adaptation": "Use consistent readable role hierarchy and a coherent sans family. Preserve Observatory's locally available Avenir Next/Trebuchet/Segoe UI display character without font downloads. Native uppercase or platform unit advice is not adopted wholesale."
+    },
+    {
+      "source": "Readability UX",
+      "choice": [
+        "Readable Font Size",
+        "Line Height",
+        "Color Contrast"
+      ],
+      "adaptation": "Prefer16px mobile source prose, enforce project review floors, increase metadata/chips/controls explicitly, tune 1.5–1.75 leading and preserve contrast."
+    },
+    {
+      "source": "Targets UX",
+      "choice": [
+        "Touch Target Size",
+        "Target Size (Minimum)",
+        "Touch Spacing"
+      ],
+      "adaptation": "Distinguish web CSS-pixel minimum from native points/dp. Choose40–44px common action targets and8px separation as project usability goals, not a universal conformance assertion."
+    },
+    {
+      "source": "Reflow UX",
+      "choice": [
+        "Chip Collection Reflow",
+        "Text Reflow and Spacing"
+      ],
+      "adaptation": "Wrap collections, controls and source actions; retain one row of four resource tabs with internally stacked labels/counts. Never solve narrow widths with8–10px text or CSS transform scaling."
+    }
+  ],
+  "baseline_measurement": {
+    "method": "Installed Chrome via Playwright, default100% scale, reduced motion, local static GET pages only; non-local requests blocked; first source opened locally for phone reader measurement",
+    "read_only": true,
+    "source_variant_09": "datapulse-app-refined.html",
+    "source_variant_08": "datapulse-observatory.html",
+    "samples": [
+      {
+        "variant": 9,
+        "width": 1440,
+        "values": {
+          "heading": {
+            "selector": ".heading-copy h1",
+            "fontSize": "26px",
+            "lineHeight": "33.8px",
+            "fontWeight": "650",
+            "fontFamily": "\"Avenir Next\", Inter, -apple-system, \"system-ui\", \"Segoe UI\", Arial, sans-serif",
+            "width": 217,
+            "height": 34
+          },
+          "question": {
+            "selector": ".query-field textarea",
+            "fontSize": "17px",
+            "lineHeight": "27.2px",
+            "fontWeight": "450",
+            "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Arial, sans-serif",
+            "width": 1014,
+            "height": 58
+          },
+          "nav": {
+            "selector": ".nav-item",
+            "fontSize": "12px",
+            "lineHeight": "18.6px",
+            "fontWeight": "650",
+            "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Arial, sans-serif",
+            "width": 189,
+            "height": 39
+          },
+          "control": {
+            "selector": ".tool.bordered",
+            "fontSize": "10px",
+            "lineHeight": "15.5px",
+            "fontWeight": "600",
+            "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Arial, sans-serif",
+            "width": 121,
+            "height": 32
+          },
+          "prose": {
+            "selector": ".excerpt",
+            "fontSize": "13px",
+            "lineHeight": "23.4px",
+            "fontWeight": "400",
+            "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Arial, sans-serif",
+            "width": 751,
+            "height": 89
+          },
+          "title": {
+            "selector": ".card-title button",
+            "fontSize": "17px",
+            "lineHeight": "25.5px",
+            "fontWeight": "650",
+            "fontFamily": "\"Avenir Next\", Inter, -apple-system, \"system-ui\", \"Segoe UI\", Arial, sans-serif",
+            "width": 548,
+            "height": 26
+          },
+          "metadata": {
+            "selector": ".byline",
+            "fontSize": "11px",
+            "lineHeight": "19.25px",
+            "fontWeight": "400",
+            "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Arial, sans-serif",
+            "width": 751,
+            "height": 19
+          },
+          "chip": {
+            "selector": ".provider-chips .chip",
+            "fontSize": "9px",
+            "lineHeight": "14.4px",
+            "fontWeight": "500",
+            "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Arial, sans-serif",
+            "width": 53,
+            "height": 18
+          },
+          "focus": {
+            "selector": ".focus-query",
+            "fontSize": "11px",
+            "lineHeight": "18.15px",
+            "fontWeight": "400",
+            "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Arial, sans-serif",
+            "width": 1140,
+            "height": 18
+          },
+          "reader": {
+            "selector": ".reader-content",
+            "fontSize": "14px",
+            "lineHeight": "25.9px",
+            "fontWeight": "400",
+            "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Arial, sans-serif",
+            "width": 325,
+            "height": 269
+          },
+          "readerTitle": {
+            "selector": ".reader-title",
+            "fontSize": "16px",
+            "lineHeight": "24px",
+            "fontWeight": "650",
+            "fontFamily": "\"Avenir Next\", Inter, -apple-system, \"system-ui\", \"Segoe UI\", Arial, sans-serif",
+            "width": 327,
+            "height": 48
+          },
+          "readerTab": {
+            "selector": ".reader-tabs button",
+            "fontSize": "11px",
+            "lineHeight": "17.05px",
+            "fontWeight": "400",
+            "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Arial, sans-serif",
+            "width": 107,
+            "height": 31
+          },
+          "readableControl": {
+            "selector": ".readable-controls button",
+            "fontSize": "10px",
+            "lineHeight": "18.5px",
+            "fontWeight": "400",
+            "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Arial, sans-serif",
+            "width": 66,
+            "height": 29
+          },
+          "sourceAction": {
+            "selector": ".source-action",
+            "fontSize": "14px",
+            "lineHeight": "21.7px",
+            "fontWeight": "400",
+            "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Arial, sans-serif",
+            "width": 31,
+            "height": 31
+          },
+          "access": {
+            "selector": ".access-chip",
+            "fontSize": "9px",
+            "lineHeight": "13.5px",
+            "fontWeight": "400",
+            "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Arial, sans-serif",
+            "width": 87,
+            "height": 24
+          },
+          "credits": {
+            "selector": ".credit-meter",
+            "fontSize": "10px",
+            "lineHeight": "15.5px",
+            "fontWeight": "400",
+            "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Arial, sans-serif",
+            "width": 125,
+            "height": 36
+          }
+        }
+      },
+      {
+        "variant": 9,
+        "width": 390,
+        "values": {
+          "heading": {
+            "selector": ".heading-copy h1",
+            "fontSize": "25px",
+            "lineHeight": "32.5px",
+            "fontWeight": "650",
+            "fontFamily": "\"Avenir Next\", Inter, -apple-system, \"system-ui\", \"Segoe UI\", Arial, sans-serif",
+            "width": 210,
+            "height": 33
+          },
+          "question": {
+            "selector": ".query-field textarea",
+            "fontSize": "16px",
+            "lineHeight": "26.4px",
+            "fontWeight": "450",
+            "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Arial, sans-serif",
+            "width": 233,
+            "height": 82
+          },
+          "nav": {
+            "selector": ".nav-item",
+            "fontSize": "12px",
+            "lineHeight": "18.6px",
+            "fontWeight": "650",
+            "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Arial, sans-serif",
+            "width": 201,
+            "height": 39
+          },
+          "control": {
+            "selector": ".tool.bordered",
+            "fontSize": "10px",
+            "lineHeight": "15.5px",
+            "fontWeight": "600",
+            "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Arial, sans-serif",
+            "width": 121,
+            "height": 31
+          },
+          "prose": {
+            "selector": ".excerpt",
+            "fontSize": "13px",
+            "lineHeight": "24.05px",
+            "fontWeight": "400",
+            "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Arial, sans-serif",
+            "width": 328,
+            "height": 162
+          },
+          "title": {
+            "selector": ".card-title button",
+            "fontSize": "17px",
+            "lineHeight": "25.5px",
+            "fontWeight": "650",
+            "fontFamily": "\"Avenir Next\", Inter, -apple-system, \"system-ui\", \"Segoe UI\", Arial, sans-serif",
+            "width": 328,
+            "height": 51
+          },
+          "metadata": {
+            "selector": ".byline",
+            "fontSize": "10px",
+            "lineHeight": "18px",
+            "fontWeight": "400",
+            "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Arial, sans-serif",
+            "width": 328,
+            "height": 36
+          },
+          "chip": {
+            "selector": ".provider-chips .chip",
+            "fontSize": "9px",
+            "lineHeight": "14.4px",
+            "fontWeight": "500",
+            "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Arial, sans-serif",
+            "width": 53,
+            "height": 18
+          },
+          "focus": {
+            "selector": ".focus-query",
+            "fontSize": "11px",
+            "lineHeight": "18.7px",
+            "fontWeight": "400",
+            "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Arial, sans-serif",
+            "width": 336,
+            "height": 37
+          },
+          "reader": {
+            "selector": ".reader-content",
+            "fontSize": "14px",
+            "lineHeight": "25.9px",
+            "fontWeight": "400",
+            "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Arial, sans-serif",
+            "width": 328,
+            "height": 269
+          },
+          "readerTitle": {
+            "selector": ".reader-title",
+            "fontSize": "16px",
+            "lineHeight": "24.8px",
+            "fontWeight": "650",
+            "fontFamily": "\"Avenir Next\", Inter, -apple-system, \"system-ui\", \"Segoe UI\", Arial, sans-serif",
+            "width": 328,
+            "height": 50
+          },
+          "readerTab": {
+            "selector": ".reader-tabs button",
+            "fontSize": "11px",
+            "lineHeight": "17.05px",
+            "fontWeight": "400",
+            "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Arial, sans-serif",
+            "width": 107,
+            "height": 32
+          },
+          "readableControl": {
+            "selector": ".readable-controls button",
+            "fontSize": "10px",
+            "lineHeight": "18.5px",
+            "fontWeight": "400",
+            "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Arial, sans-serif",
+            "width": 66,
+            "height": 30
+          },
+          "sourceAction": {
+            "selector": ".source-action",
+            "fontSize": "14px",
+            "lineHeight": "21.7px",
+            "fontWeight": "400",
+            "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Arial, sans-serif",
+            "width": 31,
+            "height": 32
+          },
+          "access": {
+            "selector": ".access-chip",
+            "fontSize": "8px",
+            "lineHeight": "12px",
+            "fontWeight": "400",
+            "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Arial, sans-serif",
+            "width": 77,
+            "height": 22
+          },
+          "credits": {
+            "selector": ".credit-meter",
+            "fontSize": "9px",
+            "lineHeight": "13.95px",
+            "fontWeight": "400",
+            "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Arial, sans-serif",
+            "width": 105,
+            "height": 32
+          }
+        }
+      },
+      {
+        "variant": 8,
+        "width": 1440,
+        "values": {
+          "fontSize": "64px",
+          "lineHeight": "70.4px",
+          "fontWeight": "750",
+          "fontFamily": "\"Avenir Next\", \"Trebuchet MS\", \"Segoe UI\", sans-serif"
+        }
+      }
+    ]
+  },
+  "queries": [
+    {
+      "domain": "typography",
+      "query": "bold geometric friendly sans readable interface",
+      "command": "UV_CACHE_DIR=/tmp/research-scout-observatory-app-cache .tools/uv/bin/uv run --project backend --locked --offline --extra encoder --no-sync python .agents/skills/scout-ui-ux-pro-max/scripts/search.py 'bold geometric friendly sans readable interface' --domain typography --json",
+      "exit_code": 0,
+      "result": {
+        "domain": "typography",
+        "query": "bold geometric friendly sans readable interface",
+        "file": "typography.csv",
+        "count": 3,
+        "results": [
+          {
+            "Font Pairing Name": "Bauhaus Geometric",
+            "Category": "Geometric Sans + Single Weight",
+            "Heading Font": "Outfit",
+            "Body Font": "Outfit",
+            "Mood/Style Keywords": "bauhaus, geometric, constructivist, bold, uppercase, architectural, mechanical, poster, tactile",
+            "Best For": "Bauhaus mobile apps, bold editorial mobile, design-forward branding apps, art/culture platforms",
+            "Google Fonts URL": "https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;900&display=swap",
+            "CSS Import": "@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;900&display=swap');",
+            "Tailwind Config": "fontFamily: { display: ['Outfit', 'sans-serif'], body: ['Outfit', 'sans-serif'] }",
+            "Notes": "Single-family system: Outfit 900 uppercase tracking-tighter for heroes; Outfit 700 uppercase for buttons/nav; Outfit 500 for body. Scale aggressively: text-4xl–text-5xl headlines on mobile."
+          },
+          {
+            "Font Pairing Name": "Neubrutalist Bold",
+            "Category": "Display + Sans",
+            "Heading Font": "Lexend Mega",
+            "Body Font": "Public Sans",
+            "Mood/Style Keywords": "bold, neubrutalist, loud, strong, geometric, quirky",
+            "Best For": "Neubrutalist designs, Gen Z brands, bold marketing",
+            "Google Fonts URL": "https://fonts.googleapis.com/css2?family=Lexend+Mega:wght@100..900&family=Public+Sans:wght@100..900&display=swap",
+            "CSS Import": "@import url('https://fonts.googleapis.com/css2?family=Lexend+Mega:wght@100..900&family=Public+Sans:wght@100..900&display=swap');",
+            "Tailwind Config": "fontFamily: { mega: ['Lexend Mega', 'sans-serif'], body: ['Public Sans', 'sans-serif'] }",
+            "Notes": "Lexend Mega has distinct character and variable weight."
+          },
+          {
+            "Font Pairing Name": "Vietnamese Friendly",
+            "Category": "Sans + Sans",
+            "Heading Font": "Be Vietnam Pro",
+            "Body Font": "Noto Sans",
+            "Mood/Style Keywords": "vietnamese, international, readable, clean, multilingual, accessible",
+            "Best For": "Vietnamese sites, multilingual apps, international products",
+            "Google Fonts URL": "https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&family=Noto+Sans:wght@300;400;500;600;700&display=swap",
+            "CSS Import": "@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&family=Noto+Sans:wght@300;400;500;600;700&display=swap');",
+            "Tailwind Config": "fontFamily: { sans: ['Be Vietnam Pro', 'Noto Sans', 'sans-serif'] }",
+            "Notes": "Be Vietnam Pro excellent Vietnamese support. Noto as fallback."
+          }
+        ]
+      }
+    },
+    {
+      "domain": "ux",
+      "query": "readable font size line height body text",
+      "command": "UV_CACHE_DIR=/tmp/research-scout-observatory-app-cache .tools/uv/bin/uv run --project backend --locked --offline --extra encoder --no-sync python .agents/skills/scout-ui-ux-pro-max/scripts/search.py 'readable font size line height body text' --domain ux --json",
+      "exit_code": 0,
+      "result": {
+        "domain": "ux",
+        "query": "readable font size line height body text",
+        "file": "ux-guidelines.csv",
+        "count": 3,
+        "results": [
+          {
+            "Category": "Responsive",
+            "Issue": "Readable Font Size",
+            "Platform": "All",
+            "Description": "Text must be readable on all devices",
+            "Do": "Minimum 16px body text on mobile",
+            "Don't": "Tiny text on mobile",
+            "Code Example Good": "text-base or larger",
+            "Code Example Bad": "text-xs for body text",
+            "Severity": "High"
+          },
+          {
+            "Category": "Typography",
+            "Issue": "Line Height",
+            "Platform": "All",
+            "Description": "Adequate line height improves readability",
+            "Do": "Use 1.5-1.75 for body text",
+            "Don't": "Cramped or excessive line height",
+            "Code Example Good": "leading-relaxed (1.625)",
+            "Code Example Bad": "leading-none (1)",
+            "Severity": "Medium"
+          },
+          {
+            "Category": "Accessibility",
+            "Issue": "Color Contrast",
+            "Platform": "All",
+            "Description": "Text must be readable against background",
+            "Do": "Minimum 4.5:1 ratio for normal text",
+            "Don't": "Low contrast text",
+            "Code Example Good": "#333 on white (7:1)",
+            "Code Example Bad": "#999 on white (2.8:1)",
+            "Severity": "High"
+          }
+        ]
+      }
+    },
+    {
+      "domain": "ux",
+      "query": "web target size compact buttons spacing",
+      "command": "UV_CACHE_DIR=/tmp/research-scout-observatory-app-cache .tools/uv/bin/uv run --project backend --locked --offline --extra encoder --no-sync python .agents/skills/scout-ui-ux-pro-max/scripts/search.py 'web target size compact buttons spacing' --domain ux --json",
+      "exit_code": 0,
+      "result": {
+        "domain": "ux",
+        "query": "web target size compact buttons spacing",
+        "file": "ux-guidelines.csv",
+        "count": 3,
+        "results": [
+          {
+            "Category": "Touch",
+            "Issue": "Touch Target Size",
+            "Platform": "Mobile",
+            "Description": "Touch target guidance depends on platform and web context",
+            "Do": "Use 44pt on iOS and 48dp on Android; for web use the separate WCAG Target Size rule",
+            "Don't": "Treat one unit or minimum as universal across platforms",
+            "Code Example Good": "iOS 44pt; Android 48dp; Web 24 CSS px plus WCAG exceptions",
+            "Code Example Bad": "w-6 h-6 buttons",
+            "Severity": "High"
+          },
+          {
+            "Category": "Accessibility",
+            "Issue": "Target Size (Minimum)",
+            "Platform": "Web",
+            "Description": "WCAG 2.2 AA requires 24 CSS px pointer targets or an applicable exception",
+            "Do": "Use at least 24 by 24 CSS px or verify spacing equivalent inline user-agent or essential exceptions",
+            "Don't": "Assume native 44pt or 48dp guidance defines web conformance",
+            "Code Example Good": "min-width: 24px; min-height: 24px",
+            "Code Example Bad": "tiny adjacent icon buttons",
+            "Severity": "High"
+          },
+          {
+            "Category": "Touch",
+            "Issue": "Touch Spacing",
+            "Platform": "Mobile",
+            "Description": "Adjacent touch targets need adequate spacing",
+            "Do": "Minimum 8px gap between touch targets",
+            "Don't": "Tightly packed clickable elements",
+            "Code Example Good": "gap-2 between buttons",
+            "Code Example Bad": "gap-0 or gap-1",
+            "Severity": "Medium"
+          }
+        ]
+      }
+    },
+    {
+      "domain": "ux",
+      "query": "text scaling long titles chip collection reflow",
+      "command": "UV_CACHE_DIR=/tmp/research-scout-observatory-app-cache .tools/uv/bin/uv run --project backend --locked --offline --extra encoder --no-sync python .agents/skills/scout-ui-ux-pro-max/scripts/search.py 'text scaling long titles chip collection reflow' --domain ux --json",
+      "exit_code": 0,
+      "result": {
+        "domain": "ux",
+        "query": "text scaling long titles chip collection reflow",
+        "file": "ux-guidelines.csv",
+        "count": 3,
+        "results": [
+          {
+            "Category": "Layout",
+            "Issue": "Chip Collection Reflow",
+            "Platform": "All",
+            "Description": "Filter chips and editable value collections must preserve labels when space or text size changes",
+            "Do": "Wrap the collection or use an operable +n disclosure for hidden overflow values",
+            "Don't": "Force all chips into one clipped row or hide overflow values",
+            "Code Example Good": "<div class='chip-list'>{chips}</div> with flex-wrap",
+            "Code Example Bad": "<div class='chip-list' style='height:32px;overflow:hidden'>",
+            "Severity": "High"
+          },
+          {
+            "Category": "Accessibility",
+            "Issue": "Text Reflow and Spacing",
+            "Platform": "Web",
+            "Description": "Text must remain available at narrow widths zoom and user spacing overrides",
+            "Do": "Use fluid sizes content-driven height and unitless line height",
+            "Don't": "Clip text in fixed-width or fixed-height boxes",
+            "Code Example Good": ".copy { inline-size: min(100%, 65ch); height: auto; line-height: 1.5; }",
+            "Code Example Bad": ".copy { width: 900px; height: 40px; overflow: hidden; }",
+            "Severity": "Critical"
+          },
+          {
+            "Category": "Responsive",
+            "Issue": "Image Scaling",
+            "Platform": "Web",
+            "Description": "Images should scale with container",
+            "Do": "Use max-width: 100% on images",
+            "Don't": "Fixed width images overflow",
+            "Code Example Good": "max-w-full h-auto",
+            "Code Example Bad": "width='800' fixed",
+            "Severity": "Medium"
+          }
+        ]
+      }
+    },
+    {
+      "domain": "typography",
+      "query": "Friendly SaaS single family clean interface",
+      "command": "UV_CACHE_DIR=/tmp/research-scout-observatory-app-cache .tools/uv/bin/uv run --project backend --locked --offline --extra encoder --no-sync python .agents/skills/scout-ui-ux-pro-max/scripts/search.py 'Friendly SaaS single family clean interface' --domain typography --json",
+      "exit_code": 0,
+      "result": {
+        "domain": "typography",
+        "query": "Friendly SaaS single family clean interface",
+        "file": "typography.csv",
+        "count": 3,
+        "results": [
+          {
+            "Font Pairing Name": "Friendly SaaS",
+            "Category": "Sans + Sans",
+            "Heading Font": "Plus Jakarta Sans",
+            "Body Font": "Plus Jakarta Sans",
+            "Mood/Style Keywords": "friendly, modern, saas, clean, approachable, professional",
+            "Best For": "SaaS products, web apps, dashboards, B2B, productivity tools",
+            "Google Fonts URL": "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap",
+            "CSS Import": "@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');",
+            "Tailwind Config": "fontFamily: { sans: ['Plus Jakarta Sans', 'sans-serif'] }",
+            "Notes": "Single versatile font. Modern alternative to Inter."
+          },
+          {
+            "Font Pairing Name": "Enterprise SaaS Mobile (Plus Jakarta Sans)",
+            "Category": "Geometric Sans (Single Family)",
+            "Heading Font": "Plus Jakarta Sans",
+            "Body Font": "Plus Jakarta Sans",
+            "Mood/Style Keywords": "enterprise, saas, b2b, professional, indigo, modern, approachable, legible, ios dynamic type, android scaling",
+            "Best For": "B2B SaaS apps, productivity tools, government and finance mobile apps, admin dashboards, enterprise onboarding",
+            "Google Fonts URL": "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400",
+            "CSS Import": "@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap');",
+            "Tailwind Config": "fontFamily: { sans: ['Plus Jakarta Sans', 'sans-serif'] }",
+            "Notes": "Single-family system: Plus Jakarta Sans balances professional authority with mobile approachability. Weight scale: ExtraBold 800 for screen titles/hero (line height 1.1–1.2). Bold 700 for section headers. SemiBold 600 for card titles and buttons. Regular 400 for body text (line height 1.4–1.5). Must support iOS Dynamic Type and Android font scaling — never hardcode pixel sizes without respecting system font scale. Button text: uppercase, letterSpacing 0.5. Caption: 12px Regular. Muted: Slate 500 #64748B."
+          },
+          {
+            "Font Pairing Name": "Modern Professional",
+            "Category": "Sans + Sans",
+            "Heading Font": "Poppins",
+            "Body Font": "Open Sans",
+            "Mood/Style Keywords": "modern, professional, clean, corporate, friendly, approachable",
+            "Best For": "SaaS, corporate sites, business apps, startups, professional services",
+            "Google Fonts URL": "https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap",
+            "CSS Import": "@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');",
+            "Tailwind Config": "fontFamily: { heading: ['Poppins', 'sans-serif'], body: ['Open Sans', 'sans-serif'] }",
+            "Notes": "Geometric Poppins for headings, humanist Open Sans for readability."
+          }
+        ]
+      },
+      "retry_of": 0
+    }
+  ]
+}

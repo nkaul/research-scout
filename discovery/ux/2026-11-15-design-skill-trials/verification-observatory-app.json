@@ -1,0 +1,90 @@
+{
+  "date": "2026-11-15",
+  "passed": true,
+  "scope": "Exactly one more readable, landing-inspired app mockup added as direction 10. All nine earlier prototypes retained.",
+  "gallery": {
+    "total_mockups": 10,
+    "added_mockups": 1,
+    "retained_mockups": 9,
+    "landing_concept_retained": true,
+    "comparison": [
+      "datapulse-app-refined",
+      "observatory-app"
+    ]
+  },
+  "preservation": {
+    "prior_artifacts_checked": 75,
+    "changed": 0,
+    "all_nine_prototypes_unchanged": true,
+    "earlier_reports_and_captures_retained": true
+  },
+  "new_mockup": {
+    "id": "observatory-app",
+    "name": "Observatory App",
+    "independent_assets": true,
+    "existing_app_and_tab_structure_retained": true,
+    "checks_passed": 38,
+    "responsive_widths": [
+      1440,
+      1100,
+      970,
+      768,
+      650,
+      390,
+      320
+    ],
+    "measured_type_checks": [
+      {
+        "name": "1440px actual text meets readability minimums and improves on direction 09",
+        "status": "passed"
+      },
+      {
+        "name": "1100px actual text meets readability minimums and improves on direction 09",
+        "status": "passed"
+      },
+      {
+        "name": "970px actual text meets readability minimums and improves on direction 09",
+        "status": "passed"
+      },
+      {
+        "name": "768px actual text meets readability minimums and improves on direction 09",
+        "status": "passed"
+      },
+      {
+        "name": "650px actual text meets readability minimums and improves on direction 09",
+        "status": "passed"
+      },
+      {
+        "name": "390px actual text meets readability minimums and improves on direction 09",
+        "status": "passed"
+      },
+      {
+        "name": "320px actual text meets readability minimums and improves on direction 09",
+        "status": "passed"
+      }
+    ],
+    "external_requests": 0,
+    "api_requests": 0,
+    "http_writes": 0,
+    "runtime_errors": 0
+  },
+  "application": {
+    "frontend_source_files_unchanged": 93,
+    "backend_source_files_unchanged": 53,
+    "source_files_unchanged": 146,
+    "runtime_stack_changed": false,
+    "production_adoption": false
+  },
+  "limitations": [
+    "Static authored design preview. Local UI demonstrations do not prove production API, provider/model, persistence or account behavior.",
+    "Contrast checks cover representative opaque text/background pairs; gradient/translucent backgrounds are unmeasured and this is not a complete WCAG or screen-reader audit.",
+    "Earlier previews are visited read-only for authored-content and typography comparison; their sources, reports and captures are not changed."
+  ],
+  "evidence": {
+    "browser": "validation-observatory-app.json",
+    "gallery": "validation-gallery-ten.json",
+    "privacy": "privacy-observatory-app.json",
+    "brief": "observatory-app-brief.md",
+    "catalog": "observatory-app-catalog.json"
+  }
+}

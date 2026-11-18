@@ -1,0 +1,30 @@
+.bubble {
+  position: fixed;
+  z-index: 1000;
+  max-width: min(280px, calc(100vw - 16px));
+  max-height: min(200px, 50dvh);
+  overflow-y: auto;
+  padding: 7px 10px;
+  border: 1px solid #36435a;
+  border-radius: 7px;
+  background: #243249;
+  box-shadow: 0 3px 12px #14223a24;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 450;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+  text-align: left;
+  white-space: normal;
+  pointer-events: auto;
+  animation: appear 90ms ease-out;
+}
+
+@keyframes appear {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bubble { animation: none; }
+}

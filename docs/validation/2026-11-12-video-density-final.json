@@ -1,0 +1,460 @@
+{
+  "date": "2026-11-12",
+  "status": "passed",
+  "scope": "Papers-style concise Videos cards and aligned actions, compact media-first reader/description/captions, passive saved desktop preview and fast-thumbnail timing fix.",
+  "checks": {
+    "unique_mocked_browser_cases": 62,
+    "new_browser_cases": 7,
+    "typescript": "passed",
+    "isolated_production_build": "passed",
+    "diff_check": "passed",
+    "backend": "unchanged; backend suite not rerun",
+    "dependencies": "unchanged",
+    "fixture_backend_integration": "1 gated case skipped; current local services are live, not the required fixture services"
+  },
+  "browser_runs": [
+    {
+      "name": "broad affected regression",
+      "source": ".scout/video-density-main.local.json",
+      "stats": {
+        "startTime": "2026-11-12T18:28:57.191Z",
+        "duration": 145710.92099999997,
+        "expected": 54,
+        "skipped": 1,
+        "unexpected": 1,
+        "flaky": 0
+      },
+      "cases": [
+        {
+          "file": "load-timing.spec.ts",
+          "title": "duration units cover sub-millisecond, millisecond, second and minute waits",
+          "status": "expected"
+        },
+        {
+          "file": "load-timing.spec.ts",
+          "title": "saved-view and metadata waits show live elapsed time, stop on completion and stay separate from original search duration",
+          "status": "expected"
+        },
+        {
+          "file": "load-timing.spec.ts",
+          "title": "a late paper response cannot replace the selected paper’s completed load time",
+          "status": "expected"
+        },
+        {
+          "file": "navigation-stability.spec.ts",
+          "title": "Search survives chat source inspection and returns with its draft and per-search filter",
+          "status": "expected"
+        },
+        {
+          "file": "navigation-stability.spec.ts",
+          "title": "filters survive saved views and history without leaking into another search",
+          "status": "expected"
+        },
+        {
+          "file": "navigation-stability.spec.ts",
+          "title": "a delayed legacy run cannot resurrect after New research",
+          "status": "expected"
+        },
+        {
+          "file": "navigation-stability.spec.ts",
+          "title": "slow history does not block readiness or erase the current recent search",
+          "status": "expected"
+        },
+        {
+          "file": "navigation-stability.spec.ts",
+          "title": "New research fences a late create response without replay or UI resurrection",
+          "status": "expected"
+        },
+        {
+          "file": "navigation-stability.spec.ts",
+          "title": "New research fences a late send response without replay or UI resurrection",
+          "status": "expected"
+        },
+        {
+          "file": "paper-reader-density.spec.ts",
+          "title": "reader keeps a small visible title, honest author context and compact metadata with an explained DOI gate",
+          "status": "expected"
+        },
+        {
+          "file": "paper-reader-density.spec.ts",
+          "title": "notes distinguish the run shortlist from project saving and missing DOIs remain explained",
+          "status": "expected"
+        },
+        {
+          "file": "papers-cards.spec.ts",
+          "title": "paper chips follow its title and all source, PDF, provider and access actions share one row",
+          "status": "expected"
+        },
+        {
+          "file": "papers-cards.spec.ts",
+          "title": "inline abstract icon expands and collapses already available text without provider work",
+          "status": "expected"
+        },
+        {
+          "file": "papers-cards.spec.ts",
+          "title": "a provider excerpt expands through an explicit saved read and retains latest source-version notice",
+          "status": "expected"
+        },
+        {
+          "file": "papers-control-panel.spec.ts",
+          "title": "one common panel holds source/date, display tools and explicit partial coverage without repeated summary panels",
+          "status": "expected"
+        },
+        {
+          "file": "papers-control-panel.spec.ts",
+          "title": "desktop opens saved metadata once without moving focus and respects closing across stream updates",
+          "status": "expected"
+        },
+        {
+          "file": "papers-control-panel.spec.ts",
+          "title": "narrow touch-style layouts keep metadata closed until an explicit record action",
+          "status": "expected"
+        },
+        {
+          "file": "papers-control-panel.spec.ts",
+          "title": "missing Unpaywall records are explained as access outcomes when discovery completed successfully",
+          "status": "expected"
+        },
+        {
+          "file": "reader-and-abstracts.spec.ts",
+          "title": "latest numeric versions and dated opaque revisions replace duplicate records without sorting hashes",
+          "status": "expected"
+        },
+        {
+          "file": "reader-and-abstracts.spec.ts",
+          "title": "exact citation duplicates with different DOIs group visually while retaining both provider records and access boundaries",
+          "status": "expected"
+        },
+        {
+          "file": "reader-and-abstracts.spec.ts",
+          "title": "compact observation references do not erase full citation fields or prevent duplicate grouping",
+          "status": "expected"
+        },
+        {
+          "file": "reader-and-abstracts.spec.ts",
+          "title": "key points use complete original sentences, retain qualifiers and avoid repeated sentences",
+          "status": "expected"
+        },
+        {
+          "file": "reader-and-abstracts.spec.ts",
+          "title": "reader puts publication before abstract points and authors after, with timing in the footer and flat metadata",
+          "status": "expected"
+        },
+        {
+          "file": "reader-and-abstracts.spec.ts",
+          "title": "a newer streamed version refreshes the selected saved record without duplicating the card or reopening a closed reader",
+          "status": "expected"
+        },
+        {
+          "file": "reader-refinement.spec.ts",
+          "title": "reader keeps a small title in every tab and secondary reports collapsed",
+          "status": "expected"
+        },
+        {
+          "file": "reader-refinement.spec.ts",
+          "title": "paper and video actions stay on one line while reports open separately",
+          "status": "expected"
+        },
+        {
+          "file": "reader-refinement.spec.ts",
+          "title": "slow paper and video reads show a skeleton without allowing an obsolete read to win",
+          "status": "expected"
+        },
+        {
+          "file": "reader-refinement.spec.ts",
+          "title": "applying a custom range dispatches the new bounds and replaces the results",
+          "status": "expected"
+        },
+        {
+          "file": "reader-refinement.spec.ts",
+          "title": "loading another record makes old actions inert and closing prevents a late reopen",
+          "status": "expected"
+        },
+        {
+          "file": "right-panel-layout.spec.ts",
+          "title": "desktop details dock on the right and leave research controls interactive",
+          "status": "unexpected"
+        },
+        {
+          "file": "right-panel-layout.spec.ts",
+          "title": "video cards keep a small thumbnail next to their description and saved captions in the panel",
+          "status": "expected"
+        },
+        {
+          "file": "right-panel-layout.spec.ts",
+          "title": "narrow details remain an inline panel with no horizontal overflow or backdrop",
+          "status": "expected"
+        },
+        {
+          "file": "seamless-results.spec.ts",
+          "title": "hover and row keyboard movement follow the newest saved source without stealing focus",
+          "status": "expected"
+        },
+        {
+          "file": "seamless-results.spec.ts",
+          "title": "abstracts expand inline and the global display toggle adds no retrieval calls",
+          "status": "expected"
+        },
+        {
+          "file": "seamless-results.spec.ts",
+          "title": "returning to the active row supersedes a different pending metadata read",
+          "status": "expected"
+        },
+        {
+          "file": "seamless-results.spec.ts",
+          "title": "reported PDFs embed only on request and HTTP arXiv records use the canonical HTTPS document",
+          "status": "expected"
+        },
+        {
+          "file": "seamless-results.spec.ts",
+          "title": "PDF locations validate legacy IDs and exclude malformed, local and credential-bearing URLs",
+          "status": "expected"
+        },
+        {
+          "file": "seamless-results.spec.ts",
+          "title": "a touch pointer does not open or fetch the reader automatically",
+          "status": "expected"
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "top Search keeps progressive papers and videos in separate remembered tabs without opening chat",
+          "status": "expected"
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "a source opens a right panel while preserving the search, tab, filter and draft",
+          "status": "expected"
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "AI-refined top Search stays a search and mobile category views do not add requests",
+          "status": "expected"
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "a new explicit manual direct search replaces prior grouped Search results",
+          "status": "expected"
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "source removals and adaptive date presets survive reload, history and New research",
+          "status": "expected"
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "custom years persist and removing every source prevents an accidental fallback search",
+          "status": "expected"
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "the Papers lane retains exact registry metadata when there is no combined All tab",
+          "status": "expected"
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "video thumbnails open a stable preview and transcript loading is explicit and saved",
+          "status": "expected"
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "blocked captions leave the video usable and do not retry automatically",
+          "status": "expected"
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "a delayed preview cannot replace a newly cleared search",
+          "status": "expected"
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "startup tabs wait for hydration and an early Videos choice survives a delayed saved search",
+          "status": "expected"
+        },
+        {
+          "file": "video-loading.spec.ts",
+          "title": "a delayed thumbnail shows a skeleton until its image loads without starting a player or provider work",
+          "status": "expected"
+        },
+        {
+          "file": "video-loading.spec.ts",
+          "title": "an explicitly opened video shows its player loader until iframe load and retains playback across saved captions",
+          "status": "expected"
+        },
+        {
+          "file": "video-preview-resilience.spec.ts",
+          "title": "a failed thumbnail recovers when same-video saved details supply a new safe image",
+          "status": "expected"
+        },
+        {
+          "file": "video-preview-resilience.spec.ts",
+          "title": "updating same-video transcript metadata retains an already opened player",
+          "status": "expected"
+        },
+        {
+          "file": "video-preview-resilience.spec.ts",
+          "title": "an invalid saved video identity has no unsafe URL or broken seek target (no captions)",
+          "status": "expected"
+        },
+        {
+          "file": "video-preview-resilience.spec.ts",
+          "title": "an invalid saved video identity has no unsafe URL or broken seek target (saved captions)",
+          "status": "expected"
+        },
+        {
+          "file": "youtube-integration.spec.ts",
+          "title": "restored workspace retains automatic YouTube descriptions alongside papers and saved replay",
+          "status": "skipped"
+        }
+      ]
+    },
+    {
+      "name": "corrected docked-reader checks",
+      "source": ".scout/video-density-corrected.local.json",
+      "stats": {
+        "startTime": "2026-11-12T18:32:33.808Z",
+        "duration": 14497.055999999999,
+        "expected": 3,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "cases": [
+        {
+          "file": "right-panel-layout.spec.ts",
+          "title": "desktop details dock on the right and leave research controls interactive",
+          "status": "expected"
+        },
+        {
+          "file": "right-panel-layout.spec.ts",
+          "title": "video cards keep a small thumbnail next to their description and saved captions in the panel",
+          "status": "expected"
+        },
+        {
+          "file": "right-panel-layout.spec.ts",
+          "title": "narrow details remain an inline panel with no horizontal overflow or backdrop",
+          "status": "expected"
+        }
+      ]
+    },
+    {
+      "name": "final compact video cards",
+      "source": ".scout/video-cards-compact-final.local.json",
+      "stats": {
+        "startTime": "2026-11-12T18:32:27.573Z",
+        "duration": 14334.651,
+        "expected": 3,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "cases": [
+        {
+          "file": "video-cards-compact.spec.ts",
+          "title": "videos have title chips, one channel byline and aligned compact actions at every viewport",
+          "status": "expected"
+        },
+        {
+          "file": "video-cards-compact.spec.ts",
+          "title": "description expansion is local and provider versions remain attributable behind one control",
+          "status": "expected"
+        },
+        {
+          "file": "video-cards-compact.spec.ts",
+          "title": "preview and project save keep the exact latest video without starting transcript or research work",
+          "status": "expected"
+        }
+      ]
+    },
+    {
+      "name": "final compact reader/loading/resilience",
+      "source": ".scout/2026-11-12-video-reader-final-results/.last-run.json",
+      "status": "passed",
+      "reported_cases_passed": 10,
+      "reported_duration_seconds": 27,
+      "scope": [
+        "video-reader-compact.spec.ts (4)",
+        "video-loading.spec.ts (2)",
+        "video-preview-resilience.spec.ts (4)"
+      ],
+      "evidence": "Agent-observed Playwright output and machine last-run pass marker. Includes deterministic fast-image regression that failed before the guard."
+    }
+  ],
+  "saved_live": {
+    "date": "2026-11-12",
+    "passed": true,
+    "evidence": "Saved live YouTube conversation. API writes blocked; no new provider/model/caption retrieval or playback.",
+    "cards": 10,
+    "default_desktop_reader": true,
+    "compact_title_px": 14,
+    "saved_transcript_segments": 92,
+    "duplicate_channel_removed": true,
+    "descriptions_control": true,
+    "compact_cards": true,
+    "completed_thumbnail_has_no_active_timer": true,
+    "keyboard_selection_and_draft_preserved": true,
+    "responsive": [
+      {
+        "width": 1440,
+        "overflow": false,
+        "action_row_aligned": true
+      },
+      {
+        "width": 1024,
+        "overflow": false,
+        "action_row_aligned": true
+      },
+      {
+        "width": 900,
+        "overflow": false,
+        "action_row_aligned": true
+      },
+      {
+        "width": 768,
+        "overflow": false,
+        "action_row_aligned": true
+      },
+      {
+        "width": 390,
+        "overflow": false,
+        "action_row_aligned": true
+      },
+      {
+        "width": 320,
+        "overflow": false,
+        "action_row_aligned": true
+      }
+    ],
+    "api_writes": 0,
+    "implicit_embeds": 0,
+    "browser_errors": [],
+    "provider_usage_unchanged": true,
+    "model_cost_and_holds_unchanged": true
+  },
+  "screenshots": [
+    "2026-11-12-video-density-1440.png",
+    "2026-11-12-video-density-390.png",
+    "2026-11-12-video-density-reader-390.png"
+  ],
+  "sha256": {
+    "frontend/src/components/search-result-card.tsx": "58d946e887c0d85329189de930504cf234652bc6b854e889c40266dbcf454413",
+    "frontend/src/components/search-result-card.module.css": "8debe5af3d6eb4c6c8b41ea1627fc0842735090388d17794f12ea3e5f2a87cb7",
+    "frontend/src/components/video-preview.tsx": "78e05c5afd252e548bed5927d2d5119255a4342d132338495b0c8793043a665e",
+    "frontend/src/components/video-preview.module.css": "4d00fef79c66d80a8db8ee7b2056a0d344d642ec29b95e09c8f4911c303970ef",
+    "frontend/src/components/video-timing.module.css": "4c90b271e57ff266a1fd831d7aedb8d0b1414c3216014fc96aab7e4d3187dd0c",
+    "frontend/src/components/search-results.tsx": "0dd3d3f3e05e65933cca7ab7134de35a88aa89233ee93d8bae15c6076ebe21e1",
+    "frontend/src/components/source-preview.tsx": "71105b6b2946b8aa86ee475b78d23a784b7041c2db1b536788ac147ab3f6e631",
+    "frontend/src/components/chat-abstract.tsx": "223e2dca331fc7f0396849a8a0cda670d845e3acc27f80dddfa75e77d2c87210",
+    "tests/browser/video-cards-compact.spec.ts": "05abd77f0f33ffc13a7b39786f6d3183cf996db92e1920227bcfecf0cf800961",
+    "tests/browser/video-reader-compact.spec.ts": "d1b12edfe848d5149c4d522df27ea9b1660554e8a69a4f959be0a18cfd149be2",
+    "tests/browser/search-workspace.spec.ts": "0ad5c4af0c0e10bd5daaa453f3b93f84de876fa0c27a5cee2d0945e6db580e1b",
+    "tests/browser/video-preview-resilience.spec.ts": "6bf34e1fc445240d55cfb510074de46cf60860450b8b0bec1ed63643a5e8516f",
+    "tests/browser/right-panel-layout.spec.ts": "9c0e9b8d589298623753abce7d5bf99da7ce03d3339357f9803e9d80baf30bb4"
+  },
+  "notes": [
+    "Broad run: 54 passed, one stale legacy Metadata heading assertion failed, and one fixture-backend gate skipped. Corrected docked-reader run: 3 passed; the current reader label is Record details.",
+    "Focused final card checks: 3 passed. Final reader/loading/resilience checks: 10 passed, including 4 new compact-reader cases. All 62 unique mocked cases pass across these runs.",
+    "Saved-live review inspected 10 existing videos and 92 saved caption segments at six widths with API writes blocked. No provider/model/caption retrieval, iframe playback, restart, commit or push occurred.",
+    "Fast/cached images that finish before the visibility observer starts have no invented load duration. Late or stale callbacks cannot leave a completed thumbnail timer running.",
+    "Exact provider identity, latest saved version grouping, project save authority and all stored source evidence remain unchanged."
+  ]
+}

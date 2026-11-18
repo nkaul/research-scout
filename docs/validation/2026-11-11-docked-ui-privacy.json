@@ -1,0 +1,8 @@
+{
+  "date": "2026-11-11",
+  "passed": true,
+  "scope": "Current git-visible tracked and untracked working files; exact configured env key/token/contact strings only. Excludes ignored local state/dependencies/env. Not a Git history, encoded-value or unknown-secret audit.",
+  "files_scanned": 581,
+  "configured_distinct_values_checked": 3,
+  "matching_files": []
+}

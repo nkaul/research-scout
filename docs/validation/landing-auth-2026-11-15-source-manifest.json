@@ -1,0 +1,633 @@
+{
+  "date": "2026-11-15",
+  "files": [
+    {
+      "file": "frontend/src/app/account/page.tsx",
+      "sha256": "99598061e9a46cea6ec0c6593b929d3a7a767bedf192740cb5213fafbbcff30e"
+    },
+    {
+      "file": "frontend/src/app/admin/page.tsx",
+      "sha256": "8693112397cfbd55fa4b8db57a6472c5ed5a7307fef8877f20b465d520a783fd"
+    },
+    {
+      "file": "frontend/src/app/app/page.tsx",
+      "sha256": "8e09e2b8365416f5422ff57c7b7b38825cae2cef91c4df4df97b14ac49ddfd48"
+    },
+    {
+      "file": "frontend/src/app/forgot-password/page.tsx",
+      "sha256": "c6a32f1619c6dc0757b1ae0381cfe288307b0ba666b22c31eb0b6b8e43981fe3"
+    },
+    {
+      "file": "frontend/src/app/globals.css",
+      "sha256": "c4aad0faa127a2784ff01828708e083f9812c1de9138d85b700ab569d824a056"
+    },
+    {
+      "file": "frontend/src/app/icon.svg",
+      "sha256": "ddf719cf6998d5c1466b019751e93c29190fdaf8df2f4484060c8763b5cecc10"
+    },
+    {
+      "file": "frontend/src/app/layout.tsx",
+      "sha256": "63729b7257fcdd09e4d4b8bbf261f1ef6d303631162f52184b2d8f4dd4300438"
+    },
+    {
+      "file": "frontend/src/app/login/page.tsx",
+      "sha256": "f6640d988a0dd5d68f094313fba9253a74666099518e43a2679c264851d136d9"
+    },
+    {
+      "file": "frontend/src/app/page.tsx",
+      "sha256": "0963c6239da5ad68eeb2ce91fb5e2c0e8f4cd6f3095a4049879811aa6ebcea7a"
+    },
+    {
+      "file": "frontend/src/app/reset-password/page.tsx",
+      "sha256": "aeef417603bdcd6a3bc5d2f71dbadb35f3074915f6aa9ef5254722abb1d5bc3a"
+    },
+    {
+      "file": "frontend/src/components/ai-focus-summary.module.css",
+      "sha256": "42652749992f136de46a7042fca06f463922db5081fe819929c0b0d68d0ee024"
+    },
+    {
+      "file": "frontend/src/components/ai-focus-summary.tsx",
+      "sha256": "e5d836dec0a731624ed21a35f27b9ef74601c9433eb8952e960a6323f4583a8d"
+    },
+    {
+      "file": "frontend/src/components/ai-query-plan.module.css",
+      "sha256": "2c689174c7151150b8a9993b223458bb410dd29f94128695a61dd2e476b9e86a"
+    },
+    {
+      "file": "frontend/src/components/ai-query-plan.tsx",
+      "sha256": "0cdb92ffcb108155711859fbda1b1d07c4bd6168b4097a34451db7dbf881d9c7"
+    },
+    {
+      "file": "frontend/src/components/ai-refinement-toggle.module.css",
+      "sha256": "df0424ed597e27574b75dc94584eadf2844da62b51ec2f5d1a82e9b3bdb4f847"
+    },
+    {
+      "file": "frontend/src/components/ai-refinement-toggle.tsx",
+      "sha256": "7d639e78ff3e3732b20dd94d46836cb3d9680d2a7e72e9feb35bbd136a0e6ec1"
+    },
+    {
+      "file": "frontend/src/components/answer-text.tsx",
+      "sha256": "ce8b1c0a15c001f679306276ac1fd0b31fd02cacd7a3d8cdd9472d746fffe252"
+    },
+    {
+      "file": "frontend/src/components/auth-panel.module.css",
+      "sha256": "71ce31b755f0800442e41ca6c40774c652abd9cce2a1c73df7394e6ad7ade18e"
+    },
+    {
+      "file": "frontend/src/components/auth-panel.tsx",
+      "sha256": "497d8d7b121cbe8bf91d7a6514eb3e4cc535572f0adaf42d80beed5331ebb396"
+    },
+    {
+      "file": "frontend/src/components/auth-unavailable.tsx",
+      "sha256": "46c648f4945ba02ebd375ee9da4e68bf122fac79a769291f6f9d64c5d8b47556"
+    },
+    {
+      "file": "frontend/src/components/chat-abstract.module.css",
+      "sha256": "6d35a91c084e8836789484c06cad3f94feb8c6bb457a3873f4ab3aab9630383a"
+    },
+    {
+      "file": "frontend/src/components/chat-abstract.tsx",
+      "sha256": "562073da2bfb89b1ab738af89a1b8885fed4c5bdd11fd7bc2c87b412db72a715"
+    },
+    {
+      "file": "frontend/src/components/chat-source-card.tsx",
+      "sha256": "59336695480523ef845a7eeb43f902c96cb59d61545a5a219dd43869ab42cba7"
+    },
+    {
+      "file": "frontend/src/components/connected-sources.tsx",
+      "sha256": "422f72f53886ce41f23c05998299cd919e84822cb0159fc5eebf23f1853be76b"
+    },
+    {
+      "file": "frontend/src/components/control-popover.module.css",
+      "sha256": "1ae098a6b25a4ec8dc0dd2ffb79dcfc7d223a61afe61591a741ed4d0076cc9a4"
+    },
+    {
+      "file": "frontend/src/components/control-popover.tsx",
+      "sha256": "9b9acd3be09d90e545c0d15b5573eb799fd66876cff3e2d216a40c9a59b14952"
+    },
+    {
+      "file": "frontend/src/components/credit-meter.module.css",
+      "sha256": "837c6dd79801de9a3a398924a6af03db2d81069b657aa224fc6159fcd7cc05f5"
+    },
+    {
+      "file": "frontend/src/components/credit-meter.tsx",
+      "sha256": "266f4991e81c8a97bf18ed8b96e51d2cb64e4b89b8ee790c681fefd735ce1920"
+    },
+    {
+      "file": "frontend/src/components/dataset-results.module.css",
+      "sha256": "e0a61521cb943aa54a31adb0e43f0eb6b2e3eacc8840c42c79d521943a68c329"
+    },
+    {
+      "file": "frontend/src/components/dataset-results.tsx",
+      "sha256": "5c7f2226696fab0bc0a4a67a5f8a39d5e0ada069d6b7fd8ade32a1b8c13b1d87"
+    },
+    {
+      "file": "frontend/src/components/economics-admin.module.css",
+      "sha256": "4e6602281e8b52be9e10728cd065219ed938d79b3638ca3b07653abc9db3eb0a"
+    },
+    {
+      "file": "frontend/src/components/economics-admin.tsx",
+      "sha256": "e852a08de6a4a3a4ffcf9eaaa465af7008b7101232b95246a417cec57d966131"
+    },
+    {
+      "file": "frontend/src/components/exploration-chat.tsx",
+      "sha256": "5f138b7fd0f15a954e83455721a2bcc7cf6244d7e634bc14571c5a66b690c511"
+    },
+    {
+      "file": "frontend/src/components/google-sign-in.tsx",
+      "sha256": "b187dc44c6adf7c268255acf6f6f4ffb912779b4aeeb51179bab29fc7e2ab5d1"
+    },
+    {
+      "file": "frontend/src/components/icon.tsx",
+      "sha256": "d260f452ec9ed60a650760ff10d6672e579c638f2d7f7d402c99ff74a762347d"
+    },
+    {
+      "file": "frontend/src/components/inline-document.module.css",
+      "sha256": "4edba33aac9f59160c8438dc6ed21c11aedbc289dad2e4fb28a6b2d9b9a910be"
+    },
+    {
+      "file": "frontend/src/components/inline-document.tsx",
+      "sha256": "97bab2e675ed134404f88f81044b633f2616c157d3d329c64fe5c0d137a7fcbb"
+    },
+    {
+      "file": "frontend/src/components/landing-page.module.css",
+      "sha256": "df91ff9521a09471afea435a5040b2719c44fb8ce90b93abaef35e7aeaf675c0"
+    },
+    {
+      "file": "frontend/src/components/landing-page.tsx",
+      "sha256": "c5fccd1d7450721b803f5189fe7892c7df4fb5f931c719ececb81c8a1d00e777"
+    },
+    {
+      "file": "frontend/src/components/load-time.module.css",
+      "sha256": "9f29996f6ba5b9bdfd99ec62e05f8e402562e6d013fe9a38dc9bb88c11496553"
+    },
+    {
+      "file": "frontend/src/components/load-time.tsx",
+      "sha256": "d5299aabb2bbb36993cf871e67d6243319f8e236a3187274668a5f19f45223e2"
+    },
+    {
+      "file": "frontend/src/components/modality-limit-control.module.css",
+      "sha256": "f1d99fe63b797313172e7fd6bcca2a64b132a6dc36d88b8a3ecc01fda6ee94f6"
+    },
+    {
+      "file": "frontend/src/components/modality-limit-control.tsx",
+      "sha256": "53bda20c8e7adda6f62369805fa9957e465072b3bd1437fe53bff195fdeaac6c"
+    },
+    {
+      "file": "frontend/src/components/open-access-result.tsx",
+      "sha256": "73ef6217446423bbc4dc90d83c2aaedc49b737c8b5f049163a03b01c74e8f09a"
+    },
+    {
+      "file": "frontend/src/components/pdf-download.tsx",
+      "sha256": "8a4c32645edf87720763fb1387a92476aef010360fe36383cb2b4acc624e00d8"
+    },
+    {
+      "file": "frontend/src/components/readable-abstract.module.css",
+      "sha256": "8f30d5f1b0e325b64f029fffa18edc394402a8580ffa717a07edbb131b22b5bc"
+    },
+    {
+      "file": "frontend/src/components/readable-abstract.tsx",
+      "sha256": "e31fbe519f204ee6b333e15bd89b3fc4556303775b17998d1a7768699f6cf634"
+    },
+    {
+      "file": "frontend/src/components/readable-content.module.css",
+      "sha256": "05b560a51bf7a3ffc1b1ff4ab4f5b24948d2eaa1d7dc6393aeb1da63fd866c07"
+    },
+    {
+      "file": "frontend/src/components/readable-content.tsx",
+      "sha256": "c73408cc5f08e6f3407c451a65c377628f7469cc2c5348b3e5eccbcb52e05ed4"
+    },
+    {
+      "file": "frontend/src/components/repo-notes.module.css",
+      "sha256": "7985ffc03595aef13496cb42e71af298185ac0524c4635cc6de5ab1190c1ecc4"
+    },
+    {
+      "file": "frontend/src/components/repo-notes.tsx",
+      "sha256": "d5e767970cf1dbe639b6bd43a58099dd51bd62272bfdacd8607dd1d6afe908b5"
+    },
+    {
+      "file": "frontend/src/components/repo-results.module.css",
+      "sha256": "7bf5cf820a3bdde30c71ba60f1a036913021dcff43a9517fbf9caa11a77a87fd"
+    },
+    {
+      "file": "frontend/src/components/repository-results.tsx",
+      "sha256": "96ce4b7a3e15fb740641a35409f26265e63cfc28b9135acfce346db293b25359"
+    },
+    {
+      "file": "frontend/src/components/research-projects.tsx",
+      "sha256": "c85801673961f10032c230a571bca6ede0cc9c50a0fd18ae920e6cbcfa9890b7"
+    },
+    {
+      "file": "frontend/src/components/research-scout-mark.tsx",
+      "sha256": "76b20b4cff8c56577cc89bf5faafbacc8922056937aac701c11eecf1fdf15343"
+    },
+    {
+      "file": "frontend/src/components/research-workspace.tsx",
+      "sha256": "b451ebccaaf0105ab5ff09448ce20a9ef52bf5ab737c32521e44e8c798737959"
+    },
+    {
+      "file": "frontend/src/components/resource-tab-activity.module.css",
+      "sha256": "c8b13eaf0cfcc6397a6e42d13fca01c332480f2f87b1aef3922f49c9d6ae1825"
+    },
+    {
+      "file": "frontend/src/components/resource-tab-activity.tsx",
+      "sha256": "fce8378a21c1b64c71777fe7fd16717525fe2a9c8f23dd5d44dc1a0c38431cc1"
+    },
+    {
+      "file": "frontend/src/components/retrieval-focus.module.css",
+      "sha256": "07b5555b31639d6335441b4eaacd90d139d3f5d4d792b1255262391645b00668"
+    },
+    {
+      "file": "frontend/src/components/retrieval-focus.tsx",
+      "sha256": "5fea0f2a96934e02f5b4e92926a6009efe0c62d1bceb82e2bf17140d8b8e88ab"
+    },
+    {
+      "file": "frontend/src/components/search-atom.module.css",
+      "sha256": "95dde74adf94fc6803807fe8f197897bfb9a092c51e7a622583506bc6bc96805"
+    },
+    {
+      "file": "frontend/src/components/search-atom.tsx",
+      "sha256": "7efadd37258fc5ba4d8d4eb9069eb7b602f2cea85b506d09a44c1a0e061a93cb"
+    },
+    {
+      "file": "frontend/src/components/search-controls.module.css",
+      "sha256": "c39531b6084ccaad9a01bc2a858254b9836904eda39443d9d506f1fcb646ccdd"
+    },
+    {
+      "file": "frontend/src/components/search-information.module.css",
+      "sha256": "9c96fbb015b8815740eb9fff2b8ace84ed122e5bb989d42ecf465b370f03da9c"
+    },
+    {
+      "file": "frontend/src/components/search-information.tsx",
+      "sha256": "e7fed5a58fea14864e468bd21f95db726af4f3b525f129b7c526958d192f5da7"
+    },
+    {
+      "file": "frontend/src/components/search-options.module.css",
+      "sha256": "2266ddc7a3c36dd2d2c23ad12d0ddc366e33da7fa7a1dc42fd3e574e2c7dac1c"
+    },
+    {
+      "file": "frontend/src/components/search-options.tsx",
+      "sha256": "6f80d40844bd656e7b0a22c35e2fa172ca06f922c5db4409b11cd266d3f1ad3e"
+    },
+    {
+      "file": "frontend/src/components/search-performance.module.css",
+      "sha256": "bd5a67e061ea4942a3352440349ebeec02d9aee1158e82fc68f7fd6f6f4908e6"
+    },
+    {
+      "file": "frontend/src/components/search-performance.tsx",
+      "sha256": "625dcace4ac573aec0e3178dbc693a53693df32610ebf458a499bb6fea81032b"
+    },
+    {
+      "file": "frontend/src/components/search-refinement.tsx",
+      "sha256": "73df9edcc1fa794ede0778809c77896fa0e20f5f715ef32bfba212dc5bbc43ad"
+    },
+    {
+      "file": "frontend/src/components/search-result-card.module.css",
+      "sha256": "2294f03665d3da89cfe081c1007aacb370d29bc1e32707e8c1548a6c70c2d19e"
+    },
+    {
+      "file": "frontend/src/components/search-result-card.tsx",
+      "sha256": "204a6e656d6d88f91a00fba29743af65636ba9e151bd7c1377c14d5dc050ef68"
+    },
+    {
+      "file": "frontend/src/components/search-results.tsx",
+      "sha256": "36d927e906482ee0a9b28a5e6808fb992e529c2f43f8589e2c0e09b0d764e95e"
+    },
+    {
+      "file": "frontend/src/components/search-timeline.module.css",
+      "sha256": "08e9eaca285081d2ea842b53f1a00e60edf13a7f81957a77a4cb437b97dcac68"
+    },
+    {
+      "file": "frontend/src/components/search-timeline.tsx",
+      "sha256": "b4a0c93e1e717f1d75434cfe9ea0fc36be9c265caa2f5c076379d91ee9baceed"
+    },
+    {
+      "file": "frontend/src/components/source-preview.module.css",
+      "sha256": "326031c1507300b8d7743922ba0368a9f22b1dbba1d6cf69ccb7712824b3eb2a"
+    },
+    {
+      "file": "frontend/src/components/source-preview.tsx",
+      "sha256": "b8d4a85940c3b91dd0b5c6d73f9e40bd90543b6f66e623d4cce5e2d0d7e24bec"
+    },
+    {
+      "file": "frontend/src/components/tooltip.module.css",
+      "sha256": "4e0939de761aaa523bf4d8c46a3c4bb9e984dc271ee24126ad772fec1f66a45d"
+    },
+    {
+      "file": "frontend/src/components/tooltip.tsx",
+      "sha256": "5e68cb6ff463a6f2d0cbdfd7e5801223852a25e090c10efa2248b296468b7c6f"
+    },
+    {
+      "file": "frontend/src/components/video-count-control.module.css",
+      "sha256": "a92f60ed689b5290c79cf2d625e8c8b17dac18eb1e29d31d36aeabbeb575d663"
+    },
+    {
+      "file": "frontend/src/components/video-count-control.tsx",
+      "sha256": "6d2accd33dd44fca8afe7579bf1389c0502cb96eb9f39362347185ed11fb4904"
+    },
+    {
+      "file": "frontend/src/components/video-preview.module.css",
+      "sha256": "4487755e3de0ad5cb5fd1af37c3ccd0860d939918f55b0ad721efadea45dc0b4"
+    },
+    {
+      "file": "frontend/src/components/video-preview.tsx",
+      "sha256": "e7df0ce485ee0564cfad2c5c71089fa26559c0285a949ac1c3f53899e8c9ffcf"
+    },
+    {
+      "file": "frontend/src/components/video-timing.module.css",
+      "sha256": "4c90b271e57ff266a1fd831d7aedb8d0b1414c3216014fc96aab7e4d3187dd0c"
+    },
+    {
+      "file": "frontend/src/components/workspace-account.module.css",
+      "sha256": "9f43bdfb5d44ca1b631b7ab70c677b89126dc9d2402684a29ee416bd14fe0ed7"
+    },
+    {
+      "file": "frontend/src/components/workspace-account.tsx",
+      "sha256": "6c7e421294b981244db77ed3de120781fd0366026b65c96dc9f131cda0c581fa"
+    },
+    {
+      "file": "frontend/src/lib/abstract-points.ts",
+      "sha256": "d0237f0c0ea913d146ff689f66f0ce4e102234ed2c6c0884bd53255362089e78"
+    },
+    {
+      "file": "frontend/src/lib/ai-query-plan.ts",
+      "sha256": "9381ad92e10f0f13f5c836c0c8f34adcff7f41ef5979b1b3045f7dc1086aea56"
+    },
+    {
+      "file": "frontend/src/lib/api.ts",
+      "sha256": "53390a964582ac3a76e98460c72ec0d2b106a3c227212c88f69dda32962adfe4"
+    },
+    {
+      "file": "frontend/src/lib/auth-client.ts",
+      "sha256": "5cd905387f23e2b53ef7da812ba2b51c3326166253629fef0ceee79226203319"
+    },
+    {
+      "file": "frontend/src/lib/auth-server.ts",
+      "sha256": "38955595738a0a00101593fa073484f7ff7784547fd5c66976152a9deaafbe5c"
+    },
+    {
+      "file": "frontend/src/lib/conversations.ts",
+      "sha256": "27a79236fe15af2158b27231300f25bc288bc74457eeb4d58a7bcffdeea8cc70"
+    },
+    {
+      "file": "frontend/src/lib/datasets.ts",
+      "sha256": "7cdb1790aacdee20272d318c79c4f4ff9d9cde79935990ddee014b48e271c30b"
+    },
+    {
+      "file": "frontend/src/lib/economics.ts",
+      "sha256": "83afcfcfafee936073566aca514f5b356c2b182062308c5f6b493d4c2f836fec"
+    },
+    {
+      "file": "frontend/src/lib/load-timing.ts",
+      "sha256": "50c96171f3e358d4067d7198551eff97c5a8f033e9240e145169dd3d40564e27"
+    },
+    {
+      "file": "frontend/src/lib/material-colors.ts",
+      "sha256": "e1ebeb2c75d0319e327e4cf894aaa63bb81e9c1c13a0fe670a5de9bbfe4d4c1f"
+    },
+    {
+      "file": "frontend/src/lib/pdf-download.ts",
+      "sha256": "06b0329ba21240330fa7a282b99a36f2248d60a888bbcb8f1c9a7c739d3237ea"
+    },
+    {
+      "file": "frontend/src/lib/projects.ts",
+      "sha256": "a8b3a25d3c1caa4a570ae5c76b863f916cbdaefff52582ccd66a93b869888d08"
+    },
+    {
+      "file": "frontend/src/lib/readable-content.ts",
+      "sha256": "062608ecb906e2651062133c3dbb745ac06fb8bcd328b5221d131fac13cb16f4"
+    },
+    {
+      "file": "frontend/src/lib/repositories.ts",
+      "sha256": "d669dcaedd06b9148b6eb32e295f8ddced6cb3525b32d2492ab98666aec0c7a2"
+    },
+    {
+      "file": "frontend/src/lib/reviewed-sources.ts",
+      "sha256": "28a96d61028c2b39a7408fd153daba2cfb14cb75e38b75791c8f5633dd8027fb"
+    },
+    {
+      "file": "frontend/src/lib/saved-run-cache.ts",
+      "sha256": "f4301d697dec185096c91212e4fa0041c8912766f8b3287c9d6367d6ca6ea169"
+    },
+    {
+      "file": "frontend/src/lib/search-information.ts",
+      "sha256": "5dba4f93d5dc6074fb262796cb28f793f17804e1ed055be553d5b81716471b32"
+    },
+    {
+      "file": "frontend/src/lib/search-performance.ts",
+      "sha256": "aeba2a179769c8019cf27d9f19d9e3c3ea5565b5dca698be7bfb6e1fe4a9d9e8"
+    },
+    {
+      "file": "frontend/src/lib/search-preferences.ts",
+      "sha256": "5aad598901aa86e3f359bc4c970640b1f8cc47518d7c79de1adaf1589997a359"
+    },
+    {
+      "file": "frontend/src/lib/search-resources.ts",
+      "sha256": "2ae52dbd51440ca597e894385df94c6af8b9c25399c29e7c816fd022ab1c7884"
+    },
+    {
+      "file": "frontend/src/lib/search-timeline.ts",
+      "sha256": "cb9bb7efb6c255e2fd0b3b6379860c9cff9c6c5c6a96454e20309a0a32aa6865"
+    },
+    {
+      "file": "frontend/src/lib/source-versions.ts",
+      "sha256": "9763f50ec6feb99682b8c17c1d73e8bfc974e45774c4c0451f4dfd65a8e15cd9"
+    },
+    {
+      "file": "backend/src/research_scout/__init__.py",
+      "sha256": "3880c0f7668a284d3579389f630f6efa48c0ca6ecbc769733019f8eef98033f4"
+    },
+    {
+      "file": "backend/src/research_scout/agents/__init__.py",
+      "sha256": "e50bbf979f11e6507c508adc74ea4ffd2b301d3e3711e954f455d0dc4ede66b3"
+    },
+    {
+      "file": "backend/src/research_scout/agents/context.py",
+      "sha256": "52afa9166f0d95e9fc2b64a1c3a0df994b4a8543f1d63fe84dd332b966b7156d"
+    },
+    {
+      "file": "backend/src/research_scout/agents/datasets.py",
+      "sha256": "62b67817e818645574b52e9b70483b118148cf93d7d69bce084d0a4fa0c0600e"
+    },
+    {
+      "file": "backend/src/research_scout/agents/evaluate.py",
+      "sha256": "f551c0a7f73b8486b627abf205df0b674f7487e7b5d347f3f16c0c3f29623c90"
+    },
+    {
+      "file": "backend/src/research_scout/agents/harness.py",
+      "sha256": "0bba8fb8b8c9f9bdb0a1bc7ed0c0b736422e9145dc52d5f716df9f92c436e4b6"
+    },
+    {
+      "file": "backend/src/research_scout/agents/repos.py",
+      "sha256": "d2ae41958e8078500d785beb5b07b52ecf9bf8679aada6ef9c2684e98f066d36"
+    },
+    {
+      "file": "backend/src/research_scout/agents/runtime.py",
+      "sha256": "44c609870d03361e1d5f001be89ec26ce363aa71393f5f9743d29058267693be"
+    },
+    {
+      "file": "backend/src/research_scout/api.py",
+      "sha256": "6dc1cd5f1a8172c2c4aab3802697ac8919bc52d95b5a4dfbc6464bb14de6666d"
+    },
+    {
+      "file": "backend/src/research_scout/auth.py",
+      "sha256": "11eca0cfde71d927138bb032260afa131a0e6f20db63cc390d9ea1cebafb0295"
+    },
+    {
+      "file": "backend/src/research_scout/contracts.py",
+      "sha256": "609ca8d92caa3685c69407587dfd54a8bf38352de5e2f09da4f0572db6214fc0"
+    },
+    {
+      "file": "backend/src/research_scout/conversations.py",
+      "sha256": "18de9c65f7739a126ca569b7633af1c259f0ccea485c92e5f7583254ab0472cf"
+    },
+    {
+      "file": "backend/src/research_scout/core.py",
+      "sha256": "e515cd62c588ad3b5fb9603a117fa37003a8f91cf3ac298f1651108e0bbd1f55"
+    },
+    {
+      "file": "backend/src/research_scout/dataset_contracts.py",
+      "sha256": "55542f2820d61ae9a6e03afa48c909fdc6cf061549c3f603ee7a9895cec7e562"
+    },
+    {
+      "file": "backend/src/research_scout/dataset_terms.py",
+      "sha256": "e7c579b32f724e5bdba2cc10c6fd37be557cbb61c5ec6606b48ab578dc85e789"
+    },
+    {
+      "file": "backend/src/research_scout/datasets.py",
+      "sha256": "9c1bd92d55e235662e1adef74830d7491d61d18a0a0129a2f29a70edce1bb853"
+    },
+    {
+      "file": "backend/src/research_scout/economics.py",
+      "sha256": "9c6414c557902db72470faa114c4ff4e6dbf41669513a8f47d3b31382a8db77b"
+    },
+    {
+      "file": "backend/src/research_scout/federation.py",
+      "sha256": "b40d4742c7f41bf6d128800b91359b752e80207c27331b1b94ca10aa0c5b5f25"
+    },
+    {
+      "file": "backend/src/research_scout/generation.py",
+      "sha256": "350a03fac0569278bacd7c03ecb042a390315cc45da35068486d7314b6808483"
+    },
+    {
+      "file": "backend/src/research_scout/modalities.py",
+      "sha256": "2ec4918fb96534a7dba82b68dbf7d65fc11d14f525e40071b82f3ed3f8b2df3a"
+    },
+    {
+      "file": "backend/src/research_scout/paths.py",
+      "sha256": "88dd6299928587ef51ea87c9f4cd0cdf29ff41211725fa8a7a1f1fe3b5fd367d"
+    },
+    {
+      "file": "backend/src/research_scout/planning.py",
+      "sha256": "c044235cf3b3a160257dce34e6a43dd7c150a8c2019f19285c756b87b17291a0"
+    },
+    {
+      "file": "backend/src/research_scout/projects.py",
+      "sha256": "a1eb57ce5dc7c3316ec98c1e44c0e79af51ff9d85cc7cbf967ada6aa18451ded"
+    },
+    {
+      "file": "backend/src/research_scout/providers/README.md",
+      "sha256": "6c2040a8dddd08fe751790a251077f3f5e7ed50c5a5c9be4eaf5dc5920b85ced"
+    },
+    {
+      "file": "backend/src/research_scout/providers/__init__.py",
+      "sha256": "b60753186afdfd6913150194b0418cd108de6da513c2b45aac6a8db31a780fc9"
+    },
+    {
+      "file": "backend/src/research_scout/providers/__main__.py",
+      "sha256": "40f16ae3c4b78df3c474106354eac83a5ada4c2d48be508ea58c2eed579088d5"
+    },
+    {
+      "file": "backend/src/research_scout/providers/adapters.py",
+      "sha256": "fc3c88d0910b355f189154ec7cca22321915eff30d69f8f706dc235ec9e53577"
+    },
+    {
+      "file": "backend/src/research_scout/providers/dataset_catalog.py",
+      "sha256": "050c1032787cc977917c8b62c64e3efadb391b3fc66e00a084bd37a6792a5403"
+    },
+    {
+      "file": "backend/src/research_scout/providers/dataset_service.py",
+      "sha256": "fabfcdae08cb55f650cb7ea571a83aa21ee4dc02872133f87d43d9949f4b6519"
+    },
+    {
+      "file": "backend/src/research_scout/providers/encoders.py",
+      "sha256": "7a85c321fe132cb3d9560dec1290fcfedbbd93c6fe30cca260ec64aa841fc32c"
+    },
+    {
+      "file": "backend/src/research_scout/providers/fixtures.py",
+      "sha256": "8afea168b6c5e58046449322b3c535317de94defba48bcdfab336d7250a0081f"
+    },
+    {
+      "file": "backend/src/research_scout/providers/journal.py",
+      "sha256": "abbc6fdb3f74e56073bc724d6f013abb655b90c74122ec39b8c5ae6bec8b2b77"
+    },
+    {
+      "file": "backend/src/research_scout/providers/normalization.py",
+      "sha256": "a59c73980df1cbf318e41d15286be4d2ca6131d371acc6ac9f91e9c096f97aa7"
+    },
+    {
+      "file": "backend/src/research_scout/providers/oauth.py",
+      "sha256": "8b7498a6c69074bc8fd2dc3823ce05732fba8d5de07a21fa3663205647031072"
+    },
+    {
+      "file": "backend/src/research_scout/providers/onnx_encoder.py",
+      "sha256": "4b378b0c7cd06d47ed8e801af5d6c166bd85accc0627ec9b791d1f75329cfe20"
+    },
+    {
+      "file": "backend/src/research_scout/providers/repo_service.py",
+      "sha256": "53e5a0c558d0775cecd00e73112359de84a449537579affe397ec0509d963cca"
+    },
+    {
+      "file": "backend/src/research_scout/providers/rest_discovery.py",
+      "sha256": "38d909639efe2cbb802ce95b14d0d67d48780db11fc327eab0bfde106ca7520b"
+    },
+    {
+      "file": "backend/src/research_scout/providers/service.py",
+      "sha256": "fc47022cdba0f14675cbcc4c69896f4c59166aca32f12c6b96042b44cf457dc3"
+    },
+    {
+      "file": "backend/src/research_scout/providers/upstream.py",
+      "sha256": "bb20a5f96174d7103b08b2486bed4eca293612d0824786260fead38ae2e1f8bf"
+    },
+    {
+      "file": "backend/src/research_scout/providers/youtube_captions.py",
+      "sha256": "ef8c532bb7b28b429b13fa05e64b1b42136b6be374eb6b4e55c47c59b6f3223b"
+    },
+    {
+      "file": "backend/src/research_scout/relevance.py",
+      "sha256": "699d28df06c90a9d0ca4dd3250649b527211767981467bd9c92e6a6ef5e4fb58"
+    },
+    {
+      "file": "backend/src/research_scout/repo_contracts.py",
+      "sha256": "e4bbb33cfa15f27bc0601741b01dab2b9921a734570e111edf25beeadabe483a"
+    },
+    {
+      "file": "backend/src/research_scout/repo_evidence.py",
+      "sha256": "827df8aa49f6534d98fb7c05588f9c85a458795474499f1d94cbc3415aaca7b3"
+    },
+    {
+      "file": "backend/src/research_scout/repo_reading.py",
+      "sha256": "8f185f21c0b4dd5ad96b804295ee3bfa1e4161054826c8a8bc831edc09fb7557"
+    },
+    {
+      "file": "backend/src/research_scout/repos.py",
+      "sha256": "ec4b10eb80896362fc68b62713de58f2190cf405a21418e823794a4ed4d91895"
+    },
+    {
+      "file": "backend/src/research_scout/retrieval.py",
+      "sha256": "e6c48cfa06a8351b4632d6ef96416654a162d309a9c4fe6e7037ed462075a32e"
+    },
+    {
+      "file": "backend/src/research_scout/settings.py",
+      "sha256": "f279a59375962df8684493996e2dda133d51908434c5541547feb51c55063a30"
+    },
+    {
+      "file": "backend/src/research_scout/store.py",
+      "sha256": "3d521e8be0ab5f5aa8d49c0661320788e3910a67694c90e5075b91c63917a6f5"
+    },
+    {
+      "file": "backend/src/research_scout/timing.py",
+      "sha256": "99c474437c5270db12b86d46c5ae3dc05f89da645d9ebc8679f8669bbdf4d802"
+    }
+  ]
+}

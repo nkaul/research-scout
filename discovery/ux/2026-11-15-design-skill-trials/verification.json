@@ -1,0 +1,81 @@
+{
+  "date": "2026-11-15",
+  "passed": true,
+  "scope": "Seven approved local design mockups, comparison gallery and two scoped reusable skill bundles.",
+  "browser": {
+    "variants_verified": 7,
+    "responsive_widths": [
+      1440,
+      1100,
+      970,
+      768,
+      650,
+      390,
+      320
+    ],
+    "resource_tabs_per_variant": 4,
+    "desktop_mobile_screenshots": 14,
+    "gallery_screenshots": 2,
+    "external_requests": 0,
+    "non_read_requests": 0,
+    "browser_errors": 0,
+    "original_source_text_preserved": true,
+    "local_notes_and_save_controls": true,
+    "toolbar_focus_and_reader_interactions": true,
+    "progressive_loading_replay": true,
+    "mobile_drawer_close_and_inert_navigation": true,
+    "full_question_and_wordmark_visibility": true,
+    "final_reference_variant_after_contrast_fix": "passed"
+  },
+  "accessibility": {
+    "sampled_text_contrast_minimum": 4.54,
+    "ai_tab_drawer_keyboard_checks": 7,
+    "full_wcag_audit": false
+  },
+  "skills": [
+    {
+      "name": "scout-impeccable",
+      "commit": "2b86d9c07b97d4bed7de23583e1bd1e58dd2baae",
+      "matching_mirror_files": 15,
+      "verified_imported_files": 10,
+      "licenses_retained": true
+    },
+    {
+      "name": "scout-ui-ux-pro-max",
+      "commit": "d643997c82e94742dd3bee43210b0198e8bbba3d",
+      "matching_mirror_files": 19,
+      "verified_imported_files": 16,
+      "licenses_retained": true
+    }
+  ],
+  "ui_ux_pro_max_local_search_checks": 16,
+  "impeccable": {
+    "guidance_based": true,
+    "native_engine_executed": false,
+    "automatic_hooks_installed": false
+  },
+  "application": {
+    "frontend_source_files_unchanged": 93,
+    "runtime_stack_changed": false,
+    "provider_or_model_calls_by_mockups": 0,
+    "live_accounting_resets": 0
+  },
+  "content": {
+    "authored_examples": true,
+    "fonts": "Local system fallbacks; no downloaded font binaries",
+    "source_counts": {
+      "papers": 3,
+      "videos": 2,
+      "data": 2,
+      "repos": 2
+    }
+  },
+  "evidence": {
+    "browser": "validation.json",
+    "accessibility": "accessibility-checks.json",
+    "privacy": "privacy.json",
+    "artifacts": "ARTIFACTS.json",
+    "impeccable": "impeccable-skill-validation.json",
+    "ui_ux_pro_max": "receipts-pro.json"
+  }
+}

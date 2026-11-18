@@ -1,0 +1,729 @@
+{
+  "upstream_commit": "d643997c82e94742dd3bee43210b0198e8bbba3d",
+  "retrieval": "local standard-library catalog scripts; no providers or hosted models",
+  "generated_at": "2026-11-15T06:01:19.891Z",
+  "receipts": [
+    {
+      "name": "style-swiss",
+      "command": [
+        ".tools/uv/bin/uv",
+        "run",
+        "--project",
+        "backend",
+        "--locked",
+        "--offline",
+        "--extra",
+        "encoder",
+        "python",
+        ".agents/skills/scout-ui-ux-pro-max/scripts/search.py",
+        "Minimalism & Swiss Style",
+        "--domain",
+        "style",
+        "--json"
+      ],
+      "exit_code": 0,
+      "domain": "style",
+      "stack": null,
+      "count": 1,
+      "matches": [
+        {
+          "Style ID": "minimalism-and-swiss-style",
+          "Style Category": "Minimalism & Swiss Style",
+          "Status": "active"
+        }
+      ],
+      "design_system": null
+    },
+    {
+      "name": "style-density",
+      "command": [
+        ".tools/uv/bin/uv",
+        "run",
+        "--project",
+        "backend",
+        "--locked",
+        "--offline",
+        "--extra",
+        "encoder",
+        "python",
+        ".agents/skills/scout-ui-ux-pro-max/scripts/search.py",
+        "Data-Dense Dashboard",
+        "--domain",
+        "style",
+        "--json"
+      ],
+      "exit_code": 0,
+      "domain": "style",
+      "stack": null,
+      "count": 1,
+      "matches": [
+        {
+          "Style ID": "data-dense-dashboard",
+          "Style Category": "Data-Dense Dashboard",
+          "Status": "active"
+        }
+      ],
+      "design_system": null
+    },
+    {
+      "name": "style-scholar",
+      "command": [
+        ".tools/uv/bin/uv",
+        "run",
+        "--project",
+        "backend",
+        "--locked",
+        "--offline",
+        "--extra",
+        "encoder",
+        "python",
+        ".agents/skills/scout-ui-ux-pro-max/scripts/search.py",
+        "E-Ink / Paper",
+        "--domain",
+        "style",
+        "--json"
+      ],
+      "exit_code": 0,
+      "domain": "style",
+      "stack": null,
+      "count": 1,
+      "matches": [
+        {
+          "Style ID": "e-ink-paper",
+          "Style Category": "E-Ink / Paper",
+          "Status": "active"
+        }
+      ],
+      "design_system": null
+    },
+    {
+      "name": "style-accessible",
+      "command": [
+        ".tools/uv/bin/uv",
+        "run",
+        "--project",
+        "backend",
+        "--locked",
+        "--offline",
+        "--extra",
+        "encoder",
+        "python",
+        ".agents/skills/scout-ui-ux-pro-max/scripts/search.py",
+        "Accessible & Ethical",
+        "--domain",
+        "style",
+        "--json"
+      ],
+      "exit_code": 0,
+      "domain": "style",
+      "stack": null,
+      "count": 1,
+      "matches": [
+        {
+          "Style ID": "accessible-and-ethical",
+          "Style Category": "Accessible & Ethical",
+          "Status": "active"
+        }
+      ],
+      "design_system": null
+    },
+    {
+      "name": "color-productivity",
+      "command": [
+        ".tools/uv/bin/uv",
+        "run",
+        "--project",
+        "backend",
+        "--locked",
+        "--offline",
+        "--extra",
+        "encoder",
+        "python",
+        ".agents/skills/scout-ui-ux-pro-max/scripts/search.py",
+        "Productivity Tool",
+        "--domain",
+        "color",
+        "--json"
+      ],
+      "exit_code": 0,
+      "domain": "color",
+      "stack": null,
+      "count": 3,
+      "matches": [
+        {
+          "Product Type": "Productivity Tool"
+        },
+        {
+          "Product Type": "Developer Tool / IDE"
+        },
+        {
+          "Product Type": "Flashcard & Study Tool"
+        }
+      ],
+      "design_system": null
+    },
+    {
+      "name": "type-academic",
+      "command": [
+        ".tools/uv/bin/uv",
+        "run",
+        "--project",
+        "backend",
+        "--locked",
+        "--offline",
+        "--extra",
+        "encoder",
+        "python",
+        ".agents/skills/scout-ui-ux-pro-max/scripts/search.py",
+        "Academic/Research",
+        "--domain",
+        "typography",
+        "--json"
+      ],
+      "exit_code": 0,
+      "domain": "typography",
+      "stack": null,
+      "count": 3,
+      "matches": [
+        {
+          "Font Pairing Name": "Academic/Research",
+          "Category": "Serif + Sans",
+          "Heading Font": "Crimson Pro",
+          "Body Font": "Atkinson Hyperlegible"
+        },
+        {
+          "Font Pairing Name": "Academic/Archival",
+          "Category": "Serif + Serif",
+          "Heading Font": "EB Garamond",
+          "Body Font": "Crimson Text"
+        },
+        {
+          "Font Pairing Name": "Science/Tech",
+          "Category": "Sans + Sans",
+          "Heading Font": "Exo",
+          "Body Font": "Roboto Mono"
+        }
+      ],
+      "design_system": null
+    },
+    {
+      "name": "type-swiss",
+      "command": [
+        ".tools/uv/bin/uv",
+        "run",
+        "--project",
+        "backend",
+        "--locked",
+        "--offline",
+        "--extra",
+        "encoder",
+        "python",
+        ".agents/skills/scout-ui-ux-pro-max/scripts/search.py",
+        "Minimal Swiss",
+        "--domain",
+        "typography",
+        "--json"
+      ],
+      "exit_code": 0,
+      "domain": "typography",
+      "stack": null,
+      "count": 3,
+      "matches": [
+        {
+          "Font Pairing Name": "Minimal Swiss",
+          "Category": "Sans + Sans",
+          "Heading Font": "Inter",
+          "Body Font": "Inter"
+        },
+        {
+          "Font Pairing Name": "Neumorphism Mobile (Plus Jakarta Sans + System)",
+          "Category": "Geometric Sans (System Fallback)",
+          "Heading Font": "Plus Jakarta Sans",
+          "Body Font": "Plus Jakarta Sans"
+        },
+        {
+          "Font Pairing Name": "Minimalist Portfolio",
+          "Category": "Sans + Sans",
+          "Heading Font": "Archivo",
+          "Body Font": "Space Grotesk"
+        }
+      ],
+      "design_system": null
+    },
+    {
+      "name": "ux-chips",
+      "command": [
+        ".tools/uv/bin/uv",
+        "run",
+        "--project",
+        "backend",
+        "--locked",
+        "--offline",
+        "--extra",
+        "encoder",
+        "python",
+        ".agents/skills/scout-ui-ux-pro-max/scripts/search.py",
+        "badge chip label wraps",
+        "--domain",
+        "ux",
+        "--json"
+      ],
+      "exit_code": 0,
+      "domain": "ux",
+      "stack": null,
+      "count": 3,
+      "matches": [
+        {
+          "Category": "Content",
+          "Issue": "Compact Label Overflow"
+        },
+        {
+          "Category": "Accessibility",
+          "Issue": "Contextual Live Badge Updates"
+        },
+        {
+          "Category": "Forms",
+          "Issue": "Input Labels"
+        }
+      ],
+      "design_system": null
+    },
+    {
+      "name": "react-state",
+      "command": [
+        ".tools/uv/bin/uv",
+        "run",
+        "--project",
+        "backend",
+        "--locked",
+        "--offline",
+        "--extra",
+        "encoder",
+        "python",
+        ".agents/skills/scout-ui-ux-pro-max/scripts/search.py",
+        "preserve state identity",
+        "--stack",
+        "react",
+        "--json"
+      ],
+      "exit_code": 0,
+      "domain": "stack",
+      "stack": "react",
+      "count": 3,
+      "matches": [
+        {
+          "Category": "Rendering",
+          "Guideline": "Memoize callbacks passed to children",
+          "Applies To": "react 19.2.x",
+          "Status": "active",
+          "Verified At": "2026-08-13"
+        },
+        {
+          "Category": "State",
+          "Guideline": "Lift state up when needed",
+          "Applies To": "react 19.2.x",
+          "Status": "active",
+          "Verified At": "2026-08-13"
+        },
+        {
+          "Category": "State",
+          "Guideline": "Use useState for local state",
+          "Applies To": "react 19.2.x",
+          "Status": "active",
+          "Verified At": "2026-08-13"
+        }
+      ],
+      "design_system": null
+    },
+    {
+      "name": "next-client",
+      "command": [
+        ".tools/uv/bin/uv",
+        "run",
+        "--project",
+        "backend",
+        "--locked",
+        "--offline",
+        "--extra",
+        "encoder",
+        "python",
+        ".agents/skills/scout-ui-ux-pro-max/scripts/search.py",
+        "client component interaction",
+        "--stack",
+        "nextjs",
+        "--json"
+      ],
+      "exit_code": 0,
+      "domain": "stack",
+      "stack": "nextjs",
+      "count": 3,
+      "matches": [
+        {
+          "Category": "Rendering",
+          "Guideline": "Push Client Components down",
+          "Applies To": "nextjs 16.2",
+          "Status": "active",
+          "Verified At": "2026-08-13"
+        },
+        {
+          "Category": "Rendering",
+          "Guideline": "Mark Client Components explicitly",
+          "Applies To": "nextjs 16.2",
+          "Status": "active",
+          "Verified At": "2026-08-13"
+        },
+        {
+          "Category": "Environment",
+          "Guideline": "Use NEXT_PUBLIC prefix",
+          "Applies To": "nextjs 16.2",
+          "Status": "active",
+          "Verified At": "2026-08-13"
+        }
+      ],
+      "design_system": null
+    },
+    {
+      "name": "generate-swiss",
+      "command": [
+        ".tools/uv/bin/uv",
+        "run",
+        "--project",
+        "backend",
+        "--locked",
+        "--offline",
+        "--extra",
+        "encoder",
+        "python",
+        ".agents/skills/scout-ui-ux-pro-max/scripts/search.py",
+        "productivity research dashboard",
+        "--design-system",
+        "--density",
+        "8",
+        "--variance",
+        "2",
+        "--json"
+      ],
+      "exit_code": 0,
+      "domain": null,
+      "stack": null,
+      "count": null,
+      "matches": null,
+      "design_system": {
+        "category": "Productivity Tool",
+        "pattern": "Product Demo + Features",
+        "style": {
+          "id": "minimalism-and-swiss-style",
+          "name": "Minimalism & Swiss Style"
+        },
+        "typography": {
+          "heading": "Plus Jakarta Sans",
+          "body": "Plus Jakarta Sans"
+        },
+        "source_identities": {
+          "product": "Productivity Tool",
+          "reasoning": "Productivity Tool",
+          "style": "minimalism-and-swiss-style",
+          "color": "Productivity Tool",
+          "typography": "Friendly SaaS",
+          "landing": "Product Demo + Features"
+        },
+        "reasoning_default": false,
+        "dials": {
+          "variance": 2,
+          "variance_label": "Centered / Minimal",
+          "motion": null,
+          "motion_label": null,
+          "density": 8,
+          "density_label": "Dense / Dashboard"
+        },
+        "spacing_scale": {
+          "xs": "2px",
+          "sm": "4px",
+          "md": "8px",
+          "lg": "12px",
+          "xl": "16px",
+          "2xl": "24px",
+          "3xl": "32px"
+        }
+      }
+    },
+    {
+      "name": "generate-scholar",
+      "command": [
+        ".tools/uv/bin/uv",
+        "run",
+        "--project",
+        "backend",
+        "--locked",
+        "--offline",
+        "--extra",
+        "encoder",
+        "python",
+        ".agents/skills/scout-ui-ux-pro-max/scripts/search.py",
+        "research reading documentation workspace",
+        "--design-system",
+        "--density",
+        "6",
+        "--variance",
+        "4",
+        "--json"
+      ],
+      "exit_code": 0,
+      "domain": null,
+      "stack": null,
+      "count": null,
+      "matches": null,
+      "design_system": {
+        "category": "Book & Reading Tracker",
+        "pattern": "Hero + Testimonials + CTA",
+        "style": {
+          "id": "swiss-modernism-2-0",
+          "name": "Swiss Modernism 2.0"
+        },
+        "typography": {
+          "heading": "Cormorant Garamond",
+          "body": "Crimson Pro"
+        },
+        "source_identities": {
+          "product": "Book & Reading Tracker",
+          "reasoning": "Book & Reading Tracker",
+          "style": "swiss-modernism-2-0",
+          "color": "Book & Reading Tracker",
+          "typography": "Academia Mobile (Cormorant + Crimson + Cinzel)",
+          "landing": "Hero + Testimonials + CTA"
+        },
+        "reasoning_default": false,
+        "dials": {
+          "variance": 4,
+          "variance_label": "Balanced / Modern",
+          "motion": null,
+          "motion_label": null,
+          "density": 6,
+          "density_label": "Standard"
+        },
+        "spacing_scale": {
+          "xs": "4px",
+          "sm": "8px",
+          "md": "16px",
+          "lg": "24px",
+          "xl": "32px",
+          "2xl": "48px",
+          "3xl": "64px"
+        }
+      }
+    },
+    {
+      "name": "generate-material",
+      "command": [
+        ".tools/uv/bin/uv",
+        "run",
+        "--project",
+        "backend",
+        "--locked",
+        "--offline",
+        "--extra",
+        "encoder",
+        "python",
+        ".agents/skills/scout-ui-ux-pro-max/scripts/search.py",
+        "productivity accessible dashboard",
+        "--design-system",
+        "--density",
+        "7",
+        "--variance",
+        "4",
+        "--json"
+      ],
+      "exit_code": 0,
+      "domain": null,
+      "stack": null,
+      "count": null,
+      "matches": null,
+      "design_system": {
+        "category": "Productivity Tool",
+        "pattern": "Product Demo + Features",
+        "style": {
+          "id": "flat-design",
+          "name": "Flat Design"
+        },
+        "typography": {
+          "heading": "Plus Jakarta Sans",
+          "body": "Plus Jakarta Sans"
+        },
+        "source_identities": {
+          "product": "Productivity Tool",
+          "reasoning": "Productivity Tool",
+          "style": "flat-design",
+          "color": "Productivity Tool",
+          "typography": "Friendly SaaS",
+          "landing": "Product Demo + Features"
+        },
+        "reasoning_default": false,
+        "dials": {
+          "variance": 4,
+          "variance_label": "Balanced / Modern",
+          "motion": null,
+          "motion_label": null,
+          "density": 7,
+          "density_label": "Standard"
+        },
+        "spacing_scale": {
+          "xs": "4px",
+          "sm": "8px",
+          "md": "16px",
+          "lg": "24px",
+          "xl": "32px",
+          "2xl": "48px",
+          "3xl": "64px"
+        }
+      }
+    },
+    {
+      "name": "react-keys-retry",
+      "command": [
+        ".tools/uv/bin/uv",
+        "run",
+        "--project",
+        "backend",
+        "--locked",
+        "--offline",
+        "--extra",
+        "encoder",
+        "python",
+        ".agents/skills/scout-ui-ux-pro-max/scripts/search.py",
+        "stable list keys",
+        "--stack",
+        "react",
+        "--json"
+      ],
+      "exit_code": 0,
+      "domain": "stack",
+      "stack": "react",
+      "count": 3,
+      "matches": [
+        {
+          "Category": "Rendering",
+          "Guideline": "Use keys properly",
+          "Applies To": "react 19.2.x",
+          "Status": "active",
+          "Verified At": "2026-08-13"
+        },
+        {
+          "Category": "TypeScript",
+          "Guideline": "Use generics for reusable components",
+          "Applies To": "react 19.2.x",
+          "Status": "active",
+          "Verified At": "2026-08-13"
+        },
+        {
+          "Category": "Hooks",
+          "Guideline": "Use use() with stable promises or context",
+          "Applies To": "react 19.2.x",
+          "Status": "active",
+          "Verified At": "2026-09-21"
+        }
+      ],
+      "design_system": null
+    },
+    {
+      "name": "color-analytics",
+      "command": [
+        ".tools/uv/bin/uv",
+        "run",
+        "--project",
+        "backend",
+        "--locked",
+        "--offline",
+        "--extra",
+        "encoder",
+        "python",
+        ".agents/skills/scout-ui-ux-pro-max/scripts/search.py",
+        "Analytics Dashboard",
+        "--domain",
+        "color",
+        "--json"
+      ],
+      "exit_code": 0,
+      "domain": "color",
+      "stack": null,
+      "count": 3,
+      "matches": [
+        {
+          "Product Type": "Analytics Dashboard"
+        },
+        {
+          "Product Type": "Financial Dashboard"
+        },
+        {
+          "Product Type": "Smart Home/IoT Dashboard"
+        }
+      ],
+      "design_system": null
+    },
+    {
+      "name": "generate-scholar-retry",
+      "command": [
+        ".tools/uv/bin/uv",
+        "run",
+        "--project",
+        "backend",
+        "--locked",
+        "--offline",
+        "--extra",
+        "encoder",
+        "python",
+        ".agents/skills/scout-ui-ux-pro-max/scripts/search.py",
+        "scholarly research productivity tool",
+        "--design-system",
+        "--density",
+        "6",
+        "--variance",
+        "4",
+        "--json"
+      ],
+      "exit_code": 0,
+      "domain": null,
+      "stack": null,
+      "count": null,
+      "matches": null,
+      "design_system": {
+        "category": "Productivity Tool",
+        "pattern": "Product Demo + Features",
+        "style": {
+          "id": "flat-design",
+          "name": "Flat Design"
+        },
+        "typography": {
+          "heading": "Crimson Pro",
+          "body": "Atkinson Hyperlegible"
+        },
+        "source_identities": {
+          "product": "Productivity Tool",
+          "reasoning": "Productivity Tool",
+          "style": "flat-design",
+          "color": "Productivity Tool",
+          "typography": "Academic/Research",
+          "landing": "Product Demo + Features"
+        },
+        "reasoning_default": false,
+        "dials": {
+          "variance": 4,
+          "variance_label": "Balanced / Modern",
+          "motion": null,
+          "motion_label": null,
+          "density": 6,
+          "density_label": "Standard"
+        },
+        "spacing_scale": {
+          "xs": "4px",
+          "sm": "8px",
+          "md": "16px",
+          "lg": "24px",
+          "xl": "32px",
+          "2xl": "48px",
+          "3xl": "64px"
+        }
+      }
+    }
+  ],
+  "scope": "Supported catalog/stack smoke checks and advisory generator output; no complete-upstream-suite or live application claim."
+}

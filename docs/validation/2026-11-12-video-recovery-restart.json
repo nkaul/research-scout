@@ -1,0 +1,54 @@
+{
+  "date": "2026-11-12",
+  "passed": true,
+  "idle_before_restart": true,
+  "owned_launcher_restarted": true,
+  "health": [
+    {
+      "port": 3100,
+      "healthy": true
+    },
+    {
+      "port": 8100,
+      "healthy": true
+    },
+    {
+      "port": 8111,
+      "healthy": true
+    },
+    {
+      "port": 8112,
+      "healthy": true
+    },
+    {
+      "port": 8113,
+      "healthy": true
+    },
+    {
+      "port": 8114,
+      "healthy": true
+    },
+    {
+      "port": 8115,
+      "healthy": true
+    },
+    {
+      "port": 8116,
+      "healthy": true
+    },
+    {
+      "port": 8117,
+      "healthy": true
+    },
+    {
+      "port": 8118,
+      "healthy": true
+    },
+    {
+      "port": 8119,
+      "healthy": true
+    }
+  ],
+  "model_cost_and_holds_preserved": true,
+  "state_preserved": true
+}

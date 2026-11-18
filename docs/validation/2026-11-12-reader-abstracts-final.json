@@ -1,0 +1,528 @@
+{
+  "date": "2026-11-12",
+  "status": "passed",
+  "scope": "Streamlined reader/metadata/notes, footer timing, latest known record versions and exact citation display grouping, extractive readable abstracts with original text.",
+  "checks": {
+    "unique_browser_cases": 57,
+    "final_corrected_cases": 25,
+    "typescript": "passed",
+    "isolated_production_build": "passed",
+    "diff_check": "passed",
+    "backend": "unchanged; not rerun",
+    "dependencies": "unchanged"
+  },
+  "browser_runs": [
+    {
+      "name": "acceptance",
+      "stats": {
+        "startTime": "2026-11-12T17:25:16.914Z",
+        "duration": 163424.168,
+        "expected": 55,
+        "skipped": 0,
+        "unexpected": 1,
+        "flaky": 0
+      },
+      "cases": [
+        {
+          "file": "load-timing.spec.ts",
+          "title": "duration units cover sub-millisecond, millisecond, second and minute waits",
+          "status": "expected"
+        },
+        {
+          "file": "load-timing.spec.ts",
+          "title": "saved-view and metadata waits show live elapsed time, stop on completion and stay separate from original search duration",
+          "status": "expected"
+        },
+        {
+          "file": "load-timing.spec.ts",
+          "title": "a late paper response cannot replace the selected paper’s completed load time",
+          "status": "expected"
+        },
+        {
+          "file": "loading-performance.spec.ts",
+          "title": "initial Papers loading shows a skeleton and requests history once with compact recent runs",
+          "status": "expected"
+        },
+        {
+          "file": "loading-performance.spec.ts",
+          "title": "switching saved paper rows reuses one run snapshot without starting provider work",
+          "status": "expected"
+        },
+        {
+          "file": "loading-performance.spec.ts",
+          "title": "concurrent same-run preview reads share the request and preserve the latest row intent",
+          "status": "expected"
+        },
+        {
+          "file": "loading-performance.spec.ts",
+          "title": "newer SSE revisions seed saved previews and older replay cannot overwrite them",
+          "status": "expected"
+        },
+        {
+          "file": "loading-performance.spec.ts",
+          "title": "a saved mutation arriving during an older read wins and explicit details update cache eligibility and decisions",
+          "status": "expected"
+        },
+        {
+          "file": "loading-performance.spec.ts",
+          "title": "a new progressive paper refreshes an incomplete cached run once",
+          "status": "expected"
+        },
+        {
+          "file": "loading-performance.spec.ts",
+          "title": "expired saved previews refresh before showing current eligibility",
+          "status": "expected"
+        },
+        {
+          "file": "paper-reader-density.spec.ts",
+          "title": "reader keeps a small visible title, honest author context and compact metadata with an explained DOI gate",
+          "status": "expected"
+        },
+        {
+          "file": "paper-reader-density.spec.ts",
+          "title": "notes distinguish the run shortlist from project saving and missing DOIs remain explained",
+          "status": "expected"
+        },
+        {
+          "file": "papers-cards.spec.ts",
+          "title": "paper chips follow its title and all source, PDF, provider and access actions share one row",
+          "status": "expected"
+        },
+        {
+          "file": "papers-cards.spec.ts",
+          "title": "inline abstract icon expands and collapses already available text without provider work",
+          "status": "expected"
+        },
+        {
+          "file": "papers-cards.spec.ts",
+          "title": "a provider excerpt expands through an explicit saved read and retains latest source-version notice",
+          "status": "expected"
+        },
+        {
+          "file": "papers-control-panel.spec.ts",
+          "title": "one common panel holds source/date, display tools and explicit partial coverage without repeated summary panels",
+          "status": "expected"
+        },
+        {
+          "file": "papers-control-panel.spec.ts",
+          "title": "desktop opens saved metadata once without moving focus and respects closing across stream updates",
+          "status": "expected"
+        },
+        {
+          "file": "papers-control-panel.spec.ts",
+          "title": "narrow touch-style layouts keep metadata closed until an explicit record action",
+          "status": "expected"
+        },
+        {
+          "file": "papers-control-panel.spec.ts",
+          "title": "missing Unpaywall records are explained as access outcomes when discovery completed successfully",
+          "status": "expected"
+        },
+        {
+          "file": "reader-and-abstracts.spec.ts",
+          "title": "latest numeric versions and dated opaque revisions replace duplicate records without sorting hashes",
+          "status": "expected"
+        },
+        {
+          "file": "reader-and-abstracts.spec.ts",
+          "title": "exact citation duplicates with different DOIs group visually while retaining both provider records and access boundaries",
+          "status": "expected"
+        },
+        {
+          "file": "reader-and-abstracts.spec.ts",
+          "title": "key points use complete original sentences, retain qualifiers and avoid repeated sentences",
+          "status": "expected"
+        },
+        {
+          "file": "reader-and-abstracts.spec.ts",
+          "title": "reader puts publication before abstract points and authors after, with timing in the footer and flat metadata",
+          "status": "expected"
+        },
+        {
+          "file": "reader-and-abstracts.spec.ts",
+          "title": "a newer streamed version refreshes the selected saved record without duplicating the card or reopening a closed reader",
+          "status": "expected"
+        },
+        {
+          "file": "reader-refinement.spec.ts",
+          "title": "reader keeps a small title in every tab and secondary reports collapsed",
+          "status": "expected"
+        },
+        {
+          "file": "reader-refinement.spec.ts",
+          "title": "paper and video actions stay on one line while reports open separately",
+          "status": "expected"
+        },
+        {
+          "file": "reader-refinement.spec.ts",
+          "title": "slow paper and video reads show a skeleton without allowing an obsolete read to win",
+          "status": "expected"
+        },
+        {
+          "file": "reader-refinement.spec.ts",
+          "title": "applying a custom range dispatches the new bounds and replaces the results",
+          "status": "expected"
+        },
+        {
+          "file": "reader-refinement.spec.ts",
+          "title": "loading another record makes old actions inert and closing prevents a late reopen",
+          "status": "expected"
+        },
+        {
+          "file": "research-projects.spec.ts",
+          "title": "projects group concepts, multiple queries and explicitly saved source versions across reload",
+          "status": "expected"
+        },
+        {
+          "file": "research-projects.spec.ts",
+          "title": "save chooser pins the resource and adding another concept remains possible",
+          "status": "expected"
+        },
+        {
+          "file": "seamless-results.spec.ts",
+          "title": "hover and row keyboard movement follow the newest saved source without stealing focus",
+          "status": "expected"
+        },
+        {
+          "file": "seamless-results.spec.ts",
+          "title": "abstracts expand inline and the global display toggle adds no retrieval calls",
+          "status": "expected"
+        },
+        {
+          "file": "seamless-results.spec.ts",
+          "title": "returning to the active row supersedes a different pending metadata read",
+          "status": "expected"
+        },
+        {
+          "file": "seamless-results.spec.ts",
+          "title": "reported PDFs embed only on request and HTTP arXiv records use the canonical HTTPS document",
+          "status": "expected"
+        },
+        {
+          "file": "seamless-results.spec.ts",
+          "title": "PDF locations validate legacy IDs and exclude malformed, local and credential-bearing URLs",
+          "status": "expected"
+        },
+        {
+          "file": "seamless-results.spec.ts",
+          "title": "a touch pointer does not open or fetch the reader automatically",
+          "status": "expected"
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "top Search keeps progressive papers and videos in separate remembered tabs without opening chat",
+          "status": "expected"
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "a source opens a right panel while preserving the search, tab, filter and draft",
+          "status": "expected"
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "AI-refined top Search stays a search and mobile category views do not add requests",
+          "status": "expected"
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "a new explicit manual direct search replaces prior grouped Search results",
+          "status": "expected"
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "source removals and adaptive date presets survive reload, history and New research",
+          "status": "expected"
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "custom years persist and removing every source prevents an accidental fallback search",
+          "status": "expected"
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "the Papers lane retains exact registry metadata when there is no combined All tab",
+          "status": "expected"
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "video thumbnails open a stable preview and transcript loading is explicit and saved",
+          "status": "expected"
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "blocked captions leave the video usable and do not retry automatically",
+          "status": "expected"
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "a delayed preview cannot replace a newly cleared search",
+          "status": "expected"
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "startup tabs wait for hydration and an early Videos choice survives a delayed saved search",
+          "status": "expected"
+        },
+        {
+          "file": "workspace.spec.ts",
+          "title": "first rows can be inspected and saved before completion; updates preserve identity and focus",
+          "status": "expected"
+        },
+        {
+          "file": "workspace.spec.ts",
+          "title": "reopen and exports use saved state; DOI observations remain separate and stale writes retain drafts",
+          "status": "expected"
+        },
+        {
+          "file": "workspace.spec.ts",
+          "title": "provider edits are explicit and reconnection cannot rerun research or duplicate sources",
+          "status": "expected"
+        },
+        {
+          "file": "workspace.spec.ts",
+          "title": "mobile keyboard flow, modal focus and reading layout remain usable",
+          "status": "expected"
+        },
+        {
+          "file": "workspace.spec.ts",
+          "title": "three-paper cap and eligibility updates preserve human decisions visibly",
+          "status": "expected"
+        },
+        {
+          "file": "workspace.spec.ts",
+          "title": "untitled and truncated records remain honest and DOI checks require inclusion",
+          "status": "unexpected"
+        },
+        {
+          "file": "workspace.spec.ts",
+          "title": "desktop split preview, notes and display preferences use existing saved data",
+          "status": "expected"
+        },
+        {
+          "file": "workspace.spec.ts",
+          "title": "Dub-inspired workspace remains readable at tablet and narrow phone widths",
+          "status": "expected"
+        }
+      ]
+    },
+    {
+      "name": "corrected-reference-and-reader",
+      "stats": {
+        "startTime": "2026-11-12T17:29:30.456Z",
+        "duration": 83834.01299999999,
+        "expected": 25,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "cases": [
+        {
+          "file": "reader-and-abstracts.spec.ts",
+          "title": "latest numeric versions and dated opaque revisions replace duplicate records without sorting hashes",
+          "status": "expected"
+        },
+        {
+          "file": "reader-and-abstracts.spec.ts",
+          "title": "exact citation duplicates with different DOIs group visually while retaining both provider records and access boundaries",
+          "status": "expected"
+        },
+        {
+          "file": "reader-and-abstracts.spec.ts",
+          "title": "compact observation references do not erase full citation fields or prevent duplicate grouping",
+          "status": "expected"
+        },
+        {
+          "file": "reader-and-abstracts.spec.ts",
+          "title": "key points use complete original sentences, retain qualifiers and avoid repeated sentences",
+          "status": "expected"
+        },
+        {
+          "file": "reader-and-abstracts.spec.ts",
+          "title": "reader puts publication before abstract points and authors after, with timing in the footer and flat metadata",
+          "status": "expected"
+        },
+        {
+          "file": "reader-and-abstracts.spec.ts",
+          "title": "a newer streamed version refreshes the selected saved record without duplicating the card or reopening a closed reader",
+          "status": "expected"
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "top Search keeps progressive papers and videos in separate remembered tabs without opening chat",
+          "status": "expected"
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "a source opens a right panel while preserving the search, tab, filter and draft",
+          "status": "expected"
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "AI-refined top Search stays a search and mobile category views do not add requests",
+          "status": "expected"
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "a new explicit manual direct search replaces prior grouped Search results",
+          "status": "expected"
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "source removals and adaptive date presets survive reload, history and New research",
+          "status": "expected"
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "custom years persist and removing every source prevents an accidental fallback search",
+          "status": "expected"
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "the Papers lane retains exact registry metadata when there is no combined All tab",
+          "status": "expected"
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "video thumbnails open a stable preview and transcript loading is explicit and saved",
+          "status": "expected"
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "blocked captions leave the video usable and do not retry automatically",
+          "status": "expected"
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "a delayed preview cannot replace a newly cleared search",
+          "status": "expected"
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "startup tabs wait for hydration and an early Videos choice survives a delayed saved search",
+          "status": "expected"
+        },
+        {
+          "file": "workspace.spec.ts",
+          "title": "first rows can be inspected and saved before completion; updates preserve identity and focus",
+          "status": "expected"
+        },
+        {
+          "file": "workspace.spec.ts",
+          "title": "reopen and exports use saved state; DOI observations remain separate and stale writes retain drafts",
+          "status": "expected"
+        },
+        {
+          "file": "workspace.spec.ts",
+          "title": "provider edits are explicit and reconnection cannot rerun research or duplicate sources",
+          "status": "expected"
+        },
+        {
+          "file": "workspace.spec.ts",
+          "title": "mobile keyboard flow, modal focus and reading layout remain usable",
+          "status": "expected"
+        },
+        {
+          "file": "workspace.spec.ts",
+          "title": "three-paper cap and eligibility updates preserve human decisions visibly",
+          "status": "expected"
+        },
+        {
+          "file": "workspace.spec.ts",
+          "title": "untitled and truncated records remain honest and DOI checks require inclusion",
+          "status": "expected"
+        },
+        {
+          "file": "workspace.spec.ts",
+          "title": "desktop split preview, notes and display preferences use existing saved data",
+          "status": "expected"
+        },
+        {
+          "file": "workspace.spec.ts",
+          "title": "Dub-inspired workspace remains readable at tablet and narrow phone widths",
+          "status": "expected"
+        }
+      ]
+    }
+  ],
+  "cached_live": {
+    "date": "2026-11-12",
+    "passed": true,
+    "evidence": "Saved live paper search; API writes blocked. No new provider/model/document retrieval.",
+    "default_reader_visible": true,
+    "metadata_timing_in_footer": true,
+    "readable_points_match_original": true,
+    "duplicate_citation_collapsed": true,
+    "raw_paper_cards": 59,
+    "visible_paper_cards": 58,
+    "flat_metadata": true,
+    "reader_title_px": 14,
+    "unified_controls": true,
+    "access_only_partial_explained": true,
+    "keyboard_selection_follows": true,
+    "api_writes": 0,
+    "browser_errors": [],
+    "provider_usage_unchanged": true,
+    "model_cost_and_holds_unchanged": true,
+    "responsive": [
+      {
+        "width": 1440,
+        "overflow": false
+      },
+      {
+        "width": 1024,
+        "overflow": false
+      },
+      {
+        "width": 900,
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "overflow": false
+      },
+      {
+        "width": 320,
+        "overflow": false
+      }
+    ]
+  },
+  "privacy": {
+    "date": "2026-11-12",
+    "passed": true,
+    "scope": "Exact configured env key/token/contact values in git-visible tracked and untracked working files. Excludes ignored env/state/dependencies; not Git history, encoded values, unknown secrets or OCR.",
+    "files_scanned": 661,
+    "configured_distinct_values_checked": 3,
+    "matching_files": []
+  },
+  "source_sha256": {
+    "frontend/src/lib/source-versions.ts": "9763f50ec6feb99682b8c17c1d73e8bfc974e45774c4c0451f4dfd65a8e15cd9",
+    "frontend/src/lib/search-resources.ts": "43209ac8d878ce75c272a36b8d55a5cbb6d1865193211af5e71b9ff89fde1f9d",
+    "frontend/src/lib/abstract-points.ts": "d0237f0c0ea913d146ff689f66f0ce4e102234ed2c6c0884bd53255362089e78",
+    "frontend/src/lib/api.ts": "4871c1b5e71035fbc852f0c08d9ed83cc7bf735c3eed5fdac1ca200caf4ecded",
+    "frontend/src/components/readable-abstract.tsx": "e31fbe519f204ee6b333e15bd89b3fc4556303775b17998d1a7768699f6cf634",
+    "frontend/src/components/readable-abstract.module.css": "8f30d5f1b0e325b64f029fffa18edc394402a8580ffa717a07edbb131b22b5bc",
+    "frontend/src/components/source-preview.tsx": "246de28900f46c5f9ca1756d7d408a2e98e2d1f0f67fb88a897b39ef6a8e29bd",
+    "frontend/src/components/source-preview.module.css": "c605586e0da2fb5fdeb47bfc206872902f0afaa5284df7cdbe36cd6a088f30cb",
+    "frontend/src/components/search-result-card.tsx": "664960480099f0a6dab1af82e0c9813c543d16dc55bc2b65cf18ac81f356fd2f",
+    "frontend/src/components/search-results.tsx": "37fe5c5eae8e24d1f1f1c4a3758eb904c87dad64b68b4a4479c6989b740498fc",
+    "frontend/src/components/chat-abstract.tsx": "741b8cc09d9f95f9897f70519f9284394d98e7ee1321285ab2e460ee5ab520f3",
+    "frontend/src/components/research-workspace.tsx": "b864d20ec863d7470c6ebf8bdbba333fb0b6822b36d2a0753db1afdae48bec17",
+    "tests/browser/reader-and-abstracts.spec.ts": "cafc827c80aadae6e11992570afe581ef1919b7415bacbbb5083d5f15ed7636b",
+    "tests/browser/reader-refinement.spec.ts": "bdaf1f5388060c2a6173aeb8c35903cc1aa5d0cc1bd7051f5fd05b4208b293f0",
+    "tests/browser/workspace.spec.ts": "efed214042a169aa35a67b7efb53782a94c1d81910f39cf63d071b09945f5d43",
+    "tests/browser/paper-reader-density.spec.ts": "f09609da540e3ce43ff44463393fcf17ec0df9ca0c98fc238bf25e54a996f2b6",
+    "tests/browser/load-timing.spec.ts": "66b055ec503181053c57d47bf7fb81939eb6354b0ea987c69b9078a89a563bae"
+  },
+  "notes": [
+    "Acceptance passed55of56. One raw-reader check still looked for authors in Metadata after authors moved below the Overview abstract. Corrected25-case run passed and added a compact-observation-reference regression case.",
+    "Earlier focused failures identified legacy fixtures representing different papers with the same DOI and old collapsed-reader assertions; fixtures/expectations now express the intended distinct records and flat metadata.",
+    "Actual saved citation duplicate collapsed59paper cards to58, with69provider records preserved across68paper/video resources. Full representative fields are retained alongside compact observation references.",
+    "Newest known whole records use numeric versions, dates or saved arrival order for opaque undated revisions; hash values are not chronological. Explicit historical project pins and stored evidence remain unchanged.",
+    "Abstract points are selected complete source sentences, not generated claims; original abstract remains available. No new model or provider call is made to change presentation.",
+    "Saved-live checks blocked API writes at6widths and preserved provider/model usage. No new live research, model generation, document acquisition, restart, commit or push occurred."
+  ]
+}

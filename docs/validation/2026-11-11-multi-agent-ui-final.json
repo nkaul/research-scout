@@ -1,0 +1,121 @@
+{
+  "date": "2026-11-11",
+  "status": "passed",
+  "scope": "User-requested parallel review of navigation/state, video/transcript resilience and reader UX, plus root integration fixes.",
+  "review_agents": [
+    {
+      "name": "Navigation stability review",
+      "mocked_browser_cases_passed": 6,
+      "focus": "Stale read/create/send fences, retained Search/draft/filter across views, independent readiness and merged history."
+    },
+    {
+      "name": "Video/transcript review",
+      "caption_unit_cases_passed": 13,
+      "mocked_browser_cases_passed": 4,
+      "focus": "Safe/recoverable thumbnails and video IDs, stable player, bounded malformed caption handling, cancellation/admission fences."
+    },
+    {
+      "name": "Preview UX review",
+      "read_only_widths": [
+        1440,
+        1024,
+        768,
+        390,
+        320
+      ],
+      "post_requests": 0,
+      "focus": "Video-only actions/copy, 44px controls, keyboard reading, safe-area spacing and focus containment."
+    }
+  ],
+  "root_review_cases_passed": 5,
+  "checks": {
+    "backend_passed": 294,
+    "backend_failed": 0,
+    "backend_skipped": 0,
+    "browser_unique_passed": 70,
+    "browser_failed": 0,
+    "browser_skipped": 0,
+    "harness_passed": 11,
+    "typescript": "passed",
+    "production_next_build": "passed",
+    "ruff": "passed",
+    "diff_check": "passed"
+  },
+  "browser_receipt": "docs/validation/2026-11-11-multi-agent-ui-browser.json",
+  "backend_receipt": "docs/validation/2026-11-11-multi-agent-ui-python.xml",
+  "harness_receipt": "docs/validation/2026-11-11-multi-agent-ui-harness.json",
+  "live_cached_inspection": {
+    "date": "2026-11-11",
+    "passed": true,
+    "evidence_kind": "Read-only cached live video/captions and view-navigation inspection; API mutations blocked by browser routing. No new search, transcript or model action.",
+    "post_requests": 0,
+    "browser_errors": [],
+    "source_attempts_unchanged": true,
+    "model_cost_and_holds_unchanged": true,
+    "model_cost_and_holds_usd": 0.21650213,
+    "caption_segments": 92,
+    "cross_view_filter_and_draft_retained": true,
+    "one_video_original_link": true,
+    "no_video_doi_controls": true,
+    "focus_stayed_in_dialog": true,
+    "responsive": [
+      {
+        "width": 1440,
+        "overflow": false,
+        "min_reader_target_px": 44
+      },
+      {
+        "width": 1024,
+        "overflow": false,
+        "min_reader_target_px": 44
+      },
+      {
+        "width": 768,
+        "overflow": false,
+        "min_reader_target_px": 44
+      },
+      {
+        "width": 390,
+        "overflow": false,
+        "min_reader_target_px": 44
+      },
+      {
+        "width": 320,
+        "overflow": false,
+        "min_reader_target_px": 44
+      }
+    ],
+    "screenshots": [
+      "docs/validation/2026-11-11-multi-agent-ui-1440.png",
+      "docs/validation/2026-11-11-multi-agent-ui-390.png"
+    ]
+  },
+  "privacy_receipt": "docs/validation/2026-11-11-multi-agent-ui-privacy.json",
+  "limitations": [
+    "No new live search, caption or model request in this review. Cached live caption data is existing single-video evidence.",
+    "Per-search text filters persist within this workspace session; source/date/last-tab preferences retain existing browser persistence.",
+    "Cancelling UI intent does not cancel already accepted server research; saved work/normal accounting remain.",
+    "Caption cancellation waits for already admitted work under existing transport timeouts rather than forcibly terminating a synchronous HTTP request.",
+    "Reader control/focus/responsive checks are targeted checks, not a comprehensive accessibility certification.",
+    "Existing shared model allowance remains blocked; no hold was erased or budget raised. General web search remains deferred."
+  ],
+  "source_sha256": {
+    "frontend/src/components/research-workspace.tsx": "5f6713b259f817b48f1927d9c371076ba3b4a5a74f3c88da5845eaede37912b9",
+    "frontend/src/components/search-results.tsx": "23880c4970cb1fbf1e1c295ed23d1afa20d1356d454773f8e8e074b3d835677b",
+    "frontend/src/components/video-preview.tsx": "ffe837f97da155ab3b00ef1bcb06c6983afed709fbbf70a53ae0f5a8ee7eaa8a",
+    "frontend/src/components/source-preview.tsx": "b9bf138dbbe128a18c770d6f39f67442b1d3128798bcd6164420748cc19bed94",
+    "frontend/src/app/globals.css": "5822ec618af71c32db2e1de40541c2aa4f71e15df9508cb58af5779355450893",
+    "frontend/src/lib/search-resources.ts": "af4c3d8f0c70f9f3b5a17aa8d184f47bb55c101a996d65e3f3c1978ba917f9b7",
+    "src/research_scout/providers/youtube_captions.py": "5f45b6052c3317c120c341d6fcd7f48aabc82e3a23e70a5ddb3fc4ee6f96624e",
+    "tests/test_youtube_captions.py": "02aa82effc71c3616d6ec36bc12afe1f6e30d15a77b1b8f438b73cb777e0dddf",
+    "tests/browser/navigation-stability.spec.ts": "9fb619deb3d2617f9496211259191177700ffe3c8776a4949c648164a54b9869",
+    "tests/browser/video-preview-resilience.spec.ts": "83ffb4c4b3ab82b36d7dd6e9eacebd8f4b0007de17666c5ca4e2903689d449d0",
+    "tests/browser/search-results-resilience.spec.ts": "1ff109021e66add84e70c6f5be5fc45b2e4fb5c457534f44a527687a2203a671"
+  },
+  "app_left_running": {
+    "url": "http://127.0.0.1:3100/",
+    "mode": "live",
+    "launcher_session": 71648,
+    "provider_processes": 9
+  }
+}

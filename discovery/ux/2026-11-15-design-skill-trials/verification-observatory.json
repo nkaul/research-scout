@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-15",
+  "passed": true,
+  "scope": "Exactly one reference-first mockup added; original seven retained.",
+  "gallery": {
+    "total_mockups": 8,
+    "added_mockups": 1,
+    "original_links_retained": true
+  },
+  "preservation": {
+    "original_runtime_and_capture_files_checked": 32,
+    "changed": 0,
+    "original_seven_previews_unchanged": true,
+    "original_gallery_captures_retained": true
+  },
+  "new_mockup": {
+    "id": "datapulse-observatory",
+    "name": "Research Observatory",
+    "independent_html_css_js": true,
+    "no_sidebar": true,
+    "floating_navigation": true,
+    "large_split_hero": true,
+    "research_map_cards": 6,
+    "embedded_evidence_workbench": true,
+    "checks_passed": 20,
+    "responsive_widths": [
+      1440,
+      1100,
+      970,
+      768,
+      650,
+      390,
+      320
+    ],
+    "bounded_contrast_and_keyboard_checks": true,
+    "external_requests": 0,
+    "api_requests": 0,
+    "writes": 0,
+    "runtime_errors": 0
+  },
+  "application": {
+    "frontend_source_files_unchanged": 93,
+    "runtime_stack_changed": false,
+    "production_adoption": false
+  },
+  "limitations": [
+    "Authored static preview only; no live model, provider, backend, production or durability verification.",
+    "Representative computed solid-color contrast samples and keyboard checks are not a complete WCAG or screen-reader audit.",
+    "Gradient/image backdrops are reported as unmeasured rather than assigned a fabricated contrast ratio."
+  ],
+  "evidence": {
+    "mockup": "datapulse-observatory.html",
+    "browser": "validation-observatory.json",
+    "gallery": "validation-gallery-eight.json",
+    "privacy": "privacy-observatory.json",
+    "brief": "reference-reimagined-brief.md",
+    "rationale": "family-notes-observatory.md"
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "package": "scout-ui-ux-pro-max",
+  "kind": "scoped project adaptation; not a full upstream CLI installation",
+  "repository": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+  "commit": "d643997c82e94742dd3bee43210b0198e8bbba3d",
+  "retrieved_at": "2026-11-15T05:59:20.375Z",
+  "license": "MIT",
+  "copyright": "Copyright (c) 2024 Next Level Builder",
+  "supported_domains": [
+    "style",
+    "product",
+    "color",
+    "typography",
+    "ux",
+    "react"
+  ],
+  "supported_stacks": [
+    "react",
+    "nextjs"
+  ],
+  "design_system": true,
+  "omitted": [
+    "npm CLI",
+    "six sibling skills",
+    "unrelated stacks",
+    "font binaries and expanded font catalog",
+    "icons",
+    "GSAP/motion presets",
+    "chart catalog",
+    "native-specific pro-rules",
+    "screenshots and galleries"
+  ],
+  "derivation_references": [
+    ".claude/skills/ui-ux-pro-max/SKILL.md",
+    "src/ui-ux-pro-max/templates/platforms/codex.json"
+  ],
+  "update_policy": "Review a new immutable upstream commit manually. Diff scripts and linked complete catalogs together; retain LICENSE; refresh hashes only after supported-mode smoke checks. Keep project instructions and approved token decisions separate from upstream files.",
+  "files": [
+    {
+      "upstream_path": "LICENSE",
+      "local_path": "LICENSE",
+      "source_url": "https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/d643997c82e94742dd3bee43210b0198e8bbba3d/LICENSE",
+      "bytes": 1075,
+      "sha256": "738f69dfa83db5c347c678fb9d90e560877059f0de93a327c39001bff92dc014",
+      "modifications": "none"
+    },
+    {
+      "upstream_path": "src/ui-ux-pro-max/scripts/search.py",
+      "local_path": "scripts/search.py",
+      "source_url": "https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/d643997c82e94742dd3bee43210b0198e8bbba3d/src/ui-ux-pro-max/scripts/search.py",
+      "bytes": 10642,
+      "sha256": "9fd5acc991142fd43c3afe7be0f6720911b668f3988b34e74b5cbc41d58e7947",
+      "modifications": "none"
+    },
+    {
+      "upstream_path": "src/ui-ux-pro-max/scripts/core.py",
+      "local_path": "scripts/core.py",
+      "source_url": "https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/d643997c82e94742dd3bee43210b0198e8bbba3d/src/ui-ux-pro-max/scripts/core.py",
+      "bytes": 43933,
+      "sha256": "caf92bdcf2579c9a7d6af4f53c54ee9d3c8f05472cfab77aaec38bef120ec63e",
+      "modifications": "none"
+    },
+    {
+      "upstream_path": "src/ui-ux-pro-max/scripts/design_system.py",
+      "local_path": "scripts/design_system.py",
+      "source_url": "https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/d643997c82e94742dd3bee43210b0198e8bbba3d/src/ui-ux-pro-max/scripts/design_system.py",
+      "bytes": 71537,
+      "sha256": "e7d1c94c4b2eada17c5551157668362659ccf9626d34dbd58e68142410f90103",
+      "modifications": "none"
+    },
+    {
+      "upstream_path": "src/ui-ux-pro-max/scripts/reasoning_contract.py",
+      "local_path": "scripts/reasoning_contract.py",
+      "source_url": "https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/d643997c82e94742dd3bee43210b0198e8bbba3d/src/ui-ux-pro-max/scripts/reasoning_contract.py",
+      "bytes": 5824,
+      "sha256": "b8bac1af82aa280d3e06f00aabaeac4337e632996b07fed874e2b6ee6e9c5913",
+      "modifications": "none"
+    },
+    {
+      "upstream_path": "src/ui-ux-pro-max/data/styles.csv",
+      "local_path": "data/styles.csv",
+      "source_url": "https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/d643997c82e94742dd3bee43210b0198e8bbba3d/src/ui-ux-pro-max/data/styles.csv",
+      "bytes": 152958,
+      "sha256": "a9b6cadbd1cb9e7cb8398a3b445e0691d01e42ed5e5efa60a5d0c08c99c8100d",
+      "modifications": "none"
+    },
+    {
+      "upstream_path": "src/ui-ux-pro-max/data/products.csv",
+      "local_path": "data/products.csv",
+      "source_url": "https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/d643997c82e94742dd3bee43210b0198e8bbba3d/src/ui-ux-pro-max/data/products.csv",
+      "bytes": 76959,
+      "sha256": "5756125e2b0e0d2360926f175d0975c8cd846c7589e5e2ce02631ff645e66361",
+      "modifications": "none"
+    },
+    {
+      "upstream_path": "src/ui-ux-pro-max/data/colors.csv",
+      "local_path": "data/colors.csv",
+      "source_url": "https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/d643997c82e94742dd3bee43210b0198e8bbba3d/src/ui-ux-pro-max/data/colors.csv",
+      "bytes": 37940,
+      "sha256": "8162429222bce22df62b564085946a30d07cc9722c58d0a3a494bd0d1d00841c",
+      "modifications": "none"
+    },
+    {
+      "upstream_path": "src/ui-ux-pro-max/data/typography.csv",
+      "local_path": "data/typography.csv",
+      "source_url": "https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/d643997c82e94742dd3bee43210b0198e8bbba3d/src/ui-ux-pro-max/data/typography.csv",
+      "bytes": 49997,
+      "sha256": "321fc446e89024488ebae96dda93efc4d2307bd8bddb240857ad51364f6782c8",
+      "modifications": "none"
+    },
+    {
+      "upstream_path": "src/ui-ux-pro-max/data/landing.csv",
+      "local_path": "data/landing.csv",
+      "source_url": "https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/d643997c82e94742dd3bee43210b0198e8bbba3d/src/ui-ux-pro-max/data/landing.csv",
+      "bytes": 25449,
+      "sha256": "9a2edd3bb676c2a58f00ade7a062e285222d4297bfd847c8d5b056f0dbbf52d0",
+      "modifications": "none"
+    },
+    {
+      "upstream_path": "src/ui-ux-pro-max/data/ui-reasoning.csv",
+      "local_path": "data/ui-reasoning.csv",
+      "source_url": "https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/d643997c82e94742dd3bee43210b0198e8bbba3d/src/ui-ux-pro-max/data/ui-reasoning.csv",
+      "bytes": 77360,
+      "sha256": "f0774dd741cecdad5eec842034bd6d5e9ea50e9f220a1910069748daa0bb8e9a",
+      "modifications": "none"
+    },
+    {
+      "upstream_path": "src/ui-ux-pro-max/data/ux-guidelines.csv",
+      "local_path": "data/ux-guidelines.csv",
+      "source_url": "https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/d643997c82e94742dd3bee43210b0198e8bbba3d/src/ui-ux-pro-max/data/ux-guidelines.csv",
+      "bytes": 28310,
+      "sha256": "d63dc39439cf615cdccfdf7acd2301e0c3ce5e1e56a89b60617fa190f7511512",
+      "modifications": "none"
+    },
+    {
+      "upstream_path": "src/ui-ux-pro-max/data/react-performance.csv",
+      "local_path": "data/react-performance.csv",
+      "source_url": "https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/d643997c82e94742dd3bee43210b0198e8bbba3d/src/ui-ux-pro-max/data/react-performance.csv",
+      "bytes": 15080,
+      "sha256": "3d925802539abac5afeb63ae8aa1960b7229ad271b3a47caed40ab2d97ad0734",
+      "modifications": "none"
+    },
+    {
+      "upstream_path": "src/ui-ux-pro-max/data/stacks/react.csv",
+      "local_path": "data/stacks/react.csv",
+      "source_url": "https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/d643997c82e94742dd3bee43210b0198e8bbba3d/src/ui-ux-pro-max/data/stacks/react.csv",
+      "bytes": 21166,
+      "sha256": "4dd176a9787e5c6306b5df94158d75955adcdc6edab41ce5286641a5842303c1",
+      "modifications": "none"
+    },
+    {
+      "upstream_path": "src/ui-ux-pro-max/data/stacks/nextjs.csv",
+      "local_path": "data/stacks/nextjs.csv",
+      "source_url": "https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/d643997c82e94742dd3bee43210b0198e8bbba3d/src/ui-ux-pro-max/data/stacks/nextjs.csv",
+      "bytes": 18687,
+      "sha256": "ecd2c27b2ea0127d203ae726060efcdd7335b5e83f96b99e4f3befbbfeebd5a4",
+      "modifications": "none"
+    },
+    {
+      "upstream_path": ".claude/skills/ui-ux-pro-max/references/quick-reference.md",
+      "local_path": "references/quick-reference.md",
+      "source_url": "https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/d643997c82e94742dd3bee43210b0198e8bbba3d/.claude/skills/ui-ux-pro-max/references/quick-reference.md",
+      "bytes": 24773,
+      "sha256": "fc53ccfafaa08d40d7326e34e88e9387df60b4256cd649d34dcae0284f247949",
+      "modifications": "none"
+    }
+  ],
+  "local_adaptations": [
+    {
+      "path": "SKILL.md",
+      "purpose": "Scoped Codex entry point with existing-project workflow, supported-subset limits and offline uv examples."
+    },
+    {
+      "path": "references/research-scout.md",
+      "purpose": "Current workspace preservation, authored comparison and token-adoption constraints."
+    }
+  ]
+}

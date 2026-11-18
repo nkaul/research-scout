@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-11",
+  "passed": true,
+  "evidence": "One GET-only local measurement after idle restart. Timings are observations, not a controlled latency benchmark.",
+  "full_runs": {
+    "bytes": 2858962,
+    "count": 65,
+    "elapsed_ms": 413.03
+  },
+  "compact_runs": {
+    "bytes": 2794,
+    "count": 12,
+    "elapsed_ms": 6.52
+  },
+  "payload_reduction_percent": 99.9,
+  "conversation_summaries": {
+    "bytes": 7722,
+    "count": 34,
+    "elapsed_ms": 3.6
+  },
+  "core_health_ok": true
+}

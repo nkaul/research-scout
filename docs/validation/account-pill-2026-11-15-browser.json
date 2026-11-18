@@ -1,0 +1,199 @@
+{
+  "config": {
+    "argv": [
+      "./.tools/node/bin/node",
+      "./frontend/node_modules/@playwright/test/cli.js",
+      "test",
+      "--config",
+      "tests/browser/playwright.config.ts",
+      "landing-auth.spec.ts",
+      "--grep",
+      "authenticated account menu fits",
+      "--reporter=list,json",
+      "--output",
+      "../.scout/account-pill-browser-artifacts"
+    ],
+    "configFile": "./frontend/tests/browser/playwright.config.ts",
+    "rootDir": "./frontend/tests/browser",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "./.scout/account-pill-browser-artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "./frontend/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 35000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "./.scout/account-pill-browser-artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "chromium",
+        "testDir": "./frontend/tests/browser",
+        "snapshotDir": "./frontend/tests/browser",
+        "testIgnore": [],
+        "testMatch": "**/*.spec.ts",
+        "timeout": 35000,
+        "use": {
+          "baseURL": "http://127.0.0.1:3190",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure",
+          "acceptDownloads": true,
+          "channel": "chromium",
+          "launchOptions": {
+            "args": [
+              "--disable-gpu"
+            ]
+          },
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Safari/537.36",
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chromium"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "landing-auth.spec.ts",
+      "file": "landing-auth.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "landing and real authentication boundaries",
+          "file": "landing-auth.spec.ts",
+          "line": 106,
+          "column": 6,
+          "specs": [
+            {
+              "title": "authenticated account menu fits the viewport and restores keyboard focus",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 35000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2716,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-16T04:57:50.741Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "account-menu-1440",
+                          "contentType": "image/png",
+                          "path": "./.scout/account-pill-browser-artifacts/landing-auth-landing-and-r-c0f82-and-restores-keyboard-focus-chromium/attachments/account-menu-1440-c1423f0e97bb1a1775965250fe0b2431fab29db9.png"
+                        },
+                        {
+                          "name": "account-menu-390",
+                          "contentType": "image/png",
+                          "path": "./.scout/account-pill-browser-artifacts/landing-auth-landing-and-r-c0f82-and-restores-keyboard-focus-chromium/attachments/account-menu-390-68721e3a024b0fc8b7575b81862905ead547d10f.png"
+                        },
+                        {
+                          "name": "account-menu-320",
+                          "contentType": "image/png",
+                          "path": "./.scout/account-pill-browser-artifacts/landing-auth-landing-and-r-c0f82-and-restores-keyboard-focus-chromium/attachments/account-menu-320-da3b89ca4179a3e8e210c0467c4b60e7fd413a2c.png"
+                        },
+                        {
+                          "name": "account-menu-geometry",
+                          "contentType": "application/json",
+                          "body": "W3sid2lkdGgiOjE0NDAsIngiOjExMzIsInJpZ2h0IjoxNDEyLCJwYW5lbFdpZHRoIjoyODAsImhlYWRlck92ZXJmbG93IjowfSx7IndpZHRoIjoxMTAwLCJ4Ijo3OTIsInJpZ2h0IjoxMDcyLCJwYW5lbFdpZHRoIjoyODAsImhlYWRlck92ZXJmbG93IjowfSx7IndpZHRoIjo5NzAsIngiOjY2MiwicmlnaHQiOjk0MiwicGFuZWxXaWR0aCI6MjgwLCJoZWFkZXJPdmVyZmxvdyI6MH0seyJ3aWR0aCI6NzY4LCJ4Ijo0NzAsInJpZ2h0Ijo3NTAsInBhbmVsV2lkdGgiOjI4MCwiaGVhZGVyT3ZlcmZsb3ciOjB9LHsid2lkdGgiOjY1MCwieCI6MzU4LCJyaWdodCI6NjM4LCJwYW5lbFdpZHRoIjoyODAsImhlYWRlck92ZXJmbG93IjowfSx7IndpZHRoIjozOTAsIngiOjk4LCJyaWdodCI6Mzc4LCJwYW5lbFdpZHRoIjoyODAsImhlYWRlck92ZXJmbG93IjowfSx7IndpZHRoIjozMjAsIngiOjI4LCJyaWdodCI6MzA4LCJwYW5lbFdpZHRoIjoyODAsImhlYWRlck92ZXJmbG93IjowfV0="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "dde190e0e546137bee20-b60d52083d25f3983c2d",
+              "file": "landing-auth.spec.ts",
+              "line": 325,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-16T04:57:49.964Z",
+    "duration": 4562.891,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

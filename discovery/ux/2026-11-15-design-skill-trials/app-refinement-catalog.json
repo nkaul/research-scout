@@ -1,0 +1,352 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-15",
+  "purpose": "Direction 09 Reference App visual refinement; local catalog lookup only",
+  "skill": "scout-ui-ux-pro-max",
+  "licensing": {
+    "spdx": "MIT",
+    "copyright": "Copyright (c) 2024 Next Level Builder",
+    "included_notice": "../../../.agents/skills/scout-ui-ux-pro-max/LICENSE"
+  },
+  "upstream": {
+    "repository": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+    "commit": "d643997c82e94742dd3bee43210b0198e8bbba3d"
+  },
+  "execution": {
+    "environment": "Existing locked backend uv environment, offline, --extra encoder, --no-sync; temporary uv cache",
+    "catalog_searches": 5,
+    "provider_or_model_calls": false,
+    "design_system_generator_run": false,
+    "persisted_design_system": false,
+    "new_dependencies": false
+  },
+  "decisions": [
+    {
+      "source": "style initial",
+      "selection": "none",
+      "reason": "Neumorphism/glassmorphism are a poor fit for text-heavy research controls; generic micro-interactions are not the visual system. Retained unsuccessful match honestly and retried narrowly once."
+    },
+    {
+      "source": "style retry",
+      "selection": "dimensional-layering",
+      "adaptation": "Use a small, coherent elevation scale to separate canvas, record cards and reader. No tilted surfaces, parallax, translucent reading backgrounds or library adoption."
+    },
+    {
+      "source": "color",
+      "selection": "Research Lab / University Department",
+      "adaptation": "Use near-white canvas, navy text, slate metadata and white cards; retain existing Material-blue action emphasis. Use a subtle warm paper reader to balance cool chrome. Do not adopt gold accent or the returned dark financial palette."
+    },
+    {
+      "source": "typography",
+      "selection": "Friendly SaaS",
+      "adaptation": "Adopt its single-family, readable interface principle with locally available sans fallbacks. No external font download; do not claim Plus Jakarta Sans renders unless installed."
+    },
+    {
+      "source": "ux",
+      "selection": [
+        "Compact Label Overflow",
+        "Compact Control Semantics",
+        "Input Labels"
+      ],
+      "adaptation": "Wrap control groups before shrinking labels, provide true button/tab semantics and visible focus, and preserve visible research-question labeling."
+    }
+  ],
+  "queries": [
+    {
+      "domain": "style",
+      "query": "light productivity research workspace subtle shadows cards",
+      "command": "UV_CACHE_DIR=/tmp/research-scout-app-refinement-cache .tools/uv/bin/uv run --project backend --locked --offline --extra encoder --no-sync python .agents/skills/scout-ui-ux-pro-max/scripts/search.py 'light productivity research workspace subtle shadows cards' --domain style --json",
+      "exit_code": 0,
+      "result": {
+        "domain": "style",
+        "query": "light productivity research workspace subtle shadows cards",
+        "file": "styles.csv",
+        "count": 3,
+        "results": [
+          {
+            "Style ID": "neumorphism",
+            "Style Category": "Neumorphism",
+            "Aliases": "",
+            "Status": "active",
+            "Parent Style ID": "",
+            "Preferred Mode": "auto",
+            "Type": "General",
+            "Keywords": "Soft UI, embossed, debossed, convex, concave, light source, subtle depth, rounded (12-16px), monochromatic",
+            "Primary Colors": "Light pastels: Soft Blue #C8E0F4, Soft Pink #F5E0E8, Soft Grey #E8E8E8",
+            "Effects & Animation": "Soft box-shadow (multiple: -5px -5px 15px, 5px 5px 15px), smooth press (150ms), inner subtle shadow",
+            "Best For": "Health/wellness apps, meditation platforms, fitness trackers, minimal interaction UIs",
+            "Light Mode ✓": "supported",
+            "Dark Mode ✓": "conditional",
+            "Performance": "cost:low|drivers:none",
+            "Accessibility": "risk:high|requires:contrast-text-4.5,keyboard,visible-focus,reduced-motion",
+            "Framework Compatibility": "tailwind|css-in-js",
+            "Complexity": "Medium",
+            "AI Prompt Keywords": "Create a neumorphic UI with soft 3D effects. Use light pastels, rounded corners (12-16px), subtle soft shadows (multiple layers), no hard lines, monochromatic color scheme with light/dark variations. Embossed/debossed effect on interactive elements.",
+            "CSS/Technical Keywords": "border-radius: 12-16px, box-shadow: -5px -5px 15px rgba(0,0,0,0.1), 5px 5px 15px rgba(255,255,255,0.8), background: linear-gradient(145deg, color1, color2), transform: scale on press",
+            "Implementation Checklist": "☐ Rounded corners 12-16px consistent, ☐ Multiple shadow layers (2-3), ☐ Pastel color verified, ☐ Monochromatic palette checked, ☐ Press animation smooth 150ms",
+            "Design System Variables": "--border-radius: 14px, --shadow-soft-1: -5px -5px 15px, --shadow-soft-2: 5px 5px 15px, --color-light: #F5F5F5, --color-primary: single pastel",
+            "rtl_level": "full"
+          },
+          {
+            "Style ID": "glassmorphism",
+            "Style Category": "Glassmorphism",
+            "Aliases": "",
+            "Status": "active",
+            "Parent Style ID": "",
+            "Preferred Mode": "auto",
+            "Type": "General",
+            "Keywords": "Frosted glass, transparent, blurred background, layered, vibrant background, light source, depth, multi-layer",
+            "Primary Colors": "Translucent white: rgba(255,255,255,0.1-0.3)",
+            "Effects & Animation": "Backdrop blur (10-20px), subtle border (1px solid rgba white 0.2), light reflection, Z-depth",
+            "Best For": "Modern SaaS, financial dashboards, high-end corporate, lifestyle apps, modal overlays, navigation",
+            "Light Mode ✓": "supported",
+            "Dark Mode ✓": "supported",
+            "Performance": "cost:low|drivers:none",
+            "Accessibility": "risk:conditional|requires:contrast-text-4.5,keyboard,visible-focus,reduced-motion",
+            "Framework Compatibility": "tailwind|mui|chakra",
+            "Complexity": "Medium",
+            "AI Prompt Keywords": "Design a glassmorphic interface with frosted glass effect. Use backdrop blur (10-20px), translucent overlays (rgba 10-30% opacity), vibrant background colors, subtle borders, light source reflection, layered depth. Perfect for modern overlays and cards.",
+            "CSS/Technical Keywords": "backdrop-filter: blur(15px), background: rgba(255, 255, 255, 0.15), border: 1px solid rgba(255,255,255,0.2), -webkit-backdrop-filter: blur(15px), z-index layering for depth",
+            "Implementation Checklist": "☐ Backdrop-filter blur 10-20px, ☐ Translucent white 15-30% opacity, ☐ Subtle border 1px light, ☐ Vibrant background verified, ☐ Text contrast 4.5:1 checked",
+            "Design System Variables": "--blur-amount: 15px, --glass-opacity: 0.15, --border-color: rgba(255,255,255,0.2), --background: vibrant color, --text-color: light/dark based on BG",
+            "rtl_level": "full"
+          },
+          {
+            "Style ID": "micro-interactions",
+            "Style Category": "Micro-interactions",
+            "Aliases": "",
+            "Status": "active",
+            "Parent Style ID": "",
+            "Preferred Mode": "auto",
+            "Type": "General",
+            "Keywords": "Small animations, gesture-based, tactile feedback, subtle animations, contextual interactions, responsive",
+            "Primary Colors": "Subtle color shifts (10-20%), feedback: Green #22C55E, Red #EF4444, Amber #F59E0B",
+            "Effects & Animation": "Small hover (50-100ms), loading spinners, success/error state anim, gesture-triggered (swipe/pinch), haptic",
+            "Best For": "Mobile apps, touchscreen UIs, productivity tools, user-friendly, consumer apps, interactive components",
+            "Light Mode ✓": "supported",
+            "Dark Mode ✓": "supported",
+            "Performance": "cost:low|drivers:none",
+            "Accessibility": "risk:low|requires:contrast-text-4.5,keyboard,visible-focus,reduced-motion",
+            "Framework Compatibility": "framer-motion|react-spring",
+            "Complexity": "Medium",
+            "AI Prompt Keywords": "Design with delightful micro-interactions: small 50-100ms animations, gesture-based responses, tactile feedback, loading spinners, success/error states, subtle hover effects, haptic feedback triggers for mobile. Focus on responsive, contextual interactions.",
+            "CSS/Technical Keywords": "animation: short 50-100ms, transition: hover states, @media (hover: hover) for desktop, :active for press, haptic-feedback CSS/API, loading animation smooth loop",
+            "Implementation Checklist": "☐ Micro-animations 50-100ms, ☐ Gesture-responsive, ☐ Tactile feedback visual/haptic, ☐ Loading spinners smooth, ☐ Success/error states clear, ☐ Hover effects subtle",
+            "Design System Variables": "--micro-animation-duration: 50-100ms, --gesture-responsive: true, --haptic-feedback: true, --loading-animation: smooth, --state-feedback: success+error",
+            "rtl_level": "partial"
+          }
+        ]
+      }
+    },
+    {
+      "domain": "color",
+      "query": "research productivity dashboard",
+      "command": "UV_CACHE_DIR=/tmp/research-scout-app-refinement-cache .tools/uv/bin/uv run --project backend --locked --offline --extra encoder --no-sync python .agents/skills/scout-ui-ux-pro-max/scripts/search.py 'research productivity dashboard' --domain color --json",
+      "exit_code": 0,
+      "result": {
+        "domain": "color",
+        "query": "research productivity dashboard",
+        "file": "colors.csv",
+        "count": 3,
+        "results": [
+          {
+            "Product Type": "Research Lab / University Department",
+            "Primary": "#1E3A5F",
+            "On Primary": "#FFFFFF",
+            "Secondary": "#2563EB",
+            "On Secondary": "#FFFFFF",
+            "Accent": "#A16207",
+            "On Accent": "#FFFFFF",
+            "Background": "#F8FAFC",
+            "Foreground": "#0F172A",
+            "Card": "#FFFFFF",
+            "Card Foreground": "#0F172A",
+            "Muted": "#E9EEF5",
+            "Muted Foreground": "#475569",
+            "Border": "#CBD5E1",
+            "Destructive": "#DC2626",
+            "On Destructive": "#FFFFFF",
+            "Ring": "#1E3A5F",
+            "Notes": "Institutional navy + research accent + serif headings"
+          },
+          {
+            "Product Type": "Productivity Tool",
+            "Primary": "#0D9488",
+            "On Primary": "#000000",
+            "Secondary": "#14B8A6",
+            "On Secondary": "#0F172A",
+            "Accent": "#EA580C",
+            "On Accent": "#000000",
+            "Background": "#F0FDFA",
+            "Foreground": "#134E4A",
+            "Card": "#FFFFFF",
+            "Card Foreground": "#134E4A",
+            "Muted": "#E8F1F4",
+            "Muted Foreground": "#475569",
+            "Border": "#99F6E4",
+            "Destructive": "#DC2626",
+            "On Destructive": "#FFFFFF",
+            "Ring": "#0D9488",
+            "Notes": "Teal focus + action orange [Accent adjusted from #F97316]"
+          },
+          {
+            "Product Type": "Financial Dashboard",
+            "Primary": "#0F172A",
+            "On Primary": "#FFFFFF",
+            "Secondary": "#1E293B",
+            "On Secondary": "#FFFFFF",
+            "Accent": "#22C55E",
+            "On Accent": "#0F172A",
+            "Background": "#020617",
+            "Foreground": "#F8FAFC",
+            "Card": "#0E1223",
+            "Card Foreground": "#F8FAFC",
+            "Muted": "#1A1E2F",
+            "Muted Foreground": "#94A3B8",
+            "Border": "#334155",
+            "Destructive": "#EF4444",
+            "On Destructive": "#000000",
+            "Ring": "#FFFFFF",
+            "Notes": "Dark bg + green positive indicators"
+          }
+        ]
+      }
+    },
+    {
+      "domain": "typography",
+      "query": "clean SaaS dashboard readable interface",
+      "command": "UV_CACHE_DIR=/tmp/research-scout-app-refinement-cache .tools/uv/bin/uv run --project backend --locked --offline --extra encoder --no-sync python .agents/skills/scout-ui-ux-pro-max/scripts/search.py 'clean SaaS dashboard readable interface' --domain typography --json",
+      "exit_code": 0,
+      "result": {
+        "domain": "typography",
+        "query": "clean SaaS dashboard readable interface",
+        "file": "typography.csv",
+        "count": 3,
+        "results": [
+          {
+            "Font Pairing Name": "Dashboard Data",
+            "Category": "Mono + Sans",
+            "Heading Font": "Fira Code",
+            "Body Font": "Fira Sans",
+            "Mood/Style Keywords": "dashboard, data, analytics, code, technical, precise",
+            "Best For": "Dashboards, analytics, data visualization, admin panels",
+            "Google Fonts URL": "https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Fira+Sans:wght@300;400;500;600;700&display=swap",
+            "CSS Import": "@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Fira+Sans:wght@300;400;500;600;700&display=swap');",
+            "Tailwind Config": "fontFamily: { mono: ['Fira Code', 'monospace'], sans: ['Fira Sans', 'sans-serif'] }",
+            "Notes": "Fira family cohesion. Code for data, Sans for labels."
+          },
+          {
+            "Font Pairing Name": "Friendly SaaS",
+            "Category": "Sans + Sans",
+            "Heading Font": "Plus Jakarta Sans",
+            "Body Font": "Plus Jakarta Sans",
+            "Mood/Style Keywords": "friendly, modern, saas, clean, approachable, professional",
+            "Best For": "SaaS products, web apps, dashboards, B2B, productivity tools",
+            "Google Fonts URL": "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap",
+            "CSS Import": "@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');",
+            "Tailwind Config": "fontFamily: { sans: ['Plus Jakarta Sans', 'sans-serif'] }",
+            "Notes": "Single versatile font. Modern alternative to Inter."
+          },
+          {
+            "Font Pairing Name": "Modern Professional",
+            "Category": "Sans + Sans",
+            "Heading Font": "Poppins",
+            "Body Font": "Open Sans",
+            "Mood/Style Keywords": "modern, professional, clean, corporate, friendly, approachable",
+            "Best For": "SaaS, corporate sites, business apps, startups, professional services",
+            "Google Fonts URL": "https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap",
+            "CSS Import": "@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');",
+            "Tailwind Config": "fontFamily: { heading: ['Poppins', 'sans-serif'], body: ['Open Sans', 'sans-serif'] }",
+            "Notes": "Geometric Poppins for headings, humanist Open Sans for readability."
+          }
+        ]
+      }
+    },
+    {
+      "domain": "ux",
+      "query": "compact toolbar chip label reflow visible focus",
+      "command": "UV_CACHE_DIR=/tmp/research-scout-app-refinement-cache .tools/uv/bin/uv run --project backend --locked --offline --extra encoder --no-sync python .agents/skills/scout-ui-ux-pro-max/scripts/search.py 'compact toolbar chip label reflow visible focus' --domain ux --json",
+      "exit_code": 0,
+      "result": {
+        "domain": "ux",
+        "query": "compact toolbar chip label reflow visible focus",
+        "file": "ux-guidelines.csv",
+        "count": 3,
+        "results": [
+          {
+            "Category": "Content",
+            "Issue": "Compact Label Overflow",
+            "Platform": "All",
+            "Description": "A badge chip or pill label should stay whole on one line when practical and disclose unavoidable truncation",
+            "Do": "Bound only unpredictable values; use nowrap with a shrinkable label; expose full text to keyboard pointer and touch users",
+            "Don't": "Let one compact label wrap to a second line or use a hover-only tooltip",
+            "Code Example Good": "Flexible label with min-width 0 and an operable full-value disclosure",
+            "Code Example Bad": "Fixed-width badge wraps to second line or clips with title-only recovery",
+            "Severity": "High"
+          },
+          {
+            "Category": "Accessibility",
+            "Issue": "Compact Control Semantics",
+            "Platform": "Web",
+            "Description": "Interactive chips need a native role accessible name state keyboard operation and visible focus",
+            "Do": "Prefer a button and expose pressed or selected state that matches the visible label",
+            "Don't": "Use a clickable div or reveal the only action on hover",
+            "Code Example Good": "<button aria-pressed='true'>Open now</button>",
+            "Code Example Bad": "<div class='selected' onclick='toggle()'>Open now</div>",
+            "Severity": "Critical"
+          },
+          {
+            "Category": "Forms",
+            "Issue": "Input Labels",
+            "Platform": "All",
+            "Description": "Every input needs a visible label",
+            "Do": "Always show label above or beside input",
+            "Don't": "Placeholder as only label",
+            "Code Example Good": "<label>Email</label><input>",
+            "Code Example Bad": "placeholder='Email' only",
+            "Severity": "High"
+          }
+        ]
+      }
+    },
+    {
+      "domain": "style",
+      "query": "dimensional layering SaaS cards light shadows",
+      "command": "UV_CACHE_DIR=/tmp/research-scout-app-refinement-cache .tools/uv/bin/uv run --project backend --locked --offline --extra encoder --no-sync python .agents/skills/scout-ui-ux-pro-max/scripts/search.py 'dimensional layering SaaS cards light shadows' --domain style --json",
+      "exit_code": 0,
+      "result": {
+        "domain": "style",
+        "query": "dimensional layering SaaS cards light shadows",
+        "file": "styles.csv",
+        "count": 1,
+        "results": [
+          {
+            "Style ID": "dimensional-layering",
+            "Style Category": "Dimensional Layering",
+            "Aliases": "",
+            "Status": "active",
+            "Parent Style ID": "",
+            "Preferred Mode": "auto",
+            "Type": "General",
+            "Keywords": "Depth, overlapping, z-index, layers, 3D, shadows, elevation, floating, cards, spatial hierarchy",
+            "Primary Colors": "Neutral base (#FFFFFF, #F5F5F5, #E0E0E0) + brand accent for elevated elements",
+            "Effects & Animation": "z-index stacking, box-shadow elevation (4 levels), transform: translateZ(), backdrop-filter, parallax",
+            "Best For": "Dashboards, card layouts, modals, navigation, product showcases, SaaS interfaces",
+            "Light Mode ✓": "supported",
+            "Dark Mode ✓": "supported",
+            "Performance": "cost:low|drivers:none",
+            "Accessibility": "risk:high|requires:contrast-text-4.5,keyboard,visible-focus,reduced-motion",
+            "Framework Compatibility": "tailwind|mui|chakra",
+            "Complexity": "Medium",
+            "AI Prompt Keywords": "Design with dimensional layering. Use: z-index depth (multiple layers), overlapping cards, elevation shadows (4 levels), floating elements, parallax depth, backdrop blur for hierarchy, spatial UI feel.",
+            "CSS/Technical Keywords": "z-index: 1-4 levels, box-shadow: elevation scale (sm/md/lg/xl), transform: translateZ(), backdrop-filter: blur(), position: relative for stacking, parallax on scroll",
+            "Implementation Checklist": "☐ Layers clearly defined, ☐ Shadows show depth, ☐ Overlaps intentional, ☐ Hierarchy clear, ☐ Performance optimized, ☐ Mobile depth maintained",
+            "Design System Variables": "--elevation-1: 0 1px 3px rgba(0,0,0,0.1), --elevation-2: 0 4px 6px rgba(0,0,0,0.1), --elevation-3: 0 10px 20px rgba(0,0,0,0.1), --elevation-4: 0 20px 40px rgba(0,0,0,0.15), --blur-amount: 8px",
+            "rtl_level": "partial"
+          }
+        ]
+      },
+      "retry_of": 0
+    }
+  ]
+}

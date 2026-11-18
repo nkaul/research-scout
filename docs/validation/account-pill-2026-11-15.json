@@ -1,0 +1,41 @@
+{
+  "date": "2026-11-15",
+  "scope": "Rightmost rounded account pill with visible username, initial avatar and existing account/sign-out menu.",
+  "checks": {
+    "typescript": true,
+    "fixture_production_build": true,
+    "live_production_build": true,
+    "production_sources_match": true,
+    "browser_cases_passed": 1,
+    "browser_cases_failed": 0,
+    "widths": [
+      1440,
+      1100,
+      970,
+      768,
+      650,
+      390,
+      320
+    ],
+    "right_edge_alignment_and_rounded_shape": true,
+    "username_visible": true,
+    "menu_viewport_and_escape_focus": true,
+    "visual_review_desktop_and_320": true
+  },
+  "browser_evidence": "account-pill-2026-11-15-browser.json",
+  "screenshots": [
+    "account-pill-2026-11-15-1440.png",
+    "account-pill-2026-11-15-390.png",
+    "account-pill-2026-11-15-320.png"
+  ],
+  "source_hashes": {
+    "frontend/src/components/workspace-account.tsx": "7891e5b30a775f0f698d820c59458db24f47b618e805b04da118835da62a021b",
+    "frontend/src/components/workspace-account.module.css": "45763099e31f98f5a898853309d926dab14c23f502a1c1b3ebffd01349dbfcf9",
+    "frontend/src/components/research-workspace.tsx": "f3e7404295dfb6887fb898731f2a1f9616bbfec701a1ace0ef14ea6b7858f4ea",
+    "frontend/src/app/globals.css": "ee51b254d3d7f8bc3aee15dbbb4b2a0cada7fcdf0a7d2e9c3f6a81ea7037fb49"
+  },
+  "qualification": "UI checks use a disposable account and isolated auth backend. No live research, model calls or user-account mutations were performed. Backend code and authentication policy were unchanged for this UI update. Impeccable written guidance applied; no upstream engine audit.",
+  "passed": true,
+  "live_frontend_healthy": true,
+  "backend_and_login_sessions_retained": true
+}

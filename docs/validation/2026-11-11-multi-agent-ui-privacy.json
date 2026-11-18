@@ -1,0 +1,10 @@
+{
+  "date": "2026-11-11",
+  "passed": true,
+  "configured_values_checked": 3,
+  "files_scanned": 1033,
+  "matching_paths": [],
+  "env_ignored": true,
+  "env_mode": "0o600",
+  "scope": "Exact configured env key/token/contact values in current Git-listed project files, frontend build and local logs. Excludes dependencies/private environment/runtime state; no unknown-secret, encoded-value, image-text or Git-history claim."
+}

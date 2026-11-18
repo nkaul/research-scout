@@ -1,0 +1,5111 @@
+{
+  "artifact": "observatory-app",
+  "generated_at": "2026-11-16T01:58:57.018Z",
+  "origin": "http://127.0.0.1:3215",
+  "reducedMotion": "reduce",
+  "sources": [
+    {
+      "file": "observatory-app.html",
+      "sha256": "b5a603dc5b90a0265ff8e105ecf92be5f40a54c0b5486796e4ac5e43c8febec9"
+    },
+    {
+      "file": "observatory-app.js",
+      "sha256": "26c8fa8e1e6de989b23a07581509665b7667c8aaf79f8247d6e5debe9db2ccf4"
+    },
+    {
+      "file": "styles/observatory-app-base.css",
+      "sha256": "639d3a245184c904fe78a921ff9f2a63d29a788fb2c0a0c806a55a0c86026747"
+    },
+    {
+      "file": "styles/observatory-app.css",
+      "sha256": "01be4afc70af8e25b51b3918bf6afac2a070ada174d62c478797f9f5d31a3a6b"
+    }
+  ],
+  "passed": true,
+  "checks": [
+    {
+      "name": "all 54 original local action handlers are retained from frozen direction 09",
+      "status": "passed",
+      "detail": {
+        "handlerCount": 54,
+        "handlers": [
+          "admin",
+          "ai",
+          "apply-dates",
+          "apply-limits",
+          "card-more",
+          "choose-concept",
+          "choose-project",
+          "clear-filter",
+          "close-info",
+          "close-popover",
+          "close-reader",
+          "concepts",
+          "copy-bibliography",
+          "create-project",
+          "credits",
+          "dates",
+          "discover",
+          "download",
+          "download-manifest",
+          "explore",
+          "export",
+          "external",
+          "filter",
+          "focus-more",
+          "hide-pdf",
+          "limits",
+          "list-mode",
+          "menu",
+          "metadata",
+          "new-project",
+          "new-research",
+          "notes-nav",
+          "observations",
+          "pdf",
+          "pdf-external",
+          "play",
+          "preview",
+          "projects",
+          "providers",
+          "query-details",
+          "reader-mode",
+          "reader-more",
+          "recent",
+          "reset-credits",
+          "reset-example",
+          "save",
+          "save-note",
+          "save-query",
+          "saved",
+          "select",
+          "settings",
+          "sources",
+          "stop",
+          "transcript"
+        ],
+        "qualification": "Static action-inventory parity; interaction flows are separately exercised below."
+      }
+    },
+    {
+      "name": "same nine authored resources and original question as frozen direction 09",
+      "status": "passed",
+      "detail": {
+        "resources": 9,
+        "laneCounts": {
+          "papers": 3,
+          "videos": 2,
+          "data": 2,
+          "repos": 2
+        },
+        "comparison": "Read-only frozen direction 09 visit; every authored resource field and the question match. No existing captures or files changed."
+      }
+    },
+    {
+      "name": "1440px app layout reflows and initial question stays visible",
+      "status": "passed"
+    },
+    {
+      "name": "1100px app layout reflows and initial question stays visible",
+      "status": "passed"
+    },
+    {
+      "name": "970px app layout reflows and initial question stays visible",
+      "status": "passed"
+    },
+    {
+      "name": "768px app layout reflows and initial question stays visible",
+      "status": "passed"
+    },
+    {
+      "name": "650px app layout reflows and initial question stays visible",
+      "status": "passed"
+    },
+    {
+      "name": "390px app layout reflows and initial question stays visible",
+      "status": "passed"
+    },
+    {
+      "name": "320px app layout reflows and initial question stays visible",
+      "status": "passed"
+    },
+    {
+      "name": "1440px actual text meets readability minimums and improves on direction 09",
+      "status": "passed",
+      "detail": [
+        {
+          "role": "prose",
+          "minimum": 16,
+          "oldMin": 13,
+          "newMin": 16,
+          "sampleCount": 75,
+          "selectors": [
+            {
+              "selector": ".excerpt li",
+              "oldMin": 13,
+              "newMin": 16
+            },
+            {
+              "selector": ".query-field textarea",
+              "oldMin": 17,
+              "newMin": 20
+            },
+            {
+              "selector": ".excerpt p",
+              "oldMin": 13,
+              "newMin": 16
+            },
+            {
+              "selector": ".notes-editor",
+              "oldMin": 14,
+              "newMin": 16
+            }
+          ]
+        },
+        {
+          "role": "sourceTitles",
+          "minimum": 20,
+          "oldMin": 16,
+          "newMin": 20,
+          "sampleCount": 48,
+          "selectors": [
+            {
+              "selector": ".card-title button",
+              "oldMin": 17,
+              "newMin": 21
+            },
+            {
+              "selector": ".reader-title",
+              "oldMin": 16,
+              "newMin": 20
+            }
+          ]
+        },
+        {
+          "role": "reader",
+          "minimum": 17,
+          "oldMin": 14,
+          "newMin": 18,
+          "sampleCount": 20,
+          "selectors": [
+            {
+              "selector": ".reader-content li",
+              "oldMin": 14,
+              "newMin": 18
+            },
+            {
+              "selector": ".reader-content .original-text",
+              "oldMin": 14,
+              "newMin": 18
+            }
+          ]
+        },
+        {
+          "role": "navigationControls",
+          "minimum": 14,
+          "oldMin": 10,
+          "newMin": 14,
+          "sampleCount": 578,
+          "selectors": [
+            {
+              "selector": ".nav-item",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".recent-search",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".sidebar-link",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".workspace-switch",
+              "oldMin": 12,
+              "newMin": 14
+            },
+            {
+              "selector": ".small-button",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".search-submit",
+              "oldMin": 12,
+              "newMin": 15
+            },
+            {
+              "selector": ".tool.bordered",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".date-control",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".resource-tabs>button",
+              "oldMin": 12,
+              "newMin": 15
+            },
+            {
+              "selector": ".view-options button",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".inline-more",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".readable-controls button",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".reader-tabs>button",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".focus-heading button",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".control-popover label",
+              "oldMin": 12,
+              "newMin": 15
+            },
+            {
+              "selector": ".control-popover h2",
+              "oldMin": 14,
+              "newMin": 20
+            }
+          ]
+        },
+        {
+          "role": "metadata",
+          "minimum": 13,
+          "oldMin": 9,
+          "newMin": 13,
+          "sampleCount": 343,
+          "selectors": [
+            {
+              "selector": ".byline",
+              "oldMin": 11,
+              "newMin": 13
+            },
+            {
+              "selector": ".reader-kind",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".reader-authors p",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".fit-note",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".reader-footer",
+              "oldMin": 9,
+              "newMin": 13
+            },
+            {
+              "selector": ".focus-query",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".focus-heading",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".results-label",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".credit-meter>span",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".nav-label",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".brand-tagline",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".page-subtitle",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".footer-note",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".connection-card p",
+              "oldMin": 9,
+              "newMin": 13
+            },
+            {
+              "selector": ".connection-card strong",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".breadcrumbs",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".note-help",
+              "oldMin": 11,
+              "newMin": 13
+            },
+            {
+              "selector": ".information-panel p",
+              "oldMin": 12,
+              "newMin": 15
+            },
+            {
+              "selector": ".information-panel th",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".information-panel td",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".control-popover p",
+              "oldMin": 11,
+              "newMin": 14
+            }
+          ]
+        },
+        {
+          "role": "chips",
+          "minimum": 12,
+          "oldMin": 9,
+          "newMin": 12,
+          "sampleCount": 222,
+          "selectors": [
+            {
+              "selector": ".focus-chips .chip",
+              "oldMin": 9,
+              "newMin": 12
+            },
+            {
+              "selector": ".provider-chips .chip",
+              "oldMin": 9,
+              "newMin": 12
+            },
+            {
+              "selector": ".access-chip",
+              "oldMin": 9,
+              "newMin": 12
+            },
+            {
+              "selector": ".card-tags .chip",
+              "oldMin": 9,
+              "newMin": 12
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "1100px actual text meets readability minimums and improves on direction 09",
+      "status": "passed",
+      "detail": [
+        {
+          "role": "prose",
+          "minimum": 16,
+          "oldMin": 13,
+          "newMin": 16,
+          "sampleCount": 75,
+          "selectors": [
+            {
+              "selector": ".excerpt li",
+              "oldMin": 13,
+              "newMin": 16
+            },
+            {
+              "selector": ".query-field textarea",
+              "oldMin": 17,
+              "newMin": 19
+            },
+            {
+              "selector": ".excerpt p",
+              "oldMin": 13,
+              "newMin": 16
+            },
+            {
+              "selector": ".notes-editor",
+              "oldMin": 14,
+              "newMin": 16
+            }
+          ]
+        },
+        {
+          "role": "sourceTitles",
+          "minimum": 20,
+          "oldMin": 15,
+          "newMin": 20,
+          "sampleCount": 48,
+          "selectors": [
+            {
+              "selector": ".card-title button",
+              "oldMin": 16,
+              "newMin": 20
+            },
+            {
+              "selector": ".reader-title",
+              "oldMin": 15,
+              "newMin": 20
+            }
+          ]
+        },
+        {
+          "role": "reader",
+          "minimum": 17,
+          "oldMin": 14,
+          "newMin": 17,
+          "sampleCount": 20,
+          "selectors": [
+            {
+              "selector": ".reader-content li",
+              "oldMin": 14,
+              "newMin": 17
+            },
+            {
+              "selector": ".reader-content .original-text",
+              "oldMin": 14,
+              "newMin": 17
+            }
+          ]
+        },
+        {
+          "role": "navigationControls",
+          "minimum": 14,
+          "oldMin": 10,
+          "newMin": 14,
+          "sampleCount": 578,
+          "selectors": [
+            {
+              "selector": ".nav-item",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".recent-search",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".sidebar-link",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".workspace-switch",
+              "oldMin": 12,
+              "newMin": 14
+            },
+            {
+              "selector": ".small-button",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".search-submit",
+              "oldMin": 12,
+              "newMin": 15
+            },
+            {
+              "selector": ".tool.bordered",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".date-control",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".resource-tabs>button",
+              "oldMin": 12,
+              "newMin": 14
+            },
+            {
+              "selector": ".view-options button",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".inline-more",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".readable-controls button",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".reader-tabs>button",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".focus-heading button",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".control-popover label",
+              "oldMin": 12,
+              "newMin": 15
+            },
+            {
+              "selector": ".control-popover h2",
+              "oldMin": 14,
+              "newMin": 20
+            }
+          ]
+        },
+        {
+          "role": "metadata",
+          "minimum": 13,
+          "oldMin": 9,
+          "newMin": 13,
+          "sampleCount": 343,
+          "selectors": [
+            {
+              "selector": ".byline",
+              "oldMin": 11,
+              "newMin": 13
+            },
+            {
+              "selector": ".reader-kind",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".reader-authors p",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".fit-note",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".reader-footer",
+              "oldMin": 9,
+              "newMin": 13
+            },
+            {
+              "selector": ".focus-query",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".focus-heading",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".results-label",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".credit-meter>span",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".nav-label",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".brand-tagline",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".page-subtitle",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".footer-note",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".connection-card p",
+              "oldMin": 9,
+              "newMin": 13
+            },
+            {
+              "selector": ".connection-card strong",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".breadcrumbs",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".note-help",
+              "oldMin": 11,
+              "newMin": 13
+            },
+            {
+              "selector": ".information-panel p",
+              "oldMin": 12,
+              "newMin": 15
+            },
+            {
+              "selector": ".information-panel th",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".information-panel td",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".control-popover p",
+              "oldMin": 11,
+              "newMin": 14
+            }
+          ]
+        },
+        {
+          "role": "chips",
+          "minimum": 12,
+          "oldMin": 9,
+          "newMin": 12,
+          "sampleCount": 222,
+          "selectors": [
+            {
+              "selector": ".focus-chips .chip",
+              "oldMin": 9,
+              "newMin": 12
+            },
+            {
+              "selector": ".provider-chips .chip",
+              "oldMin": 9,
+              "newMin": 12
+            },
+            {
+              "selector": ".access-chip",
+              "oldMin": 9,
+              "newMin": 12
+            },
+            {
+              "selector": ".card-tags .chip",
+              "oldMin": 9,
+              "newMin": 12
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "970px actual text meets readability minimums and improves on direction 09",
+      "status": "passed",
+      "detail": [
+        {
+          "role": "prose",
+          "minimum": 16,
+          "oldMin": 13,
+          "newMin": 16,
+          "sampleCount": 75,
+          "selectors": [
+            {
+              "selector": ".excerpt li",
+              "oldMin": 13,
+              "newMin": 16
+            },
+            {
+              "selector": ".query-field textarea",
+              "oldMin": 17,
+              "newMin": 19
+            },
+            {
+              "selector": ".excerpt p",
+              "oldMin": 13,
+              "newMin": 16
+            },
+            {
+              "selector": ".notes-editor",
+              "oldMin": 14,
+              "newMin": 16
+            }
+          ]
+        },
+        {
+          "role": "sourceTitles",
+          "minimum": 20,
+          "oldMin": 15,
+          "newMin": 20,
+          "sampleCount": 48,
+          "selectors": [
+            {
+              "selector": ".card-title button",
+              "oldMin": 16,
+              "newMin": 20
+            },
+            {
+              "selector": ".reader-title",
+              "oldMin": 15,
+              "newMin": 20
+            }
+          ]
+        },
+        {
+          "role": "reader",
+          "minimum": 17,
+          "oldMin": 13,
+          "newMin": 17,
+          "sampleCount": 20,
+          "selectors": [
+            {
+              "selector": ".reader-content li",
+              "oldMin": 13,
+              "newMin": 17
+            },
+            {
+              "selector": ".reader-content .original-text",
+              "oldMin": 14,
+              "newMin": 17
+            }
+          ]
+        },
+        {
+          "role": "navigationControls",
+          "minimum": 14,
+          "oldMin": 10,
+          "newMin": 14,
+          "sampleCount": 578,
+          "selectors": [
+            {
+              "selector": ".nav-item",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".recent-search",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".sidebar-link",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".workspace-switch",
+              "oldMin": 12,
+              "newMin": 14
+            },
+            {
+              "selector": ".small-button",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".search-submit",
+              "oldMin": 12,
+              "newMin": 15
+            },
+            {
+              "selector": ".tool.bordered",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".date-control",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".resource-tabs>button",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".view-options button",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".inline-more",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".readable-controls button",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".reader-tabs>button",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".focus-heading button",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".control-popover label",
+              "oldMin": 12,
+              "newMin": 15
+            },
+            {
+              "selector": ".control-popover h2",
+              "oldMin": 14,
+              "newMin": 20
+            }
+          ]
+        },
+        {
+          "role": "metadata",
+          "minimum": 13,
+          "oldMin": 9,
+          "newMin": 13,
+          "sampleCount": 343,
+          "selectors": [
+            {
+              "selector": ".byline",
+              "oldMin": 11,
+              "newMin": 13
+            },
+            {
+              "selector": ".reader-kind",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".reader-authors p",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".fit-note",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".reader-footer",
+              "oldMin": 9,
+              "newMin": 13
+            },
+            {
+              "selector": ".focus-query",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".focus-heading",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".results-label",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".credit-meter>span",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".nav-label",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".brand-tagline",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".page-subtitle",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".footer-note",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".connection-card p",
+              "oldMin": 9,
+              "newMin": 13
+            },
+            {
+              "selector": ".connection-card strong",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".breadcrumbs",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".note-help",
+              "oldMin": 11,
+              "newMin": 13
+            },
+            {
+              "selector": ".information-panel p",
+              "oldMin": 12,
+              "newMin": 15
+            },
+            {
+              "selector": ".information-panel th",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".information-panel td",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".control-popover p",
+              "oldMin": 11,
+              "newMin": 14
+            }
+          ]
+        },
+        {
+          "role": "chips",
+          "minimum": 12,
+          "oldMin": 9,
+          "newMin": 12,
+          "sampleCount": 222,
+          "selectors": [
+            {
+              "selector": ".focus-chips .chip",
+              "oldMin": 9,
+              "newMin": 12
+            },
+            {
+              "selector": ".provider-chips .chip",
+              "oldMin": 9,
+              "newMin": 12
+            },
+            {
+              "selector": ".access-chip",
+              "oldMin": 9,
+              "newMin": 12
+            },
+            {
+              "selector": ".card-tags .chip",
+              "oldMin": 9,
+              "newMin": 12
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "768px actual text meets readability minimums and improves on direction 09",
+      "status": "passed",
+      "detail": [
+        {
+          "role": "prose",
+          "minimum": 16,
+          "oldMin": 13,
+          "newMin": 16,
+          "sampleCount": 75,
+          "selectors": [
+            {
+              "selector": ".excerpt li",
+              "oldMin": 13,
+              "newMin": 16
+            },
+            {
+              "selector": ".query-field textarea",
+              "oldMin": 17,
+              "newMin": 19
+            },
+            {
+              "selector": ".excerpt p",
+              "oldMin": 13,
+              "newMin": 16
+            },
+            {
+              "selector": ".notes-editor",
+              "oldMin": 14,
+              "newMin": 16
+            }
+          ]
+        },
+        {
+          "role": "sourceTitles",
+          "minimum": 20,
+          "oldMin": 16,
+          "newMin": 20,
+          "sampleCount": 48,
+          "selectors": [
+            {
+              "selector": ".card-title button",
+              "oldMin": 17,
+              "newMin": 21
+            },
+            {
+              "selector": ".reader-title",
+              "oldMin": 16,
+              "newMin": 20
+            }
+          ]
+        },
+        {
+          "role": "reader",
+          "minimum": 17,
+          "oldMin": 14,
+          "newMin": 18,
+          "sampleCount": 20,
+          "selectors": [
+            {
+              "selector": ".reader-content li",
+              "oldMin": 14,
+              "newMin": 18
+            },
+            {
+              "selector": ".reader-content .original-text",
+              "oldMin": 14,
+              "newMin": 18
+            }
+          ]
+        },
+        {
+          "role": "navigationControls",
+          "minimum": 14,
+          "oldMin": 10,
+          "newMin": 14,
+          "sampleCount": 578,
+          "selectors": [
+            {
+              "selector": ".nav-item",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".recent-search",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".sidebar-link",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".workspace-switch",
+              "oldMin": 12,
+              "newMin": 14
+            },
+            {
+              "selector": ".small-button",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".search-submit",
+              "oldMin": 12,
+              "newMin": 15
+            },
+            {
+              "selector": ".tool.bordered",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".date-control",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".resource-tabs>button",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".view-options button",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".inline-more",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".readable-controls button",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".reader-tabs>button",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".focus-heading button",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".control-popover label",
+              "oldMin": 12,
+              "newMin": 15
+            },
+            {
+              "selector": ".control-popover h2",
+              "oldMin": 14,
+              "newMin": 20
+            }
+          ]
+        },
+        {
+          "role": "metadata",
+          "minimum": 13,
+          "oldMin": 9,
+          "newMin": 13,
+          "sampleCount": 343,
+          "selectors": [
+            {
+              "selector": ".byline",
+              "oldMin": 11,
+              "newMin": 13
+            },
+            {
+              "selector": ".reader-kind",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".reader-authors p",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".fit-note",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".reader-footer",
+              "oldMin": 9,
+              "newMin": 13
+            },
+            {
+              "selector": ".focus-query",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".focus-heading",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".results-label",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".credit-meter>span",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".nav-label",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".brand-tagline",
+              "oldMin": 9,
+              "newMin": 13
+            },
+            {
+              "selector": ".page-subtitle",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".footer-note",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".connection-card p",
+              "oldMin": 9,
+              "newMin": 13
+            },
+            {
+              "selector": ".connection-card strong",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".breadcrumbs",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".note-help",
+              "oldMin": 11,
+              "newMin": 13
+            },
+            {
+              "selector": ".information-panel p",
+              "oldMin": 12,
+              "newMin": 15
+            },
+            {
+              "selector": ".information-panel th",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".information-panel td",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".control-popover p",
+              "oldMin": 11,
+              "newMin": 14
+            }
+          ]
+        },
+        {
+          "role": "chips",
+          "minimum": 12,
+          "oldMin": 9,
+          "newMin": 12,
+          "sampleCount": 222,
+          "selectors": [
+            {
+              "selector": ".focus-chips .chip",
+              "oldMin": 9,
+              "newMin": 12
+            },
+            {
+              "selector": ".provider-chips .chip",
+              "oldMin": 9,
+              "newMin": 12
+            },
+            {
+              "selector": ".access-chip",
+              "oldMin": 9,
+              "newMin": 12
+            },
+            {
+              "selector": ".card-tags .chip",
+              "oldMin": 9,
+              "newMin": 12
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "650px actual text meets readability minimums and improves on direction 09",
+      "status": "passed",
+      "detail": [
+        {
+          "role": "prose",
+          "minimum": 15,
+          "oldMin": 13,
+          "newMin": 15,
+          "sampleCount": 75,
+          "selectors": [
+            {
+              "selector": ".excerpt li",
+              "oldMin": 13,
+              "newMin": 15
+            },
+            {
+              "selector": ".query-field textarea",
+              "oldMin": 16,
+              "newMin": 19
+            },
+            {
+              "selector": ".excerpt p",
+              "oldMin": 13,
+              "newMin": 15
+            },
+            {
+              "selector": ".notes-editor",
+              "oldMin": 14,
+              "newMin": 16
+            }
+          ]
+        },
+        {
+          "role": "sourceTitles",
+          "minimum": 20,
+          "oldMin": 16,
+          "newMin": 20,
+          "sampleCount": 48,
+          "selectors": [
+            {
+              "selector": ".card-title button",
+              "oldMin": 17,
+              "newMin": 21
+            },
+            {
+              "selector": ".reader-title",
+              "oldMin": 16,
+              "newMin": 20
+            }
+          ]
+        },
+        {
+          "role": "reader",
+          "minimum": 15,
+          "oldMin": 14,
+          "newMin": 17,
+          "sampleCount": 20,
+          "selectors": [
+            {
+              "selector": ".reader-content li",
+              "oldMin": 14,
+              "newMin": 17
+            },
+            {
+              "selector": ".reader-content .original-text",
+              "oldMin": 14,
+              "newMin": 17
+            }
+          ]
+        },
+        {
+          "role": "navigationControls",
+          "minimum": 13,
+          "oldMin": 9,
+          "newMin": 13,
+          "sampleCount": 368,
+          "selectors": [
+            {
+              "selector": ".small-button",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".search-submit",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".tool.bordered",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".date-control",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".resource-tabs>button",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".view-options button",
+              "oldMin": 9,
+              "newMin": 13
+            },
+            {
+              "selector": ".inline-more",
+              "oldMin": 11,
+              "newMin": 13
+            },
+            {
+              "selector": ".readable-controls button",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".reader-tabs>button",
+              "oldMin": 11,
+              "newMin": 13
+            },
+            {
+              "selector": ".focus-heading button",
+              "oldMin": 9,
+              "newMin": 13
+            },
+            {
+              "selector": ".control-popover label",
+              "oldMin": 12,
+              "newMin": 14
+            },
+            {
+              "selector": ".control-popover h2",
+              "oldMin": 14,
+              "newMin": 20
+            }
+          ]
+        },
+        {
+          "role": "metadata",
+          "minimum": 12,
+          "oldMin": 9,
+          "newMin": 12,
+          "sampleCount": 268,
+          "selectors": [
+            {
+              "selector": ".byline",
+              "oldMin": 10,
+              "newMin": 12
+            },
+            {
+              "selector": ".reader-kind",
+              "oldMin": 10,
+              "newMin": 12
+            },
+            {
+              "selector": ".reader-authors p",
+              "oldMin": 11,
+              "newMin": 13
+            },
+            {
+              "selector": ".fit-note",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".reader-footer",
+              "oldMin": 9,
+              "newMin": 12
+            },
+            {
+              "selector": ".focus-query",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".focus-heading",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".results-label",
+              "oldMin": 9,
+              "newMin": 12
+            },
+            {
+              "selector": ".credit-meter>span",
+              "oldMin": 9,
+              "newMin": 13
+            },
+            {
+              "selector": ".page-subtitle",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".footer-note",
+              "oldMin": 10,
+              "newMin": 12
+            },
+            {
+              "selector": ".breadcrumbs",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".note-help",
+              "oldMin": 11,
+              "newMin": 13
+            },
+            {
+              "selector": ".information-panel p",
+              "oldMin": 12,
+              "newMin": 14
+            },
+            {
+              "selector": ".information-panel th",
+              "oldMin": 11,
+              "newMin": 13
+            },
+            {
+              "selector": ".information-panel td",
+              "oldMin": 11,
+              "newMin": 13
+            },
+            {
+              "selector": ".control-popover p",
+              "oldMin": 11,
+              "newMin": 13
+            }
+          ]
+        },
+        {
+          "role": "chips",
+          "minimum": 12,
+          "oldMin": 8,
+          "newMin": 12,
+          "sampleCount": 222,
+          "selectors": [
+            {
+              "selector": ".focus-chips .chip",
+              "oldMin": 9,
+              "newMin": 12
+            },
+            {
+              "selector": ".provider-chips .chip",
+              "oldMin": 9,
+              "newMin": 12
+            },
+            {
+              "selector": ".access-chip",
+              "oldMin": 8,
+              "newMin": 12
+            },
+            {
+              "selector": ".card-tags .chip",
+              "oldMin": 9,
+              "newMin": 12
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "390px actual text meets readability minimums and improves on direction 09",
+      "status": "passed",
+      "detail": [
+        {
+          "role": "prose",
+          "minimum": 15,
+          "oldMin": 13,
+          "newMin": 15,
+          "sampleCount": 75,
+          "selectors": [
+            {
+              "selector": ".excerpt li",
+              "oldMin": 13,
+              "newMin": 15
+            },
+            {
+              "selector": ".query-field textarea",
+              "oldMin": 16,
+              "newMin": 19
+            },
+            {
+              "selector": ".excerpt p",
+              "oldMin": 13,
+              "newMin": 15
+            },
+            {
+              "selector": ".notes-editor",
+              "oldMin": 14,
+              "newMin": 16
+            }
+          ]
+        },
+        {
+          "role": "sourceTitles",
+          "minimum": 20,
+          "oldMin": 16,
+          "newMin": 20,
+          "sampleCount": 48,
+          "selectors": [
+            {
+              "selector": ".card-title button",
+              "oldMin": 17,
+              "newMin": 20
+            },
+            {
+              "selector": ".reader-title",
+              "oldMin": 16,
+              "newMin": 20
+            }
+          ]
+        },
+        {
+          "role": "reader",
+          "minimum": 15,
+          "oldMin": 14,
+          "newMin": 17,
+          "sampleCount": 20,
+          "selectors": [
+            {
+              "selector": ".reader-content li",
+              "oldMin": 14,
+              "newMin": 17
+            },
+            {
+              "selector": ".reader-content .original-text",
+              "oldMin": 14,
+              "newMin": 17
+            }
+          ]
+        },
+        {
+          "role": "navigationControls",
+          "minimum": 13,
+          "oldMin": 9,
+          "newMin": 13,
+          "sampleCount": 368,
+          "selectors": [
+            {
+              "selector": ".small-button",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".search-submit",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".tool.bordered",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".date-control",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".resource-tabs>button",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".view-options button",
+              "oldMin": 9,
+              "newMin": 13
+            },
+            {
+              "selector": ".inline-more",
+              "oldMin": 11,
+              "newMin": 13
+            },
+            {
+              "selector": ".readable-controls button",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".reader-tabs>button",
+              "oldMin": 11,
+              "newMin": 13
+            },
+            {
+              "selector": ".focus-heading button",
+              "oldMin": 9,
+              "newMin": 13
+            },
+            {
+              "selector": ".control-popover label",
+              "oldMin": 12,
+              "newMin": 14
+            },
+            {
+              "selector": ".control-popover h2",
+              "oldMin": 14,
+              "newMin": 20
+            }
+          ]
+        },
+        {
+          "role": "metadata",
+          "minimum": 12,
+          "oldMin": 9,
+          "newMin": 12,
+          "sampleCount": 268,
+          "selectors": [
+            {
+              "selector": ".byline",
+              "oldMin": 10,
+              "newMin": 12
+            },
+            {
+              "selector": ".reader-kind",
+              "oldMin": 10,
+              "newMin": 12
+            },
+            {
+              "selector": ".reader-authors p",
+              "oldMin": 11,
+              "newMin": 13
+            },
+            {
+              "selector": ".fit-note",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".reader-footer",
+              "oldMin": 9,
+              "newMin": 12
+            },
+            {
+              "selector": ".focus-query",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".focus-heading",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".results-label",
+              "oldMin": 9,
+              "newMin": 12
+            },
+            {
+              "selector": ".credit-meter>span",
+              "oldMin": 9,
+              "newMin": 13
+            },
+            {
+              "selector": ".page-subtitle",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".footer-note",
+              "oldMin": 10,
+              "newMin": 12
+            },
+            {
+              "selector": ".breadcrumbs",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".note-help",
+              "oldMin": 11,
+              "newMin": 13
+            },
+            {
+              "selector": ".information-panel p",
+              "oldMin": 12,
+              "newMin": 14
+            },
+            {
+              "selector": ".information-panel th",
+              "oldMin": 11,
+              "newMin": 13
+            },
+            {
+              "selector": ".information-panel td",
+              "oldMin": 11,
+              "newMin": 13
+            },
+            {
+              "selector": ".control-popover p",
+              "oldMin": 11,
+              "newMin": 13
+            }
+          ]
+        },
+        {
+          "role": "chips",
+          "minimum": 12,
+          "oldMin": 8,
+          "newMin": 12,
+          "sampleCount": 222,
+          "selectors": [
+            {
+              "selector": ".focus-chips .chip",
+              "oldMin": 9,
+              "newMin": 12
+            },
+            {
+              "selector": ".provider-chips .chip",
+              "oldMin": 9,
+              "newMin": 12
+            },
+            {
+              "selector": ".access-chip",
+              "oldMin": 8,
+              "newMin": 12
+            },
+            {
+              "selector": ".card-tags .chip",
+              "oldMin": 9,
+              "newMin": 12
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "320px actual text meets readability minimums and improves on direction 09",
+      "status": "passed",
+      "detail": [
+        {
+          "role": "prose",
+          "minimum": 15,
+          "oldMin": 13,
+          "newMin": 15,
+          "sampleCount": 75,
+          "selectors": [
+            {
+              "selector": ".excerpt li",
+              "oldMin": 13,
+              "newMin": 15
+            },
+            {
+              "selector": ".query-field textarea",
+              "oldMin": 16,
+              "newMin": 19
+            },
+            {
+              "selector": ".excerpt p",
+              "oldMin": 13,
+              "newMin": 15
+            },
+            {
+              "selector": ".notes-editor",
+              "oldMin": 14,
+              "newMin": 16
+            }
+          ]
+        },
+        {
+          "role": "sourceTitles",
+          "minimum": 20,
+          "oldMin": 16,
+          "newMin": 20,
+          "sampleCount": 48,
+          "selectors": [
+            {
+              "selector": ".card-title button",
+              "oldMin": 16,
+              "newMin": 20
+            },
+            {
+              "selector": ".reader-title",
+              "oldMin": 16,
+              "newMin": 20
+            }
+          ]
+        },
+        {
+          "role": "reader",
+          "minimum": 15,
+          "oldMin": 13,
+          "newMin": 17,
+          "sampleCount": 20,
+          "selectors": [
+            {
+              "selector": ".reader-content li",
+              "oldMin": 13,
+              "newMin": 17
+            },
+            {
+              "selector": ".reader-content .original-text",
+              "oldMin": 14,
+              "newMin": 17
+            }
+          ]
+        },
+        {
+          "role": "navigationControls",
+          "minimum": 13,
+          "oldMin": 8,
+          "newMin": 13,
+          "sampleCount": 368,
+          "selectors": [
+            {
+              "selector": ".small-button",
+              "oldMin": 9,
+              "newMin": 13
+            },
+            {
+              "selector": ".search-submit",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".tool.bordered",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".date-control",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".resource-tabs>button",
+              "oldMin": 9,
+              "newMin": 13
+            },
+            {
+              "selector": ".view-options button",
+              "oldMin": 8,
+              "newMin": 13
+            },
+            {
+              "selector": ".inline-more",
+              "oldMin": 11,
+              "newMin": 13
+            },
+            {
+              "selector": ".readable-controls button",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".reader-tabs>button",
+              "oldMin": 11,
+              "newMin": 13
+            },
+            {
+              "selector": ".focus-heading button",
+              "oldMin": 9,
+              "newMin": 13
+            },
+            {
+              "selector": ".control-popover label",
+              "oldMin": 12,
+              "newMin": 14
+            },
+            {
+              "selector": ".control-popover h2",
+              "oldMin": 14,
+              "newMin": 20
+            }
+          ]
+        },
+        {
+          "role": "metadata",
+          "minimum": 12,
+          "oldMin": 8,
+          "newMin": 12,
+          "sampleCount": 268,
+          "selectors": [
+            {
+              "selector": ".byline",
+              "oldMin": 10,
+              "newMin": 12
+            },
+            {
+              "selector": ".reader-kind",
+              "oldMin": 10,
+              "newMin": 12
+            },
+            {
+              "selector": ".reader-authors p",
+              "oldMin": 11,
+              "newMin": 13
+            },
+            {
+              "selector": ".fit-note",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".reader-footer",
+              "oldMin": 9,
+              "newMin": 12
+            },
+            {
+              "selector": ".focus-query",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".focus-heading",
+              "oldMin": 9,
+              "newMin": 13
+            },
+            {
+              "selector": ".results-label",
+              "oldMin": 8,
+              "newMin": 12
+            },
+            {
+              "selector": ".credit-meter>span",
+              "oldMin": 9,
+              "newMin": 13
+            },
+            {
+              "selector": ".page-subtitle",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".footer-note",
+              "oldMin": 10,
+              "newMin": 12
+            },
+            {
+              "selector": ".breadcrumbs",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".note-help",
+              "oldMin": 11,
+              "newMin": 13
+            },
+            {
+              "selector": ".information-panel p",
+              "oldMin": 12,
+              "newMin": 14
+            },
+            {
+              "selector": ".information-panel th",
+              "oldMin": 11,
+              "newMin": 13
+            },
+            {
+              "selector": ".information-panel td",
+              "oldMin": 11,
+              "newMin": 13
+            },
+            {
+              "selector": ".control-popover p",
+              "oldMin": 11,
+              "newMin": 13
+            }
+          ]
+        },
+        {
+          "role": "chips",
+          "minimum": 12,
+          "oldMin": 8,
+          "newMin": 12,
+          "sampleCount": 222,
+          "selectors": [
+            {
+              "selector": ".focus-chips .chip",
+              "oldMin": 9,
+              "newMin": 12
+            },
+            {
+              "selector": ".provider-chips .chip",
+              "oldMin": 9,
+              "newMin": 12
+            },
+            {
+              "selector": ".access-chip",
+              "oldMin": 8,
+              "newMin": 12
+            },
+            {
+              "selector": ".card-tags .chip",
+              "oldMin": 9,
+              "newMin": 12
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "current app topology is retained without a hero-page replacement",
+      "status": "passed",
+      "detail": {
+        "sidebar": true,
+        "questionSettingsAboveResults": true,
+        "listAndRightReader": true
+      }
+    },
+    {
+      "name": "native controls retain accessible names and form labels",
+      "status": "passed",
+      "detail": {
+        "unnamedVisibleControls": 0
+      }
+    },
+    {
+      "name": "all four information controls expose separate saved details",
+      "status": "passed"
+    },
+    {
+      "name": "sources, date slider, custom dates and four limits remain operable",
+      "status": "passed"
+    },
+    {
+      "name": "next-search AI preference does not rewrite saved focus before a new replay",
+      "status": "passed"
+    },
+    {
+      "name": "source scope, custom dates and zero/max lane limits apply only to the next local replay",
+      "status": "passed"
+    },
+    {
+      "name": "saved focus terms expand and Query details opens the saved query pane",
+      "status": "passed"
+    },
+    {
+      "name": "four modalities preserve cards, source text, metadata and reader presentation",
+      "status": "passed"
+    },
+    {
+      "name": "paper PDF, video preview/transcript, dataset catalog and saved README affordances remain explicit",
+      "status": "passed"
+    },
+    {
+      "name": "notes and project-save state survive local view changes without draft loss",
+      "status": "passed"
+    },
+    {
+      "name": "resource/reader tabs support arrow keys and reading content scrolls independently",
+      "status": "passed"
+    },
+    {
+      "name": "local filter changes only received records and stays visible after closing its popover",
+      "status": "passed"
+    },
+    {
+      "name": "progressive replay exposes loading/Stop and keeps available partial records",
+      "status": "passed",
+      "detail": {
+        "arrivedAtStop": 1
+      }
+    },
+    {
+      "name": "New research cancels an active local replay without stale results or losing source notes",
+      "status": "passed"
+    },
+    {
+      "name": "phone drawer, inline expansion and reader close preserve operable focus",
+      "status": "passed"
+    },
+    {
+      "name": "header/sidebar/project/current-app actions are represented locally",
+      "status": "passed"
+    },
+    {
+      "name": "remaining navigation, credit and explicit external/media actions are local demonstrations",
+      "status": "passed"
+    },
+    {
+      "name": "added popovers stay contained, close on Escape and restore their trigger at desktop and phone sizes",
+      "status": "passed"
+    },
+    {
+      "name": "keyboard tooltips name icon controls, fit the viewport and dismiss with Escape",
+      "status": "passed"
+    },
+    {
+      "name": "representative opaque text/background pairs meet 4.5:1",
+      "status": "passed",
+      "detail": [
+        {
+          "selector": ".search-submit",
+          "measured": true,
+          "foreground": [
+            255,
+            255,
+            255,
+            1
+          ],
+          "background": [
+            23,
+            105,
+            200,
+            1
+          ],
+          "ratio": 5.396948182590255
+        },
+        {
+          "selector": ".source-control",
+          "measured": true,
+          "foreground": [
+            61,
+            87,
+            124,
+            1
+          ],
+          "background": [
+            255,
+            255,
+            255,
+            1
+          ],
+          "ratio": 7.361330463449074
+        },
+        {
+          "selector": ".byline",
+          "measured": true,
+          "foreground": [
+            82,
+            102,
+            128,
+            1
+          ],
+          "background": [
+            255,
+            255,
+            255,
+            1
+          ],
+          "ratio": 5.880674914217817
+        },
+        {
+          "selector": ".reader-content li",
+          "measured": true,
+          "foreground": [
+            77,
+            98,
+            129,
+            1
+          ],
+          "background": [
+            255,
+            254,
+            250,
+            1
+          ],
+          "ratio": 6.15723649591072
+        },
+        {
+          "selector": ".reader-kind",
+          "measured": true,
+          "foreground": [
+            83,
+            115,
+            157,
+            1
+          ],
+          "background": [
+            255,
+            255,
+            255,
+            1
+          ],
+          "ratio": 4.875831461199832
+        },
+        {
+          "selector": ".focus-query",
+          "measured": false,
+          "reason": "gradient/image background"
+        },
+        {
+          "selector": ".credit-meter",
+          "measured": true,
+          "foreground": [
+            91,
+            113,
+            144,
+            1
+          ],
+          "background": [
+            247,
+            250,
+            255,
+            1
+          ],
+          "ratio": 4.768400191082391
+        },
+        {
+          "selector": ".access-chip",
+          "measured": true,
+          "foreground": [
+            67,
+            115,
+            79,
+            1
+          ],
+          "background": [
+            239,
+            247,
+            238,
+            1
+          ],
+          "ratio": 5.049893366992857
+        },
+        {
+          "selector": ".chip[data-tone=blue]",
+          "measured": true,
+          "foreground": [
+            40,
+            100,
+            165,
+            1
+          ],
+          "background": [
+            234,
+            243,
+            255,
+            1
+          ],
+          "ratio": 5.428377540567224
+        },
+        {
+          "selector": ".card-title button",
+          "measured": true,
+          "foreground": [
+            38,
+            62,
+            99,
+            1
+          ],
+          "background": [
+            255,
+            255,
+            255,
+            1
+          ],
+          "ratio": 10.760213836463748
+        },
+        {
+          "selector": ".readable-controls button",
+          "measured": true,
+          "foreground": [
+            23,
+            105,
+            200,
+            1
+          ],
+          "background": [
+            234,
+            243,
+            255,
+            1
+          ],
+          "ratio": 4.821973220662589
+        },
+        {
+          "selector": ".sidebar .nav-item:not(.active)",
+          "measured": true,
+          "foreground": [
+            82,
+            102,
+            131,
+            1
+          ],
+          "background": [
+            255,
+            255,
+            255,
+            1
+          ],
+          "ratio": 5.854384979124349
+        }
+      ]
+    },
+    {
+      "name": "new desktop/mobile captures and a reader detail are exported",
+      "status": "passed",
+      "detail": {
+        "desktop": {
+          "width": 1440,
+          "height": 1080
+        },
+        "mobile": {
+          "width": 390,
+          "fullPage": true
+        }
+      }
+    },
+    {
+      "name": "no runtime/CSP errors, external/API requests or HTTP writes occurred",
+      "status": "passed"
+    }
+  ],
+  "viewports": [
+    {
+      "width": 1440,
+      "documentWidth": 1440,
+      "question": {
+        "client": 65,
+        "scroll": 65
+      },
+      "tabs": [
+        {
+          "x": 292,
+          "y": 648.0625,
+          "width": 271,
+          "height": 64
+        },
+        {
+          "x": 575,
+          "y": 648.0625,
+          "width": 271,
+          "height": 64
+        },
+        {
+          "x": 858,
+          "y": 648.0625,
+          "width": 271,
+          "height": 64
+        },
+        {
+          "x": 1141,
+          "y": 648.0625,
+          "width": 271,
+          "height": 64
+        }
+      ],
+      "scale": [
+        {
+          "node": "HTML.",
+          "zoom": "1",
+          "transform": "none"
+        },
+        {
+          "node": "BODY.",
+          "zoom": "1",
+          "transform": "none"
+        },
+        {
+          "node": "DIV.",
+          "zoom": "1",
+          "transform": "none"
+        },
+        {
+          "node": "DIV.scout-shell",
+          "zoom": "1",
+          "transform": "none"
+        },
+        {
+          "node": "DIV.main-shell",
+          "zoom": "1",
+          "transform": "none"
+        },
+        {
+          "node": "MAIN.workspace",
+          "zoom": "1",
+          "transform": "none"
+        }
+      ],
+      "wordmark": {
+        "text": [
+          {
+            "text": "Research Scout",
+            "left": 67,
+            "right": 227.84375,
+            "top": 30.203125,
+            "bottom": 60.203125
+          }
+        ],
+        "contentLeft": 18,
+        "contentRight": 246,
+        "close": {
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "bottom": 0,
+          "width": 0
+        }
+      }
+    },
+    {
+      "width": 1100,
+      "documentWidth": 1100,
+      "question": {
+        "client": 62,
+        "scroll": 62
+      },
+      "tabs": [
+        {
+          "x": 270,
+          "y": 737.0625,
+          "width": 196,
+          "height": 62
+        },
+        {
+          "x": 474,
+          "y": 737.0625,
+          "width": 196,
+          "height": 62
+        },
+        {
+          "x": 678,
+          "y": 737.0625,
+          "width": 196,
+          "height": 62
+        },
+        {
+          "x": 882,
+          "y": 737.0625,
+          "width": 196,
+          "height": 62
+        }
+      ],
+      "scale": [
+        {
+          "node": "HTML.",
+          "zoom": "1",
+          "transform": "none"
+        },
+        {
+          "node": "BODY.",
+          "zoom": "1",
+          "transform": "none"
+        },
+        {
+          "node": "DIV.",
+          "zoom": "1",
+          "transform": "none"
+        },
+        {
+          "node": "DIV.scout-shell",
+          "zoom": "1",
+          "transform": "none"
+        },
+        {
+          "node": "DIV.main-shell",
+          "zoom": "1",
+          "transform": "none"
+        },
+        {
+          "node": "MAIN.workspace",
+          "zoom": "1",
+          "transform": "none"
+        }
+      ],
+      "wordmark": {
+        "text": [
+          {
+            "text": "Research Scout",
+            "left": 59,
+            "right": 208.40625,
+            "top": 28,
+            "bottom": 55
+          }
+        ],
+        "contentLeft": 15,
+        "contentRight": 233,
+        "close": {
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "bottom": 0,
+          "width": 0
+        }
+      }
+    },
+    {
+      "width": 970,
+      "documentWidth": 970,
+      "question": {
+        "client": 62,
+        "scroll": 62
+      },
+      "tabs": [
+        {
+          "x": 270,
+          "y": 737.0625,
+          "width": 164.25,
+          "height": 62
+        },
+        {
+          "x": 441.25,
+          "y": 737.0625,
+          "width": 164.25,
+          "height": 62
+        },
+        {
+          "x": 612.5,
+          "y": 737.0625,
+          "width": 164.25,
+          "height": 62
+        },
+        {
+          "x": 783.75,
+          "y": 737.0625,
+          "width": 164.25,
+          "height": 62
+        }
+      ],
+      "scale": [
+        {
+          "node": "HTML.",
+          "zoom": "1",
+          "transform": "none"
+        },
+        {
+          "node": "BODY.",
+          "zoom": "1",
+          "transform": "none"
+        },
+        {
+          "node": "DIV.",
+          "zoom": "1",
+          "transform": "none"
+        },
+        {
+          "node": "DIV.scout-shell",
+          "zoom": "1",
+          "transform": "none"
+        },
+        {
+          "node": "DIV.main-shell",
+          "zoom": "1",
+          "transform": "none"
+        },
+        {
+          "node": "MAIN.workspace",
+          "zoom": "1",
+          "transform": "none"
+        }
+      ],
+      "wordmark": {
+        "text": [
+          {
+            "text": "Research Scout",
+            "left": 59,
+            "right": 208.40625,
+            "top": 28,
+            "bottom": 55
+          }
+        ],
+        "contentLeft": 15,
+        "contentRight": 233,
+        "close": {
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "bottom": 0,
+          "width": 0
+        }
+      }
+    },
+    {
+      "width": 768,
+      "documentWidth": 768,
+      "question": {
+        "client": 65,
+        "scroll": 65
+      },
+      "tabs": [
+        {
+          "x": 252,
+          "y": 838.734375,
+          "width": 118.75,
+          "height": 111.09375
+        },
+        {
+          "x": 377.75,
+          "y": 838.734375,
+          "width": 118.75,
+          "height": 111.09375
+        },
+        {
+          "x": 503.5,
+          "y": 838.734375,
+          "width": 118.75,
+          "height": 111.09375
+        },
+        {
+          "x": 629.25,
+          "y": 838.734375,
+          "width": 118.75,
+          "height": 111.09375
+        }
+      ],
+      "scale": [
+        {
+          "node": "HTML.",
+          "zoom": "1",
+          "transform": "none"
+        },
+        {
+          "node": "BODY.",
+          "zoom": "1",
+          "transform": "none"
+        },
+        {
+          "node": "DIV.",
+          "zoom": "1",
+          "transform": "none"
+        },
+        {
+          "node": "DIV.scout-shell",
+          "zoom": "1",
+          "transform": "none"
+        },
+        {
+          "node": "DIV.main-shell",
+          "zoom": "1",
+          "transform": "none"
+        },
+        {
+          "node": "MAIN.workspace",
+          "zoom": "1",
+          "transform": "none"
+        }
+      ],
+      "wordmark": {
+        "text": [
+          {
+            "text": "Research Scout",
+            "left": 53,
+            "right": 194.59375,
+            "top": 26.15625,
+            "bottom": 52.15625
+          }
+        ],
+        "contentLeft": 13,
+        "contentRight": 219,
+        "close": {
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "bottom": 0,
+          "width": 0
+        }
+      }
+    },
+    {
+      "width": 650,
+      "documentWidth": 650,
+      "question": {
+        "client": 65,
+        "scroll": 65
+      },
+      "tabs": [
+        {
+          "x": 16,
+          "y": 828.90625,
+          "width": 150,
+          "height": 70.03125
+        },
+        {
+          "x": 172,
+          "y": 828.90625,
+          "width": 150,
+          "height": 70.03125
+        },
+        {
+          "x": 328,
+          "y": 828.90625,
+          "width": 150,
+          "height": 70.03125
+        },
+        {
+          "x": 484,
+          "y": 828.90625,
+          "width": 150,
+          "height": 70.03125
+        }
+      ],
+      "scale": [
+        {
+          "node": "HTML.",
+          "zoom": "1",
+          "transform": "none"
+        },
+        {
+          "node": "BODY.",
+          "zoom": "1",
+          "transform": "none"
+        },
+        {
+          "node": "DIV.",
+          "zoom": "1",
+          "transform": "none"
+        },
+        {
+          "node": "DIV.scout-shell",
+          "zoom": "1",
+          "transform": "none"
+        },
+        {
+          "node": "DIV.main-shell",
+          "zoom": "1",
+          "transform": "none"
+        },
+        {
+          "node": "MAIN.workspace",
+          "zoom": "1",
+          "transform": "none"
+        }
+      ],
+      "wordmark": {
+        "text": [
+          {
+            "text": "Research Scout",
+            "left": 66,
+            "right": 226.84375,
+            "top": 30.203125,
+            "bottom": 60.203125
+          }
+        ],
+        "contentLeft": 18,
+        "contentRight": 268,
+        "close": {
+          "left": 243,
+          "right": 275,
+          "top": 15,
+          "bottom": 51,
+          "width": 32
+        }
+      }
+    },
+    {
+      "width": 390,
+      "documentWidth": 390,
+      "question": {
+        "client": 65,
+        "scroll": 65
+      },
+      "tabs": [
+        {
+          "x": 14,
+          "y": 1055.4375,
+          "width": 86.75,
+          "height": 70.03125
+        },
+        {
+          "x": 105.75,
+          "y": 1055.4375,
+          "width": 86.75,
+          "height": 70.03125
+        },
+        {
+          "x": 197.5,
+          "y": 1055.4375,
+          "width": 86.75,
+          "height": 70.03125
+        },
+        {
+          "x": 289.25,
+          "y": 1055.4375,
+          "width": 86.75,
+          "height": 70.03125
+        }
+      ],
+      "scale": [
+        {
+          "node": "HTML.",
+          "zoom": "1",
+          "transform": "none"
+        },
+        {
+          "node": "BODY.",
+          "zoom": "1",
+          "transform": "none"
+        },
+        {
+          "node": "DIV.",
+          "zoom": "1",
+          "transform": "none"
+        },
+        {
+          "node": "DIV.scout-shell",
+          "zoom": "1",
+          "transform": "none"
+        },
+        {
+          "node": "DIV.main-shell",
+          "zoom": "1",
+          "transform": "none"
+        },
+        {
+          "node": "MAIN.workspace",
+          "zoom": "1",
+          "transform": "none"
+        }
+      ],
+      "wordmark": {
+        "text": [
+          {
+            "text": "Research Scout",
+            "left": 66,
+            "right": 226.84375,
+            "top": 30.203125,
+            "bottom": 60.203125
+          }
+        ],
+        "contentLeft": 18,
+        "contentRight": 268,
+        "close": {
+          "left": 243,
+          "right": 275,
+          "top": 15,
+          "bottom": 51,
+          "width": 32
+        }
+      }
+    },
+    {
+      "width": 320,
+      "documentWidth": 320,
+      "question": {
+        "client": 88,
+        "scroll": 88
+      },
+      "tabs": [
+        {
+          "x": 14,
+          "y": 1177.671875,
+          "width": 69.25,
+          "height": 70.03125
+        },
+        {
+          "x": 88.25,
+          "y": 1177.671875,
+          "width": 69.25,
+          "height": 70.03125
+        },
+        {
+          "x": 162.5,
+          "y": 1177.671875,
+          "width": 69.25,
+          "height": 70.03125
+        },
+        {
+          "x": 236.75,
+          "y": 1177.671875,
+          "width": 69.25,
+          "height": 70.03125
+        }
+      ],
+      "scale": [
+        {
+          "node": "HTML.",
+          "zoom": "1",
+          "transform": "none"
+        },
+        {
+          "node": "BODY.",
+          "zoom": "1",
+          "transform": "none"
+        },
+        {
+          "node": "DIV.",
+          "zoom": "1",
+          "transform": "none"
+        },
+        {
+          "node": "DIV.scout-shell",
+          "zoom": "1",
+          "transform": "none"
+        },
+        {
+          "node": "DIV.main-shell",
+          "zoom": "1",
+          "transform": "none"
+        },
+        {
+          "node": "MAIN.workspace",
+          "zoom": "1",
+          "transform": "none"
+        }
+      ],
+      "wordmark": {
+        "text": [
+          {
+            "text": "Research Scout",
+            "left": 66,
+            "right": 226.84375,
+            "top": 30.203125,
+            "bottom": 60.203125
+          }
+        ],
+        "contentLeft": 18,
+        "contentRight": 267,
+        "close": {
+          "left": 242,
+          "right": 274,
+          "top": 15,
+          "bottom": 51,
+          "width": 32
+        }
+      }
+    }
+  ],
+  "typography": [
+    {
+      "width": 1440,
+      "comparison": "Frozen direction 09",
+      "summary": [
+        {
+          "role": "prose",
+          "minimum": 16,
+          "oldMin": 13,
+          "newMin": 16,
+          "sampleCount": 75,
+          "selectors": [
+            {
+              "selector": ".excerpt li",
+              "oldMin": 13,
+              "newMin": 16
+            },
+            {
+              "selector": ".query-field textarea",
+              "oldMin": 17,
+              "newMin": 20
+            },
+            {
+              "selector": ".excerpt p",
+              "oldMin": 13,
+              "newMin": 16
+            },
+            {
+              "selector": ".notes-editor",
+              "oldMin": 14,
+              "newMin": 16
+            }
+          ]
+        },
+        {
+          "role": "sourceTitles",
+          "minimum": 20,
+          "oldMin": 16,
+          "newMin": 20,
+          "sampleCount": 48,
+          "selectors": [
+            {
+              "selector": ".card-title button",
+              "oldMin": 17,
+              "newMin": 21
+            },
+            {
+              "selector": ".reader-title",
+              "oldMin": 16,
+              "newMin": 20
+            }
+          ]
+        },
+        {
+          "role": "reader",
+          "minimum": 17,
+          "oldMin": 14,
+          "newMin": 18,
+          "sampleCount": 20,
+          "selectors": [
+            {
+              "selector": ".reader-content li",
+              "oldMin": 14,
+              "newMin": 18
+            },
+            {
+              "selector": ".reader-content .original-text",
+              "oldMin": 14,
+              "newMin": 18
+            }
+          ]
+        },
+        {
+          "role": "navigationControls",
+          "minimum": 14,
+          "oldMin": 10,
+          "newMin": 14,
+          "sampleCount": 578,
+          "selectors": [
+            {
+              "selector": ".nav-item",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".recent-search",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".sidebar-link",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".workspace-switch",
+              "oldMin": 12,
+              "newMin": 14
+            },
+            {
+              "selector": ".small-button",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".search-submit",
+              "oldMin": 12,
+              "newMin": 15
+            },
+            {
+              "selector": ".tool.bordered",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".date-control",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".resource-tabs>button",
+              "oldMin": 12,
+              "newMin": 15
+            },
+            {
+              "selector": ".view-options button",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".inline-more",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".readable-controls button",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".reader-tabs>button",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".focus-heading button",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".control-popover label",
+              "oldMin": 12,
+              "newMin": 15
+            },
+            {
+              "selector": ".control-popover h2",
+              "oldMin": 14,
+              "newMin": 20
+            }
+          ]
+        },
+        {
+          "role": "metadata",
+          "minimum": 13,
+          "oldMin": 9,
+          "newMin": 13,
+          "sampleCount": 343,
+          "selectors": [
+            {
+              "selector": ".byline",
+              "oldMin": 11,
+              "newMin": 13
+            },
+            {
+              "selector": ".reader-kind",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".reader-authors p",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".fit-note",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".reader-footer",
+              "oldMin": 9,
+              "newMin": 13
+            },
+            {
+              "selector": ".focus-query",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".focus-heading",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".results-label",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".credit-meter>span",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".nav-label",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".brand-tagline",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".page-subtitle",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".footer-note",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".connection-card p",
+              "oldMin": 9,
+              "newMin": 13
+            },
+            {
+              "selector": ".connection-card strong",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".breadcrumbs",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".note-help",
+              "oldMin": 11,
+              "newMin": 13
+            },
+            {
+              "selector": ".information-panel p",
+              "oldMin": 12,
+              "newMin": 15
+            },
+            {
+              "selector": ".information-panel th",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".information-panel td",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".control-popover p",
+              "oldMin": 11,
+              "newMin": 14
+            }
+          ]
+        },
+        {
+          "role": "chips",
+          "minimum": 12,
+          "oldMin": 9,
+          "newMin": 12,
+          "sampleCount": 222,
+          "selectors": [
+            {
+              "selector": ".focus-chips .chip",
+              "oldMin": 9,
+              "newMin": 12
+            },
+            {
+              "selector": ".provider-chips .chip",
+              "oldMin": 9,
+              "newMin": 12
+            },
+            {
+              "selector": ".access-chip",
+              "oldMin": 9,
+              "newMin": 12
+            },
+            {
+              "selector": ".card-tags .chip",
+              "oldMin": 9,
+              "newMin": 12
+            }
+          ]
+        }
+      ],
+      "failures": []
+    },
+    {
+      "width": 1100,
+      "comparison": "Frozen direction 09",
+      "summary": [
+        {
+          "role": "prose",
+          "minimum": 16,
+          "oldMin": 13,
+          "newMin": 16,
+          "sampleCount": 75,
+          "selectors": [
+            {
+              "selector": ".excerpt li",
+              "oldMin": 13,
+              "newMin": 16
+            },
+            {
+              "selector": ".query-field textarea",
+              "oldMin": 17,
+              "newMin": 19
+            },
+            {
+              "selector": ".excerpt p",
+              "oldMin": 13,
+              "newMin": 16
+            },
+            {
+              "selector": ".notes-editor",
+              "oldMin": 14,
+              "newMin": 16
+            }
+          ]
+        },
+        {
+          "role": "sourceTitles",
+          "minimum": 20,
+          "oldMin": 15,
+          "newMin": 20,
+          "sampleCount": 48,
+          "selectors": [
+            {
+              "selector": ".card-title button",
+              "oldMin": 16,
+              "newMin": 20
+            },
+            {
+              "selector": ".reader-title",
+              "oldMin": 15,
+              "newMin": 20
+            }
+          ]
+        },
+        {
+          "role": "reader",
+          "minimum": 17,
+          "oldMin": 14,
+          "newMin": 17,
+          "sampleCount": 20,
+          "selectors": [
+            {
+              "selector": ".reader-content li",
+              "oldMin": 14,
+              "newMin": 17
+            },
+            {
+              "selector": ".reader-content .original-text",
+              "oldMin": 14,
+              "newMin": 17
+            }
+          ]
+        },
+        {
+          "role": "navigationControls",
+          "minimum": 14,
+          "oldMin": 10,
+          "newMin": 14,
+          "sampleCount": 578,
+          "selectors": [
+            {
+              "selector": ".nav-item",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".recent-search",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".sidebar-link",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".workspace-switch",
+              "oldMin": 12,
+              "newMin": 14
+            },
+            {
+              "selector": ".small-button",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".search-submit",
+              "oldMin": 12,
+              "newMin": 15
+            },
+            {
+              "selector": ".tool.bordered",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".date-control",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".resource-tabs>button",
+              "oldMin": 12,
+              "newMin": 14
+            },
+            {
+              "selector": ".view-options button",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".inline-more",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".readable-controls button",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".reader-tabs>button",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".focus-heading button",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".control-popover label",
+              "oldMin": 12,
+              "newMin": 15
+            },
+            {
+              "selector": ".control-popover h2",
+              "oldMin": 14,
+              "newMin": 20
+            }
+          ]
+        },
+        {
+          "role": "metadata",
+          "minimum": 13,
+          "oldMin": 9,
+          "newMin": 13,
+          "sampleCount": 343,
+          "selectors": [
+            {
+              "selector": ".byline",
+              "oldMin": 11,
+              "newMin": 13
+            },
+            {
+              "selector": ".reader-kind",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".reader-authors p",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".fit-note",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".reader-footer",
+              "oldMin": 9,
+              "newMin": 13
+            },
+            {
+              "selector": ".focus-query",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".focus-heading",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".results-label",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".credit-meter>span",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".nav-label",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".brand-tagline",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".page-subtitle",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".footer-note",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".connection-card p",
+              "oldMin": 9,
+              "newMin": 13
+            },
+            {
+              "selector": ".connection-card strong",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".breadcrumbs",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".note-help",
+              "oldMin": 11,
+              "newMin": 13
+            },
+            {
+              "selector": ".information-panel p",
+              "oldMin": 12,
+              "newMin": 15
+            },
+            {
+              "selector": ".information-panel th",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".information-panel td",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".control-popover p",
+              "oldMin": 11,
+              "newMin": 14
+            }
+          ]
+        },
+        {
+          "role": "chips",
+          "minimum": 12,
+          "oldMin": 9,
+          "newMin": 12,
+          "sampleCount": 222,
+          "selectors": [
+            {
+              "selector": ".focus-chips .chip",
+              "oldMin": 9,
+              "newMin": 12
+            },
+            {
+              "selector": ".provider-chips .chip",
+              "oldMin": 9,
+              "newMin": 12
+            },
+            {
+              "selector": ".access-chip",
+              "oldMin": 9,
+              "newMin": 12
+            },
+            {
+              "selector": ".card-tags .chip",
+              "oldMin": 9,
+              "newMin": 12
+            }
+          ]
+        }
+      ],
+      "failures": []
+    },
+    {
+      "width": 970,
+      "comparison": "Frozen direction 09",
+      "summary": [
+        {
+          "role": "prose",
+          "minimum": 16,
+          "oldMin": 13,
+          "newMin": 16,
+          "sampleCount": 75,
+          "selectors": [
+            {
+              "selector": ".excerpt li",
+              "oldMin": 13,
+              "newMin": 16
+            },
+            {
+              "selector": ".query-field textarea",
+              "oldMin": 17,
+              "newMin": 19
+            },
+            {
+              "selector": ".excerpt p",
+              "oldMin": 13,
+              "newMin": 16
+            },
+            {
+              "selector": ".notes-editor",
+              "oldMin": 14,
+              "newMin": 16
+            }
+          ]
+        },
+        {
+          "role": "sourceTitles",
+          "minimum": 20,
+          "oldMin": 15,
+          "newMin": 20,
+          "sampleCount": 48,
+          "selectors": [
+            {
+              "selector": ".card-title button",
+              "oldMin": 16,
+              "newMin": 20
+            },
+            {
+              "selector": ".reader-title",
+              "oldMin": 15,
+              "newMin": 20
+            }
+          ]
+        },
+        {
+          "role": "reader",
+          "minimum": 17,
+          "oldMin": 13,
+          "newMin": 17,
+          "sampleCount": 20,
+          "selectors": [
+            {
+              "selector": ".reader-content li",
+              "oldMin": 13,
+              "newMin": 17
+            },
+            {
+              "selector": ".reader-content .original-text",
+              "oldMin": 14,
+              "newMin": 17
+            }
+          ]
+        },
+        {
+          "role": "navigationControls",
+          "minimum": 14,
+          "oldMin": 10,
+          "newMin": 14,
+          "sampleCount": 578,
+          "selectors": [
+            {
+              "selector": ".nav-item",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".recent-search",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".sidebar-link",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".workspace-switch",
+              "oldMin": 12,
+              "newMin": 14
+            },
+            {
+              "selector": ".small-button",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".search-submit",
+              "oldMin": 12,
+              "newMin": 15
+            },
+            {
+              "selector": ".tool.bordered",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".date-control",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".resource-tabs>button",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".view-options button",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".inline-more",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".readable-controls button",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".reader-tabs>button",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".focus-heading button",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".control-popover label",
+              "oldMin": 12,
+              "newMin": 15
+            },
+            {
+              "selector": ".control-popover h2",
+              "oldMin": 14,
+              "newMin": 20
+            }
+          ]
+        },
+        {
+          "role": "metadata",
+          "minimum": 13,
+          "oldMin": 9,
+          "newMin": 13,
+          "sampleCount": 343,
+          "selectors": [
+            {
+              "selector": ".byline",
+              "oldMin": 11,
+              "newMin": 13
+            },
+            {
+              "selector": ".reader-kind",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".reader-authors p",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".fit-note",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".reader-footer",
+              "oldMin": 9,
+              "newMin": 13
+            },
+            {
+              "selector": ".focus-query",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".focus-heading",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".results-label",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".credit-meter>span",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".nav-label",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".brand-tagline",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".page-subtitle",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".footer-note",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".connection-card p",
+              "oldMin": 9,
+              "newMin": 13
+            },
+            {
+              "selector": ".connection-card strong",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".breadcrumbs",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".note-help",
+              "oldMin": 11,
+              "newMin": 13
+            },
+            {
+              "selector": ".information-panel p",
+              "oldMin": 12,
+              "newMin": 15
+            },
+            {
+              "selector": ".information-panel th",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".information-panel td",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".control-popover p",
+              "oldMin": 11,
+              "newMin": 14
+            }
+          ]
+        },
+        {
+          "role": "chips",
+          "minimum": 12,
+          "oldMin": 9,
+          "newMin": 12,
+          "sampleCount": 222,
+          "selectors": [
+            {
+              "selector": ".focus-chips .chip",
+              "oldMin": 9,
+              "newMin": 12
+            },
+            {
+              "selector": ".provider-chips .chip",
+              "oldMin": 9,
+              "newMin": 12
+            },
+            {
+              "selector": ".access-chip",
+              "oldMin": 9,
+              "newMin": 12
+            },
+            {
+              "selector": ".card-tags .chip",
+              "oldMin": 9,
+              "newMin": 12
+            }
+          ]
+        }
+      ],
+      "failures": []
+    },
+    {
+      "width": 768,
+      "comparison": "Frozen direction 09",
+      "summary": [
+        {
+          "role": "prose",
+          "minimum": 16,
+          "oldMin": 13,
+          "newMin": 16,
+          "sampleCount": 75,
+          "selectors": [
+            {
+              "selector": ".excerpt li",
+              "oldMin": 13,
+              "newMin": 16
+            },
+            {
+              "selector": ".query-field textarea",
+              "oldMin": 17,
+              "newMin": 19
+            },
+            {
+              "selector": ".excerpt p",
+              "oldMin": 13,
+              "newMin": 16
+            },
+            {
+              "selector": ".notes-editor",
+              "oldMin": 14,
+              "newMin": 16
+            }
+          ]
+        },
+        {
+          "role": "sourceTitles",
+          "minimum": 20,
+          "oldMin": 16,
+          "newMin": 20,
+          "sampleCount": 48,
+          "selectors": [
+            {
+              "selector": ".card-title button",
+              "oldMin": 17,
+              "newMin": 21
+            },
+            {
+              "selector": ".reader-title",
+              "oldMin": 16,
+              "newMin": 20
+            }
+          ]
+        },
+        {
+          "role": "reader",
+          "minimum": 17,
+          "oldMin": 14,
+          "newMin": 18,
+          "sampleCount": 20,
+          "selectors": [
+            {
+              "selector": ".reader-content li",
+              "oldMin": 14,
+              "newMin": 18
+            },
+            {
+              "selector": ".reader-content .original-text",
+              "oldMin": 14,
+              "newMin": 18
+            }
+          ]
+        },
+        {
+          "role": "navigationControls",
+          "minimum": 14,
+          "oldMin": 10,
+          "newMin": 14,
+          "sampleCount": 578,
+          "selectors": [
+            {
+              "selector": ".nav-item",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".recent-search",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".sidebar-link",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".workspace-switch",
+              "oldMin": 12,
+              "newMin": 14
+            },
+            {
+              "selector": ".small-button",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".search-submit",
+              "oldMin": 12,
+              "newMin": 15
+            },
+            {
+              "selector": ".tool.bordered",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".date-control",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".resource-tabs>button",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".view-options button",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".inline-more",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".readable-controls button",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".reader-tabs>button",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".focus-heading button",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".control-popover label",
+              "oldMin": 12,
+              "newMin": 15
+            },
+            {
+              "selector": ".control-popover h2",
+              "oldMin": 14,
+              "newMin": 20
+            }
+          ]
+        },
+        {
+          "role": "metadata",
+          "minimum": 13,
+          "oldMin": 9,
+          "newMin": 13,
+          "sampleCount": 343,
+          "selectors": [
+            {
+              "selector": ".byline",
+              "oldMin": 11,
+              "newMin": 13
+            },
+            {
+              "selector": ".reader-kind",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".reader-authors p",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".fit-note",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".reader-footer",
+              "oldMin": 9,
+              "newMin": 13
+            },
+            {
+              "selector": ".focus-query",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".focus-heading",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".results-label",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".credit-meter>span",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".nav-label",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".brand-tagline",
+              "oldMin": 9,
+              "newMin": 13
+            },
+            {
+              "selector": ".page-subtitle",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".footer-note",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".connection-card p",
+              "oldMin": 9,
+              "newMin": 13
+            },
+            {
+              "selector": ".connection-card strong",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".breadcrumbs",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".note-help",
+              "oldMin": 11,
+              "newMin": 13
+            },
+            {
+              "selector": ".information-panel p",
+              "oldMin": 12,
+              "newMin": 15
+            },
+            {
+              "selector": ".information-panel th",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".information-panel td",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".control-popover p",
+              "oldMin": 11,
+              "newMin": 14
+            }
+          ]
+        },
+        {
+          "role": "chips",
+          "minimum": 12,
+          "oldMin": 9,
+          "newMin": 12,
+          "sampleCount": 222,
+          "selectors": [
+            {
+              "selector": ".focus-chips .chip",
+              "oldMin": 9,
+              "newMin": 12
+            },
+            {
+              "selector": ".provider-chips .chip",
+              "oldMin": 9,
+              "newMin": 12
+            },
+            {
+              "selector": ".access-chip",
+              "oldMin": 9,
+              "newMin": 12
+            },
+            {
+              "selector": ".card-tags .chip",
+              "oldMin": 9,
+              "newMin": 12
+            }
+          ]
+        }
+      ],
+      "failures": []
+    },
+    {
+      "width": 650,
+      "comparison": "Frozen direction 09",
+      "summary": [
+        {
+          "role": "prose",
+          "minimum": 15,
+          "oldMin": 13,
+          "newMin": 15,
+          "sampleCount": 75,
+          "selectors": [
+            {
+              "selector": ".excerpt li",
+              "oldMin": 13,
+              "newMin": 15
+            },
+            {
+              "selector": ".query-field textarea",
+              "oldMin": 16,
+              "newMin": 19
+            },
+            {
+              "selector": ".excerpt p",
+              "oldMin": 13,
+              "newMin": 15
+            },
+            {
+              "selector": ".notes-editor",
+              "oldMin": 14,
+              "newMin": 16
+            }
+          ]
+        },
+        {
+          "role": "sourceTitles",
+          "minimum": 20,
+          "oldMin": 16,
+          "newMin": 20,
+          "sampleCount": 48,
+          "selectors": [
+            {
+              "selector": ".card-title button",
+              "oldMin": 17,
+              "newMin": 21
+            },
+            {
+              "selector": ".reader-title",
+              "oldMin": 16,
+              "newMin": 20
+            }
+          ]
+        },
+        {
+          "role": "reader",
+          "minimum": 15,
+          "oldMin": 14,
+          "newMin": 17,
+          "sampleCount": 20,
+          "selectors": [
+            {
+              "selector": ".reader-content li",
+              "oldMin": 14,
+              "newMin": 17
+            },
+            {
+              "selector": ".reader-content .original-text",
+              "oldMin": 14,
+              "newMin": 17
+            }
+          ]
+        },
+        {
+          "role": "navigationControls",
+          "minimum": 13,
+          "oldMin": 9,
+          "newMin": 13,
+          "sampleCount": 368,
+          "selectors": [
+            {
+              "selector": ".small-button",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".search-submit",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".tool.bordered",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".date-control",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".resource-tabs>button",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".view-options button",
+              "oldMin": 9,
+              "newMin": 13
+            },
+            {
+              "selector": ".inline-more",
+              "oldMin": 11,
+              "newMin": 13
+            },
+            {
+              "selector": ".readable-controls button",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".reader-tabs>button",
+              "oldMin": 11,
+              "newMin": 13
+            },
+            {
+              "selector": ".focus-heading button",
+              "oldMin": 9,
+              "newMin": 13
+            },
+            {
+              "selector": ".control-popover label",
+              "oldMin": 12,
+              "newMin": 14
+            },
+            {
+              "selector": ".control-popover h2",
+              "oldMin": 14,
+              "newMin": 20
+            }
+          ]
+        },
+        {
+          "role": "metadata",
+          "minimum": 12,
+          "oldMin": 9,
+          "newMin": 12,
+          "sampleCount": 268,
+          "selectors": [
+            {
+              "selector": ".byline",
+              "oldMin": 10,
+              "newMin": 12
+            },
+            {
+              "selector": ".reader-kind",
+              "oldMin": 10,
+              "newMin": 12
+            },
+            {
+              "selector": ".reader-authors p",
+              "oldMin": 11,
+              "newMin": 13
+            },
+            {
+              "selector": ".fit-note",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".reader-footer",
+              "oldMin": 9,
+              "newMin": 12
+            },
+            {
+              "selector": ".focus-query",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".focus-heading",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".results-label",
+              "oldMin": 9,
+              "newMin": 12
+            },
+            {
+              "selector": ".credit-meter>span",
+              "oldMin": 9,
+              "newMin": 13
+            },
+            {
+              "selector": ".page-subtitle",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".footer-note",
+              "oldMin": 10,
+              "newMin": 12
+            },
+            {
+              "selector": ".breadcrumbs",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".note-help",
+              "oldMin": 11,
+              "newMin": 13
+            },
+            {
+              "selector": ".information-panel p",
+              "oldMin": 12,
+              "newMin": 14
+            },
+            {
+              "selector": ".information-panel th",
+              "oldMin": 11,
+              "newMin": 13
+            },
+            {
+              "selector": ".information-panel td",
+              "oldMin": 11,
+              "newMin": 13
+            },
+            {
+              "selector": ".control-popover p",
+              "oldMin": 11,
+              "newMin": 13
+            }
+          ]
+        },
+        {
+          "role": "chips",
+          "minimum": 12,
+          "oldMin": 8,
+          "newMin": 12,
+          "sampleCount": 222,
+          "selectors": [
+            {
+              "selector": ".focus-chips .chip",
+              "oldMin": 9,
+              "newMin": 12
+            },
+            {
+              "selector": ".provider-chips .chip",
+              "oldMin": 9,
+              "newMin": 12
+            },
+            {
+              "selector": ".access-chip",
+              "oldMin": 8,
+              "newMin": 12
+            },
+            {
+              "selector": ".card-tags .chip",
+              "oldMin": 9,
+              "newMin": 12
+            }
+          ]
+        }
+      ],
+      "failures": []
+    },
+    {
+      "width": 390,
+      "comparison": "Frozen direction 09",
+      "summary": [
+        {
+          "role": "prose",
+          "minimum": 15,
+          "oldMin": 13,
+          "newMin": 15,
+          "sampleCount": 75,
+          "selectors": [
+            {
+              "selector": ".excerpt li",
+              "oldMin": 13,
+              "newMin": 15
+            },
+            {
+              "selector": ".query-field textarea",
+              "oldMin": 16,
+              "newMin": 19
+            },
+            {
+              "selector": ".excerpt p",
+              "oldMin": 13,
+              "newMin": 15
+            },
+            {
+              "selector": ".notes-editor",
+              "oldMin": 14,
+              "newMin": 16
+            }
+          ]
+        },
+        {
+          "role": "sourceTitles",
+          "minimum": 20,
+          "oldMin": 16,
+          "newMin": 20,
+          "sampleCount": 48,
+          "selectors": [
+            {
+              "selector": ".card-title button",
+              "oldMin": 17,
+              "newMin": 20
+            },
+            {
+              "selector": ".reader-title",
+              "oldMin": 16,
+              "newMin": 20
+            }
+          ]
+        },
+        {
+          "role": "reader",
+          "minimum": 15,
+          "oldMin": 14,
+          "newMin": 17,
+          "sampleCount": 20,
+          "selectors": [
+            {
+              "selector": ".reader-content li",
+              "oldMin": 14,
+              "newMin": 17
+            },
+            {
+              "selector": ".reader-content .original-text",
+              "oldMin": 14,
+              "newMin": 17
+            }
+          ]
+        },
+        {
+          "role": "navigationControls",
+          "minimum": 13,
+          "oldMin": 9,
+          "newMin": 13,
+          "sampleCount": 368,
+          "selectors": [
+            {
+              "selector": ".small-button",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".search-submit",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".tool.bordered",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".date-control",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".resource-tabs>button",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".view-options button",
+              "oldMin": 9,
+              "newMin": 13
+            },
+            {
+              "selector": ".inline-more",
+              "oldMin": 11,
+              "newMin": 13
+            },
+            {
+              "selector": ".readable-controls button",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".reader-tabs>button",
+              "oldMin": 11,
+              "newMin": 13
+            },
+            {
+              "selector": ".focus-heading button",
+              "oldMin": 9,
+              "newMin": 13
+            },
+            {
+              "selector": ".control-popover label",
+              "oldMin": 12,
+              "newMin": 14
+            },
+            {
+              "selector": ".control-popover h2",
+              "oldMin": 14,
+              "newMin": 20
+            }
+          ]
+        },
+        {
+          "role": "metadata",
+          "minimum": 12,
+          "oldMin": 9,
+          "newMin": 12,
+          "sampleCount": 268,
+          "selectors": [
+            {
+              "selector": ".byline",
+              "oldMin": 10,
+              "newMin": 12
+            },
+            {
+              "selector": ".reader-kind",
+              "oldMin": 10,
+              "newMin": 12
+            },
+            {
+              "selector": ".reader-authors p",
+              "oldMin": 11,
+              "newMin": 13
+            },
+            {
+              "selector": ".fit-note",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".reader-footer",
+              "oldMin": 9,
+              "newMin": 12
+            },
+            {
+              "selector": ".focus-query",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".focus-heading",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".results-label",
+              "oldMin": 9,
+              "newMin": 12
+            },
+            {
+              "selector": ".credit-meter>span",
+              "oldMin": 9,
+              "newMin": 13
+            },
+            {
+              "selector": ".page-subtitle",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".footer-note",
+              "oldMin": 10,
+              "newMin": 12
+            },
+            {
+              "selector": ".breadcrumbs",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".note-help",
+              "oldMin": 11,
+              "newMin": 13
+            },
+            {
+              "selector": ".information-panel p",
+              "oldMin": 12,
+              "newMin": 14
+            },
+            {
+              "selector": ".information-panel th",
+              "oldMin": 11,
+              "newMin": 13
+            },
+            {
+              "selector": ".information-panel td",
+              "oldMin": 11,
+              "newMin": 13
+            },
+            {
+              "selector": ".control-popover p",
+              "oldMin": 11,
+              "newMin": 13
+            }
+          ]
+        },
+        {
+          "role": "chips",
+          "minimum": 12,
+          "oldMin": 8,
+          "newMin": 12,
+          "sampleCount": 222,
+          "selectors": [
+            {
+              "selector": ".focus-chips .chip",
+              "oldMin": 9,
+              "newMin": 12
+            },
+            {
+              "selector": ".provider-chips .chip",
+              "oldMin": 9,
+              "newMin": 12
+            },
+            {
+              "selector": ".access-chip",
+              "oldMin": 8,
+              "newMin": 12
+            },
+            {
+              "selector": ".card-tags .chip",
+              "oldMin": 9,
+              "newMin": 12
+            }
+          ]
+        }
+      ],
+      "failures": []
+    },
+    {
+      "width": 320,
+      "comparison": "Frozen direction 09",
+      "summary": [
+        {
+          "role": "prose",
+          "minimum": 15,
+          "oldMin": 13,
+          "newMin": 15,
+          "sampleCount": 75,
+          "selectors": [
+            {
+              "selector": ".excerpt li",
+              "oldMin": 13,
+              "newMin": 15
+            },
+            {
+              "selector": ".query-field textarea",
+              "oldMin": 16,
+              "newMin": 19
+            },
+            {
+              "selector": ".excerpt p",
+              "oldMin": 13,
+              "newMin": 15
+            },
+            {
+              "selector": ".notes-editor",
+              "oldMin": 14,
+              "newMin": 16
+            }
+          ]
+        },
+        {
+          "role": "sourceTitles",
+          "minimum": 20,
+          "oldMin": 16,
+          "newMin": 20,
+          "sampleCount": 48,
+          "selectors": [
+            {
+              "selector": ".card-title button",
+              "oldMin": 16,
+              "newMin": 20
+            },
+            {
+              "selector": ".reader-title",
+              "oldMin": 16,
+              "newMin": 20
+            }
+          ]
+        },
+        {
+          "role": "reader",
+          "minimum": 15,
+          "oldMin": 13,
+          "newMin": 17,
+          "sampleCount": 20,
+          "selectors": [
+            {
+              "selector": ".reader-content li",
+              "oldMin": 13,
+              "newMin": 17
+            },
+            {
+              "selector": ".reader-content .original-text",
+              "oldMin": 14,
+              "newMin": 17
+            }
+          ]
+        },
+        {
+          "role": "navigationControls",
+          "minimum": 13,
+          "oldMin": 8,
+          "newMin": 13,
+          "sampleCount": 368,
+          "selectors": [
+            {
+              "selector": ".small-button",
+              "oldMin": 9,
+              "newMin": 13
+            },
+            {
+              "selector": ".search-submit",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".tool.bordered",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".date-control",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".resource-tabs>button",
+              "oldMin": 9,
+              "newMin": 13
+            },
+            {
+              "selector": ".view-options button",
+              "oldMin": 8,
+              "newMin": 13
+            },
+            {
+              "selector": ".inline-more",
+              "oldMin": 11,
+              "newMin": 13
+            },
+            {
+              "selector": ".readable-controls button",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".reader-tabs>button",
+              "oldMin": 11,
+              "newMin": 13
+            },
+            {
+              "selector": ".focus-heading button",
+              "oldMin": 9,
+              "newMin": 13
+            },
+            {
+              "selector": ".control-popover label",
+              "oldMin": 12,
+              "newMin": 14
+            },
+            {
+              "selector": ".control-popover h2",
+              "oldMin": 14,
+              "newMin": 20
+            }
+          ]
+        },
+        {
+          "role": "metadata",
+          "minimum": 12,
+          "oldMin": 8,
+          "newMin": 12,
+          "sampleCount": 268,
+          "selectors": [
+            {
+              "selector": ".byline",
+              "oldMin": 10,
+              "newMin": 12
+            },
+            {
+              "selector": ".reader-kind",
+              "oldMin": 10,
+              "newMin": 12
+            },
+            {
+              "selector": ".reader-authors p",
+              "oldMin": 11,
+              "newMin": 13
+            },
+            {
+              "selector": ".fit-note",
+              "oldMin": 10,
+              "newMin": 13
+            },
+            {
+              "selector": ".reader-footer",
+              "oldMin": 9,
+              "newMin": 12
+            },
+            {
+              "selector": ".focus-query",
+              "oldMin": 11,
+              "newMin": 14
+            },
+            {
+              "selector": ".focus-heading",
+              "oldMin": 9,
+              "newMin": 13
+            },
+            {
+              "selector": ".results-label",
+              "oldMin": 8,
+              "newMin": 12
+            },
+            {
+              "selector": ".credit-meter>span",
+              "oldMin": 9,
+              "newMin": 13
+            },
+            {
+              "selector": ".page-subtitle",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".footer-note",
+              "oldMin": 10,
+              "newMin": 12
+            },
+            {
+              "selector": ".breadcrumbs",
+              "oldMin": 10,
+              "newMin": 14
+            },
+            {
+              "selector": ".note-help",
+              "oldMin": 11,
+              "newMin": 13
+            },
+            {
+              "selector": ".information-panel p",
+              "oldMin": 12,
+              "newMin": 14
+            },
+            {
+              "selector": ".information-panel th",
+              "oldMin": 11,
+              "newMin": 13
+            },
+            {
+              "selector": ".information-panel td",
+              "oldMin": 11,
+              "newMin": 13
+            },
+            {
+              "selector": ".control-popover p",
+              "oldMin": 11,
+              "newMin": 13
+            }
+          ]
+        },
+        {
+          "role": "chips",
+          "minimum": 12,
+          "oldMin": 8,
+          "newMin": 12,
+          "sampleCount": 222,
+          "selectors": [
+            {
+              "selector": ".focus-chips .chip",
+              "oldMin": 9,
+              "newMin": 12
+            },
+            {
+              "selector": ".provider-chips .chip",
+              "oldMin": 9,
+              "newMin": 12
+            },
+            {
+              "selector": ".access-chip",
+              "oldMin": 8,
+              "newMin": 12
+            },
+            {
+              "selector": ".card-tags .chip",
+              "oldMin": 9,
+              "newMin": 12
+            }
+          ]
+        }
+      ],
+      "failures": []
+    }
+  ],
+  "network": {
+    "externalRequests": [],
+    "apiRequests": [],
+    "httpWrites": [],
+    "policyViolations": []
+  },
+  "runtimeErrors": [],
+  "screenshots": [
+    "screenshots/observatory-app-desktop.png",
+    "screenshots/observatory-app-mobile.png"
+  ],
+  "typography_method": {
+    "measurement": "Computed font sizes on visible meaningful text at default browser scale. Every tested viewport checks CSS zoom 1/normal and no page-wide transform on the document, app shell or workspace.",
+    "coverage": "All four lanes, card Key points and Original text, reader Key points and Original text, editable notes, saved overview and Sources settings. Per-selector comparisons to frozen direction 09 are included in typography[].summary[].selectors.",
+    "roles": "Editable notes are prose; saved source-reading paragraphs are the reader role. Source titles include both cards and reader headers. Hidden icon-only labels and decorative badge numerals are excluded from meaningful text minimums."
+  },
+  "visual_review": {
+    "method": "Viewed the new desktop and full-page phone captures, compared with the unchanged Observatory landing and direction 09 captures, and incorporated the independent design review of the populated reader.",
+    "observations": [
+      "The blue-violet heading, ambient canvas, compass mark and rounded white surfaces carry the Observatory style into the sidebar app workspace; there is no hero-page replacement.",
+      "Larger card and reader titles, source prose, navigation, controls, factual metadata and chips produce a clear readability gain beyond enlarging the page heading.",
+      "The full Research Scout wordmark fits its sidebar and phone drawer; all seven geometry checks pass without hiding document overflow or scaling the page.",
+      "The four resource tabs stay in one visual row down to 320px. Toolbars and project actions wrap, and the initial phone view uses fresh navigation with no reader opened automatically."
+    ],
+    "tradeoff": "The larger type increases vertical page height and moves the first record lower. The 390px full-page capture should be viewed at native width when comparing text size; a fitted full-page image is reduced by image viewers.",
+    "qualification": "This remains an authored local design preview. Representative contrast and keyboard checks are bounded evidence, not a complete WCAG, screen-reader or production-behavior audit."
+  },
+  "limitations": [
+    "Static authored design preview. Local UI demonstrations do not prove production API, provider/model, persistence or account behavior.",
+    "Contrast checks cover representative opaque text/background pairs; gradient/translucent backgrounds are unmeasured and this is not a complete WCAG or screen-reader audit.",
+    "Earlier previews are visited read-only for authored-content and typography comparison; their sources, reports and captures are not changed."
+  ]
+}

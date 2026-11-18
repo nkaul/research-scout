@@ -66,8 +66,8 @@ Prefer readable concise labels and correct arrow semantics to decorative detail.
 
 ## Tool inputs
 
-- `referenced_image_paths[0]`: `/Users/nkaul/Documents/repos/research-scout/system-design/diagrams/increment-1-architecture.png`
-- `referenced_image_paths[1]`: `/Users/nkaul/Documents/repos/research-scout/.agents/skills/illustrated-explainers/assets/style-overview.png`
+- `referenced_image_paths[0]`: `./system-design/diagrams/increment-1-architecture.png`
+- `referenced_image_paths[1]`: `./.agents/skills/illustrated-explainers/assets/style-overview.png`
 - `transparent_background`: `false`
 
 The source snapshot JSON records exact input-document hashes at generation start. Native output dimensions and visual review are recorded separately after inspecting the export.

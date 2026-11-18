@@ -1,0 +1,38 @@
+.options { min-width: 0; width: 100%; }
+.options .row { display: flex; flex-wrap: nowrap; align-items: center; gap: 7px; min-width: 0; }
+.sourcePicker { flex: 0 0 auto; }
+.options .sourcePicker > summary { display: inline-flex; align-items: center; gap: 5px; min-height: 32px; padding: 4px 7px; border: 1px solid #d4deec; border-radius: 6px; background: #fff; font-size: 11px; list-style: none; white-space: nowrap; }
+.sourcePicker > summary::-webkit-details-marker { display: none; }
+.sourcePicker > summary svg { width: 13px; height: 13px; }
+.sourcePicker > summary svg:last-child { width: 10px; height: 10px; }
+.sourcePicker > summary > span { color: #24589f; background: #edf3fd; border-radius: 3px; min-width: 16px; text-align: center; padding: 0 3px; font-size: 10px; font-variant-numeric: tabular-nums; }
+.sourcePicker > summary[aria-disabled="true"] { opacity: .5; cursor: not-allowed; }
+.options .row .dateGroup { display: flex; align-items: center; flex: 1 1 244px; flex-wrap: nowrap; width: auto; min-width: 190px; max-width: 280px; gap: 5px; }
+.dateGroup > label { display: inline-flex; align-items: center; gap: 4px; white-space: nowrap; color: #4f627d; font-size: 11px; }
+.dateGroup > label svg { width: 13px; height: 13px; }
+.options .dateGroup > input { flex: 1 1 64px; min-width: 45px; width: 64px; height: 22px; margin: 0; accent-color: #356dc7; }
+.rangeHint { min-width: 27px; white-space: nowrap; color: #546c8b; font-size: 10px; text-align: right; font-variant-numeric: tabular-nums; }
+.options .dateGroup .customTrigger { display: inline-flex; align-items: center; justify-content: center; flex: 0 0 30px; width: 30px; height: 30px; min-height: 30px; padding: 0; border: 1px solid #d7e1ef; border-radius: 5px; background: white; color: #527297; }
+.customTrigger svg { width: 14px; height: 14px; }
+.customTrigger[aria-pressed="true"] { background: #edf4ff; color: #265aa4; border-color: #aec7e9; }
+.options .manual { display: inline-flex; flex: 0 1 auto; gap: 5px; min-height: 32px; padding: 4px 6px; font-size: 11px; white-space: nowrap; }
+.manual > svg { width: 13px; height: 13px; }
+.manual select { min-width: 0; max-width: 116px; font-size: 11px; }
+.sourcesPanel > p, .customPanel > p { margin: 0 0 9px; color: #62748d; font-size: 11px; line-height: 1.65; }
+.sourcesPanel fieldset { display: grid; gap: 5px; padding: 0; margin: 0 0 10px; border: 0; }
+.sourcesPanel fieldset label { display: flex; gap: 8px; align-items: flex-start; padding: 5px; border-radius: 5px; }
+.sourcesPanel fieldset label:hover { background: #f1f6ff; }
+.sourcesPanel input { margin-top: 4px; accent-color: #386bc5; }
+.sourcesPanel fieldset strong { display: block; font-size: 12px; font-weight: 600; }
+.sourcesPanel fieldset small { display: block; font-size: 10px; color: #708199; }
+.selections { display: flex; gap: 4px; flex-wrap: wrap; margin: 5px 0 9px; }
+.selections button { display: inline-flex; align-items: center; gap: 4px; padding: 3px 5px; border: 1px solid #d5e1f0; border-radius: 4px; background: #f3f7fd; color: #3f608b; font-size: 10px; }
+.selections button svg { width: 10px; height: 10px; }
+.selections > span { color: #8d5430; font-size: 11px; }
+.customPanel > strong { display: block; margin-bottom: 11px; font-size: 12px; }
+.years { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 10px; }
+.years label { display: grid; gap: 5px; color: #536a87; font-size: 11px; min-width: 0; }
+.years input { width: 100%; min-width: 0; padding: 6px 7px; border: 1px solid #cbd9eb; border-radius: 5px; background: #fafcff; font-size: 12px; min-height: 33px; }
+.customPanel .apply { min-height: 33px; font-size: 11px; color: #2b5b9f; border-color: #cbdcf4; background: #eff5ff; }
+.apply svg { width: 13px; height: 13px; }
+@media (max-width: 600px) { .options .row { flex-wrap: wrap; gap: 6px; } .options .row .dateGroup { flex: 1 0 100%; min-width: 0; max-width: none; order: 3; } .options .manual { max-width: 100%; } }

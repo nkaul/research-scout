@@ -1,4 +1,4 @@
-export const DISCOVERY_PROVIDERS = ['openalex', 'semantic_scholar', 'crossref', 'arxiv', 'openaire', 'europe_pmc'] as const;
+export const DISCOVERY_PROVIDERS = ['openalex', 'semantic_scholar', 'crossref', 'arxiv', 'openaire', 'europe_pmc', 'youtube'] as const;
 export type ProviderId = typeof DISCOVERY_PROVIDERS[number];
 export type Source = {
   source_ref: string;
@@ -12,9 +12,14 @@ export type Source = {
   url?: string | null;
   abstract?: string | null;
   description?: string | null;
+  thumbnail_url?: string | null;
+  transcript?: { status: 'available' | 'unavailable' | 'blocked' | 'error'; origin: string; language?: string; language_code?: string; is_generated?: boolean; truncated: boolean; message?: string; segments: { text: string; start: number; duration: number }[] } | null;
   descriptions?: string[];
   content_origin?: string;
   resource_type?: string;
+  provider_identifiers?: Record<string, string | null>;
+  published_at?: string | null;
+  updated_at?: string | null;
   observed_at?: string;
   version: number | string;
   mode?: string;
@@ -27,6 +32,7 @@ export type Source = {
   metadata_status?: string;
   content_state?: string;
   details_loaded?: boolean;
+  observation_reference?: boolean;
 };
 export type Selection = { state: 'included' | 'excluded'; reason?: string; source_version?: string | number; citation_source?: 'discovery' | 'registry' };
 export type Operation = { status: string; error?: string; message?: string; [key: string]: unknown };
@@ -90,13 +96,29 @@ function errorMessage(value: unknown): string {
 }
 
 export async function request<T>(path: string, init?: RequestInit): Promise<T> {
+  const method = (init?.method || 'GET').toUpperCase();
+  const headers = new Headers(init?.headers);
+  if (!headers.has('Content-Type')) headers.set('Content-Type', 'application/json');
+  if (!['GET', 'HEAD', 'OPTIONS'].includes(method)) {
+    headers.set('X-CSRF-Token', await authCsrfToken());
+  }
   const response = await fetch(`/api${path}`, {
     ...init,
     cache: 'no-store',
-    headers: { 'Content-Type': 'application/json', ...init?.headers },
+    credentials: 'same-origin',
+    headers,
   });
   const data = await response.json().catch(() => null);
+  if (response.status === 401 && typeof window !== 'undefined') window.dispatchEvent(new Event('scout:authentication-required'));
+  if (response.status === 401 || response.status === 403) invalidateAuthCsrf();
   if (!response.ok) throw new ApiError(response.status, errorMessage(data?.detail || data?.error || data || response.statusText));
+  const run = /^\/research-runs\/([^/]+)\//.exec(path);
+  if (typeof window !== 'undefined' && run && !['GET', 'HEAD'].includes(method)) {
+    window.dispatchEvent(new CustomEvent('scout:saved-run-updated', { detail: { runId: decodeURIComponent(run[1]), snapshot: data } }));
+  }
+  if (typeof window !== 'undefined' && !['GET', 'HEAD'].includes(method) && (/^\/conversations\//.test(path) || path === '/economics/reset' || path === '/research-runs')) {
+    window.dispatchEvent(new Event('scout:economics-updated'));
+  }
   return data as T;
 }
 
@@ -104,10 +126,10 @@ export function sourcePath(runId: string, sourceRef: string) {
   return `/research-runs/${encodeURIComponent(runId)}/papers/${encodeURIComponent(sourceRef)}`;
 }
 export function providerLabel(provider: string) {
-  return provider === 'openalex' ? 'OpenAlex' : provider === 'semantic_scholar' ? 'Semantic Scholar' : provider === 'datacite' ? 'DataCite' : provider === 'crossref' ? 'Crossref' : provider === 'arxiv' ? 'arXiv' : provider === 'openaire' ? 'OpenAIRE Graph' : provider === 'europe_pmc' ? 'Europe PMC' : provider === 'unpaywall' ? 'Unpaywall' : provider;
+  return provider === 'github' ? 'GitHub' : provider === 'hugging_face' ? 'Hugging Face' : provider === 'openalex' ? 'OpenAlex' : provider === 'semantic_scholar' ? 'Semantic Scholar' : provider === 'datacite' ? 'DataCite' : provider === 'crossref' ? 'Crossref' : provider === 'arxiv' ? 'arXiv' : provider === 'openaire' ? 'OpenAIRE Graph' : provider === 'europe_pmc' ? 'Europe PMC' : provider === 'unpaywall' ? 'Unpaywall' : provider === 'youtube' ? 'YouTube' : provider;
 }
 export function providerRole(provider: string) {
-  return provider === 'openalex' ? 'Primary discovery' : provider === 'semantic_scholar' ? 'Complementary discovery' : provider === 'crossref' ? 'Paper discovery and DOI metadata' : provider === 'arxiv' ? 'Preprint discovery' : provider === 'openaire' ? 'Research graph discovery' : provider === 'europe_pmc' ? 'Biomedical literature discovery' : provider === 'unpaywall' ? 'Open-access DOI lookup' : 'DOI registry metadata';
+  return provider === 'openalex' ? 'Primary discovery' : provider === 'semantic_scholar' ? 'Complementary discovery' : provider === 'crossref' ? 'Paper discovery and DOI metadata' : provider === 'arxiv' ? 'Preprint discovery' : provider === 'openaire' ? 'Research graph discovery' : provider === 'europe_pmc' ? 'Biomedical literature discovery' : provider === 'youtube' ? 'Video discovery' : provider === 'unpaywall' ? 'Open-access DOI lookup' : 'DOI registry metadata';
 }
 export function providerRetrieval(provider?: Provider) {
   if (provider?.mode === 'fixture') return 'Fixture retrieval';
@@ -140,3 +162,5 @@ export function safeUrl(url?: string | null): string | undefined {
   if (!url) return undefined;
   try { const parsed = new URL(url); return ['https:', 'http:'].includes(parsed.protocol) ? parsed.href : undefined; } catch { return undefined; }
 }
+import { authCsrfToken, invalidateAuthCsrf } from './auth-client';
+

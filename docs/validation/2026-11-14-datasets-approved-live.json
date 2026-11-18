@@ -1,0 +1,38 @@
+{
+  "date": "2026-11-14",
+  "completed": true,
+  "explicit_user_approval_received": true,
+  "previous_automatic_review_rejection_resolved_by_user_approval": true,
+  "scope": "Approved exact-payload live provider metadata diagnostic; not a new app search or current-v7 end-to-end model search.",
+  "approved_outbound_payloads_matched": true,
+  "limit_per_catalog": 2,
+  "max_attempts_per_catalog": 1,
+  "providers": [
+    {
+      "provider": "hugging_face",
+      "status": "succeeded",
+      "records": 2,
+      "local_metadata_candidates": 0,
+      "attempts": 1,
+      "duration_ms": 203.5760972648859,
+      "error_code": null
+    },
+    {
+      "provider": "datacite",
+      "status": "succeeded",
+      "records": 0,
+      "local_metadata_candidates": 0,
+      "attempts": 1,
+      "duration_ms": 774.3515586480498,
+      "error_code": null
+    }
+  ],
+  "model_http_attempts": 0,
+  "dataset_file_downloads": 0,
+  "research_session_or_dataset_search_created": false,
+  "protected_app_files_unchanged": 137,
+  "env_and_model_ledger_unchanged": true,
+  "automatic_retries": 0,
+  "query_quality_claim": "Local lexical metadata hints only; no live model relevance evaluation.",
+  "raw_query_and_records_stored_only_in_ignored_local_state": true
+}

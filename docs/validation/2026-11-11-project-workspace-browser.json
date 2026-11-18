@@ -1,0 +1,1266 @@
+{
+  "date": "2026-11-11",
+  "scope": "Full suite before final active-row read-fence correction, then 21 focused navigation/reader checks after it. Two page-setup timeouts in the focused run passed isolated reruns; no app actions began in those failures.",
+  "full_suite_passed": 87,
+  "focused_cases": 21,
+  "focused_initial_passed": 19,
+  "focused_page_setup_timeouts": 2,
+  "focused_timeout_reruns_passed": 2,
+  "unique_browser_cases_passed": 88,
+  "new_live_retrieval_or_model_calls": 0,
+  "runs": [
+    {
+      "name": "acceptance-browser",
+      "stats": {
+        "startTime": "2026-11-11T23:26:28.369Z",
+        "duration": 295621.593,
+        "expected": 87,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "cases": [
+        {
+          "file": "automatic-discovery.spec.ts",
+          "title": "default Search automatically routes four resources and progressively groups DOI observations with integrated access",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "automatic-discovery.spec.ts",
+          "title": "default chat needs no provider selection and a blocked automatic access check stays visible without retrying",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "automatic-discovery.spec.ts",
+          "title": "compacted history restores one saved turn with a GET and retains it across compact SSE updates",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "automatic-integration.spec.ts",
+          "title": "actual fixture automatic discovery merges shared DOIs and resolves Unpaywall without source selection",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "date-slider-loading.spec.ts",
+          "title": "date slider uses accessible adaptive year stops and submits the selected publication bounds",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "date-slider-loading.spec.ts",
+          "title": "custom slider stop retains edited bounds and existing browser preferences",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "date-slider-loading.spec.ts",
+          "title": "atom and result skeleton cover pending admission and stop after retrieval completes",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "exploration-integration.spec.ts",
+          "title": "actual fixture chat routes separate providers, reuses saved evidence and reopens without a search",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "exploration-integration.spec.ts",
+          "title": "actual fixture DOI chat routes to DataCite without creating a discovery run",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "exploration.spec.ts",
+          "title": "exploration renders early separate-provider sources, retains drafts and cancels without duplicate search",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "exploration.spec.ts",
+          "title": "a public DOI works with OpenAlex blocked and saved follow-up does not introduce year filters",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "exploration.spec.ts",
+          "title": "exploration remains usable on a narrow phone and keeps over-budget input editable",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "exploration.spec.ts",
+          "title": "a successful details lookup does not claim verified discovery and rate limits stay visible",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "exploration.spec.ts",
+          "title": "explicit generation renders real response snapshots progressively, retains citations and reopens without another request",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "exploration.spec.ts",
+          "title": "generation is disabled without a configured key and a failed stream retains evidence for an explicit retry",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "exploration.spec.ts",
+          "title": "generated answer formatting stays React-safe during partial text and keeps source links and turn anchors",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "exploration.spec.ts",
+          "title": "chat displays abstracts immediately and reads fuller same-provider details with cached replay",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "exploration.spec.ts",
+          "title": "abstract lookup failure retains the visible excerpt and does not start another discovery or generation",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "local-integration.spec.ts",
+          "title": "local fixture services reach a saved shortlist and deterministic export",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "navigation-stability.spec.ts",
+          "title": "Search survives chat source inspection and returns with its draft and per-search filter",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "navigation-stability.spec.ts",
+          "title": "filters survive saved views and history without leaking into another search",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "navigation-stability.spec.ts",
+          "title": "a delayed legacy run cannot resurrect after New research",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "navigation-stability.spec.ts",
+          "title": "slow history does not block readiness or erase the current recent search",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "navigation-stability.spec.ts",
+          "title": "New research fences a late create response without replay or UI resurrection",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "navigation-stability.spec.ts",
+          "title": "New research fences a late send response without replay or UI resurrection",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "progressive-loading.spec.ts",
+          "title": "skeletons cover initial and incremental loading without hiding usable results",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "progressive-loading.spec.ts",
+          "title": "a failed saved read ends its skeleton and exposes an actionable error",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "project-integration.spec.ts",
+          "title": "a durable research project groups concepts, multiple real fixture queries and saved resources",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "refinement.spec.ts",
+          "title": "live discovery shows interpreted queries, reviewed batches and refinement history without an answer-generation call",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "refinement.spec.ts",
+          "title": "fixture defaults and explicit opt-out preserve direct search, and metadata actions never request AI refinement",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "refinement.spec.ts",
+          "title": "AI refinement can be explicitly opted out and failures do not erase reviewed records or automatically rerun",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "refinement.spec.ts",
+          "title": "a clarification request shows the unresolved scope without fabricating searches or sources",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "refinement.spec.ts",
+          "title": "a wrong-reference review rejection shows the error without inventing or automatically retrieving a source",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "refinement.spec.ts",
+          "title": "saved mixed v1 records are grouped without changing their data and weak provider queries remain explicit",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "refinement.spec.ts",
+          "title": "only related results do not enable generation and partial failures keep their explicit error text",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "refinement.spec.ts",
+          "title": "Search workspace shows reviewed results below the composer with the chosen provider and filters, admitting a duplicate click only once",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "refinement.spec.ts",
+          "title": "an uncertain reviewed-search POST is not automatically repeated and explicit retry retains its send key",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "refinement.spec.ts",
+          "title": "actual planner prompts, intent facets, keywords and provider arguments remain auditable saved text",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "refinement.spec.ts",
+          "title": "inspection pins the exact reviewed source across reload; invalid pins never expose other raw candidates",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "refinement.spec.ts",
+          "title": "Search workspace retains an explicit direct-search opt-out",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "research-projects.spec.ts",
+          "title": "projects group concepts, multiple queries and explicitly saved source versions across reload",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "research-projects.spec.ts",
+          "title": "save chooser pins the resource and adding another concept remains possible",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "right-panel-layout.spec.ts",
+          "title": "desktop details dock on the right and leave research controls interactive",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "right-panel-layout.spec.ts",
+          "title": "video cards keep a small thumbnail next to their description and saved captions in the panel",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "right-panel-layout.spec.ts",
+          "title": "narrow details remain an inline panel with no horizontal overflow or backdrop",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "seamless-results.spec.ts",
+          "title": "hover and row keyboard movement follow the newest saved source without stealing focus",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "seamless-results.spec.ts",
+          "title": "abstracts expand inline and the global display toggle adds no retrieval calls",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "seamless-results.spec.ts",
+          "title": "reported PDFs embed only on request and HTTP arXiv records use the canonical HTTPS document",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "seamless-results.spec.ts",
+          "title": "PDF locations validate legacy IDs and exclude malformed, local and credential-bearing URLs",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "seamless-results.spec.ts",
+          "title": "a touch pointer does not open or fetch the reader automatically",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "search-results-resilience.spec.ts",
+          "title": "local filtering includes available abstracts and distinguishes hidden videos from missing access",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "search-results-resilience.spec.ts",
+          "title": "a project query reopens its exact earlier turn and keeps that query on reload",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "search-results-resilience.spec.ts",
+          "title": "related evidence stays in the current resource tab and outside primary counts",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "search-results-resilience.spec.ts",
+          "title": "an obsolete preview failure cannot contaminate or block the next search preview",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "search-results-resilience.spec.ts",
+          "title": "an obsolete compact-history failure does not replace the current results with an error",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "search-results-resilience.spec.ts",
+          "title": "opening a full running history cannot freeze subsequent compact completion updates",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "top Search keeps progressive papers and videos in separate remembered tabs without opening chat",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "a source opens a right panel while preserving the search, tab, filter and draft",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "AI-refined top Search stays a search and mobile category views do not add requests",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "a new explicit manual direct search replaces prior grouped Search results",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "source removals and adaptive date presets survive reload, history and New research",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "custom years persist and removing every source prevents an accidental fallback search",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "the Papers lane retains exact registry metadata when there is no combined All tab",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "video thumbnails open a stable preview and transcript loading is explicit and saved",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "blocked captions leave the video usable and do not retry automatically",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "a delayed preview cannot replace a newly cleared search",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "search-workspace.spec.ts",
+          "title": "startup tabs wait for hydration and an early Videos choice survives a delayed saved search",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "source-expansion-integration.spec.ts",
+          "title": "actual fixture services route all added discovery sources and keep Unpaywall access separate",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "source-expansion.spec.ts",
+          "title": "seven discovery choices remain explicit and at most two can be selected; access lookup is separate",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "source-expansion.spec.ts",
+          "title": "early abstracts expand from saved records while another provider runs; only new details wait for the source run",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "source-expansion.spec.ts",
+          "title": "Unpaywall locations stay separate, links are safe, closed access is valid and replay makes no lookup",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "source-expansion.spec.ts",
+          "title": "missing Unpaywall contact and access failures remain visible without automatic provider fallback",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "source-expansion.spec.ts",
+          "title": "OpenAIRE descriptions are not presented as abstracts",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "source-expansion.spec.ts",
+          "title": "failed access lookup does not retry or switch to paper or registry search",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "video-preview-resilience.spec.ts",
+          "title": "a failed thumbnail recovers when same-video saved details supply a new safe image",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "video-preview-resilience.spec.ts",
+          "title": "updating same-video transcript metadata retains an already opened player",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "video-preview-resilience.spec.ts",
+          "title": "an invalid saved video identity has no unsafe URL or broken seek target (no captions)",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "video-preview-resilience.spec.ts",
+          "title": "an invalid saved video identity has no unsafe URL or broken seek target (saved captions)",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "workspace.spec.ts",
+          "title": "first rows can be inspected and saved before completion; updates preserve identity and focus",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "workspace.spec.ts",
+          "title": "reopen and exports use saved state; DOI observations remain separate and stale writes retain drafts",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "workspace.spec.ts",
+          "title": "provider edits are explicit and reconnection cannot rerun research or duplicate sources",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "workspace.spec.ts",
+          "title": "mobile keyboard flow, modal focus and reading layout remain usable",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "workspace.spec.ts",
+          "title": "three-paper cap and eligibility updates preserve human decisions visibly",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "workspace.spec.ts",
+          "title": "untitled and truncated records remain honest and DOI checks require inclusion",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "workspace.spec.ts",
+          "title": "desktop split preview, notes and display preferences use existing saved data",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "workspace.spec.ts",
+          "title": "Dub-inspired workspace remains readable at tablet and narrow phone widths",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "youtube-integration.spec.ts",
+          "title": "restored workspace retains automatic YouTube descriptions alongside papers and saved replay",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "race-browser",
+      "stats": {
+        "startTime": "2026-11-11T23:33:54.109Z",
+        "duration": 1958206.1020000002,
+        "expected": 19,
+        "skipped": 0,
+        "unexpected": 2,
+        "flaky": 0
+      },
+      "cases": [
+        {
+          "file": "navigation-stability.spec.ts",
+          "title": "Search survives chat source inspection and returns with its draft and per-search filter",
+          "status": "unexpected",
+          "results": [
+            {
+              "status": "timedOut",
+              "errors": [
+                "\u001b[31mTest timeout of 35000ms exceeded while setting up \"page\".\u001b[39m"
+              ]
+            }
+          ]
+        },
+        {
+          "file": "navigation-stability.spec.ts",
+          "title": "filters survive saved views and history without leaking into another search",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "navigation-stability.spec.ts",
+          "title": "a delayed legacy run cannot resurrect after New research",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "navigation-stability.spec.ts",
+          "title": "slow history does not block readiness or erase the current recent search",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "navigation-stability.spec.ts",
+          "title": "New research fences a late create response without replay or UI resurrection",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "navigation-stability.spec.ts",
+          "title": "New research fences a late send response without replay or UI resurrection",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "right-panel-layout.spec.ts",
+          "title": "desktop details dock on the right and leave research controls interactive",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "right-panel-layout.spec.ts",
+          "title": "video cards keep a small thumbnail next to their description and saved captions in the panel",
+          "status": "unexpected",
+          "results": [
+            {
+              "status": "timedOut",
+              "errors": [
+                "\u001b[31mTest timeout of 35000ms exceeded while setting up \"page\".\u001b[39m"
+              ]
+            }
+          ]
+        },
+        {
+          "file": "right-panel-layout.spec.ts",
+          "title": "narrow details remain an inline panel with no horizontal overflow or backdrop",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "seamless-results.spec.ts",
+          "title": "hover and row keyboard movement follow the newest saved source without stealing focus",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "seamless-results.spec.ts",
+          "title": "abstracts expand inline and the global display toggle adds no retrieval calls",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "seamless-results.spec.ts",
+          "title": "returning to the active row supersedes a different pending metadata read",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "seamless-results.spec.ts",
+          "title": "reported PDFs embed only on request and HTTP arXiv records use the canonical HTTPS document",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "seamless-results.spec.ts",
+          "title": "PDF locations validate legacy IDs and exclude malformed, local and credential-bearing URLs",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "seamless-results.spec.ts",
+          "title": "a touch pointer does not open or fetch the reader automatically",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "search-results-resilience.spec.ts",
+          "title": "local filtering includes available abstracts and distinguishes hidden videos from missing access",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "search-results-resilience.spec.ts",
+          "title": "a project query reopens its exact earlier turn and keeps that query on reload",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "search-results-resilience.spec.ts",
+          "title": "related evidence stays in the current resource tab and outside primary counts",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "search-results-resilience.spec.ts",
+          "title": "an obsolete preview failure cannot contaminate or block the next search preview",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "search-results-resilience.spec.ts",
+          "title": "an obsolete compact-history failure does not replace the current results with an error",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "search-results-resilience.spec.ts",
+          "title": "opening a full running history cannot freeze subsequent compact completion updates",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "setup-followup",
+      "stats": {
+        "startTime": "2026-11-12T02:40:19.246Z",
+        "duration": 6416.772,
+        "expected": 2,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "cases": [
+        {
+          "file": "navigation-stability.spec.ts",
+          "title": "Search survives chat source inspection and returns with its draft and per-search filter",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        },
+        {
+          "file": "right-panel-layout.spec.ts",
+          "title": "video cards keep a small thumbnail next to their description and saved captions in the panel",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "errors": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

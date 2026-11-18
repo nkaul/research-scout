@@ -1,0 +1,39 @@
+{
+  "date": "2026-11-17",
+  "target": "origin/main",
+  "scope": "Proposed staged repository snapshot; private runtime state is excluded. Screenshot OCR, PDF text and image/document metadata were reviewed locally.",
+  "checks": {
+    "known_credential_and_owner_data_matches": 0,
+    "local_reference_values_checked": 10,
+    "text_files_checked_before_this_receipt": 890,
+    "images_reviewed_with_local_accurate_ocr": 233,
+    "pdfs_with_extracted_text_reviewed": 4,
+    "image_and_document_metadata_files_checked": 237,
+    "gps_metadata_files": 0,
+    "visual_secret_pattern_matches": 0,
+    "gitleaks_version": "8.30.1",
+    "official_scanner_release_checksum_verified": true,
+    "gitleaks_generic_findings_reviewed": 49,
+    "generic_finding_classifications": {
+      "sql_upsert_column_references": 1,
+      "public_artifact_or_source_sha256": 48
+    },
+    "unresolved_secret_findings": 0,
+    "git_remote_synced_before_commit": true,
+    "push_access_dry_run_passed": true,
+    "new_commit_uses_github_noreply_identity": true
+  },
+  "privacy_preparation": {
+    "workstation_path_files_normalized": 16,
+    "junit_reports_with_machine_hostnames_removed": 15,
+    "original_artifacts_retained_locally": true,
+    "credentials_private_keys_browser_sessions_outboxes_and_sqlite_databases_ignored": true
+  },
+  "validation_references": {
+    "backend": "google-oauth-tls-2026-11-15.json",
+    "account_layout": "account-pill-2026-11-15.json",
+    "recorded_auth_and_account_source_hashes_still_match": true,
+    "ruff_check_passed_during_publication_review": true
+  },
+  "qualification": "Gitleaks findings were individually reviewed: 48 source/artifact SHA-256 values and one SQL upsert expression. No application behavior changed during publication preparation. Scanning covers the staged snapshot and outgoing commit, not a rewrite or complete audit of previously published history. OCR is a best-effort text check."
+}

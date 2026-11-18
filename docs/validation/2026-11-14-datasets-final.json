@@ -1,0 +1,150 @@
+{
+  "date": "2026-11-14",
+  "implemented": true,
+  "scope": "Dataset metadata discovery using selected research turn saved AI context; separate Data tab, dataset lifecycle, application MCP, actual LangGraph/DeepAgents and isolated catalog services.",
+  "agents": [
+    "Analysis",
+    "Execution"
+  ],
+  "catalogs": [
+    {
+      "provider": "hugging_face",
+      "port": 8120,
+      "transport": "official REST metadata; local application MCP boundary",
+      "native_semantic": false
+    },
+    {
+      "provider": "datacite",
+      "port": 8113,
+      "operation": "Dataset-only metadata",
+      "transport": "official REST metadata; local application MCP boundary"
+    }
+  ],
+  "matching": "Deterministic local metadata candidate hints over saved AI-refined intent; not a new LLM relevance review or empirical suitability assessment.",
+  "validation": {
+    "backend": {
+      "passed": 362,
+      "skipped": 1,
+      "skip_reason": "Optional real encoder proof; no artifact download",
+      "evidence": "One complete final socket-enabled pytest run",
+      "duration_seconds": 78.86
+    },
+    "browser": {
+      "unique_cases": 186,
+      "full": {
+        "passed": 186,
+        "failed": 0,
+        "skipped": 0,
+        "flaky": 0
+      },
+      "final_affected": {
+        "passed": 27,
+        "failed": 0,
+        "skipped": 0,
+        "flaky": 0
+      },
+      "qualification": "Full186 run preceded final recorded-catalog-query presentation enhancement; final27 affected cases pass on final production build."
+    },
+    "harness": {
+      "passed": 11,
+      "total": 11,
+      "evidence": "Scripted synthetic structural/context harness; zero hosted model attempts"
+    },
+    "ruff": true,
+    "typescript": true,
+    "isolated_next_production_build": true,
+    "source_comparison": {
+      "source_files": 58,
+      "mismatches": [],
+      "all_equal": true
+    },
+    "document_links": {
+      "checked": 375,
+      "broken": []
+    },
+    "actual_final_fixture": {
+      "passed": true,
+      "records": 4,
+      "catalog_attempts": 2,
+      "model_http_attempts": 0,
+      "recorded_catalog_inputs_visible": true,
+      "reload_attempts_unchanged": true,
+      "api_posts": 1,
+      "external_browser_requests": 0,
+      "responsive_widths": [
+        1440,
+        1100,
+        970,
+        901,
+        768,
+        390,
+        320
+      ],
+      "receipt": "2026-11-14-datasets-fixture-replay.json"
+    },
+    "live_readonly": {
+      "passed": true,
+      "healthy_services": 12,
+      "paper_cards": 58,
+      "video_cards": 10,
+      "api_writes": 0,
+      "catalog_search_started": false,
+      "receipt": "2026-11-14-datasets-live-readonly.json"
+    },
+    "public_metadata_probes": {
+      "scope": "Two anonymous public catalog metadata probes only; no application/MCP/model/file access.",
+      "results": [
+        {
+          "provider": "hugging_face",
+          "status": "passed",
+          "records": 2,
+          "endpoint": "https://huggingface.co/api/datasets"
+        },
+        {
+          "provider": "datacite",
+          "status": "passed",
+          "records": 2,
+          "endpoint": "https://api.datacite.org/dois"
+        }
+      ],
+      "qualification": "Generic anonymous metadata access checks, not the user saved-query live journey or retrieval-quality validation."
+    },
+    "protected_state": {
+      "existing_files": 712,
+      "unchanged": 712,
+      "changed": 0,
+      "missing": 0
+    },
+    "privacy_receipt": "2026-11-14-datasets-privacy.json",
+    "diff_check": true
+  },
+  "live_user_query_check": {
+    "status": "approved_provider_diagnostic_completed",
+    "automatic_approval_review_rejected": true,
+    "action": "Bounded dataset metadata lookup using saved user research terms",
+    "reason": "External export of user-derived research terms requires explicit approval for that payload and the Hugging Face/DataCite destinations.",
+    "executed": true,
+    "workaround_attempted": false,
+    "explicit_user_approval_received": true,
+    "original_approval_block_resolved": true,
+    "execution_scope": "Exact-payload provider-level diagnostic. Historical parent lacks requiredv7 lane plan; no new app dataset search or model call was created.",
+    "current_v7_app_search_executed": false,
+    "receipt": "2026-11-14-datasets-approved-live.json"
+  },
+  "unchanged": {
+    "existing_model_allowance": true,
+    "existing_credentials": true,
+    "existing_projects_notes_and_research": true
+  },
+  "deferred": [
+    "Dataset files, loaders, ingestion and schema profiling",
+    "Empirical suitability/analysis execution",
+    "Additional problem-specific repository adapters",
+    "Dataset-specific project pins",
+    "Hosted Hugging Face MCP connection"
+  ],
+  "previews": [
+    "2026-11-14-datasets-fixture-1440.png",
+    "2026-11-14-datasets-fixture-320.png"
+  ]
+}

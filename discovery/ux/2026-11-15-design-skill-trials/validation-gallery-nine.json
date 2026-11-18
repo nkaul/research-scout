@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-15",
+  "passed": true,
+  "total_mockups": 9,
+  "added_mockups": 1,
+  "retained_mockups": 8,
+  "all_original_links_retained": true,
+  "landing_concept_retained": true,
+  "all_preview_images_loaded": true,
+  "default_comparison_includes_new_mockup": true,
+  "widths": [
+    1440,
+    970,
+    768,
+    390,
+    320
+  ],
+  "browser_errors": [],
+  "failed_requests": [],
+  "original_gallery_captures_retained": true
+}

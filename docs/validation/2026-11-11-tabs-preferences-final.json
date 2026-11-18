@@ -1,0 +1,175 @@
+{
+  "date": "2026-11-11",
+  "status": "passed",
+  "scope": "Mockup-inspired Papers/Videos tabs, default multiple selected sources, enforced source scope and locally remembered adaptive/custom publication ranges.",
+  "defaults": {
+    "sources": [
+      "openalex",
+      "crossref",
+      "arxiv",
+      "youtube"
+    ],
+    "max_discovery_sources": 4,
+    "date_preset": "5 publication calendar years including current year",
+    "date_presets": [
+      "1",
+      "2",
+      "3",
+      "5",
+      "custom"
+    ],
+    "initial_tab": "Papers",
+    "remembered": "Sources, date preset/custom years and last tab, per browser; not overwritten by saved-result reads or New research."
+  },
+  "checks": {
+    "backend": {
+      "passed": 281,
+      "failed": 0,
+      "skipped": 0,
+      "receipt": "docs/validation/2026-11-11-tabs-preferences-final-python.xml"
+    },
+    "browser": {
+      "unique_passed": 51,
+      "failed": 0,
+      "skipped": 0,
+      "receipt": "docs/validation/2026-11-11-tabs-preferences-browser.json"
+    },
+    "context_and_tool_harness": {
+      "passed": 11,
+      "receipt": "docs/validation/2026-11-11-tabs-preferences-final-harness.json"
+    },
+    "typescript": "passed",
+    "production_next_build": "passed",
+    "ruff": "passed",
+    "diff_check": "passed"
+  },
+  "fixture_visual": {
+    "date": "2026-11-11",
+    "profile": "fixture",
+    "passed": true,
+    "evidence_kind": "Saved authored papers/videos originally retrieved through actual isolated services and MCP; no live relevance claim.",
+    "saved_papers": 8,
+    "saved_videos": 4,
+    "separate_tabs": true,
+    "only_two_tabs": true,
+    "preferences_survive_reload_and_new_research": true,
+    "saved_filters_and_usage_unchanged": true,
+    "source_picker_no_overflow": true,
+    "post_requests": 0,
+    "browser_errors": [],
+    "responsive": [
+      {
+        "width": 1440,
+        "overflow": false
+      },
+      {
+        "width": 1024,
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "overflow": false
+      },
+      {
+        "width": 320,
+        "overflow": false
+      }
+    ],
+    "screenshots": [
+      "docs/validation/2026-11-11-tabs-preferences-fixture-papers.png",
+      "docs/validation/2026-11-11-tabs-preferences-fixture-videos.png",
+      "docs/validation/2026-11-11-tabs-preferences-fixture-390.png",
+      "docs/validation/2026-11-11-tabs-preferences-fixture-320.png"
+    ]
+  },
+  "saved_live_visual": {
+    "date": "2026-11-11",
+    "profile": "live",
+    "passed": true,
+    "evidence_kind": "Read-only inspection of previously saved live 26-paper and 10-video results; no new provider/model query.",
+    "saved_papers": 26,
+    "saved_videos": 0,
+    "separate_tabs": true,
+    "only_two_tabs": true,
+    "preferences_survive_reload_and_new_research": true,
+    "saved_filters_and_usage_unchanged": true,
+    "source_picker_no_overflow": true,
+    "post_requests": 0,
+    "browser_errors": [],
+    "responsive": [
+      {
+        "width": 1440,
+        "overflow": false
+      },
+      {
+        "width": 1024,
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "overflow": false
+      },
+      {
+        "width": 320,
+        "overflow": false
+      }
+    ],
+    "screenshots": [
+      "docs/validation/2026-11-11-tabs-preferences-live-papers.png",
+      "docs/validation/2026-11-11-tabs-preferences-live-videos.png",
+      "docs/validation/2026-11-11-tabs-preferences-live-390.png",
+      "docs/validation/2026-11-11-tabs-preferences-live-320.png",
+      "docs/validation/2026-11-11-tabs-preferences-live-live-youtube.png"
+    ]
+  },
+  "restored_readiness": {
+    "youtube_ready": true,
+    "retrieval_status": "blocked",
+    "model_cost_and_holds_usd": 0.21650213,
+    "registered_provider_services": 9
+  },
+  "privacy_receipt": "docs/validation/2026-11-11-tabs-preferences-privacy.json",
+  "mockup_reference": {
+    "path": "discovery/ux/research-scout-design-handoff/research-scout-mockup.html",
+    "sha256": "dabb62b0391063b4eb2ef6fd72943652f775e76fa731c7c5d674a4ce6b572a89",
+    "changed": false
+  },
+  "limitations": [
+    "Publication windows have calendar-year granularity, not exact trailing-month bounds.",
+    "Preferences are local to the browser, not account-wide.",
+    "No new live provider/model search in this slice; fixtures and previously saved live records used for acceptance.",
+    "Existing shared model allowance remains blocked; no holds released or allowance changed.",
+    "General web search remains deferred."
+  ],
+  "source_sha256": {
+    "frontend/src/components/research-workspace.tsx": "a092b777abf05c7a33ed5f2050627e6b150cecc271aab1b8a4333024105f7b74",
+    "frontend/src/components/search-results.tsx": "88ccda4a34585b4e5f7f6ae11f9f78251674a79cb44b5c5b9d3f094eca6c8a53",
+    "frontend/src/components/search-options.tsx": "99e7de6a3321015ff620bd7b0e0da367c30bdae8f82fa8268f13f91bcf6d84e0",
+    "frontend/src/lib/search-preferences.ts": "a09cfdfcc29da5336a3edef6c7477a5ffde7d87ce168be0f9132a2a46636a908",
+    "frontend/src/lib/search-resources.ts": "273ddc6ca98220e02134cdc2de03911ef873bac587d28547e7a4e552e791ddf4",
+    "frontend/src/app/globals.css": "29e7bbddfc01aea05643efbe55dd788defff156273bd9efb34785fdd34a4195d",
+    "src/research_scout/contracts.py": "1a56c0da3390f1474808fa3d714aba6707887e3883f0f03539a7581eb0a23829",
+    "src/research_scout/conversations.py": "e52ef0361f7f6ae3952d417084c104a39da5fbcea90c8cb63a764552639e1e6d",
+    "src/research_scout/retrieval.py": "6976e146ba9315da530c9433f80f395f22e6dcee0041f2e6fd48e292359d31b3",
+    "tests/test_conversations.py": "f81d507789a3bd47b580c8a4f64f921596be1053df1bfa1a924e5eb59bf0c259",
+    "tests/test_agentic_retrieval.py": "20186acf3530e8b9ac9cb73e943353accc046e55096d6552d7f9468f97fa0e2d",
+    "tests/browser/search-workspace.spec.ts": "c71793e7b0d79f2d3ae15f39c30d921208c413ac86d6cb00e0c823d13e803389",
+    "tests/browser/automatic-integration.spec.ts": "de51ca5c85203daf0c4041f51cd72318c391b60cee99b82065d4b047db5fd5dd",
+    "tests/browser/youtube-integration.spec.ts": "d56aa02583543b4c4d25ef1bbdfd5ca8c0ca59cd68d2ecc60b044e05b6735367",
+    "tests/browser/workspace.spec.ts": "36f9eaa1d11d643280c637f37571892d76ca4c7d7b5d315c44b9d1d887d7f296"
+  },
+  "app_left_running": {
+    "url": "http://127.0.0.1:3100/",
+    "mode": "live",
+    "launcher_session": 55872,
+    "provider_processes": 9
+  }
+}

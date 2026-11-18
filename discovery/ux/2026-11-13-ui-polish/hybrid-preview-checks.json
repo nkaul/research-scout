@@ -1,0 +1,118 @@
+{
+  "date": "2026-11-13",
+  "passed": true,
+  "scope": "Standalone Refined + Workbench prototype; fictional records, trace and timings.",
+  "check_count": 13,
+  "checks": [
+    "Original search, compact first result and six aligned paper actions",
+    "Verbatim LLM input and saved trace stay separate from edited draft",
+    "Separate provider queries, fixed scope, access role and keyboard trace tabs",
+    "Timing bar and parallel request detail distinguish retrieval, saved view and reader",
+    "Passive result preview preserves note editing and focus",
+    "Local abstract expansion and explicit inline PDF/download affordances",
+    "Seven sources, four-source ceiling and source-aware visible video count",
+    "Applied custom years survive disclosure closure and control the next search",
+    "Progressive early entities, remaining skeletons, pending access and cancellable stable partial state",
+    "Direct search has no invented LLM planning request",
+    "Videos retain thumbnails, description expansion and explicit sample captions without an iframe",
+    "Seven responsive widths and explicit narrow-screen inline reader",
+    "New research clears the question and fences old progress without pretending to create a new trace"
+  ],
+  "responsive": [
+    {
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "width": 1100,
+      "overflow": false
+    },
+    {
+      "width": 970,
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "width": 650,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "overflow": false
+    }
+  ],
+  "first_card_top_px": 506.078125,
+  "javascript_errors": [],
+  "http_requests": [],
+  "provider_or_model_calls": 0,
+  "application_files_changed": false,
+  "gallery": {
+    "passed": true,
+    "states": 4,
+    "source_links_checked": 38,
+    "local_url": "http://127.0.0.1:3133/hybrid-review.html",
+    "javascript_errors": []
+  },
+  "material_color_pairs": {
+    "tested": 8,
+    "minimum_ratio": 4.78,
+    "scope": "Visible representative topic/provider/access chips and primary action color pairs; not a complete WCAG audit.",
+    "pairs": [
+      {
+        "label": "Search",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgb(21, 101, 192)",
+        "ratio": 5.75
+      },
+      {
+        "label": "Context engineering",
+        "color": "rgb(0, 105, 92)",
+        "background": "rgb(224, 242, 241)",
+        "ratio": 5.71
+      },
+      {
+        "label": "RAG",
+        "color": "rgb(57, 73, 171)",
+        "background": "rgb(232, 234, 246)",
+        "ratio": 6.46
+      },
+      {
+        "label": "LLM generation",
+        "color": "rgb(21, 101, 192)",
+        "background": "rgb(227, 242, 253)",
+        "ratio": 5.03
+      },
+      {
+        "label": "OpenAlex",
+        "color": "rgb(20, 85, 160)",
+        "background": "rgb(232, 241, 255)",
+        "ratio": 6.51
+      },
+      {
+        "label": "Crossref",
+        "color": "rgb(106, 27, 154)",
+        "background": "rgb(243, 229, 245)",
+        "ratio": 7.75
+      },
+      {
+        "label": "Open access",
+        "color": "rgb(27, 94, 32)",
+        "background": "rgb(232, 245, 233)",
+        "ratio": 7
+      },
+      {
+        "label": "arXiv",
+        "color": "rgb(191, 54, 12)",
+        "background": "rgb(251, 233, 231)",
+        "ratio": 4.78
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-15",
+  "passed": true,
+  "scope": "Synthetic HTTP protocol: saved reads, explicit Google session rotation, next mutation proof, rejection invalidation and no automatic retry.",
+  "network_calls": 0,
+  "sourceHashes": [
+    {
+      "file": "frontend/src/lib/auth-client.ts",
+      "sha256": "5cd905387f23e2b53ef7da812ba2b51c3326166253629fef0ceee79226203319"
+    },
+    {
+      "file": "frontend/src/lib/api.ts",
+      "sha256": "53390a964582ac3a76e98460c72ec0d2b106a3c227212c88f69dda32962adfe4"
+    }
+  ]
+}

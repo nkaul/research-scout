@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="0" skipped="0" tests="1" time="1.246" timestamp="2026-11-10T04:13:14.093772-05:00"><testcase classname="tests.test_local_encoder" name="test_real_pinned_cpu_encoder_dimensions_similarity_and_truncation" time="0.749" /></testsuite></testsuites>

@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-14",
+  "passed": true,
+  "legacy_operations": 13,
+  "original_ledger_sha256": "2c9907fcc6086659a7f662b24e964ae231bce6a7e0b6aaf750bf5f1a4eaf5a5c",
+  "verified_unchanged_backup": true,
+  "sqlite_integrity": "ok",
+  "foreign_key_violations": 0,
+  "journal_mode": "delete",
+  "live_reset_invoked": false
+}

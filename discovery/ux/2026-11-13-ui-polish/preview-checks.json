@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-13",
+  "passed": true,
+  "variants": 3,
+  "gallery_links_checked": 9,
+  "interactive_embed_switches": 3,
+  "responsive": [
+    {
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "overflow": false
+    }
+  ],
+  "javascript_errors": [],
+  "external_requests": [],
+  "provider_or_model_calls": 0,
+  "application_ui_changed": false,
+  "read_only_preview_server": true
+}

@@ -1,0 +1,31 @@
+body{--bg:#f5f2eb;--surface:#fffef9;--surface-alt:#efebe3;--ink:#282d33;--muted:#625f5a;--line:#dcd6cb;--brand:#1769c8;--brand-soft:#eaf2ff;--radius:6px;--radius-sm:4px;--shadow:0 2px 7px #594c3210;--font-ui:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;--font-reading:Georgia,"Times New Roman",serif;--reader-width:455px;--sidebar-width:218px;--row-gap:13px;--main-gap:23px;--card-pad:15px}
+.sidebar{background:#fbf9f3;border-right:1px solid #dcd6cb}.brand{color:#2f3d4c}.brand-tagline{color:#6c655c;font-size:11px;line-height:1.7}
+.sidebar-nav button{font-size:12px;border-radius:4px}.sidebar-nav button[aria-current=page],.sidebar-nav button.is-active{background:#eaf2ff;color:#145bad}
+.recent-searches{border-top:1px solid #ded7cb;padding-top:15px}.recent-searches button{line-height:1.75}
+.topbar{background:#fcfaf6;border-bottom:1px solid #ded7cb;box-shadow:none}.breadcrumbs{font-size:11px;color:#6d6459}
+.page-heading{align-items:end;margin-bottom:18px}.page-heading h1{font-family:var(--font-reading);font-size:29px;font-weight:600;letter-spacing:-.7px;color:#28394b}
+.eyebrow{font-size:10px;letter-spacing:.11em;text-transform:uppercase;color:#74695c}.page-subtitle{color:#726a60;font-size:12px;line-height:1.7}
+.search-panel{border:1px solid #d5cec1;background:#fffefb;box-shadow:none;border-radius:6px}
+.query-field label{font-size:11px;color:#6a6257}.query-field textarea{font-family:var(--font-reading);font-size:19px;line-height:1.6;color:#28394b}
+.toolbar{background:#f9f7f1;border-top:1px solid #e5dfd5}.toolbar button,.toolbar input{font-size:11px}
+.focus-strip{border:1px solid #e0d9cd;border-left:3px solid #8d9faf;background:#fffefb;border-radius:4px}
+.focus-heading{font-size:11px}.focus-query{font-size:12px;line-height:1.7}
+.resource-tabs{background:transparent;border:0;border-bottom:1px solid #d4ccbe;border-radius:0;padding:0;gap:8px}
+.resource-tabs>button{background:transparent;border-radius:4px 4px 0 0;border-bottom:2px solid transparent;box-shadow:none;font-size:12px;padding:10px 11px}
+.resource-tabs>button[aria-selected=true]{border-bottom-color:#1769c8;background:#fffef9;color:#145bad;box-shadow:none}
+.results-label{font-family:var(--font-reading);font-size:15px;font-weight:600;color:#524b42}.result-tools{padding-bottom:11px}
+.result-list{gap:13px}.result-card{background:transparent;border:1px solid transparent;border-bottom:1px solid #ded7cb;border-radius:3px;box-shadow:none;padding:14px 12px}
+.result-card.is-selected{background:#fffef9;border:1px solid #cbd4dc;border-left:3px solid #1769c8;box-shadow:0 2px 6px #54493408}
+.card-title button{font-family:var(--font-reading);font-size:18px;font-weight:600;letter-spacing:-.25px;line-height:1.5;color:#273b52}
+.byline{font-size:11px;line-height:1.7;color:#6d665c}.card-tags{gap:4px}.excerpt{font-family:var(--font-reading);font-size:14px;line-height:1.8;color:#4d4c47}
+.card-actions{border-top:1px solid #e7e1d7;margin-top:11px;padding-top:8px}
+.reader{background:#fffef9;border:1px solid #d4ccbf;border-radius:5px;box-shadow:0 3px 13px #64563c0c}
+.reader-heading{border-bottom:1px solid #e4ddd1;background:#fffef9}.reader-title{font-family:var(--font-reading);font-size:19px;line-height:1.45;font-weight:600;letter-spacing:-.3px;color:#2c3f55}.reader-kind{font-size:10px;color:#71685b;letter-spacing:.06em;text-transform:uppercase}
+.reader-tabs{background:#f6f3ec;border-color:#e0d8cb}.reader-tabs>button{font-size:11px}.reader-tabs>button[aria-selected=true]{background:#fffef9;color:#145bad;box-shadow:0 1px 3px #5d503310}
+.reader-body{padding:19px}.reader-content{font-family:var(--font-reading);font-size:15px;line-height:1.85;color:#45433d}.reader-content h3{font-family:var(--font-ui);font-size:12px;color:#544e44}
+.reader-authors{font-size:11px;line-height:1.8;padding-top:12px;border-top:1px solid #e5ded2}.fit-note{font-family:var(--font-ui);background:#f3f6f4;border-color:#dce4dd;font-size:12px;line-height:1.7}
+.reader-footer{background:#faf8f2;border-top:1px solid #e4ddd1;font-size:10px}
+@media(max-width:1200px){body{--reader-width:395px;--main-gap:18px;--sidebar-width:202px}.card-title button{font-size:17px}}
+@media(max-width:1000px){body{--reader-width:350px;--main-gap:15px}.reader-body{padding:15px}}
+@media(max-width:900px){.reader-content{font-size:15px}.result-card{padding:13px}.page-heading h1{font-size:27px}}
+@media(max-width:480px){.page-heading h1{font-size:25px}.query-field textarea{font-size:17px;min-height:90px;field-sizing:content}.resource-tabs{gap:2px}.resource-tabs>button{padding:9px 7px}.card-title button{font-size:17px}.excerpt{font-size:14px}.reader-title{font-size:18px}.reader-body{padding:14px}}

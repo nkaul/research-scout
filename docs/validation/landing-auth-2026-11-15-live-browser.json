@@ -1,0 +1,9 @@
+{
+  "date": "2026-11-15",
+  "passed": true,
+  "browser_errors": [],
+  "http_writes": [],
+  "external_requests": [],
+  "owner_created": false,
+  "scope": "Public live landing and sign-in reads only; no account or research mutations."
+}

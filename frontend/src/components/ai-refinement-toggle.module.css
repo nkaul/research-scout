@@ -1,0 +1,7 @@
+.control { display: inline-flex; flex: 0 0 auto; }
+.control button { position: relative; display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; padding: 0; border: 1px solid #d4dfed; border-radius: 6px; background: #fff; color: #67778c; }
+.control button svg { width: 16px; height: 16px; }
+.control button:hover:not(:disabled) { background: #f0f5ff; border-color: #abc3e7; }
+.control button[aria-checked="true"] { background: #eaf2ff; border-color: #b7cef0; color: #285ead; }
+.indicator { position: absolute; top: 4px; right: 4px; width: 5px; height: 5px; border: 1px solid currentColor; border-radius: 50%; background: white; }
+.control button[aria-checked="true"] .indicator { background: #2e6bc6; border-color: #2e6bc6; }

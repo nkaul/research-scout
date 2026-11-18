@@ -1,0 +1,52 @@
+{
+  "date": "2026-11-14",
+  "passed": true,
+  "evidence": "Live Next.js app with existing saved research; all browser API writes and remote assets blocked. No new live search or model request initiated by validation.",
+  "toolbar_icons_inside_settings": true,
+  "detail_host_outside_form": true,
+  "timing_metric_visible": true,
+  "ai_focus_automatic": true,
+  "heavy_requests_hidden_by_default": true,
+  "active_lane_coverage": true,
+  "saved_paper_cards": 58,
+  "saved_video_cards": 10,
+  "api_writes": 0,
+  "browser_errors": [],
+  "responsive": [
+    {
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "width": 1100,
+      "overflow": false
+    },
+    {
+      "width": 970,
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "width": 650,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "overflow": false
+    }
+  ],
+  "accounting": {
+    "before_used": 24,
+    "after_used": 24,
+    "same_reset_epoch": true,
+    "note": "Concurrent interactive activity is allowed; validation never resets or alters accounting."
+  },
+  "screenshots_private": true
+}

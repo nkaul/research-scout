@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-11",
+  "passed": true,
+  "evidence_kind": "One explicit live details action, through application core and the isolated YouTube provider, on an existing saved video. Actual official video metadata and public captions; no new research search or model call.",
+  "search_url": "http://127.0.0.1:3100/?search=8f8fdd99629a4dc89370f8417a3bf5db",
+  "transcript_status": "available",
+  "origin": "public_youtube_captions",
+  "language": "English",
+  "is_generated": false,
+  "segments": 92,
+  "characters": 5826,
+  "truncated": false,
+  "observed_at": "2026-11-11T20:58:51.768444+00:00",
+  "saved_record_version": "4f3d6fc6c1b8d49d0be0",
+  "search_record_version_preserved": true,
+  "saved_search_attempts": 1,
+  "provider_run_attempts_after_details": 5,
+  "new_detail_attempts": 4,
+  "model_attempts": 0,
+  "model_cost_and_holds_usd": 0.21650213,
+  "note": "The first browser capture checked before the asynchronous detail action finished. Saved state confirmed completion; only read-only verification followed, with no redispatch."
+}

@@ -1,0 +1,158 @@
+.content .identity {
+  padding-bottom: 12px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid var(--line);
+}
+
+.content .identity .title {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: -.01em;
+  overflow-wrap: anywhere;
+}
+
+.content .authors {
+  margin: 6px 0 0;
+  color: var(--secondary);
+  font-size: 12px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.content .venue {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 7px;
+  margin-top: 3px;
+  color: var(--secondary);
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.venue > span {
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.content .metadata .properties,
+.content .history .properties {
+  margin-bottom: 10px;
+  gap: 5px;
+  line-height: 1.55;
+}
+
+.content .properties > div {
+  grid-template-columns: 66px minmax(0, 1fr);
+  gap: 8px;
+}
+
+.content .history {
+  margin: 8px 0;
+}
+
+.content .history .properties {
+  padding: 8px 10px 0;
+}
+
+.content .lookup {
+  margin-top: 12px;
+}
+
+.content .lookup > p,
+.content .checkHelp {
+  margin-top: 7px;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.content .registry {
+  padding-top: 12px;
+  margin-top: 14px;
+  border-top: 1px solid var(--line);
+}
+
+.content .registry > :global(.text-button) {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin: 4px 0;
+  font-size: 12px;
+}
+
+.content.compact .notes .notesHelp {
+  display: block;
+  margin: 0 0 12px;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.content .notes > :global(.decision-options) {
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.content .notes > :global(.reason-input) {
+  margin-top: 5px;
+  min-height: 90px;
+}
+
+.content .notes :global(.note-save-row) {
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.contributors { margin:14px 0; padding-top:10px; border-top:1px solid #e3e8ef; }
+.contributors h3 { margin:0 0 4px; font-size:11px; color:#66758a; font-weight:600; }
+.contributors p { color:#4a5b73; font-size:12px; line-height:1.65; margin:0; overflow-wrap:anywhere; }
+.metadataActions { display:flex; gap:6px; flex-wrap:wrap; margin:12px 0 5px; }
+.metadataActions :global(.button) { min-height:32px; font-size:12px; padding:5px 8px; }
+.availability { color:#6a7484; font-size:11px; line-height:1.6; margin:7px 0; }
+.footerContext { display:flex; align-items:center; gap:7px; flex:1; min-width:0; }
+.footerContext :global(.source-number) { min-width:0; overflow-wrap:anywhere; }
+.readerTiming { display:inline-flex; align-items:center; justify-content:center; width:24px; height:24px; color:#7a8798; flex-shrink:0; border-radius:4px; }
+.readerTiming svg { width:13px; height:13px; }
+.readerTiming:hover,.readerTiming:focus-visible { background:#eef2f8; color:#315fc0; }
+.notesHeading { display:flex; align-items:baseline; justify-content:space-between; gap:8px; margin:0 0 7px; }
+.notesHeading h3 { margin:0; }
+.notesHeading span { color:#6a788c; font-size:10px; white-space:nowrap; }
+.content.compact .notes .notesHelp { margin-bottom:9px; font-size:11px; }
+.videoDescription { margin: 8px 0 12px; }
+.descriptionText.descriptionText { display: block; margin: 0; max-height: none; overflow: visible; -webkit-line-clamp: unset; color: #4a5b73; font-size: 12px; line-height: 1.65; overflow-wrap: anywhere; white-space: pre-line; }
+.descriptionText:global(.expanded) { display: block; max-height: none; overflow: visible; -webkit-line-clamp: unset; }
+.descriptionChip { display: inline-flex; margin: 0 6px 2px 0; padding: 1px 5px; border-radius: 4px; background: #eff3f8; color: #627188; font-size: 10px; line-height: 1.6; vertical-align: baseline; }
+.descriptionToggle { display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; padding: 2px; border: 1px solid #dbe3ee; border-radius: 5px; color: #4d6f9f; background: #fff; vertical-align: middle; cursor: pointer; }
+.descriptionToggle svg { width: 13px; height: 13px; }
+.descriptionToggle:hover { background: #eff4fb; }
+.descriptionToggle:focus-visible { outline: 2px solid #5282ce; outline-offset: 2px; }
+.descriptionToggle:disabled { color: #8491a2; cursor: default; }
+.descriptionHint { margin: 5px 0 0; color: #718096; font-size: 10px; line-height: 1.5; }
+.descriptionLoading { margin-top: 7px; color: #65748a; font-size: 11px; }
+.descriptionLoading :global(.search-skeleton-line) { display: block; margin-top: 6px; }
+
+/* The reader adds source text and provenance without a second large headline. */
+.content .identity { padding-bottom: 11px; margin-bottom: 11px; }
+.content .identity .title { font-size: 14px; line-height: 1.5; color: #172337; font-weight: 650; }
+.content .venue { font-size: 12px; line-height: 1.6; }
+.venue > span { color: #5b6c83; font-size: 12px; }
+.content .authors { font-size: 12px; color: #4e5f75; }
+.content .properties, .content .metadata .properties, .content .history .properties { font-size: 12px; line-height: 1.6; }
+.content .properties > div { grid-template-columns: 74px minmax(0, 1fr); }
+.contributors { margin: 14px 0; padding-top: 12px; border-top-color: #e0e7f1; }
+.contributors h3 { color: #53667f; font-size: 12px; margin-bottom: 5px; }
+.contributors p { color: #4e5f75; font-size: 12px; line-height: 1.7; }
+.availability { color: #5b6c83; font-size: 12px; line-height: 1.6; }
+.readerTiming { width: 30px; height: 30px; color: #667c98; }
+.readerTiming:hover,.readerTiming:focus-visible { background: #edf4ff; color: #1455a0; }
+.notesHeading span { font-size: 11px; color: #5b6c83; }
+.content.compact .notes .notesHelp { font-size: 12px; line-height: 1.65; }
+.content .notes > :global(.reason-input) { min-height: 115px; font-size: 14px; line-height: 1.7; }
+.descriptionText.descriptionText { color: #4e5f75; font-size: 14px; line-height: 1.75; }
+.descriptionChip { color: #00695c; background: #e0f2f1; font-size: 11px; padding: 2px 6px; border-radius: 5px; }
+.descriptionToggle { min-width: 26px; width: 26px; height: 26px; border-color: #d7e3f2; color: #1455a0; background: #f7faff; }
+.descriptionHint, .descriptionLoading { color: #5b6c83; font-size: 12px; line-height: 1.6; }
+@media(max-width:600px) {
+  .content .notes > :global(.reason-input) { font-size: 16px; }
+}

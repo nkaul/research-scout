@@ -1,0 +1,15 @@
+# Local tokenomics database
+
+The live core uses `backend/db/tokenomics.sqlite3` for canonical `.scout` or `.scout/live` state. Custom/test/fixture state uses `<state>/operational/tokenomics.sqlite3`. `SCOUT_TOKENOMICS_DB_PATH` configures canonical live state only. Runtime databases, journals and owner locks are ignored by Git.
+
+SQLite is the sole authority for model credits and usage. Versioned migrations live in `research_scout/economics.py`. The installed SQLite3.45.3 runtime uses the **DELETE rollback journal**, `synchronous=FULL`, foreign keys, a finite busy timeout and short `BEGIN IMMEDIATE` transactions. WAL is deliberately avoided on this runtime. No transaction spans a model request. A database-scoped owner lock prevents another core from treating live reservations as orphaned, even with a different application state directory.
+
+The daily budget is 100 invocation credits, ending at America/New_York midnight, including DST transitions. Search admission reserves up to 9 slots (plan plus two reviews per selected source); answer generation reserves 1. Each actual hosted-model dispatch converts one reservation into one used credit. Source HTTP, local encoders, saved reads and replay use no credits. Known pre-dispatch cancellation releases unused slots. A crash after durable dispatch remains charged/unknown: SQLite and remote HTTP cannot commit atomically.
+
+Explicit reset creates a new epoch and audit record. It preserves history and dispatched work. Accepted jobs retain their original window; late financial settlement cannot consume or expand a new window. Restart recovery releases unused slots while preserving dispatched counts and unknown financial exposure.
+
+The original `operational/generation-ledger.json` is hashed and imported exactly once, with a verified, atomically written `.pre-sqlite-<digest>.bak` and untouched original. Changed source or mismatching backup blocks import. Original operation IDs, steps, tokens, USD estimates and unknown holds are retained. Historical attempts belong to their original local day and do not spend today's allowance.
+
+Only accounting metadata enters SQLite: opaque IDs, windows, roles/models/status, timestamps, measured tokens, application estimates and reset/import provenance. No prompts, source text, answers or keys are stored. Missing counters stay null; aggregate counters are known subtotals with explicit coverage. USD uses the **historical application estimate with unverified current provider pricing**, not invoice costs or guaranteed billing bounds. Daily credits replace the old lifetimeUSD block; existing per-operation estimate/output/topology guards remain.
+
+For backup, stop the core and copy this database and its accounting metadata. For rollback, stop new model dispatch and retain SQLite history: returning to an older JSON-only implementation would lose post-migration accounting. The original JSON and backup are historical evidence, not the current accounting authority. No reset deletes history.

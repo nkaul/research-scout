@@ -1,0 +1,38 @@
+.timeline{min-width:0;margin-bottom:20px;color:#334c69}
+.header{display:flex;align-items:baseline;justify-content:space-between;gap:6px 16px;flex-wrap:wrap;margin-bottom:12px}
+.header h3{margin:0;color:#263c58;font-size:14px;font-weight:650}
+.header p,.hint,.empty{margin:0;color:#596e87;font-size:12px;line-height:1.6}
+.hint{margin:8px 0 12px}
+.totals{display:flex;flex-wrap:wrap;gap:8px 24px;margin:0;padding:10px 12px;background:#f5f8fd;border:1px solid #e1e8f2;border-radius:7px}
+.totals>div{display:flex;align-items:baseline;gap:7px;font-size:12px}
+.totals dt{color:#526782}.totals dd{margin:0;font-weight:650;color:#243e61;font-variant-numeric:tabular-nums}
+.axis,.row>summary,.overall{display:grid;grid-template-columns:minmax(125px,1.2fr) minmax(90px,3fr) 66px;gap:10px;align-items:center}
+.overall{margin:10px 0 12px;font-size:12px}.overall>strong{font-weight:600;line-height:1.5}
+.axis{margin:0 0 7px;color:#687b91;font-size:10px;font-variant-numeric:tabular-nums}
+.axis>div{display:flex;justify-content:space-between}
+.rows{border-top:1px solid #e6ecf4}
+.row{border-bottom:1px solid #e6ecf4}
+.row>summary{min-height:49px;cursor:pointer;list-style:none;padding:7px 0}
+.row>summary::-webkit-details-marker{display:none}
+.row>summary:hover{background:#f8faff}
+.row>summary:focus-visible{outline:2px solid #1769cf;outline-offset:2px;border-radius:4px}
+.identity{display:flex;align-items:center;gap:5px;min-width:0}
+.identity>svg{width:12px;height:12px;flex:none;transform:rotate(-90deg)}
+.row[open]>.identity>svg,.row[open]>summary>.identity>svg{transform:none}
+.identity>span{min-width:0}.identity strong{display:block;font-size:12px;font-weight:600;overflow-wrap:anywhere;line-height:1.5}
+.identity small{display:block;color:#64768d;font-size:10px;line-height:1.5;overflow-wrap:anywhere}
+.track{position:relative;min-width:0;height:18px;border-radius:4px;overflow:hidden;background:repeating-linear-gradient(90deg,#f0f4fa 0,#f0f4fa calc(25% - 1px),#dfe7f2 calc(25% - 1px),#dfe7f2 25%)}
+.span{position:absolute;top:2px;height:14px;min-width:2px;border-radius:3px;background:#2563c7}
+.span[data-phase=planning]{background:#6b4ac8}.span[data-phase=review]{background:#187e70}.span[data-phase=refinement]{background:#b16312}.span[data-phase=access]{background:#378137}
+.span[data-provider=crossref]{background:#7951b5}.span[data-provider=arxiv]{background:#bc6117}.span[data-provider=youtube]{background:#c23d42}.span[data-provider=europe_pmc]{background:#007f73}.span[data-provider=semantic_scholar]{background:#465ab4}.span[data-provider=openaire]{background:#087a9d}.span[data-provider=unpaywall]{background:#378137}
+.span[data-provider=hugging_face]{background:#ac7317}.span[data-provider=datacite]{background:#6a51bd}
+.span[data-active=true]{background-image:repeating-linear-gradient(115deg,transparent 0,transparent 6px,#ffffff45 6px,#ffffff45 10px)}
+.unmeasured{position:absolute;inset:0;text-align:center;font-size:10px;line-height:18px;color:#61738b}
+.duration{text-align:right;font-size:12px;font-weight:600;font-variant-numeric:tabular-nums;line-height:1.5;white-space:nowrap}.duration small{display:block;font-size:10px;font-weight:400;color:#63758d}
+.detail{padding:7px 12px 13px;margin-bottom:8px;background:#f7f9fd;border-radius:5px;font-size:12px;line-height:1.6;overflow-wrap:anywhere}
+.detail dl{display:flex;flex-wrap:wrap;gap:6px 20px;margin:0 0 9px}.detail dl>div{display:flex;gap:5px}.detail dt{color:#62758d}.detail dd{margin:0;font-variant-numeric:tabular-nums}
+.detail p{margin:7px 0}.detail p>strong{margin-right:5px}.query{display:block;white-space:pre-wrap;color:#304d6f;margin-top:4px}
+.detail details{margin-top:7px}.detail summary{cursor:pointer;font-weight:600;padding:3px 0}.detail pre{max-height:270px;overflow:auto;white-space:pre-wrap;overflow-wrap:anywhere;background:#fff;border:1px solid #dfe7f2;border-radius:5px;padding:10px;font-size:11px;color:#334963}
+@media(max-width:680px){.axis,.row>summary,.overall{grid-template-columns:94px minmax(55px,1fr) 57px;gap:7px}.totals{gap:6px 12px;padding:9px}.totals>div{justify-content:space-between;width:100%}.identity strong{font-size:12px}.axis{font-size:10px}.axis>div>span:nth-child(2),.axis>div>span:nth-child(4){display:none}.identity small{font-size:11px}.duration{font-size:12px}.detail{padding-inline:9px}.track{height:20px}.span{height:16px}.header{gap:5px}}
+
+.span[data-provider=github]{background:#4e5bb4}

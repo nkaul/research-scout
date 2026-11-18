@@ -1,0 +1,39 @@
+{
+  "date": "2026-11-10",
+  "passed": true,
+  "evidence_kind": "authored fixture videos and papers through actual isolated services and Deep Agents/application MCP; screenshots and saved reads are not live YouTube proof",
+  "status": "SUCCEEDED",
+  "warnings": [],
+  "routing": "auto",
+  "providers": [
+    "openalex",
+    "youtube",
+    "crossref",
+    "arxiv"
+  ],
+  "observations": 24,
+  "canonical_resources": 20,
+  "videos": 6,
+  "video_content": "description only; no abstract/transcript/content acquired",
+  "doi_groups": 2,
+  "access_operations": 2,
+  "usage": {
+    "research_attempts": 8,
+    "model_http_attempts": 0,
+    "model_cost_usd": 0
+  },
+  "read_only_preview_post_requests": 0,
+  "reload_or_description_read_new_calls": 0,
+  "browser_errors": [],
+  "responsive_widths": [
+    1440,
+    390,
+    320
+  ],
+  "screenshots": [
+    "docs/validation/2026-11-10-material-blue-youtube-dashboard.png",
+    "docs/validation/2026-11-10-material-blue-youtube-videos.png",
+    "docs/validation/2026-11-10-material-blue-youtube-390.png",
+    "docs/validation/2026-11-10-material-blue-youtube-320.png"
+  ]
+}

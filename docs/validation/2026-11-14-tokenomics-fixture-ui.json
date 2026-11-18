@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-14",
+  "passed": true,
+  "scope": "Real isolated Next.js -> Python HTTP API -> fixture-local SQLite; reset performed only on fixture allowance.",
+  "initial_available": 100,
+  "new_available": 100,
+  "epoch_incremented": true,
+  "exact_reset_posts": 1,
+  "known_model_calls": 0,
+  "model_calls_added": 0,
+  "research_history_unchanged": true,
+  "accounting_totals_unchanged": true,
+  "admin_without_login": true,
+  "admin_responsive_widths": [
+    1440,
+    768,
+    390,
+    320
+  ],
+  "browser_errors": [],
+  "live_allowance_reset": false
+}

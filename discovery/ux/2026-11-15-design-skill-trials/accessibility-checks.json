@@ -1,0 +1,50 @@
+{
+  "date": "2026-11-15",
+  "passed": true,
+  "scope": "Representative initial-view text roles against computed ancestor background colors; gradients, hover/active states, media and full WCAG conformance are not exhaustively assessed.",
+  "text_target": 4.5,
+  "variants": [
+    {
+      "id": "impeccable-quiet",
+      "checked_text_roles": 20,
+      "minimum_ratio": 5.37,
+      "keyboard": true
+    },
+    {
+      "id": "impeccable-folio",
+      "checked_text_roles": 20,
+      "minimum_ratio": 4.73,
+      "keyboard": true
+    },
+    {
+      "id": "impeccable-signal",
+      "checked_text_roles": 20,
+      "minimum_ratio": 5.14,
+      "keyboard": true
+    },
+    {
+      "id": "pro-swiss",
+      "checked_text_roles": 20,
+      "minimum_ratio": 5.4,
+      "keyboard": true
+    },
+    {
+      "id": "pro-scholar",
+      "checked_text_roles": 20,
+      "minimum_ratio": 4.76,
+      "keyboard": true
+    },
+    {
+      "id": "pro-material",
+      "checked_text_roles": 20,
+      "minimum_ratio": 4.78,
+      "keyboard": true
+    },
+    {
+      "id": "datapulse-workspace",
+      "checked_text_roles": 20,
+      "minimum_ratio": 4.54,
+      "keyboard": true
+    }
+  ]
+}

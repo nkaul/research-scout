@@ -1,0 +1,21 @@
+.summary{min-width:0;margin:0;padding:8px 10px 9px;border-top:1px solid #e3e8f1;color:#3b506b;background:#fbfcff;font-size:12px;line-height:1.6}
+.heading{display:flex;align-items:center;justify-content:space-between;gap:6px 12px;flex-wrap:wrap;min-width:0;margin-bottom:4px}
+.label{display:inline-flex;align-items:center;gap:6px;min-width:0;color:#5b4383;font-size:11px;font-weight:650;white-space:nowrap}
+.label svg{width:14px;height:14px;color:#704c9f;flex-shrink:0}
+.actions{display:flex;align-items:center;flex-wrap:wrap;gap:5px;margin-left:auto;min-width:0}
+.details,.more{display:inline-flex;align-items:center;justify-content:center;gap:4px;min-height:28px;max-width:100%;padding:3px 6px;border:1px solid transparent;border-radius:5px;background:transparent;color:#315d98;font:inherit;font-size:11px;line-height:1.5;cursor:pointer;overflow-wrap:anywhere}
+.details:hover,.more:hover{background:#eaf1fb;border-color:#d4e0f1}
+.details:focus-visible,.more:focus-visible{outline:2px solid #1769c8;outline-offset:2px}
+.details svg,.more svg{height:13px;width:13px;flex-shrink:0}
+.more{color:#624186;background:#f1ebf8}
+.more[aria-expanded=true]>svg{transform:rotate(180deg)}
+.focus{min-width:0;display:grid;gap:6px}
+.query{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;margin:0;min-width:0;white-space:pre-wrap;overflow-wrap:anywhere;color:#344d6c;font-size:12px;line-height:1.65}
+.query>span{font-size:11px;color:#64718b;font-weight:600}
+.query.expandedQuery{display:block;overflow:visible}
+.terms{display:flex;align-items:center;flex-wrap:wrap;gap:4px;min-width:0}
+.chip{display:inline-flex;align-items:baseline;flex-wrap:wrap;gap:3px;min-width:0;max-width:100%;padding:2px 6px;border-radius:4px;font-size:11px;line-height:1.5;font-weight:500;overflow-wrap:anywhere}
+.chip[data-chip-tone=teal]{background:#e0f2f1;color:#00695c}.chip[data-chip-tone=violet]{background:#f3e5f5;color:#6a1b9a}.chip[data-chip-tone=indigo]{background:#e8eaf6;color:#3949ab}.chip[data-chip-tone=orange]{background:#fbe9e7;color:#bf360c}.chip[data-chip-tone=rose]{background:#fce4ec;color:#ad1457}.chip[data-chip-tone=green]{background:#e8f5e9;color:#1b5e20}
+.domain{border:1px solid currentColor;font-weight:550}.domain>span{font-size:10px;font-weight:650}
+.empty{margin:0;min-width:0;overflow-wrap:anywhere;color:#65748a;font-size:11px;line-height:1.6}
+@media(max-width:480px){.summary{padding:7px 9px}.heading{gap:4px 7px}.actions{gap:3px}.details,.more{padding:3px 5px}.query{font-size:12px}}

@@ -34,17 +34,67 @@ demo/full-v2/*.m4a
 demo/full-v2/*.wav
 
 
-# skills
-skills
-.agents
+# Keep private/local agent material ignored; include only the approved reusable design bundles.
+skills/
+!/skills/
+/skills/*
+!/skills/scout-impeccable/
+!/skills/scout-ui-ux-pro-max/
+.agents/
+!/.agents/
+/.agents/*
+!/.agents/skills/
+/.agents/skills/*
+!/.agents/skills/scout-impeccable/
+!/.agents/skills/scout-ui-ux-pro-max/
 
 # Research Scout runtime state, isolated provider journals and local toolchains.
 **/.env.*
 !**/.env.example
-.scout/
+**/.scout/
 **/.coverage
 **/htmlcov/
 **/*.egg-info/
 **/.cache/
 **/.browser-cache/
-tests/browser/artifacts/
+frontend/tests/browser/artifacts/
+
+# Local tokenomics/accounting databases and SQLite sidecars; schema/docs stay tracked.
+**/*.sqlite
+**/*.sqlite3
+**/*.sqlite-*
+**/*.sqlite3-*
+backend/db/auth-outbox/
+**/*.db
+**/*.db-*
+**/*.sqlite.bak*
+**/*.sqlite3.bak*
+**/*.db.bak*
+
+# Downloaded credentials, private keys and recovery outboxes must remain local.
+**/client_secret*.json
+**/service-account*.json
+**/credentials.json
+**/token.json
+**/tokens.json
+**/oauth-token*.json
+**/*.pem
+**/*.key
+**/*.p12
+**/*.pfx
+**/*.jks
+**/id_rsa*
+**/id_ecdsa*
+**/id_ed25519*
+**/.netrc
+**/.npmrc
+**/.aws/
+**/.ssh/
+**/auth-outbox/
+**/*.log
+**/*.har
+**/trace*.zip
+**/storage-state*.json
+**/storageState*.json
+**/cookies*.json
+**/.auth/

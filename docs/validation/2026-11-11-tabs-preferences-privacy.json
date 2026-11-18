@@ -1,0 +1,10 @@
+{
+  "date": "2026-11-11",
+  "passed": true,
+  "checked_values": 3,
+  "files_scanned": 960,
+  "matching_paths": [],
+  "env_ignored": true,
+  "env_mode": "0o600",
+  "scope": "Exact configured API-key/token/contact values from local .env, checked in current Git-listed project files, frontend build and local logs. Excludes dependencies and private environment/state. No Git-history, unknown-secret, encoded-value or image-text claim."
+}

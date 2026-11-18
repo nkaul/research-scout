@@ -1,0 +1,43 @@
+# Eighth concept: Research Observatory
+
+November 15, 2026. Creative brief for **exactly one additional preview**. Keep the existing seven previews unchanged. The user's new direction permits a new page composition for this eighth option, including replacing the sidebar. This is a static design trial, not application adoption.
+
+## Reference-derived composition
+
+The [DataPulse reference](https://www.uupm.cc/demo/saas-analytics-dashboard#features) was opened and its supplied hero, feature and full-page captures were visually inspected. Its recognizable structure is a floating horizontal navigation bar, a large asymmetric split hero with a layered product illustration, substantial breathing room, a centered introduction to a uniform three-column feature grid, and a separate full-width product demonstration. Reproduce that sequence and scale relationship; recoloring Scout's existing sidebar workspace would miss the requested difference.
+
+1. **Floating navigation:** a white rounded bar inset from the page edges. Scout identity on the left; Evidence, Workspace, Projects and Notes anchors in the middle; preview credit usage and a restrained project control on the right. No left navigation rail. At phone width, use a real menu button with an operable disclosure rather than squeezing all destinations into one row.
+2. **Split hero:** left side leads with a small research-status pill and a large two/three-line headline such as “Turn questions into connected evidence.” Use a blue-to-violet accent on the final phrase, supported by a short factual explanation. Put the editable research question and primary Search action directly below, followed by compact Sources/Date/Limits/AI controls and saved AI focus. Label next-search settings separately from the saved example query.
+3. **Evidence illustration:** on the right, replace the reference's analytics chart with a layered example research session: a central source title/extract, provider chips and four small modality counts. A floating “Saved source” receipt and a small provenance card provide the reference's layered silhouette. A slight tilt belongs to the illustrative outer surface only; actual editable text and controls stay level. Do not invent an answer, confidence score, benchmark improvement, popularity or retrieval success rate.
+4. **Research capability grid:** below generous vertical space, center a small section pill, heading and short introduction. Use six equal white cards in a 3×2 grid: Papers, Videos, Data, Repos, Saved AI focus, Notes and provenance. Their colored line icons, title, brief explanation and modest action mirror the reference's feature-card rhythm. Modality cards select and scroll to their evidence lane; the other cards expose query details or notes. These are useful entrances, not extra independent searches.
+5. **Embedded evidence workbench:** introduce a wide, level product surface below the grid. Its header carries the saved question, query/coverage/timing controls and local filter. Four clear modality tabs control the result list. A selected-source reading area sits alongside it on desktop, with Key points/Original, expansion, metadata, source/version identity, notes and explicit media actions. This workbench is denser and calmer than the hero. It must not reproduce an entire application sidebar inside the page.
+
+## Visual system
+
+Use a cool near-white canvas, white elevated cards, delicate pale-blue borders, navy headings and slate text. The reference's blue/violet glow should be broad and faint behind the hero, not a colored panel obscuring content. Keep green for the primary hero action or an explicitly named saved/completed state; color alone must never establish status. Use one consistent outline-icon language.
+
+At a 1440px viewport, aim for a floating nav around 1280px wide, page content around 1216px, a roughly equal split hero and 96–128px between major sections. Let the display headline reach roughly 56–64px, section headings 32–36px, feature titles 20px and ordinary prose 16px. A system sans stack is sufficient for the offline trial; no font download is necessary. Cards can use 16–20px radii and restrained blue-tinted shadows. Keep prose measure comfortable rather than allowing full-width paragraphs.
+
+At intermediate widths, reduce hero type and turn the six-card grid into two columns. On phones, stack headline/question before the evidence illustration, use a single-column feature grid, and make source reading an explicit inline section. Keep the question fully discoverable, menu and source actions keyboard-operable, and sticky navigation clear of anchor headings and focused controls. Disable decorative motion and tilt under reduced motion; do not make hover the only way to select a source.
+
+## Guidance used and review boundary
+
+The local `scout-ui-ux-pro-max` style search was actually run with the query `SaaS analytics landing split hero floating navigation feature cards`. It returned `dimensional-layering`, `bento-box-grid` and `data-dense-dashboard`. Adopt the first result's purposeful layering for the illustrative hero. The reference has a uniform feature grid, so an asymmetric bento layout is not the chosen interpretation. Reserve compact operational density for the embedded workbench rather than the whole page.
+
+The `scout-impeccable` layout and typeset references support a deliberate reading path and a distinct type hierarchy: **headline → editable question → evidence illustration → feature entrances → operational workbench**. The hero is an Experience surface; the workbench remains Operate/Read. Current user direction takes precedence over the older sidebar constraint. This is guidance-based review; no upstream Impeccable detector or engine was run.
+
+## Acceptance review
+
+The eighth option should be recognizable in a silhouette comparison: horizontal floating navigation, oversized split hero, layered evidence illustration, separated feature grid and a full-width embedded tool. It should share authored example evidence and meaningful actions with the earlier trials while visibly changing the page's topology. Check 390px, intermediate and 1440px layouts; long question/source titles; anchor focus; menu/disclosures; modality switching; query/provenance access; notes; and selected-source reading. No live providers, models or production code are needed.
+
+## First rendered review
+
+The builder's `datapulse-observatory.html` draft was captured and visually inspected at 1440px desktop and 390px phone widths, including full-page views. The floating horizontal navigation, large split hero, layered evidence graphic, centered section introductions, uniform six-card grid and separate evidence desk make it clearly different from the seven earlier workspace treatments. The phone view retains a fully readable original question, a stacked hero and single-column feature cards. No overlapping controls were observed.
+
+The first phone capture measured a one-pixel horizontal document overflow (391px at a 390px viewport), reported to the builder and independent QA for containment checking. A conventional menu glyph was suggested for the mobile navigation trigger. The workbench script was still being completed at this review, so the empty desk in these temporary captures does not establish a final content or interaction result. Final QA evidence is recorded separately; this pass assesses composition only. Temporary captures are `/private/tmp/scout-observatory-first-{desktop,mobile}-{hero,full}.png`.
+
+## Final rendered review
+
+The final [desktop](screenshots/datapulse-observatory-desktop.png) and [phone](screenshots/datapulse-observatory-mobile.png) images, plus a populated desktop-desk diagnostic, were visually reviewed after the script was completed. The desk uses two columns of source cards beside a reader, carrying the changed composition into the tool itself. Selected-source treatment, provider identity, source text controls, metadata and Notes remain clear. No further visual changes were requested. Independent QA reports 20 passing checks and no horizontal overflow at 1440, 1100, 970, 768, 650, 390 and 320px; its separate receipt is the authority for those interaction and width measurements.
+
+The deliberate tradeoff remains the longer introductory path: the evidence desk sits farther down the page than in the seven compact workspaces. The prominent desk anchor, modality-card entrances and question-submit jump make that alternative practical to explore. The new composition is a reference-led comparison option, not evidence of a productivity improvement or approval to replace the application.

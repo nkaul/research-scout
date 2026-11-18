@@ -1,0 +1,857 @@
+{
+  "date": "2026-11-13",
+  "passed": true,
+  "scope": "Backend/frontend code separation and Python uv migration; application UI design unchanged.",
+  "layout": {
+    "backend": "backend/",
+    "frontend": "frontend/",
+    "system_design": "system-design/",
+    "shared_local_configuration": ".env",
+    "existing_runtime_namespace_preserved": true
+  },
+  "toolchain": {
+    "python": "3.13",
+    "uv": "0.13.8",
+    "next": "16.4.3",
+    "react": "19.3.1",
+    "node": "24.22.1",
+    "preserved_installed_package_versions": 95,
+    "encoder_extra_retained": true
+  },
+  "lock_sha256": "c450c1f7fa7cece2f4fe9d58367f1e32a7124863daff0e8bcb4d85f9afdc10d6",
+  "backend": {
+    "passed": 335,
+    "skipped": 1,
+    "failed": 0,
+    "skip_reason": "Optional real local encoder proof is opt-in; no model artifacts downloaded.",
+    "duration_seconds": 75.771,
+    "evidence": "2026-11-13-backend-uv-python.xml"
+  },
+  "browser": {
+    "unique_cases_passed": 148,
+    "scope": "Authored mocks plus explicitly enabled actual local fixture services/MCP/SSE journeys.",
+    "full_run": {
+      "passed": 144,
+      "failed": 4,
+      "skipped": 0
+    },
+    "final_corrected_cases": {
+      "passed": 4,
+      "failed": 0,
+      "skipped": 0
+    },
+    "all_cases_pass_across_runs": true,
+    "test_only_corrections": [
+      "Display citation grouping differs from stored DOI identity counts.",
+      "Wait for accepted/rendered mocked turns before publishing snapshots.",
+      "Current YouTube coverage, separate transcript endpoint and cached saved-caption replay."
+    ],
+    "initial_launch_issue": "Relative Playwright cache resolved against npm INIT_CWD when invoked with --prefix. Script now uses its absolute frontend working-directory cache.",
+    "cases": [
+      {
+        "file": "automatic-discovery.spec.ts",
+        "title": "default Search automatically routes four resources and progressively groups DOI observations with integrated access",
+        "passed": true
+      },
+      {
+        "file": "automatic-discovery.spec.ts",
+        "title": "default chat needs no provider selection and a blocked automatic access check stays visible without retrying",
+        "passed": true
+      },
+      {
+        "file": "automatic-discovery.spec.ts",
+        "title": "compacted history restores one saved turn with a GET and retains it across compact SSE updates",
+        "passed": true
+      },
+      {
+        "file": "automatic-integration.spec.ts",
+        "title": "actual fixture automatic discovery merges shared DOIs and resolves Unpaywall without source selection",
+        "passed": true
+      },
+      {
+        "file": "date-slider-loading.spec.ts",
+        "title": "date slider uses accessible adaptive year stops and submits the selected publication bounds",
+        "passed": true
+      },
+      {
+        "file": "date-slider-loading.spec.ts",
+        "title": "custom slider stop retains edited bounds and existing browser preferences",
+        "passed": true
+      },
+      {
+        "file": "date-slider-loading.spec.ts",
+        "title": "atom and result skeleton cover pending admission and stop after retrieval completes",
+        "passed": true
+      },
+      {
+        "file": "exploration-integration.spec.ts",
+        "title": "actual fixture chat routes separate providers, reuses saved evidence and reopens without a search",
+        "passed": true
+      },
+      {
+        "file": "exploration-integration.spec.ts",
+        "title": "actual fixture DOI chat routes to DataCite without creating a discovery run",
+        "passed": true
+      },
+      {
+        "file": "exploration.spec.ts",
+        "title": "exploration renders early separate-provider sources, retains drafts and cancels without duplicate search",
+        "passed": true
+      },
+      {
+        "file": "exploration.spec.ts",
+        "title": "a public DOI works with OpenAlex blocked and saved follow-up does not introduce year filters",
+        "passed": true
+      },
+      {
+        "file": "exploration.spec.ts",
+        "title": "exploration remains usable on a narrow phone and keeps over-budget input editable",
+        "passed": true
+      },
+      {
+        "file": "exploration.spec.ts",
+        "title": "a successful details lookup does not claim verified discovery and rate limits stay visible",
+        "passed": true
+      },
+      {
+        "file": "exploration.spec.ts",
+        "title": "explicit generation renders real response snapshots progressively, retains citations and reopens without another request",
+        "passed": true
+      },
+      {
+        "file": "exploration.spec.ts",
+        "title": "generation is disabled without a configured key and a failed stream retains evidence for an explicit retry",
+        "passed": true
+      },
+      {
+        "file": "exploration.spec.ts",
+        "title": "generated answer formatting stays React-safe during partial text and keeps source links and turn anchors",
+        "passed": true
+      },
+      {
+        "file": "exploration.spec.ts",
+        "title": "chat displays abstracts immediately and reads fuller same-provider details with cached replay",
+        "passed": true
+      },
+      {
+        "file": "exploration.spec.ts",
+        "title": "abstract lookup failure retains the visible excerpt and does not start another discovery or generation",
+        "passed": true
+      },
+      {
+        "file": "icon-tooltips.spec.ts",
+        "title": "icon tooltips appear on hover and keyboard focus, describe their trigger and dismiss with Escape",
+        "passed": true
+      },
+      {
+        "file": "icon-tooltips.spec.ts",
+        "title": "provider tooltip remains within a narrow viewport and icon actions retain their click behavior",
+        "passed": true
+      },
+      {
+        "file": "load-timing.spec.ts",
+        "title": "duration units cover sub-millisecond, millisecond, second and minute waits",
+        "passed": true
+      },
+      {
+        "file": "load-timing.spec.ts",
+        "title": "saved-view and metadata waits show live elapsed time, stop on completion and stay separate from original search duration",
+        "passed": true
+      },
+      {
+        "file": "load-timing.spec.ts",
+        "title": "a late paper response cannot replace the selected paper’s completed load time",
+        "passed": true
+      },
+      {
+        "file": "loading-performance.spec.ts",
+        "title": "initial Papers loading shows a skeleton and requests history once with compact recent runs",
+        "passed": true
+      },
+      {
+        "file": "loading-performance.spec.ts",
+        "title": "switching saved paper rows reuses one run snapshot without starting provider work",
+        "passed": true
+      },
+      {
+        "file": "loading-performance.spec.ts",
+        "title": "concurrent same-run preview reads share the request and preserve the latest row intent",
+        "passed": true
+      },
+      {
+        "file": "loading-performance.spec.ts",
+        "title": "newer SSE revisions seed saved previews and older replay cannot overwrite them",
+        "passed": true
+      },
+      {
+        "file": "loading-performance.spec.ts",
+        "title": "a saved mutation arriving during an older read wins and explicit details update cache eligibility and decisions",
+        "passed": true
+      },
+      {
+        "file": "loading-performance.spec.ts",
+        "title": "a new progressive paper refreshes an incomplete cached run once",
+        "passed": true
+      },
+      {
+        "file": "loading-performance.spec.ts",
+        "title": "expired saved previews refresh before showing current eligibility",
+        "passed": true
+      },
+      {
+        "file": "local-integration.spec.ts",
+        "title": "local fixture services reach a saved shortlist and deterministic export",
+        "passed": true
+      },
+      {
+        "file": "navigation-stability.spec.ts",
+        "title": "Search survives chat source inspection and returns with its draft and per-search filter",
+        "passed": true
+      },
+      {
+        "file": "navigation-stability.spec.ts",
+        "title": "filters survive saved views and history without leaking into another search",
+        "passed": true
+      },
+      {
+        "file": "navigation-stability.spec.ts",
+        "title": "a delayed legacy run cannot resurrect after New research",
+        "passed": true
+      },
+      {
+        "file": "navigation-stability.spec.ts",
+        "title": "slow history does not block readiness or erase the current recent search",
+        "passed": true
+      },
+      {
+        "file": "navigation-stability.spec.ts",
+        "title": "New research fences a late create response without replay or UI resurrection",
+        "passed": true
+      },
+      {
+        "file": "navigation-stability.spec.ts",
+        "title": "New research fences a late send response without replay or UI resurrection",
+        "passed": true
+      },
+      {
+        "file": "paper-reader-density.spec.ts",
+        "title": "reader keeps a small visible title, honest author context and compact metadata with an explained DOI gate",
+        "passed": true
+      },
+      {
+        "file": "paper-reader-density.spec.ts",
+        "title": "notes distinguish the run shortlist from project saving and missing DOIs remain explained",
+        "passed": true
+      },
+      {
+        "file": "papers-cards.spec.ts",
+        "title": "paper chips follow its title and all source, PDF, provider and access actions share one row",
+        "passed": true
+      },
+      {
+        "file": "papers-cards.spec.ts",
+        "title": "inline abstract icon expands and collapses already available text without provider work",
+        "passed": true
+      },
+      {
+        "file": "papers-cards.spec.ts",
+        "title": "a provider excerpt expands through an explicit saved read and retains latest source-version notice",
+        "passed": true
+      },
+      {
+        "file": "papers-control-panel.spec.ts",
+        "title": "one common panel holds source/date, display tools and explicit partial coverage without repeated summary panels",
+        "passed": true
+      },
+      {
+        "file": "papers-control-panel.spec.ts",
+        "title": "desktop opens saved metadata once without moving focus and respects closing across stream updates",
+        "passed": true
+      },
+      {
+        "file": "papers-control-panel.spec.ts",
+        "title": "narrow touch-style layouts keep metadata closed until an explicit record action",
+        "passed": true
+      },
+      {
+        "file": "papers-control-panel.spec.ts",
+        "title": "missing Unpaywall records are explained as access outcomes when discovery completed successfully",
+        "passed": true
+      },
+      {
+        "file": "pdf-preview.spec.ts",
+        "title": "real PDFs load inline without sandbox blocking and open in a browser tab without a download attribute",
+        "passed": true
+      },
+      {
+        "file": "pdf-preview.spec.ts",
+        "title": "delayed inline PDF keeps a loader and the source actions remain on one line",
+        "passed": true
+      },
+      {
+        "file": "pdf-preview.spec.ts",
+        "title": "Download PDF saves validated PDF bytes from the inline preview and shows its preparation time",
+        "passed": true
+      },
+      {
+        "file": "pdf-preview.spec.ts",
+        "title": "a blocked direct download explains the new-tab fallback without automatically retrying",
+        "passed": true
+      },
+      {
+        "file": "pdf-preview.spec.ts",
+        "title": "a host login/error page is not saved as a PDF download",
+        "passed": true
+      },
+      {
+        "file": "pdf-preview.spec.ts",
+        "title": "closing an inline PDF cancels a pending download without a late file save",
+        "passed": true
+      },
+      {
+        "file": "progressive-loading.spec.ts",
+        "title": "skeletons cover initial and incremental loading without hiding usable results",
+        "passed": true
+      },
+      {
+        "file": "progressive-loading.spec.ts",
+        "title": "a failed saved read ends its skeleton and exposes an actionable error",
+        "passed": true
+      },
+      {
+        "file": "project-integration.spec.ts",
+        "title": "a durable research project groups concepts, multiple real fixture queries and saved resources",
+        "passed": true
+      },
+      {
+        "file": "reader-and-abstracts.spec.ts",
+        "title": "latest numeric versions and dated opaque revisions replace duplicate records without sorting hashes",
+        "passed": true
+      },
+      {
+        "file": "reader-and-abstracts.spec.ts",
+        "title": "exact citation duplicates with different DOIs group visually while retaining both provider records and access boundaries",
+        "passed": true
+      },
+      {
+        "file": "reader-and-abstracts.spec.ts",
+        "title": "compact observation references do not erase full citation fields or prevent duplicate grouping",
+        "passed": true
+      },
+      {
+        "file": "reader-and-abstracts.spec.ts",
+        "title": "key points use complete original sentences, retain qualifiers and avoid repeated sentences",
+        "passed": true
+      },
+      {
+        "file": "reader-and-abstracts.spec.ts",
+        "title": "reader puts publication before abstract points and authors after, with timing in the footer and flat metadata",
+        "passed": true
+      },
+      {
+        "file": "reader-and-abstracts.spec.ts",
+        "title": "a newer streamed version refreshes the selected saved record without duplicating the card or reopening a closed reader",
+        "passed": true
+      },
+      {
+        "file": "reader-refinement.spec.ts",
+        "title": "reader keeps a small title in every tab and secondary reports collapsed",
+        "passed": true
+      },
+      {
+        "file": "reader-refinement.spec.ts",
+        "title": "paper and video actions stay on one line while reports open separately",
+        "passed": true
+      },
+      {
+        "file": "reader-refinement.spec.ts",
+        "title": "slow paper and video reads show a skeleton without allowing an obsolete read to win",
+        "passed": true
+      },
+      {
+        "file": "reader-refinement.spec.ts",
+        "title": "applying a custom range dispatches the new bounds and replaces the results",
+        "passed": true
+      },
+      {
+        "file": "reader-refinement.spec.ts",
+        "title": "loading another record makes old actions inert and closing prevents a late reopen",
+        "passed": true
+      },
+      {
+        "file": "refinement.spec.ts",
+        "title": "live discovery shows interpreted queries, reviewed batches and refinement history without an answer-generation call",
+        "passed": true
+      },
+      {
+        "file": "refinement.spec.ts",
+        "title": "fixture defaults and explicit opt-out preserve direct search, and metadata actions never request AI refinement",
+        "passed": true
+      },
+      {
+        "file": "refinement.spec.ts",
+        "title": "AI refinement can be explicitly opted out and failures do not erase reviewed records or automatically rerun",
+        "passed": true
+      },
+      {
+        "file": "refinement.spec.ts",
+        "title": "a clarification request shows the unresolved scope without fabricating searches or sources",
+        "passed": true
+      },
+      {
+        "file": "refinement.spec.ts",
+        "title": "a wrong-reference review rejection shows the error without inventing or automatically retrieving a source",
+        "passed": true
+      },
+      {
+        "file": "refinement.spec.ts",
+        "title": "saved mixed v1 records are grouped without changing their data and weak provider queries remain explicit",
+        "passed": true
+      },
+      {
+        "file": "refinement.spec.ts",
+        "title": "only related results do not enable generation and partial failures keep their explicit error text",
+        "passed": true
+      },
+      {
+        "file": "refinement.spec.ts",
+        "title": "Search workspace shows reviewed results below the composer with the chosen provider and filters, admitting a duplicate click only once",
+        "passed": true
+      },
+      {
+        "file": "refinement.spec.ts",
+        "title": "an uncertain reviewed-search POST is not automatically repeated and explicit retry retains its send key",
+        "passed": true
+      },
+      {
+        "file": "refinement.spec.ts",
+        "title": "actual planner prompts, intent facets, keywords and provider arguments remain auditable saved text",
+        "passed": true
+      },
+      {
+        "file": "refinement.spec.ts",
+        "title": "inspection pins the exact reviewed source across reload; invalid pins never expose other raw candidates",
+        "passed": true
+      },
+      {
+        "file": "refinement.spec.ts",
+        "title": "Search workspace retains an explicit direct-search opt-out",
+        "passed": true
+      },
+      {
+        "file": "research-projects.spec.ts",
+        "title": "projects group concepts, multiple queries and explicitly saved source versions across reload",
+        "passed": true
+      },
+      {
+        "file": "research-projects.spec.ts",
+        "title": "save chooser pins the resource and adding another concept remains possible",
+        "passed": true
+      },
+      {
+        "file": "right-panel-layout.spec.ts",
+        "title": "desktop details dock on the right and leave research controls interactive",
+        "passed": true
+      },
+      {
+        "file": "right-panel-layout.spec.ts",
+        "title": "video cards keep a small thumbnail next to their description and saved captions in the panel",
+        "passed": true
+      },
+      {
+        "file": "right-panel-layout.spec.ts",
+        "title": "narrow details remain an inline panel with no horizontal overflow or backdrop",
+        "passed": true
+      },
+      {
+        "file": "seamless-results.spec.ts",
+        "title": "hover and row keyboard movement follow the newest saved source without stealing focus",
+        "passed": true
+      },
+      {
+        "file": "seamless-results.spec.ts",
+        "title": "abstracts expand inline and the global display toggle adds no retrieval calls",
+        "passed": true
+      },
+      {
+        "file": "seamless-results.spec.ts",
+        "title": "returning to the active row supersedes a different pending metadata read",
+        "passed": true
+      },
+      {
+        "file": "seamless-results.spec.ts",
+        "title": "reported PDFs embed only on request and HTTP arXiv records use the canonical HTTPS document",
+        "passed": true
+      },
+      {
+        "file": "seamless-results.spec.ts",
+        "title": "PDF locations validate legacy IDs and exclude malformed, local and credential-bearing URLs",
+        "passed": true
+      },
+      {
+        "file": "seamless-results.spec.ts",
+        "title": "a touch pointer does not open or fetch the reader automatically",
+        "passed": true
+      },
+      {
+        "file": "search-results-resilience.spec.ts",
+        "title": "local filtering includes available abstracts and distinguishes hidden videos from missing access",
+        "passed": true
+      },
+      {
+        "file": "search-results-resilience.spec.ts",
+        "title": "a project query reopens its exact earlier turn and keeps that query on reload",
+        "passed": true
+      },
+      {
+        "file": "search-results-resilience.spec.ts",
+        "title": "related evidence stays in the current resource tab and outside primary counts",
+        "passed": true
+      },
+      {
+        "file": "search-results-resilience.spec.ts",
+        "title": "an obsolete preview failure cannot contaminate or block the next search preview",
+        "passed": true
+      },
+      {
+        "file": "search-results-resilience.spec.ts",
+        "title": "an obsolete compact-history failure does not replace the current results with an error",
+        "passed": true
+      },
+      {
+        "file": "search-results-resilience.spec.ts",
+        "title": "opening a full running history cannot freeze subsequent compact completion updates",
+        "passed": true
+      },
+      {
+        "file": "search-workspace.spec.ts",
+        "title": "top Search keeps progressive papers and videos in separate remembered tabs without opening chat",
+        "passed": true
+      },
+      {
+        "file": "search-workspace.spec.ts",
+        "title": "a source opens a right panel while preserving the search, tab, filter and draft",
+        "passed": true
+      },
+      {
+        "file": "search-workspace.spec.ts",
+        "title": "AI-refined top Search stays a search and mobile category views do not add requests",
+        "passed": true
+      },
+      {
+        "file": "search-workspace.spec.ts",
+        "title": "a new explicit manual direct search replaces prior grouped Search results",
+        "passed": true
+      },
+      {
+        "file": "search-workspace.spec.ts",
+        "title": "source removals and adaptive date presets survive reload, history and New research",
+        "passed": true
+      },
+      {
+        "file": "search-workspace.spec.ts",
+        "title": "custom years persist and removing every source prevents an accidental fallback search",
+        "passed": true
+      },
+      {
+        "file": "search-workspace.spec.ts",
+        "title": "the Papers lane retains exact registry metadata when there is no combined All tab",
+        "passed": true
+      },
+      {
+        "file": "search-workspace.spec.ts",
+        "title": "video thumbnails open a stable preview and transcript loading is explicit and saved",
+        "passed": true
+      },
+      {
+        "file": "search-workspace.spec.ts",
+        "title": "blocked captions leave the video usable and do not retry automatically",
+        "passed": true
+      },
+      {
+        "file": "search-workspace.spec.ts",
+        "title": "a delayed preview cannot replace a newly cleared search",
+        "passed": true
+      },
+      {
+        "file": "search-workspace.spec.ts",
+        "title": "startup tabs wait for hydration and an early Videos choice survives a delayed saved search",
+        "passed": true
+      },
+      {
+        "file": "source-expansion-integration.spec.ts",
+        "title": "actual fixture services route all added discovery sources and keep Unpaywall access separate",
+        "passed": true
+      },
+      {
+        "file": "source-expansion.spec.ts",
+        "title": "seven discovery choices remain explicit and at most two can be selected; access lookup is separate",
+        "passed": true
+      },
+      {
+        "file": "source-expansion.spec.ts",
+        "title": "early abstracts expand from saved records while another provider runs; only new details wait for the source run",
+        "passed": true
+      },
+      {
+        "file": "source-expansion.spec.ts",
+        "title": "Unpaywall locations stay separate, links are safe, closed access is valid and replay makes no lookup",
+        "passed": true
+      },
+      {
+        "file": "source-expansion.spec.ts",
+        "title": "missing Unpaywall contact and access failures remain visible without automatic provider fallback",
+        "passed": true
+      },
+      {
+        "file": "source-expansion.spec.ts",
+        "title": "OpenAIRE descriptions are not presented as abstracts",
+        "passed": true
+      },
+      {
+        "file": "source-expansion.spec.ts",
+        "title": "failed access lookup does not retry or switch to paper or registry search",
+        "passed": true
+      },
+      {
+        "file": "video-cards-compact.spec.ts",
+        "title": "videos have title chips, one channel byline and aligned compact actions at every viewport",
+        "passed": true
+      },
+      {
+        "file": "video-cards-compact.spec.ts",
+        "title": "description expansion is local and provider versions remain attributable behind one control",
+        "passed": true
+      },
+      {
+        "file": "video-cards-compact.spec.ts",
+        "title": "preview and project save keep the exact latest video without starting transcript or research work",
+        "passed": true
+      },
+      {
+        "file": "video-count-settings.spec.ts",
+        "title": "visible video count persists and is sent through creation and search without running on edit",
+        "passed": true
+      },
+      {
+        "file": "video-count-settings.spec.ts",
+        "title": "old preferences migrate and disabled YouTube retains the chosen count",
+        "passed": true
+      },
+      {
+        "file": "video-count-settings.spec.ts",
+        "title": "exploration shares the remembered count and includes it on provider discovery",
+        "passed": true
+      },
+      {
+        "file": "video-description-recovery.spec.ts",
+        "title": "both result and reader plus controls recover search snippets without loading captions",
+        "passed": true
+      },
+      {
+        "file": "video-description-recovery.spec.ts",
+        "title": "saved full description reads choose the latest whole record and expanded text has no clipping",
+        "passed": true
+      },
+      {
+        "file": "video-description-recovery.spec.ts",
+        "title": "active searches defer metadata recovery and returned provider excerpts remain visibly partial",
+        "passed": true
+      },
+      {
+        "file": "video-details-recovery.spec.ts",
+        "title": "description plus refreshes a legacy snippet through metadata only while keeping saved captions and playback",
+        "passed": true
+      },
+      {
+        "file": "video-details-recovery.spec.ts",
+        "title": "caption retry reports cooldown then recovers independently from saved metadata without remounting playback",
+        "passed": true
+      },
+      {
+        "file": "video-details-recovery.spec.ts",
+        "title": "a historical video description expands locally until the user explicitly loads current provider details",
+        "passed": true
+      },
+      {
+        "file": "video-loading.spec.ts",
+        "title": "a delayed thumbnail shows a skeleton until its image loads without starting a player or provider work",
+        "passed": true
+      },
+      {
+        "file": "video-loading.spec.ts",
+        "title": "an explicitly opened video shows its player loader until iframe load and retains playback across saved captions",
+        "passed": true
+      },
+      {
+        "file": "video-preview-intent.spec.ts",
+        "title": "left thumbnail starts the right player after automatic metadata preview while the eye stays metadata-only",
+        "passed": true
+      },
+      {
+        "file": "video-preview-intent.spec.ts",
+        "title": "passive selection and metadata return do not replay an earlier thumbnail playback request",
+        "passed": true
+      },
+      {
+        "file": "video-preview-intent.spec.ts",
+        "title": "a delayed thumbnail read cannot start playback after the search is cleared",
+        "passed": true
+      },
+      {
+        "file": "video-preview-intent.spec.ts",
+        "title": "the left thumbnail explicitly opens and starts a mobile reader without transcript work",
+        "passed": true
+      },
+      {
+        "file": "video-preview-resilience.spec.ts",
+        "title": "a failed thumbnail recovers when same-video saved details supply a new safe image",
+        "passed": true
+      },
+      {
+        "file": "video-preview-resilience.spec.ts",
+        "title": "updating same-video transcript metadata retains an already opened player",
+        "passed": true
+      },
+      {
+        "file": "video-preview-resilience.spec.ts",
+        "title": "an invalid saved video identity has no unsafe URL or broken seek target (no captions)",
+        "passed": true
+      },
+      {
+        "file": "video-preview-resilience.spec.ts",
+        "title": "an invalid saved video identity has no unsafe URL or broken seek target (saved captions)",
+        "passed": true
+      },
+      {
+        "file": "video-reader-compact.spec.ts",
+        "title": "compact actions keep playback and captions explicit and preserve the loaded player across caption updates",
+        "passed": true
+      },
+      {
+        "file": "video-reader-compact.spec.ts",
+        "title": "saved captions remain readable, timestamped and bounded on a narrow screen without automatic calls",
+        "passed": true
+      },
+      {
+        "file": "video-reader-compact.spec.ts",
+        "title": "a saved unavailable-caption outcome stays concise and offers explicit retry without automatic work",
+        "passed": true
+      },
+      {
+        "file": "video-reader-compact.spec.ts",
+        "title": "a fast thumbnail does not begin an endless elapsed clock when visibility is delivered after image load",
+        "passed": true
+      },
+      {
+        "file": "workspace.spec.ts",
+        "title": "first rows can be inspected and saved before completion; updates preserve identity and focus",
+        "passed": true
+      },
+      {
+        "file": "workspace.spec.ts",
+        "title": "reopen and exports use saved state; DOI observations remain separate and stale writes retain drafts",
+        "passed": true
+      },
+      {
+        "file": "workspace.spec.ts",
+        "title": "provider edits are explicit and reconnection cannot rerun research or duplicate sources",
+        "passed": true
+      },
+      {
+        "file": "workspace.spec.ts",
+        "title": "mobile keyboard flow, modal focus and reading layout remain usable",
+        "passed": true
+      },
+      {
+        "file": "workspace.spec.ts",
+        "title": "three-paper cap and eligibility updates preserve human decisions visibly",
+        "passed": true
+      },
+      {
+        "file": "workspace.spec.ts",
+        "title": "untitled and truncated records remain honest and DOI checks require inclusion",
+        "passed": true
+      },
+      {
+        "file": "workspace.spec.ts",
+        "title": "desktop split preview, notes and display preferences use existing saved data",
+        "passed": true
+      },
+      {
+        "file": "workspace.spec.ts",
+        "title": "Dub-inspired workspace remains readable at tablet and narrow phone widths",
+        "passed": true
+      },
+      {
+        "file": "youtube-integration.spec.ts",
+        "title": "restored workspace retains automatic YouTube descriptions alongside papers and saved replay",
+        "passed": true
+      }
+    ]
+  },
+  "harness": {
+    "passed": 11,
+    "total": 11,
+    "evidence": "2026-11-13-backend-uv-harness.json",
+    "model_http_attempts": 0,
+    "kind": "authored_synthetic_fixtures_with_scripted_BaseChatModel"
+  },
+  "checks": {
+    "ruff": true,
+    "typescript": true,
+    "isolated_next_production_build": true,
+    "uv_sdist_and_wheel": true,
+    "locked_offline_resolution": true,
+    "root_and_backend_launch_configuration_equal": true,
+    "editable_package_and_environment_under_backend": true,
+    "workflow_yaml_valid": true,
+    "active_document_links_checked": 122,
+    "missing_active_document_links": 0,
+    "git_diff_check": true
+  },
+  "file_moves": {
+    "date": "2026-11-13",
+    "moved_backend_authored_files": 57,
+    "unchanged_backend_files": 49,
+    "intentionally_updated_backend_files": [
+      "backend/src/research_scout/core.py",
+      "backend/src/research_scout/providers/README.md",
+      "backend/src/research_scout/providers/encoders.py",
+      "backend/src/research_scout/providers/oauth.py",
+      "backend/src/research_scout/providers/onnx_encoder.py",
+      "backend/src/research_scout/providers/service.py",
+      "backend/tests/test_launcher.py",
+      "backend/evals/README.md"
+    ],
+    "missing_backend_files": [],
+    "moved_browser_files": 40,
+    "missing_browser_files": []
+  },
+  "live": {
+    "evidence": "2026-11-13-backend-uv-live.json",
+    "healthy_service_count": 11,
+    "saved_video_cards": 10,
+    "saved_paper_cards": 58,
+    "projects_preserved": true,
+    "saved_runs_and_conversations_preserved": true,
+    "provider_usage_unchanged": true,
+    "model_cost_and_holds_unchanged": true,
+    "api_writes_during_saved_ui_check": 0,
+    "responsive_widths": [
+      1440,
+      1024,
+      900,
+      768,
+      390,
+      320
+    ]
+  },
+  "privacy_evidence": "2026-11-13-backend-uv-privacy.json",
+  "limitations": [
+    "No new live research query, provider preflight or model call was performed.",
+    "Structural scripted harness cases do not establish live model research quality.",
+    "GitHub Actions was updated and its YAML/paths checked locally; remote CI was not executed.",
+    "Existing root .venv is preserved as local migration residue; backend/.venv is the active environment."
+  ]
+}

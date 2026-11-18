@@ -1,0 +1,1 @@
+.panel { position: fixed; z-index: 70; width: min(304px, calc(100vw - 16px)); max-height: calc(100dvh - 16px); overflow: auto; overscroll-behavior: contain; padding: 13px; border: 1px solid #ccd9ea; border-radius: 9px; background: #fff; color: #354963; box-shadow: 0 10px 35px #152c4e20; font-size: 12px; line-height: 1.6; }

@@ -1,0 +1,47 @@
+{
+  "date": "2026-11-14",
+  "passed": true,
+  "evidence": "Actual local fixture browser → dataset API → LangGraph/DeepAgents → application MCP → isolated catalog services; authored saved-plan fixture, not hosted model output.",
+  "records": 4,
+  "providers": [
+    "hugging_face",
+    "datacite"
+  ],
+  "catalog_attempts": 2,
+  "model_http_attempts": 0,
+  "parent_unchanged": true,
+  "reload_attempts_unchanged": true,
+  "only_one_explicit_post": true,
+  "external_browser_requests": 0,
+  "browser_errors": [],
+  "responsive": [
+    {
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "width": 1100,
+      "overflow": false
+    },
+    {
+      "width": 970,
+      "overflow": false
+    },
+    {
+      "width": 901,
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "overflow": false
+    }
+  ]
+}

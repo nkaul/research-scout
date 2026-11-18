@@ -1,0 +1,151 @@
+{
+  "date": "2026-11-14",
+  "passed": true,
+  "scope": "Approved v0.2 unified search information, readable Data/Repos, complete retained GitHub topics, verified saved README source and persistent repository notes.",
+  "backend": {
+    "passed": 433,
+    "skipped": 1,
+    "skip": "Optional local encoder proof",
+    "seconds": 148.534,
+    "ruff": "passed",
+    "new_source_and_notes_cases": 7,
+    "scripted_harness_passed": 11
+  },
+  "browser": {
+    "unique_cases_verified": 246,
+    "full": {
+      "passed": 241,
+      "failed": 5,
+      "skipped": 0,
+      "flaky": 0,
+      "seconds": 489.76678200000003
+    },
+    "final_affected": {
+      "unique_cases_verified": 24,
+      "passed": 24,
+      "failed": 0,
+      "runs": [
+        {
+          "passed": 23,
+          "failed": 1,
+          "skipped": 0,
+          "flaky": 0,
+          "seconds": 94.50534400000001
+        },
+        {
+          "passed": 3,
+          "failed": 0,
+          "skipped": 0,
+          "flaky": 0,
+          "seconds": 4.975491999999999
+        }
+      ]
+    },
+    "focused": [
+      {
+        "area": "data",
+        "passed": 13
+      },
+      {
+        "area": "repos",
+        "passed": 14
+      },
+      {
+        "area": "shared_information",
+        "passed": 32
+      }
+    ],
+    "automatic_retries": 0,
+    "actual_isolated_http_mcp_saved_readme_and_persistent_notes": true,
+    "note": "Initial failures are retained in these run totals. They were assertions for moved diagnostic text, revised coverage wording or disclosure reset on accepting a newly loaded turn. Final affected tests cover the corrected assertions against unchanged final production source; latest result per file, suite, title and project passes."
+  },
+  "frontend": {
+    "typecheck": "passed",
+    "production_build": "passed",
+    "source_files_matched": 91,
+    "desktop_mobile_visual_review": "passed",
+    "responsive_widths": [
+      {
+        "width": 1440,
+        "overflow": false
+      },
+      {
+        "width": 1100,
+        "overflow": false
+      },
+      {
+        "width": 970,
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "overflow": false
+      },
+      {
+        "width": 650,
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "overflow": false
+      },
+      {
+        "width": 320,
+        "overflow": false
+      }
+    ]
+  },
+  "behavior": {
+    "one_collapsed_information_pane_below_resource_tabs": true,
+    "saved_limits_counts_coverage_queries_and_timing_unified": true,
+    "whole_search_status_covers_inactive_lane_failures_and_access_only_partial": true,
+    "required_errors_filters_and_stop_visible_when_collapsed": true,
+    "exact_model_and_provider_request_bodies_preserved": true,
+    "scoped_child_get_sse_ownership_and_late_callback_guards": true,
+    "data_and_repo_source_order_points_and_inline_read_more": true,
+    "independent_card_reader_presentation_and_bounded_scrolling": true,
+    "known_dataset_local_clipping_disclosed": true,
+    "github_topics_and_local_common_topic_facets": true,
+    "repo_relevance_separate_from_readme_availability": true,
+    "source_artifacts_public_id_checked_redacted_hashed_and_version_bound": true,
+    "source_artifacts_absent_from_sse_and_model_context": true,
+    "historical_readmes_honestly_labeled_saved_excerpts": true,
+    "notes_atomic_stable_scope_independent_revision_cas_and_pinned_evidence": true,
+    "no_new_provider_or_model_calls_from_reading_or_filtering": true,
+    "five_readme_and_existing_retrieval_credit_limits_preserved": true
+  },
+  "live": {
+    "services_healthy": 13,
+    "protected_existing_files": 900,
+    "existing_files_unchanged_at_final_check": 892,
+    "prior_research_snapshots_and_env_unchanged": true,
+    "initial_readonly_check_accounting_and_projects_unchanged": true,
+    "initial_readonly_check_used_credits": 17,
+    "concurrent_interactive_activity": {
+      "new_saved_conversations": 2,
+      "existing_project_cache_and_rate_files_updated": 8,
+      "additional_model_invocations": 7,
+      "policy_window_and_reset_epoch_unchanged": true,
+      "preserved_without_reset_or_rollback": true
+    },
+    "accounting_at_final_read": {
+      "used_credits": 24,
+      "available_credits": 76
+    },
+    "saved_paper_cards": 58,
+    "saved_video_cards": 10,
+    "validation_paid_model_calls": 0,
+    "validation_live_provider_searches": 0,
+    "validation_live_api_writes": 0,
+    "allowance_resets": 0,
+    "screenshots_private": true,
+    "fixture_build_api_destination": "http://127.0.0.1:8180/api/:path*",
+    "note": "The initial saved-live read-only check passed before two new live interactive searches arrived during the browser suite. Final file/accounting totals include that activity; they are not claimed unchanged. Validation used isolated fixture services and blocked live API writes. Existing research snapshots and credentials were not overwritten."
+  },
+  "evidence": {
+    "python": "2026-11-14-reading-ui-python.xml",
+    "harness": "2026-11-14-reading-ui-harness.json",
+    "saved_live": "2026-11-14-reading-ui-live-readonly.json",
+    "privacy": "2026-11-14-reading-ui-privacy.json"
+  }
+}

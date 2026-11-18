@@ -1,0 +1,71 @@
+{
+  "date": "2026-11-14",
+  "passed": true,
+  "scope": "Compact single-row desktop controls, relocated project/query actions, resource-tab activity and refined Research Scout identity.",
+  "browser": {
+    "unique_cases_verified": 219,
+    "full": {
+      "passed": 218,
+      "failed": 0,
+      "seconds": 357.07129399999997
+    },
+    "final_affected": {
+      "passed": 9,
+      "failed": 0
+    },
+    "automatic_retries": 0
+  },
+  "frontend": {
+    "typecheck": "passed",
+    "production_build": "passed",
+    "source_files_matched": 81
+  },
+  "behavior": {
+    "desktop_toolbar_one_line": true,
+    "custom_years_icon_popover": true,
+    "video_limit_slider": {
+      "minimum": 1,
+      "maximum": 20,
+      "remembered": true,
+      "edit_does_not_search": true
+    },
+    "ai_icon_only_switch": true,
+    "project_actions_in_header": true,
+    "save_query_follows_active_search_or_exploration": true,
+    "tab_loaders_scope_fenced": true,
+    "visited_resource_jobs_survive_tab_switch": true,
+    "no_unvisited_acquisition": true,
+    "source_popup_trigger_accessible_at_1280x720": true,
+    "animated_atom_pixels": 56,
+    "reduced_motion_static": true,
+    "proper_case_wordmark_and_heading": true,
+    "curiosity_tagline": true,
+    "vector_navigation_mark_and_favicon": true
+  },
+  "corrections_found_and_verified": [
+    "Source popover height is constrained to available space so it cannot cover its trigger.",
+    "Sources and Settings expose explicit button roles and keyboard focus.",
+    "AI-planning lanes show activity before provider routing is finalized; clarification ends it.",
+    "Header Save query follows Exploration rather than a stale Search query."
+  ],
+  "backend_code_changed": false,
+  "live": {
+    "services_healthy": 13,
+    "saved_paper_cards": 58,
+    "saved_video_cards": 10,
+    "protected_existing_files": 765,
+    "existing_file_changes": 0,
+    "accounting_unchanged": true,
+    "used_credits": 6,
+    "available_credits": 94,
+    "paid_model_calls": 0,
+    "live_provider_searches": 0,
+    "live_api_writes": 0,
+    "allowance_resets": 0,
+    "live_screenshots_private": true
+  },
+  "evidence": {
+    "saved_live_ui": "2026-11-14-compact-controls-live-readonly.json",
+    "privacy": "2026-11-14-compact-controls-privacy.json"
+  }
+}
